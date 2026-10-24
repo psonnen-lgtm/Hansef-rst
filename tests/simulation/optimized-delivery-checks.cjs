@@ -17,7 +17,7 @@ function sell(g){const before=g.events.length,r=clean(g.eval("simulate('optimize
 const offer="s.quests=[{city:0,j:0,n:6,reward:300,until:totalDay()+20}];";
 check('source guard permits exact counter/route/catalog-loop edits; delivery game rules unchanged',()=>{
  assert.equal(restoreFiveLoops(normalize(restoreRoutes(driver))),old);
- const html=fs.readFileSync(process.env.HANSE_GAME,'utf8'),original=execFileSync('git',['show','4212c82:Hansefuerst_0_4.html'],{encoding:'utf8',maxBuffer:10*1024*1024});for(const name of ['trade','completeQuests','consumeOrigins'])assert.equal(html.split('\n').find(l=>l.startsWith('function '+name+'(')),original.split('\n').find(l=>l.startsWith('function '+name+'('))); 
+ const html=fs.readFileSync(process.env.HANSE_GAME,'utf8'),original=execFileSync('git',['show','4212c82:Hansefuerst_0_4.html'],{encoding:'utf8',maxBuffer:10*1024*1024});for(const name of ['trade','completeQuests','consumeOrigins'])assert.equal(html.split('\n').find(l=>l.startsWith('function '+name+'(')),original.split('\n').find(l=>l.startsWith('function '+name+'(')));
 });
 check('existing four historical source guards still execute without running their simulations',()=>{
  for(const file of ['optimized-phase15a.cjs','observed-phase15b.cjs','delivery-phase15c.cjs','recovery-phase15d.cjs']){
