@@ -3,7 +3,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  const origin=totalDay(), routes={}, metrics={fees:0,repairs:0,interest:0,borrowed:0,questProfit:0,quests:0,rumors:0,pirates:0,storms:0,realisedProfit:0,decisions:0,deadlock:false,negativeGold:false,invalidCargo:false,invalidPrice:false};
  const badTurns=({bad5:5,bad10:10,bad20:20,bad30:30})[strategy]||0, isBad=badTurns>0;
  let eld=null,dead=false,lowest=netWorth(), recovering=false,lossEvents=0;
- function tx(j,n,d){$('qty'+j).value=n;const q=ship(),before=q.cargo[j]||0,cost=q.costs[j];trade(j,d);if(d<0){const sold=before-(q.cargo[j]||0);if(cost!=null){const p=sold*(s.markets[s.city][j].price-cost);metrics.realisedProfit+=p;const label=CITIES[s.city]+' / '+GOODS[j][0];routes[label]??={sales:0,profit:0,fees:0};routes[label].sales+=sold;routes[label].profit+=p;}}}
+ function tx(j,n,d){$('qty'+j).value=n;const q=ship(),before=q.cargo[j]||0,cost=q.costs[j],completedBefore=s.completed,goldBefore=s.gold;trade(j,d);if(d<0){const sold=before-(q.cargo[j]||0);metrics.quests+=s.completed-completedBefore;metrics.questProfit+=s.gold-goldBefore-sold*s.markets[s.city][j].price;if(cost!=null){const p=sold*(s.markets[s.city][j].price-cost);metrics.realisedProfit+=p;const label=CITIES[s.city]+' / '+GOODS[j][0];routes[label]??={sales:0,profit:0,fees:0};routes[label].sales+=sold;routes[label].profit+=p;}}}
  function localSell(){for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().city===s.city)for(const [j,n] of Object.entries({...ship().cargo}))if(n)tx(+j,n,-1)}s.active=0}
  function borrowIfNeeded(minimum=150){if(s.gold<minimum&&s.debt<creditLimit()){const n=creditLimit()-s.debt;$('loan').value=n;bankOp('borrow');metrics.borrowed+=n}}
  function knownPrice(city,j){if(strategy==='optimized')return s.markets[city][j].price;if(city===s.city)return s.markets[city][j].price;const entry=s.journal[city];return entry?.prices?.[j]??(strategy==='optimized'?null:GOODS[j][2])}
@@ -29,7 +29,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
      if(score>best){best=score;dest=c;good=j;}
    }
  }
- if(dest===s.city){let q=s.quests.find(x=>x.city===s.city&&x.until>=totalDay());if(q){const before=s.completed; s.active=0;let have=ship().cargo[q.j]||0,orig=(ship().origins?.[q.j]||[]).filter(x=>x.city!==s.city).reduce((a,x)=>a+x.n,0);if(have>=q.n&&orig>=q.n){tx(q.j,q.n,-1);if(s.completed>before){metrics.quests++;metrics.questProfit+=q.reward;}}}dest=-1;}
+ if(dest===s.city){let q=s.quests.find(x=>x.city===s.city&&x.until>=totalDay());if(q){s.active=0;let have=ship().cargo[q.j]||0,orig=(ship().origins?.[q.j]||[]).filter(x=>x.city!==s.city).reduce((a,x)=>a+x.n,0);if(have>=q.n&&orig>=q.n){tx(q.j,q.n,-1);}}dest=-1;}
  if(good>=0&&dest>=0&&s.city!==dest){let fee=[4,6,9][ship().type];let n=Math.min(s.markets[s.city][good].stock,capacity()-load(),Math.floor(Math.max(0,s.gold-fee-40)/s.markets[s.city][good].price));if(order?.kind==='source')n=Math.min(n,order.qty);if(n>0&&best>0)tx(good,n,1);}
  if(dest<0||dest===s.city){metrics.deadlock=true;dead=true;break}
  if(s.gold<([4,6,9][ship().type])){borrowIfNeeded(200);if(s.gold<([4,6,9][ship().type])){metrics.deadlock=true;dead=true;break}}

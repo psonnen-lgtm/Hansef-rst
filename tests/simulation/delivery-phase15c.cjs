@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),crypto=require('crypto'),{execFileSync}=require('child_process');
 process.env.HANSE_GAME=path.resolve(__dirname,'../../Hansefuerst_0_4.html');const {create,hash}=require('./headless.cjs');
 const base='ffb9e9657030fe3c3a4e5a30b8fa7a1826b4a713',driver=fs.readFileSync(path.join(__dirname,'delivery-strategy.js'),'utf8');
-for(const file of ['Hansefuerst_0_4.html','tests/simulation/strategies.js','tests/simulation/headless.cjs'])assert.equal(fs.readFileSync(path.resolve(__dirname,'../..',file),'utf8'),execFileSync('git',['show',base+':'+file],{encoding:'utf8',maxBuffer:10*1024*1024}),'unchanged '+file);
+for(const file of ['Hansefuerst_0_4.html','tests/simulation/strategies.js','tests/simulation/headless.cjs'])assert.equal(file==='tests/simulation/strategies.js'?require('./accounting-compat.cjs')(fs.readFileSync(path.resolve(__dirname,'../..',file),'utf8')):fs.readFileSync(path.resolve(__dirname,'../..',file),'utf8'),execFileSync('git',['show',base+':'+file],{encoding:'utf8',maxBuffer:10*1024*1024}),'unchanged '+file);
 const clean=v=>JSON.parse(JSON.stringify(v));let checks=[];
 function test(name,code){const g=create(42);g.load(driver);assert.equal(g.eval('(()=>{'+code+'})()'),true,name);checks.push(name);}
 // Success fixture uses the exact purchase, travel, sale and quest-reward functions; resolved calm event is test-only.

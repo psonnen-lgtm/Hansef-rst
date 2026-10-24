@@ -3,7 +3,7 @@ const fs=require('fs'),path=require('path'),crypto=require('crypto'),assert=requ
 process.env.HANSE_GAME=path.resolve(__dirname,'../../Hansefuerst_0_4.html');
 const {create,hash}=require('./headless.cjs');
 const sources=Object.fromEntries(['strategies.js','delivery-strategy.js','recovery-strategy.js'].map(f=>[f,fs.readFileSync(path.join(__dirname,f),'utf8')]));
-const registry=[...['cautious','normal','aggressive','optimized'].map(id=>({id,family:'trade',information:id==='optimized'?'current_all_markets_oracle':'local_and_journal',horizon:'1440 days / 800 decisions',validation:id==='optimized'?'price access and trade validated; legacy quest policy NOT validated':'observed trade and reserve policy validated',invoke:`simulate('${id}')`})),{id:'delivery',family:'delivery',information:'local_and_journal',horizon:'one regular order / fresh single ship',validation:'single-order delivery and provenance validated; multi-order career NOT validated',invoke:'simulateDelivery()'},...[5,10,20,30].map(n=>({id:'recovery'+n,family:'recovery',information:'loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal',horizon:'up to 160 loss attempts; then 1440 days / 800 recovery decisions',validation:'loss counting and observed recovery validated; policy-specific, not general insolvency probability',invoke:`simulateRecovery(${n})`}))];
+const registry=[...['cautious','normal','aggressive','optimized'].map(id=>({id,family:'trade',information:id==='optimized'?'current_all_markets_oracle':'local_and_journal',horizon:'1440 days / 800 decisions',validation:id==='optimized'?'price access and trade validated; delivery accounting checked; legacy quest routing NOT validated':'observed trade and reserve policy validated',invoke:`simulate('${id}')`})),{id:'delivery',family:'delivery',information:'local_and_journal',horizon:'one regular order / fresh single ship',validation:'single-order delivery and provenance validated; multi-order career NOT validated',invoke:'simulateDelivery()'},...[5,10,20,30].map(n=>({id:'recovery'+n,family:'recovery',information:'loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal',horizon:'up to 160 loss attempts; then 1440 days / 800 recovery decisions',validation:'loss counting and observed recovery validated; policy-specific, not general insolvency probability',invoke:`simulateRecovery(${n})`}))];
 const setup=`
 const __audit={observedDecisions:0,deliveryAssessments:0};
 let __planning=false;
@@ -47,7 +47,7 @@ function runOne(policy,seed){
  let economic=final.gold<final.arrivalFee&&final.bank<1&&final.creditAvailable<1;
  let stopReason=raw.stopReason??(policy.family==='delivery'?raw.status+':'+raw.reason:raw.metrics?.deadlock?'legacy_planner_no_action':raw.days>=1440?'day_limit':'decision_limit');
  const stopping={reason:stopReason,driverReportedBlock:raw.shipStranded??raw.metrics?.deadlock??raw.status==='failed',economicTravelBlocked:economic,shipStranded:economic&&final.shipValue>0};
- const warnings=[];if(policy.id==='optimized')warnings.push('Legacy quest planning is not validated as a delivery policy');if(raw.metrics?.quests!=null&&raw.metrics.quests!==deliveries.completed)warnings.push('Native quest counter differs from actual reward events; uniform event ledger is authoritative');
+ const warnings=[];if(policy.id==='optimized'){assert.equal(raw.metrics.quests,deliveries.completed,'optimized quest counter');assert.equal(raw.metrics.questProfit,deliveries.premiums,'optimized premium counter');warnings.push('Legacy quest routing is not validated as a delivery policy');}if(raw.metrics?.quests!=null&&raw.metrics.quests!==deliveries.completed)warnings.push('Native quest counter differs from actual reward events; uniform event ledger is authoritative');
  return {strategy:policy.id,seed,warnings,initial,final,days:final.day-initial.day,trading,deliveries,costs,finance,career,stopping,audit,raw,events};
 }
 function checkResults(rows){
@@ -68,7 +68,16 @@ function checkHistoricalParity(rows){
  else if(['cautious','normal','aggressive'].includes(r.strategy))old=archive.trade.find(x=>x.seed===r.seed&&x.strategy===r.strategy).result;
  else if(r.strategy==='delivery')old=archive.delivery.find(x=>x.seed===r.seed);
  else old=archive.recovery.find(x=>x.seed===r.seed&&x.targetLosses===r.raw.targetLosses);
- for(const key of Object.keys(r.raw))assert.deepEqual(r.raw[key],old[key],'archived raw behavior '+r.strategy+'/'+r.seed+'/'+key);
+ for(const key of Object.keys(r.raw)){
+  if(r.strategy==='optimized'&&key==='metrics'){
+   // Only these two previously missing counters may differ from archived behavior.
+   const {quests,questProfit,...current}=r.raw.metrics;
+   const {quests:oldQuests,questProfit:oldProfit,...archived}=old.metrics;
+   assert.equal(oldQuests,0);assert.equal(oldProfit,0);
+   assert.equal(quests,r.deliveries.completed);assert.equal(questProfit,r.deliveries.premiums);
+   assert.deepEqual(current,archived,'archived optimized metrics except corrected delivery counters');
+  }else assert.deepEqual(r.raw[key],old[key],'archived raw behavior '+r.strategy+'/'+r.seed+'/'+key);
+ }
  }
 }
 function main(){
