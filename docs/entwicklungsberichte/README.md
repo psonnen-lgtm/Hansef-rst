@@ -58,3 +58,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Version 0.5b – Bauabschnitt 2
 
 24.10.2026 – [Lagerhäuser in allen fünf Städten](2026-10-24_0.5b_lagerhaeuser-alle-staedte.md), [beide Zwischenstände](2026-10-24_0.5b_alle-staedte_fortschritt.md). Gemeinsame Lagerfunktion mit getrennten örtlichen Beständen; Altstände ohne Lager und mit Lübecker Lager geschützt übernommen. 19 bisherige + 13 neue Lagergruppen, 19 Basistests, 18 Regelregressionen und weitere kleine Schutztests bestanden. Chromium: fünf Städte × drei Ansichten; tatsächliche Screenshots gesichert. Geprüfter Spielcode: `f679076ac8c4ed96cf51c24392d889bc3a235fe7`. Keine große Wirtschaftssimulation.
+
+## Version 0.5c – Vier neue Handelswaren
+
+24.10.2026 – [Abschlussbericht mit elf Basispreisen, Startprofilen und v5-Migration](2026-10-24_0.5c_vier-neue-waren.md), [beide Zwischenstände](2026-10-24_0.5c_fortschritt.md). Hanf/Pech/Eisenwaren/Pelze an Indizes 7–10; alle fünf Lager bleiben nutzbar. 16 neue Prüfgruppen plus vorhandene Basis-/Lager-/Regeltests bestanden; Chromium Handy/Tablet/Desktop samt echten Handels-/Lageraktionen, Altstandübernahme und Sicherungsfehlern geprüft. Zwei tatsächliche Bilder gesichert, keine große Wirtschaftssimulation. Geprüfter Spielcode: `2384479fa1d5eb0cda47250265e36097a584451b`.
