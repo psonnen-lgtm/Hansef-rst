@@ -20,3 +20,8 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Nachtrag: Sicherung Phase 1.5e
 
 24.10.2026 – [Sicherungsstatus und fehlender Originalbericht](2026-10-24_0.4.2_phase-1.5e_sicherung.md). Simulatorstand: `1b7c816b7147aef8b8fb4de8231f901289b1c456`; Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`. Ausschließlich alte Ergebnisdateien und Dokumentation übernommen; keine neuen Tests oder Simulationen.
+
+
+## Abschlussauswertung Phase 1.5e
+
+24.10.2026 – [Neue Auswertung der 90 gesicherten historischen Ergebnisse](2026-10-24_0.4.2_phase-1.5e_abschluss.md). Grundlage: `b4dad87c31f70d30eb021158357d42b0500f12fc`; historischer Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`. Keine erneuten Simulationen oder Regressionstests; einschließlich Vergleichsgrenzen und Vorbereitungslücken für 2.250 Läufe.
