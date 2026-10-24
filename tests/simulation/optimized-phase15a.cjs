@@ -7,7 +7,8 @@ const base='dd7d0cb7c2c55672a1223bc099f1a93e79fe40a3';
 const old=execFileSync('git',['show',base+':tests/simulation/strategies.js'],{encoding:'utf8'});
 const driver=fs.readFileSync(path.join(__dirname,'strategies.js'),'utf8');
 const prefix="function knownPrice(city,j){";
-assert.equal(driver,old.replace(prefix,prefix+"if(strategy==='optimized')return s.markets[city][j].price;"),'Only the optimized price guard may change');
+const optimizedBody=driver.split('// Only the three Phase-1.5b policies')[0].replace("\n if(['cautious','normal','aggressive'].includes(strategy))return simulateObserved(strategy,maxDays,maxDecisions);",'').trim();
+assert.equal(optimizedBody,old.replace(prefix,prefix+"if(strategy==='optimized')return s.markets[city][j].price;").trim(),'Legacy optimized body unchanged apart from the phase-1.5a fix');
 assert.equal(fs.readFileSync(process.env.HANSE_GAME,'utf8'),execFileSync('git',['show',base+':Hansefuerst_0_4.html'],{encoding:'utf8',maxBuffer:10*1024*1024}),'Game unchanged');
 function run(seed,source=driver,maxDecisions=800,setup=''){
  const g=create(seed);g.load(source);if(setup)g.eval(setup);
