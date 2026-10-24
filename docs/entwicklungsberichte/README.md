@@ -49,3 +49,8 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Phase 0.5a – Fundament
 
 24.10.2026 – [Städte/Waren technisch erweiterbar vorbereiten](2026-10-24_0.5a_fundament.md), [beide Zwischenstände](2026-10-24_0.5a_fortschritt.md). Zentrale Anzahlen/Indexprüfungen, explizit unveränderte Auftragsauswahl; keine neuen Inhalte oder Wirtschaftsregeln. Zehn neue Kompatibilitätsgruppen, 19 Basistests, 18 Regelregressionen, Informationsschutz, Telemetrie und Teilen bestanden. Speicherformat v4 unverändert; Erweiterungsmigration und 11×15-Geräte-/Kartenarbeit bewusst offen. Geprüfter Spielcode: `c4bfe2badf6fb142aaf3ef63aa40fbbcfb01cbff`.
+
+
+## Phase 0.5b – Erstes Lagerhaus in Lübeck
+
+24.10.2026 – [Abschlussbericht](2026-10-24_0.5b_lagerhaus-luebeck.md), [beide gesicherte Zwischenstände](2026-10-24_0.5b_fortschritt.md) und [mobiler Chromium-Screenshot](2026-10-24_0.5b_lagerhaus-mobile.png). Lagerhaus im Lübecker Kontor, Warenumlagerung mit FIFO-Herkunft/Kosten und konserviertem Vermögen; additive v4-Migration mit Backup. Laut Codex-Zwischenstand 19 Lagerprüfgruppen, 19 Basistests, 18 Regressionen sowie Browserproben bei drei Viewportgrößen bestanden. Abschlussdokumentation nachgetragen; keine neuen Tests hierfür ausgeführt. Keine große Wirtschaftssimulation.
