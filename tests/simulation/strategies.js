@@ -34,7 +34,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  if(strategy==='optimized'&&step%12===0&&s.gold>200){takeBath();metrics.rumors++;let tip=s.rumors[0];if(tip?.special){destination=tip.city}}
  const beforeGold=s.gold,year=s.year,debt=s.debt;pending=null;planTravel(destination);
  if(!pending){dead=true;break}
- const p={...pending};metrics.fees+=p.fee;metrics.pirates+=p.event==='pirates';metrics.defended+=p.event==='defended';metrics.storms+=p.event==='storm';let worthBefore=netWorth();arrive();if(s.year>year)metrics.interest+=s.debt-debt;
+ const p={...pending};metrics.fees+=p.fee;let worthBefore=netWorth();arrive();p.event=pending.event;metrics.pirates+=p.event==='pirates';metrics.defended+=p.event==='defended';metrics.storms+=p.event==='storm';if(s.year>year)metrics.interest+=s.debt-debt;
  let label=CITIES[p.from]+' → '+CITIES[p.dest];incomingRoute=label;route[label]??={trips:0,fees:0,wealthDelta:0,realisedProfit:0};route[label].trips++;route[label].fees+=p.fee;route[label].wealthDelta+=netWorth()-worthBefore;
  let w=netWorth();lowest=Math.min(lowest,w);if(w<=0)dead=true;
  metrics.negativeGold ||=s.gold<0||!Number.isFinite(s.gold);

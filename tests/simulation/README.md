@@ -9,3 +9,6 @@ Mulberry32, Seeds 10001..10250; pro Strategie identische Startseeds, danach stra
 Die optimierte Strategie ist allwissend bezüglich aktueller Preise, die absichtlich schlechte Strategie ebenfalls für die Auswahl besonders schädlicher Geschäfte. Die anderen Strategien verwenden alte Preisaufzeichnungen bzw. Basispreise. Deshalb keine Aussage über typische Spieler oder faire Vergleiche mit perfekter Marktinformation. Details und Grenzen stehen im Bericht. KNOWN-Tests bestätigen vorhandene Exploits; sie sind keine Balancekorrekturen.
 
 Änderungen am Spiel in diesem Schritt: ausschließlich freiwilliges natives Teilen einer Telemetrie-JSON mit Download-Fallback. Bei Abbruch des Teilen-Menüs kein Download. Keine automatische Übertragung. Kein geänderter Spielstandschlüssel und keine Balanceänderung. Funktion auf echten iOS-Geräten noch zu prüfen.
+
+## Phase 1 / 0.4.2
+Der aktuelle Stand enthält ausschließlich die vier in V04-PHASE1.md beschriebenen Korrekturen. Die früheren Aussagen über unveränderte Balance betreffen den damaligen Teilen-Schritt. Aktuelle Vergleichsdaten: phase1-results.json.gz und summary-phase1.json; Baseline im gleichnamigen Unterordner. report.py leitet jetzt zum Vergleichsgenerator compare-phase1.py weiter, damit der alte Bericht nicht versehentlich erneut als aktueller Bericht veröffentlicht wird.
