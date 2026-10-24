@@ -1,0 +1,1640 @@
+{
+  "baseCommit": "ffb9e9657030fe3c3a4e5a30b8fa7a1826b4a713",
+  "gameSHA256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+  "driverSHA256": "ddfd4a3a756f56195cfe2b787b38d6dfe18ef34f4995302f16551994a77be93d",
+  "rng": "mulberry32",
+  "seeds": "10001..10010",
+  "checks": [
+    "foreign shipment earns one reward",
+    "local buy/sell is not delivery",
+    "expired foreign shipment earns no reward",
+    "piracy shortfall cannot complete",
+    "mixed origins do not inflate eligibility",
+    "strategy detects pirate shortfall and no premium",
+    "unknown legacy origin is not delivery",
+    "separate partial sales cannot sum to a delivery",
+    "planning rejects local_source",
+    "planning rejects deadline",
+    "planning rejects capacity",
+    "planning rejects stock",
+    "planning rejects cash",
+    "planning rejects unprofitable",
+    "planning accepts exact deadline, budget, capacity"
+  ],
+  "rows": [
+    {
+      "seed": 10001,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 5,
+        "n": 12,
+        "reward": 1344,
+        "until": 486012,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 468,
+      "realisedTradeProfit": 84,
+      "premium": 1344,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 1416,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 5,
+          "n": 12,
+          "reward": 1344,
+          "until": 486012,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 468,
+          "expectedTradeProfit": 60,
+          "expectedNet": 1392,
+          "sourcePrice": 39,
+          "knownSalePrice": 44,
+          "requiredQuantity": 12,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 5,
+          "quantity": 12,
+          "unitPrice": 39,
+          "origins": [
+            {
+              "city": 1,
+              "n": 12
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 5,
+          "quantity": 12,
+          "eligible": 12,
+          "unitPrice": 46,
+          "realisedTradeProfit": 84,
+          "premium": 1344,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-evtyp10sg6e",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "ships": [
+            {
+              "id": 1700000000000.932,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "pirates",
+          "routeId": "loyw3v29-evtyp10sg6e",
+          "result": "pirates",
+          "ships": [
+            1700000000000.932
+          ]
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.932,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 12,
+          "unitPrice": 39,
+          "total": 468,
+          "averageCost": 39
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-2lo8vjtrrqn",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.932,
+              "cargo": {
+                "5": 12
+              },
+              "costs": {
+                "5": 39
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.932,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 12,
+          "unitPrice": 46,
+          "total": 552,
+          "averageCost": 39,
+          "profit": 84
+        },
+        {
+          "type": "quest_reward",
+          "good": "Tuch",
+          "quantity": 12,
+          "reward": 1344
+        }
+      ]
+    },
+    {
+      "seed": 10002,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 5,
+        "n": 15,
+        "reward": 1680,
+        "until": 486013,
+        "city": 0
+      },
+      "days": 5,
+      "source": 1,
+      "fees": 12,
+      "purchase": 960,
+      "realisedTradeProfit": -255,
+      "premium": 1680,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 1413,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 5,
+          "n": 15,
+          "reward": 1680,
+          "until": 486013,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 960,
+          "expectedTradeProfit": -285,
+          "expectedNet": 1383,
+          "sourcePrice": 64,
+          "knownSalePrice": 45,
+          "requiredQuantity": 15,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 5,
+          "quantity": 15,
+          "unitPrice": 64,
+          "origins": [
+            {
+              "city": 1,
+              "n": 15
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 3,
+          "fee": 6,
+          "event": null,
+          "day": 486006
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 5,
+          "quantity": 15,
+          "eligible": 15,
+          "unitPrice": 47,
+          "realisedTradeProfit": -255,
+          "premium": 1680,
+          "day": 486006,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-kpitj5ck52i",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "ships": [
+            {
+              "id": 1700000000000.1462,
+              "cargo": {},
+              "costs": {},
+              "condition": 91
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.1462,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 15,
+          "unitPrice": 64,
+          "total": 960,
+          "averageCost": 64
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-ik9m7lfw3i",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 3,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.1462,
+              "cargo": {
+                "5": 15
+              },
+              "costs": {
+                "5": 64
+              },
+              "condition": 91
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.1462,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 15,
+          "unitPrice": 47,
+          "total": 705,
+          "averageCost": 64,
+          "profit": -255
+        },
+        {
+          "type": "quest_reward",
+          "good": "Tuch",
+          "quantity": 15,
+          "reward": 1680
+        }
+      ]
+    },
+    {
+      "seed": 10003,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 0,
+        "n": 17,
+        "reward": 544,
+        "until": 486012,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 306,
+      "realisedTradeProfit": 34,
+      "premium": 544,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 566,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 0,
+          "n": 17,
+          "reward": 544,
+          "until": 486012,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 306,
+          "expectedTradeProfit": 17,
+          "expectedNet": 549,
+          "sourcePrice": 18,
+          "knownSalePrice": 19,
+          "requiredQuantity": 17,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 0,
+          "quantity": 17,
+          "unitPrice": 18,
+          "origins": [
+            {
+              "city": 1,
+              "n": 17
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 0,
+          "quantity": 17,
+          "eligible": 17,
+          "unitPrice": 20,
+          "realisedTradeProfit": 34,
+          "premium": 544,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-3jttviwxc4n",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.9827,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.9827,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 17,
+          "unitPrice": 18,
+          "total": 306,
+          "averageCost": 18
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-9bmiqnxsvbj",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.9827,
+              "cargo": {
+                "0": 17
+              },
+              "costs": {
+                "0": 18
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.9827,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 17,
+          "unitPrice": 20,
+          "total": 340,
+          "averageCost": 18,
+          "profit": 34
+        },
+        {
+          "type": "quest_reward",
+          "good": "Getreide",
+          "quantity": 17,
+          "reward": 544
+        }
+      ]
+    },
+    {
+      "seed": 10004,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 5,
+        "n": 18,
+        "reward": 2016,
+        "until": 486014,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 828,
+      "realisedTradeProfit": -126,
+      "premium": 2016,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 1878,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 5,
+          "n": 18,
+          "reward": 2016,
+          "until": 486014,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 828,
+          "expectedTradeProfit": -90,
+          "expectedNet": 1914,
+          "sourcePrice": 46,
+          "knownSalePrice": 41,
+          "requiredQuantity": 18,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 5,
+          "quantity": 18,
+          "unitPrice": 46,
+          "origins": [
+            {
+              "city": 1,
+              "n": 18
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 5,
+          "quantity": 18,
+          "eligible": 18,
+          "unitPrice": 39,
+          "realisedTradeProfit": -126,
+          "premium": 2016,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-zb3n1k2gnn",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3262,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3262,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 18,
+          "unitPrice": 46,
+          "total": 828,
+          "averageCost": 46
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-4bn34vzd1dn",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "ships": [
+            {
+              "id": 1700000000000.3262,
+              "cargo": {
+                "5": 18
+              },
+              "costs": {
+                "5": 46
+              },
+              "condition": 91
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3262,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 18,
+          "unitPrice": 39,
+          "total": 702,
+          "averageCost": 46,
+          "profit": -126
+        },
+        {
+          "type": "quest_reward",
+          "good": "Tuch",
+          "quantity": 18,
+          "reward": 2016
+        }
+      ]
+    },
+    {
+      "seed": 10005,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 4,
+        "n": 14,
+        "reward": 616,
+        "until": 486011,
+        "city": 0
+      },
+      "days": 5,
+      "source": 1,
+      "fees": 12,
+      "purchase": 224,
+      "realisedTradeProfit": 70,
+      "premium": 616,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 674,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 4,
+          "n": 14,
+          "reward": 616,
+          "until": 486011,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 224,
+          "expectedTradeProfit": 70,
+          "expectedNet": 674,
+          "sourcePrice": 16,
+          "knownSalePrice": 21,
+          "requiredQuantity": 14,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 4,
+          "quantity": 14,
+          "unitPrice": 16,
+          "origins": [
+            {
+              "city": 1,
+              "n": 14
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 3,
+          "fee": 6,
+          "event": null,
+          "day": 486006
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 4,
+          "quantity": 14,
+          "eligible": 14,
+          "unitPrice": 21,
+          "realisedTradeProfit": 70,
+          "premium": 616,
+          "day": 486006,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-j9kexzosp8",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "ships": [
+            {
+              "id": 1700000000000.4941,
+              "cargo": {},
+              "costs": {},
+              "condition": 95
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.4941,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 14,
+          "unitPrice": 16,
+          "total": 224,
+          "averageCost": 16
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-8k7v0t9av8p",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 3,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.4941,
+              "cargo": {
+                "4": 14
+              },
+              "costs": {
+                "4": 16
+              },
+              "condition": 95
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.4941,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 14,
+          "unitPrice": 21,
+          "total": 294,
+          "averageCost": 16,
+          "profit": 70
+        },
+        {
+          "type": "quest_reward",
+          "good": "Fisch",
+          "quantity": 14,
+          "reward": 616
+        }
+      ]
+    },
+    {
+      "seed": 10006,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 1,
+        "n": 7,
+        "reward": 350,
+        "until": 486012,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 175,
+      "realisedTradeProfit": 7,
+      "premium": 350,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 345,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 1,
+          "n": 7,
+          "reward": 350,
+          "until": 486012,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 175,
+          "expectedTradeProfit": 7,
+          "expectedNet": 345,
+          "sourcePrice": 25,
+          "knownSalePrice": 26,
+          "requiredQuantity": 7,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 1,
+          "quantity": 7,
+          "unitPrice": 25,
+          "origins": [
+            {
+              "city": 1,
+              "n": 7
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": "defended",
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 1,
+          "quantity": 7,
+          "eligible": 7,
+          "unitPrice": 26,
+          "realisedTradeProfit": 7,
+          "premium": 350,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-leyi0apc1nk",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.1558,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.1558,
+          "routeId": null,
+          "good": "Bier",
+          "quantity": 7,
+          "unitPrice": 25,
+          "total": 175,
+          "averageCost": 25
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-csdlbd5a27f",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": "defended",
+          "ships": [
+            {
+              "id": 1700000000000.1558,
+              "cargo": {
+                "1": 7
+              },
+              "costs": {
+                "1": 25
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "pirates",
+          "routeId": "loyw3v2a-csdlbd5a27f",
+          "result": "defended",
+          "ships": [
+            1700000000000.1558
+          ]
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.1558,
+          "routeId": null,
+          "good": "Bier",
+          "quantity": 7,
+          "unitPrice": 26,
+          "total": 182,
+          "averageCost": 25,
+          "profit": 7
+        },
+        {
+          "type": "quest_reward",
+          "good": "Bier",
+          "quantity": 7,
+          "reward": 350
+        }
+      ]
+    },
+    {
+      "seed": 10007,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 3,
+        "n": 7,
+        "reward": 434,
+        "until": 486015,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 245,
+      "realisedTradeProfit": 49,
+      "premium": 434,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 471,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 3,
+          "n": 7,
+          "reward": 434,
+          "until": 486015,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 245,
+          "expectedTradeProfit": 35,
+          "expectedNet": 457,
+          "sourcePrice": 35,
+          "knownSalePrice": 40,
+          "requiredQuantity": 7,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 3,
+          "quantity": 7,
+          "unitPrice": 35,
+          "origins": [
+            {
+              "city": 1,
+              "n": 7
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 3,
+          "quantity": 7,
+          "eligible": 7,
+          "unitPrice": 42,
+          "realisedTradeProfit": 49,
+          "premium": 434,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-o3664tjbv3k",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.543,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.543,
+          "routeId": null,
+          "good": "Salz",
+          "quantity": 7,
+          "unitPrice": 35,
+          "total": 245,
+          "averageCost": 35
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-h8b58fnov5v",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.543,
+              "cargo": {
+                "3": 7
+              },
+              "costs": {
+                "3": 35
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.543,
+          "routeId": null,
+          "good": "Salz",
+          "quantity": 7,
+          "unitPrice": 42,
+          "total": 294,
+          "averageCost": 35,
+          "profit": 49
+        },
+        {
+          "type": "quest_reward",
+          "good": "Salz",
+          "quantity": 7,
+          "reward": 434
+        }
+      ]
+    },
+    {
+      "seed": 10008,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 5,
+        "n": 6,
+        "reward": 672,
+        "until": 486015,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 318,
+      "realisedTradeProfit": 42,
+      "premium": 672,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 702,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 5,
+          "n": 6,
+          "reward": 672,
+          "until": 486015,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 318,
+          "expectedTradeProfit": 6,
+          "expectedNet": 666,
+          "sourcePrice": 53,
+          "knownSalePrice": 54,
+          "requiredQuantity": 6,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 5,
+          "quantity": 6,
+          "unitPrice": 53,
+          "origins": [
+            {
+              "city": 1,
+              "n": 6
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 5,
+          "quantity": 6,
+          "eligible": 6,
+          "unitPrice": 60,
+          "realisedTradeProfit": 42,
+          "premium": 672,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-zc51pmxkkrf",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.5542,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.5542,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 6,
+          "unitPrice": 53,
+          "total": 318,
+          "averageCost": 53
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-qcu2mxdkz6r",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.5542,
+              "cargo": {
+                "5": 6
+              },
+              "costs": {
+                "5": 53
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.5542,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 6,
+          "unitPrice": 60,
+          "total": 360,
+          "averageCost": 53,
+          "profit": 42
+        },
+        {
+          "type": "quest_reward",
+          "good": "Tuch",
+          "quantity": 6,
+          "reward": 672
+        }
+      ]
+    },
+    {
+      "seed": 10009,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 0,
+        "n": 16,
+        "reward": 512,
+        "until": 486009,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 176,
+      "realisedTradeProfit": 128,
+      "premium": 512,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 628,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 0,
+          "n": 16,
+          "reward": 512,
+          "until": 486009,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 176,
+          "expectedTradeProfit": 128,
+          "expectedNet": 628,
+          "sourcePrice": 11,
+          "knownSalePrice": 19,
+          "requiredQuantity": 16,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 0,
+          "quantity": 16,
+          "unitPrice": 11,
+          "origins": [
+            {
+              "city": 1,
+              "n": 16
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 0,
+          "quantity": 16,
+          "eligible": 16,
+          "unitPrice": 19,
+          "realisedTradeProfit": 128,
+          "premium": 512,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-uwdjl2ie8j8",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3628,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3628,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 16,
+          "unitPrice": 11,
+          "total": 176,
+          "averageCost": 11
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-j3dahq5flq",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3628,
+              "cargo": {
+                "0": 16
+              },
+              "costs": {
+                "0": 11
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3628,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 16,
+          "unitPrice": 19,
+          "total": 304,
+          "averageCost": 11,
+          "profit": 128
+        },
+        {
+          "type": "quest_reward",
+          "good": "Getreide",
+          "quantity": 16,
+          "reward": 512
+        }
+      ]
+    },
+    {
+      "seed": 10010,
+      "strategy": "delivery",
+      "status": "completed",
+      "reason": "regular_delivery",
+      "seedOrder": {
+        "j": 5,
+        "n": 6,
+        "reward": 672,
+        "until": 486010,
+        "city": 0
+      },
+      "days": 4,
+      "source": 1,
+      "fees": 12,
+      "purchase": 402,
+      "realisedTradeProfit": -48,
+      "premium": 672,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
+      "cashDelta": 612,
+      "completed": 1,
+      "trace": [
+        {
+          "action": "offer",
+          "j": 5,
+          "n": 6,
+          "reward": 672,
+          "until": 486010,
+          "city": 0,
+          "day": 486001
+        },
+        {
+          "action": "travel",
+          "from": 0,
+          "to": 1,
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "day": 486003
+        },
+        {
+          "action": "assessment",
+          "ok": true,
+          "purchase": 402,
+          "expectedTradeProfit": -48,
+          "expectedNet": 612,
+          "sourcePrice": 67,
+          "knownSalePrice": 59,
+          "requiredQuantity": 6,
+          "day": 486003
+        },
+        {
+          "action": "buy",
+          "city": 1,
+          "good": 5,
+          "quantity": 6,
+          "unitPrice": 67,
+          "origins": [
+            {
+              "city": 1,
+              "n": 6
+            }
+          ],
+          "day": 486003
+        },
+        {
+          "action": "travel",
+          "from": 1,
+          "to": 0,
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "day": 486005
+        },
+        {
+          "action": "sell",
+          "city": 0,
+          "good": 5,
+          "quantity": 6,
+          "eligible": 6,
+          "unitPrice": 59,
+          "realisedTradeProfit": -48,
+          "premium": 672,
+          "day": 486005,
+          "completedBefore": 0,
+          "completedAfter": 1
+        }
+      ],
+      "events": [
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-niqy869z94c",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "ships": [
+            {
+              "id": 1700000000000.3296,
+              "cargo": {},
+              "costs": {},
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "pirates",
+          "routeId": "loyw3v29-niqy869z94c",
+          "result": "pirates",
+          "ships": [
+            1700000000000.3296
+          ]
+        },
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3296,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 6,
+          "unitPrice": 67,
+          "total": 402,
+          "averageCost": 67
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v2a-heyf89gczx",
+          "from": "Hamburg",
+          "to": "Lübeck",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3296,
+              "cargo": {
+                "5": 6
+              },
+              "costs": {
+                "5": 67
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3296,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 6,
+          "unitPrice": 59,
+          "total": 354,
+          "averageCost": 67,
+          "profit": -48
+        },
+        {
+          "type": "quest_reward",
+          "good": "Tuch",
+          "quantity": 6,
+          "reward": 672
+        }
+      ]
+    }
+  ]
+}

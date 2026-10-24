@@ -1,0 +1,2143 @@
+{
+  "phase": "1.5a",
+  "baseCommit": "dd7d0cb7c2c55672a1223bc099f1a93e79fe40a3",
+  "gameSHA256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+  "strategySHA256": "b89ac63e28360b1e54cdf4818dbc89a33d3cb6a0c009658ebb8d6828ad79be69",
+  "rng": "mulberry32",
+  "seeds": "10001..10010",
+  "maxDays": 1440,
+  "maxDecisions": 800,
+  "checks": [
+    "only optimized guard changed",
+    "game byte-identical",
+    "old first-decision deadlock reproduced",
+    "current markets beat contradictory journal",
+    "profitable buy/travel/sell fixture",
+    "ten deterministic replays",
+    "ten nonempty trading runs",
+    "state invariants"
+  ],
+  "beforeFirstDecision": {
+    "buy": 0,
+    "sell": 0,
+    "travel": 0,
+    "deadlock": true
+  },
+  "rows": [
+    {
+      "seed": 10001,
+      "buy": 483,
+      "sell": 482,
+      "travel": 483,
+      "deadlock": false,
+      "days": 1441,
+      "decisions": 483,
+      "wealth": 515526,
+      "realisedProfit": 506921,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.932,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 12,
+          "unitPrice": 44,
+          "total": 528,
+          "averageCost": 44
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-evtyp10sg6e",
+          "from": "Lübeck",
+          "to": "Rostock",
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "ships": [
+            {
+              "id": 1700000000000.932,
+              "cargo": {
+                "5": 10
+              },
+              "costs": {
+                "5": 44
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.932,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 10,
+          "unitPrice": 60,
+          "total": 600,
+          "averageCost": 44,
+          "profit": 160
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1441,
+        "wealth": 515526,
+        "gold": 512085,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 614,
+          "decision": 208
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9866,
+        "recovered": false,
+        "metrics": {
+          "fees": 2898,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 41,
+          "storms": 67,
+          "realisedProfit": 506921,
+          "decisions": 483,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Rostock": {
+            "trips": 201,
+            "fees": 1206,
+            "wealthDelta": -3258.899999999998
+          },
+          "Rostock / Tuch": {
+            "sales": 4065,
+            "profit": 271670,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 41,
+            "fees": 246,
+            "wealthDelta": -541.0999999999985
+          },
+          "Stralsund / Salz": {
+            "sales": 338,
+            "profit": 6683,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 39,
+            "fees": 234,
+            "wealthDelta": -856
+          },
+          "Rostock → Lübeck": {
+            "trips": 198,
+            "fees": 1188,
+            "wealthDelta": -2461.0000000000036
+          },
+          "Lübeck / Salz": {
+            "sales": 2071,
+            "profit": 102663,
+            "fees": 0
+          },
+          "Lübeck / Hansegras": {
+            "sales": 1572,
+            "profit": 71923,
+            "fees": 0
+          },
+          "Stralsund / Hansegras": {
+            "sales": 504,
+            "profit": 29902,
+            "fees": 0
+          },
+          "Lübeck / Bier": {
+            "sales": 467,
+            "profit": 11243,
+            "fees": 0
+          },
+          "Stralsund / Fisch": {
+            "sales": 389,
+            "profit": 8975,
+            "fees": 0
+          },
+          "Stralsund → Lübeck": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          },
+          "Rostock / Hansegras": {
+            "sales": 100,
+            "profit": 3126,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Stralsund / Tuch": {
+            "sales": 8,
+            "profit": 736,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 177
+      }
+    },
+    {
+      "seed": 10002,
+      "buy": 479,
+      "sell": 478,
+      "travel": 479,
+      "deadlock": false,
+      "days": 1440,
+      "decisions": 479,
+      "wealth": 603597,
+      "realisedProfit": 594915,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.1462,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 15,
+          "unitPrice": 45,
+          "total": 675,
+          "averageCost": 45
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-kpitj5ck52i",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "ships": [
+            {
+              "id": 1700000000000.1462,
+              "cargo": {
+                "5": 15
+              },
+              "costs": {
+                "5": 45
+              },
+              "condition": 91
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.1462,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 15,
+          "unitPrice": 64,
+          "total": 960,
+          "averageCost": 45,
+          "profit": 285
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1440,
+        "wealth": 603597,
+        "gold": 600156,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 587,
+          "decision": 195
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9758.7,
+        "recovered": false,
+        "metrics": {
+          "fees": 2874,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 37,
+          "storms": 61,
+          "realisedProfit": 594915,
+          "decisions": 479,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Hamburg": {
+            "trips": 117,
+            "fees": 702,
+            "wealthDelta": -1714.7000000000007
+          },
+          "Hamburg / Tuch": {
+            "sales": 201,
+            "profit": 5396,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 114,
+            "fees": 684,
+            "wealthDelta": -1714.0999999999985
+          },
+          "Lübeck / Hansegras": {
+            "sales": 231,
+            "profit": 5841,
+            "fees": 0
+          },
+          "Hamburg → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Rostock / Holz": {
+            "sales": 14,
+            "profit": 196,
+            "fees": 0
+          },
+          "Rostock → Lübeck": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -71.10000000000036
+          },
+          "Hamburg → Stralsund": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Stralsund / Hansegras": {
+            "sales": 1746,
+            "profit": 124045,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 122,
+            "fees": 732,
+            "wealthDelta": -1365.5
+          },
+          "Stettin / Tuch": {
+            "sales": 1716,
+            "profit": 117231,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 122,
+            "fees": 732,
+            "wealthDelta": -2890.5999999999985
+          },
+          "Stralsund → Lübeck": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Lübeck / Tuch": {
+            "sales": 1359,
+            "profit": 72820,
+            "fees": 0
+          },
+          "Hamburg / Hansegras": {
+            "sales": 1543,
+            "profit": 214288,
+            "fees": 0
+          },
+          "Lübeck / Fisch": {
+            "sales": 976,
+            "profit": 55098,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 177
+      }
+    },
+    {
+      "seed": 10003,
+      "buy": 466,
+      "sell": 465,
+      "travel": 466,
+      "deadlock": false,
+      "days": 1440,
+      "decisions": 466,
+      "wealth": 617083,
+      "realisedProfit": 605184,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.9827,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 17,
+          "unitPrice": 44,
+          "total": 748,
+          "averageCost": 44
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-a74mzxld2yl",
+          "from": "Lübeck",
+          "to": "Stralsund",
+          "days": 3,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.9827,
+              "cargo": {
+                "5": 17
+              },
+              "costs": {
+                "5": 44
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.9827,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 17,
+          "unitPrice": 59,
+          "total": 1003,
+          "averageCost": 44,
+          "profit": 255
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1440,
+        "wealth": 617083,
+        "gold": 613642,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 553,
+          "decision": 175
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2796,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 25,
+          "storms": 63,
+          "realisedProfit": 605184,
+          "decisions": 466,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Stralsund": {
+            "trips": 27,
+            "fees": 162,
+            "wealthDelta": -399.5
+          },
+          "Stralsund / Tuch": {
+            "sales": 1861,
+            "profit": 52972,
+            "fees": 0
+          },
+          "Stralsund → Lübeck": {
+            "trips": 22,
+            "fees": 132,
+            "wealthDelta": -613.5
+          },
+          "Lübeck / Hansegras": {
+            "sales": 2293,
+            "profit": 124143,
+            "fees": 0
+          },
+          "Lübeck → Hamburg": {
+            "trips": 73,
+            "fees": 438,
+            "wealthDelta": -1213.7000000000044
+          },
+          "Hamburg / Salz": {
+            "sales": 248,
+            "profit": 1729,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 72,
+            "fees": 432,
+            "wealthDelta": -1041.2000000000007
+          },
+          "Hamburg / Holz": {
+            "sales": 904,
+            "profit": 15844,
+            "fees": 0
+          },
+          "Lübeck → Rostock": {
+            "trips": 44,
+            "fees": 264,
+            "wealthDelta": -364
+          },
+          "Rostock / Fisch": {
+            "sales": 105,
+            "profit": 1230,
+            "fees": 0
+          },
+          "Rostock → Lübeck": {
+            "trips": 49,
+            "fees": 294,
+            "wealthDelta": -392
+          },
+          "Lübeck / Bier": {
+            "sales": 11,
+            "profit": 132,
+            "fees": 0
+          },
+          "Stralsund / Holz": {
+            "sales": 408,
+            "profit": 6043,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 76,
+            "fees": 456,
+            "wealthDelta": -1240.0999999999985
+          },
+          "Stettin / Hansegras": {
+            "sales": 354,
+            "profit": 11387,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 74,
+            "fees": 444,
+            "wealthDelta": -595
+          },
+          "Stettin / Bier": {
+            "sales": 1297,
+            "profit": 42847,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 15,
+            "fees": 90,
+            "wealthDelta": -160
+          },
+          "Rostock / Hansegras": {
+            "sales": 983,
+            "profit": 62994,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 12,
+            "fees": 72,
+            "wealthDelta": -102
+          },
+          "Stettin → Rostock": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -12
+          },
+          "Rostock / Bier": {
+            "sales": 395,
+            "profit": 15210,
+            "fees": 0
+          },
+          "Stralsund / Hansegras": {
+            "sales": 965,
+            "profit": 95720,
+            "fees": 0
+          },
+          "Lübeck / Salz": {
+            "sales": 1597,
+            "profit": 76438,
+            "fees": 0
+          },
+          "Hamburg / Hansegras": {
+            "sales": 644,
+            "profit": 46834,
+            "fees": 0
+          },
+          "Lübeck / Fisch": {
+            "sales": 1083,
+            "profit": 51661,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 150
+      }
+    },
+    {
+      "seed": 10004,
+      "buy": 369,
+      "sell": 367,
+      "travel": 369,
+      "deadlock": false,
+      "days": 1440,
+      "decisions": 369,
+      "wealth": 685435,
+      "realisedProfit": 671149,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3262,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 18,
+          "unitPrice": 89,
+          "total": 1602,
+          "averageCost": 89
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-zb3n1k2gnn",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3262,
+              "cargo": {
+                "6": 18
+              },
+              "costs": {
+                "6": 89
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3262,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 18,
+          "unitPrice": 109,
+          "total": 1962,
+          "averageCost": 89,
+          "profit": 360
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1440,
+        "wealth": 685435,
+        "gold": 681994,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 463,
+          "decision": 108
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2214,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 33,
+          "storms": 51,
+          "realisedProfit": 671149,
+          "decisions": 369,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Hamburg": {
+            "trips": 49,
+            "fees": 294,
+            "wealthDelta": -893.1000000000058
+          },
+          "Hamburg / Hansegras": {
+            "sales": 1996,
+            "profit": 191342,
+            "fees": 0
+          },
+          "Hamburg → Stralsund": {
+            "trips": 44,
+            "fees": 264,
+            "wealthDelta": -697.2000000000007
+          },
+          "Stralsund / Tuch": {
+            "sales": 4946,
+            "profit": 275051,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 15,
+            "fees": 90,
+            "wealthDelta": -592.7000000000007
+          },
+          "Rostock / Hansegras": {
+            "sales": 377,
+            "profit": 17835,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 18,
+            "fees": 108,
+            "wealthDelta": -786.5
+          },
+          "Stralsund → Hamburg": {
+            "trips": 42,
+            "fees": 252,
+            "wealthDelta": -598.9000000000015
+          },
+          "Hamburg → Lübeck": {
+            "trips": 47,
+            "fees": 282,
+            "wealthDelta": -1093.2999999999993
+          },
+          "Lübeck / Holz": {
+            "sales": 990,
+            "profit": 20732,
+            "fees": 0
+          },
+          "Lübeck / Salz": {
+            "sales": 287,
+            "profit": 5080,
+            "fees": 0
+          },
+          "Rostock → Lübeck": {
+            "trips": 7,
+            "fees": 42,
+            "wealthDelta": -237.3000000000029
+          },
+          "Stralsund → Stettin": {
+            "trips": 27,
+            "fees": 162,
+            "wealthDelta": -495
+          },
+          "Stettin / Hansegras": {
+            "sales": 604,
+            "profit": 31731,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 27,
+            "fees": 162,
+            "wealthDelta": -162
+          },
+          "Stralsund → Lübeck": {
+            "trips": 44,
+            "fees": 264,
+            "wealthDelta": -856
+          },
+          "Lübeck / Hansegras": {
+            "sales": 1263,
+            "profit": 91566,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 39,
+            "fees": 234,
+            "wealthDelta": -454
+          },
+          "Hamburg / Getreide": {
+            "sales": 229,
+            "profit": 11719,
+            "fees": 0
+          },
+          "Lübeck → Rostock": {
+            "trips": 10,
+            "fees": 60,
+            "wealthDelta": -60
+          },
+          "Rostock / Fisch": {
+            "sales": 461,
+            "profit": 24275,
+            "fees": 0
+          },
+          "Hamburg / Fisch": {
+            "sales": 36,
+            "profit": 1818,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 121
+      }
+    },
+    {
+      "seed": 10005,
+      "buy": 414,
+      "sell": 412,
+      "travel": 414,
+      "deadlock": false,
+      "days": 1443,
+      "decisions": 414,
+      "wealth": 657183,
+      "realisedProfit": 642899,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.4941,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 14,
+          "unitPrice": 72,
+          "total": 1008,
+          "averageCost": 72
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-j9kexzosp8",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "ships": [
+            {
+              "id": 1700000000000.4941,
+              "cargo": {
+                "6": 14
+              },
+              "costs": {
+                "6": 72
+              },
+              "condition": 95
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.4941,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 14,
+          "unitPrice": 91,
+          "total": 1274,
+          "averageCost": 72,
+          "profit": 266
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1443,
+        "wealth": 657183,
+        "gold": 653742,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 560,
+          "decision": 172
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9845.5,
+        "recovered": false,
+        "metrics": {
+          "fees": 2484,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 35,
+          "storms": 54,
+          "realisedProfit": 642899,
+          "decisions": 414,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Hamburg": {
+            "trips": 29,
+            "fees": 174,
+            "wealthDelta": -1479.1000000000022
+          },
+          "Hamburg / Hansegras": {
+            "sales": 366,
+            "profit": 11757,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 29,
+            "fees": 174,
+            "wealthDelta": -665.4000000000015
+          },
+          "Lübeck / Tuch": {
+            "sales": 82,
+            "profit": 712,
+            "fees": 0
+          },
+          "Lübeck / Bier": {
+            "sales": 331,
+            "profit": 5785,
+            "fees": 0
+          },
+          "Lübeck / Salz": {
+            "sales": 150,
+            "profit": 2676,
+            "fees": 0
+          },
+          "Hamburg / Holz": {
+            "sales": 126,
+            "profit": 1404,
+            "fees": 0
+          },
+          "Hamburg / Tuch": {
+            "sales": 440,
+            "profit": 8150,
+            "fees": 0
+          },
+          "Lübeck / Hansegras": {
+            "sales": 2071,
+            "profit": 164200,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 83,
+            "fees": 498,
+            "wealthDelta": -526
+          },
+          "Stralsund / Getreide": {
+            "sales": 456,
+            "profit": 7768,
+            "fees": 0
+          },
+          "Stralsund → Lübeck": {
+            "trips": 83,
+            "fees": 498,
+            "wealthDelta": -1448.5
+          },
+          "Stralsund / Tuch": {
+            "sales": 3998,
+            "profit": 337322,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 22,
+            "fees": 132,
+            "wealthDelta": -312
+          },
+          "Stettin / Bier": {
+            "sales": 868,
+            "profit": 30934,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 22,
+            "fees": 132,
+            "wealthDelta": -186
+          },
+          "Stettin → Rostock": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -12
+          },
+          "Rostock / Hansegras": {
+            "sales": 1178,
+            "profit": 49606,
+            "fees": 0
+          },
+          "Rostock → Stettin": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -12
+          },
+          "Stettin → Hamburg": {
+            "trips": 4,
+            "fees": 24,
+            "wealthDelta": -24
+          },
+          "Hamburg → Stettin": {
+            "trips": 4,
+            "fees": 24,
+            "wealthDelta": -42
+          },
+          "Stralsund → Rostock": {
+            "trips": 67,
+            "fees": 402,
+            "wealthDelta": -873
+          },
+          "Rostock → Stralsund": {
+            "trips": 67,
+            "fees": 402,
+            "wealthDelta": -638
+          },
+          "Stettin / Hansegras": {
+            "sales": 14,
+            "profit": 861,
+            "fees": 0
+          },
+          "Rostock / Getreide": {
+            "sales": 356,
+            "profit": 21724,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 179
+      }
+    },
+    {
+      "seed": 10006,
+      "buy": 476,
+      "sell": 476,
+      "travel": 476,
+      "deadlock": false,
+      "days": 1441,
+      "decisions": 476,
+      "wealth": 662308,
+      "realisedProfit": 649701,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.1558,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 7,
+          "unitPrice": 90,
+          "total": 630,
+          "averageCost": 90
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-leyi0apc1nk",
+          "from": "Lübeck",
+          "to": "Rostock",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.1558,
+              "cargo": {
+                "6": 7
+              },
+              "costs": {
+                "6": 90
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.1558,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 7,
+          "unitPrice": 104,
+          "total": 728,
+          "averageCost": 90,
+          "profit": 98
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1441,
+        "wealth": 662308,
+        "gold": 658867,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 440,
+          "decision": 147
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2856,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 27,
+          "storms": 68,
+          "realisedProfit": 649701,
+          "decisions": 476,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Rostock": {
+            "trips": 12,
+            "fees": 72,
+            "wealthDelta": -72
+          },
+          "Rostock / Hansegras": {
+            "sales": 3751,
+            "profit": 312245,
+            "fees": 0
+          },
+          "Rostock → Hamburg": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -12
+          },
+          "Hamburg / Salz": {
+            "sales": 180,
+            "profit": 2610,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 5,
+            "fees": 30,
+            "wealthDelta": -30
+          },
+          "Lübeck / Tuch": {
+            "sales": 322,
+            "profit": 6336,
+            "fees": 0
+          },
+          "Lübeck → Hamburg": {
+            "trips": 4,
+            "fees": 24,
+            "wealthDelta": -81
+          },
+          "Hamburg / Hansegras": {
+            "sales": 76,
+            "profit": 1064,
+            "fees": 0
+          },
+          "Rostock → Lübeck": {
+            "trips": 10,
+            "fees": 60,
+            "wealthDelta": -146.79999999999927
+          },
+          "Hamburg / Holz": {
+            "sales": 167,
+            "profit": 1089,
+            "fees": 0
+          },
+          "Rostock / Bier": {
+            "sales": 110,
+            "profit": 592,
+            "fees": 0
+          },
+          "Hamburg → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Lübeck / Salz": {
+            "sales": 48,
+            "profit": 939,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 209,
+            "fees": 1254,
+            "wealthDelta": -2188.799999999981
+          },
+          "Stralsund / Tuch": {
+            "sales": 1451,
+            "profit": 129063,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 205,
+            "fees": 1230,
+            "wealthDelta": -2922.8000000000065
+          },
+          "Stralsund / Fisch": {
+            "sales": 2350,
+            "profit": 145547,
+            "fees": 0
+          },
+          "Rostock → Stettin": {
+            "trips": 8,
+            "fees": 48,
+            "wealthDelta": -221.60000000000582
+          },
+          "Stettin / Tuch": {
+            "sales": 680,
+            "profit": 44717,
+            "fees": 0
+          },
+          "Stettin → Rostock": {
+            "trips": 11,
+            "fees": 66,
+            "wealthDelta": -66
+          },
+          "Stralsund → Stettin": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          },
+          "Stralsund → Lübeck": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          },
+          "Lübeck / Hansegras": {
+            "sales": 57,
+            "profit": 5499,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 149
+      }
+    },
+    {
+      "seed": 10007,
+      "buy": 445,
+      "sell": 443,
+      "travel": 445,
+      "deadlock": false,
+      "days": 1442,
+      "decisions": 445,
+      "wealth": 626452,
+      "realisedProfit": 614987,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.543,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 7,
+          "unitPrice": 70,
+          "total": 490,
+          "averageCost": 70
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-o3664tjbv3k",
+          "from": "Lübeck",
+          "to": "Rostock",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.543,
+              "cargo": {
+                "6": 7
+              },
+              "costs": {
+                "6": 70
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.543,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 7,
+          "unitPrice": 96,
+          "total": 672,
+          "averageCost": 70,
+          "profit": 182
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1442,
+        "wealth": 626452,
+        "gold": 623011,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 605,
+          "decision": 204
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2670,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 33,
+          "storms": 54,
+          "realisedProfit": 614987,
+          "decisions": 445,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Rostock / Hansegras": {
+            "sales": 268,
+            "profit": 7265,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 165,
+            "fees": 990,
+            "wealthDelta": -3634.399999999994
+          },
+          "Stralsund / Tuch": {
+            "sales": 1645,
+            "profit": 94229,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 165,
+            "fees": 990,
+            "wealthDelta": -1972.6000000000058
+          },
+          "Rostock / Salz": {
+            "sales": 1154,
+            "profit": 46138,
+            "fees": 0
+          },
+          "Stralsund / Hansegras": {
+            "sales": 1255,
+            "profit": 72574,
+            "fees": 0
+          },
+          "Rostock / Fisch": {
+            "sales": 3185,
+            "profit": 321112,
+            "fees": 0
+          },
+          "Rostock → Hamburg": {
+            "trips": 33,
+            "fees": 198,
+            "wealthDelta": -326
+          },
+          "Hamburg / Hansegras": {
+            "sales": 525,
+            "profit": 37677,
+            "fees": 0
+          },
+          "Hamburg → Rostock": {
+            "trips": 33,
+            "fees": 198,
+            "wealthDelta": -284
+          },
+          "Rostock → Stettin": {
+            "trips": 24,
+            "fees": 144,
+            "wealthDelta": -312
+          },
+          "Stettin / Hansegras": {
+            "sales": 334,
+            "profit": 26182,
+            "fees": 0
+          },
+          "Stettin → Rostock": {
+            "trips": 24,
+            "fees": 144,
+            "wealthDelta": -264
+          },
+          "Rostock / Tuch": {
+            "sales": 90,
+            "profit": 9810,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 155
+      }
+    },
+    {
+      "seed": 10008,
+      "buy": 440,
+      "sell": 439,
+      "travel": 440,
+      "deadlock": false,
+      "days": 1440,
+      "decisions": 440,
+      "wealth": 598333,
+      "realisedProfit": 593236,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.5542,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 6,
+          "unitPrice": 78,
+          "total": 468,
+          "averageCost": 78
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-zc51pmxkkrf",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.5542,
+              "cargo": {
+                "6": 6
+              },
+              "costs": {
+                "6": 78
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.5542,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 6,
+          "unitPrice": 101,
+          "total": 606,
+          "averageCost": 78,
+          "profit": 138
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1440,
+        "wealth": 598333,
+        "gold": 594892,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 406,
+          "decision": 130
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2640,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 43,
+          "storms": 68,
+          "realisedProfit": 593236,
+          "decisions": 440,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Hamburg": {
+            "trips": 38,
+            "fees": 228,
+            "wealthDelta": -823.7999999999956
+          },
+          "Hamburg / Hansegras": {
+            "sales": 1502,
+            "profit": 182045,
+            "fees": 0
+          },
+          "Hamburg → Rostock": {
+            "trips": 52,
+            "fees": 312,
+            "wealthDelta": -837
+          },
+          "Rostock / Bier": {
+            "sales": 512,
+            "profit": 11307,
+            "fees": 0
+          },
+          "Rostock → Hamburg": {
+            "trips": 60,
+            "fees": 360,
+            "wealthDelta": -1391
+          },
+          "Hamburg / Salz": {
+            "sales": 90,
+            "profit": 1260,
+            "fees": 0
+          },
+          "Rostock → Stettin": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -185.59999999999854
+          },
+          "Stettin / Hansegras": {
+            "sales": 510,
+            "profit": 27208,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 20,
+            "fees": 120,
+            "wealthDelta": -591.5999999999985
+          },
+          "Stralsund / Tuch": {
+            "sales": 378,
+            "profit": 10609,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 20,
+            "fees": 120,
+            "wealthDelta": -609
+          },
+          "Stettin → Lübeck": {
+            "trips": 2,
+            "fees": 12,
+            "wealthDelta": -12
+          },
+          "Lübeck / Tuch": {
+            "sales": 488,
+            "profit": 9860,
+            "fees": 0
+          },
+          "Lübeck → Stettin": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Stettin → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Rostock / Tuch": {
+            "sales": 1799,
+            "profit": 67871,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 46,
+            "fees": 276,
+            "wealthDelta": -1524.2000000000044
+          },
+          "Hamburg → Stralsund": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -92.80000000000291
+          },
+          "Stralsund / Bier": {
+            "sales": 90,
+            "profit": 1800,
+            "fees": 0
+          },
+          "Stralsund → Hamburg": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Lübeck / Getreide": {
+            "sales": 585,
+            "profit": 8464,
+            "fees": 0
+          },
+          "Rostock / Fisch": {
+            "sales": 300,
+            "profit": 5910,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 18,
+            "fees": 108,
+            "wealthDelta": -202
+          },
+          "Stralsund / Holz": {
+            "sales": 491,
+            "profit": 13289,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 18,
+            "fees": 108,
+            "wealthDelta": -194
+          },
+          "Rostock / Hansegras": {
+            "sales": 1353,
+            "profit": 105956,
+            "fees": 0
+          },
+          "Hamburg / Holz": {
+            "sales": 545,
+            "profit": 14086,
+            "fees": 0
+          },
+          "Lübeck / Salz": {
+            "sales": 567,
+            "profit": 15409,
+            "fees": 0
+          },
+          "Lübeck → Rostock": {
+            "trips": 85,
+            "fees": 510,
+            "wealthDelta": -1087
+          },
+          "Rostock → Lübeck": {
+            "trips": 75,
+            "fees": 450,
+            "wealthDelta": -2139
+          },
+          "Lübeck / Holz": {
+            "sales": 398,
+            "profit": 6415,
+            "fees": 0
+          },
+          "Lübeck / Hansegras": {
+            "sales": 1024,
+            "profit": 58278,
+            "fees": 0
+          },
+          "Rostock / Salz": {
+            "sales": 1183,
+            "profit": 53469,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 338
+      }
+    },
+    {
+      "seed": 10009,
+      "buy": 461,
+      "sell": 461,
+      "travel": 461,
+      "deadlock": false,
+      "days": 1441,
+      "decisions": 461,
+      "wealth": 1004179,
+      "realisedProfit": 994731,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3628,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 16,
+          "unitPrice": 72,
+          "total": 1152,
+          "averageCost": 72
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-uwdjl2ie8j8",
+          "from": "Lübeck",
+          "to": "Rostock",
+          "days": 2,
+          "fee": 6,
+          "event": null,
+          "ships": [
+            {
+              "id": 1700000000000.3628,
+              "cargo": {
+                "6": 16
+              },
+              "costs": {
+                "6": 72
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3628,
+          "routeId": null,
+          "good": "Hansegras",
+          "quantity": 16,
+          "unitPrice": 103,
+          "total": 1648,
+          "averageCost": 72,
+          "profit": 496
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1441,
+        "wealth": 1004179,
+        "gold": 1000738,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 492,
+          "decision": 154
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9954,
+        "recovered": false,
+        "metrics": {
+          "fees": 2766,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 35,
+          "storms": 56,
+          "realisedProfit": 994731,
+          "decisions": 461,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Rostock": {
+            "trips": 91,
+            "fees": 546,
+            "wealthDelta": -875
+          },
+          "Rostock / Hansegras": {
+            "sales": 2527,
+            "profit": 232417,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 19,
+            "fees": 114,
+            "wealthDelta": -396.09999999999854
+          },
+          "Stralsund / Bier": {
+            "sales": 136,
+            "profit": 872,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 19,
+            "fees": 114,
+            "wealthDelta": -518.4999999999927
+          },
+          "Rostock / Salz": {
+            "sales": 206,
+            "profit": 4369,
+            "fees": 0
+          },
+          "Rostock / Tuch": {
+            "sales": 127,
+            "profit": 2819,
+            "fees": 0
+          },
+          "Stralsund / Holz": {
+            "sales": 188,
+            "profit": 1088,
+            "fees": 0
+          },
+          "Stralsund / Fisch": {
+            "sales": 154,
+            "profit": 1214,
+            "fees": 0
+          },
+          "Stralsund → Lübeck": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          },
+          "Lübeck / Hansegras": {
+            "sales": 1102,
+            "profit": 62025,
+            "fees": 0
+          },
+          "Lübeck → Hamburg": {
+            "trips": 63,
+            "fees": 378,
+            "wealthDelta": -1237.7000000000044
+          },
+          "Hamburg / Bier": {
+            "sales": 779,
+            "profit": 11184,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 62,
+            "fees": 372,
+            "wealthDelta": -1443.300000000003
+          },
+          "Lübeck → Stettin": {
+            "trips": 5,
+            "fees": 30,
+            "wealthDelta": -410
+          },
+          "Stettin / Bier": {
+            "sales": 199,
+            "profit": 7023,
+            "fees": 0
+          },
+          "Stettin → Lübeck": {
+            "trips": 5,
+            "fees": 30,
+            "wealthDelta": -30
+          },
+          "Lübeck / Tuch": {
+            "sales": 3199,
+            "profit": 476455,
+            "fees": 0
+          },
+          "Stettin / Tuch": {
+            "sales": 1558,
+            "profit": 114545,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 3,
+            "fees": 18,
+            "wealthDelta": -18
+          },
+          "Stralsund / Tuch": {
+            "sales": 105,
+            "profit": 1292,
+            "fees": 0
+          },
+          "Rostock → Lübeck": {
+            "trips": 92,
+            "fees": 552,
+            "wealthDelta": -881.3999999999942
+          },
+          "Hamburg → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Lübeck / Getreide": {
+            "sales": 96,
+            "profit": 1896,
+            "fees": 0
+          },
+          "Lübeck / Salz": {
+            "sales": 7,
+            "profit": 147,
+            "fees": 0
+          },
+          "Rostock → Stettin": {
+            "trips": 16,
+            "fees": 96,
+            "wealthDelta": -334
+          },
+          "Stettin → Rostock": {
+            "trips": 16,
+            "fees": 96,
+            "wealthDelta": -272
+          },
+          "Stettin → Stralsund": {
+            "trips": 33,
+            "fees": 198,
+            "wealthDelta": -351
+          },
+          "Stralsund / Hansegras": {
+            "sales": 677,
+            "profit": 55090,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 33,
+            "fees": 198,
+            "wealthDelta": -329
+          },
+          "Hamburg / Hansegras": {
+            "sales": 214,
+            "profit": 22295,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 277
+      }
+    },
+    {
+      "seed": 10010,
+      "buy": 374,
+      "sell": 374,
+      "travel": 374,
+      "deadlock": false,
+      "days": 1444,
+      "decisions": 374,
+      "wealth": 378152,
+      "realisedProfit": 361012,
+      "firstActions": [
+        {
+          "type": "buy",
+          "shipId": 1700000000000.3296,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 6,
+          "unitPrice": 59,
+          "total": 354,
+          "averageCost": 59
+        },
+        {
+          "type": "travel",
+          "routeId": "loyw3v29-niqy869z94c",
+          "from": "Lübeck",
+          "to": "Hamburg",
+          "days": 2,
+          "fee": 6,
+          "event": "pirates",
+          "ships": [
+            {
+              "id": 1700000000000.3296,
+              "cargo": {
+                "5": 4
+              },
+              "costs": {
+                "5": 59
+              },
+              "condition": 100
+            }
+          ],
+          "activeMs": 0
+        },
+        {
+          "type": "sell",
+          "shipId": 1700000000000.3296,
+          "routeId": null,
+          "good": "Tuch",
+          "quantity": 4,
+          "unitPrice": 67,
+          "total": 268,
+          "averageCost": 59,
+          "profit": 32
+        }
+      ],
+      "result": {
+        "strategy": "optimized",
+        "days": 1444,
+        "wealth": 378152,
+        "gold": 374711,
+        "debt": 0,
+        "rank": 4,
+        "eld": {
+          "day": 534,
+          "decision": 127
+        },
+        "insolvent": false,
+        "stranded": false,
+        "lowest": 9836,
+        "recovered": false,
+        "metrics": {
+          "fees": 2244,
+          "repairs": 0,
+          "interest": 0,
+          "borrowed": 0,
+          "questProfit": 0,
+          "quests": 0,
+          "rumors": 0,
+          "pirates": 29,
+          "storms": 54,
+          "realisedProfit": 361012,
+          "decisions": 374,
+          "deadlock": false,
+          "negativeGold": false,
+          "invalidCargo": false,
+          "invalidPrice": false
+        },
+        "routes": {
+          "Lübeck → Hamburg": {
+            "trips": 95,
+            "fees": 570,
+            "wealthDelta": -1656
+          },
+          "Hamburg / Tuch": {
+            "sales": 1411,
+            "profit": 44894,
+            "fees": 0
+          },
+          "Hamburg → Lübeck": {
+            "trips": 92,
+            "fees": 552,
+            "wealthDelta": -892
+          },
+          "Lübeck / Bier": {
+            "sales": 193,
+            "profit": 2857,
+            "fees": 0
+          },
+          "Lübeck → Stralsund": {
+            "trips": 27,
+            "fees": 162,
+            "wealthDelta": -422.40000000000146
+          },
+          "Stralsund / Tuch": {
+            "sales": 788,
+            "profit": 16860,
+            "fees": 0
+          },
+          "Stralsund → Stettin": {
+            "trips": 13,
+            "fees": 78,
+            "wealthDelta": -402
+          },
+          "Stettin / Hansegras": {
+            "sales": 1315,
+            "profit": 45609,
+            "fees": 0
+          },
+          "Stettin → Stralsund": {
+            "trips": 8,
+            "fees": 48,
+            "wealthDelta": -243.29999999999927
+          },
+          "Stralsund / Salz": {
+            "sales": 127,
+            "profit": 1323,
+            "fees": 0
+          },
+          "Stralsund / Fisch": {
+            "sales": 103,
+            "profit": 747,
+            "fees": 0
+          },
+          "Stettin → Hamburg": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Hamburg / Salz": {
+            "sales": 13,
+            "profit": 182,
+            "fees": 0
+          },
+          "Lübeck → Stettin": {
+            "trips": 49,
+            "fees": 294,
+            "wealthDelta": -1119.4000000000015
+          },
+          "Stettin → Lübeck": {
+            "trips": 51,
+            "fees": 306,
+            "wealthDelta": -1103.7999999999993
+          },
+          "Lübeck / Salz": {
+            "sales": 3954,
+            "profit": 162520,
+            "fees": 0
+          },
+          "Stettin / Tuch": {
+            "sales": 365,
+            "profit": 6852,
+            "fees": 0
+          },
+          "Lübeck / Hansegras": {
+            "sales": 665,
+            "profit": 17963,
+            "fees": 0
+          },
+          "Stralsund → Lübeck": {
+            "trips": 18,
+            "fees": 108,
+            "wealthDelta": -303.29999999999563
+          },
+          "Lübeck / Fisch": {
+            "sales": 389,
+            "profit": 10736,
+            "fees": 0
+          },
+          "Lübeck / Holz": {
+            "sales": 90,
+            "profit": 1620,
+            "fees": 0
+          },
+          "Stralsund → Rostock": {
+            "trips": 5,
+            "fees": 30,
+            "wealthDelta": -30
+          },
+          "Rostock / Fisch": {
+            "sales": 637,
+            "profit": 21139,
+            "fees": 0
+          },
+          "Rostock → Stralsund": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -105
+          },
+          "Rostock → Lübeck": {
+            "trips": 9,
+            "fees": 54,
+            "wealthDelta": -140.8000000000029
+          },
+          "Stettin → Rostock": {
+            "trips": 1,
+            "fees": 6,
+            "wealthDelta": -6
+          },
+          "Stralsund / Hansegras": {
+            "sales": 194,
+            "profit": 5704,
+            "fees": 0
+          },
+          "Stettin / Bier": {
+            "sales": 614,
+            "profit": 12454,
+            "fees": 0
+          },
+          "Hamburg → Rostock": {
+            "trips": 4,
+            "fees": 24,
+            "wealthDelta": -48
+          },
+          "Hamburg / Hansegras": {
+            "sales": 336,
+            "profit": 9552,
+            "fees": 0
+          }
+        },
+        "priceMin": 8,
+        "priceMax": 103
+      }
+    }
+  ]
+}
