@@ -8,7 +8,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  function borrowIfNeeded(minimum=150){if(s.gold<minimum&&s.debt<creditLimit()){const n=creditLimit()-s.debt;$('loan').value=n;bankOp('borrow');metrics.borrowed+=n}}
  function knownPrice(city,j){if(strategy==='optimized')return s.markets[city][j].price;if(city===s.city)return s.markets[city][j].price;const entry=s.journal[city];return entry?.prices?.[j]??(strategy==='optimized'?null:GOODS[j][2])}
  function orderPlan(){questsView();const q=s.quests.find(x=>x.until>=totalDay());if(!q)return null;const speed=ship().speed*.8,days=Math.max(1,Math.ceil(DIST[s.city][q.city]/speed));if(q.city===s.city){const origins=ship().origins?.[q.j]||[];const eligible=origins.reduce((a,x)=>a+(x.city!==s.city?x.n:0),0);if((ship().cargo[q.j]||0)>=q.n&&eligible>=q.n)return {kind:'deliver',q};}
- for(let c=0;c<5;c++)if(c!==q.city&&c!==s.city){const buy=knownPrice(c,q.j),sell=knownPrice(q.city,q.j);if(buy==null||sell==null)continue;const trip=Math.ceil(DIST[s.city][c]/speed)+Math.ceil(DIST[c][q.city]/speed);const cost=buy*q.n+q.reward*0+12+6;if(trip+days>q.until-totalDay())continue;if(sell*q.n+q.reward-cost>Math.max(30,q.reward*.08))return {kind:'source',q,city:c,qty:q.n,profit:sell*q.n+q.reward-cost};}return null}
+ for(let c=0;c<CITIES.length;c++)if(c!==q.city&&c!==s.city){const buy=knownPrice(c,q.j),sell=knownPrice(q.city,q.j);if(buy==null||sell==null)continue;const trip=Math.ceil(DIST[s.city][c]/speed)+Math.ceil(DIST[c][q.city]/speed);const cost=buy*q.n+q.reward*0+12+6;if(trip+days>q.until-totalDay())continue;if(sell*q.n+q.reward-cost>Math.max(30,q.reward*.08))return {kind:'source',q,city:c,qty:q.n,profit:sell*q.n+q.reward-cost};}return null}
  for(let step=0;step<maxDecisions&&totalDay()-origin<maxDays;step++){
  metrics.decisions++;localSell();for(let i=0;i<4;i++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:step};
  if(isBad&&step<badTurns){ // Deliberate loss-making trades at the current harbor; then attempt recovery.
@@ -21,7 +21,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  if(order?.kind==='source'&&s.city===order.city){dest=order.q.city;good=order.q.j;qty=order.qty;best=order.profit;}
  else if(order?.kind==='deliver'&&s.city===order.q.city){dest=s.city;}
  else {
-   for(let c=0;c<5;c++)if(c!==s.city)for(let j=0;j<GOODS.length;j++){
+   for(let c=0;c<CITIES.length;c++)if(c!==s.city)for(let j=0;j<GOODS.length;j++){
      const from=s.markets[s.city][j].price,to=knownPrice(c,j);if(to==null)continue;
      const fee=6, travel=Math.max(1,Math.ceil(DIST[s.city][c]/(ship().speed*.8))),unit=to-from;
      const info=strategy==='optimized'?s.markets[c][j].price:to;
