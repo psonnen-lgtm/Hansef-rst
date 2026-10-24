@@ -1,0 +1,10 @@
+{
+  "event": "session_end",
+  "pilot": true,
+  "completed": 6,
+  "skipped": 0,
+  "failed": 0,
+  "planned": 6,
+  "totalAvailable": 6,
+  "wallMs": 2448
+}

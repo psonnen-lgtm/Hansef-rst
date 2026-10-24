@@ -1,0 +1,10 @@
+{
+  "strategy": "remote",
+  "seed": 10103,
+  "unchangedCode": true,
+  "replayVerified": true,
+  "unobservedParityVerified": true,
+  "additionalUnobservedExecutions": 1,
+  "originalFailure": "hidden market access from planner",
+  "cause": "not isolated; no guard weakening or game change"
+}

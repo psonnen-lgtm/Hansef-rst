@@ -1,0 +1,14 @@
+{
+  "engineBaseCommit": "1267533bdea2bd03f7bf5c718a180f92cff4616a",
+  "frozenRunnerCommit": "715f04ad8bcc712952acca0988ed50baf8210677",
+  "gameFileUnchanged": true,
+  "historicalArchiveFilesUnchanged": 33,
+  "independentCases": 1500,
+  "identicalReplays": 1500,
+  "unobservedObserverParityExecutions": 7,
+  "failedWorkerAttempts": 1,
+  "originalFailedAttemptPreserved": true,
+  "retryChangedCode": false,
+  "retryChangedRules": false,
+  "originalFailureCause": "not isolated; guarded market read reported once, unchanged retry and unobserved parity passed"
+}
