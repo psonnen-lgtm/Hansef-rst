@@ -62,3 +62,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Version 0.5c – Vier neue Handelswaren
 
 24.10.2026 – [Abschlussbericht mit elf Basispreisen, Startprofilen und v5-Migration](2026-10-24_0.5c_vier-neue-waren.md), [beide Zwischenstände](2026-10-24_0.5c_fortschritt.md). Hanf/Pech/Eisenwaren/Pelze an Indizes 7–10; alle fünf Lager bleiben nutzbar. 16 neue Prüfgruppen plus vorhandene Basis-/Lager-/Regeltests bestanden; Chromium Handy/Tablet/Desktop samt echten Handels-/Lageraktionen, Altstandübernahme und Sicherungsfehlern geprüft. Zwei tatsächliche Bilder gesichert, keine große Wirtschaftssimulation. Geprüfter Spielcode: `2384479fa1d5eb0cda47250265e36097a584451b`.
+
+## Version 0.5d – Bauabschnitt 1
+
+24.10.2026 – [Technische Vorbereitung auf elf Städte](2026-10-24_0.5d_staedte-vorbereitung.md), [beide Zwischenstände](2026-10-24_0.5d_fortschritt.md). Heutige Kartenpunkte zentral, zwei Botgrenzen dynamisch; fünf Städte/elf Waren und Format v5 unverändert. Acht neue Paritätsgruppen, vorhandene kleine Regressionen und Chromium-Prüfungen bestanden. Plan für Indizes 5–10, Stadtmigration, Seekarte und Umschlagrouten Nowgorod/Venlo; keine Freischaltung oder endgültige Matrixwerte. Geprüfter Code: `b169ec4421e4c1dd0d9bd81316df55035aea0a2e`.
