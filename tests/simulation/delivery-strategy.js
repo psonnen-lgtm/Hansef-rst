@@ -13,7 +13,7 @@ function assessDelivery(o){
 }
 function simulateDelivery(){
  const start=totalDay(),trace=[],moneyStart=s.gold;let fees=0,purchase=0,realisedTradeProfit=0,premium=0,cargoLossCost=0,source=null;
- const conservativeDays=(a,b)=>Math.max(1,Math.ceil(DIST[a][b]/(ship().speed*(.65+.35*.30))));
+ const conservativeDays=(a,b)=>routeTravelDays(a,b,ship().speed*(.65+.35*.30));
  function result(status,reason,order=null){return {strategy:'delivery',status,reason,seedOrder:order,days:totalDay()-start,source,fees,purchase,realisedTradeProfit,premium,cargoLossCost,retainedCargoCost:Object.entries(ship().cargo).reduce((a,[j,n])=>a+n*(ship().costs[j]??0),0),cashDelta:s.gold-moneyStart,completed:s.completed,trace};}
  function travel(to){pending=null;planTravel(to);if(!pending)return false;const p={...pending},cargoBefore=Object.entries(ship().cargo).reduce((a,[j,n])=>a+n*(ship().costs[j]??0),0);arrive();cargoLossCost+=cargoBefore-Object.entries(ship().cargo).reduce((a,[j,n])=>a+n*(ship().costs[j]??0),0);if(s.city!==to||!pending.arrived)return false;fees+=p.fee;trace.push({action:'travel',from:p.from,to:p.dest,days:p.days,fee:p.fee,event:pending.event,day:totalDay()});return true;}
  // Opening the ordinary quest screen is the only way this strategy requests offers.

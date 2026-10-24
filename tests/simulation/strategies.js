@@ -7,8 +7,8 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  function localSell(){for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().city===s.city)for(const [j,n] of Object.entries({...ship().cargo}))if(n)tx(+j,n,-1)}s.active=0}
  function borrowIfNeeded(minimum=150){if(s.gold<minimum&&s.debt<creditLimit()){const n=creditLimit()-s.debt;$('loan').value=n;bankOp('borrow');metrics.borrowed+=n}}
  function knownPrice(city,j){if(strategy==='optimized')return s.markets[city][j].price;if(city===s.city)return s.markets[city][j].price;const entry=s.journal[city];return entry?.prices?.[j]??(strategy==='optimized'?null:GOODS[j][2])}
- function orderPlan(){questsView();const q=s.quests.find(x=>x.until>=totalDay());if(!q)return null;const speed=ship().speed*.8,days=Math.max(1,Math.ceil(DIST[s.city][q.city]/speed));if(q.city===s.city){const origins=ship().origins?.[q.j]||[];const eligible=origins.reduce((a,x)=>a+(x.city!==s.city?x.n:0),0);if((ship().cargo[q.j]||0)>=q.n&&eligible>=q.n)return {kind:'deliver',q};}
- for(let c=0;c<CITIES.length;c++)if(c!==q.city&&c!==s.city){const buy=knownPrice(c,q.j),sell=knownPrice(q.city,q.j);if(buy==null||sell==null)continue;const trip=Math.ceil(DIST[s.city][c]/speed)+Math.ceil(DIST[c][q.city]/speed);const cost=buy*q.n+q.reward*0+12+6;if(trip+days>q.until-totalDay())continue;if(sell*q.n+q.reward-cost>Math.max(30,q.reward*.08))return {kind:'source',q,city:c,qty:q.n,profit:sell*q.n+q.reward-cost};}return null}
+ function orderPlan(){questsView();const q=s.quests.find(x=>x.until>=totalDay());if(!q)return null;const speed=ship().speed*.8,days=routeTravelDays(s.city,q.city,speed);if(q.city===s.city){const origins=ship().origins?.[q.j]||[];const eligible=origins.reduce((a,x)=>a+(x.city!==s.city?x.n:0),0);if((ship().cargo[q.j]||0)>=q.n&&eligible>=q.n)return {kind:'deliver',q};}
+ for(let c=0;c<CITIES.length;c++)if(c!==q.city&&c!==s.city){const buy=knownPrice(c,q.j),sell=knownPrice(q.city,q.j);if(buy==null||sell==null)continue;const trip=routeTravelDays(s.city,c,speed)+routeTravelDays(c,q.city,speed);const cost=buy*q.n+q.reward*0+12+6;if(trip+days>q.until-totalDay())continue;if(sell*q.n+q.reward-cost>Math.max(30,q.reward*.08))return {kind:'source',q,city:c,qty:q.n,profit:sell*q.n+q.reward-cost};}return null}
  for(let step=0;step<maxDecisions&&totalDay()-origin<maxDays;step++){
  metrics.decisions++;localSell();for(let i=0;i<4;i++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:step};
  if(isBad&&step<badTurns){ // Deliberate loss-making trades at the current harbor; then attempt recovery.
@@ -23,7 +23,7 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  else {
    for(let c=0;c<CITIES.length;c++)if(c!==s.city)for(let j=0;j<GOODS.length;j++){
      const from=s.markets[s.city][j].price,to=knownPrice(c,j);if(to==null)continue;
-     const fee=6, travel=Math.max(1,Math.ceil(DIST[s.city][c]/(ship().speed*.8))),unit=to-from;
+     const fee=6, travel=routeTravelDays(s.city,c,ship().speed*.8),unit=to-from;
      const info=strategy==='optimized'?s.markets[c][j].price:to;
      const score=(info-from-fee/Math.max(1,capacity()))/travel;
      if(score>best){best=score;dest=c;good=j;}
@@ -81,7 +81,7 @@ function simulateObserved(strategy,maxDays,maxDecisions){
   sell();promoteNow();observe();const q=ship();
   const view={gold:s.gold,day:totalDay(),space:capacity(q)-load(q),local:s.markets[s.city].map(m=>({price:m.price,stock:m.stock})),journal:{},destinations:[]};
   for(const [city,entry] of Object.entries(s.journal))view.journal[city]={day:entry.year*360+entry.day,prices:[...entry.prices]};
-  for(let c=0;c<CITIES.length;c++)if(c!==s.city)view.destinations.push({city:c,days:Math.max(1,Math.ceil(DIST[s.city][c]/(q.speed*(.65+.35*q.condition/100)))),fee:[4,6,9][q.type]});
+  for(let c=0;c<CITIES.length;c++)if(c!==s.city)view.destinations.push({city:c,days:routeTravelDays(s.city,c,q.speed*(.65+.35*q.condition/100)),fee:[4,6,9][q.type]});
   const choice=planObserved(strategy,view);metrics.decisions++;
   if(!choice){metrics.deadlock=true;stopReason='insufficient_travel_cash';break;}
   const cashBefore=s.gold;let actualQuantity=0;
