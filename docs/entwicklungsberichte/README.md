@@ -45,3 +45,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Phase 1.6e – Preisrundung
 
 24.10.2026 – [Abschlussbericht](2026-10-24_0.4.2_phase-1.6e.md), [beide Zwischenstände](2026-10-24_0.4.2_phase-1.6e_fortschritt.md). Niedrigpreise unter 9 können symmetrisch schwanken, Untergrenze 4 bleibt; keine zusätzlichen Zufallsaufrufe/Speicherfelder. Zehn Preis-/Speicherprüfgruppen, 19 Basistests, 18 Phase-1-Regressionen und Informationsschutzprüfungen bestanden. Unvermeidbarer Untergrenzen-Randeffekt ausdrücklich dokumentiert. Geprüfter Spielcode: `e18943c9d50bff0e0d45044193f9f55d668a6795`. Keine neue Wirtschaftssimulation; historische Ergebnisse unverändert.
+
+## Phase 0.5a – Fundament
+
+24.10.2026 – [Städte/Waren technisch erweiterbar vorbereiten](2026-10-24_0.5a_fundament.md), [beide Zwischenstände](2026-10-24_0.5a_fortschritt.md). Zentrale Anzahlen/Indexprüfungen, explizit unveränderte Auftragsauswahl; keine neuen Inhalte oder Wirtschaftsregeln. Zehn neue Kompatibilitätsgruppen, 19 Basistests, 18 Regelregressionen, Informationsschutz, Telemetrie und Teilen bestanden. Speicherformat v4 unverändert; Erweiterungsmigration und 11×15-Geräte-/Kartenarbeit bewusst offen. Geprüfter Spielcode: `c4bfe2badf6fb142aaf3ef63aa40fbbcfb01cbff`.
