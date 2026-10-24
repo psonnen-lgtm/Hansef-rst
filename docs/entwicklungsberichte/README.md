@@ -12,4 +12,6 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 
 | 24.10.2026 | 0.4.2 / Phase 1.5c | [Echte Lieferaufträge](2026-10-24_0.4.2_phase-1.5c.md) | `32362e4e1efdbb51acd6b6553c06b1e9321cd20b` |
 
+| 24.10.2026 | 0.4.2 / Phase 1.5d | [Wirtschaftliche Erholung](2026-10-24_0.4.2_phase-1.5d.md) | `84e51a341127a9464bd14695b1f83da30806cf7a` |
+
 Ältere ausführliche Nachweise bleiben an ihren bisherigen Pfaden erhalten, insbesondere [V04-PHASE1.md](../../V04-PHASE1.md). Wesentliche Änderungen an Spielmechaniken oder Balance benötigen vorherige Abstimmung mit dem Nutzer.
