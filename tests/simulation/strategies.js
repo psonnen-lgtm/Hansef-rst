@@ -1,47 +1,42 @@
 function simulate(strategy,maxDays=1440,maxDecisions=800){
- const origin=totalDay(),wealth=[],route={},metrics={fees:0,repairs:0,interest:0,borrowed:0,quests:0,rumors:0,pirates:0,defended:0,storms:0,realisedProfit:0,shipPurchases:0,decisions:0,negativeGold:false,invalidCargo:false,invalidPrice:false},armTarget=strategy==='aggressive'?3:strategy==='normal'?1:0;
- let eld=null,dead=false,recovered=false,lowest=netWorth(),incomingRoute=null;const recklessTurns=strategy==='ruin'?30:5,reckless=['bad','ruin'].includes(strategy);
- function quantity(j,n,dir){$('qty'+j).value=n;let q=ship(),before=q.cargo[j]||0,paid=q.costs[j];trade(j,dir);if(dir===-1){let profit=(before-(q.cargo[j]||0))*(s.markets[s.city][j].price-(paid??s.markets[s.city][j].price));metrics.realisedProfit+=profit;if(incomingRoute&&route[incomingRoute])route[incomingRoute].realisedProfit+=profit;}}
- function sellAll(){for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().city!==s.city)continue;for(const [j,n] of Object.entries({...ship().cargo}))if(n)quantity(+j,n,-1)}s.active=0}
- function loan(){let n=Math.max(0,creditLimit()-s.debt);if(n){$('loan').value=n;bankOp('borrow');metrics.borrowed+=n}}
+ const origin=totalDay(), routes={}, metrics={fees:0,repairs:0,interest:0,borrowed:0,questProfit:0,quests:0,rumors:0,pirates:0,storms:0,realisedProfit:0,decisions:0,deadlock:false,negativeGold:false,invalidCargo:false,invalidPrice:false};
+ const badTurns=({bad5:5,bad10:10,bad20:20,bad30:30})[strategy]||0, isBad=badTurns>0;
+ let eld=null,dead=false,lowest=netWorth(), recovering=false,lossEvents=0;
+ function tx(j,n,d){$('qty'+j).value=n;const q=ship(),before=q.cargo[j]||0,cost=q.costs[j];trade(j,d);if(d<0){const sold=before-(q.cargo[j]||0);if(cost!=null){const p=sold*(s.markets[s.city][j].price-cost);metrics.realisedProfit+=p;const label=CITIES[s.city]+' / '+GOODS[j][0];routes[label]??={sales:0,profit:0,fees:0};routes[label].sales+=sold;routes[label].profit+=p;}}}
+ function localSell(){for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().city===s.city)for(const [j,n] of Object.entries({...ship().cargo}))if(n)tx(+j,n,-1)}s.active=0}
+ function borrowIfNeeded(minimum=150){if(s.gold<minimum&&s.debt<creditLimit()){const n=creditLimit()-s.debt;$('loan').value=n;bankOp('borrow');metrics.borrowed+=n}}
+ function knownPrice(city,j){if(city===s.city)return s.markets[city][j].price;const entry=s.journal[city];return entry?.prices?.[j]??(strategy==='optimized'?null:GOODS[j][2])}
+ function orderPlan(){questsView();const q=s.quests.find(x=>x.until>=totalDay());if(!q)return null;const speed=ship().speed*.8,days=Math.max(1,Math.ceil(DIST[s.city][q.city]/speed));if(q.city===s.city){const origins=ship().origins?.[q.j]||[];const eligible=origins.reduce((a,x)=>a+(x.city!==s.city?x.n:0),0);if((ship().cargo[q.j]||0)>=q.n&&eligible>=q.n)return {kind:'deliver',q};}
+ for(let c=0;c<5;c++)if(c!==q.city&&c!==s.city){const buy=knownPrice(c,q.j),sell=knownPrice(q.city,q.j);if(buy==null||sell==null)continue;const trip=Math.ceil(DIST[s.city][c]/speed)+Math.ceil(DIST[c][q.city]/speed);const cost=buy*q.n+q.reward*0+12+6;if(trip+days>q.until-totalDay())continue;if(sell*q.n+q.reward-cost>Math.max(30,q.reward*.08))return {kind:'source',q,city:c,qty:q.n,profit:sell*q.n+q.reward-cost};}return null}
  for(let step=0;step<maxDecisions&&totalDay()-origin<maxDays;step++){
- metrics.decisions++;sellAll();let previous=s.rank;for(let i=0;i<4;i++)promote();if(s.rank===4&&eld===null)eld={day:totalDay()-origin,decision:step};
- if(reckless&&step<recklessTurns){ // Deliberately buy the dearest item, sell next at the cheapest city.
- }else if(strategy==='optimized'||strategy==='normal'){
- let before=s.completed;questsView();const q=s.quests[0];if(q&&q.city===s.city&&q.until>=totalDay()){
- s.active=0;let m=s.markets[s.city][q.j];if(q.n<=capacity()-load()&&m.stock>=q.n&&s.gold>=m.price*q.n+20){quantity(q.j,q.n,1);quantity(q.j,q.n,-1);if(s.completed>before)metrics.quests++}}
+ metrics.decisions++;localSell();for(let i=0;i<4;i++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:step};
+ if(isBad&&step<badTurns){ // Deliberate loss-making trades at the current harbor; then attempt recovery.
+   recovering=true;let j=step%GOODS.length,m=s.markets[s.city][j],n=Math.min(8,m.stock,capacity()-load(),Math.floor(s.gold/Math.max(1,m.price)));if(n>0){tx(j,n,1);tx(j,n,-1);lossEvents++;}
  }
- if(strategy==='aggressive'&&step===0)loan();
- if(reckless&&s.gold<200)loan();
+ if(s.gold<100&&recovering)borrowIfNeeded(500);
  if(s.gold<50&&s.bank>0){$('deposit').value=s.bank;bankOp('withdraw')}
- if(s.gold<20&&s.debt<creditLimit())loan();
- if((strategy==='aggressive'||strategy==='optimized')&&s.ships.length<(strategy==='aggressive'?4:2)&&s.gold>15000){buyShip(2);metrics.shipPurchases++}
- for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().condition<(strategy==='cautious'?85:strategy==='aggressive'?65:55)){let cost=Math.ceil((100-ship().condition)*8);if(s.gold>cost+200){metrics.repairs+=cost;repairShip()}}if(ship().arms<armTarget&&s.gold>5000)armShip()}s.active=0;
- let destination=-1,chosen=-1,best=-Infinity;
- for(let c=0;c<5;c++)if(c!==s.city)for(let j=0;j<7;j++){
- const local=s.markets[s.city][j].price;
- const target=strategy==='optimized'?s.markets[c][j].price:(s.journal[c]?.prices[j]??GOODS[j][2]);
- let value=(target-local)/Math.max(1,DIST[s.city][c]);
- if(strategy==='aggressive')value=(target-local)*(.5+Math.random());
- if(reckless&&step<recklessTurns)value=local-s.markets[c][j].price;
- if(value>best){best=value;destination=c;chosen=j}
+ const order=orderPlan();let dest=-1,good=-1,best=0,qty=0;
+ // Complete only source-to-destination orders with observed prices, known travel time and fee reserve.
+ if(order?.kind==='source'&&s.city===order.city){dest=order.q.city;good=order.q.j;qty=order.qty;best=order.profit;}
+ else if(order?.kind==='deliver'&&s.city===order.q.city){dest=s.city;}
+ else {
+   for(let c=0;c<5;c++)if(c!==s.city)for(let j=0;j<GOODS.length;j++){
+     const from=s.markets[s.city][j].price,to=knownPrice(c,j);if(to==null)continue;
+     const fee=6, travel=Math.max(1,Math.ceil(DIST[s.city][c]/(ship().speed*.8))),unit=to-from;
+     const info=strategy==='optimized'?s.markets[c][j].price:to;
+     const score=(info-from-fee/Math.max(1,capacity()))/travel;
+     if(score>best){best=score;dest=c;good=j;}
+   }
  }
- if(reckless&&step>=recklessTurns){ // Recovery switches to normal observed-price decisions.
- if(netWorth()>9960)recovered=true;
+ if(dest===s.city){let q=s.quests.find(x=>x.city===s.city&&x.until>=totalDay());if(q){const before=s.completed; s.active=0;let have=ship().cargo[q.j]||0,orig=(ship().origins?.[q.j]||[]).filter(x=>x.city!==s.city).reduce((a,x)=>a+x.n,0);if(have>=q.n&&orig>=q.n){tx(q.j,q.n,-1);if(s.completed>before){metrics.quests++;metrics.questProfit+=q.reward;}}}dest=-1;}
+ if(good>=0&&dest>=0&&s.city!==dest){let fee=[4,6,9][ship().type];let n=Math.min(s.markets[s.city][good].stock,capacity()-load(),Math.floor(Math.max(0,s.gold-fee-40)/s.markets[s.city][good].price));if(order?.kind==='source')n=Math.min(n,order.qty);if(n>0&&best>0)tx(good,n,1);}
+ if(dest<0||dest===s.city){metrics.deadlock=true;dead=true;break}
+ if(s.gold<([4,6,9][ship().type])){borrowIfNeeded(200);if(s.gold<([4,6,9][ship().type])){metrics.deadlock=true;dead=true;break}}
+ const year=s.year,debt=s.debt;pending=null;planTravel(dest);if(!pending){dead=true;metrics.deadlock=true;break}const p={...pending},worth=netWorth();metrics.fees+=p.fee;arrive();metrics.pirates+=pending?.event==='pirates';metrics.storms+=pending?.event==='storm';if(s.year!==year)metrics.interest+=s.debt-debt;
+ const label=CITIES[p.from]+' → '+CITIES[p.dest];routes[label]??={trips:0,fees:0,wealthDelta:0};routes[label].trips++;routes[label].fees+=p.fee;routes[label].wealthDelta+=netWorth()-worth;
+ if(isBad&&recovering&&netWorth()>=9960)recovering=false;
+ metrics.negativeGold ||=s.gold<0||!Number.isFinite(s.gold);metrics.invalidCargo||=s.ships.some(x=>load(x)>capacity(x));metrics.invalidPrice||=s.markets.flat().some(x=>!Number.isFinite(x.price)||x.price<1);lowest=Math.min(lowest,netWorth());
  }
- const fee=s.ships.reduce((a,q)=>a+[4,6,9][q.type],0),reserve=strategy==='cautious'?Math.max(800,s.gold*.4):strategy==='normal'?300:fee+20;
- if(chosen>=0){for(let i=0;i<s.ships.length;i++){s.active=i;let q=ship(),m=s.markets[s.city][chosen],n=Math.min(m.stock,capacity(q)-load(q),Math.floor(Math.max(0,s.gold-reserve)/m.price));if(n>0&&(best>0||(reckless&&step<recklessTurns)))quantity(chosen,n,1)}}s.active=0;
- if(strategy==='optimized'&&step%12===0&&s.gold>200){takeBath();metrics.rumors++;let tip=s.rumors[0];if(tip?.special){destination=tip.city}}
- const beforeGold=s.gold,year=s.year,debt=s.debt;pending=null;planTravel(destination);
- if(!pending){dead=true;break}
- const p={...pending};metrics.fees+=p.fee;let worthBefore=netWorth();arrive();p.event=pending.event;metrics.pirates+=p.event==='pirates';metrics.defended+=p.event==='defended';metrics.storms+=p.event==='storm';if(s.year>year)metrics.interest+=s.debt-debt;
- let label=CITIES[p.from]+' → '+CITIES[p.dest];incomingRoute=label;route[label]??={trips:0,fees:0,wealthDelta:0,realisedProfit:0};route[label].trips++;route[label].fees+=p.fee;route[label].wealthDelta+=netWorth()-worthBefore;
- let w=netWorth();lowest=Math.min(lowest,w);if(w<=0)dead=true;
- metrics.negativeGold ||=s.gold<0||!Number.isFinite(s.gold);
- metrics.invalidCargo ||=s.ships.some(q=>load(q)>capacity(q)||Object.values(q.cargo).some(n=>n<0||!Number.isFinite(n)));
- metrics.invalidPrice ||=s.markets.some(c=>c.some(m=>!Number.isFinite(m.price)||m.price<1));
- if(step%20===0)wealth.push({day:totalDay()-origin,wealth:w});if(dead)break;
- }
- sellAll();for(let i=0;i<4;i++)promote();if(s.rank===4&&eld===null)eld={day:totalDay()-origin,decision:metrics.decisions};
- return {strategy,days:totalDay()-origin,wealth:netWorth(),gold:s.gold,debt:s.debt,rank:s.rank,eld,insolvent:netWorth()<=0,stranded:dead&&netWorth()>0,lowest,recovered,metrics,trajectory:wealth,routes:route,priceMin:Math.min(...s.markets.flat().map(x=>x.price)),priceMax:Math.max(...s.markets.flat().map(x=>x.price))};
+ localSell();for(let i=0;i<4;i++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:metrics.decisions};
+ return {strategy,days:totalDay()-origin,wealth:netWorth(),gold:s.gold,debt:s.debt,rank:s.rank,eld,insolvent:netWorth()<=0,stranded:dead&&netWorth()>0,lowest,recovered:isBad&&!dead,metrics,routes,priceMin:Math.min(...s.markets.flat().map(x=>x.price)),priceMax:Math.max(...s.markets.flat().map(x=>x.price))};
 }
