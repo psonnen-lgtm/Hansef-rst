@@ -41,3 +41,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Phase 1.6d – Wirtschaftliche Gesamtanalyse
 
 24.10.2026 – [Wirtschaftsanalyse und A/B/C-Empfehlungen vor 0.5](2026-10-24_0.4.2_phase-1.6d.md), [beide Zwischenstände](2026-10-24_0.4.2_phase-1.6d_fortschritt.md), [abgeleitete Kennzahlen](2026-10-24_0.4.2_phase-1.6d_kennzahlen.json). Ausschließlich 2.250 archivierte Phase-1.6c-Ergebnisse ausgewertet; keine neue Simulation oder Codeänderung. Preisrundungsfalle, Routinedominanz und Liquiditätssackgassen getrennt von Botproblemen und ungeprüften Systemen eingeordnet. Historischer Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`.
+
+## Phase 1.6e – Preisrundung
+
+24.10.2026 – [Abschlussbericht](2026-10-24_0.4.2_phase-1.6e.md), [beide Zwischenstände](2026-10-24_0.4.2_phase-1.6e_fortschritt.md). Niedrigpreise unter 9 können symmetrisch schwanken, Untergrenze 4 bleibt; keine zusätzlichen Zufallsaufrufe/Speicherfelder. Zehn Preis-/Speicherprüfgruppen, 19 Basistests, 18 Phase-1-Regressionen und Informationsschutzprüfungen bestanden. Unvermeidbarer Untergrenzen-Randeffekt ausdrücklich dokumentiert. Geprüfter Spielcode: `e18943c9d50bff0e0d45044193f9f55d668a6795`. Keine neue Wirtschaftssimulation; historische Ergebnisse unverändert.
