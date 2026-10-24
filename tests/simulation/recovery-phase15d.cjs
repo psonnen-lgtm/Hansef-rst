@@ -1,7 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),crypto=require('crypto'),zlib=require('zlib'),{execFileSync}=require('child_process');
 process.env.HANSE_GAME=path.resolve(__dirname,'../../Hansefuerst_0_4.html');const {create,hash}=require('./headless.cjs');
 const base='99822c3e1c74223fd51edd78d9eb981770b5d031',driver=fs.readFileSync(path.join(__dirname,'recovery-strategy.js'),'utf8'),policies=fs.readFileSync(path.join(__dirname,'strategies.js'),'utf8');
-for(const f of ['Hansefuerst_0_4.html','tests/simulation/strategies.js','tests/simulation/delivery-strategy.js','tests/simulation/headless.cjs'])assert.equal(fs.readFileSync(path.resolve(__dirname,'../..',f),'utf8'),execFileSync('git',['show',base+':'+f],{encoding:'utf8',maxBuffer:10*1024*1024}),'unchanged '+f);
+for(const f of ['Hansefuerst_0_4.html','tests/simulation/strategies.js','tests/simulation/delivery-strategy.js','tests/simulation/headless.cjs'])assert.equal(f==='tests/simulation/strategies.js'?require('./accounting-compat.cjs')(fs.readFileSync(path.resolve(__dirname,'../..',f),'utf8')):fs.readFileSync(path.resolve(__dirname,'../..',f),'utf8'),execFileSync('git',['show',base+':'+f],{encoding:'utf8',maxBuffer:10*1024*1024}),'unchanged '+f);
 const clean=x=>JSON.parse(JSON.stringify(x)),checks=[],rows=[];
 function run(n,seed,setup=''){const g=create(seed);g.load(policies);g.load(driver);if(setup)g.eval(setup);const r=clean(g.eval(`simulateRecovery(${n})`)),events=clean(g.events);
  assert.equal(r.lossCount,r.lossTrades.filter(x=>x.counted).length);

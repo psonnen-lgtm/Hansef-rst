@@ -4,7 +4,7 @@ const {create,hash}=require('./headless.cjs');
 const base='aa9670db773114f393ffc7cb27d9a4e7940b4dbd';
 const driver=fs.readFileSync(path.join(__dirname,'strategies.js'),'utf8'),old=execFileSync('git',['show',base+':tests/simulation/strategies.js'],{encoding:'utf8'});
 const guard="\n if(['cautious','normal','aggressive'].includes(strategy))return simulateObserved(strategy,maxDays,maxDecisions);";
-assert.equal(driver.split('// Only the three Phase-1.5b policies')[0].replace(guard,'').trim(),old.trim(),'Legacy strategy body byte-identical, only explicit three-policy dispatch added');
+assert.equal(require('./accounting-compat.cjs')(driver.split('// Only the three Phase-1.5b policies')[0]).replace(guard,'').trim(),old.trim(),'Legacy strategy body unchanged except explicit dispatch and phase-1.6b accounting');
 assert.equal(fs.readFileSync(process.env.HANSE_GAME,'utf8'),execFileSync('git',['show',base+':Hansefuerst_0_4.html'],{encoding:'utf8',maxBuffer:10*1024*1024}),'Unchanged game');
 const policies=['cautious','normal','aggressive'],g=create(10001);g.load(driver);
 const view={gold:5000,day:10,space:100,local:[{price:50,stock:200}],journal:{1:{day:10,prices:[100]}},destinations:[{city:1,days:2,fee:6},{city:2,days:6,fee:6}]};
