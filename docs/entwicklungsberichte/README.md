@@ -37,3 +37,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Phase 1.6c – Große Wirtschaftssimulation
 
 24.10.2026 – [Technischer Abschlussbericht](2026-10-24_0.4.2_phase-1.6c.md), [vier veröffentlichte Zwischenstände](2026-10-24_0.4.2_phase-1.6c_fortschritt.md). 2.250/2.250 Ergebnisläufe und identische Replays (4.500 Engineausführungen), keine Runnerfehler. [Vollständige Rohdaten, Manifeste und Prüfsummen](../../tests/simulation/phase16c-20261024-01/summary.json) über neun Strategiearchive gesichert in Commit `bd47c74`. Tatsächlich ausgeführter Codestand: `51a2384` (danach nur Fortschrittsdokumentation); Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`. Wirtschaftliche Abbrüche bleiben enthalten; keine Balanceänderung.
+
+## Phase 1.6d – Wirtschaftliche Gesamtanalyse
+
+24.10.2026 – [Wirtschaftsanalyse und A/B/C-Empfehlungen vor 0.5](2026-10-24_0.4.2_phase-1.6d.md), [beide Zwischenstände](2026-10-24_0.4.2_phase-1.6d_fortschritt.md), [abgeleitete Kennzahlen](2026-10-24_0.4.2_phase-1.6d_kennzahlen.json). Ausschließlich 2.250 archivierte Phase-1.6c-Ergebnisse ausgewertet; keine neue Simulation oder Codeänderung. Preisrundungsfalle, Routinedominanz und Liquiditätssackgassen getrennt von Botproblemen und ungeprüften Systemen eingeordnet. Historischer Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`.
