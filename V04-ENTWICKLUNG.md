@@ -16,7 +16,7 @@ Separate HTML-Datei; 0.3 bleibt unverändert. Noch keine vollständige 0.4-Verö
 Alle alten Schiffe werden dem gespeicherten Spielerhafen zugeordnet. Frühere Einzelstandorte sind nicht rekonstruierbar. Gold, Eigentum und Ränge werden nicht nachträglich gekürzt. Sicherung im Spiel exportieren, bevor zwischen Versionen gewechselt wird. 0.3 und 0.4 speichern anschließend unabhängig.
 
 ## Prüfung
-`node tests/test-v04.cjs`: 13 erfolgreiche Logiktests mit simuliertem DOM. Browsertest vorbereitet, hier jedoch mangels installiertem Chromium nicht ausführbar. Echte Safari-/iPhone-/iPad-Prüfung offen.
+`node tests/test-v04.cjs`: 19 erfolgreiche Logiktests mit simuliertem DOM. Sechs zusätzliche Gebührentests prüfen einmalige Zahlung, Schiffstypen, örtliche Konvois, fehlendes Gold, exakten Betrag und Abbruch. Browserinstallation versucht; Download liefert ein unvollständiges ZIP. Browsertests deshalb weiterhin nicht ausführbar. Echte Safari-/iPhone-/iPad-Prüfung offen.
 
 ## Nächste Schritte
 1. Safari und Geräteprüfung, einschließlich Import/Export, Konvois, Einzelreisen und Abbruch einer Reise.
@@ -25,4 +25,4 @@ Alle alten Schiffe werden dem gespeicherten Spielerhafen zugeordnet. Frühere Ei
 4. Stadtprofile, begrenzte Preisreaktion auf Mengen und Rückkehr zu Normalpreisen; Vermögensbewertung abstimmen.
 5. Touchflächen und Konvoiauswahl verbessern; Geburtstagsereignisse aus 0.2 wiederherstellen.
 
-Nicht enthalten: neue Hafengebühren, neue Preisbildung, vollständiges Transaktionsjournal, Geburtstagsereignisse. Reiseereignisse bleiben bis zur Ankunft flüchtig; ein Neuladen bricht die geplante Reise ab.
+Umgesetzt sind inzwischen Hafengebühren von 4/6/9 Gold pro angekommenem Schiff, Vorschau vor Abfahrt und Zahlungsbeleg bei Ankunft. Nicht enthalten: neue Preisbildung, vollständiges Transaktionsjournal, Geburtstagsereignisse. Reiseereignisse bleiben bis zur Ankunft flüchtig; ein Neuladen bricht die geplante Reise ab.
