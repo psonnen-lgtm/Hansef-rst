@@ -6,4 +6,6 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 |---|---|---|---|
 | 24.10.2026 | 0.4.2 / Phase 1 | [Fehlerbehebung und Exploit-Schutz](2026-10-24_0.4.2_phase-1.md) | `0c00030993ab0b0ac153de240dd8106ae4dfcf57` |
 
+| 24.10.2026 | 0.4.2 / Phase 1.5a | [Optimierten Bot reparieren](2026-10-24_0.4.2_phase-1.5a.md) | `67efda6915db7e9068591315bebda59188911a56` |
+
 Ältere ausführliche Nachweise bleiben an ihren bisherigen Pfaden erhalten, insbesondere [V04-PHASE1.md](../../V04-PHASE1.md). Wesentliche Änderungen an Spielmechaniken oder Balance benötigen vorherige Abstimmung mit dem Nutzer.
