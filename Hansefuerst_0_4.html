@@ -9,6 +9,19 @@ const CITYART=['luebeck','hamburg','rostock','stralsund','stettin'];
 // Presentation coordinates only; city indices remain the persistent catalog identity.
 const CITY_MAP_POINTS=[[110,185],[53,120],[274,138],[359,167],[512,191]];
 
+// Appended identities are permanent. Current play remains five cities until activation.
+const EXPANSION_CITIES=['Lübeck','Hamburg','Rostock','Stralsund','Stettin','Danzig','Bergen','Visby','Brügge','Nowgorod','Venlo'];
+// Provisional stock ranges: all eleven goods, no permanent production or price bonus.
+const EXPANSION_STOCKS=[
+ [[85,135],[40,85],[80,130],[35,80],[45,95],[30,70],[35,80],[85,120],[80,115],[35,75],[15,32]],
+ [[25,65],[25,65],[50,95],[35,75],[100,150],[25,65],[25,60],[25,60],[35,75],[35,75],[8,22]],
+ [[45,90],[40,85],[45,90],[40,85],[45,95],[45,95],[35,80],[45,85],[40,80],[45,85],[14,30]],
+ [[35,75],[45,90],[25,65],[35,75],[35,75],[90,140],[35,80],[30,65],[25,60],[65,105],[12,28]],
+ [[40,85],[30,70],[80,125],[35,75],[45,90],[25,65],[25,65],[65,105],[70,110],[30,65],[45,75]],
+ [[55,100],[50,95],[45,85],[40,80],[30,70],[50,95],[65,100],[35,75],[30,70],[50,95],[8,22]]
+];
+function migrateToCitiesV6(raw){try{if(raw?.v===6){const x=JSON.parse(JSON.stringify(raw));validate(x);return x}const x=migrate(raw);if(!x)return null;for(let city=5;city<11;city++){x.markets.push(GOODS.map((g,j)=>({price:g[2],stock:Math.round((EXPANSION_STOCKS[city-5][j][0]+EXPANSION_STOCKS[city-5][j][1])/2)})));x.warehouses[city]=emptyWarehouse()}x.v=6;validate(x);return x}catch(e){return null}}
+function backupCityMigration(raw,imported=false){if(JSON.parse(raw).v!==6){const key=KEY+(imported?'-cities11-import-backup':'-cities11-migration-backup');if(localStorage.getItem(key)===null)localStorage.setItem(key,raw)}}
 const CITIES=['Lübeck','Hamburg','Rostock','Stralsund','Stettin'];
 const GOODS=[['Getreide','🌾',16],['Bier','🍺',25],['Holz','🪵',19],['Salz','🧂',31],['Fisch','🐟',22],['Tuch','🧵',56],['Hansegras','🌿',84],['Hanf','🪢',32],['Pech','🛢️',28],['Eisenwaren','⚒️',72],['Pelze','🦊',110]];
 // Saved indices are append-only identities: never reorder the existing catalogs.
@@ -36,12 +49,13 @@ function emptyWarehouse(){return {cargo:{},costs:{},bookCosts:{},origins:{}}}
 function emptyWarehouses(){return Object.fromEntries(WAREHOUSE_CITIES.map(city=>[city,emptyWarehouse()]))}
 function completeWarehouses(warehouses){validateWarehouses(warehouses);for(const city of WAREHOUSE_CITIES)if(!Object.hasOwn(warehouses,city))warehouses[city]=emptyWarehouse();return warehouses}
 function warehouseMigrationNeeded(parsed){return !Object.hasOwn(parsed,'warehouses')||WAREHOUSE_CITIES.some(city=>!Object.hasOwn(parsed.warehouses||{},city))}
-function validateWarehouses(warehouses,goodsCount=GOOD_COUNT){
+function validateWarehouses(warehouses,goodsCount=GOOD_COUNT,cityCount=CITY_COUNT){
+ const isCityIndex=i=>Number.isInteger(i)&&i>=0&&i<cityCount;
  const object=x=>x&&typeof x==='object'&&!Array.isArray(x);
  const cost=n=>Number.isFinite(n)&&n>=0&&n<=1e12;
  if(!object(warehouses)||!Object.hasOwn(warehouses,0))throw Error('Ungültige Lagerdaten');
  for(const [city,w] of Object.entries(warehouses)){
-  if(!isIndexKey(city,CITY_COUNT)||!WAREHOUSE_CITIES.includes(+city)||!object(w)||!['cargo','costs','bookCosts','origins'].every(k=>object(w[k])))throw Error('Ungültiges Lager');
+  if(!isIndexKey(city,cityCount)||!object(w)||!['cargo','costs','bookCosts','origins'].every(k=>object(w[k])))throw Error('Ungültiges Lager');
   for(const key of ['cargo','costs','bookCosts','origins'])for(const j of Object.keys(w[key]))if(!isIndexKey(j,goodsCount)||!Object.hasOwn(w.cargo,j))throw Error('Ungültige Lagerware');
   for(const [j,n] of Object.entries(w.cargo)){
    const lots=w.origins[j];
@@ -87,11 +101,12 @@ function warehouseView(){
 function validate(x){
  const num=(n,min=0,max=1e12)=>Number.isFinite(n)&&n>=min&&n<=max;
  const integer=(n,min,max)=>Number.isInteger(n)&&num(n,min,max);
- if(!x||typeof x!=='object'||![3,4,5].includes(x.v))throw Error('Unbekannte Version');
- const goodsCount=x.v===5?GOOD_COUNT:LEGACY_GOOD_COUNT,isGoodIndex=i=>Number.isInteger(i)&&i>=0&&i<goodsCount;
+ if(!x||typeof x!=='object'||![3,4,5,6].includes(x.v))throw Error('Unbekannte Version');
+ const cityCount=x.v===6?11:5,isCityIndex=i=>Number.isInteger(i)&&i>=0&&i<cityCount;
+ const goodsCount=x.v>=5?GOOD_COUNT:LEGACY_GOOD_COUNT,isGoodIndex=i=>Number.isInteger(i)&&i>=0&&i<goodsCount;
  if(!isCityIndex(x.city)||!integer(x.day,1,360)||!integer(x.year,1,999999)||!integer(x.rank,0,4)||!num(x.rep)||!num(x.gold)||!num(x.bank)||!num(x.debt))throw Error('Ungültige Grunddaten');
  if(typeof x.name!=='string'||typeof x.player!=='string'||!Array.isArray(x.ships)||!x.ships.length||x.ships.length>500||!integer(x.active,0,x.ships.length-1))throw Error('Ungültige Flotte');
- if(!Array.isArray(x.markets)||x.markets.length!==CITY_COUNT||x.markets.some(c=>!Array.isArray(c)||c.length!==goodsCount||c.some(m=>!m||!integer(m.price,1,1e9)||!integer(m.stock,0,1e9))))throw Error('Ungültige Märkte');
+ if(!Array.isArray(x.markets)||x.markets.length!==cityCount||x.markets.some(c=>!Array.isArray(c)||c.length!==goodsCount||c.some(m=>!m||!integer(m.price,1,1e9)||!integer(m.stock,0,1e9))))throw Error('Ungültige Märkte');
  const ids=new Set();
  for(const q of x.ships){if(!q||!num(q.id,0,Number.MAX_SAFE_INTEGER)||ids.has(q.id)||typeof q.name!=='string'||!integer(q.type,0,2)||!num(q.capacity,15,10000)||!num(q.speed,.01,100)||!num(q.condition,0,100)||!integer(q.arms,0,3)||!q.cargo||!q.costs)throw Error('Ungültiges Schiff');ids.add(q.id);
  if(x.v>=4&&!isCityIndex(q.city))throw Error('Ungültiger Schiffsort');
@@ -100,14 +115,14 @@ function validate(x){
  if(q.bookCosts)for(const [j,n] of Object.entries(q.bookCosts))if(!isIndexKey(j,goodsCount)||!num(n))throw Error('Ungültiger Buchwert');if(q.origins){for(const [j,lots] of Object.entries(q.origins)){if(!isIndexKey(j,goodsCount)||!Array.isArray(lots)||lots.some(l=>!l||!(l.city===null||isCityIndex(l.city))||!integer(l.n,0,10000))||lots.reduce((a,l)=>a+l.n,0)!==(q.cargo[j]||0))throw Error('Ungültiger Warenursprung')}}if(load(q)>capacity(q))throw Error('Schiff überladen');}
  for(const k of ['messages','rumors','quests'])if(!Array.isArray(x[k]))throw Error('Ungültiges Logbuch');
  if(x.messages.some(t=>typeof t!=='string')||!x.journal||typeof x.journal!=='object'||!x.birthdaySeen||typeof x.birthdaySeen!=='object')throw Error('Ungültige Aufzeichnungen');
- for(const [c,j] of Object.entries(x.journal))if(!isIndexKey(c,CITY_COUNT)||!j||!Array.isArray(j.prices)||j.prices.length!==goodsCount||j.prices.some((n,index)=>!(x.v===5&&index>=LEGACY_GOOD_COUNT&&n===null)&&!num(n,1)))throw Error('Ungültiges Preisbuch');
+ for(const [c,j] of Object.entries(x.journal))if(!isIndexKey(c,cityCount)||!j||!Array.isArray(j.prices)||j.prices.length!==goodsCount||j.prices.some((n,index)=>!(x.v>=5&&index>=LEGACY_GOOD_COUNT&&n===null)&&!num(n,1)))throw Error('Ungültiges Preisbuch');
  for(const q of x.quests)if(!q||!isCityIndex(q.city)||!isGoodIndex(q.j)||!integer(q.n,1,10000)||!num(q.reward)||!integer(q.until,0,1e12))throw Error('Ungültiger Auftrag');
  for(const q of x.rumors)if(!q||!isCityIndex(q.city)||!isGoodIndex(q.j)||!integer(q.until,0,1e12)||typeof q.text!=='string')throw Error('Ungültiges Gerücht');
- validateWarehouses(x.warehouses,goodsCount);
- if(x.v===5&&WAREHOUSE_CITIES.some(city=>!Object.hasOwn(x.warehouses,city)))throw Error('Unvollständige Lagerdaten');
+ validateWarehouses(x.warehouses,goodsCount,cityCount);
+ if(x.v>=5&&Array.from({length:cityCount},(_,city)=>city).some(city=>!Object.hasOwn(x.warehouses,city)))throw Error('Unvollständige Lagerdaten');
  return x;
 }
-function migrate(raw){try{let x=JSON.parse(JSON.stringify(raw));
+function migrate(raw){try{if(raw?.v===6)return null;let x=JSON.parse(JSON.stringify(raw));
  if(x&&x.version===1){if(!x.ship)throw Error();let y=fresh(x.player||'Ulf',x.name||'Kaufmann');y.v=4;y.markets=y.markets.map(c=>c.slice(0,LEGACY_GOOD_COUNT));for(const k of ['day','year','city','gold','rep','rank','markets','journal','messages','birthdaySeen'])if(x[k]!==undefined)y[k]=x[k];y.ships[0].name=x.ship.name||'Kleine Kogge';y.ships[0].capacity=x.ship.capacity||80;y.ships[0].cargo=x.ship.cargo||{};y.ships[0].city=y.city;for(const j of Object.keys(y.ships[0].cargo))y.ships[0].costs[j]=null;x=y;}
  if(x&&x.v===5){validate(x)}
  if(x&&!Object.hasOwn(x,'warehouses'))x.warehouses=emptyWarehouses();
