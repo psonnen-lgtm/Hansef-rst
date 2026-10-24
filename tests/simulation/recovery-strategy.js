@@ -40,7 +40,7 @@ function simulateRecovery(targetLosses,limits={lossAttempts:160,recoveryDays:144
   const fee=[4,6,9][ship().type];if(!finance(fee)){reason='insufficient_travel_cash';break;}
   observe();const q=ship(),view={gold:s.gold,day:totalDay(),space:capacity()-load(),local:s.markets[s.city].map(m=>({price:m.price,stock:m.stock})),journal:{},destinations:[]};
   for(const [city,e]of Object.entries(s.journal))view.journal[city]={day:e.year*360+e.day,prices:[...e.prices]};
-  for(let c=0;c<CITIES.length;c++)if(c!==s.city)view.destinations.push({city:c,days:Math.max(1,Math.ceil(DIST[s.city][c]/(q.speed*(.65+.35*q.condition/100)))),fee});
+  for(let c=0;c<CITIES.length;c++)if(c!==s.city)view.destinations.push({city:c,days:routeTravelDays(s.city,c,q.speed*(.65+.35*q.condition/100)),fee});
   const choice=planObserved('normal',view);if(!choice){reason='planner_failure_with_travel_cash';break;}
   const row=execute(choice,'recovery');row.requiredReserve=choice.reserve;row.kind=choice.kind;recoveryTrades.push(row);
  }
