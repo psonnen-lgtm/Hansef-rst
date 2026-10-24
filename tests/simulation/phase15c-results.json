@@ -1,7 +1,7 @@
 {
   "baseCommit": "ffb9e9657030fe3c3a4e5a30b8fa7a1826b4a713",
   "gameSHA256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
-  "driverSHA256": "e1ba9a957d058826d1fa9ae8e962255867774a629c30c62c844030bd49f3872e",
+  "driverSHA256": "ddfd4a3a756f56195cfe2b787b38d6dfe18ef34f4995302f16551994a77be93d",
   "rng": "mulberry32",
   "seeds": "10001..10010",
   "checks": [
@@ -40,6 +40,8 @@
       "purchase": 468,
       "realisedTradeProfit": 84,
       "premium": 1344,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 1416,
       "completed": 1,
       "trace": [
@@ -205,6 +207,8 @@
       "purchase": 960,
       "realisedTradeProfit": -255,
       "premium": 1680,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 1413,
       "completed": 1,
       "trace": [
@@ -362,6 +366,8 @@
       "purchase": 306,
       "realisedTradeProfit": 34,
       "premium": 544,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 566,
       "completed": 1,
       "trace": [
@@ -519,6 +525,8 @@
       "purchase": 828,
       "realisedTradeProfit": -126,
       "premium": 2016,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 1878,
       "completed": 1,
       "trace": [
@@ -676,6 +684,8 @@
       "purchase": 224,
       "realisedTradeProfit": 70,
       "premium": 616,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 674,
       "completed": 1,
       "trace": [
@@ -833,6 +843,8 @@
       "purchase": 175,
       "realisedTradeProfit": 7,
       "premium": 350,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 345,
       "completed": 1,
       "trace": [
@@ -998,6 +1010,8 @@
       "purchase": 245,
       "realisedTradeProfit": 49,
       "premium": 434,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 471,
       "completed": 1,
       "trace": [
@@ -1155,6 +1169,8 @@
       "purchase": 318,
       "realisedTradeProfit": 42,
       "premium": 672,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 702,
       "completed": 1,
       "trace": [
@@ -1312,6 +1328,8 @@
       "purchase": 176,
       "realisedTradeProfit": 128,
       "premium": 512,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 628,
       "completed": 1,
       "trace": [
@@ -1469,6 +1487,8 @@
       "purchase": 402,
       "realisedTradeProfit": -48,
       "premium": 672,
+      "cargoLossCost": 0,
+      "retainedCargoCost": 0,
       "cashDelta": 612,
       "completed": 1,
       "trace": [
