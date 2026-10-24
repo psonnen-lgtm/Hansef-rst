@@ -1,6 +1,6 @@
 const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const html=fs.readFileSync(__dirname+'/../Hansefuerst_0_4.html','utf8');let src=html.match(/<script>([\s\S]*?)<\/script>/)[1];src=src.slice(0,src.indexOf('try{let raw=localStorage.getItem(KEY)'));
-const nodes={},ctx={console,Date,Math,alert(){},confirm:()=>true,localStorage:{setItem(){}},document:{getElementById(id){return nodes[id]??={value:1,innerHTML:'',classList:{remove(){},add(){}}}}}};vm.createContext(ctx);vm.runInContext(src,ctx);let checks=0;function test(name,code){assert.equal(vm.runInContext('(()=>{'+code+'})()',ctx),true,name);console.log('PASS '+name);checks++}
+const nodes={},ctx={performance:{now:()=>100},setInterval(){},window:{addEventListener(){}},console,Date,Math,alert(){},confirm:()=>true,localStorage:{setItem(){}},document:{addEventListener(){},hasFocus:()=>true,hidden:false,getElementById(id){return nodes[id]??={value:1,innerHTML:'',classList:{remove(){},add(){}}}}}};vm.createContext(ctx);vm.runInContext(src,ctx);let checks=0;function test(name,code){assert.equal(vm.runInContext('(()=>{'+code+'})()',ctx),true,name);console.log('PASS '+name);checks++}
 vm.runInContext('render=()=>{};drawMap=()=>{};s=fresh("Ulf","Ulf");',ctx);
 test('fresh save validates','return migrate(s)?.v===4');
 test('invalid v3 rejected','return migrate({v:3})===null');
