@@ -1,0 +1,9 @@
+# Entwicklungs- und Testberichte
+
+Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abgelegt. Die verbindlichen Arbeitsregeln stehen in [AGENTS.md](../../AGENTS.md). Frühere Berichte bleiben erhalten; jeder Bericht nennt die vollständige Commit-ID des getesteten Spielcodes und unterscheidet neue Prüfungen von übernommenen Ergebnissen.
+
+| Datum | Version / Phase | Bericht | Getesteter Code-Commit |
+|---|---|---|---|
+| 24.10.2026 | 0.4.2 / Phase 1 | [Fehlerbehebung und Exploit-Schutz](2026-10-24_0.4.2_phase-1.md) | `0c00030993ab0b0ac153de240dd8106ae4dfcf57` |
+
+Ältere ausführliche Nachweise bleiben an ihren bisherigen Pfaden erhalten, insbesondere [V04-PHASE1.md](../../V04-PHASE1.md). Wesentliche Änderungen an Spielmechaniken oder Balance benötigen vorherige Abstimmung mit dem Nutzer.
