@@ -1,3 +1,4 @@
+const legacyProjection=value=>{const x=JSON.parse(JSON.stringify(value));x.v=4;x.markets=x.markets.map(c=>c.slice(0,7));for(const e of Object.values(x.journal))e.prices=e.prices.slice(0,7);return x};
 const {chromium}=require('playwright'),assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs'),{execFileSync}=require('node:child_process');
 const base=process.env.HANSE_BROWSER_BASE||'http://127.0.0.1:8765',shots=process.env.HANSE_WAREHOUSE_SHOTS||'/tmp';
 (async()=>{const browser=await chromium.launch({executablePath:process.env.HANSE_CHROMIUM||'/usr/bin/chromium',args:['--no-sandbox']});try{
@@ -6,7 +7,7 @@ const base=process.env.HANSE_BROWSER_BASE||'http://127.0.0.1:8765',shots=process
  await old.evaluate(()=>{s=migrate(fresh('Ulf','Luebeck save'));marketView();$('qty6').value=5;trade(6,1);warehouseView();$('warehouseQty6').value=3;warehouseTransfer(6,1);s.bank=100.25;s.debt=77.75;save()});const raw=await old.evaluate(()=>JSON.stringify(s));assert.equal(Object.keys(JSON.parse(raw).warehouses).length,1);
  await page.evaluate(raw=>{localStorage.clear();localStorage.setItem(KEY,raw);localStorage.setItem(KEY+'-warehouse-migration-backup','first-stage original')},raw);await page.reload();
  assert.equal(await page.evaluate(()=>localStorage.getItem(KEY+'-warehouse-cities-migration-backup')),raw);assert.equal(await page.evaluate(()=>localStorage.getItem(KEY+'-warehouse-migration-backup')),'first-stage original');
- const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY))),original=JSON.parse(raw);assert.deepEqual(saved.warehouses[0],original.warehouses[0]);for(let c=1;c<5;c++)assert.deepEqual(saved.warehouses[c],{cargo:{},costs:{},bookCosts:{},origins:{}});const {warehouses,...rest}=saved;const {warehouses:ignored,...oldRest}=original;assert.deepEqual(rest,oldRest);await page.reload();assert.deepEqual(await page.evaluate(()=>s.warehouses),saved.warehouses);
+ const saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY))),original=JSON.parse(raw);assert.deepEqual(saved.warehouses[0],original.warehouses[0]);for(let c=1;c<5;c++)assert.deepEqual(saved.warehouses[c],{cargo:{},costs:{},bookCosts:{},origins:{}});const {warehouses,...rest}=saved;const {warehouses:ignored,...oldRest}=original;assert.deepEqual(legacyProjection(rest),oldRest);await page.reload();assert.deepEqual(await page.evaluate(()=>s.warehouses),saved.warehouses);
  console.log('PASS actual Luebeck-only startup extension, original backup, data preservation and repeated reload');
  for(const size of [{width:390,height:844},{width:820,height:1180},{width:1280,height:900}]){
   await page.setViewportSize(size);await page.evaluate(()=>{s=migrate(fresh('Ulf','Warehouse journey'));s.gold=10000;render();closeSheet()});

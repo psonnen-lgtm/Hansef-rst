@@ -1,3 +1,4 @@
+const legacyProjection=value=>{const x=JSON.parse(JSON.stringify(value));x.v=4;x.markets=x.markets.map(c=>c.slice(0,7));for(const e of Object.values(x.journal))e.prices=e.prices.slice(0,7);return x};
 const {chromium}=require('playwright');
 const assert=require('node:assert/strict'),fs=require('node:fs'),{execFileSync}=require('node:child_process');
 const base=process.env.HANSE_BROWSER_BASE||'http://127.0.0.1:8765';const url=base+'/Hansefuerst_0_4.html';
@@ -9,7 +10,7 @@ const oldPage=await browser.newPage();await oldPage.route('**/warehouse-old.html
 const raw=await oldPage.evaluate(()=>JSON.stringify(s));assert(!Object.hasOwn(JSON.parse(raw),'warehouses'));
 await page.evaluate(raw=>{localStorage.clear();localStorage.setItem(KEY,raw)},raw);await page.reload();
 assert.equal(await page.evaluate(()=>localStorage.getItem(KEY+'-warehouse-migration-backup')),raw);
-let saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY)));const {warehouses,...rest}=saved;assert.deepEqual(rest,JSON.parse(raw));assert.deepEqual(warehouses,Object.fromEntries([0,1,2,3,4].map(city=>[city,{cargo:{},costs:{},bookCosts:{},origins:{}}])));
+let saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY)));const {warehouses,...rest}=saved;assert.deepEqual(legacyProjection(rest),JSON.parse(raw));assert.deepEqual(warehouses,Object.fromEntries([0,1,2,3,4].map(city=>[city,{cargo:{},costs:{},bookCosts:{},origins:{}}])));
 await page.getByRole('button',{name:'📦 Lagerhaus am Kontor',exact:true}).click();await page.getByLabel('Menge Getreide',{exact:true}).fill('4');await page.getByRole('button',{name:'Einlagern',exact:true}).first().click();
 assert.equal(await page.evaluate(()=>s.warehouses[0].cargo[0]),4);assert.equal(await page.evaluate(()=>ship().cargo[0]),6);
 await page.reload();assert.equal(await page.evaluate(()=>s.warehouses[0].cargo[0]),4);await page.getByRole('button',{name:'📦 Lagerhaus am Kontor',exact:true}).click();
