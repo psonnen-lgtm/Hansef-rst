@@ -25,3 +25,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Abschlussauswertung Phase 1.5e
 
 24.10.2026 – [Neue Auswertung der 90 gesicherten historischen Ergebnisse](2026-10-24_0.4.2_phase-1.5e_abschluss.md). Grundlage: `b4dad87c31f70d30eb021158357d42b0500f12fc`; historischer Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`. Keine erneuten Simulationen oder Regressionstests; einschließlich Vergleichsgrenzen und Vorbereitungslücken für 2.250 Läufe.
+
+## Phase 1.6a – Technische Vorbereitung
+
+24.10.2026 – [Abschlussbericht und Start-/Resume-Anleitung](2026-10-24_0.4.2_phase-1.6a.md), [drei veröffentlichte Zwischenstände](2026-10-24_0.4.2_phase-1.6a_fortschritt.md). Separater 2.250er-Modus vorbereitet; acht technische Prüfgruppen und zwei Smoke-Ergebnisse mit je einem Replay erfolgreich. Kein großer Lauf; Spielcode und historische Ergebnisse unverändert. Geprüfter Runner: `1f937cc5aff04c79eedae4e879f37573bc478e63`; Spielcode: `0c00030993ab0b0ac153de240dd8106ae4dfcf57`.
