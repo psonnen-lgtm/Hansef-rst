@@ -53,13 +53,13 @@ check('stock can move to another owned ship in Luebeck',()=>{
  const g=game(buy);assert(move(g,10));g.eval('s.ships.push({...makeShip(0),city:0});warehouseSelect(1)');assert(move(g,7,-1));assert.equal(g.eval('s.ships[0].cargo[0]||0'),0);assert.equal(g.eval('s.ships[1].cargo[0]'),7);assert.equal(g.eval('s.warehouses[0].cargo[0]'),3);
 });
 check('old v4 state migration adds only empty storage after existing normalizations',()=>{
- const g=game(buy);g.eval('s=migrate(s);delete s.warehouses');const raw=g.eval('JSON.stringify(s)');g.context.oldRaw=raw;g.eval('s=migrate(JSON.parse(oldRaw))');assert.deepEqual(clean(g.eval('s.warehouses')),{0:{cargo:{},costs:{},bookCosts:{},origins:{}}});assert.equal(g.eval('JSON.stringify((({warehouses,...rest})=>rest)(s))'),raw);
+ const g=game(buy);g.eval('s=migrate(s);delete s.warehouses');const raw=g.eval('JSON.stringify(s)');g.context.oldRaw=raw;g.eval('s=migrate(JSON.parse(oldRaw))');assert.deepEqual(clean(g.eval('s.warehouses')),Object.fromEntries([0,1,2,3,4].map(city=>[city,{cargo:{},costs:{},bookCosts:{},origins:{}}])));assert.equal(g.eval('JSON.stringify((({warehouses,...rest})=>rest)(s))'),raw);
 });
 check('warehouse save/load round-trip preserves cost, origin and quantities',()=>{
  const g=game(buy);assert(move(g,7));const store={};g.context.localStorage.setItem=(k,v)=>store[k]=v;g.eval('save()');g.context.rawSave=store['hansefuerst-v04'];g.eval('s=migrate(JSON.parse(rawSave))');assert.equal(g.eval('s.warehouses[0].cargo[0]'),7);assert(move(g,7,-1));assert.equal(g.eval('ship().cargo[0]'),10);
 });
 check('invalid warehouse data is rejected, never silently emptied',()=>{
- const g=game(buy);assert(move(g,5));for(const patch of ['x.warehouses=null','x.warehouses[1]=x.warehouses[0]','x.warehouses[0].cargo[0]=-1','x.warehouses[0].cargo[0]=Infinity','x.warehouses[0].origins[0][0].n=999','x.warehouses[0].costs[0]=-2','x.warehouses[0].bookCosts[0]=null','x.warehouses[0].cargo[7]=1'])assert.equal(g.eval(`(()=>{const x=JSON.parse(JSON.stringify(s));${patch};return migrate(x)})()`),null,patch);
+ const g=game(buy);assert(move(g,5));for(const patch of ['x.warehouses=null','x.warehouses[5]=x.warehouses[0]','x.warehouses[0].cargo[0]=-1','x.warehouses[0].cargo[0]=Infinity','x.warehouses[0].origins[0][0].n=999','x.warehouses[0].costs[0]=-2','x.warehouses[0].bookCosts[0]=null','x.warehouses[0].cargo[7]=1'])assert.equal(g.eval(`(()=>{const x=JSON.parse(JSON.stringify(s));${patch};return migrate(x)})()`),null,patch);
 });
 check('local cargo cannot become foreign quest cargo by warehousing',()=>{
  const g=game(buy);g.eval('s.quests=[{city:0,j:0,n:10,reward:500,until:totalDay()+20}]');assert(move(g,10));assert(move(g,10,-1));g.eval("$('qty0').value=10;trade(0,-1)");assert.equal(g.eval('s.completed'),0);assert(!g.events.some(e=>e.type==='quest_reward'));

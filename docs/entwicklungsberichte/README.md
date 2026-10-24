@@ -54,3 +54,7 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 ## Phase 0.5b – Erstes Lagerhaus in Lübeck
 
 24.10.2026 – [Abschlussbericht](2026-10-24_0.5b_lagerhaus-luebeck.md), [beide gesicherte Zwischenstände](2026-10-24_0.5b_fortschritt.md) und [mobiler Chromium-Screenshot](2026-10-24_0.5b_lagerhaus-mobile.png). Lagerhaus im Lübecker Kontor, Warenumlagerung mit FIFO-Herkunft/Kosten und konserviertem Vermögen; additive v4-Migration mit Backup. Laut Codex-Zwischenstand 19 Lagerprüfgruppen, 19 Basistests, 18 Regressionen sowie Browserproben bei drei Viewportgrößen bestanden. Abschlussdokumentation nachgetragen; keine neuen Tests hierfür ausgeführt. Keine große Wirtschaftssimulation.
+
+## Version 0.5b – Bauabschnitt 2
+
+24.10.2026 – [Lagerhäuser in allen fünf Städten](2026-10-24_0.5b_lagerhaeuser-alle-staedte.md), [beide Zwischenstände](2026-10-24_0.5b_alle-staedte_fortschritt.md). Gemeinsame Lagerfunktion mit getrennten örtlichen Beständen; Altstände ohne Lager und mit Lübecker Lager geschützt übernommen. 19 bisherige + 13 neue Lagergruppen, 19 Basistests, 18 Regelregressionen und weitere kleine Schutztests bestanden. Chromium: fünf Städte × drei Ansichten; tatsächliche Screenshots gesichert. Geprüfter Spielcode: `f679076ac8c4ed96cf51c24392d889bc3a235fe7`. Keine große Wirtschaftssimulation.

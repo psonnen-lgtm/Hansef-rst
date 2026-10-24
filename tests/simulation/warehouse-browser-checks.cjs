@@ -9,7 +9,7 @@ const oldPage=await browser.newPage();await oldPage.route('**/warehouse-old.html
 const raw=await oldPage.evaluate(()=>JSON.stringify(s));assert(!Object.hasOwn(JSON.parse(raw),'warehouses'));
 await page.evaluate(raw=>{localStorage.clear();localStorage.setItem(KEY,raw)},raw);await page.reload();
 assert.equal(await page.evaluate(()=>localStorage.getItem(KEY+'-warehouse-migration-backup')),raw);
-let saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY)));const {warehouses,...rest}=saved;assert.deepEqual(rest,JSON.parse(raw));assert.deepEqual(warehouses,{0:{cargo:{},costs:{},bookCosts:{},origins:{}}});
+let saved=await page.evaluate(()=>JSON.parse(localStorage.getItem(KEY)));const {warehouses,...rest}=saved;assert.deepEqual(rest,JSON.parse(raw));assert.deepEqual(warehouses,Object.fromEntries([0,1,2,3,4].map(city=>[city,{cargo:{},costs:{},bookCosts:{},origins:{}}])));
 await page.getByRole('button',{name:'📦 Lagerhaus am Kontor',exact:true}).click();await page.getByLabel('Menge Getreide',{exact:true}).fill('4');await page.getByRole('button',{name:'Einlagern',exact:true}).first().click();
 assert.equal(await page.evaluate(()=>s.warehouses[0].cargo[0]),4);assert.equal(await page.evaluate(()=>ship().cargo[0]),6);
 await page.reload();assert.equal(await page.evaluate(()=>s.warehouses[0].cargo[0]),4);await page.getByRole('button',{name:'📦 Lagerhaus am Kontor',exact:true}).click();
@@ -31,7 +31,7 @@ assert.equal(await page.evaluate(()=>Object.keys(s.warehouses[0].cargo).length),
 console.log('PASS real FileReader legacy import and both backups');
 // Remote active ship must be selected explicitly; local ship selector changes it safely.
 await page.evaluate(()=>{s.ships.push({...makeShip(0),city:1});s.active=1;warehouseView()});assert(await page.getByRole('button',{name:'Aufs Schiff',exact:true}).first().isDisabled());await page.getByLabel('Schiff in Lübeck',{exact:true}).selectOption('0');assert.equal(await page.evaluate(()=>s.active),0);
-await page.evaluate(()=>{s.city=1;render();closeSheet()});assert.equal(await page.locator('#warehouseSpot').isVisible(),false);
+await page.evaluate(()=>{s.city=1;render();closeSheet()});assert.equal(await page.locator('#warehouseSpot').isVisible(),true);await page.locator('#warehouseSpot').click();assert(await page.getByRole('heading',{name:'📦 Lagerhaus Hamburg',exact:true}).isVisible());
 // Backup write failure must not replace the legacy main save.
 await page.evaluate(raw=>{localStorage.clear();localStorage.setItem(KEY,raw)},raw);
 await page.addInitScript(()=>{const original=Storage.prototype.setItem;Storage.prototype.setItem=function(k,v){if(k.endsWith('-warehouse-migration-backup'))throw Error('simulated quota');return original.call(this,k,v)}});
