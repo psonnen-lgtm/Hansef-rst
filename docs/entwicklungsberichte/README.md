@@ -8,4 +8,6 @@ Nach jeder abgeschlossenen Entwicklungsrunde wird hier ein kompakter Bericht abg
 
 | 24.10.2026 | 0.4.2 / Phase 1.5a | [Optimierten Bot reparieren](2026-10-24_0.4.2_phase-1.5a.md) | `67efda6915db7e9068591315bebda59188911a56` |
 
+| 24.10.2026 | 0.4.2 / Phase 1.5b | [Drei Handelsstrategien unterscheiden](2026-10-24_0.4.2_phase-1.5b.md) | `f6ddf8583687106aa1b7c1f4f065d0e22c530c21` |
+
 Ältere ausführliche Nachweise bleiben an ihren bisherigen Pfaden erhalten, insbesondere [V04-PHASE1.md](../../V04-PHASE1.md). Wesentliche Änderungen an Spielmechaniken oder Balance benötigen vorherige Abstimmung mit dem Nutzer.
