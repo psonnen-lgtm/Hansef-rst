@@ -1,4 +1,5 @@
 function simulate(strategy,maxDays=1440,maxDecisions=800){
+ if(['cautious','normal','aggressive'].includes(strategy))return simulateObserved(strategy,maxDays,maxDecisions);
  const origin=totalDay(), routes={}, metrics={fees:0,repairs:0,interest:0,borrowed:0,questProfit:0,quests:0,rumors:0,pirates:0,storms:0,realisedProfit:0,decisions:0,deadlock:false,negativeGold:false,invalidCargo:false,invalidPrice:false};
  const badTurns=({bad5:5,bad10:10,bad20:20,bad30:30})[strategy]||0, isBad=badTurns>0;
  let eld=null,dead=false,lowest=netWorth(), recovering=false,lossEvents=0;
@@ -39,4 +40,62 @@ function simulate(strategy,maxDays=1440,maxDecisions=800){
  }
  localSell();for(let i=0;i<4;i++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:metrics.decisions};
  return {strategy,days:totalDay()-origin,wealth:netWorth(),gold:s.gold,debt:s.debt,rank:s.rank,eld,insolvent:netWorth()<=0,stranded:dead&&netWorth()>0,lowest,recovered:isBad&&!dead,metrics,routes,priceMin:Math.min(...s.markets.flat().map(x=>x.price)),priceMax:Math.max(...s.markets.flat().map(x=>x.price))};
+}
+// Only the three Phase-1.5b policies use this planner. No unseen market is exposed.
+function observedPolicy(strategy){return {
+ cautious:{cashFraction:.55,cashFloor:800,loadFraction:.35,discount:.05,ageDiscount:.002,timePower:2},
+ normal:{cashFraction:.25,cashFloor:300,loadFraction:.70,discount:.02,ageDiscount:.001,timePower:1},
+ aggressive:{cashFraction:.05,cashFloor:40,loadFraction:1,discount:0,ageDiscount:0,timePower:0}
+}[strategy]}
+function planObserved(strategy,v){
+ const p=observedPolicy(strategy),reserve=Math.max(p.cashFloor,v.gold*p.cashFraction);
+ let best=null;
+ for(const dest of v.destinations){
+  const known=v.journal[dest.city];if(!known)continue;
+  const haircut=Math.min(.20,p.discount+Math.max(0,v.day-known.day)*p.ageDiscount);
+  for(let j=0;j<v.local.length;j++){
+   const m=v.local[j],quoted=known.prices[j];if(!Number.isFinite(quoted)||quoted<=0)continue;
+   const n=Math.max(0,Math.min(m.stock,Math.floor(v.space*p.loadFraction),Math.floor((v.gold-reserve-dest.fee)/m.price)));
+   const gain=n*(quoted*(1-haircut)-m.price)-dest.fee;
+   const score=gain/Math.pow(dest.days,p.timePower);
+   if(n>0&&gain>0&&(!best||score>best.score))best={city:dest.city,good:j,quantity:n,reserve,fee:dest.fee,days:dest.days,quote:quoted,quoteDay:known.day,expectedGain:gain,score,kind:'trade'};
+  }
+ }
+ if(best)return best;
+ // Learn actual prices by visiting a harbor; absence of a known margin is not insolvency.
+ const choices=v.destinations.filter(d=>v.gold>=d.fee).slice().sort((a,b)=>{
+  const ka=v.journal[a.city],kb=v.journal[b.city];
+  return Number(!!ka)-Number(!!kb)||(ka?.day??0)-(kb?.day??0)||a.days-b.days||a.city-b.city;
+ });
+ const d=choices[0];return d?{city:d.city,good:null,quantity:0,reserve,fee:d.fee,days:d.days,kind:'observe'}:null;
+}
+function simulateObserved(strategy,maxDays,maxDecisions){
+ const origin=totalDay(),initialWealth=netWorth(),decisions=[],routes={},trajectory=[];
+ const metrics={fees:0,repairs:0,interest:0,borrowed:0,questProfit:0,quests:0,rumors:0,pirates:0,storms:0,realisedProfit:0,decisions:0,deadlock:false,negativeGold:false,invalidCargo:false,invalidPrice:false,bought:0,sold:0,trips:0,explorationTrips:0,pirateLostUnits:0};
+ let eld=null,lowest=initialWealth,stopReason='decision_limit',incoming=null;
+ function sell(){for(let i=0;i<s.ships.length;i++){s.active=i;if(ship().city!==s.city)continue;for(const [j,n] of Object.entries({...ship().cargo}))if(n){
+  const cost=ship().costs[j];$('qty'+j).value=n;trade(+j,-1);const sold=n-(ship().cargo[j]||0);if(sold){metrics.sold++;const gain=cost==null?0:sold*(s.markets[s.city][j].price-cost);metrics.realisedProfit+=gain;if(incoming)routes[incoming].realisedProfit+=gain;}
+ }}s.active=0;}
+ function promoteNow(){for(let k=0;k<4;k++)promote();if(s.rank===4&&!eld)eld={day:totalDay()-origin,decision:metrics.decisions};}
+ for(let step=0;step<maxDecisions&&totalDay()-origin<maxDays;step++){
+  sell();promoteNow();observe();const q=ship();
+  const view={gold:s.gold,day:totalDay(),space:capacity(q)-load(q),local:s.markets[s.city].map(m=>({price:m.price,stock:m.stock})),journal:{},destinations:[]};
+  for(const [city,entry] of Object.entries(s.journal))view.journal[city]={day:entry.year*360+entry.day,prices:[...entry.prices]};
+  for(let c=0;c<CITIES.length;c++)if(c!==s.city)view.destinations.push({city:c,days:Math.max(1,Math.ceil(DIST[s.city][c]/(q.speed*(.65+.35*q.condition/100)))),fee:[4,6,9][q.type]});
+  const choice=planObserved(strategy,view);metrics.decisions++;
+  if(!choice){metrics.deadlock=true;stopReason='insufficient_travel_cash';break;}
+  const cashBefore=s.gold;let actualQuantity=0;
+  if(choice.quantity){const before=q.cargo[choice.good]||0;$('qty'+choice.good).value=choice.quantity;trade(choice.good,1);actualQuantity=(q.cargo[choice.good]||0)-before;if(actualQuantity)metrics.bought++;}
+  const row={decision:metrics.decisions,day:totalDay()-origin,from:s.city,to:choice.city,kind:choice.kind,good:choice.good,quantity:actualQuantity,cashBefore,cashAfterBuy:s.gold,requiredReserve:choice.reserve,cashAfterFee:s.gold-choice.fee,fee:choice.fee,days:choice.days,knownQuote:choice.quote??null,quoteDay:choice.quoteDay??null,expectedGain:choice.expectedGain??null};
+  decisions.push(row);pending=null;planTravel(choice.city);
+  if(!pending){stopReason='departure_rejected';metrics.deadlock=true;break;}
+  const p={...pending};const label=CITIES[p.from]+' → '+CITIES[p.dest];routes[label]??={trips:0,fees:0,realisedProfit:0};
+  const loadBefore=load(q);arrive();if(s.city!==choice.city){stopReason='arrival_rejected';metrics.deadlock=true;break;}
+  metrics.trips++;metrics.fees+=p.fee;metrics.explorationTrips+=choice.kind==='observe';metrics.pirates+=pending.event==='pirates';metrics.storms+=pending.event==='storm';metrics.pirateLostUnits+=Math.max(0,loadBefore-load(q));routes[label].trips++;routes[label].fees+=p.fee;incoming=label;
+  lowest=Math.min(lowest,netWorth());metrics.negativeGold||=s.gold<0||!Number.isFinite(s.gold);metrics.invalidCargo||=s.ships.some(x=>load(x)>capacity(x)||Object.values(x.cargo).some(n=>n<0||!Number.isFinite(n)));
+  metrics.invalidPrice||=s.markets[s.city].some(m=>!Number.isFinite(m.price)||m.price<=0);
+  if(step%20===0)trajectory.push({day:totalDay()-origin,wealth:netWorth(),gold:s.gold});
+ }
+ sell();promoteNow();if(!metrics.deadlock&&totalDay()-origin>=maxDays)stopReason='day_limit';
+ return {strategy,days:totalDay()-origin,wealth:netWorth(),gold:s.gold,debt:s.debt,rank:s.rank,eld,insolvent:netWorth()<=0,stranded:metrics.deadlock&&netWorth()>0,lowest,recovered:false,metrics,routes,trajectory,decisions,stopReason};
 }
