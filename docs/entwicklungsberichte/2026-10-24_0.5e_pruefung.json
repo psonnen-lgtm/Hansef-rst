@@ -1,0 +1,10 @@
+{
+  "all1500ArchivedRecordsVerified": true,
+  "allArchiveAndRecordChecksumsMatch": true,
+  "sourceAndValidationChecksumListsMatch": true,
+  "routeAndCityAggregatesMatch": true,
+  "gameAnd33HistoricalFilesStillUnchanged": true,
+  "reportLinksValid": true,
+  "noSimulationInThisVerification": true,
+  "gameSHA256": "a51a6858a8fc3e62f9823a6bd244955be58e8bab45e2b52a5b685814aecc5727"
+}
