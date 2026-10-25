@@ -1,0 +1,54 @@
+{
+  "base": "e382c0f8653eabcfa8d37986e251bd2748ed4b46",
+  "identity": {
+    "gameCommit": "ca7f971b3a653e848c1c58dc8d4064ed531eda61",
+    "gameSHA256": "38a671d2b8d370fc69b9f536d19e2e2c2e4b31af6875b3aec7877bc7d24e8d41",
+    "files": {
+      "phase05j-run.cjs": "6e79b4c0324150aae62f5282d0120d8f433b81bc79a3efd142b7224def34b484",
+      "shipbuilding-strategy.js": "30323ac6e38ac98446ed9e359560f3945d5e2b1ea4a6b92e9b038da38499e848",
+      "headless.cjs": "5d6526a38b8f303c8a357b2a2f8be3e1ba451f3cf956324c64d319c22cdfc2c0",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+    }
+  },
+  "models": [
+    "control",
+    "material"
+  ],
+  "types": [
+    0,
+    1,
+    2
+  ],
+  "yards": [
+    0,
+    4,
+    6
+  ],
+  "seeds": [
+    82001,
+    82002,
+    82003,
+    82004,
+    82005,
+    82006,
+    82007,
+    82008,
+    82009,
+    82010,
+    82011,
+    82012
+  ],
+  "fullCases": 240,
+  "replays": 20,
+  "maxExecutions": 260,
+  "limits": {
+    "days": 1440,
+    "decisions": 800,
+    "lastTripMayExceed": true,
+    "maxNewShips": 2,
+    "reserve": 2000,
+    "procurementTimeout": 240,
+    "cooldown": 120
+  },
+  "note": "216 build-policy cases plus 24 no-build code controls; no duplicate yard controls"
+}

@@ -1,0 +1,223 @@
+{
+  "kind": "targeted_shipbuilding_fixtures_not_full_strategy_games",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "checks": [
+    {
+      "name": "recipe totals close to original prices, unconditional wage/resale loss and no immediate purchase bypass",
+      "passed": true,
+      "evidence": [
+        {
+          "type": 0,
+          "units": 44,
+          "base": 3812,
+          "wage": 2500,
+          "resale": 2320,
+          "days": 20
+        },
+        {
+          "type": 1,
+          "units": 82,
+          "base": 6184,
+          "wage": 3700,
+          "resale": 3280,
+          "days": 35
+        },
+        {
+          "type": 2,
+          "units": 141,
+          "base": 10537,
+          "wage": 6200,
+          "resale": 5000,
+          "days": 55
+        }
+      ]
+    },
+    {
+      "name": "all three types consume exact mixed local stocks once and pay wage once without quest premiums",
+      "passed": true,
+      "evidence": {
+        "types": 3,
+        "premiums": 0,
+        "singleGlobalOrder": true
+      }
+    },
+    {
+      "name": "short material, low cash, remote stocks and invalid type are inert",
+      "passed": true,
+      "evidence": {
+        "missingCases": 3,
+        "invalidTypes": 5
+      }
+    },
+    {
+      "name": "FIFO leftovers and unknown purchase cost stay unchanged; consumed origins are not relabelled",
+      "passed": true,
+      "evidence": {
+        "remaining": 5,
+        "knownCost": null,
+        "consumedLots": 2
+      }
+    },
+    {
+      "name": "global rent debt blocks construction without consuming old materials or paying debt implicitly",
+      "passed": true,
+      "evidence": {
+        "debt": 1,
+        "blocked": true
+      }
+    },
+    {
+      "name": "consuming legitimate oversized old materials handles the transition to normal rented space",
+      "passed": true,
+      "evidence": {
+        "remaining": 320,
+        "oldWareKept": true,
+        "nextDayBilling": true
+      }
+    },
+    {
+      "name": "exact due dates and repeated opening/processing deliver exactly once for each type",
+      "passed": true,
+      "evidence": {
+        "types": 3,
+        "repeatCalls": 60
+      }
+    },
+    {
+      "name": "completion during real arrival preserves ship references, convoy and active selection; new ship stays at yard",
+      "passed": true,
+      "evidence": {
+        "oldShipAt": 1,
+        "newShipAt": 0,
+        "selectionUnchanged": true
+      }
+    },
+    {
+      "name": "start failure, cancellation, reentry and stale confirmation preserve material and cash",
+      "passed": true,
+      "evidence": {
+        "quotaAtomic": true,
+        "cancelSafe": true,
+        "reentrySafe": true,
+        "staleRejected": true
+      }
+    },
+    {
+      "name": "failed delivery keeps due order; retry creates one ship and consumes no RNG",
+      "passed": true,
+      "evidence": {
+        "retryOnce": true,
+        "noRNG": true
+      }
+    },
+    {
+      "name": "waiting is atomic and rolls back completion, days and events when final save fails",
+      "passed": true,
+      "evidence": {
+        "failedWaitNoProgress": true,
+        "successfulRetry": true
+      }
+    },
+    {
+      "name": "harbor-work staging completes ship without intermediate write and cannot repeat wages",
+      "passed": true,
+      "evidence": {
+        "durableWrites": 1,
+        "wages": 20,
+        "completionOnce": true
+      }
+    },
+    {
+      "name": "reserved fleet slot and one-order ceiling cannot be bypassed",
+      "passed": true,
+      "evidence": {
+        "maximumFleet": 500,
+        "reservedSlot": true
+      }
+    },
+    {
+      "name": "v9 migration preserves every original value and immutable prior backups; active order import/reload exact",
+      "passed": true,
+      "evidence": {
+        "oldFieldsExact": true,
+        "originalPreserved": true,
+        "activeImports": 5
+      }
+    },
+    {
+      "name": "backup and target load/import errors preserve original game and open jobs",
+      "passed": true,
+      "evidence": {
+        "failurePoints": 4
+      }
+    },
+    {
+      "name": "invalid future schemas dates duplicate ship IDs and altered wages reject",
+      "passed": true,
+      "evidence": {
+        "invalidCases": 8
+      }
+    },
+    {
+      "name": "even free materials and zero travel fees cannot make build/sale cycles profitable",
+      "passed": true,
+      "evidence": [
+        {
+          "type": 0,
+          "cycles": 5,
+          "cashLoss": 900
+        },
+        {
+          "type": 1,
+          "cycles": 5,
+          "cashLoss": 2100
+        },
+        {
+          "type": 2,
+          "cycles": 5,
+          "cashLoss": 6000
+        }
+      ]
+    },
+    {
+      "name": "conservative construction book value cannot increase wealth on start",
+      "passed": true,
+      "evidence": {
+        "types": 3,
+        "cappedAtFinishedValue": true
+      }
+    },
+    {
+      "name": "R1 prices, trade, rent, bank and sale formulas stay exact; no-order seeded path preserved",
+      "passed": true,
+      "evidence": {
+        "seededControls": 2,
+        "days": 100,
+        "unchangedFunctions": 16
+      }
+    },
+    {
+      "name": "actual v9 rent arrears, bank interest and aid marker survive migration without backcharge",
+      "passed": true,
+      "evidence": {
+        "arrearsPreserved": 1,
+        "allOldFieldsExact": true,
+        "noNewFeeAtLoad": true
+      }
+    },
+    {
+      "name": "sold construction IDs are never reused and intermediate V10 saves gain a safe backed-up watermark",
+      "passed": true,
+      "evidence": {
+        "uniqueIDs": [
+          1700000000002,
+          1700000000003,
+          1700000000004,
+          1700000000005,
+          1700000000006
+        ],
+        "intermediateSavePreserved": true
+      }
+    }
+  ]
+}

@@ -2,16 +2,16 @@
 const SHIPBUILD_GOODS=Object.freeze([2,7,8,9]);
 const SHIPBUILD_RECIPES=Object.freeze([{materials:[24,8,6,6],wage:2500,days:20},{materials:[44,14,12,12],wage:3700,days:35},{materials:[75,24,20,22],wage:6200,days:55}].map(r=>Object.freeze({...r,materials:Object.freeze(r.materials)})));
 let shipyardBusy=false,shipyardStaging=false;
-function freshShipyard(){return {version:1,nextId:1,orders:[]}}
+function freshShipyard(ships=[]){return {version:1,nextId:1,lastShipId:Math.ceil(Math.max(0,...ships.map(q=>q.id))),orders:[]}}
 function shipyardWorth(){return (s.shipyard?.orders||[]).reduce((sum,o)=>sum+Math.min(o.wage+o.materialsBook,SHIPTYPES[o.type].cost*.8),0)}
 function validateShipyard(x){
  const y=x.shipyard,now=x.year*360+x.day;
- if(!y||Array.isArray(y)||Object.keys(y).length!==3||y.version!==1||!Number.isSafeInteger(y.nextId)||y.nextId<1||!Array.isArray(y.orders)||y.orders.length>1||x.ships.length+y.orders.length>500)throw Error('Ungültiger Werftstand');
- for(const o of y.orders){const r=SHIPBUILD_RECIPES[o?.type];if(!o||Object.keys(o).length!==8||!['id','type','city','started','ready','shipId','materialsBook','wage'].every(k=>Object.hasOwn(o,k))||!r||!Number.isInteger(o.type)||!isCityIndex(o.city)||!Number.isSafeInteger(o.id)||o.id<1||o.id>=y.nextId||!Number.isSafeInteger(o.shipId)||o.shipId<1||x.ships.some(q=>q.id===o.shipId)||!Number.isSafeInteger(o.started)||o.started<0||o.started>now||o.ready!==o.started+r.days||o.ready>360000000||o.wage!==r.wage||!Number.isFinite(o.materialsBook)||o.materialsBook<0||o.materialsBook>1e15)throw Error('Ungültiger Bauauftrag')}
+ if(!y||Array.isArray(y)||!([3,4].includes(Object.keys(y).length))||Object.keys(y).some(k=>!['version','nextId','lastShipId','orders'].includes(k))||(Object.hasOwn(y,'lastShipId')&&(!Number.isSafeInteger(y.lastShipId)||y.lastShipId<0))||y.version!==1||!Number.isSafeInteger(y.nextId)||y.nextId<1||!Array.isArray(y.orders)||y.orders.length>1||x.ships.length+y.orders.length>500)throw Error('Ungültiger Werftstand');
+ for(const o of y.orders){const r=SHIPBUILD_RECIPES[o?.type];if(!o||Object.keys(o).length!==8||!['id','type','city','started','ready','shipId','materialsBook','wage'].every(k=>Object.hasOwn(o,k))||!r||!Number.isInteger(o.type)||!isCityIndex(o.city)||!Number.isSafeInteger(o.id)||o.id<1||o.id>=y.nextId||!Number.isSafeInteger(o.shipId)||o.shipId<1||(Object.hasOwn(y,'lastShipId')&&o.shipId>y.lastShipId)||x.ships.some(q=>q.id===o.shipId)||!Number.isSafeInteger(o.started)||o.started<0||o.started>now||o.ready!==o.started+r.days||o.ready>360000000||o.wage!==r.wage||!Number.isFinite(o.materialsBook)||o.materialsBook<0||o.materialsBook>1e15)throw Error('Ungültiger Bauauftrag')}
 }
-function migrateShipyard(raw){try{if(raw?.v===10){const x=JSON.parse(JSON.stringify(raw));validate(x);return x}const x=migrateStorage(raw);if(!x||Object.hasOwn(x,'shipyard'))return null;x.v=10;x.shipyard=freshShipyard();validate(x);return x}catch(e){return null}}
+function migrateShipyard(raw){try{if(raw?.v===10){const x=JSON.parse(JSON.stringify(raw));validate(x);if(!Object.hasOwn(x.shipyard,'lastShipId'))x.shipyard.lastShipId=Math.ceil(Math.max(0,...x.ships.map(q=>q.id),...x.shipyard.orders.map(o=>o.shipId)));validate(x);return x}const x=migrateStorage(raw);if(!x||Object.hasOwn(x,'shipyard'))return null;x.v=10;x.shipyard=freshShipyard(x.ships);validate(x);return x}catch(e){return null}}
 function backupShipyardMigration(raw,imported=false,force=false){
- if(!force&&JSON.parse(raw).v===10)return;
+ if(!force&&JSON.parse(raw).v===10&&Object.hasOwn(JSON.parse(raw).shipyard||{},'lastShipId'))return;
  const base=KEY+'-shipyard-v10-'+(imported?'import':'startup')+'-backup';
  for(let i=0;i<100;i++){const key=base+(i?'-'+(i+1):''),existing=localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}
  throw Error('Keine freie Originalsicherung. Bitte zuerst Sicherungen exportieren.');
@@ -24,7 +24,7 @@ function shipbuildingQuote(type){
  else if(warehouseArrears()>0)reason='Bitte zuerst alle offenen Lagermieten begleichen. Werftverbrauch darf die Mietschuldensperre nicht umgehen.';
  else if(s.ships.length>=500)reason='Für einen Neubau fehlt ein freier Flottenplatz.';
  else if(totalDay()+r.days>360000000)reason='Die Bauzeit überschreitet den gültigen Spielkalender.';
- else if(!Number.isSafeInteger(Math.ceil(Math.max(...s.ships.map(q=>q.id)))+1)||s.shipyard.nextId>=Number.MAX_SAFE_INTEGER)reason='Keine sichere Schiffsnummer verfügbar.';
+ else if(!Number.isSafeInteger(Math.ceil(Math.max(s.shipyard.lastShipId||0,...s.ships.map(q=>q.id)))+1)||s.shipyard.nextId>=Number.MAX_SAFE_INTEGER)reason='Keine sichere Schiffsnummer verfügbar.';
  else if(rows.some(m=>m.have<m.n))reason='Es fehlen örtlich verfügbare Baumaterialien. Eigene Schiffe und Lager in anderen Städten zählen nicht.';
  else if(s.gold<r.wage)reason='Für die Werftarbeit fehlen '+fmt(r.wage-s.gold)+' G Bargeld.';
  return {allowed:!reason,reason,rows,wage:r.wage,days:r.days};
@@ -37,7 +37,7 @@ function startShipbuilding(type){
   const candidate=JSON.parse(JSON.stringify(s)),consumed=[];let materialsBook=0;
   for(const m of quote.rows){let left=m.n;for(const source of shipbuildingSources(candidate)){if(!left)break;const q=source.q,n=Math.min(left,q.cargo[m.j]||0);if(!n)continue;ensureCargoRecords(q);const book=cargoBookPrice(q,m.j),cost=q.costs[m.j]??null,origins=[];let need=n;for(const lot of q.origins[m.j]){const count=Math.min(need,lot.n);if(count)origins.push({city:lot.city,n:count});need-=count;if(!need)break}if(need)throw Error('Fehlende Herkunft');consumeOrigins(q,m.j,n,null);q.cargo[m.j]-=n;if(!q.cargo[m.j])for(const key of ['cargo','costs','bookCosts','origins'])delete q[key]?.[m.j];materialsBook+=n*book;consumed.push({source:source.source,shipId:source.shipId??null,j:m.j,n,bookCost:book,knownCost:cost,origins});left-=n}if(left)throw Error('Fehlendes Material')}
   const rental=candidate.storage.rentals[candidate.city];if(warehouseRequired(candidate.city,candidate)>0&&!rental.until)rental.until=totalDay()+1;
-  const order={id:candidate.shipyard.nextId++,type,city:s.city,started:totalDay(),ready:totalDay()+quote.days,shipId:Math.ceil(Math.max(...s.ships.map(q=>q.id)))+1,materialsBook,wage:quote.wage};candidate.gold-=quote.wage;candidate.shipyard.orders.push(order);candidate.messages.unshift('Tag '+candidate.day+': '+SHIPTYPES[type].name+' in '+CITIES[order.city]+' beauftragt: '+quote.days+' Spieltage Bauzeit.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate;committed=true;
+  const order={id:candidate.shipyard.nextId++,type,city:s.city,started:totalDay(),ready:totalDay()+quote.days,shipId:Math.ceil(Math.max(s.shipyard.lastShipId||0,...s.ships.map(q=>q.id)))+1,materialsBook,wage:quote.wage};candidate.shipyard.lastShipId=order.shipId;candidate.gold-=quote.wage;candidate.shipyard.orders.push(order);candidate.messages.unshift('Tag '+candidate.day+': '+SHIPTYPES[type].name+' in '+CITIES[order.city]+' beauftragt: '+quote.days+' Spieltage Bauzeit.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate;committed=true;
   const {type:shipType,...eventOrder}=order;Testlog.event('shipbuilding_started',{...eventOrder,shipType,materials:consumed});render();harborView();return true;
  }catch(e){if(!committed)notice('Bauauftrag nicht gespeichert. Gold, Waren und Flotte bleiben unverändert. Bitte Speicher und Materialdaten prüfen.');return committed}finally{shipyardBusy=false}
 }
