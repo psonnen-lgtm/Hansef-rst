@@ -1218,8 +1218,8 @@
         "id": "church",
         "name": "Kirche",
         "hint": "Spenden und Einkehr",
-        "x": 790,
-        "y": 201,
+        "x": 857,
+        "y": 180,
         "view": "church"
       },
       {
@@ -1274,8 +1274,8 @@
         "id": "harbor",
         "name": "Hafenmeister",
         "hint": "Schiffe, Konvois und Hafenarbeit",
-        "x": 250,
-        "y": 303,
+        "x": 248,
+        "y": 347,
         "view": "harbor"
       },
       {
@@ -2064,8 +2064,8 @@
         "id": "church",
         "name": "Kirche",
         "hint": "Spenden und Einkehr",
-        "x": 465,
-        "y": 171,
+        "x": 425,
+        "y": 135,
         "view": "church"
       },
       {
@@ -2911,8 +2911,8 @@
         "id": "bath",
         "name": "Badehaus",
         "hint": "Gerüchte und Hafennachrichten",
-        "x": 536,
-        "y": 282,
+        "x": 474,
+        "y": 270,
         "view": "bath"
       },
       {
