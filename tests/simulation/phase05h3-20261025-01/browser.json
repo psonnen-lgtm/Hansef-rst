@@ -1,0 +1,78 @@
+{
+  "testedGameCommit": "5c9c77c07bfc558fee4db0067d4d2b0d24e2b9e1",
+  "gameSHA256": "0251b3e0f6fb23c2e33f9e5e831f6f714f96a120ed74c9d10fb2045871f5e1e0",
+  "browser": "Chromium only, no Safari",
+  "browserVersion": "154.0.8037.57",
+  "results": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "verbatim v6 backup and all old data",
+        "repeat report opening",
+        "bath information",
+        "dated news separated from own quotes",
+        "six new cities trade and FIFO warehouse",
+        "real export download and FileReader import",
+        "reload and spent aid marker",
+        "no page horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "verbatim v6 backup and all old data",
+        "repeat report opening",
+        "bath information",
+        "dated news separated from own quotes",
+        "six new cities trade and FIFO warehouse",
+        "real export download and FileReader import",
+        "reload and spent aid marker",
+        "no page horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "verbatim v6 backup and all old data",
+        "repeat report opening",
+        "bath information",
+        "dated news separated from own quotes",
+        "six new cities trade and FIFO warehouse",
+        "real export download and FileReader import",
+        "reload and spent aid marker",
+        "no page horizontal overflow"
+      ]
+    },
+    {
+      "check": "real Web Storage backup and target errors, cancelled/failed new game, retry, non-overwriting collision",
+      "passed": true
+    },
+    {
+      "check": "old v6 client rejects v7 without truncation",
+      "passed": true
+    },
+    {
+      "check": "real fresh game starts and durably saves active regional v7",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5h3_bergen-desktop.png": "9861e46167ad2c47e05d2cd98b6df5a9b943d06a1a35fb407ff5061ee0bba30c",
+    "2026-10-25_0.5h3_hafennachrichten-mobile.png": "c0622daecea18b0059ebdca3e0a3b7753cca6accb943162a45172af583a77159",
+    "2026-10-25_0.5h3_preisbuch-tablet.png": "bb1c9b086dded9c8b5a17333bc092df8a966d7c0783d92733308124123d0fd36"
+  }
+}
