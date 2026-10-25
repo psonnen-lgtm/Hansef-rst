@@ -1,0 +1,32 @@
+/* One scrollable city stage; the other ten cities retain their existing layout. */
+.scene.city-live{display:block;padding:0;border-color:#a17d44;background:#294e50;position:relative}
+.scene.city-live>.spot,.scene.city-live>#cityArt,.scene.city-live>#cityCanvas{display:none!important}
+.living-city{width:100%;color:#ebd8ab}
+.living-city-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 18px;background:#2e3b36;border-bottom:3px double #b1955b}
+.city-kicker{display:block;font-size:10px;letter-spacing:.2em;color:#c9ae74}
+.living-city-heading h2{font-size:27px;margin:3px 0 0;color:#f3dba8;line-height:1.05}
+.living-city-heading h2 span{font-size:15px;font-weight:normal;color:#c7bd9b}
+.living-city-heading>p{font-style:italic;font-size:14px;margin:0;color:#d1c5a4}
+.living-city-scroll{width:100%;max-height:none;overflow:auto;overscroll-behavior-x:contain;touch-action:pan-x pan-y pinch-zoom;scrollbar-color:#a98b51 #314c49;scrollbar-width:thin;outline-offset:-4px;background:#396a68}
+.living-city-world{position:relative;width:100%;min-width:900px;aspect-ratio:3/2;isolation:isolate;background:#426e69}
+.living-city-background{display:block;position:absolute;inset:0;width:100%;height:100%;image-rendering:pixelated;user-select:none;pointer-events:none}
+.living-city-animation{position:absolute;inset:0;display:block;width:100%!important;height:100%!important;aspect-ratio:3/2;image-rendering:pixelated;pointer-events:none;z-index:1;min-height:0!important}
+.living-city-doors{position:absolute;inset:0;z-index:2;pointer-events:none}
+.city-door{position:absolute;transform:translate(-50%,-50%);width:48px;height:48px;min-height:48px;padding:0!important;margin:0!important;border:0;background:transparent;box-shadow:none;border-radius:50%;pointer-events:auto;display:grid;place-items:center;overflow:visible}
+.city-door:active{transform:translate(-50%,-50%);box-shadow:none}
+.city-door-mark{display:block;width:12px;height:12px;background:#dcb66c;border:2px solid #4b3a24;box-shadow:0 0 0 2px #f1d39688,1px 2px 2px #182c28bb;transform:rotate(45deg);transition:background .12s}
+.city-door:hover,.city-door:focus-visible{background:#eed49333;outline:3px solid #f7dda2;outline-offset:0}
+.city-door:hover .city-door-mark,.city-door:focus-visible .city-door-mark,.city-door[data-selected] .city-door-mark{background:#fff0b9;box-shadow:0 0 0 3px #45685c,0 0 0 5px #f7dda2}
+.city-door-name{position:absolute;bottom:calc(100% + 3px);left:50%;transform:translateX(-50%);white-space:nowrap;padding:5px 9px;background:#263e35f2;color:#ffe9b7;border:1px solid #cfb276;font-size:14px;line-height:1.2;pointer-events:none;opacity:0;visibility:hidden;box-shadow:1px 2px 2px #14221b88}
+.city-door:hover .city-door-name,.city-door:focus-visible .city-door-name,.city-show-labels .city-door-name{opacity:1;visibility:visible}
+.city-door:focus-visible{z-index:3}
+.living-city-caption{padding:10px 16px;background:#2e3b36;border-top:3px double #b1955b}
+.living-city-caption p{margin:0 0 7px;line-height:1.4;font-size:13px;color:#ded0ac}
+.city-tools{display:flex;flex-wrap:wrap;gap:7px}
+.city-tools button{background:#42584c;border:1px solid #a68e59;min-height:44px;padding:7px 10px;box-shadow:0 2px #172921;font-size:13px;color:#f2ddb2}
+.city-tools button[aria-pressed=true]{background:#6e6841}
+.city-life-status{margin:9px 0 0!important;color:#bcb99d!important;font-size:12px!important}
+.living-city-scroll:focus-visible,.city-tools button:focus-visible{outline:3px solid #f4dda0;outline-offset:-3px}
+@media(max-width:1000px){.living-city-scroll{max-height:72dvh}}
+@media(max-width:560px){.living-city-heading{padding:11px 12px}.living-city-heading>p{display:none}.living-city-heading h2{font-size:25px}.living-city-scroll{max-height:65dvh}.living-city-caption{padding:10px}.city-pan-hint{display:block}.city-tools{gap:6px}.city-tools button{flex:1 1 auto;font-size:12px}}
+@media(prefers-reduced-motion:reduce){.city-door-mark{transition:none}}
