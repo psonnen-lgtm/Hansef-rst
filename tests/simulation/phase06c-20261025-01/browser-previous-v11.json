@@ -1,0 +1,20 @@
+{
+  "testedGameCommit": "fc241b5196439cc3577675951be8b3ff2df42169",
+  "gameSHA256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255",
+  "browser": "154.0.8037.57",
+  "scope": "targeted actual previous V11 browser compatibility, four new figures",
+  "checks": [
+    {
+      "name": "all four profiles and additive start fields remain byte-exact in previous V11 browser client",
+      "passed": true,
+      "profiles": [
+        "Ulf",
+        "Anders",
+        "Franziskus",
+        "Micha"
+      ]
+    }
+  ],
+  "errors": [],
+  "failedResources": []
+}
