@@ -323,7 +323,7 @@ function politicalOfficeProof(office=s.politics.office){
 }
 function politicalCloseOffice(reason){
  const o=s.politics.office;if(!o)return;const proved=politicalOfficeProof(o);
- if(proved)s.politics.terms[o.city]={city:o.city,start:o.start,end:totalDay(),firstReceipt:o.firstReceipt};
+ if(proved&&!s.politics.terms[o.city])s.politics.terms[o.city]={city:o.city,start:o.start,end:totalDay(),firstReceipt:o.firstReceipt};
  s.politics.office=null;politicalNote('Bürgermeisteramt in '+CITIES[o.city]+' beendet ('+reason+'). '+(proved?'Bewährte Amtsführung bleibt beurkundet.':'Für eine bewährte Amtsführung fehlten zwei Dienste in verschiedenen Abschnitten einschließlich Ratsvereinbarung.')+' Dein erworbener Titel bleibt erhalten.');
  Testlog.event('political_office_end',{city:o.city,proved,reason});
 }
