@@ -1,0 +1,53 @@
+{
+  "scope": "catalog and game-core preservation; no complete strategy simulation",
+  "base": "1e4b592beebe60bd2e46238c8cd8f84748cfa6d9",
+  "testedGameCommit": "50bbb7d2e96a2fc2f82e290b9b8d76689ff199c2",
+  "gameSHA256": "07e99b7da39dfde7a7eaf7fd36ea844313745acdea6ce8063413810e963f3fd7",
+  "checks": [
+    {
+      "name": "whole previous game core exact; visual module and release text are only script exceptions",
+      "passed": true,
+      "evidence": {
+        "base": "1e4b592beebe60bd2e46238c8cd8f84748cfa6d9",
+        "allGameRulesAndOldImagesExact": true
+      }
+    },
+    {
+      "name": "approved Luebeck entrance and route data plus every original asset remains exact",
+      "passed": true,
+      "evidence": {
+        "unchangedAssetFiles": 6,
+        "entrances": 11,
+        "originalRoutes": 10
+      }
+    },
+    {
+      "name": "unique city backgrounds, complete functional access, valid geometry and independent animation inputs",
+      "passed": true,
+      "evidence": {
+        "cities": 3,
+        "accesses": 33,
+        "noGameStateRNGOrStorageAccess": true
+      }
+    },
+    {
+      "name": "embedded asset bytes and city registry match sources; lossless originals preserved",
+      "passed": true,
+      "evidence": {
+        "embeddedAssets": 5,
+        "registryCities": 3,
+        "pixelIdenticalEncodings": true
+      }
+    },
+    {
+      "name": "all 44 starts, supported V11 data and seeded economy remain identical",
+      "passed": true,
+      "evidence": {
+        "starts": 44,
+        "limitedSeedControls": 2,
+        "daysPerControl": 100,
+        "newSaveFields": 0
+      }
+    }
+  ]
+}

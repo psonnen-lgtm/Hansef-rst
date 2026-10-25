@@ -1,0 +1,147 @@
+{
+  "scope": "cold HTTP loopback observations, one per city/format, not physical device or network benchmark",
+  "testedGameCommit": "742902fb8256632b3543a8715f29b87b77589f6a",
+  "gameSHA256": "4c6f9fe59aabe0ca19a00b3f364e29f379bb23602d8e674e8945602314842ac2",
+  "packagePath": "build/phase07b-stage-a-package",
+  "manifest": {
+    "scope": "additional static HTML plus relative image files; canonical standalone retained",
+    "canonicalHTMLSHA256": "4c6f9fe59aabe0ca19a00b3f364e29f379bb23602d8e674e8945602314842ac2",
+    "packageHTMLSHA256": "23f6a4c2cabf3864ed9329bda05c6c299a5fb542a4ab57d8afc226cacfb11596",
+    "sameGameScript": true,
+    "saveVersion": 11,
+    "cities": [
+      {
+        "city": 0,
+        "id": "luebeck",
+        "name": "Lübeck"
+      },
+      {
+        "city": 6,
+        "id": "bergen",
+        "name": "Bergen"
+      },
+      {
+        "city": 8,
+        "id": "bruegge",
+        "name": "Brügge"
+      }
+    ],
+    "files": {
+      "Hansefuerst_0_4.html": {
+        "bytes": 2046065,
+        "sha256": "23f6a4c2cabf3864ed9329bda05c6c299a5fb542a4ab57d8afc226cacfb11596"
+      },
+      "assets/cities/luebeck/luebeck-1350.webp": {
+        "bytes": 2639022,
+        "sha256": "f3cf572e6cbe2cce8ef4c15da2289cea038389a39777246350447f92fd006b57"
+      },
+      "assets/cities/luebeck/cog.webp": {
+        "bytes": 1101844,
+        "sha256": "fe09944c13a65350469073fb01f8873ccc7644f56552c36bf4f6764b83debb1b"
+      },
+      "assets/cities/bergen/bergen-1350.webp": {
+        "bytes": 2730964,
+        "sha256": "87fe4e1dae0af64b025ba4ea13433410568f28134ae3fb1097788cd4837b256d"
+      },
+      "assets/cities/bruegge/bruegge-1350.webp": {
+        "bytes": 2900100,
+        "sha256": "07f2ee6d87f1c7760f43085a226259f42db36629f35e9b94d44b7f24c4c82bad"
+      },
+      "BITTE_LESEN.txt": {
+        "bytes": 1196,
+        "sha256": "fc68f41fe690f725705b23d56bd1d4ed454d82e658bb35b0bfeb1cf787565ab6"
+      }
+    }
+  },
+  "observations": [
+    {
+      "city": 0,
+      "format": "standalone",
+      "readyMS": 413,
+      "htmlBytes": 14541924,
+      "transferBytes": 14542224,
+      "images": []
+    },
+    {
+      "city": 0,
+      "format": "package",
+      "readyMS": 243,
+      "htmlBytes": 2046065,
+      "transferBytes": 2046365,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-stage-a-package/assets/cities/luebeck/luebeck-1350.webp",
+          "encodedBytes": 2639022,
+          "transferBytes": 2639322
+        }
+      ]
+    },
+    {
+      "city": 6,
+      "format": "standalone",
+      "readyMS": 421,
+      "htmlBytes": 14541924,
+      "transferBytes": 14542224,
+      "images": []
+    },
+    {
+      "city": 6,
+      "format": "package",
+      "readyMS": 202,
+      "htmlBytes": 2046065,
+      "transferBytes": 2046365,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-stage-a-package/assets/cities/bergen/bergen-1350.webp",
+          "encodedBytes": 2730964,
+          "transferBytes": 2731264
+        }
+      ]
+    },
+    {
+      "city": 8,
+      "format": "standalone",
+      "readyMS": 381,
+      "htmlBytes": 14541924,
+      "transferBytes": 14542224,
+      "images": []
+    },
+    {
+      "city": 8,
+      "format": "package",
+      "readyMS": 179,
+      "htmlBytes": 2046065,
+      "transferBytes": 2046365,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a-package/assets/cities/bruegge/bruegge-1350.webp",
+          "encodedBytes": 2900100,
+          "transferBytes": 2900400
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "same-origin standalone to package to standalone preserves V11, actual purchase export and import",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "offline": {
+    "nativeFileStartup": "not repeated: administrative file:// block documented in phase0.7a",
+    "structural": "all native relative image files present in package; no external service or config fetch",
+    "realAppleDevices": "not tested",
+    "saveCaveat": "different origin or local file path may have separate browser storage; export/import before changing distribution"
+  }
+}

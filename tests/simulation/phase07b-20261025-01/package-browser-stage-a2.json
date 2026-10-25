@@ -1,0 +1,156 @@
+{
+  "scope": "cold HTTP loopback observations, one per city/format, not physical device or network benchmark",
+  "testedGameCommit": "50bbb7d2e96a2fc2f82e290b9b8d76689ff199c2",
+  "gameSHA256": "07e99b7da39dfde7a7eaf7fd36ea844313745acdea6ce8063413810e963f3fd7",
+  "packagePath": "build/phase07b-stage-a2-package",
+  "manifest": {
+    "scope": "additional static HTML plus relative image files; canonical standalone retained",
+    "canonicalHTMLSHA256": "07e99b7da39dfde7a7eaf7fd36ea844313745acdea6ce8063413810e963f3fd7",
+    "packageHTMLSHA256": "c0478b01108036c6e74b1917165fa8b275957b5a53be9105be6e190af71d4af3",
+    "sameGameScript": true,
+    "saveVersion": 11,
+    "cities": [
+      {
+        "city": 0,
+        "id": "luebeck",
+        "name": "Lübeck"
+      },
+      {
+        "city": 6,
+        "id": "bergen",
+        "name": "Bergen"
+      },
+      {
+        "city": 8,
+        "id": "bruegge",
+        "name": "Brügge"
+      }
+    ],
+    "files": {
+      "Hansefuerst_0_4.html": {
+        "bytes": 2046663,
+        "sha256": "c0478b01108036c6e74b1917165fa8b275957b5a53be9105be6e190af71d4af3"
+      },
+      "assets/cities/luebeck/luebeck-1350.webp": {
+        "bytes": 2639022,
+        "sha256": "f3cf572e6cbe2cce8ef4c15da2289cea038389a39777246350447f92fd006b57"
+      },
+      "assets/cities/luebeck/cog.webp": {
+        "bytes": 1101844,
+        "sha256": "fe09944c13a65350469073fb01f8873ccc7644f56552c36bf4f6764b83debb1b"
+      },
+      "assets/cities/bergen/bergen-1350.webp": {
+        "bytes": 2730964,
+        "sha256": "87fe4e1dae0af64b025ba4ea13433410568f28134ae3fb1097788cd4837b256d"
+      },
+      "assets/cities/bruegge/bruegge-1350.webp": {
+        "bytes": 2900100,
+        "sha256": "07f2ee6d87f1c7760f43085a226259f42db36629f35e9b94d44b7f24c4c82bad"
+      },
+      "assets/cities/shared/river-barge.webp": {
+        "bytes": 1022896,
+        "sha256": "e1bbdd015a132da06a6c695e782b9fb325aaa68c5eb955d89cfff34d09bfefd9"
+      },
+      "BITTE_LESEN.txt": {
+        "bytes": 1196,
+        "sha256": "fc68f41fe690f725705b23d56bd1d4ed454d82e658bb35b0bfeb1cf787565ab6"
+      }
+    }
+  },
+  "observations": [
+    {
+      "city": 0,
+      "format": "standalone",
+      "readyMS": 586,
+      "htmlBytes": 15906372,
+      "transferBytes": 15906672,
+      "images": []
+    },
+    {
+      "city": 0,
+      "format": "package",
+      "readyMS": 426,
+      "htmlBytes": 2046663,
+      "transferBytes": 2046963,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/luebeck/luebeck-1350.webp",
+          "encodedBytes": 2639022,
+          "transferBytes": 2639322
+        }
+      ]
+    },
+    {
+      "city": 6,
+      "format": "standalone",
+      "readyMS": 509,
+      "htmlBytes": 15906372,
+      "transferBytes": 15906672,
+      "images": []
+    },
+    {
+      "city": 6,
+      "format": "package",
+      "readyMS": 307,
+      "htmlBytes": 2046663,
+      "transferBytes": 2046963,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/bergen/bergen-1350.webp",
+          "encodedBytes": 2730964,
+          "transferBytes": 2731264
+        }
+      ]
+    },
+    {
+      "city": 8,
+      "format": "standalone",
+      "readyMS": 520,
+      "htmlBytes": 15906372,
+      "transferBytes": 15906672,
+      "images": []
+    },
+    {
+      "city": 8,
+      "format": "package",
+      "readyMS": 303,
+      "htmlBytes": 2046663,
+      "transferBytes": 2046963,
+      "images": [
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/shared/river-barge.webp",
+          "encodedBytes": 1022896,
+          "transferBytes": 1023196
+        },
+        {
+          "url": "/build/phase07b-stage-a2-package/assets/cities/bruegge/bruegge-1350.webp",
+          "encodedBytes": 2900100,
+          "transferBytes": 2900400
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "same-origin standalone to package to standalone preserves V11, actual purchase export and import",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "offline": {
+    "nativeFileStartup": "not repeated: administrative file:// block documented in phase0.7a",
+    "structural": "all native relative image files present in package; no external service or config fetch",
+    "realAppleDevices": "not tested",
+    "saveCaveat": "different origin or local file path may have separate browser storage; export/import before changing distribution"
+  }
+}
