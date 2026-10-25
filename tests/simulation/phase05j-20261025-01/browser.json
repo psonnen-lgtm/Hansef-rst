@@ -1,0 +1,84 @@
+{
+  "testedGameCommit": "ca7f971b3a653e848c1c58dc8d4064ed531eda61",
+  "gameSHA256": "38a671d2b8d370fc69b9f536d19e2e2c2e4b31af6875b3aec7877bc7d24e8d41",
+  "browser": "Chromium only, no Safari or physical devices",
+  "browserVersion": "154.0.8037.57",
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "v9 migration exact and immutable originals",
+        "missing materials disable order",
+        "actual local market buys plus local warehouse consumed",
+        "wage once and no immediate ship",
+        "repeat view no progress",
+        "actual downloaded active-order export/repeated import/reload",
+        "actual 7+7+6 day waits and unique completion",
+        "correct city and active selection",
+        "no page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "v9 migration exact and immutable originals",
+        "missing materials disable order",
+        "actual local market buys plus local warehouse consumed",
+        "wage once and no immediate ship",
+        "repeat view no progress",
+        "actual downloaded active-order export/repeated import/reload",
+        "actual 7+7+6 day waits and unique completion",
+        "correct city and active selection",
+        "no page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "v9 migration exact and immutable originals",
+        "missing materials disable order",
+        "actual local market buys plus local warehouse consumed",
+        "wage once and no immediate ship",
+        "repeat view no progress",
+        "actual downloaded active-order export/repeated import/reload",
+        "actual 7+7+6 day waits and unique completion",
+        "correct city and active selection",
+        "no page overflow"
+      ]
+    },
+    {
+      "check": "real original backup and target migration errors preserve source; retry safe",
+      "passed": true
+    },
+    {
+      "check": "real failed start and wait are atomic; failed due delivery remains and retries exactly once",
+      "passed": true
+    },
+    {
+      "check": "actual v9 client rejects v10 without loss",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5j_bauplan-390.png": "12bc5944145ef92e294fbf2184c64361b54071049cd72752eb6b5e9e284eb831",
+    "2026-10-25_0.5j_bauauftrag-390.png": "87ce55f0b803e3fffedb7b28fe05242ed64830ced03394b15588052360108c76",
+    "2026-10-25_0.5j_bauplan-820.png": "3ee0ffad77a0df7610da932184c9d54352edd6a6ea82e17d3076843fc0d087ee",
+    "2026-10-25_0.5j_bauauftrag-820.png": "c7a34a968a2216ad40e892333bde21ea53efcf00cd2249b0b539485f1464e93e",
+    "2026-10-25_0.5j_bauplan-1280.png": "12ebf24e22aad998eede7c1b471f7628b4ae8e75cb44b8d7e8eb04146033ccae",
+    "2026-10-25_0.5j_bauauftrag-1280.png": "0e580870e62e4bedd8a74f1866949e4afa45c757912d36be8dde45f1af7ec819"
+  }
+}

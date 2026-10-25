@@ -25,7 +25,7 @@ function migrateStorage(raw){
  validate(x);return x}catch(e){return null}
 }
 function backupStorageMigration(raw,imported=false,force=false){
- if(!force&&JSON.parse(raw).v===9)return;
+ if(!force&&JSON.parse(raw).v>=9)return;
  const base=KEY+'-storage-v9-'+(imported?'import':'startup')+'-backup';
  for(let i=0;i<100;i++){const key=base+(i?'-'+(i+1):''),existing=localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}
  throw Error('Keine freie Originalsicherung. Bitte Sicherungen exportieren.');

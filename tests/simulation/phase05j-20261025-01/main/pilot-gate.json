@@ -1,0 +1,8 @@
+{
+  "runMain": true,
+  "cases": 20,
+  "exactReplays": 20,
+  "technicalFailures": 0,
+  "ruleChanges": false,
+  "basis": "actual event cash ledgers valid; native policies construct and use all ship types across selected yards"
+}
