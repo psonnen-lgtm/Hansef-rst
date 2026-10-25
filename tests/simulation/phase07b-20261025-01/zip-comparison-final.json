@@ -1,0 +1,6 @@
+{
+  "standaloneHTMLBytes": 46294894,
+  "singleHTMLZIPBytes": 34961820,
+  "assetZIPBytes": 34649114,
+  "note": "Both ZIP downloads compress entropy similarly; assets mainly improve lazy first-city loading and HTML parsing."
+}
