@@ -1,0 +1,13 @@
+{
+  "scope": "one historical funded earned UI fixture; actual new entrances, political letter, assembly and continued trade; not a full career",
+  "testedGameCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "gameSHA256": "5b44cbe7cc4991df424224ec382fa6ff2a84a169606e566a7fbeffb51048cb5b",
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "historical political data exact, two rivals, real letter, actual Eldermann assembly and continued trade/reload",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

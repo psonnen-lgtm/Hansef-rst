@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "venlo-1350.png",
+      "encoded": "venlo-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4144791,
+      "encodedBytes": 2892944,
+      "sourceSHA256": "7535e645904e99ad5dca5a2f67498af0635147a4a89f34c9f5f4a8fa56f9aa32",
+      "encodedSHA256": "7f9fd5a319902a2c5dba1f34748e27ae3dd4676c9e73bc4b3ac6b5909390ff2c",
+      "decodedRGBA256": "de591e99891696df1698519b059905229527ff06a277ee41ba11d93acc2d7d4d",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

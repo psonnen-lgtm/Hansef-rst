@@ -1,0 +1,429 @@
+{
+  "scope": "cold HTTP loopback observations, one per city/format, not physical device or network benchmark",
+  "testedGameCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "gameSHA256": "5b44cbe7cc4991df424224ec382fa6ff2a84a169606e566a7fbeffb51048cb5b",
+  "packagePath": "build/phase07b-final-package",
+  "manifest": {
+    "scope": "additional static HTML plus relative image files; canonical standalone retained",
+    "canonicalHTMLSHA256": "5b44cbe7cc4991df424224ec382fa6ff2a84a169606e566a7fbeffb51048cb5b",
+    "packageHTMLSHA256": "1fb09f31cd3f9a7aaab8a4626b4ddf853ae7345e481604898d44c87d33888cd7",
+    "sameGameScript": true,
+    "saveVersion": 11,
+    "cities": [
+      {
+        "city": 0,
+        "id": "luebeck",
+        "name": "Lübeck"
+      },
+      {
+        "city": 1,
+        "id": "hamburg",
+        "name": "Hamburg"
+      },
+      {
+        "city": 2,
+        "id": "rostock",
+        "name": "Rostock"
+      },
+      {
+        "city": 3,
+        "id": "stralsund",
+        "name": "Stralsund"
+      },
+      {
+        "city": 4,
+        "id": "stettin",
+        "name": "Stettin"
+      },
+      {
+        "city": 5,
+        "id": "danzig",
+        "name": "Danzig"
+      },
+      {
+        "city": 6,
+        "id": "bergen",
+        "name": "Bergen"
+      },
+      {
+        "city": 7,
+        "id": "visby",
+        "name": "Visby"
+      },
+      {
+        "city": 8,
+        "id": "bruegge",
+        "name": "Brügge"
+      },
+      {
+        "city": 9,
+        "id": "nowgorod",
+        "name": "Nowgorod"
+      },
+      {
+        "city": 10,
+        "id": "venlo",
+        "name": "Venlo"
+      }
+    ],
+    "files": {
+      "Hansefuerst_0_4.html": {
+        "bytes": 2074389,
+        "sha256": "1fb09f31cd3f9a7aaab8a4626b4ddf853ae7345e481604898d44c87d33888cd7"
+      },
+      "assets/cities/luebeck/luebeck-1350.webp": {
+        "bytes": 2639022,
+        "sha256": "f3cf572e6cbe2cce8ef4c15da2289cea038389a39777246350447f92fd006b57"
+      },
+      "assets/cities/luebeck/cog.webp": {
+        "bytes": 1101844,
+        "sha256": "fe09944c13a65350469073fb01f8873ccc7644f56552c36bf4f6764b83debb1b"
+      },
+      "assets/cities/bergen/bergen-1350.webp": {
+        "bytes": 2730964,
+        "sha256": "87fe4e1dae0af64b025ba4ea13433410568f28134ae3fb1097788cd4837b256d"
+      },
+      "assets/cities/bruegge/bruegge-1350.webp": {
+        "bytes": 2900100,
+        "sha256": "07f2ee6d87f1c7760f43085a226259f42db36629f35e9b94d44b7f24c4c82bad"
+      },
+      "assets/cities/shared/river-barge.webp": {
+        "bytes": 1022896,
+        "sha256": "e1bbdd015a132da06a6c695e782b9fb325aaa68c5eb955d89cfff34d09bfefd9"
+      },
+      "assets/cities/hamburg/hamburg-1350.webp": {
+        "bytes": 2809664,
+        "sha256": "67a5cdc73acb1959d6d30c5c8fb538663013e7f1b3b6d0db7ba0211486beb55d"
+      },
+      "assets/cities/rostock/rostock-1350.webp": {
+        "bytes": 2895800,
+        "sha256": "881d5f5792c50d9422ba62337d102d2c455aa1af304a4eb509ae502b136f3e61"
+      },
+      "assets/cities/stralsund/stralsund-1350.webp": {
+        "bytes": 2742622,
+        "sha256": "161d716c72b475c550b452c3c3bd8329a29f4ee622eada9046e0831fda745ff0"
+      },
+      "assets/cities/stettin/stettin-1350.webp": {
+        "bytes": 2932406,
+        "sha256": "5a9134b352694f55dcb7be028e380c20c40fa5c1c9d1c55bcfc1f25a8eee7396"
+      },
+      "assets/cities/danzig/danzig-1350.webp": {
+        "bytes": 2871516,
+        "sha256": "52b663907ecc4243138b5afdb9c5417c90b2469fa8b5f2bd0ea30f199aa99f66"
+      },
+      "assets/cities/visby/visby-1350.webp": {
+        "bytes": 2852032,
+        "sha256": "92c963bea57eb247b00065b2cae05c9c0b03584dcd42a302b28a601ced9d39f2"
+      },
+      "assets/cities/nowgorod/nowgorod-1350.webp": {
+        "bytes": 2773698,
+        "sha256": "9d7f8dc5fcd138878b786beec3a5604b3a29148ed50f6e7cd9222f251268abe7"
+      },
+      "assets/cities/venlo/venlo-1350.webp": {
+        "bytes": 2892944,
+        "sha256": "7f9fd5a319902a2c5dba1f34748e27ae3dd4676c9e73bc4b3ac6b5909390ff2c"
+      },
+      "BITTE_LESEN.txt": {
+        "bytes": 1196,
+        "sha256": "fc68f41fe690f725705b23d56bd1d4ed454d82e658bb35b0bfeb1cf787565ab6"
+      }
+    }
+  },
+  "observations": [
+    {
+      "city": 0,
+      "format": "standalone",
+      "readyMS": 798,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 0,
+      "format": "package",
+      "readyMS": 309,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/luebeck/luebeck-1350.webp",
+          "encodedBytes": 2639022,
+          "transferBytes": 2639322
+        }
+      ]
+    },
+    {
+      "city": 1,
+      "format": "standalone",
+      "readyMS": 638,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 1,
+      "format": "package",
+      "readyMS": 353,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/hamburg/hamburg-1350.webp",
+          "encodedBytes": 2809664,
+          "transferBytes": 2809964
+        }
+      ]
+    },
+    {
+      "city": 2,
+      "format": "standalone",
+      "readyMS": 626,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 2,
+      "format": "package",
+      "readyMS": 299,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/rostock/rostock-1350.webp",
+          "encodedBytes": 2895800,
+          "transferBytes": 2896100
+        }
+      ]
+    },
+    {
+      "city": 3,
+      "format": "standalone",
+      "readyMS": 622,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 3,
+      "format": "package",
+      "readyMS": 354,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/stralsund/stralsund-1350.webp",
+          "encodedBytes": 2742622,
+          "transferBytes": 2742922
+        }
+      ]
+    },
+    {
+      "city": 4,
+      "format": "standalone",
+      "readyMS": 559,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 4,
+      "format": "package",
+      "readyMS": 340,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/stettin/stettin-1350.webp",
+          "encodedBytes": 2932406,
+          "transferBytes": 2932706
+        }
+      ]
+    },
+    {
+      "city": 5,
+      "format": "standalone",
+      "readyMS": 733,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 5,
+      "format": "package",
+      "readyMS": 357,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/shared/river-barge.webp",
+          "encodedBytes": 1022896,
+          "transferBytes": 1023196
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/danzig/danzig-1350.webp",
+          "encodedBytes": 2871516,
+          "transferBytes": 2871816
+        }
+      ]
+    },
+    {
+      "city": 6,
+      "format": "standalone",
+      "readyMS": 877,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 6,
+      "format": "package",
+      "readyMS": 441,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/luebeck/cog.webp",
+          "encodedBytes": 1101844,
+          "transferBytes": 1102144
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/bergen/bergen-1350.webp",
+          "encodedBytes": 2730964,
+          "transferBytes": 2731264
+        }
+      ]
+    },
+    {
+      "city": 7,
+      "format": "standalone",
+      "readyMS": 1012,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 7,
+      "format": "package",
+      "readyMS": 278,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/visby/visby-1350.webp",
+          "encodedBytes": 2852032,
+          "transferBytes": 2852332
+        }
+      ]
+    },
+    {
+      "city": 8,
+      "format": "standalone",
+      "readyMS": 728,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 8,
+      "format": "package",
+      "readyMS": 463,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/shared/river-barge.webp",
+          "encodedBytes": 1022896,
+          "transferBytes": 1023196
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/bruegge/bruegge-1350.webp",
+          "encodedBytes": 2900100,
+          "transferBytes": 2900400
+        }
+      ]
+    },
+    {
+      "city": 9,
+      "format": "standalone",
+      "readyMS": 625,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 9,
+      "format": "package",
+      "readyMS": 273,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/shared/river-barge.webp",
+          "encodedBytes": 1022896,
+          "transferBytes": 1023196
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/nowgorod/nowgorod-1350.webp",
+          "encodedBytes": 2773698,
+          "transferBytes": 2773998
+        }
+      ]
+    },
+    {
+      "city": 10,
+      "format": "standalone",
+      "readyMS": 581,
+      "htmlBytes": 46294894,
+      "transferBytes": 46295194,
+      "images": []
+    },
+    {
+      "city": 10,
+      "format": "package",
+      "readyMS": 316,
+      "htmlBytes": 2074389,
+      "transferBytes": 2074689,
+      "images": [
+        {
+          "url": "/build/phase07b-final-package/assets/cities/shared/river-barge.webp",
+          "encodedBytes": 1022896,
+          "transferBytes": 1023196
+        },
+        {
+          "url": "/build/phase07b-final-package/assets/cities/venlo/venlo-1350.webp",
+          "encodedBytes": 2892944,
+          "transferBytes": 2893244
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "all package city assets ready 820",
+      "passed": true,
+      "cities": 11
+    },
+    {
+      "name": "all package city assets ready 1280",
+      "passed": true,
+      "cities": 11
+    },
+    {
+      "name": "same-origin standalone to package to standalone preserves V11, actual purchase export and import",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "offline": {
+    "nativeFileStartup": "not repeated: administrative file:// block documented in phase0.7a",
+    "structural": "all native relative image files present in package; no external service or config fetch",
+    "realAppleDevices": "not tested",
+    "saveCaveat": "different origin or local file path may have separate browser storage; export/import before changing distribution"
+  }
+}

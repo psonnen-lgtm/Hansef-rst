@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "stettin-1350.png",
+      "encoded": "stettin-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4243530,
+      "encodedBytes": 2932406,
+      "sourceSHA256": "0591ae790c50e9403ff66af81671338a7191f7be8eeadf45c2f0d9892a18c34b",
+      "encodedSHA256": "5a9134b352694f55dcb7be028e380c20c40fa5c1c9d1c55bcfc1f25a8eee7396",
+      "decodedRGBA256": "db422c74b18998f221e120600d1c27e7169ad6e4bbe5710c30085f422b3f27c0",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

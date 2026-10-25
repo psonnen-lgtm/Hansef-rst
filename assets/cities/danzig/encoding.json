@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "danzig-1350.png",
+      "encoded": "danzig-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4034732,
+      "encodedBytes": 2871516,
+      "sourceSHA256": "f1c23c7f54a8a533fc882130cfc2b4847d683e46169b205fa2042e4fa6a361d3",
+      "encodedSHA256": "52b663907ecc4243138b5afdb9c5417c90b2469fa8b5f2bd0ea30f199aa99f66",
+      "decodedRGBA256": "898bb04b83f87cb2d9f854066463eb10d55fec0d4d5a0ffb552ece30e8c1beec",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

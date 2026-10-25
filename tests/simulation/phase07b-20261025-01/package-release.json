@@ -1,0 +1,10 @@
+{
+  "directory": "build/phase07b-release-package",
+  "zip": "releases/hansefuerst-0.7b-assets.zip",
+  "standaloneBytes": 46294894,
+  "packageHTMLBytes": 2074389,
+  "packageTotalBytes": 35244680,
+  "zipBytes": 34649111,
+  "zipSHA256": "e53cdd57d21c7a49e4752f24d91ab62817516132bfb90324748446dc29e21318",
+  "cities": 11
+}

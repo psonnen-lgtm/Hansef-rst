@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "bergen-1350.png",
+      "encoded": "bergen-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 3932080,
+      "encodedBytes": 2730964,
+      "sourceSHA256": "9b8c6a6e48767309b89fae75e75a0296356e41e16a5768fe96795bbce32dacab",
+      "encodedSHA256": "87fe4e1dae0af64b025ba4ea13433410568f28134ae3fb1097788cd4837b256d",
+      "decodedRGBA256": "b6c4e42644438e7e7b7e18500cdae5b4706f9767baef5d706c4bb5923990a40f",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

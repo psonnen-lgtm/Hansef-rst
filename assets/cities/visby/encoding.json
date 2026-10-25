@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "visby-1350.png",
+      "encoded": "visby-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4076352,
+      "encodedBytes": 2852032,
+      "sourceSHA256": "7d5b57cd80d8b0c9cdabdd425a13d675223f859701b72b50014725c554064405",
+      "encodedSHA256": "92c963bea57eb247b00065b2cae05c9c0b03584dcd42a302b28a601ced9d39f2",
+      "decodedRGBA256": "e005927159fac00f5a6909d1e22e3ec30e5b6de83c546edcc15b691b8cacb63b",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

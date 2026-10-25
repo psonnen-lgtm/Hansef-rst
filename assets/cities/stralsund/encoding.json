@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "stralsund-1350.png",
+      "encoded": "stralsund-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 3994159,
+      "encodedBytes": 2742622,
+      "sourceSHA256": "d0ccc9a41599a6c4e26f77ed7cba59cba8bd1237091874a3337c2091a7e81d34",
+      "encodedSHA256": "161d716c72b475c550b452c3c3bd8329a29f4ee622eada9046e0831fda745ff0",
+      "decodedRGBA256": "0c2cfc5897172913471d96e29b8004541868c070e7684b440d5461fc847696cc",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

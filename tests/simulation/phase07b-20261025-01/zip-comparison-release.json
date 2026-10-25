@@ -1,0 +1,6 @@
+{
+  "standaloneHTMLBytes": 46294894,
+  "singleHTMLZIPBytes": 34961819,
+  "assetZIPBytes": 34649111,
+  "note": "Level-6 ZIP actual bytes. Asset format improves lazy initial loads; complete download remains similar."
+}
