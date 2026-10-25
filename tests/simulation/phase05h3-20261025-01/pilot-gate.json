@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "cases": 18,
+  "identicalReplays": 18,
+  "currentRegressionCommands": 16,
+  "activationGroups": 12,
+  "selectedChoice": "R1",
+  "sourceHashesFrozen": true,
+  "controlledChoiceFixtures": 54,
+  "controlledChoiceTrips": 864
+}
