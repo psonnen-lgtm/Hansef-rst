@@ -1,0 +1,141 @@
+{
+  "scope": "source preservation, actual stored-state and bounded mechanism checks; no full careers",
+  "testedGameCommit": "f03e6f486304e24f4422a6d96f7b87b19e79f28d",
+  "gameSHA256": "f7dac4565bd044097643b37722724742917f04eb578ea7b11e4322eb6fbf59d5",
+  "checks": [
+    {
+      "name": "entire previous game script stays exact except isolated visual module draw hook and release text",
+      "passed": true,
+      "evidence": {
+        "base": "07f53f9cdea4b4d7184edfac17876fa546d9da16",
+        "unchangedFunctions": 171,
+        "wholeScriptEqualAfterThreePresentationExceptions": true
+      }
+    },
+    {
+      "name": "renderer and stylesheet are embedded verbatim, old images remain byte-identical and new encoded bytes match",
+      "passed": true,
+      "evidence": {
+        "oldArtCatalogExact": true,
+        "newAssets": 2,
+        "losslessEncoding": true
+      }
+    },
+    {
+      "name": "decorative module cannot access game state storage RNG or game clocks; all eleven entrances have valid bounds and distinct targets",
+      "passed": true,
+      "evidence": {
+        "noGameAccess": true,
+        "entrances": [
+          {
+            "id": "church",
+            "name": "Kirche",
+            "hint": "Spenden und Einkehr",
+            "x": 140,
+            "y": 162,
+            "view": "church"
+          },
+          {
+            "id": "hall",
+            "name": "Rathaus",
+            "hint": "Rat, Briefe und politische Karriere",
+            "x": 475,
+            "y": 205,
+            "view": "hall"
+          },
+          {
+            "id": "market",
+            "name": "Marktplatz",
+            "hint": "Waren kaufen und verkaufen",
+            "x": 392,
+            "y": 260,
+            "view": "market"
+          },
+          {
+            "id": "bath",
+            "name": "Badehaus",
+            "hint": "Gerüchte und Hafennachrichten",
+            "x": 145,
+            "y": 322,
+            "view": "bath"
+          },
+          {
+            "id": "bank",
+            "name": "Bankhaus",
+            "hint": "Guthaben und Kredite",
+            "x": 686,
+            "y": 235,
+            "view": "bank"
+          },
+          {
+            "id": "contor",
+            "name": "Kontor",
+            "hint": "Dein Kaufmannsbuch und deine Bilanz",
+            "x": 837,
+            "y": 337,
+            "view": "contor"
+          },
+          {
+            "id": "warehouse",
+            "name": "Lagerhaus",
+            "hint": "Waren, Mietbuch und Rückstände",
+            "x": 555,
+            "y": 465,
+            "view": "warehouse"
+          },
+          {
+            "id": "harbor",
+            "name": "Hafenmeister",
+            "hint": "Schiffe, Konvois und Hafenarbeit",
+            "x": 330,
+            "y": 443,
+            "view": "harbor"
+          },
+          {
+            "id": "yard",
+            "name": "Schiffswerft",
+            "hint": "Materialien, Bauaufträge und Schiffsverkauf",
+            "x": 878,
+            "y": 558,
+            "view": "harbor",
+            "focus": ".shipyard-panel"
+          },
+          {
+            "id": "map",
+            "name": "Seekarte am Kai",
+            "hint": "Reiseziele und Routen",
+            "x": 260,
+            "y": 351,
+            "view": "map"
+          },
+          {
+            "id": "book",
+            "name": "Handelsbuch",
+            "hint": "Eigene Preisaufzeichnungen",
+            "x": 357,
+            "y": 325,
+            "view": "book"
+          }
+        ]
+      }
+    },
+    {
+      "name": "same seeded no-politics 150-day states and next draw, and all 44 starts remain identical to previous game",
+      "passed": true,
+      "evidence": {
+        "seeds": 2,
+        "days": 150,
+        "combinations": 44,
+        "noNewSaveFields": true
+      }
+    },
+    {
+      "name": "historical saved political and economic results remain immutable and migrate exactly as before",
+      "passed": true,
+      "evidence": {
+        "historicalFilesByteIdentical": 2065,
+        "savedEndpointsComparedWithoutContinuation": 330
+      }
+    }
+  ]
+}
