@@ -136,3 +136,6 @@ d8e005521774c03dcc9512b5ef8f6d8920ef66ec419c568ab2e3e88664fef579  tests/simulati
 bdf2d007fdcc2db7ebae1b484edc18214bc7d85a84238526c1ded1a5ed86bcb3  tests/simulation/phase07b-20261025-01/zip-comparison-final.json
 c8fac3febb83e38b3d9a464202a9f6db8af5e58b3dd794451353129bf10f2ac8  tests/simulation/phase07b-20261025-01/zip-comparison-release.json
 2447ed09ae234a1e16e7d4c3f8273eac4206d95c18cb80033aeb2a811563c591  tests/simulation/phase07b-20261025-01/zip-comparison-stage-a.json
+682deed6ccd21e66582c7f0e0efdffb3363feeac4c8b58f35a46d43dc240c725  tests/simulation/phase07b-20261025-01/github-pr.log
+ebf6628e8e073d47b2a531307db4c5552a560adc3ffe21315881753cbc13d28f  tests/simulation/phase07b-20261025-01/github-pr-request.md
+376073cf356c3e96a361a5022cbaf798a8fd733299ce6a07eee45973c6582a56  tests/simulation/phase07b-20261025-01/github-status.json
