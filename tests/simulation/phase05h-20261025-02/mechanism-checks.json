@@ -1,0 +1,333 @@
+{
+  "kind": "controlled_mechanism_checks_not_full_strategy_runs",
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "checks": [
+    {
+      "name": "profiles preserve all 11 city and good identities with disjoint neutral/surplus/shortage roles",
+      "passed": true,
+      "evidence": {
+        "cities": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "goods": [
+          "Getreide",
+          "Bier",
+          "Holz",
+          "Salz",
+          "Fisch",
+          "Tuch",
+          "Hansegras",
+          "Hanf",
+          "Pech",
+          "Eisenwaren",
+          "Pelze"
+        ],
+        "profiles": [
+          [
+            0,
+            1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            0,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            -1,
+            1,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            -1,
+            0,
+            -1,
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0,
+            -1,
+            0
+          ],
+          [
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            -1
+          ],
+          [
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            -1,
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            -1,
+            0,
+            1,
+            0,
+            0,
+            0,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "name": "production bytes pinned; injection inactive by default and no state changes on installation",
+      "passed": true,
+      "evidence": {
+        "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+        "controlDays": 120,
+        "productionActivated": false
+      }
+    },
+    {
+      "name": "same per-cell random-call count and identical next RNG after 30 days across all models",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "control",
+          "draws": 8501,
+          "next": 0.9850337354000658
+        },
+        {
+          "model": "A",
+          "draws": 8501,
+          "next": 0.9850337354000658
+        },
+        {
+          "model": "B",
+          "draws": 8501,
+          "next": 0.9850337354000658
+        },
+        {
+          "model": "C",
+          "draws": 8501,
+          "next": 0.9850337354000658
+        }
+      ]
+    },
+    {
+      "name": "121 actual buy/sell and warehouse loops per model cannot create money goods FIFO or costs",
+      "passed": true,
+      "evidence": {
+        "cityGoodLoops": 484,
+        "warehouseTransfers": 9680,
+        "sameTimeCashGain": 0
+      }
+    },
+    {
+      "name": "all models retain normal interest credit calendar quest and special expiration behavior",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "control",
+          "limit": 4482
+        },
+        {
+          "model": "A",
+          "limit": 4482
+        },
+        {
+          "model": "B",
+          "limit": 4482
+        },
+        {
+          "model": "C",
+          "limit": 4482
+        }
+      ]
+    },
+    {
+      "name": "prototype saves need no fields or migration; true harbor-work marker remains true",
+      "passed": true,
+      "evidence": {
+        "models": 4,
+        "newFields": 0,
+        "version": 6,
+        "productionMigrationActivated": false
+      }
+    },
+    {
+      "name": "lower prices and extreme stocks remain finite valid across 720 controlled days",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "control",
+          "priceMin": 4,
+          "priceMax": 32,
+          "stockMin": 210,
+          "stockMax": 240
+        },
+        {
+          "model": "A",
+          "priceMin": 11,
+          "priceMax": 137,
+          "stockMin": 36,
+          "stockMax": 179
+        },
+        {
+          "model": "B",
+          "priceMin": 10,
+          "priceMax": 152,
+          "stockMin": 11,
+          "stockMax": 203
+        },
+        {
+          "model": "C",
+          "priceMin": 12,
+          "priceMax": 147,
+          "stockMin": 22,
+          "stockMax": 216
+        }
+      ]
+    },
+    {
+      "name": "scarcity and actual purchase impulse affect future quotes without changing current execution quote",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "A",
+          "buyQuantity": 10,
+          "quoteDifferenceAfter120Days": 0
+        },
+        {
+          "model": "B",
+          "buyQuantity": 10,
+          "quoteDifferenceAfter120Days": 2
+        },
+        {
+          "model": "C",
+          "buyQuantity": 10,
+          "quoteDifferenceAfter120Days": 2
+        }
+      ]
+    },
+    {
+      "name": "adaptive explorer planner cannot read remote markets even with hostile access guards",
+      "passed": true,
+      "evidence": {
+        "guardedChoices": 60,
+        "explorationChoices": 45,
+        "hiddenAccesses": 0,
+        "fixedTour": false
+      }
+    },
+    {
+      "name": "bounded plan contains 288 unique cases and no large simulation default",
+      "passed": true,
+      "evidence": {
+        "cases": 288,
+        "pilot": 24,
+        "replays": 24
+      }
+    }
+  ]
+}

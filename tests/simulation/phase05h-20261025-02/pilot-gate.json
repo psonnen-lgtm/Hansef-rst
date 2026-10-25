@@ -1,0 +1,10 @@
+{
+  "cases": 24,
+  "completeReplays": 24,
+  "allInitialStatesIdentical": true,
+  "productionUnchanged": true,
+  "previousSixControlRowsEqual": true,
+  "mechanismGroups": 10,
+  "currentRegressionCommands": 16,
+  "passed": true
+}
