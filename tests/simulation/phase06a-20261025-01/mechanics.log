@@ -1,0 +1,12 @@
+OBSERVED existing rank names and rich respected merchant can gain every title without civic deeds
+OBSERVED wealth alone allows Fernkaufmann but not Ratsherr without reputation
+OBSERVED 18 percent election boundary and ten-day cooldown are independent of deeds; UI omits cooldown disable
+OBSERVED ordinary arrival grants global reputation without cargo or civic service
+OBSERVED trade reputation is per sale and splitting the same profitable lot can increase it
+OBSERVED donations buy global reputation with no elapsed time and retain at least one point
+OBSERVED foreign delivery pays once; local unknown expired and separate partial sales do not satisfy an order
+OBSERVED arrears are omitted by wealth and election; proposed separate political net stays invariant on repayment
+OBSERVED construction book is prepaid capped and not liquid; existing credit formula includes it
+OBSERVED V10 roundtrip preserves rank rep finances FIFO quests chronicle harbor aid and open construction
+OBSERVED mayor eligibility is currently identical in Luebeck and Venlo; no office ownership field
+OBSERVED rank and rep are checked but completed and current election timestamp lack strict V10 validation
