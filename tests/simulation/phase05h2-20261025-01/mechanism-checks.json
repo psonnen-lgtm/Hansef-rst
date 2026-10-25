@@ -1,0 +1,142 @@
+{
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "kind": "controlled_fixtures_not_full_strategy_games",
+  "checks": [
+    {
+      "name": "F quote terms are independent of city and profile, and actual inventory changes their direction",
+      "passed": true,
+      "evidence": {
+        "terms": [
+          {
+            "stock": 30,
+            "anchor": 0,
+            "inventory": 1.4400000000000002
+          },
+          {
+            "stock": 110,
+            "anchor": 0,
+            "inventory": 0
+          },
+          {
+            "stock": 190,
+            "anchor": 0,
+            "inventory": -1.32
+          }
+        ],
+        "prices": [
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105,
+          105
+        ],
+        "stocks": [
+          103,
+          104,
+          104,
+          104,
+          104,
+          104,
+          104,
+          104,
+          103,
+          105,
+          103
+        ]
+      }
+    },
+    {
+      "name": "production and consumption use current stock with integer bounded outcomes and no extra RNG",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "B",
+          "draws": 8529,
+          "next": 0.5054870888125151
+        },
+        {
+          "model": "F",
+          "draws": 8529,
+          "next": 0.5054870888125151
+        }
+      ]
+    },
+    {
+      "name": "484 immediate trade/warehouse circuits preserve money goods and FIFO/costs in B/F with/without info",
+      "passed": true,
+      "evidence": {
+        "loops": 484,
+        "warehouseTransfers": 9680,
+        "cashCreated": 0
+      }
+    },
+    {
+      "name": "public publisher reads stock only, emits one dated report per port/day and never fills pricebook",
+      "passed": true,
+      "evidence": {
+        "reports": [
+          {
+            "city": 2,
+            "j": 9,
+            "day": 486001,
+            "band": "ordinary",
+            "publishedAt": 0
+          }
+        ],
+        "repeatObservationCalls": 20,
+        "remotePriceReads": 0
+      }
+    },
+    {
+      "name": "pure information planner works with all hidden markets inaccessible and never calls RNG",
+      "passed": true,
+      "evidence": {
+        "economicChoices": 120,
+        "hiddenReads": 0,
+        "additionalRandomDraws": 0
+      }
+    },
+    {
+      "name": "information activation leaves v6 and original save state unchanged and keeps observed quotes separate",
+      "passed": true,
+      "evidence": {
+        "models": 2,
+        "newPersistentFields": 0,
+        "activationMutations": 0
+      }
+    },
+    {
+      "name": "B/F preserve 18 nonmarket rule bodies and real ship sale/one-shot rescue",
+      "passed": true,
+      "evidence": {
+        "unchangedBodies": 18,
+        "models": 2,
+        "workDays": 3,
+        "workGold": 20,
+        "saleGold": 2320
+      }
+    },
+    {
+      "name": "bounds finite prices deadlines and exact bank/credit behavior survive 2160 controlled days",
+      "passed": true,
+      "evidence": [
+        {
+          "model": "B",
+          "minPrice": 5,
+          "maxPrice": 169
+        },
+        {
+          "model": "F",
+          "minPrice": 5,
+          "maxPrice": 209
+        }
+      ]
+    }
+  ]
+}

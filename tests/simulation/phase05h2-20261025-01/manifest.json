@@ -1,0 +1,65 @@
+{
+  "phase": "0.5h.2",
+  "schema": 1,
+  "base": "8ec30ba8c53756769e98921f9125163313bf1666",
+  "models": [
+    "B",
+    "B_info",
+    "F",
+    "F_info"
+  ],
+  "strategies": [
+    "cautious",
+    "normal",
+    "aggressive",
+    "optimized",
+    "remote",
+    "explorer"
+  ],
+  "seeds": [
+    10001,
+    10002,
+    10003,
+    10004,
+    10005,
+    10006,
+    10007,
+    10008,
+    10009,
+    10010,
+    10011,
+    10012
+  ],
+  "distinctCases": 288,
+  "pilotCases": 24,
+  "pilotReplays": 24,
+  "maxFullExecutions": 312,
+  "limits": {
+    "days": 1440,
+    "decisions": 800,
+    "lastTripMayExceed": true,
+    "timeoutSeconds": 120,
+    "workers": 4
+  },
+  "initial": "real fresh Lübeck, 5000 cash / 9960 book wealth",
+  "rng": "mulberry32; model stock range differs but draw count per cell preserved",
+  "identity": {
+    "node": "v24.19.0",
+    "hashes": {
+      "phase05h2-run.cjs": "df966f4a05d8800b339f15a61e4929b44a1e0c45fab4edcb8ee3f62b8ec605d0",
+      "regional-flow-prototype.js": "62d97b7c26efa96ddf50e84967fa4234b335db7bb8157a58ba318fd55fd94e58",
+      "regional-information-prototype.js": "30ec92d081d5d4a12b3faae843a732d11cf1369485e4276da3ec635a4e2256a4",
+      "phase05h-run.cjs": "9ea5477e8be623c08bd638bd020aa730b77ec137207f89beb121713ca563395b",
+      "regional-economy-prototype.js": "0465532483b9bce2d2c541e9efe31441a7ef759371cbc1486a3a4c91f6ad8dd3",
+      "regional-explorer-strategy.js": "8a428e2a6ef022d51f98c82d410dbe513923d9139db269b1c3362ef7fec31463",
+      "phase05e-observer.js": "fe128dec54188423c7f3dd8f5b05168a8a46bfa4ead307dd3620b7a641c09988",
+      "phase05e-remote-strategy.js": "e01647e300ecf6892854d6d4425ff6d2d45bff3507d607b160a29cdb56f229e1",
+      "integrated.cjs": "ef7cc6c075e3c9f8db2849bd8be1d1a5789a1d6009db5307360bb3d38347d7fd",
+      "headless.cjs": "faa5fd78c56f9bde5f2c1e15fd877149465977b66340ea38122e04d4c589b2ce",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea",
+      "delivery-strategy.js": "500f757dbd91ca0d31f4e0710da950e50adb53d2a708b3bede3fe86ab30bddd0",
+      "recovery-strategy.js": "d3131d36778fc30bfaf16c3c2c405acb21a61fbf44d01c11a60ed7fe87d1ca2d",
+      "../../Hansefuerst_0_4.html": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949"
+    }
+  }
+}
