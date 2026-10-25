@@ -10,6 +10,7 @@ let ui='';g.context.openSheet=(title,text)=>ui=text;
 for(let city=0;city<11;city++){g.eval('s.city='+city+';ship().city='+city+';politicsHallView()');for(const motive of clean(g.eval('POLITICAL_CITIES['+city+'].civicFocus')))assert(ui.includes(motive))}
 assert.equal(g.eval('politicalDate(486001)'),'Tag 1, Jahr 1350');assert.equal(g.eval('politicalSupportLabel(79.99)'),'79.9');
 const preservation={mainGameCommit:mainCode,mainGameSHA256:sha(Buffer.from(mainHTML)),finalGameCommit:execFileSync('git',['log','-1','--format=%H','--','Hansefuerst_0_4.html'],{encoding:'utf8'}).trim(),finalGameSHA256:hash,unchangedOrFormattingOnlyFunctions:unchanged,changedUIFunction:'politicsHallView',newPureFormatFunctions:['politicalDate','politicalSupportLabel'],constantsExact:true,mainEconomicOrPoliticalDecisionChange:false,allElevenMotivesDisplayed:true};
+if(process.argv.includes('--ui-only')){fs.writeFileSync(path.join(out,'ui-rule-preservation-final.json'),JSON.stringify(preservation,null,2)+'\n',{flag:'wx'});console.log('PASS final UI-only source and eleven motive/date/support checks; full case data not rerun');process.exit(0)}
 const rows=[];
 for(const group of ['pilot','main']){
  const dir=path.join(out,group),manifest=JSON.parse(fs.readFileSync(path.join(dir,'manifest.json')));
