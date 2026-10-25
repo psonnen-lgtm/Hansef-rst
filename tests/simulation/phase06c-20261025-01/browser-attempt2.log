@@ -1,0 +1,7 @@
+PASS 44 actual mobile combinations
+PASS viewport 390
+page.reload: Timeout 30000ms exceeded.
+Call log:
+[2m  - waiting for navigation until "load"[22m
+
+    at /workspace/Hansef-rst/tests/simulation/start-selection-browser.cjs:16:573

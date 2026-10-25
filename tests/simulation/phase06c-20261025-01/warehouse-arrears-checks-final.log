@@ -1,0 +1,20 @@
+PASS 230/300/140 fass without cash accrue exactly 1/2/0 gold per day
+PASS missing optional capacity ends, still needed capacity is assessed; voluntary paid extra remains
+PASS withdrawal reduces 2 to 1 to 0 required blocks; existing debt survives contract end
+PASS global entry/expansion lock, free withdrawal, real sale and unchanged origins
+PASS complete local repayment spends once and changes no bank, day, RNG or rental deadline
+PASS partial cash does not reduce debt; quota, cancellation and reentry cannot duplicate repayment
+PASS stale repayment confirmation preserves outside changes instead of paying stale amount
+PASS real 37-day sea journey charges all eleven warehouses exactly once each day
+PASS save/load, repeated actual imports and export serialization never create or reset debt
+PASS v8 to v9 preserves all old economic fields and active prepaid deadline, zero retroactive debt
+PASS v9 backup collisions and migration/import target failures preserve existing originals
+PASS old stocks above 350 remain intact, cannot grow, and cross into normal future billing without loss
+PASS finite whole debts after 100000 actual debt-clock days; no interest or fixed free-storage cap
+PASS negative, fractional, infinite, oversized or impossible debts and future schemas reject
+PASS harbor work and ship sale unchanged, no automatic bank loan or rent-debt repayment
+PASS all 121 city/good combinations preserve FIFO, prices and financial state while debt blocks only entry
+PASS protected R1, bank, credit, cargo book values, travel and FIFO source bodies stay exact
+PASS paying one city leaves other city arrears and global locks intact
+PASS maximum valid calendar still has finite exact debt growth without a free-storage ceiling
+19 arrears groups passed
