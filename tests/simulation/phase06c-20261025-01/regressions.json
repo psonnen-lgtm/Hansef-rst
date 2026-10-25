@@ -1,0 +1,106 @@
+[
+  {
+    "command": [
+      "node",
+      "tests/test-v04.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/test-v04.log",
+    "tail": "PASS legacy cargo has unknown cost\nPASS malformed cargo rejected\nPASS credit does not grow with borrowing\nPASS single arrival moves only chosen ship and cannot repeat\nPASS remote cargo cannot be traded\nPASS quest completion waits five days for new offer\nPASS expired quest gives no reward\nPASS unknown cost survives mixed purchase\nPASS known weighted purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/phase1.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/phase1.log",
+    "tail": " too\nPASS origins and book values survive save and reload\nPASS same duration has equal interest across year boundary\nPASS full year effective rates remain two and six percent\nPASS no time means no interest\nPASS migration does not backcharge interest or demote\nPASS unrealised gain cannot increase worth or credit\nPASS unrealised gain cannot cross promotion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/telemetry.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/telemetry.log",
+    "tail": "PASS opt-in, hidden, unfocused, suspension gap, idle, retention, snapshots, unchanged game, pause and deletion\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/share.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/share.log",
+    "tail": "PASS no automatic sharing, native file share, no personal names, cancel, unsupported fallback, rejected fallback\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-checks.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/warehouse-checks.log",
+    "tail": "ock can move to another owned ship in Luebeck\nPASS old v4 state migration adds only empty storage after existing normalizations\nPASS warehouse save/load round-trip preserves cost, origin and quantities\nPASS invalid warehouse data is rejected, never silently emptied\nPASS local cargo cannot become foreign quest cargo by warehousing\nPASS unknown legacy cargo cannot become foreign quest cargo\nPASS genuine foreign cargo remains eligible only on actual sale, pays once\nPASS one-time pre-migration backup stays byte-identical; backup failure propagates\n19 warehouse checks passed; no economy simulation\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-cities-checks.cjs"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/warehouse-cities-checks.log",
+    "tail": "ores without changing economic fields\nPASS Luebeck-only saves keep all lots/costs; four other stores are added empty\nPASS 100 save/load cycles retain all city stores without multiplication or loss\nPASS malformed existing stores and invalid city/good/magnitude inputs never get repaired\nPASS partial migration backup is distinct and never replaces first-stage original backup\nPASS local or unknown goods do not acquire foreign origin through a city store\nPASS genuine transported foreign goods keep eligibility, only real sale rewards once\n13 multi-city warehouse checks passed; no economy simulation\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-capacity-checks.cjs",
+      "tests/simulation/phase06c-20261025-01/capacity.json"
+    ],
+    "exitCode": 1,
+    "log": "tests/simulation/phase06c-20261025-01/warehouse-capacity-checks.log",
+    "tail": "ntext (node:vm:301:6)\n    at Object.eval (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:5:1142)\n    at /workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:20:549\n    at check (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:4:40)\n    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:20:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n\nNode.js v24.19.0\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-arrears-checks.cjs",
+      "tests/simulation/phase06c-20261025-01/arrears.json"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/warehouse-arrears-checks.log",
+    "tail": "st or fixed free-storage cap\nPASS negative, fractional, infinite, oversized or impossible debts and future schemas reject\nPASS harbor work and ship sale unchanged, no automatic bank loan or rent-debt repayment\nPASS all 121 city/good combinations preserve FIFO, prices and financial state while debt blocks only entry\nPASS protected R1, bank, credit, cargo book values, travel and FIFO source bodies stay exact\nPASS paying one city leaves other city arrears and global locks intact\nPASS maximum valid calendar still has finite exact debt growth without a free-storage ceiling\n19 arrears groups passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/politics-checks.cjs",
+      "tests/simulation/phase06c-20261025-01/politics.json"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/politics-checks.log",
+    "tail": "e and contracts survive repeated V11 import exactly\nPASS invalid schema duplicated receipts fabricated endorsements and ambiguous offices are rejected\nPASS R1 bank storage sale and shipbuilding stay exact; no-politics seeded path preserves economy and RNG\nPASS V11 harbor aid crosses political term end atomically; its only eligibility change is the schema gate\nPASS rent debt blocks an otherwise complete Hanse candidate without stripping old office titles\nPASS active civic letter cannot reward buy-back washing or warehouse movement; only actual foreign sale earns once\n22 political groups passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/politics-concurrency-check.cjs",
+      "tests/simulation/phase06c-20261025-01/concurrency.json"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/politics-concurrency-check.log",
+    "tail": "PASS concurrent mayor term end, ship completion and one-time harbor work in one staged commit\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/politics-post-title-check.cjs",
+      "tests/simulation/phase06c-20261025-01/post-title.json"
+    ],
+    "exitCode": 0,
+    "log": "tests/simulation/phase06c-20261025-01/politics-post-title-check.log",
+    "tail": "PASS first proven tenure and Eldermann title survive renewed local office, resignation and expiry\n"
+  }
+]

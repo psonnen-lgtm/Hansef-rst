@@ -1,0 +1,607 @@
+{
+  "scope": "read-only quotes on secured endpoints, no continuation and no new actions",
+  "gameSHA256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255",
+  "rows": [
+    {
+      "task": {
+        "mode": "main",
+        "city": 10,
+        "behavior": "wealth",
+        "condition": "early-arms",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 10,
+      "mayorDay": null,
+      "wealth": 196670,
+      "cash": 193229,
+      "services": 0,
+      "firstLetterDay": null,
+      "mayorAtTarget": {
+        "records": 0,
+        "supply": 0,
+        "accord": 0,
+        "periods": 0,
+        "kinds": 0,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": false,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Maaskaufleute",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "kleiner Stadtrat",
+            "ok": false,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 0,
+          "endorsements": 0,
+          "decisions": 0
+        },
+        "score": 25,
+        "target": 60,
+        "reasons": [
+          "6 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig.",
+          "Versorgung und Ratsvereinbarung nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 10,
+        "behavior": "wealth",
+        "condition": "normal",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 0,
+      "mayorDay": null,
+      "wealth": 270345,
+      "cash": 266904,
+      "services": 4,
+      "firstLetterDay": 2009,
+      "mayorAtTarget": {
+        "records": 4,
+        "supply": 2,
+        "accord": 2,
+        "periods": 2,
+        "kinds": 2,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": true,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Maaskaufleute",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "kleiner Stadtrat",
+            "ok": true,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 20,
+          "endorsements": 10,
+          "decisions": 10
+        },
+        "score": 65,
+        "target": 60,
+        "reasons": [
+          "2 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 6,
+        "behavior": "wealth",
+        "condition": "early-arms",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 1,
+      "mayorDay": null,
+      "wealth": 185338,
+      "cash": 181897,
+      "services": 0,
+      "firstLetterDay": null,
+      "mayorAtTarget": {
+        "records": 0,
+        "supply": 0,
+        "accord": 0,
+        "periods": 0,
+        "kinds": 0,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": false,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Fischhändler",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "Versorgungsrat",
+            "ok": false,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 0,
+          "endorsements": 0,
+          "decisions": 0
+        },
+        "score": 25,
+        "target": 62,
+        "reasons": [
+          "6 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig.",
+          "Versorgung und Ratsvereinbarung nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 6,
+        "behavior": "wealth",
+        "condition": "normal",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 3,
+      "currentCity": 2,
+      "mayorDay": 2104,
+      "wealth": 301744,
+      "cash": 298303,
+      "services": 7,
+      "firstLetterDay": 1896,
+      "mayorAtTarget": {
+        "records": 7,
+        "supply": 3,
+        "accord": 4,
+        "periods": 4,
+        "kinds": 2,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": true,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Fischhändler",
+            "ok": true,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "Versorgungsrat",
+            "ok": true,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": true,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 35,
+          "endorsements": 20,
+          "decisions": 15
+        },
+        "score": 95,
+        "target": 62,
+        "reasons": [
+          "Zuerst das aktive Bürgermeisteramt beenden oder seine Amtsprüfung abschließen.",
+          "Nächste Wahl in 4 Spieltagen."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": 6,
+        "external": [],
+        "cities": [
+          6
+        ],
+        "regions": 1
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 7,
+        "behavior": "wealth",
+        "condition": "early-arms",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 3,
+      "currentCity": 1,
+      "mayorDay": 2006,
+      "wealth": 323606,
+      "cash": 320165,
+      "services": 10,
+      "firstLetterDay": 1866,
+      "mayorAtTarget": {
+        "records": 10,
+        "supply": 5,
+        "accord": 5,
+        "periods": 5,
+        "kinds": 2,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": true,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Inselkaufleute",
+            "ok": true,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "Umschlaghändler",
+            "ok": true,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": true,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 40,
+          "endorsements": 20,
+          "decisions": 15
+        },
+        "score": 100,
+        "target": 70,
+        "reasons": [
+          "Zuerst das aktive Bürgermeisteramt beenden oder seine Amtsprüfung abschließen."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": 7,
+        "external": [],
+        "cities": [
+          7
+        ],
+        "regions": 1
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 8,
+        "behavior": "wealth",
+        "condition": "early-arms",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 8,
+      "mayorDay": null,
+      "wealth": 192832,
+      "cash": 189391,
+      "services": 0,
+      "firstLetterDay": null,
+      "mayorAtTarget": {
+        "records": 0,
+        "supply": 0,
+        "accord": 0,
+        "periods": 0,
+        "kinds": 0,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": false,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Tuchgilden",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "Zwinhandelshaus",
+            "ok": false,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 10,
+          "reputation": 15,
+          "services": 0,
+          "endorsements": 0,
+          "decisions": 0
+        },
+        "score": 25,
+        "target": 78,
+        "reasons": [
+          "6 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig.",
+          "Versorgung und Ratsvereinbarung nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 9,
+        "behavior": "wealth",
+        "condition": "early-arms",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 7,
+      "mayorDay": null,
+      "wealth": 127330,
+      "cash": 123889,
+      "services": 0,
+      "firstLetterDay": null,
+      "mayorAtTarget": {
+        "records": 0,
+        "supply": 0,
+        "accord": 0,
+        "periods": 0,
+        "kinds": 0,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": false,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Waldwarenhändler",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "örtliche Handelsvermittler",
+            "ok": false,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 7.073888888888889,
+          "reputation": 15,
+          "services": 0,
+          "endorsements": 0,
+          "decisions": 0
+        },
+        "score": 22.073888888888888,
+        "target": 64,
+        "reasons": [
+          "6 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig.",
+          "Versorgung und Ratsvereinbarung nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "180.000 G politisches Vermögen nötig.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    },
+    {
+      "task": {
+        "mode": "main",
+        "city": 9,
+        "behavior": "wealth",
+        "condition": "normal",
+        "seed": 93002,
+        "officeTarget": "local"
+      },
+      "rank": 2,
+      "currentCity": 9,
+      "mayorDay": null,
+      "wealth": 168123,
+      "cash": 164682,
+      "services": 0,
+      "firstLetterDay": null,
+      "mayorAtTarget": {
+        "records": 0,
+        "supply": 0,
+        "accord": 0,
+        "periods": 0,
+        "kinds": 0,
+        "pledges": [
+          {
+            "name": "Bürgerschaft",
+            "ok": false,
+            "need": "zwei Versorgungsdienste"
+          },
+          {
+            "name": "Waldwarenhändler",
+            "ok": false,
+            "need": "drei Versorgungsdienste"
+          },
+          {
+            "name": "örtliche Handelsvermittler",
+            "ok": false,
+            "need": "zwei gehaltene Ratsvereinbarungen"
+          },
+          {
+            "name": "Rat der Stadt",
+            "ok": false,
+            "need": "sechs Dienste über drei Abschnitte und zwei Arten"
+          }
+        ],
+        "components": {
+          "economic": 9.340166666666667,
+          "reputation": 15,
+          "services": 0,
+          "endorsements": 0,
+          "decisions": 0
+        },
+        "score": 24.34016666666667,
+        "target": 64,
+        "reasons": [
+          "6 weitere örtliche Dienste nötig.",
+          "Dienste aus drei Ratsabschnitten nötig.",
+          "Versorgung und Ratsvereinbarung nötig."
+        ],
+        "eligible": false,
+        "willWin": false
+      },
+      "hanse": {
+        "eligible": false,
+        "reasons": [
+          "Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.",
+          "180.000 G politisches Vermögen nötig.",
+          "Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.",
+          "Siegel aus mindestens zwei Handelsräumen nötig.",
+          "Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten."
+        ],
+        "home": null,
+        "external": [],
+        "cities": [],
+        "regions": 0
+      }
+    }
+  ]
+}

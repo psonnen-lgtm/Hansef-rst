@@ -1,0 +1,20 @@
+PASS 44 real constructor combinations have identical resources, markets and next RNG; only chosen port is observed
+PASS all eleven starts use actual local warehouse, market, yard, political offers and legal routes
+PASS legacy Ulf Anders and custom profile names retain exact V11 fields, unknown birthplace, active politics and pending build
+/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:30
+ const b=boot();b.eval('s=fresh("Anders","Alte Partie");save()');const raw=b.store[KEY],writes=b.writes.length;b.eval('let draws=0;const rnd=Math.random;Math.random=()=>{draws++;return rnd()};welcome()');b.nodes.playername.value='Ulf';b.eval('chooseMerchant("Franziskus")');assert.equal(b.nodes.playername.value,'Franziskus');b.nodes.playername.value='Eigener Name';b.eval('chooseMerchant("Micha")');assert.equal(b.nodes.playername.value,'Eigener Name');for(let city=0;city<11;city++)b.eval('chooseStartCity('+city+')');b.eval('welcome()');assert.equal(b.eval('draws'),0);assert.equal(b.store[KEY],raw);assert.equal(b.writes.length,writes);assert.equal(b.eval('s.player'),'Anders');assert(b.eval('cancelStartGame()'));assert.equal(b.store[KEY],raw);return {noRNG:true,noWritesBeforeCancel:true,oldPartyExact:true};
+                                                                                                                                                                                                                                    ^
+
+TypeError: Cannot set properties of undefined (setting 'value')
+    at /workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:30:229
+    at check (/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:11:64)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:29:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0

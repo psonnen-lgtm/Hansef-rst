@@ -1,0 +1,19 @@
+{
+  "scope": "read-only stored data/source verification, no full game run",
+  "base": "c60e8760850a226e514b53ac0ed45f5d9ab0f51c",
+  "seriesCode": "3dfeaeefb0a8ff5bbad54030dfa51cce7cad84ae",
+  "seriesGameSHA256": "14038187b254446c506ace7d717f7482208641ba446ba15280f7fcd40d62e3fa",
+  "testedGameCommit": "fc241b5196439cc3577675951be8b3ff2df42169",
+  "gameSHA256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255",
+  "newSecuredCasesValidated": 132,
+  "historicalPoliticalEndpointsUnchanged": 308,
+  "historicalEconomicEndpointsComparedToPreviousMigration": 500,
+  "historicalFilesByteIdentical": 1863,
+  "previousV11MigrationRetainsAllFourFigures": true,
+  "postSeriesChanges": [
+    "unloaded original import backup only",
+    "existing office shows start versus location versus active office",
+    "Luebeck description no longer assumes universal home"
+  ],
+  "seriesEconomicAndPoliticalRulesExact": true
+}

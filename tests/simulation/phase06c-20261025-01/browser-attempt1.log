@@ -1,0 +1,14 @@
+PASS 44 actual mobile combinations
+PASS viewport 390
+PASS viewport 820
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+dialog.accept: Protocol error (Page.handleJavaScriptDialog): Not attached to an active page
+    at _Page.<anonymous> (/workspace/Hansef-rst/tests/simulation/start-selection-browser.cjs:6:302) {
+  log: [],
+  name: 'Error'
+}
+
+Node.js v24.19.0

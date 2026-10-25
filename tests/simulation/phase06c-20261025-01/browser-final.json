@@ -1,0 +1,128 @@
+{
+  "testedGameCommit": "f667e74459bbd564b7a4a8c8f79ce93c390cb4ce",
+  "gameSHA256": "1d59038158ee64ba95326e1bf99836f9f630b36f99e96d923a259b781fac0002",
+  "browser": "154.0.8037.57",
+  "scope": "real Chromium actions and controlled storage fixtures; no Safari or physical Apple device; 44 exhaustive combinations plus additional viewport samples",
+  "checks": [
+    {
+      "name": "44 real mobile figure/city combinations, unchanged equal equipment and local ship",
+      "passed": true,
+      "combinations": 44
+    },
+    {
+      "name": "all figures, map pan and choices, actual start, import/export, local institutions and real journey 390",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "all figures, map pan and choices, actual start, import/export, local institutions and real journey 820",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "name": "all figures, map pan and choices, actual start, import/export, local institutions and real journey 1280",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    },
+    {
+      "name": "old V11 active political data exact; real cancel and declined replacement preserve all fields; explicit replacement backs up original",
+      "passed": true
+    },
+    {
+      "name": "real backup and target write failure retain old party and permit one successful retry",
+      "passed": true
+    },
+    {
+      "name": "previous V11 client retains additive start record and new figure identity without truncation",
+      "passed": true
+    },
+    {
+      "name": "first-start import of old political save replaces unreadable main without invented birth data",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "text": "Den aktuellen Spielstand überschreiben?",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Den aktuellen Spielstand überschreiben?",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Den aktuellen Spielstand überschreiben?",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Anders in Bergen beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": false
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Anders in Bergen beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Ulf in Nowgorod beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": true
+    },
+    {
+      "type": "alert",
+      "text": "Neustart nicht möglich. Die vorhandene Partie bleibt erhalten; bitte lade bei zwischenzeitlichen Änderungen neu oder prüfe deinen Speicher.",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Ulf in Nowgorod beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Ulf in Nowgorod beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": true
+    },
+    {
+      "type": "alert",
+      "text": "Neustart nicht möglich. Die vorhandene Partie bleibt erhalten; bitte lade bei zwischenzeitlichen Änderungen neu oder prüfe deinen Speicher.",
+      "accepted": true
+    },
+    {
+      "type": "confirm",
+      "text": "Neue Partie mit Ulf in Nowgorod beginnen? Die bisherige Partie wird zuvor unverändert gesichert.",
+      "accepted": true
+    },
+    {
+      "type": "alert",
+      "text": "Spielstand konnte nicht sicher übernommen werden. Originaldaten bleiben erhalten. Bitte prüfe freien Speicher oder importiere eine Sicherung.",
+      "accepted": true
+    }
+  ],
+  "screenshots": {
+    "2026-10-25_0.6c_kaufmannsbuch-390.png": "fb6d0e314fa2a5bdbeddfeca2fffaaac51f39b6d0f2fbe0d7ff5ec18c4a48ea8",
+    "2026-10-25_0.6c_startkarte-390.png": "3a35bf15fb127548e65bac7f9261a32d0ae52e2684c8d9ab3db0c89395a6435f",
+    "2026-10-25_0.6c_hafenbrief-390.png": "870421a6c1b59c202c1aa6a54de0f715f44142affefb62319cd74873bcf19608",
+    "2026-10-25_0.6c_kaufmannsbuch-820.png": "aed29819ca8d0c3bfd182fdd310b75753c0951bf7abd2dcb986f74e1d9122d8f",
+    "2026-10-25_0.6c_startkarte-820.png": "6b39b20fb5503f53c4b9e0d718591e79ed861e4bf1cc97ab4e0560afa68b2c94",
+    "2026-10-25_0.6c_hafenbrief-820.png": "23772388694e545e2c0fee0d4b187359f013aa084ed2a144b8d18094001d9f1a",
+    "2026-10-25_0.6c_kaufmannsbuch-1280.png": "64e9bb336cc7a346ba6b41b6d9343e3e7f9f22f9676430b3b86ef4c1fad45d19",
+    "2026-10-25_0.6c_startkarte-1280.png": "71595aee166aee22c739c59446352939c8d77c9fe86f265ad95d3ae1512aa09b",
+    "2026-10-25_0.6c_hafenbrief-1280.png": "cb543522ce23c4571b7a3473ee547d4d185be55e9a6c23bae479bdc282041a99"
+  }
+}

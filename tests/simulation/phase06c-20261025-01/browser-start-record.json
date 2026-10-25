@@ -1,0 +1,39 @@
+{
+  "testedGameCommit": "fc241b5196439cc3577675951be8b3ff2df42169",
+  "gameSHA256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255",
+  "browser": "154.0.8037.57",
+  "scope": "targeted final start-record UI only; broader start acceptance has its own source record",
+  "checks": [
+    {
+      "name": "readable current and historical start record with independent office 390",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      }
+    },
+    {
+      "name": "readable current and historical start record with independent office 820",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      }
+    },
+    {
+      "name": "readable current and historical start record with independent office 1280",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      }
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.6c_starturkunde-390.png": "e463fa43fc8b6fd2b9bc20d6132bff6c68425cb776849316101f5a588dc9163e",
+    "2026-10-25_0.6c_starturkunde-820.png": "1b59877fa4b63c96dba205a7ff2dee3cfb9f61c89779601b132ef667bb37df9e",
+    "2026-10-25_0.6c_starturkunde-1280.png": "076d34c2666c0a1e96869cc2a95ad8dbdeeeee60b806ea0662565ff2ce0b0522"
+  }
+}
