@@ -1,0 +1,10 @@
+{
+  "gameSHA256": "fc8285efd9f3956a664ab2ea02bf67974f97dae5ccf5aeeec9ba72407890ab1e",
+  "sourceArchive": "tests/simulation/phase05e-20261024-01/recovery20.tar.gz",
+  "archivedFinalStates": 250,
+  "validV6Loads": 250,
+  "lastShipSaleBlocked": 250,
+  "simulationExecutions": 0,
+  "gameDaysAdvanced": 0,
+  "conclusion": "The spare-ship sale deliberately does not rescue these historical one-ship deadlocks."
+}

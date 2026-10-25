@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-25",
+  "testedGameCommit": "a155cf034bbc99367bbf36873ffbaaccc017a641",
+  "gameSHA256": "fc8285efd9f3956a664ab2ea02bf67974f97dae5ccf5aeeec9ba72407890ab1e",
+  "browserVersion": "154.0.8037.57",
+  "browser": "Chromium, not Safari",
+  "results": [
+    {
+      "check": "actual old v6 startup/reload",
+      "passed": true
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "actions": [
+        "real purchase",
+        "cargo lock",
+        "warehouse unload",
+        "visible quote",
+        "touch-sized controls",
+        "cancel preserves convoy",
+        "confirmed single payout",
+        "active index",
+        "last-ship lock",
+        "stale ID rejection",
+        "v6 save/reload"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "actions": [
+        "real purchase",
+        "cargo lock",
+        "warehouse unload",
+        "visible quote",
+        "touch-sized controls",
+        "cancel preserves convoy",
+        "confirmed single payout",
+        "active index",
+        "last-ship lock",
+        "stale ID rejection",
+        "v6 save/reload"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "actions": [
+        "real purchase",
+        "cargo lock",
+        "warehouse unload",
+        "visible quote",
+        "touch-sized controls",
+        "cancel preserves convoy",
+        "confirmed single payout",
+        "active index",
+        "last-ship lock",
+        "stale ID rejection",
+        "v6 save/reload"
+      ]
+    },
+    {
+      "check": "last local and remote active ship UI",
+      "passed": true
+    },
+    {
+      "check": "real FileReader old v6 import preserves backup and reload",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5f_werft-desktop.png": "298c5cceac20e75b48bbbba7016ab137d9be2494193946a8d4def25b918951a6",
+    "2026-10-25_0.5f_werft-mobile.png": "59885bf8b76c28a5bb8f07e8118deb11078af9335249cfb107344fccc6989b92"
+  }
+}

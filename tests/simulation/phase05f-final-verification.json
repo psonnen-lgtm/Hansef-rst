@@ -1,0 +1,19 @@
+{
+  "testedFinalGameCommit": "a155cf034bbc99367bbf36873ffbaaccc017a641",
+  "gameSHA256": "fc8285efd9f3956a664ab2ea02bf67974f97dae5ccf5aeeec9ba72407890ab1e",
+  "finalFocusedCommand": "node tests/simulation/ship-sale-checks.cjs",
+  "finalFocusedOutput": "PASS all three types: exact offers, payout and book value delta at six hull conditions\nPASS all existing hull percentages: resale below book/purchase and no repair-before-sale profit\nPASS loaded ships including unknown FIFO cargo cannot be sold or silently emptied\nPASS real warehouse unloading enables sale while retaining origins costs and quantity ashore\nPASS cashless owner of two local ships can sell a spare and pay for a real departure\nPASS last global vessel stays blocked even with travel cash missing or zero hull condition\nPASS remote spare vessel cannot justify selling the last local vessel; no teleport\nPASS a valid zero-condition local spare still travels under unchanged existing rules\nPASS foreign harbor, unknown/stale IDs and nonnumeric ID inputs are inert\nPASS explicit confirmation states offer and consequences; cancellation preserves fleet and pending convoy\nPASS reentrant confirmation cannot pay twice; index reuse never sells another ship\nPASS quote or cargo changes while confirmation is open require a fresh approval\nPASS active array indices stay valid when selling active or earlier non-active vessels\nPASS convoy preview is invalidated; replan contains only remaining local ships and charges once\nPASS repeated buy/sell cycles lose cash and create no credit, days or promotion gains\nPASS existing debts remain exact, repayment is not automatic and credit follows unchanged worth\nPASS unbound delivery orders survive a sale and can still be completed by the remaining vessel\nPASS the v6 gold upper bound is protected without mutating the state\nPASS save/reload after sales preserves v6, all city indices, remaining cargo and ashore goods\nPASS real pre-sale-version v6 saves need no schema change or new permanent fields\nPASS existing economic formulas and old v6 migration remain byte-identical to current base\nPASS quote display, blocked actions, confirmation and successful sales consume no random values\n22 focused ship-sale groups passed; no large simulation\n",
+  "retainedRegressionCommands": 14,
+  "retainedRegressionRecord": "phase05f-regressions.json",
+  "retainedRegressionCodeCommit": "eca8c54358051ff87ff3362cc5b9b6858997453b",
+  "subsequentGameChange": "Two fleet-count text strings only; focused rules and real browser rerun after text change",
+  "browserRecord": "phase05f-browser.json",
+  "historicalStateCheck": "phase05f-historical.json",
+  "oldDataFilesReverifiedUnchanged": 52,
+  "noLargeSimulation": true,
+  "noSchemaChange": true,
+  "screenshots": {
+    "2026-10-25_0.5f_werft-desktop.png": "298c5cceac20e75b48bbbba7016ab137d9be2494193946a8d4def25b918951a6",
+    "2026-10-25_0.5f_werft-mobile.png": "59885bf8b76c28a5bb8f07e8118deb11078af9335249cfb107344fccc6989b92"
+  }
+}
