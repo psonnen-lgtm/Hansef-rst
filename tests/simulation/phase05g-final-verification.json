@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-25",
+  "testedGameCommit": "d624977baeb4d710a346ced8d5d06be44b67dfa1",
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "latestFocusCommand": "node tests/simulation/harbor-work-checks.cjs",
+  "latestFocusOutput": "PASS actual exhausted credit and cash qualify; exactly 3 days, 20 gold, one durable used marker\nPASS all hulls use their own actual single-ship fee, including zero condition\nPASS local cheapest ship is selectable; do not confuse convoy cost or a remote active ship\nPASS actual fractional bank withdrawals are available before harbor work\nPASS only actual integer borrowing room counts, not unavailable fractional headroom\nPASS local ship goods and local warehouse goods are directly usable; remote stocks are not\nPASS even a small local remainder must first be sold; actual result is rechecked\nPASS a full local hold does not make warehouse goods inaccessible; sell and unload normally\nPASS a sellable local spare blocks the aid; actual sale funds departure\nPASS normal markets, exact 6% interest and year boundary match advance(3), with no cargo loss\nPASS remote cargo FIFO and all eleven warehouses retain quantities/costs/identities during work\nPASS one-shot survives 100 save/load cycles and serialization/import migration\nPASS cancel and reentrant confirmation never pay or duplicate\nPASS conditions changed during confirmation are rechecked without undoing outside actions\nPASS mid-advance failure rolls back all state, saves and buffered interest without consuming the right\nPASS failed atomic storage write pays nothing, preserves original state and permits safe retry\nPASS UI or telemetry failure after durable commit cannot reset the marker or pay a second time\nPASS huge valid debt that would exceed saved limits aborts instead of storing invalid values\nPASS old v6 data keeps all fields; absent/false markers grant eligibility and invalid markers reject\nPASS no amount input or argument can multiply wages; invalid cash never qualifies\nPASS no new credits, ships, goods, prices, distances or career formulas outside normal time\n21 harbor-work groups passed; no large simulation\n",
+  "retainedExistingRegressionCommands": 15,
+  "regressions": "phase05g-regressions.json",
+  "browser": "phase05g-browser.json",
+  "historical": "phase05g-historical.json",
+  "historicalFilesUnchanged": 56,
+  "v6FormatUnchanged": true,
+  "persistentBoolean": "flags.harborWorkUsed",
+  "noFullStrategySimulation": true,
+  "screenshots": {
+    "2026-10-25_0.5g_hafenarbeit-desktop.png": "8b5cffb5118a801ede587e02d9d8df92a64760b276f215759c287a1c30b517fc",
+    "2026-10-25_0.5g_hafenarbeit-mobile.png": "de91ab4dfa90d289d7709d63704b0f5eae6fad40bafcba8ca63c5a4650ab20a9"
+  }
+}
