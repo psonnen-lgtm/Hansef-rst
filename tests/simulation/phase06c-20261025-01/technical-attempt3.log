@@ -1,0 +1,31 @@
+PASS 44 real constructor combinations have identical resources, markets and next RNG; only chosen port is observed
+PASS all eleven starts use actual local warehouse, market, yard, political offers and legal routes
+PASS legacy Ulf Anders and custom profile names retain exact V11 fields, unknown birthplace, active politics and pending build
+PASS reopening changing figures and all ports is draft-only, keeps custom names, consumes no RNG or writes
+PASS cancelled confirmation and repeated new-start calls preserve old game; successful replacement has immutable backup
+PASS backup and main-save faults, backup collisions, stale disk and changed in-memory state preserve old game
+PASS unreadable stored primary and legacy-key original survive failed replacement and are backed up on explicit success
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: old reference accepts 8
+    at /workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:44:680
+    at check (/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:11:64)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:43:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: null,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

@@ -1,0 +1,30 @@
+PASS same R1, catalogs and protected economic mechanisms; identical fresh RNG and 400-day no-rent path
+PASS 121 old city/good stocks and FIFO preserved exactly, v7 backup and repeated migration/load
+PASS overfull old warehouses allow withdrawal but not new deposits or retroactive rent
+PASS all eleven cities and eleven goods: exact limit succeeds, one extra fails, mixed goods and withdrawal
+PASS rent day boundary, at sea multi-day charges and city independence
+PASS size reduction never renews prepaid deadline; voluntary cancellation needs room; no refund
+PASS no cash accrues required rent debt, preserves goods and bank/debt, blocks storage, permits withdrawal
+PASS reopen and save/load do not duplicate fees; same-size rent is idempotent
+PASS rent and cargo operations roll back atomically on quota error
+PASS backup collision preserves original; backup/target failures stop migration and import
+PASS actual FileReader v7 import, current export roundtrip and invalid future schemas
+PASS paid transfer FIFO and immediate buy/store/load/sell cannot mint money or premium
+PASS liquidity aid and ship sale protections survive active or stopped rental
+evalmachine.<anonymous>:1
+s.v
+  ^
+
+TypeError: Cannot read properties of null (reading 'v')
+    at evalmachine.<anonymous>:1:3
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:5:1142)
+    at /workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:20:549
+    at check (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:4:40)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/warehouse-capacity-checks.cjs:20:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+
+Node.js v24.19.0

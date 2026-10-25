@@ -1,0 +1,11 @@
+PASS 44 real constructor combinations have identical resources, markets and next RNG; only chosen port is observed
+PASS all eleven starts use actual local warehouse, market, yard, political offers and legal routes
+PASS legacy Ulf Anders and custom profile names retain exact V11 fields, unknown birthplace, active politics and pending build
+PASS reopening changing figures and all ports is draft-only, keeps custom names, consumes no RNG or writes
+PASS cancelled confirmation and repeated new-start calls preserve old game; successful replacement has immutable backup
+PASS backup and main-save faults, backup collisions, stale disk and changed in-memory state preserve old game
+PASS unreadable stored primary and legacy-key original survive failed replacement and are backed up on explicit success
+PASS all supported old schema paths preserve custom identity without invented beginning; current import/export is exact
+PASS invalid provenance figure and city selections fail before replacing a saved party
+PASS existing economic and political functions and RNG remain exact on identical starts
+10 start selection groups passed

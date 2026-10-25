@@ -1,0 +1,198 @@
+{
+  "base": "c60e8760850a226e514b53ac0ed45f5d9ab0f51c",
+  "identity": {
+    "gameCommit": "3dfeaeefb0a8ff5bbad54030dfa51cce7cad84ae",
+    "sourceCommit": "f73974893688d1cde6eda5fd77bb46fea05ad0ce",
+    "gameSHA256": "14038187b254446c506ace7d717f7482208641ba446ba15280f7fcd40d62e3fa",
+    "files": {
+      "phase06c-run.cjs": "cc2e8a8dc9b6c05d84f5ccb8090f1cfd06e7bc0b0ec0221c0fd4b9f345a6351f",
+      "headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+      "politics-strategy.js": "d2c00e9a052ea46928ad57fe11468d70b25b8abdf56f2cece292aa8f8b4a580d",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea",
+      "politics-rules.js": "2afec748d81d818409152e08f054cdbf9b47dcbba59b035c6f18d9ec00bf4e58"
+    }
+  },
+  "tasks": [
+    {
+      "mode": "pilot",
+      "city": 0,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 0,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 1,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 1,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 2,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 2,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 3,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 3,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 4,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 4,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 5,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 5,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 6,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 6,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 7,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 7,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 8,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 8,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 9,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 9,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    },
+    {
+      "mode": "pilot",
+      "city": 10,
+      "behavior": "early",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "local"
+    },
+    {
+      "mode": "pilot",
+      "city": 10,
+      "behavior": "balanced",
+      "condition": "normal",
+      "seed": 93001,
+      "officeTarget": "nearest-other"
+    }
+  ],
+  "limits": {
+    "days": 2160,
+    "decisions": 1200
+  },
+  "note": "fresh actual constructor; all 5000 G; early-arms actually spends 3300 G, adds protection and reduces capacity; paired initial RNG, not identical later draws; no balance changes"
+}
