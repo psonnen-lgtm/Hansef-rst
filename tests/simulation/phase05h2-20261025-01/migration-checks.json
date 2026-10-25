@@ -1,0 +1,272 @@
+{
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "kind": "v6_activation_dry_runs_not_productive_migrations",
+  "checks": [
+    {
+      "policy": "normal",
+      "seed": 10001,
+      "originalStateSHA256": "9f63193ab168a3d116d11f68670796706790b791786fde4193672743d3128f59",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10002,
+      "originalStateSHA256": "24767db64cf067dda3878e23e6d859575948e1fcb312a419ba43397245bdb639",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10003,
+      "originalStateSHA256": "29803c6be3f0df3e2e214ff9681572df7b9bd5abe42f21ca869ec5599ef4928e",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10004,
+      "originalStateSHA256": "1a17f848d620adfa53110c918a9b9c03717443e44969c03e0baedf53f197f3a6",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10005,
+      "originalStateSHA256": "3f3f94c421590a09d6fb8e99d7bdfead52f3cd5a3ad4f8aeb8103b97ffc1f217",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10006,
+      "originalStateSHA256": "2ce3722f652e329f2461f408090563af27ed64ef7698b9de502ea9bca99a0826",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10007,
+      "originalStateSHA256": "eaaede6df769ffbb65b7203142b2b49675a7951924718ca5d49ba44436de04a6",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "normal",
+      "seed": 10008,
+      "originalStateSHA256": "4d71aa73b7f3b6fe6dc5546d8fff46e6b6a905858b55807b8ef327088230682c",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10001,
+      "originalStateSHA256": "d36646d08353a5854f8de21b605806d5d2a79999e516a549afb06dc6814ae3a1",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10002,
+      "originalStateSHA256": "ce71bc902a28c1d8495c91aab7efc29774f95708801a7b310875b89fbc83e947",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10003,
+      "originalStateSHA256": "339bdf528084e437496898ea524b52b05e31fdc189a8f02853b458add4dc832f",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10004,
+      "originalStateSHA256": "6522bc0df5ef5faf55b8ada10dd70aea14a00f9c214339c1f1c62404352356be",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10005,
+      "originalStateSHA256": "4cb583d5b52495b337cc54adf743b45413b0ffbf3a8e4659c4604c00c72e536b",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10006,
+      "originalStateSHA256": "b2c81668e7958d4c01e0df2059dec2d4fe31fa5ddf7e9ad6c19b02e97d985ce6",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10007,
+      "originalStateSHA256": "bc729180fbbaf5dc645f58836eb66682926b7d3e0b535658e27580adb1302e0b",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "remote",
+      "seed": 10008,
+      "originalStateSHA256": "d3dff0ca454401bb837f6d5d37d65f3a739fe80090ab2d7d40b3fb25cc95b3d4",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10001,
+      "originalStateSHA256": "a880352e3e823992af28f4a4632e2e8e17c5c332d4edce181933fb755f332af1",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.3688516007969156
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10002,
+      "originalStateSHA256": "4756a0c71720ed3e0407c5fc849f0271f928bbd8c2ae80550ed776054422a57d",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.33949960881818697
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10003,
+      "originalStateSHA256": "c9258252d2d5176cf67429a54d63298d168420da292e9a8bdd37d9fbb37e3957",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.36488134104729397
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10004,
+      "originalStateSHA256": "54aa6d36d0d29eb5a9f7f993d717312b802b0762ba82579b4eb822900f9fe1a3",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.3462977787626187
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10005,
+      "originalStateSHA256": "54eb063bc9b8af2096addb19a08d3872baec7948bf03604da82971d83e2a5be0",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.3581807067284899
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10006,
+      "originalStateSHA256": "97674c36fc0a430910d7b5260870ed95cfa6540aa795022cb2a131a4c437f7bf",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.35732767990521097
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10007,
+      "originalStateSHA256": "643b0c4d874c47d38770579fc248dcf14905843d564c9c236b73c4cd0e3f455d",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.3403475794084443
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10008,
+      "originalStateSHA256": "5c08f2ce1dcfb3c4bb6cc836b153018c166e941e1df731d7c355ae9e0d5502fb",
+      "instantChanges": 0,
+      "newPersistentFields": 0,
+      "importRoundTripExact": true,
+      "nextDayPreservesCargoFIFOAndGold": true,
+      "bankInterestDelta": 0,
+      "debtInterestDelta": 0.3525503132623271
+    }
+  ],
+  "harborMarkerVariants": 2,
+  "productiveWrites": 0
+}

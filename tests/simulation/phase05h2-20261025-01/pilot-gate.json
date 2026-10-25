@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "cases": 24,
+  "replays": 24,
+  "identicalInitialStates": true,
+  "historicalBExactComparisons": 6,
+  "existingRegressionCommands": 16,
+  "newMechanismGroups": 8,
+  "parametersFrozen": true
+}
