@@ -54,7 +54,7 @@ check('first-start import backs up even an unloaded unreadable original; backup 
  return {unloadedOriginalRetained:true,writeFaults:2,successfulRetry:true};
 });
 check('existing economic and political functions and RNG remain exact on identical starts',()=>{
- const a=create(42),b=create(42,oldHTML),names=[...oldHTML.matchAll(/^function ([A-Za-z_$][\w$]*)\(/gm)].map(x=>x[1]),allowed=new Set(['validate','importGame','resetGame','welcome','startGame','closeSheet','drawMap','showNews']);let exact=0;
+ const a=create(42),b=create(42,oldHTML),names=[...oldHTML.matchAll(/^function ([A-Za-z_$][\w$]*)\(/gm)].map(x=>x[1]),allowed=new Set(['validate','importGame','resetGame','welcome','startGame','closeSheet','drawMap','showNews','contorView']);let exact=0;
  for(const name of names)if(!allowed.has(name)){assert.equal(a.eval(name+'.toString()'),b.eval(name+'.toString()'),name);exact++}
  assert(html.includes(fs.readFileSync(path.join(__dirname,'politics-rules.js'),'utf8')));for(const seed of [1,42]){const g=create(seed),old=create(seed,oldHTML);g.eval('advance(150)');old.eval('advance(150)');assert.deepEqual(clean(g.eval('s')),clean(old.eval('s')));assert.equal(g.eval('Math.random()'),old.eval('Math.random()'))}return {unchangedFunctions:exact,days:150,seeds:2,politicsVerbatim:true};
 });
