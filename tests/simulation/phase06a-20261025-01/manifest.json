@@ -1,0 +1,30 @@
+{
+  "baseCommit": "b988a648f8750c5e7874f440613a42488dade750",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "analysisSourceCommit": "d96dd117b3c5d302f41fada4a1feea0c4fd3cd8e",
+  "sourceSHA256": {
+    "tests/simulation/phase06a-mechanic-probes.cjs": "16385c1d758b0a2e7c1e7db214d0a04080b34fee402e3fbe1a22c7549d54fd7b",
+    "tests/simulation/phase06a-prototype-checks.cjs": "5e9f7bd8dc187162163eeddc672d148d0331f3fb1e54bf6768c1d036825ed1a0",
+    "tests/simulation/phase06a-evidence.cjs": "d923b7569ba9e1edcf81d266c97e82b63ad660409466f15eb4637d85031130f6",
+    "tests/simulation/politics-concept-profiles.json": "f4656277d7774b36abdc1d821273ba256263cf205aea7dc7ceacd2acc69086d1",
+    "tests/simulation/politics-concept-prototype.cjs": "e2951af3f15f60a908b959c7cb164dcca8a693f9f49b5ba55a746b2523364366"
+  },
+  "scope": {
+    "newFullEconomicGames": 0,
+    "mechanicGroups": 12,
+    "syntheticArithmeticAssessments": 1848,
+    "savedV10RoundTrips": 240,
+    "historicalSummaryRowsRead": {
+      "phase05e": 1500,
+      "phase05h3_all_models": 216,
+      "phase05i": 260,
+      "phase05j": 240
+    }
+  },
+  "mechanicsProvenance": "The preserved mechanic result records HEAD at execution in probeCommit, before source freeze; the identical script bytes were subsequently committed at analysisSourceCommit. No mechanic rerun was needed. testedGameCommit is the actual published production code.",
+  "boundaries": [
+    "no productive game or save format change",
+    "proposed city/model parameters not approved balance",
+    "synthetic outcome counts are not election probabilities or human hours"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "baseCommit": "b988a648f8750c5e7874f440613a42488dade750",
+  "analysisSourceCommit": "d96dd117b3c5d302f41fada4a1feea0c4fd3cd8e",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "productionGameByteIdentical": true,
+  "existingBaselineFilesChanged": [
+    "docs/entwicklungsberichte/README.md"
+  ],
+  "characterisationGroups": 12,
+  "documentedCurrentLimitations": [
+    "global reputation farming and no civic requirements",
+    "arrears omitted from political wealth and credit input",
+    "unbound mayor office city",
+    "unexplained random loss and UI cooldown gap",
+    "completed/election timestamp strict-validation gap"
+  ],
+  "syntheticCombinations": 1848,
+  "pureFunctionCallsIncludingAssertions": 4928,
+  "completeNewEconomicGames": 0,
+  "completeNewPoliticalCareers": 0,
+  "humanPlaytests": 0,
+  "newBrowserChecks": 0,
+  "savedFinalsRoundTrip": 240,
+  "historicalDataFilesUnchanged": 1478,
+  "localDocLinksChecked": 109,
+  "modelsNotImportedByGame": true,
+  "newSaveFormatActivated": false,
+  "financialBenefitsActivated": false,
+  "status": "concept_and_analysis_only_user_decisions_pending"
+}
