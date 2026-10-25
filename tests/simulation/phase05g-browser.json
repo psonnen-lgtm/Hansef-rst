@@ -1,0 +1,80 @@
+{
+  "date": "2026-10-25",
+  "testedGameCommit": "d624977baeb4d710a346ced8d5d06be44b67dfa1",
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "browser": "Chromium, not Safari",
+  "browserVersion": "154.0.8037.57",
+  "results": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "actual old v6 load",
+        "native cancellation",
+        "three days and exactly 20 gold",
+        "6% interest",
+        "year change",
+        "quest/special expiry",
+        "button and layout",
+        "reload",
+        "real JSON download and FileReader import",
+        "second claim blocked while poor"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "actual old v6 load",
+        "native cancellation",
+        "three days and exactly 20 gold",
+        "6% interest",
+        "year change",
+        "quest/special expiry",
+        "button and layout",
+        "reload",
+        "real JSON download and FileReader import",
+        "second claim blocked while poor"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "actual old v6 load",
+        "native cancellation",
+        "three days and exactly 20 gold",
+        "6% interest",
+        "year change",
+        "quest/special expiry",
+        "button and layout",
+        "reload",
+        "real JSON download and FileReader import",
+        "second claim blocked while poor"
+      ]
+    },
+    {
+      "check": "real primary storage failure, original preserved, one successful retry",
+      "passed": true
+    },
+    {
+      "check": "malformed marker import rejected without replacing current state",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5g_hafenarbeit-desktop.png": "8b5cffb5118a801ede587e02d9d8df92a64760b276f215759c287a1c30b517fc",
+    "2026-10-25_0.5g_hafenarbeit-mobile.png": "de91ab4dfa90d289d7709d63704b0f5eae6fad40bafcba8ca63c5a4650ab20a9"
+  }
+}
