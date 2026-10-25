@@ -1,0 +1,152 @@
+{
+  "kind": "focused_warehouse_cases_not_full_games",
+  "gameSHA256": "215a1a85961445f218abdfb31506a782fc1528b9688a0c9f7e45c235fd9f16fb",
+  "checks": [
+    {
+      "name": "same R1, catalogs and protected economic mechanisms; identical fresh RNG and 400-day no-rent path",
+      "passed": true,
+      "evidence": {
+        "seeds": 3,
+        "days": 400,
+        "exactFunctionBodies": 17,
+        "exactCatalogs": 6,
+        "ruleCopyExact": true
+      }
+    },
+    {
+      "name": "121 old city/good stocks and FIFO preserved exactly, v7 backup and repeated migration/load",
+      "passed": true,
+      "evidence": {
+        "oldFass": 121121,
+        "allOldFieldsExact": true,
+        "repeatedMigrations": 25
+      }
+    },
+    {
+      "name": "overfull old warehouses allow withdrawal but not new deposits or retroactive rent",
+      "passed": true,
+      "evidence": {
+        "preservedExcess": true,
+        "noRetroactiveFees": true
+      }
+    },
+    {
+      "name": "all eleven cities and eleven goods: exact limit succeeds, one extra fails, mixed goods and withdrawal",
+      "passed": true,
+      "evidence": {
+        "circuits": 121,
+        "limit": 150
+      }
+    },
+    {
+      "name": "rent day boundary, at sea multi-day charges and city independence",
+      "passed": true,
+      "evidence": {
+        "initialPrepayment": 3,
+        "renewalDays": 17,
+        "renewalCost": 51
+      }
+    },
+    {
+      "name": "size reduction never renews prepaid deadline; voluntary cancellation needs room; no refund",
+      "passed": true,
+      "evidence": {
+        "deadlinePreserved": true,
+        "cancelFeeRefund": 0
+      }
+    },
+    {
+      "name": "no cash accrues required rent debt, preserves goods and bank/debt, blocks storage, permits withdrawal",
+      "passed": true,
+      "evidence": {
+        "newWarehouseDebt": 22,
+        "noForcedSale": true,
+        "preservedFass": 300
+      }
+    },
+    {
+      "name": "reopen and save/load do not duplicate fees; same-size rent is idempotent",
+      "passed": true,
+      "evidence": {
+        "reopens": 20,
+        "exactFees": 2
+      }
+    },
+    {
+      "name": "rent and cargo operations roll back atomically on quota error",
+      "passed": true,
+      "evidence": {
+        "failureCases": 2,
+        "noFeeOrCargoMutation": true
+      }
+    },
+    {
+      "name": "backup collision preserves original; backup/target failures stop migration and import",
+      "passed": true,
+      "evidence": {
+        "failedMigrations": 2,
+        "failedImports": 2,
+        "collisionSafe": true
+      }
+    },
+    {
+      "name": "actual FileReader v7 import, current export roundtrip and invalid future schemas",
+      "passed": true,
+      "evidence": {
+        "invalidSchemas": 9,
+        "allProtectedOldFields": true
+      }
+    },
+    {
+      "name": "paid transfer FIFO and immediate buy/store/load/sell cannot mint money or premium",
+      "passed": true,
+      "evidence": {
+        "circuits": 121,
+        "createdGold": 0
+      }
+    },
+    {
+      "name": "liquidity aid and ship sale protections survive active or stopped rental",
+      "passed": true,
+      "evidence": {
+        "aidOnce": true,
+        "paidRentCannotConsumeAidAfterSuspension": true,
+        "lastShipProtected": true
+      }
+    },
+    {
+      "name": "cancelled or quota-failed new game preserves unloaded old original",
+      "passed": true,
+      "evidence": {
+        "cancelled": true,
+        "backupAndTargetFailures": true
+      }
+    },
+    {
+      "name": "archived normal and remote v7 saves retain all old data through v8",
+      "passed": true,
+      "evidence": {
+        "archivedV7FinalStates": 2
+      }
+    },
+    {
+      "name": "rent confirmation cannot reenter or apply a stale offer, and cancellation spends nothing",
+      "passed": true,
+      "evidence": {
+        "reentrantBlocked": true,
+        "cancelNoFee": true,
+        "externalActionPreserved": true
+      }
+    },
+    {
+      "name": "year boundary and rent changes consume no random numbers beyond ordinary advance",
+      "passed": true,
+      "evidence": {
+        "days": 3,
+        "yearBoundary": true,
+        "totalPaid": 5,
+        "rngExact": true
+      }
+    }
+  ]
+}
