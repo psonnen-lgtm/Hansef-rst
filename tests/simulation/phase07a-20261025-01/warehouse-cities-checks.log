@@ -1,0 +1,14 @@
+PASS five distinct stores, all five cities deposit/withdraw independently
+PASS only actual ship transport changes access to goods in another city
+PASS FIFO provenance and weighted acquisition/book values survive three city visits
+PASS remote active ships cannot transfer or be selected in any city
+PASS multiple local ships can use only the current city store
+PASS capacity, cash, markets, worth and RNG protections in every city
+PASS no-storage old saves gain five empty stores without changing economic fields
+PASS Luebeck-only saves keep all lots/costs; four other stores are added empty
+PASS 100 save/load cycles retain all city stores without multiplication or loss
+PASS malformed existing stores and invalid city/good/magnitude inputs never get repaired
+PASS partial migration backup is distinct and never replaces first-stage original backup
+PASS local or unknown goods do not acquire foreign origin through a city store
+PASS genuine transported foreign goods keep eligibility, only real sale rewards once
+13 multi-city warehouse checks passed; no economy simulation

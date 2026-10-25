@@ -1,0 +1,16 @@
+{
+  "scope": "actual final console and resource observation; entire final HTML equals visual acceptance except favicon metadata",
+  "testedGameCommit": "8908f6a6c312ea76f8261bc95fb78257022915b2",
+  "gameSHA256": "7319a63d708f563ec74ce083c92d5f732ceb090264c481a12d6fca22247e10f3",
+  "visualCode": "a2f81d407f1eef4cd6201309e80b81a551d3c7a5",
+  "onlyPostVisualChange": "empty inline favicon; no game or rendering code change",
+  "checks": [
+    {
+      "name": "exact source carryover and no console errors warnings or failed requests",
+      "passed": true
+    }
+  ],
+  "logs": [],
+  "failed": [],
+  "browser": "154.0.8037.57"
+}

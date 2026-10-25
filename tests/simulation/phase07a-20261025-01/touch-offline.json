@@ -1,0 +1,23 @@
+{
+  "testedGameCommit": "a2f81d407f1eef4cd6201309e80b81a551d3c7a5",
+  "gameSHA256": "452636cc128720f6e5e9913d9d60331ce63f29ee00d904843b870209fa4cb3bb",
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "actual Chromium touch scroll pans city without accidental building activation",
+      "passed": true,
+      "before": 267,
+      "after": 396,
+      "saveExact": true
+    },
+    {
+      "name": "local file protocol startup",
+      "status": "blocked",
+      "passed": null,
+      "error": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+      "observedIn": "touch-offline-attempt3.log",
+      "scope": "Cloud browser administrative policy; not a game failure or successful file startup"
+    }
+  ],
+  "errors": []
+}

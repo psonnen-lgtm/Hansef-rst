@@ -1,0 +1,6 @@
+PASS entire previous game script stays exact except isolated visual module draw hook and release text
+PASS renderer and stylesheet are embedded verbatim, old images remain byte-identical and new encoded bytes match
+PASS decorative module cannot access game state storage RNG or game clocks; all eleven entrances have valid bounds and distinct targets
+PASS same seeded no-politics 150-day states and next draw, and all 44 starts remain identical to previous game
+PASS historical saved political and economic results remain immutable and migrate exactly as before
+5 city source groups passed

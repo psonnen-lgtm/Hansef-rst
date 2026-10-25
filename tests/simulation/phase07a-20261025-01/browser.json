@@ -1,0 +1,675 @@
+{
+  "testedGameCommit": "f31431575666daa1a7c79fdd468419c05f11392c",
+  "gameSHA256": "433840b60c5bc7cdcf664a53c1821a7c10e98a73c3534dade0f83901321a0977",
+  "browser": "154.0.8037.57",
+  "scope": "Chromium desktop process with mobile viewport/touch emulation; no Safari or physical Apple hardware; controlled visibility and image faults",
+  "checks": [
+    {
+      "name": "eleven direct native entrances, no overlap, correct views and return 390",
+      "passed": true,
+      "evidence": {
+        "entrances": [
+          {
+            "id": "church",
+            "x": 11.9375,
+            "y": 650.375,
+            "w": 48,
+            "h": 48,
+            "label": "Kirche – Spenden und Einkehr"
+          },
+          {
+            "id": "hall",
+            "x": 171.3125,
+            "y": 664.4375,
+            "w": 48,
+            "h": 48,
+            "label": "Rathaus – Rat, Briefe und politische Karriere"
+          },
+          {
+            "id": "market",
+            "x": 93.5,
+            "y": 716,
+            "w": 48,
+            "h": 48,
+            "label": "Marktplatz – Waren kaufen und verkaufen"
+          },
+          {
+            "id": "bath",
+            "x": -138.0625,
+            "y": 774.125,
+            "w": 48,
+            "h": 48,
+            "label": "Badehaus – Gerüchte und Hafennachrichten"
+          },
+          {
+            "id": "bank",
+            "x": 369.125,
+            "y": 692.5625,
+            "w": 48,
+            "h": 48,
+            "label": "Bankhaus – Guthaben und Kredite"
+          },
+          {
+            "id": "contor",
+            "x": 510.6875,
+            "y": 788.1875,
+            "w": 48,
+            "h": 48,
+            "label": "Kontor – Dein Kaufmannsbuch und deine Bilanz"
+          },
+          {
+            "id": "warehouse",
+            "x": 246.3125,
+            "y": 908.1875,
+            "w": 48,
+            "h": 48,
+            "label": "Lagerhaus – Waren, Mietbuch und Rückstände"
+          },
+          {
+            "id": "harbor",
+            "x": 35.375,
+            "y": 887.5625,
+            "w": 48,
+            "h": 48,
+            "label": "Hafenmeister – Schiffe, Konvois und Hafenarbeit"
+          },
+          {
+            "id": "yard",
+            "x": 549.125,
+            "y": 995.375,
+            "w": 48,
+            "h": 48,
+            "label": "Schiffswerft – Materialien, Bauaufträge und Schiffsverkauf"
+          },
+          {
+            "id": "map",
+            "x": -30.25,
+            "y": 801.3125,
+            "w": 48,
+            "h": 48,
+            "label": "Seekarte am Kai – Reiseziele und Routen"
+          },
+          {
+            "id": "book",
+            "x": 60.6875,
+            "y": 776.9375,
+            "w": 48,
+            "h": 48,
+            "label": "Handelsbuch – Eigene Preisaufzeichnungen"
+          }
+        ],
+        "views": 11,
+        "dialogPause": true,
+        "return": true
+      }
+    },
+    {
+      "name": "actual market buy/store/load/sell, bank and church remain usable 390",
+      "passed": true,
+      "evidence": {
+        "sameCityTradeProfit": 0,
+        "warehouseRoundtrip": true,
+        "bankRoundtrip": true,
+        "actualDonation": 50
+      }
+    },
+    {
+      "name": "real export/import and actual map journey out and return 390",
+      "passed": true,
+      "evidence": {
+        "download": true,
+        "actualFileReader": true,
+        "unchangedV11": true,
+        "outbound": 1,
+        "return": 0,
+        "oldOtherCityNavigation": true
+      }
+    },
+    {
+      "name": "eleven direct native entrances, no overlap, correct views and return 820",
+      "passed": true,
+      "evidence": {
+        "entrances": [
+          {
+            "id": "church",
+            "x": 226.9375,
+            "y": 571.46875,
+            "w": 48,
+            "h": 48,
+            "label": "Kirche – Spenden und Einkehr"
+          },
+          {
+            "id": "hall",
+            "x": 386.3125,
+            "y": 585.53125,
+            "w": 48,
+            "h": 48,
+            "label": "Rathaus – Rat, Briefe und politische Karriere"
+          },
+          {
+            "id": "market",
+            "x": 308.5,
+            "y": 637.09375,
+            "w": 48,
+            "h": 48,
+            "label": "Marktplatz – Waren kaufen und verkaufen"
+          },
+          {
+            "id": "bath",
+            "x": 76.9375,
+            "y": 695.21875,
+            "w": 48,
+            "h": 48,
+            "label": "Badehaus – Gerüchte und Hafennachrichten"
+          },
+          {
+            "id": "bank",
+            "x": 584.125,
+            "y": 613.65625,
+            "w": 48,
+            "h": 48,
+            "label": "Bankhaus – Guthaben und Kredite"
+          },
+          {
+            "id": "contor",
+            "x": 725.6875,
+            "y": 709.28125,
+            "w": 48,
+            "h": 48,
+            "label": "Kontor – Dein Kaufmannsbuch und deine Bilanz"
+          },
+          {
+            "id": "warehouse",
+            "x": 461.3125,
+            "y": 829.28125,
+            "w": 48,
+            "h": 48,
+            "label": "Lagerhaus – Waren, Mietbuch und Rückstände"
+          },
+          {
+            "id": "harbor",
+            "x": 250.375,
+            "y": 808.65625,
+            "w": 48,
+            "h": 48,
+            "label": "Hafenmeister – Schiffe, Konvois und Hafenarbeit"
+          },
+          {
+            "id": "yard",
+            "x": 764.125,
+            "y": 916.46875,
+            "w": 48,
+            "h": 48,
+            "label": "Schiffswerft – Materialien, Bauaufträge und Schiffsverkauf"
+          },
+          {
+            "id": "map",
+            "x": 184.75,
+            "y": 722.40625,
+            "w": 48,
+            "h": 48,
+            "label": "Seekarte am Kai – Reiseziele und Routen"
+          },
+          {
+            "id": "book",
+            "x": 275.6875,
+            "y": 698.03125,
+            "w": 48,
+            "h": 48,
+            "label": "Handelsbuch – Eigene Preisaufzeichnungen"
+          }
+        ],
+        "views": 11,
+        "dialogPause": true,
+        "return": true
+      }
+    },
+    {
+      "name": "actual market buy/store/load/sell, bank and church remain usable 820",
+      "passed": true,
+      "evidence": {
+        "sameCityTradeProfit": 0,
+        "warehouseRoundtrip": true,
+        "bankRoundtrip": true,
+        "actualDonation": 50
+      }
+    },
+    {
+      "name": "real export/import and actual map journey out and return 820",
+      "passed": true,
+      "evidence": {
+        "download": true,
+        "actualFileReader": true,
+        "unchangedV11": true,
+        "outbound": 1,
+        "return": 0,
+        "oldOtherCityNavigation": true
+      }
+    },
+    {
+      "name": "eleven direct native entrances, no overlap, correct views and return 1280",
+      "passed": true,
+      "evidence": {
+        "entrances": [
+          {
+            "id": "church",
+            "x": 421.671875,
+            "y": 604.3125,
+            "w": 48,
+            "h": 48,
+            "label": "Kirche – Spenden und Einkehr"
+          },
+          {
+            "id": "hall",
+            "x": 610.4375,
+            "y": 620.96875,
+            "w": 48,
+            "h": 48,
+            "label": "Rathaus – Rat, Briefe und politische Karriere"
+          },
+          {
+            "id": "market",
+            "x": 518.28125,
+            "y": 682.046875,
+            "w": 48,
+            "h": 48,
+            "label": "Marktplatz – Waren kaufen und verkaufen"
+          },
+          {
+            "id": "bath",
+            "x": 244,
+            "y": 750.890625,
+            "w": 48,
+            "h": 48,
+            "label": "Badehaus – Gerüchte und Hafennachrichten"
+          },
+          {
+            "id": "bank",
+            "x": 844.734375,
+            "y": 654.28125,
+            "w": 48,
+            "h": 48,
+            "label": "Bankhaus – Guthaben und Kredite"
+          },
+          {
+            "id": "contor",
+            "x": 1012.40625,
+            "y": 767.546875,
+            "w": 48,
+            "h": 48,
+            "label": "Kontor – Dein Kaufmannsbuch und deine Bilanz"
+          },
+          {
+            "id": "warehouse",
+            "x": 699.28125,
+            "y": 909.671875,
+            "w": 48,
+            "h": 48,
+            "label": "Lagerhaus – Waren, Mietbuch und Rückstände"
+          },
+          {
+            "id": "harbor",
+            "x": 449.4375,
+            "y": 885.25,
+            "w": 48,
+            "h": 48,
+            "label": "Hafenmeister – Schiffe, Konvois und Hafenarbeit"
+          },
+          {
+            "id": "yard",
+            "x": 1057.9375,
+            "y": 1012.9375,
+            "w": 48,
+            "h": 48,
+            "label": "Schiffswerft – Materialien, Bauaufträge und Schiffsverkauf"
+          },
+          {
+            "id": "map",
+            "x": 371.703125,
+            "y": 783.09375,
+            "w": 48,
+            "h": 48,
+            "label": "Seekarte am Kai – Reiseziele und Routen"
+          },
+          {
+            "id": "book",
+            "x": 479.40625,
+            "y": 754.21875,
+            "w": 48,
+            "h": 48,
+            "label": "Handelsbuch – Eigene Preisaufzeichnungen"
+          }
+        ],
+        "views": 11,
+        "dialogPause": true,
+        "return": true
+      }
+    },
+    {
+      "name": "actual market buy/store/load/sell, bank and church remain usable 1280",
+      "passed": true,
+      "evidence": {
+        "sameCityTradeProfit": 0,
+        "warehouseRoundtrip": true,
+        "bankRoundtrip": true,
+        "actualDonation": 50
+      }
+    },
+    {
+      "name": "real export/import and actual map journey out and return 1280",
+      "passed": true,
+      "evidence": {
+        "download": true,
+        "actualFileReader": true,
+        "unchangedV11": true,
+        "outbound": 1,
+        "return": 0,
+        "oldOtherCityNavigation": true
+      }
+    },
+    {
+      "name": "real visible motion is independent, separately phased and does not mutate save or RNG",
+      "passed": true,
+      "evidence": {
+        "elapsedMS": 2200,
+        "framesBefore": 19,
+        "framesAfter": 65,
+        "actorPositionsBefore": [
+          {
+            "id": "market-merchant",
+            "x": 434.8911581254735,
+            "y": 261.96371937515784,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "council-courier",
+            "x": 708,
+            "y": 270,
+            "back": true,
+            "walking": false
+          },
+          {
+            "id": "bath-citizen",
+            "x": 184.7669534820357,
+            "y": 347.3679149938054,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "church-monk",
+            "x": 318.5140588702248,
+            "y": 214.84452528679793,
+            "back": true,
+            "walking": true
+          },
+          {
+            "id": "kontor-merchant",
+            "x": 865.0436371149552,
+            "y": 375.210910073403,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "barrel-carrier",
+            "x": 424.9467980205559,
+            "y": 475.20770935668065,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "quay-worker",
+            "x": 543.7729077785707,
+            "y": 490.9849487658726,
+            "back": true,
+            "walking": true
+          },
+          {
+            "id": "yard-worker",
+            "x": 751.6619764718988,
+            "y": 574.6443882415192,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "market-seller",
+            "x": 532.2414608901803,
+            "y": 247.41382029672675,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "shipwright",
+            "x": 925.8822439765338,
+            "y": 525.6274146588446,
+            "back": false,
+            "walking": true
+          }
+        ],
+        "actorPositionsAfter": [
+          {
+            "id": "market-merchant",
+            "x": 447,
+            "y": 266,
+            "back": false,
+            "walking": false
+          },
+          {
+            "id": "council-courier",
+            "x": 716.5845378470913,
+            "y": 277.06961940348697,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "bath-citizen",
+            "x": 196.18942253253513,
+            "y": 351.3066974250121,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "church-monk",
+            "x": 311.216708805635,
+            "y": 205.22162316023355,
+            "back": true,
+            "walking": true
+          },
+          {
+            "id": "kontor-merchant",
+            "x": 871,
+            "y": 383,
+            "back": false,
+            "walking": false
+          },
+          {
+            "id": "barrel-carrier",
+            "x": 441.03401481017426,
+            "y": 480.4360548133066,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "quay-worker",
+            "x": 542,
+            "y": 490,
+            "back": true,
+            "walking": false
+          },
+          {
+            "id": "yard-worker",
+            "x": 759.3335010234597,
+            "y": 585.8940689726734,
+            "back": false,
+            "walking": true
+          },
+          {
+            "id": "market-seller",
+            "x": 534,
+            "y": 248,
+            "back": false,
+            "walking": false
+          },
+          {
+            "id": "shipwright",
+            "x": 927,
+            "y": 526,
+            "back": false,
+            "walking": false
+          }
+        ],
+        "saveExact": true,
+        "diskExact": true,
+        "rngCalls": 0
+      }
+    },
+    {
+      "name": "manual pause OS reduced motion hidden condition offscreen and single-instance return",
+      "passed": true,
+      "evidence": {
+        "manualPause": true,
+        "controlledHiddenEvent": true,
+        "actualOffscreen": true,
+        "actualReducedPreference": true,
+        "sceneSwitches": 30,
+        "before": {
+          "roots": 1,
+          "doors": 11,
+          "mounts": 1
+        },
+        "after": {
+          "roots": 1,
+          "doors": 11,
+          "mounts": 1
+        },
+        "maxPending": 1,
+        "jsHeapBefore": 4654012,
+        "jsHeapAfter": 4662060,
+        "scope": "JS heap after controlled GC, not total GPU/native memory"
+      }
+    },
+    {
+      "name": "keyboard focus labels and no pointer interception",
+      "passed": true,
+      "evidence": {
+        "nativeTabAndEnter": true,
+        "visibleName": true,
+        "visibleOutline": true
+      }
+    },
+    {
+      "name": "bounded CPU-throttled city render observation",
+      "passed": true,
+      "evidence": {
+        "throttleRate": 4,
+        "elapsedMS": 1800,
+        "renderedFrames": 34,
+        "frameMS": {
+          "samples": 164,
+          "median": 0.20000000298023224,
+          "p95": 1.5,
+          "max": 3.2000000029802322
+        },
+        "scope": "desktop Chromium CPU throttle; canvas JS time, not physical device/compositor timing"
+      }
+    },
+    {
+      "name": "funded controlled UI fixture: actual paid shipbuilding and rent debt preserve originals and politics",
+      "passed": true,
+      "evidence": {
+        "fixtureFunding": 25000,
+        "materials": "actual market purchases",
+        "wagePaid": 2500,
+        "orderAndReloadExact": true,
+        "rentAccrual": 1,
+        "rentPaid": true,
+        "scope": "controlled fixtures; no new full career"
+      }
+    },
+    {
+      "name": "image failure keeps old Luebeck art and original functional navigation",
+      "passed": true,
+      "evidence": {
+        "controlledImageError": true,
+        "preservedOriginalArt": true,
+        "oldNavigationWorks": true
+      }
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "timings": [
+    {
+      "viewport": 390,
+      "pageToReadyMS": 495
+    },
+    {
+      "viewport": 820,
+      "pageToReadyMS": 460
+    },
+    {
+      "viewport": 1280,
+      "pageToReadyMS": 452
+    }
+  ],
+  "performanceRows": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "mounts": 1,
+      "maxPending": 1,
+      "frameMS": {
+        "samples": 17,
+        "median": 0.29999999701976776,
+        "p95": 1,
+        "max": 1
+      },
+      "frames": 17
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "mounts": 1,
+      "maxPending": 1,
+      "frameMS": {
+        "samples": 17,
+        "median": 0.20000000298023224,
+        "p95": 1,
+        "max": 1
+      },
+      "frames": 17
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "mounts": 1,
+      "maxPending": 1,
+      "frameMS": {
+        "samples": 18,
+        "median": 0.20000000298023224,
+        "p95": 1.0999999940395355,
+        "max": 1.0999999940395355
+      },
+      "frames": 18
+    }
+  ],
+  "screenshots": {
+    "2026-10-25_0.7a_luebeck-390.png": "f09cd2306a4498802bf9666a55a7152be398531d90cda57b35b29dd641f7b4dd",
+    "2026-10-25_0.7a_rathaus-390.png": "17b8c893bbb5e280c2625ac25af07747e1d8eeab53c3a1c9273a82d1dfbe320b",
+    "2026-10-25_0.7a_werft-390.png": "fe33ae9786de087647e319d46b6368c664f21e3fdd4eaf0613cdfde47a49cc24",
+    "2026-10-25_0.7a_luebeck-820.png": "266de95d0341a04e2443c56f251ac078908e64b3fabb412be904233f95af46e3",
+    "2026-10-25_0.7a_rathaus-820.png": "22f6c7adc1109d5a57e1ce39a76423a3edb7b97a06b37e23fec51d0b0f226f00",
+    "2026-10-25_0.7a_werft-820.png": "935c6a753d1be6ad3f221041dca7261a91a54ad14b08a58172bc67391c2f36d6",
+    "2026-10-25_0.7a_luebeck-1280.png": "fc0778de08324899107164f2eee5c0dd0c43abfc5d01a5df16f48899234c221a",
+    "2026-10-25_0.7a_rathaus-1280.png": "668cbb06b93eff5c602df54ccbd86c5249af882e9d9e22681de792cbf286b358",
+    "2026-10-25_0.7a_werft-1280.png": "71de4a4b04f60d4dc66c73659086e7f7c9d50d827bb50f10da505eeb596d3c49",
+    "2026-10-25_0.7a_bewegung-a.png": "f20c84438682261aaf2ec309db3c45c93aa654d5fe430c0fa6e701ae0dde8b22",
+    "2026-10-25_0.7a_bewegung-b.png": "cef8936802369474a6927217d6b1f6d22918dede17bf23fd819a8cfd65dd273a"
+  }
+}

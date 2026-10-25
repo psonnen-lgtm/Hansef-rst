@@ -1,0 +1,5 @@
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(Math.abs(after-before)>50)
+
+    at /workspace/Hansef-rst/tests/simulation/city-life-touch-offline.cjs:3:1027

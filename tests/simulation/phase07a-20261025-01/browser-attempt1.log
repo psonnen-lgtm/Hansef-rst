@@ -1,0 +1,19 @@
+PASS eleven direct native entrances, no overlap, correct views and return 390
+PASS actual market buy/store/load/sell, bank and church remain usable 390
+PASS real export/import and actual map journey out and return 390
+PASS eleven direct native entrances, no overlap, correct views and return 820
+PASS actual market buy/store/load/sell, bank and church remain usable 820
+PASS real export/import and actual map journey out and return 820
+PASS eleven direct native entrances, no overlap, correct views and return 1280
+PASS actual market buy/store/load/sell, bank and church remain usable 1280
+PASS real export/import and actual map journey out and return 1280
+PASS real visible motion is independent, separately phased and does not mutate save or RNG
+PASS manual pause OS reduced motion hidden condition offscreen and single-instance return
+PASS keyboard focus labels and no pointer interception
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+'1 G' !== '1'
+
+    at /workspace/Hansef-rst/tests/simulation/city-life-browser.cjs:59:273
+    at async record (/workspace/Hansef-rst/tests/simulation/city-life-browser.cjs:8:48)
+    at async /workspace/Hansef-rst/tests/simulation/city-life-browser.cjs:54:2

@@ -1,0 +1,6 @@
+{"box":{"x":17,"y":295.25,"width":356,"height":548.59375},"before":267,"after":396,"scroll":{"width":356,"total":900,"action":"manipulation"},"hit":"living-city-world"}
+page.goto: net::ERR_BLOCKED_BY_ADMINISTRATOR at file:///workspace/Hansef-rst/Hansefuerst_0_4.html
+Call log:
+[2m  - navigating to "file:///workspace/Hansef-rst/Hansefuerst_0_4.html", waiting until "load"[22m
+
+    at /workspace/Hansef-rst/tests/simulation/city-life-touch-offline.cjs:4:187
