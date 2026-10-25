@@ -1,0 +1,4821 @@
+{
+  "groups": [
+    {
+      "model": "before",
+      "strategy": "none",
+      "runs": 20,
+      "wealthMedian": 420726.0,
+      "cashMedian": 417285.0,
+      "gainPerDayMedian": 285.1539377554168,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": 0.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 0,
+      "storedBookValueMedian": 0.0,
+      "storageVisitsMedian": 0.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 659.5,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "occasional",
+      "runs": 20,
+      "wealthMedian": 445397.5,
+      "cashMedian": 438890.5,
+      "gainPerDayMedian": 301.8678097504618,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 3677.5,
+      "storageNetMedian": 3677.5,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 283,
+      "storageSales": 885,
+      "maxStored": 60,
+      "storedBookValueMedian": 2850.0,
+      "storageVisitsMedian": 53.5,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 608.0,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1445,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "regional",
+      "runs": 20,
+      "wealthMedian": 453298.5084180832,
+      "cashMedian": 443702.0,
+      "gainPerDayMedian": 307.5526034567888,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 16942.13746534204,
+      "storageNetMedian": 16942.13746534204,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 1254,
+      "storageSales": 3257,
+      "maxStored": 220,
+      "storedBookValueMedian": 9640.921126168098,
+      "storageVisitsMedian": 187.5,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 624.5,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1445,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "bulk",
+      "runs": 20,
+      "wealthMedian": 464155.21261968487,
+      "cashMedian": 449082.5,
+      "gainPerDayMedian": 315.30509236565445,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 31769.25244030461,
+      "storageNetMedian": 31769.25244030461,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 810,
+      "storageSales": 2809,
+      "maxStored": 400,
+      "storedBookValueMedian": 14198.375,
+      "storageVisitsMedian": 188.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 633.5,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "runs": 20,
+      "wealthMedian": 446443.0468248855,
+      "cashMedian": 424426.5,
+      "gainPerDayMedian": 303.00693678308755,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 29355.97184019383,
+      "storageNetMedian": 29355.97184019383,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 299,
+      "storageSales": 1868,
+      "maxStored": 400,
+      "storedBookValueMedian": 17936.154886515513,
+      "storageVisitsMedian": 141.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 627.5,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "none",
+      "runs": 20,
+      "wealthMedian": 420726.0,
+      "cashMedian": 417285.0,
+      "gainPerDayMedian": 285.1539377554168,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": 0.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 0,
+      "storedBookValueMedian": 0.0,
+      "storageVisitsMedian": 0.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 659.5,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "occasional",
+      "runs": 20,
+      "wealthMedian": 445397.5,
+      "cashMedian": 438890.5,
+      "gainPerDayMedian": 301.8678097504618,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 3677.5,
+      "storageNetMedian": 3677.5,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 283,
+      "storageSales": 885,
+      "maxStored": 60,
+      "storedBookValueMedian": 2850.0,
+      "storageVisitsMedian": 53.5,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 608.0,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1445,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "regional",
+      "runs": 20,
+      "wealthMedian": 460107.4730229426,
+      "cashMedian": 445482.0,
+      "gainPerDayMedian": 312.10108213559124,
+      "rentMedian": 2644.0,
+      "rentSum": 52508,
+      "rentShareOfRealisedProfit": 0.00581558004029463,
+      "storageProfitMedian": 20857.182898763327,
+      "storageNetMedian": 18083.412584671605,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 1181,
+      "storageSales": 3056,
+      "maxStored": 220,
+      "storedBookValueMedian": 9668.072602705468,
+      "storageVisitsMedian": 175.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 632.0,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1445,
+      "longJourneys": 0,
+      "rentMedianOverFees": 0.9616962516760392
+    },
+    {
+      "model": "capacity",
+      "strategy": "bulk",
+      "runs": 20,
+      "wealthMedian": 453448.0,
+      "cashMedian": 432201.5,
+      "gainPerDayMedian": 307.7646984319618,
+      "rentMedian": 5975.0,
+      "rentSum": 121186,
+      "rentShareOfRealisedProfit": 0.013290428426953764,
+      "storageProfitMedian": 27146.553180411698,
+      "storageNetMedian": 20432.616909457523,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 839,
+      "storageSales": 2611,
+      "maxStored": 350,
+      "storedBookValueMedian": 15473.471295954778,
+      "storageVisitsMedian": 181.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 618.0,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 2.1620183017973678
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "runs": 20,
+      "wealthMedian": 449422.4979727911,
+      "cashMedian": 428745.0,
+      "gainPerDayMedian": 304.96909533285407,
+      "rentMedian": 6051.0,
+      "rentSum": 121036,
+      "rentShareOfRealisedProfit": 0.013073645566497203,
+      "storageProfitMedian": 26328.263736263736,
+      "storageNetMedian": 19240.55343591187,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 392,
+      "storageSales": 1687,
+      "maxStored": 350,
+      "storedBookValueMedian": 15340.65693870582,
+      "storageVisitsMedian": 125.0,
+      "blocked": 0,
+      "eld": 20,
+      "eldDaysMedian": 618.0,
+      "suspensions": 0,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "longJourneys": 0,
+      "rentMedianOverFees": 2.2068281938325995
+    }
+  ],
+  "tourGroups": [
+    {
+      "model": "before",
+      "strategy": "none",
+      "runs": 6,
+      "wealthMedian": 207705.5,
+      "cashMedian": 204264.5,
+      "gainPerDayMedian": 136.50886535977617,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": 0.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 0,
+      "storedBookValueMedian": 0.0,
+      "storageVisitsMedian": 0.0,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1268.5,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "occasional",
+      "runs": 6,
+      "wealthMedian": 225493.5,
+      "cashMedian": 209242.5,
+      "gainPerDayMedian": 148.7532781790514,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 20720.0,
+      "storageNetMedian": 20720.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 156,
+      "storageSales": 522,
+      "maxStored": 60,
+      "storedBookValueMedian": 11640.0,
+      "storageVisitsMedian": 99.0,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1165.0,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "regional",
+      "runs": 6,
+      "wealthMedian": 232445.25,
+      "cashMedian": 198730.5,
+      "gainPerDayMedian": 152.96197159630736,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 36480.75,
+      "storageNetMedian": 36480.75,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 121,
+      "storageSales": 469,
+      "maxStored": 180,
+      "storedBookValueMedian": 26770.928395161623,
+      "storageVisitsMedian": 97.5,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1166.5,
+      "suspensions": 0,
+      "daysMin": 1443,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "bulk",
+      "runs": 6,
+      "wealthMedian": 157345.38030410185,
+      "cashMedian": 119322.5,
+      "gainPerDayMedian": 101.32888203281578,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 28357.41379310345,
+      "storageNetMedian": 28357.41379310345,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 52,
+      "storageSales": 283,
+      "maxStored": 270,
+      "storedBookValueMedian": 36713.87750117472,
+      "storageVisitsMedian": 71.5,
+      "blocked": 0,
+      "eld": 1,
+      "eldDaysMedian": 1423,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1455,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "runs": 6,
+      "wealthMedian": 9733.1,
+      "cashMedian": 2.0,
+      "gainPerDayMedian": -1.7281934731934703,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": null,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": 0.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 90,
+      "storedBookValueMedian": 4923.0,
+      "storageVisitsMedian": 3.0,
+      "blocked": 6,
+      "eld": 0,
+      "eldDaysMedian": null,
+      "suspensions": 0,
+      "daysMin": 123,
+      "daysMax": 137,
+      "longJourneys": 12,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "none",
+      "runs": 6,
+      "wealthMedian": 207705.5,
+      "cashMedian": 204264.5,
+      "gainPerDayMedian": 136.50886535977617,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": 0.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 0,
+      "storedBookValueMedian": 0.0,
+      "storageVisitsMedian": 0.0,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1268.5,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "occasional",
+      "runs": 6,
+      "wealthMedian": 225493.5,
+      "cashMedian": 209242.5,
+      "gainPerDayMedian": 148.7532781790514,
+      "rentMedian": 0.0,
+      "rentSum": 0,
+      "rentShareOfRealisedProfit": 0.0,
+      "storageProfitMedian": 20720.0,
+      "storageNetMedian": 20720.0,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 156,
+      "storageSales": 522,
+      "maxStored": 60,
+      "storedBookValueMedian": 11640.0,
+      "storageVisitsMedian": 99.0,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1165.0,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 0.0
+    },
+    {
+      "model": "capacity",
+      "strategy": "regional",
+      "runs": 6,
+      "wealthMedian": 224593.25,
+      "cashMedian": 193128.5,
+      "gainPerDayMedian": 147.48903691782846,
+      "rentMedian": 6763.5,
+      "rentSum": 36507,
+      "rentShareOfRealisedProfit": 0.027100844919403677,
+      "storageProfitMedian": 35911.25,
+      "storageNetMedian": 29138.625,
+      "negativeStorageNetRuns": 0,
+      "storageProfitLossSales": 122,
+      "storageSales": 474,
+      "maxStored": 180,
+      "storedBookValueMedian": 26669.073591553202,
+      "storageVisitsMedian": 97.5,
+      "blocked": 0,
+      "eld": 6,
+      "eldDaysMedian": 1201.0,
+      "suspensions": 0,
+      "daysMin": 1442,
+      "daysMax": 1462,
+      "longJourneys": 171,
+      "rentMedianOverFees": 10.348540965207633
+    },
+    {
+      "model": "capacity",
+      "strategy": "bulk",
+      "runs": 6,
+      "wealthMedian": 149160.0790137152,
+      "cashMedian": 111365.0,
+      "gainPerDayMedian": 95.7015470468677,
+      "rentMedian": 7414.0,
+      "rentSum": 40578,
+      "rentShareOfRealisedProfit": 0.05274809889050916,
+      "storageProfitMedian": 27742.526315789473,
+      "storageNetMedian": 21616.526315789473,
+      "negativeStorageNetRuns": 1,
+      "storageProfitLossSales": 46,
+      "storageSales": 241,
+      "maxStored": 270,
+      "storedBookValueMedian": 32382.56330558539,
+      "storageVisitsMedian": 71.5,
+      "blocked": 1,
+      "eld": 0,
+      "eldDaysMedian": null,
+      "suspensions": 1,
+      "daysMin": 446,
+      "daysMax": 1455,
+      "longJourneys": 151,
+      "rentMedianOverFees": 11.393589307962397
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "runs": 6,
+      "wealthMedian": 9724.1,
+      "cashMedian": 0.0,
+      "gainPerDayMedian": -1.7970859945255446,
+      "rentMedian": 8.0,
+      "rentSum": 48,
+      "rentShareOfRealisedProfit": null,
+      "storageProfitMedian": 0.0,
+      "storageNetMedian": -8.0,
+      "negativeStorageNetRuns": 6,
+      "storageProfitLossSales": 0,
+      "storageSales": 0,
+      "maxStored": 90,
+      "storedBookValueMedian": 4916.0,
+      "storageVisitsMedian": 3.0,
+      "blocked": 6,
+      "eld": 0,
+      "eldDaysMedian": null,
+      "suspensions": 0,
+      "daysMin": 126,
+      "daysMax": 137,
+      "longJourneys": 12,
+      "rentMedianOverFees": 0.11616161616161616
+    }
+  ],
+  "paired": [
+    {
+      "strategy": "none",
+      "wealthDeltaVsOldMedian": 0.0,
+      "betterThanOld": 0,
+      "worseThanOld": 0,
+      "wealthDeltaVsNoStorageMedian": 0.0,
+      "betterThanNoStorage": 0,
+      "worseThanNoStorage": 0
+    },
+    {
+      "strategy": "occasional",
+      "wealthDeltaVsOldMedian": 0.0,
+      "betterThanOld": 0,
+      "worseThanOld": 0,
+      "wealthDeltaVsNoStorageMedian": -4224.5,
+      "betterThanNoStorage": 9,
+      "worseThanNoStorage": 11
+    },
+    {
+      "strategy": "regional",
+      "wealthDeltaVsOldMedian": -3255.0,
+      "betterThanOld": 4,
+      "worseThanOld": 16,
+      "wealthDeltaVsNoStorageMedian": 15024.460590398172,
+      "betterThanNoStorage": 13,
+      "worseThanNoStorage": 7
+    },
+    {
+      "strategy": "bulk",
+      "wealthDeltaVsOldMedian": 1126.2736265904387,
+      "betterThanOld": 11,
+      "worseThanOld": 9,
+      "wealthDeltaVsNoStorageMedian": 16711.478946124727,
+      "betterThanNoStorage": 12,
+      "worseThanNoStorage": 8
+    },
+    {
+      "strategy": "stress",
+      "wealthDeltaVsOldMedian": 9368.408827771607,
+      "betterThanOld": 12,
+      "worseThanOld": 8,
+      "wealthDeltaVsNoStorageMedian": 20694.99391349574,
+      "betterThanNoStorage": 14,
+      "worseThanNoStorage": 6
+    }
+  ],
+  "variants": [
+    {
+      "base": 100,
+      "fee": 1,
+      "runs": 10,
+      "wealthMedian": 425743.0,
+      "rentSum": 29952,
+      "eld": 10,
+      "suspensions": 0
+    },
+    {
+      "base": 100,
+      "fee": 2,
+      "runs": 10,
+      "wealthMedian": 435235.5,
+      "rentSum": 71044,
+      "eld": 10,
+      "suspensions": 0
+    },
+    {
+      "base": 150,
+      "fee": 1,
+      "runs": 10,
+      "wealthMedian": 434746.2727272727,
+      "rentSum": 26184,
+      "eld": 10,
+      "suspensions": 0
+    },
+    {
+      "base": 150,
+      "fee": 2,
+      "runs": 10,
+      "wealthMedian": 425743.0,
+      "rentSum": 50730,
+      "eld": 10,
+      "suspensions": 0
+    },
+    {
+      "base": 200,
+      "fee": 1,
+      "runs": 10,
+      "wealthMedian": 425743.0,
+      "rentSum": 20331,
+      "eld": 10,
+      "suspensions": 0
+    },
+    {
+      "base": 200,
+      "fee": 2,
+      "runs": 10,
+      "wealthMedian": 433623.7727272727,
+      "rentSum": 42766,
+      "eld": 10,
+      "suspensions": 0
+    }
+  ],
+  "individual": [
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72001,
+      "storageProfit": 28087.02465040507,
+      "storageNet": 28087.02465040507,
+      "daysToEldermann": 629,
+      "negativeStorageSales": 67,
+      "arrivalsByCity": {
+        "Hamburg": 135,
+        "L\u00fcbeck": 168,
+        "Rostock": 30,
+        "Stralsund": 77
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72002,
+      "storageProfit": 36065.51205924231,
+      "storageNet": 36065.51205924231,
+      "daysToEldermann": 652,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 243,
+        "L\u00fcbeck": 242
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72003,
+      "storageProfit": 10570.0,
+      "storageNet": 10570.0,
+      "daysToEldermann": 740,
+      "negativeStorageSales": 104,
+      "arrivalsByCity": {
+        "Hamburg": 208,
+        "L\u00fcbeck": 174,
+        "Rostock": 60,
+        "Stralsund": 4
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72004,
+      "storageProfit": 35704.51612903226,
+      "storageNet": 35704.51612903226,
+      "daysToEldermann": 552,
+      "negativeStorageSales": 34,
+      "arrivalsByCity": {
+        "Hamburg": 153,
+        "L\u00fcbeck": 217,
+        "Rostock": 99
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72005,
+      "storageProfit": 43820.0,
+      "storageNet": 43820.0,
+      "daysToEldermann": 534,
+      "negativeStorageSales": 5,
+      "arrivalsByCity": {
+        "Hamburg": 140,
+        "L\u00fcbeck": 196,
+        "Rostock": 124
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72006,
+      "storageProfit": 37656.75000000001,
+      "storageNet": 37656.75000000001,
+      "daysToEldermann": 722,
+      "negativeStorageSales": 24,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72007,
+      "storageProfit": 37490.0,
+      "storageNet": 37490.0,
+      "daysToEldermann": 711,
+      "negativeStorageSales": 7,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 242
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72008,
+      "storageProfit": 33668.50488060922,
+      "storageNet": 33668.50488060922,
+      "daysToEldermann": 514,
+      "negativeStorageSales": 33,
+      "arrivalsByCity": {
+        "Hamburg": 74,
+        "L\u00fcbeck": 160,
+        "Rostock": 139,
+        "Stralsund": 76
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72009,
+      "storageProfit": 22185.0,
+      "storageNet": 22185.0,
+      "daysToEldermann": 507,
+      "negativeStorageSales": 32,
+      "arrivalsByCity": {
+        "Hamburg": 109,
+        "L\u00fcbeck": 191,
+        "Rostock": 147,
+        "Stralsund": 7
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72010,
+      "storageProfit": 29870.000000000004,
+      "storageNet": 29870.000000000004,
+      "daysToEldermann": 638,
+      "negativeStorageSales": 65,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72011,
+      "storageProfit": 25231.309177279472,
+      "storageNet": 25231.309177279472,
+      "daysToEldermann": 671,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 236,
+        "L\u00fcbeck": 225,
+        "Rostock": 12
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72012,
+      "storageProfit": 18526.806475779318,
+      "storageNet": 18526.806475779318,
+      "daysToEldermann": 626,
+      "negativeStorageSales": 84,
+      "arrivalsByCity": {
+        "Hamburg": 136,
+        "L\u00fcbeck": 203,
+        "Rostock": 124
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72013,
+      "storageProfit": 19710.059160312427,
+      "storageNet": 19710.059160312427,
+      "daysToEldermann": 542,
+      "negativeStorageSales": 73,
+      "arrivalsByCity": {
+        "Hamburg": 175,
+        "L\u00fcbeck": 162,
+        "Rostock": 105
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72014,
+      "storageProfit": 38719.38016273627,
+      "storageNet": 38719.38016273627,
+      "daysToEldermann": 715,
+      "negativeStorageSales": 29,
+      "arrivalsByCity": {
+        "Hamburg": 212,
+        "L\u00fcbeck": 203,
+        "Rostock": 48
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72015,
+      "storageProfit": 37688.91719140691,
+      "storageNet": 37688.91719140691,
+      "daysToEldermann": 738,
+      "negativeStorageSales": 32,
+      "arrivalsByCity": {
+        "Hamburg": 220,
+        "L\u00fcbeck": 232,
+        "Rostock": 27
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72016,
+      "storageProfit": 19808.699710708283,
+      "storageNet": 19808.699710708283,
+      "daysToEldermann": 707,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 229,
+        "L\u00fcbeck": 220,
+        "Rostock": 22
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72017,
+      "storageProfit": 34218.383281124276,
+      "storageNet": 34218.383281124276,
+      "daysToEldermann": 661,
+      "negativeStorageSales": 24,
+      "arrivalsByCity": {
+        "Hamburg": 168,
+        "L\u00fcbeck": 141,
+        "Rostock": 103,
+        "Stralsund": 22
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72018,
+      "storageProfit": 54259.41419584095,
+      "storageNet": 54259.41419584095,
+      "daysToEldermann": 548,
+      "negativeStorageSales": 6,
+      "arrivalsByCity": {
+        "Hamburg": 124,
+        "L\u00fcbeck": 141,
+        "Rostock": 45,
+        "Stralsund": 85,
+        "Stettin": 50
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72019,
+      "storageProfit": 16090.167978992997,
+      "storageNet": 16090.167978992997,
+      "daysToEldermann": 583,
+      "negativeStorageSales": 77,
+      "arrivalsByCity": {
+        "Hamburg": 167,
+        "L\u00fcbeck": 153,
+        "Rostock": 119
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 72020,
+      "storageProfit": 20244.04507663345,
+      "storageNet": 20244.04507663345,
+      "daysToEldermann": 612,
+      "negativeStorageSales": 71,
+      "arrivalsByCity": {
+        "Hamburg": 144,
+        "L\u00fcbeck": 166,
+        "Rostock": 134
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72001,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 681,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 145,
+        "Rostock": 112
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72002,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 712,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 237,
+        "L\u00fcbeck": 229,
+        "Rostock": 13
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72003,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 800,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 215,
+        "L\u00fcbeck": 204,
+        "Rostock": 45
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72004,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 590,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 149,
+        "Rostock": 116
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72005,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 534,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 144,
+        "L\u00fcbeck": 178,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72006,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 767,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72007,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 639,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 172,
+        "L\u00fcbeck": 157,
+        "Rostock": 113
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72008,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 568,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 100,
+        "L\u00fcbeck": 116,
+        "Rostock": 138,
+        "Stralsund": 85
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72009,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 479,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 83,
+        "L\u00fcbeck": 194,
+        "Rostock": 138,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72010,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 632,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 232,
+        "L\u00fcbeck": 232,
+        "Rostock": 14
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72011,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 680,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 239,
+        "L\u00fcbeck": 235,
+        "Rostock": 4
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72012,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 535,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 165,
+        "Rostock": 109
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72013,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 623,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 173,
+        "L\u00fcbeck": 190,
+        "Rostock": 55,
+        "Stralsund": 23
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72014,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 751,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72015,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 738,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 200,
+        "L\u00fcbeck": 229,
+        "Rostock": 48
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72016,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 752,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 220,
+        "L\u00fcbeck": 220,
+        "Rostock": 31
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72017,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 775,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72018,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 690,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 217,
+        "L\u00fcbeck": 144,
+        "Rostock": 73
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72019,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 558,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 125,
+        "Rostock": 123
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 72020,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 589,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 141,
+        "Rostock": 136,
+        "Stralsund": 25,
+        "Stettin": 5
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72001,
+      "storageProfit": 1740,
+      "storageNet": 1740,
+      "daysToEldermann": 743,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 203,
+        "L\u00fcbeck": 86,
+        "Rostock": 116
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72002,
+      "storageProfit": 8432,
+      "storageNet": 8432,
+      "daysToEldermann": 580,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 202,
+        "L\u00fcbeck": 226,
+        "Rostock": 49
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72003,
+      "storageProfit": 3240,
+      "storageNet": 3240,
+      "daysToEldermann": 773,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 201,
+        "L\u00fcbeck": 149,
+        "Rostock": 61,
+        "Stralsund": 14
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72004,
+      "storageProfit": 1320,
+      "storageNet": 1320,
+      "daysToEldermann": 540,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 168,
+        "L\u00fcbeck": 178,
+        "Rostock": 104
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72005,
+      "storageProfit": 3660,
+      "storageNet": 3660,
+      "daysToEldermann": 531,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 169,
+        "L\u00fcbeck": 151,
+        "Rostock": 91,
+        "Stralsund": 31
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72006,
+      "storageProfit": 3952.0,
+      "storageNet": 3952.0,
+      "daysToEldermann": 706,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 141,
+        "Rostock": 62,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72007,
+      "storageProfit": 3942.0,
+      "storageNet": 3942.0,
+      "daysToEldermann": 599,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 163,
+        "L\u00fcbeck": 141,
+        "Rostock": 130
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72008,
+      "storageProfit": 6097,
+      "storageNet": 6097,
+      "daysToEldermann": 549,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 218,
+        "Rostock": 119
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72009,
+      "storageProfit": 5040,
+      "storageNet": 5040,
+      "daysToEldermann": 486,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 126,
+        "L\u00fcbeck": 101,
+        "Rostock": 67,
+        "Stralsund": 79
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72010,
+      "storageProfit": 1200,
+      "storageNet": 1200,
+      "daysToEldermann": 671,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72011,
+      "storageProfit": 2389,
+      "storageNet": 2389,
+      "daysToEldermann": 692,
+      "negativeStorageSales": 14,
+      "arrivalsByCity": {
+        "Hamburg": 239,
+        "L\u00fcbeck": 235,
+        "Rostock": 4
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72012,
+      "storageProfit": 3695,
+      "storageNet": 3695,
+      "daysToEldermann": 560,
+      "negativeStorageSales": 14,
+      "arrivalsByCity": {
+        "Hamburg": 156,
+        "L\u00fcbeck": 167,
+        "Rostock": 122
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72013,
+      "storageProfit": 1930.0,
+      "storageNet": 1930.0,
+      "daysToEldermann": 588,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 135,
+        "L\u00fcbeck": 169,
+        "Rostock": 139,
+        "Stralsund": 2
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72014,
+      "storageProfit": 3512,
+      "storageNet": 3512,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 124,
+        "L\u00fcbeck": 152,
+        "Rostock": 93,
+        "Stralsund": 73
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72015,
+      "storageProfit": 7594.0,
+      "storageNet": 7594.0,
+      "daysToEldermann": 723,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 194,
+        "L\u00fcbeck": 215,
+        "Rostock": 61
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72016,
+      "storageProfit": 780,
+      "storageNet": 780,
+      "daysToEldermann": 763,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 196,
+        "L\u00fcbeck": 212,
+        "Rostock": 59
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72017,
+      "storageProfit": 7454,
+      "storageNet": 7454,
+      "daysToEldermann": 589,
+      "negativeStorageSales": 13,
+      "arrivalsByCity": {
+        "Hamburg": 174,
+        "L\u00fcbeck": 197,
+        "Rostock": 88
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72018,
+      "storageProfit": 3720,
+      "storageNet": 3720,
+      "daysToEldermann": 705,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 193,
+        "L\u00fcbeck": 171,
+        "Rostock": 57,
+        "Stralsund": 32
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72019,
+      "storageProfit": 1320,
+      "storageNet": 1320,
+      "daysToEldermann": 593,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 109,
+        "L\u00fcbeck": 123,
+        "Rostock": 134,
+        "Stralsund": 75
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 72020,
+      "storageProfit": 6360,
+      "storageNet": 6360,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 9,
+      "arrivalsByCity": {
+        "Hamburg": 169,
+        "L\u00fcbeck": 150,
+        "Rostock": 117
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72001,
+      "storageProfit": 10030.860449837066,
+      "storageNet": 10030.860449837066,
+      "daysToEldermann": 635,
+      "negativeStorageSales": 52,
+      "arrivalsByCity": {
+        "Hamburg": 195,
+        "L\u00fcbeck": 113,
+        "Rostock": 110
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72002,
+      "storageProfit": 29210.136831254462,
+      "storageNet": 29210.136831254462,
+      "daysToEldermann": 661,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 219,
+        "L\u00fcbeck": 184,
+        "Rostock": 53
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72003,
+      "storageProfit": 11000.032196710978,
+      "storageNet": 11000.032196710978,
+      "daysToEldermann": 770,
+      "negativeStorageSales": 50,
+      "arrivalsByCity": {
+        "Hamburg": 207,
+        "L\u00fcbeck": 170,
+        "Rostock": 70
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72004,
+      "storageProfit": 28855.044281564074,
+      "storageNet": 28855.044281564074,
+      "daysToEldermann": 614,
+      "negativeStorageSales": 38,
+      "arrivalsByCity": {
+        "Hamburg": 163,
+        "L\u00fcbeck": 169,
+        "Rostock": 74,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72005,
+      "storageProfit": 18729.499359130856,
+      "storageNet": 18729.499359130856,
+      "daysToEldermann": 611,
+      "negativeStorageSales": 51,
+      "arrivalsByCity": {
+        "Hamburg": 189,
+        "L\u00fcbeck": 206,
+        "Rostock": 70
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72006,
+      "storageProfit": 16740.011306755245,
+      "storageNet": 16740.011306755245,
+      "daysToEldermann": 690,
+      "negativeStorageSales": 56,
+      "arrivalsByCity": {
+        "Hamburg": 188,
+        "L\u00fcbeck": 224,
+        "Rostock": 61
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72007,
+      "storageProfit": 18688.5610023362,
+      "storageNet": 18688.5610023362,
+      "daysToEldermann": 530,
+      "negativeStorageSales": 51,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 211,
+        "Rostock": 88
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72008,
+      "storageProfit": 28729.161111437803,
+      "storageNet": 28729.161111437803,
+      "daysToEldermann": 512,
+      "negativeStorageSales": 55,
+      "arrivalsByCity": {
+        "Hamburg": 59,
+        "L\u00fcbeck": 128,
+        "Rostock": 116,
+        "Stralsund": 88,
+        "Stettin": 27
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72009,
+      "storageProfit": 6569.44413450265,
+      "storageNet": 6569.44413450265,
+      "daysToEldermann": 531,
+      "negativeStorageSales": 144,
+      "arrivalsByCity": {
+        "Hamburg": 127,
+        "L\u00fcbeck": 214,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72010,
+      "storageProfit": 11399.999999999998,
+      "storageNet": 11399.999999999998,
+      "daysToEldermann": 653,
+      "negativeStorageSales": 128,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72011,
+      "storageProfit": 12053.578440696254,
+      "storageNet": 12053.578440696254,
+      "daysToEldermann": 668,
+      "negativeStorageSales": 40,
+      "arrivalsByCity": {
+        "Hamburg": 236,
+        "L\u00fcbeck": 223,
+        "Rostock": 13
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72012,
+      "storageProfit": 14234.220696834636,
+      "storageNet": 14234.220696834636,
+      "daysToEldermann": 650,
+      "negativeStorageSales": 78,
+      "arrivalsByCity": {
+        "Hamburg": 194,
+        "L\u00fcbeck": 188,
+        "Rostock": 74
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72013,
+      "storageProfit": 29969.90441511152,
+      "storageNet": 29969.90441511152,
+      "daysToEldermann": 548,
+      "negativeStorageSales": 49,
+      "arrivalsByCity": {
+        "Hamburg": 126,
+        "L\u00fcbeck": 143,
+        "Rostock": 108,
+        "Stralsund": 50
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72014,
+      "storageProfit": 16176.206013384315,
+      "storageNet": 16176.206013384315,
+      "daysToEldermann": 718,
+      "negativeStorageSales": 82,
+      "arrivalsByCity": {
+        "Hamburg": 206,
+        "L\u00fcbeck": 208,
+        "Rostock": 52
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72015,
+      "storageProfit": 30960.28125,
+      "storageNet": 30960.28125,
+      "daysToEldermann": 480,
+      "negativeStorageSales": 31,
+      "arrivalsByCity": {
+        "Hamburg": 162,
+        "L\u00fcbeck": 171,
+        "Rostock": 115
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72016,
+      "storageProfit": 7022.438933172954,
+      "storageNet": 7022.438933172954,
+      "daysToEldermann": 653,
+      "negativeStorageSales": 132,
+      "arrivalsByCity": {
+        "Hamburg": 200,
+        "L\u00fcbeck": 219,
+        "Rostock": 52
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72017,
+      "storageProfit": 20766.517477035522,
+      "storageNet": 20766.517477035522,
+      "daysToEldermann": 667,
+      "negativeStorageSales": 60,
+      "arrivalsByCity": {
+        "Hamburg": 179,
+        "L\u00fcbeck": 206,
+        "Rostock": 79
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72018,
+      "storageProfit": 23782.734153053865,
+      "storageNet": 23782.734153053865,
+      "daysToEldermann": 551,
+      "negativeStorageSales": 41,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 206,
+        "Rostock": 82
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72019,
+      "storageProfit": 16554.3473578183,
+      "storageNet": 16554.3473578183,
+      "daysToEldermann": 606,
+      "negativeStorageSales": 37,
+      "arrivalsByCity": {
+        "Hamburg": 182,
+        "L\u00fcbeck": 161,
+        "Rostock": 60,
+        "Stralsund": 31,
+        "Stettin": 5
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 72020,
+      "storageProfit": 17144.263623928833,
+      "storageNet": 17144.263623928833,
+      "daysToEldermann": 613,
+      "negativeStorageSales": 56,
+      "arrivalsByCity": {
+        "Hamburg": 138,
+        "L\u00fcbeck": 156,
+        "Rostock": 145
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72001,
+      "storageProfit": 29304.199116335007,
+      "storageNet": 29304.199116335007,
+      "daysToEldermann": 629,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 160,
+        "L\u00fcbeck": 144,
+        "Rostock": 32,
+        "Stralsund": 62
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72002,
+      "storageProfit": 37009.99999999999,
+      "storageNet": 37009.99999999999,
+      "daysToEldermann": 652,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 243,
+        "L\u00fcbeck": 242
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72003,
+      "storageProfit": 13014.030392216302,
+      "storageNet": 13014.030392216302,
+      "daysToEldermann": 744,
+      "negativeStorageSales": 31,
+      "arrivalsByCity": {
+        "Hamburg": 167,
+        "L\u00fcbeck": 190,
+        "Rostock": 100
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72004,
+      "storageProfit": 29407.74456405265,
+      "storageNet": 29407.74456405265,
+      "daysToEldermann": 552,
+      "negativeStorageSales": 39,
+      "arrivalsByCity": {
+        "Hamburg": 154,
+        "L\u00fcbeck": 221,
+        "Rostock": 96
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72005,
+      "storageProfit": 45840.0,
+      "storageNet": 45840.0,
+      "daysToEldermann": 534,
+      "negativeStorageSales": 4,
+      "arrivalsByCity": {
+        "Hamburg": 153,
+        "L\u00fcbeck": 161,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72006,
+      "storageProfit": 28793.8818125,
+      "storageNet": 28793.8818125,
+      "daysToEldermann": 719,
+      "negativeStorageSales": 4,
+      "arrivalsByCity": {
+        "Hamburg": 219,
+        "L\u00fcbeck": 189,
+        "Rostock": 47
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72007,
+      "storageProfit": 25555.349085718248,
+      "storageNet": 25555.349085718248,
+      "daysToEldermann": 711,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 204,
+        "L\u00fcbeck": 216,
+        "Rostock": 51
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72008,
+      "storageProfit": 34651.75596023765,
+      "storageNet": 34651.75596023765,
+      "daysToEldermann": 514,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 53,
+        "L\u00fcbeck": 110,
+        "Rostock": 157,
+        "Stralsund": 117
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72009,
+      "storageProfit": 27374.654168466604,
+      "storageNet": 27374.654168466604,
+      "daysToEldermann": 507,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 114,
+        "L\u00fcbeck": 202,
+        "Rostock": 148
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72010,
+      "storageProfit": 31840.0,
+      "storageNet": 31840.0,
+      "daysToEldermann": 638,
+      "negativeStorageSales": 1,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72011,
+      "storageProfit": 24860.0,
+      "storageNet": 24860.0,
+      "daysToEldermann": 671,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 238,
+        "L\u00fcbeck": 229,
+        "Rostock": 8
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72012,
+      "storageProfit": 15843.645836130325,
+      "storageNet": 15843.645836130325,
+      "daysToEldermann": 626,
+      "negativeStorageSales": 35,
+      "arrivalsByCity": {
+        "Hamburg": 125,
+        "L\u00fcbeck": 217,
+        "Rostock": 128
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72013,
+      "storageProfit": 20306.15384615384,
+      "storageNet": 20306.15384615384,
+      "daysToEldermann": 536,
+      "negativeStorageSales": 39,
+      "arrivalsByCity": {
+        "Hamburg": 197,
+        "L\u00fcbeck": 156,
+        "Rostock": 86
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72014,
+      "storageProfit": 43140.00000000001,
+      "storageNet": 43140.00000000001,
+      "daysToEldermann": 709,
+      "negativeStorageSales": 1,
+      "arrivalsByCity": {
+        "Hamburg": 197,
+        "L\u00fcbeck": 213,
+        "Rostock": 58
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72015,
+      "storageProfit": 42258.07847474426,
+      "storageNet": 42258.07847474426,
+      "daysToEldermann": 588,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 110,
+        "L\u00fcbeck": 195,
+        "Rostock": 117,
+        "Stralsund": 41
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72016,
+      "storageProfit": 17705.9375,
+      "storageNet": 17705.9375,
+      "daysToEldermann": 707,
+      "negativeStorageSales": 3,
+      "arrivalsByCity": {
+        "Hamburg": 228,
+        "L\u00fcbeck": 209,
+        "Rostock": 29
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72017,
+      "storageProfit": 24668.427960531022,
+      "storageNet": 24668.427960531022,
+      "daysToEldermann": 661,
+      "negativeStorageSales": 27,
+      "arrivalsByCity": {
+        "Hamburg": 196,
+        "L\u00fcbeck": 164,
+        "Rostock": 83
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72018,
+      "storageProfit": 56230.0,
+      "storageNet": 56230.0,
+      "daysToEldermann": 548,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 124,
+        "L\u00fcbeck": 141,
+        "Rostock": 45,
+        "Stralsund": 85,
+        "Stettin": 50
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72019,
+      "storageProfit": 36080.0,
+      "storageNet": 36080.0,
+      "daysToEldermann": 583,
+      "negativeStorageSales": 10,
+      "arrivalsByCity": {
+        "Hamburg": 155,
+        "L\u00fcbeck": 162,
+        "Rostock": 126
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 72020,
+      "storageProfit": 38195.85703567089,
+      "storageNet": 38195.85703567089,
+      "daysToEldermann": 612,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 131,
+        "L\u00fcbeck": 196,
+        "Rostock": 132
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72001,
+      "storageProfit": 33479.99999999999,
+      "storageNet": 27459.999999999993,
+      "daysToEldermann": 613,
+      "negativeStorageSales": 45,
+      "arrivalsByCity": {
+        "Hamburg": 187,
+        "L\u00fcbeck": 207,
+        "Rostock": 71
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72002,
+      "storageProfit": 43780.0,
+      "storageNet": 40016.0,
+      "daysToEldermann": 661,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 217,
+        "L\u00fcbeck": 222,
+        "Rostock": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72003,
+      "storageProfit": 6450.454510891749,
+      "storageNet": 108.45451089174912,
+      "daysToEldermann": 716,
+      "negativeStorageSales": 95,
+      "arrivalsByCity": {
+        "Hamburg": 215,
+        "L\u00fcbeck": 185,
+        "Rostock": 55
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72004,
+      "storageProfit": 22970.36600641074,
+      "storageNet": 16898.36600641074,
+      "daysToEldermann": 604,
+      "negativeStorageSales": 59,
+      "arrivalsByCity": {
+        "Hamburg": 183,
+        "L\u00fcbeck": 195,
+        "Rostock": 71,
+        "Stralsund": 6
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72005,
+      "storageProfit": 28379.999999999996,
+      "storageNet": 21127.999999999996,
+      "daysToEldermann": 605,
+      "negativeStorageSales": 13,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 203,
+        "Rostock": 105,
+        "Stralsund": 20
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72006,
+      "storageProfit": 29001.417582417584,
+      "storageNet": 24029.417582417584,
+      "daysToEldermann": 698,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72007,
+      "storageProfit": 14361.696572200311,
+      "storageNet": 7453.6965722003115,
+      "daysToEldermann": 615,
+      "negativeStorageSales": 58,
+      "arrivalsByCity": {
+        "Hamburg": 175,
+        "L\u00fcbeck": 154,
+        "Rostock": 77,
+        "Stralsund": 20
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72008,
+      "storageProfit": 26995.540309831857,
+      "storageNet": 18337.540309831857,
+      "daysToEldermann": 520,
+      "negativeStorageSales": 43,
+      "arrivalsByCity": {
+        "Hamburg": 59,
+        "L\u00fcbeck": 123,
+        "Rostock": 142,
+        "Stralsund": 109
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72009,
+      "storageProfit": 32236.51182395828,
+      "storageNet": 26426.51182395828,
+      "daysToEldermann": 508,
+      "negativeStorageSales": 25,
+      "arrivalsByCity": {
+        "Hamburg": 113,
+        "L\u00fcbeck": 208,
+        "Rostock": 146
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72010,
+      "storageProfit": 14992.550018969401,
+      "storageNet": 9140.550018969401,
+      "daysToEldermann": 650,
+      "negativeStorageSales": 87,
+      "arrivalsByCity": {
+        "Hamburg": 199,
+        "L\u00fcbeck": 177,
+        "Rostock": 75
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72011,
+      "storageProfit": 15460.910310801544,
+      "storageNet": 12094.910310801544,
+      "daysToEldermann": 686,
+      "negativeStorageSales": 19,
+      "arrivalsByCity": {
+        "Hamburg": 238,
+        "L\u00fcbeck": 229,
+        "Rostock": 8
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72012,
+      "storageProfit": 26165.233818915047,
+      "storageNet": 19737.233818915047,
+      "daysToEldermann": 621,
+      "negativeStorageSales": 52,
+      "arrivalsByCity": {
+        "Hamburg": 135,
+        "L\u00fcbeck": 216,
+        "Rostock": 95,
+        "Stralsund": 15
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72013,
+      "storageProfit": 14760.469346995906,
+      "storageNet": 7466.469346995906,
+      "daysToEldermann": 564,
+      "negativeStorageSales": 80,
+      "arrivalsByCity": {
+        "Hamburg": 166,
+        "L\u00fcbeck": 116,
+        "Rostock": 137
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72014,
+      "storageProfit": 38440.0,
+      "storageNet": 32526.0,
+      "daysToEldermann": 688,
+      "negativeStorageSales": 34,
+      "arrivalsByCity": {
+        "Hamburg": 171,
+        "L\u00fcbeck": 189,
+        "Rostock": 79,
+        "Stralsund": 22
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72015,
+      "storageProfit": 36647.75363085894,
+      "storageNet": 30717.75363085894,
+      "daysToEldermann": 720,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 150,
+        "L\u00fcbeck": 237,
+        "Rostock": 94
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72016,
+      "storageProfit": 30619.376540918012,
+      "storageNet": 25081.376540918012,
+      "daysToEldermann": 749,
+      "negativeStorageSales": 28,
+      "arrivalsByCity": {
+        "Hamburg": 209,
+        "L\u00fcbeck": 215,
+        "Rostock": 45
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72017,
+      "storageProfit": 27297.566050991543,
+      "storageNet": 21513.566050991543,
+      "daysToEldermann": 664,
+      "negativeStorageSales": 38,
+      "arrivalsByCity": {
+        "Hamburg": 171,
+        "L\u00fcbeck": 169,
+        "Rostock": 106
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72018,
+      "storageProfit": 36438.231603527754,
+      "storageNet": 30736.231603527754,
+      "daysToEldermann": 551,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 204,
+        "L\u00fcbeck": 211,
+        "Rostock": 52
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72019,
+      "storageProfit": 24814.96017296313,
+      "storageNet": 17716.96017296313,
+      "daysToEldermann": 607,
+      "negativeStorageSales": 30,
+      "arrivalsByCity": {
+        "Hamburg": 166,
+        "L\u00fcbeck": 149,
+        "Rostock": 110,
+        "Stralsund": 18
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 72020,
+      "storageProfit": 22331.419800709704,
+      "storageNet": 15849.419800709704,
+      "daysToEldermann": 615,
+      "negativeStorageSales": 89,
+      "arrivalsByCity": {
+        "Hamburg": 157,
+        "L\u00fcbeck": 189,
+        "Rostock": 110
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72001,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 681,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 145,
+        "Rostock": 112
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72002,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 712,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 237,
+        "L\u00fcbeck": 229,
+        "Rostock": 13
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72003,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 800,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 215,
+        "L\u00fcbeck": 204,
+        "Rostock": 45
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72004,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 590,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 149,
+        "Rostock": 116
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72005,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 534,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 144,
+        "L\u00fcbeck": 178,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72006,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 767,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72007,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 639,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 172,
+        "L\u00fcbeck": 157,
+        "Rostock": 113
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72008,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 568,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 100,
+        "L\u00fcbeck": 116,
+        "Rostock": 138,
+        "Stralsund": 85
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72009,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 479,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 83,
+        "L\u00fcbeck": 194,
+        "Rostock": 138,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72010,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 632,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 232,
+        "L\u00fcbeck": 232,
+        "Rostock": 14
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72011,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 680,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 239,
+        "L\u00fcbeck": 235,
+        "Rostock": 4
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72012,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 535,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 165,
+        "Rostock": 109
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72013,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 623,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 173,
+        "L\u00fcbeck": 190,
+        "Rostock": 55,
+        "Stralsund": 23
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72014,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 751,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72015,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 738,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 200,
+        "L\u00fcbeck": 229,
+        "Rostock": 48
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72016,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 752,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 220,
+        "L\u00fcbeck": 220,
+        "Rostock": 31
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72017,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 775,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 240
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72018,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 690,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 217,
+        "L\u00fcbeck": 144,
+        "Rostock": 73
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72019,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 558,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 125,
+        "Rostock": 123
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 72020,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 589,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 141,
+        "Rostock": 136,
+        "Stralsund": 25,
+        "Stettin": 5
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72001,
+      "storageProfit": 1740,
+      "storageNet": 1740,
+      "daysToEldermann": 743,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 203,
+        "L\u00fcbeck": 86,
+        "Rostock": 116
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72002,
+      "storageProfit": 8432,
+      "storageNet": 8432,
+      "daysToEldermann": 580,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 202,
+        "L\u00fcbeck": 226,
+        "Rostock": 49
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72003,
+      "storageProfit": 3240,
+      "storageNet": 3240,
+      "daysToEldermann": 773,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 201,
+        "L\u00fcbeck": 149,
+        "Rostock": 61,
+        "Stralsund": 14
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72004,
+      "storageProfit": 1320,
+      "storageNet": 1320,
+      "daysToEldermann": 540,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 168,
+        "L\u00fcbeck": 178,
+        "Rostock": 104
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72005,
+      "storageProfit": 3660,
+      "storageNet": 3660,
+      "daysToEldermann": 531,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 169,
+        "L\u00fcbeck": 151,
+        "Rostock": 91,
+        "Stralsund": 31
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72006,
+      "storageProfit": 3952.0,
+      "storageNet": 3952.0,
+      "daysToEldermann": 706,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 177,
+        "L\u00fcbeck": 141,
+        "Rostock": 62,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72007,
+      "storageProfit": 3942.0,
+      "storageNet": 3942.0,
+      "daysToEldermann": 599,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 163,
+        "L\u00fcbeck": 141,
+        "Rostock": 130
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72008,
+      "storageProfit": 6097,
+      "storageNet": 6097,
+      "daysToEldermann": 549,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 218,
+        "Rostock": 119
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72009,
+      "storageProfit": 5040,
+      "storageNet": 5040,
+      "daysToEldermann": 486,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 126,
+        "L\u00fcbeck": 101,
+        "Rostock": 67,
+        "Stralsund": 79
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72010,
+      "storageProfit": 1200,
+      "storageNet": 1200,
+      "daysToEldermann": 671,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 242,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72011,
+      "storageProfit": 2389,
+      "storageNet": 2389,
+      "daysToEldermann": 692,
+      "negativeStorageSales": 14,
+      "arrivalsByCity": {
+        "Hamburg": 239,
+        "L\u00fcbeck": 235,
+        "Rostock": 4
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72012,
+      "storageProfit": 3695,
+      "storageNet": 3695,
+      "daysToEldermann": 560,
+      "negativeStorageSales": 14,
+      "arrivalsByCity": {
+        "Hamburg": 156,
+        "L\u00fcbeck": 167,
+        "Rostock": 122
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72013,
+      "storageProfit": 1930.0,
+      "storageNet": 1930.0,
+      "daysToEldermann": 588,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 135,
+        "L\u00fcbeck": 169,
+        "Rostock": 139,
+        "Stralsund": 2
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72014,
+      "storageProfit": 3512,
+      "storageNet": 3512,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 124,
+        "L\u00fcbeck": 152,
+        "Rostock": 93,
+        "Stralsund": 73
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72015,
+      "storageProfit": 7594.0,
+      "storageNet": 7594.0,
+      "daysToEldermann": 723,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 194,
+        "L\u00fcbeck": 215,
+        "Rostock": 61
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72016,
+      "storageProfit": 780,
+      "storageNet": 780,
+      "daysToEldermann": 763,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 196,
+        "L\u00fcbeck": 212,
+        "Rostock": 59
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72017,
+      "storageProfit": 7454,
+      "storageNet": 7454,
+      "daysToEldermann": 589,
+      "negativeStorageSales": 13,
+      "arrivalsByCity": {
+        "Hamburg": 174,
+        "L\u00fcbeck": 197,
+        "Rostock": 88
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72018,
+      "storageProfit": 3720,
+      "storageNet": 3720,
+      "daysToEldermann": 705,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 193,
+        "L\u00fcbeck": 171,
+        "Rostock": 57,
+        "Stralsund": 32
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72019,
+      "storageProfit": 1320,
+      "storageNet": 1320,
+      "daysToEldermann": 593,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 109,
+        "L\u00fcbeck": 123,
+        "Rostock": 134,
+        "Stralsund": 75
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 72020,
+      "storageProfit": 6360,
+      "storageNet": 6360,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 9,
+      "arrivalsByCity": {
+        "Hamburg": 169,
+        "L\u00fcbeck": 150,
+        "Rostock": 117
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72001,
+      "storageProfit": 10030.860449837066,
+      "storageNet": 7193.860449837066,
+      "daysToEldermann": 635,
+      "negativeStorageSales": 52,
+      "arrivalsByCity": {
+        "Hamburg": 195,
+        "L\u00fcbeck": 113,
+        "Rostock": 110
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72002,
+      "storageProfit": 25180.000954115254,
+      "storageNet": 23727.000954115254,
+      "daysToEldermann": 664,
+      "negativeStorageSales": 30,
+      "arrivalsByCity": {
+        "Hamburg": 243,
+        "L\u00fcbeck": 242
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72003,
+      "storageProfit": 11000.032196710978,
+      "storageNet": 8712.032196710978,
+      "daysToEldermann": 770,
+      "negativeStorageSales": 50,
+      "arrivalsByCity": {
+        "Hamburg": 207,
+        "L\u00fcbeck": 170,
+        "Rostock": 70
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72004,
+      "storageProfit": 28855.044281564074,
+      "storageNet": 25587.044281564074,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 38,
+      "arrivalsByCity": {
+        "Hamburg": 163,
+        "L\u00fcbeck": 169,
+        "Rostock": 74,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72005,
+      "storageProfit": 15859.047158829413,
+      "storageNet": 13250.047158829413,
+      "daysToEldermann": 617,
+      "negativeStorageSales": 93,
+      "arrivalsByCity": {
+        "Hamburg": 183,
+        "L\u00fcbeck": 196,
+        "Rostock": 81
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72006,
+      "storageProfit": 24882.67729360191,
+      "storageNet": 22275.67729360191,
+      "daysToEldermann": 755,
+      "negativeStorageSales": 36,
+      "arrivalsByCity": {
+        "Hamburg": 218,
+        "L\u00fcbeck": 219,
+        "Rostock": 33
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72007,
+      "storageProfit": 18688.5610023362,
+      "storageNet": 15921.561002336199,
+      "daysToEldermann": 530,
+      "negativeStorageSales": 51,
+      "arrivalsByCity": {
+        "Hamburg": 170,
+        "L\u00fcbeck": 211,
+        "Rostock": 88
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72008,
+      "storageProfit": 26747.409254349484,
+      "storageNet": 22824.409254349484,
+      "daysToEldermann": 515,
+      "negativeStorageSales": 95,
+      "arrivalsByCity": {
+        "Hamburg": 72,
+        "L\u00fcbeck": 119,
+        "Rostock": 136,
+        "Stralsund": 99
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72009,
+      "storageProfit": 6569.44413450265,
+      "storageNet": 3327.44413450265,
+      "daysToEldermann": 531,
+      "negativeStorageSales": 144,
+      "arrivalsByCity": {
+        "Hamburg": 127,
+        "L\u00fcbeck": 214,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72010,
+      "storageProfit": 13631.575328469513,
+      "storageNet": 11147.575328469513,
+      "daysToEldermann": 656,
+      "negativeStorageSales": 120,
+      "arrivalsByCity": {
+        "Hamburg": 178,
+        "L\u00fcbeck": 150,
+        "Rostock": 64,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72011,
+      "storageProfit": 12053.578440696254,
+      "storageNet": 10497.578440696254,
+      "daysToEldermann": 668,
+      "negativeStorageSales": 40,
+      "arrivalsByCity": {
+        "Hamburg": 236,
+        "L\u00fcbeck": 223,
+        "Rostock": 13
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72012,
+      "storageProfit": 16445.603305785127,
+      "storageNet": 14194.603305785127,
+      "daysToEldermann": 688,
+      "negativeStorageSales": 43,
+      "arrivalsByCity": {
+        "Hamburg": 179,
+        "L\u00fcbeck": 223,
+        "Rostock": 71
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72013,
+      "storageProfit": 12713.73751977033,
+      "storageNet": 9576.73751977033,
+      "daysToEldermann": 552,
+      "negativeStorageSales": 101,
+      "arrivalsByCity": {
+        "Hamburg": 166,
+        "L\u00fcbeck": 180,
+        "Rostock": 82,
+        "Stralsund": 15
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72014,
+      "storageProfit": 20947.84832049113,
+      "storageNet": 18929.84832049113,
+      "daysToEldermann": 721,
+      "negativeStorageSales": 38,
+      "arrivalsByCity": {
+        "Hamburg": 241,
+        "L\u00fcbeck": 241
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72015,
+      "storageProfit": 30960.28125,
+      "storageNet": 27684.28125,
+      "daysToEldermann": 480,
+      "negativeStorageSales": 31,
+      "arrivalsByCity": {
+        "Hamburg": 162,
+        "L\u00fcbeck": 171,
+        "Rostock": 115
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72016,
+      "storageProfit": 26667.09804658152,
+      "storageNet": 24801.09804658152,
+      "daysToEldermann": 716,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 236,
+        "L\u00fcbeck": 233,
+        "Rostock": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72017,
+      "storageProfit": 20766.517477035522,
+      "storageNet": 17969.517477035522,
+      "daysToEldermann": 667,
+      "negativeStorageSales": 60,
+      "arrivalsByCity": {
+        "Hamburg": 179,
+        "L\u00fcbeck": 206,
+        "Rostock": 79
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72018,
+      "storageProfit": 21798.05949350846,
+      "storageNet": 19223.05949350846,
+      "daysToEldermann": 554,
+      "negativeStorageSales": 67,
+      "arrivalsByCity": {
+        "Hamburg": 196,
+        "L\u00fcbeck": 205,
+        "Rostock": 64
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72019,
+      "storageProfit": 21791.342740100135,
+      "storageNet": 19112.342740100135,
+      "daysToEldermann": 609,
+      "negativeStorageSales": 35,
+      "arrivalsByCity": {
+        "Hamburg": 202,
+        "L\u00fcbeck": 209,
+        "Rostock": 56
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 72020,
+      "storageProfit": 21072.30769230769,
+      "storageNet": 18197.30769230769,
+      "daysToEldermann": 629,
+      "negativeStorageSales": 46,
+      "arrivalsByCity": {
+        "Hamburg": 167,
+        "L\u00fcbeck": 201,
+        "Rostock": 93
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72001,
+      "storageProfit": 32304.31958626763,
+      "storageNet": 26178.31958626763,
+      "daysToEldermann": 613,
+      "negativeStorageSales": 13,
+      "arrivalsByCity": {
+        "Hamburg": 181,
+        "L\u00fcbeck": 192,
+        "Rostock": 85
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72002,
+      "storageProfit": 44020.0,
+      "storageNet": 40256.0,
+      "daysToEldermann": 661,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 217,
+        "L\u00fcbeck": 222,
+        "Rostock": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72003,
+      "storageProfit": 8963.782440214381,
+      "storageNet": 2933.7824402143815,
+      "daysToEldermann": 716,
+      "negativeStorageSales": 58,
+      "arrivalsByCity": {
+        "Hamburg": 212,
+        "L\u00fcbeck": 183,
+        "Rostock": 59
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72004,
+      "storageProfit": 24800.0,
+      "storageNet": 18728.0,
+      "daysToEldermann": 604,
+      "negativeStorageSales": 2,
+      "arrivalsByCity": {
+        "Hamburg": 194,
+        "L\u00fcbeck": 199,
+        "Rostock": 67
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72005,
+      "storageProfit": 27506.527472527472,
+      "storageNet": 20550.527472527472,
+      "daysToEldermann": 605,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 140,
+        "L\u00fcbeck": 202,
+        "Rostock": 69,
+        "Stralsund": 36
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72006,
+      "storageProfit": 25150.0,
+      "storageNet": 18768.0,
+      "daysToEldermann": 728,
+      "negativeStorageSales": 26,
+      "arrivalsByCity": {
+        "Hamburg": 208,
+        "L\u00fcbeck": 205,
+        "Rostock": 50
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72007,
+      "storageProfit": 18570.235757351635,
+      "storageNet": 11960.235757351635,
+      "daysToEldermann": 615,
+      "negativeStorageSales": 14,
+      "arrivalsByCity": {
+        "Hamburg": 133,
+        "L\u00fcbeck": 195,
+        "Rostock": 122,
+        "Stralsund": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72008,
+      "storageProfit": 28381.106871823737,
+      "storageNet": 19713.106871823737,
+      "daysToEldermann": 520,
+      "negativeStorageSales": 34,
+      "arrivalsByCity": {
+        "Hamburg": 63,
+        "L\u00fcbeck": 131,
+        "Rostock": 141,
+        "Stralsund": 100
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72009,
+      "storageProfit": 30648.0,
+      "storageNet": 24884.0,
+      "daysToEldermann": 508,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 113,
+        "L\u00fcbeck": 211,
+        "Rostock": 145
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72010,
+      "storageProfit": 16493.513308502097,
+      "storageNet": 10641.513308502097,
+      "daysToEldermann": 650,
+      "negativeStorageSales": 31,
+      "arrivalsByCity": {
+        "Hamburg": 199,
+        "L\u00fcbeck": 177,
+        "Rostock": 75
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72011,
+      "storageProfit": 14541.313877411643,
+      "storageNet": 11041.313877411643,
+      "daysToEldermann": 686,
+      "negativeStorageSales": 4,
+      "arrivalsByCity": {
+        "Hamburg": 240,
+        "L\u00fcbeck": 236,
+        "Rostock": 3
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72012,
+      "storageProfit": 19430.612525833913,
+      "storageNet": 12822.612525833913,
+      "daysToEldermann": 621,
+      "negativeStorageSales": 34,
+      "arrivalsByCity": {
+        "Hamburg": 128,
+        "L\u00fcbeck": 219,
+        "Rostock": 124
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72013,
+      "storageProfit": 12880.811597203046,
+      "storageNet": 5478.811597203046,
+      "daysToEldermann": 544,
+      "negativeStorageSales": 52,
+      "arrivalsByCity": {
+        "Hamburg": 158,
+        "L\u00fcbeck": 148,
+        "Rostock": 129
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72014,
+      "storageProfit": 32269.1703940896,
+      "storageNet": 26613.1703940896,
+      "daysToEldermann": 688,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 204,
+        "L\u00fcbeck": 195,
+        "Rostock": 60
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72015,
+      "storageProfit": 36815.67394957983,
+      "storageNet": 31405.673949579832,
+      "daysToEldermann": 720,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 203,
+        "L\u00fcbeck": 228,
+        "Rostock": 46
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72016,
+      "storageProfit": 31365.0,
+      "storageNet": 26055.0,
+      "daysToEldermann": 749,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 217,
+        "L\u00fcbeck": 222,
+        "Rostock": 33
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72017,
+      "storageProfit": 28779.999999999996,
+      "storageNet": 22943.999999999996,
+      "daysToEldermann": 664,
+      "negativeStorageSales": 16,
+      "arrivalsByCity": {
+        "Hamburg": 122,
+        "L\u00fcbeck": 189,
+        "Rostock": 144
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72018,
+      "storageProfit": 36209.99999999999,
+      "storageNet": 30329.999999999993,
+      "daysToEldermann": 551,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 194,
+        "L\u00fcbeck": 198,
+        "Rostock": 69
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72019,
+      "storageProfit": 15282.99594558215,
+      "storageNet": 8456.99594558215,
+      "daysToEldermann": 607,
+      "negativeStorageSales": 61,
+      "arrivalsByCity": {
+        "Hamburg": 138,
+        "L\u00fcbeck": 174,
+        "Rostock": 137
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 72020,
+      "storageProfit": 22991.419255266766,
+      "storageNet": 16607.419255266766,
+      "daysToEldermann": 615,
+      "negativeStorageSales": 25,
+      "arrivalsByCity": {
+        "Hamburg": 145,
+        "L\u00fcbeck": 185,
+        "Rostock": 123
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74001,
+      "storageProfit": 33468.625,
+      "storageNet": 33468.625,
+      "daysToEldermann": 1423,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74002,
+      "storageProfit": 18231.76060820368,
+      "storageNet": 18231.76060820368,
+      "daysToEldermann": null,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74003,
+      "storageProfit": 32611.0,
+      "storageNet": 32611.0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 9,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74004,
+      "storageProfit": 35069.13000234944,
+      "storageNet": 35069.13000234944,
+      "daysToEldermann": null,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74005,
+      "storageProfit": 24103.827586206895,
+      "storageNet": 24103.827586206895,
+      "daysToEldermann": null,
+      "negativeStorageSales": 6,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "bulk",
+      "seed": 74006,
+      "storageProfit": 16968.0,
+      "storageNet": 16968.0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 6,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74001,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1153,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74002,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1180,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74003,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1327,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74004,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1311,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74005,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1318,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "none",
+      "seed": 74006,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1226,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74001,
+      "storageProfit": 16343,
+      "storageNet": 16343,
+      "daysToEldermann": 1137,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74002,
+      "storageProfit": 22432,
+      "storageNet": 22432,
+      "daysToEldermann": 1180,
+      "negativeStorageSales": 29,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74003,
+      "storageProfit": 23816,
+      "storageNet": 23816,
+      "daysToEldermann": 1164,
+      "negativeStorageSales": 29,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74004,
+      "storageProfit": 19499,
+      "storageNet": 19499,
+      "daysToEldermann": 1301,
+      "negativeStorageSales": 27,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74005,
+      "storageProfit": 21941,
+      "storageNet": 21941,
+      "daysToEldermann": 1166,
+      "negativeStorageSales": 26,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "occasional",
+      "seed": 74006,
+      "storageProfit": 12761,
+      "storageNet": 12761,
+      "daysToEldermann": 1140,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74001,
+      "storageProfit": 47093.5,
+      "storageNet": 47093.5,
+      "daysToEldermann": 983,
+      "negativeStorageSales": 15,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74002,
+      "storageProfit": 29792.5,
+      "storageNet": 29792.5,
+      "daysToEldermann": 1167,
+      "negativeStorageSales": 24,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74003,
+      "storageProfit": 35386.5,
+      "storageNet": 35386.5,
+      "daysToEldermann": 1166,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74004,
+      "storageProfit": 25882.856790323254,
+      "storageNet": 25882.856790323254,
+      "daysToEldermann": 1308,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74005,
+      "storageProfit": 40158.875,
+      "storageNet": 40158.875,
+      "daysToEldermann": 1299,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "before",
+      "id": "regional",
+      "seed": 74006,
+      "storageProfit": 37575.0,
+      "storageNet": 37575.0,
+      "daysToEldermann": 1106,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74001,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74002,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74003,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74004,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 2,
+        "Stettin": 2,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74005,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "before",
+      "id": "stress",
+      "seed": 74006,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74001,
+      "storageProfit": 38999.625,
+      "storageNet": 26747.625,
+      "daysToEldermann": null,
+      "negativeStorageSales": 13,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74002,
+      "storageProfit": 18244.158027430414,
+      "storageNet": 8974.158027430414,
+      "daysToEldermann": null,
+      "negativeStorageSales": 11,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74003,
+      "storageProfit": 32674.0,
+      "storageNet": 24594.0,
+      "daysToEldermann": null,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74004,
+      "storageProfit": 34810.073979591834,
+      "storageNet": 28062.073979591834,
+      "daysToEldermann": null,
+      "negativeStorageSales": 8,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74005,
+      "storageProfit": 22811.052631578947,
+      "storageNet": 18639.052631578947,
+      "daysToEldermann": null,
+      "negativeStorageSales": 6,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "bulk",
+      "seed": 74006,
+      "storageProfit": 0,
+      "storageNet": -56,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 4,
+        "Rostock": 4,
+        "Stralsund": 4,
+        "Stettin": 4,
+        "Danzig": 4,
+        "Visby": 4,
+        "Bergen": 4,
+        "Nowgorod": 3,
+        "Br\u00fcgge": 3,
+        "Venlo": 3,
+        "L\u00fcbeck": 3
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74001,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1153,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74002,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1180,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74003,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1327,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74004,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1311,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74005,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1318,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "none",
+      "seed": 74006,
+      "storageProfit": 0,
+      "storageNet": 0,
+      "daysToEldermann": 1226,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74001,
+      "storageProfit": 16343,
+      "storageNet": 16343,
+      "daysToEldermann": 1137,
+      "negativeStorageSales": 22,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74002,
+      "storageProfit": 22432,
+      "storageNet": 22432,
+      "daysToEldermann": 1180,
+      "negativeStorageSales": 29,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74003,
+      "storageProfit": 23816,
+      "storageNet": 23816,
+      "daysToEldermann": 1164,
+      "negativeStorageSales": 29,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74004,
+      "storageProfit": 19499,
+      "storageNet": 19499,
+      "daysToEldermann": 1301,
+      "negativeStorageSales": 27,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74005,
+      "storageProfit": 21941,
+      "storageNet": 21941,
+      "daysToEldermann": 1166,
+      "negativeStorageSales": 26,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "occasional",
+      "seed": 74006,
+      "storageProfit": 12761,
+      "storageNet": 12761,
+      "daysToEldermann": 1140,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74001,
+      "storageProfit": 49478.5,
+      "storageNet": 41482.5,
+      "daysToEldermann": 998,
+      "negativeStorageSales": 12,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74002,
+      "storageProfit": 34231.25,
+      "storageNet": 27045.25,
+      "daysToEldermann": 1217,
+      "negativeStorageSales": 25,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74003,
+      "storageProfit": 34249.5,
+      "storageNet": 26816.5,
+      "daysToEldermann": 1185,
+      "negativeStorageSales": 21,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74004,
+      "storageProfit": 22807.147183106405,
+      "storageNet": 19070.147183106405,
+      "daysToEldermann": 1311,
+      "negativeStorageSales": 23,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74005,
+      "storageProfit": 38503.375,
+      "storageNet": 34689.375,
+      "daysToEldermann": 1240,
+      "negativeStorageSales": 24,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 9,
+        "L\u00fcbeck": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "regional",
+      "seed": 74006,
+      "storageProfit": 37573.0,
+      "storageNet": 31232.0,
+      "daysToEldermann": 1106,
+      "negativeStorageSales": 17,
+      "arrivalsByCity": {
+        "Hamburg": 10,
+        "Rostock": 10,
+        "Stralsund": 10,
+        "Stettin": 10,
+        "Danzig": 10,
+        "Visby": 10,
+        "Bergen": 10,
+        "Nowgorod": 10,
+        "Br\u00fcgge": 10,
+        "Venlo": 10,
+        "L\u00fcbeck": 10
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74001,
+      "storageProfit": 0,
+      "storageNet": -4,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74002,
+      "storageProfit": 0,
+      "storageNet": -10,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74003,
+      "storageProfit": 0,
+      "storageNet": -8,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 2,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74004,
+      "storageProfit": 0,
+      "storageNet": -10,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 2,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74005,
+      "storageProfit": 0,
+      "storageNet": -8,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 1,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "id": "stress",
+      "seed": 74006,
+      "storageProfit": 0,
+      "storageNet": -8,
+      "daysToEldermann": null,
+      "negativeStorageSales": 0,
+      "arrivalsByCity": {
+        "Hamburg": 2,
+        "Rostock": 1,
+        "Stralsund": 1,
+        "Stettin": 1,
+        "Danzig": 1,
+        "Visby": 1,
+        "Bergen": 1,
+        "Nowgorod": 1,
+        "Br\u00fcgge": 1,
+        "Venlo": 1,
+        "L\u00fcbeck": 1
+      }
+    }
+  ],
+  "tourRecoveryChecks": 13,
+  "allTrialsHaveRealCashLedger": true,
+  "noStrategyUsedBankLoans": true,
+  "limitations": [
+    "20 seeds per group; artificial local pricebook policies",
+    "no human playtime inference",
+    "main had no unpaid suspension; supplemental tour had one, and 13 strategy liquidity stops were probed separately",
+    "end wealth contains unsold stocks at acquisition book value",
+    "no guarantee of optimal storage or all remote routes"
+  ]
+}

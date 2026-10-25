@@ -1,0 +1,89 @@
+{
+  "testedGameCommit": "ca2c36e859837a6668bf82e9da8abb1978f8bc10",
+  "gameSHA256": "7e85ac510654e3aec8b41328b3a508cdc3030eac8b4ab2981e40f30b1efc2a19",
+  "browser": "Chromium only; no Safari or physical devices",
+  "browserVersion": "154.0.8037.57",
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "exact v7 migration / original backup",
+        "actual rent size changes and deadline",
+        "actual buy/store/load and FIFO",
+        "oversized cancellation rejected",
+        "real sea trip charges every day",
+        "local independence / remote stock retained",
+        "reload without extra fees",
+        "download and FileReader import",
+        "no page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "exact v7 migration / original backup",
+        "actual rent size changes and deadline",
+        "actual buy/store/load and FIFO",
+        "oversized cancellation rejected",
+        "real sea trip charges every day",
+        "local independence / remote stock retained",
+        "reload without extra fees",
+        "download and FileReader import",
+        "no page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "exact v7 migration / original backup",
+        "actual rent size changes and deadline",
+        "actual buy/store/load and FIFO",
+        "oversized cancellation rejected",
+        "real sea trip charges every day",
+        "local independence / remote stock retained",
+        "reload without extra fees",
+        "download and FileReader import",
+        "no page overflow"
+      ]
+    },
+    {
+      "check": "nonpayment preserves stock, cash and withdrawal, no deposit on excess",
+      "passed": true
+    },
+    {
+      "check": "real storage migration/backup/target faults and protected failed/cancelled new game",
+      "passed": true
+    },
+    {
+      "check": "real quota-failed UI rent and transfer preserve all state",
+      "passed": true
+    },
+    {
+      "check": "actual v7 client rejects v8 without truncation",
+      "passed": true
+    },
+    {
+      "check": "actual UI fresh game starts v8 at 5000 cash with Kogge and free warehouses",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5i_lager-390.png": "b79fe2ce69527feb31d84cbd40a081a3b5106c6dd5d1a9c1e5e3643114866c08",
+    "2026-10-25_0.5i_lager-820.png": "71653b157bebf3f49d534fc9fbdd8e13d1c7bfb6fa07bc463952956bf982b4ec",
+    "2026-10-25_0.5i_lager-1280.png": "11150afb9dd386387847d8622211325da63425f28cfccc96d5b6f2ea4fd496fa"
+  }
+}

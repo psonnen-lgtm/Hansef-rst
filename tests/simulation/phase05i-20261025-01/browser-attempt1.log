@@ -1,0 +1,8 @@
+PASS warehouse UI 390x844
+PASS warehouse UI 820x1180
+PASS warehouse UI 1280x900
+page.evaluate: TypeError: Cannot set properties of null (setting 'value')
+    at eval (eval at evaluate (:311:30), <anonymous>:1:60)
+    at UtilityScript.evaluate (<anonymous>:313:16)
+    at UtilityScript.<anonymous> (<anonymous>:1:44)
+    at /workspace/Hansef-rst/tests/simulation/warehouse-capacity-browser-checks.cjs:28:13

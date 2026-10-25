@@ -1,0 +1,6 @@
+{
+  "runMain": true,
+  "technicalErrors": 0,
+  "exactReplays": 4,
+  "observed": "forced low-reserve stress stops at days 128/132 with 4/2 cash; no-rent normal completes. Treat as policy liquidity failure; bank/cargo recovery evaluated separately. No parameter change."
+}
