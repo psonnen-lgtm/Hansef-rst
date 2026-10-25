@@ -49,6 +49,10 @@ check('invalid provenance figure and city selections fail before replacing a sav
  const g=create(42);g.eval('s=newMerchantGame("Ulf","Ulf",0)');for(const patch of ['x.beginning.city=-1','x.beginning.city=11','x.beginning.city="0"','x.beginning.version=2','x.beginning.merchant="Micha"','x.beginning.extra=1','x.beginning=null'])assert.equal(g.eval('(()=>{const x=JSON.parse(JSON.stringify(s));'+patch+';return migrate(x)})()'),null);
  for(const patch of ['startDraft.city=11','startDraft.merchant="Unknown"']){const b=boot();b.eval('s=fresh("Ulf","Alt");save();welcome();'+patch);b.nodes.playername.value='Ulf';const raw=b.store[KEY];assert(!b.eval('startGame()'));assert.equal(b.store[KEY],raw)}return {invalidProvenance:7,invalidSelections:2};
 });
+check('first-start import backs up even an unloaded unreadable original; backup faults and cancellation preserve it',()=>{
+ const raw=create(42,oldHTML).eval('JSON.stringify(s)');for(const point of ['backup','target']){let fail=true;const b=boot({[KEY]:'unreadable original'},k=>fail&&(point==='backup'?k.includes('-politics-v11-import-backup'):k===KEY));b.import(raw);assert.equal(b.eval('s'),null);assert.equal(b.store[KEY],'unreadable original');fail=false;b.import(raw);assert.equal(b.eval('JSON.stringify(s)'),raw);assert.equal(b.store[KEY+'-politics-v11-import-backup'],'unreadable original')}
+ return {unloadedOriginalRetained:true,writeFaults:2,successfulRetry:true};
+});
 check('existing economic and political functions and RNG remain exact on identical starts',()=>{
  const a=create(42),b=create(42,oldHTML),names=[...oldHTML.matchAll(/^function ([A-Za-z_$][\w$]*)\(/gm)].map(x=>x[1]),allowed=new Set(['validate','importGame','resetGame','welcome','startGame','closeSheet','drawMap','showNews']);let exact=0;
  for(const name of names)if(!allowed.has(name)){assert.equal(a.eval(name+'.toString()'),b.eval(name+'.toString()'),name);exact++}
