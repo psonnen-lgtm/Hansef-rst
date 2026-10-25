@@ -1,0 +1,30 @@
+{
+  "simulationCommit": "2474007f38bf10fe67e498a24dacd8b7d519bd95",
+  "simulationHTMLSHA256": "e947aaf267c3c3ea664b266882de1d5501d3eba7651ee05e7cdbbc431bdab554",
+  "finalHTMLSHA256": "0251b3e0f6fb23c2e33f9e5e831f6f714f96a120ed74c9d10fb2045871f5e1e0",
+  "unchangedRuleBodies": {
+    "fresh": "38bdbb158488b5ecff8dcbfe2b7106acc4880e263145befc59fa3edda15bdd88",
+    "initialMarkets": "b8744c6627fb6dd3f46f847af535dd3ba070e06bcbe5c33a8742fe234eaa917a",
+    "advance": "cb55031c725eead9e97b76cfaabebc0bbe29eb57ee301da4a59fd66ef0367452",
+    "regionalPrice": "e8bb6d9084eb08e274234e062ac4bc17906c387af1806289add404aa860ad9cd",
+    "regionalStock": "8cfc030ded4c083730250a49be3e5eda5c0e972968c8d020fe18c8d73e63e691",
+    "regionalMarketDay": "54008d97fe4933c814c643f416311d34bf17782d201cde79c4df00da295e9d35",
+    "regionalReport": "66121b04a4504e6c3662906173adf4cdabe33e480dae23397676a302debd57d8",
+    "trade": "8a3be9e6202c56a5f7b66b9e2cc07e75a4d4502385a779e58ae3149aed44cfc9",
+    "warehouseTransfer": "5f9e3362fe4acec0e1a7c7e593c0327477d3e867ae70264d6e9cb93e6e29cdd7",
+    "creditLimit": "2c6af14f8bc1dfb99befabccdb703b9fd33e79b6b56071332f77c290b681a3f1",
+    "bankOp": "a6b6bdbcc36607ba676313842c3c1907d97e4d4c7767819d7fe8d34b3e8dfd16",
+    "planTravel": "7bf4af70271a05174a3a29cea3992485b82456dd6b7869ddca60c61db83861fe",
+    "arrive": "9539bc1a3f5c6504f64873294fc36b152886e73f80f5c3e72b3aee7e959577bc",
+    "rollTravel": "03ff117eee996204405ce2b9ddf03498009721d474d9b8e3c2b13206e6978c32",
+    "promote": "fa30b0bccfec07450b01af4b50215049316e01130699667eb925d3614a111198",
+    "completeQuests": "20b479a6037b51afb5060c8df1fdcf6d1a05b07489317b586115f58702c02448",
+    "observe": "659ea12eb87c755646b135400ae3db2c529c7e88b8d2a8c124ade0d011a4adce"
+  },
+  "remainingProductionChanges": [
+    "backupRegionalMigration: optional force for preserving unloaded saves",
+    "startGame: confirm, backup and durable write before replacement"
+  ],
+  "initialStateAndNextRNGIdentical": true,
+  "noNewStrategySimulationRequiredForStartGuard": true
+}

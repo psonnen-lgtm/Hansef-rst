@@ -1,0 +1,142 @@
+{
+  "gameSHA256": "0251b3e0f6fb23c2e33f9e5e831f6f714f96a120ed74c9d10fb2045871f5e1e0",
+  "kind": "controlled_activation_storage_and_market_checks_not_full_strategy_games",
+  "checks": [
+    {
+      "name": "new v7 rules exactly match selected R1 helpers and preserve protected mechanisms",
+      "passed": true,
+      "evidence": {
+        "selected": "R1",
+        "version": 7,
+        "priceRegionalDiscount": false
+      }
+    },
+    {
+      "name": "fractional stock flows are unbiased and reuse exactly one existing stock draw",
+      "passed": true,
+      "evidence": {
+        "combinations": 27,
+        "maxError": 2.220446049250313e-16
+      }
+    },
+    {
+      "name": "smooth target responds to every inventory band; low-price rounding is unbiased above floor",
+      "passed": true,
+      "evidence": {
+        "lowPriceMeans": [
+          {
+            "p": 5,
+            "mean": 0
+          },
+          {
+            "p": 6,
+            "mean": 0
+          },
+          {
+            "p": 7,
+            "mean": 0
+          },
+          {
+            "p": 8,
+            "mean": 0
+          }
+        ],
+        "bounds": [
+          4,
+          1000000000
+        ],
+        "flatTargetSaturationRemoved": true
+      }
+    },
+    {
+      "name": "20-fass and repeated five-fass actual buys affect later quotes without same-time profit",
+      "passed": true,
+      "evidence": {
+        "maxPriceEffect": 7,
+        "sameTimeGain": 0,
+        "multipleSmallEqualsSingleBuy": true
+      }
+    },
+    {
+      "name": "all 121 buy/store/load/sell circuits preserve cash quantity FIFO and book cost",
+      "passed": true,
+      "evidence": {
+        "cityGoods": 121,
+        "warehouseTransfers": 4840,
+        "createdGold": 0
+      }
+    },
+    {
+      "name": "v6 startup backs up verbatim and changes only version/economy; reload is exact",
+      "passed": true,
+      "evidence": {
+        "originalExact": true,
+        "addedFields": [
+          "v=7",
+          "economy"
+        ],
+        "repeatMigration": false
+      }
+    },
+    {
+      "name": "existing original backups never overwritten; next slot and idempotent original detection",
+      "passed": true,
+      "evidence": {
+        "preservedFirst": true,
+        "secondCreated": true
+      }
+    },
+    {
+      "name": "backup and durable target failures preserve original current game without partial activation",
+      "passed": true,
+      "evidence": {
+        "failurePoints": 2,
+        "currentOriginalPreserved": true
+      }
+    },
+    {
+      "name": "v6 import and actual FileReader roundtrip retain all fields; failed writes leave current intact",
+      "passed": true,
+      "evidence": {
+        "fileReader": true,
+        "repeatV7Exact": true,
+        "failurePoints": 2
+      }
+    },
+    {
+      "name": "malformed/future versions and invalid report data reject without touching active storage",
+      "passed": true,
+      "evidence": {
+        "invalidCases": 7,
+        "activePreserved": true
+      }
+    },
+    {
+      "name": "public news persists across reopen/export/reload, has no prices and costs no RNG",
+      "passed": true,
+      "evidence": {
+        "reopens": 30,
+        "savedOnce": true,
+        "remotePrices": false
+      }
+    },
+    {
+      "name": "six-year current markets are deterministic finite bounded and retain v7/aid markers",
+      "passed": true,
+      "evidence": {
+        "cells": 121,
+        "days": 2160,
+        "exactReplay": true
+      }
+    },
+    {
+      "name": "new-game action after failed migration requires confirmation and durable original backup",
+      "passed": true,
+      "evidence": {
+        "cancelPreservesOriginal": true,
+        "confirmedStartRequiresOriginal": true,
+        "failedBackupOrStartPreservesOriginal": true
+      }
+    }
+  ]
+}
