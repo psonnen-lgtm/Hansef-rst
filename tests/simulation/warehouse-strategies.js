@@ -5,7 +5,7 @@ function installWarehouseStrategy(id,api){
  if(!p)throw Error('unknown storage policy');
  const lots={},trace=[],old=planObserved;let maxStored=0,storageVisits=0;
  planObserved=(strategy,v)=>{
-  const city=s.city,w=s.warehouses[city],q=ship();let activity=false;
+  const city=s.city;let w=s.warehouses[city],q=ship(),activity=false;
   for(const [good,n] of Object.entries({...w.cargo})){
    const j=+good,m=s.markets[city][j],entry=lots[city+':'+j]??{day:totalDay(),cost:w.costs[j]};
    if(m.price>=(entry.cost??m.price)*1.18||totalDay()-entry.day>=p.hold){
@@ -15,7 +15,7 @@ function installWarehouseStrategy(id,api){
   if(p.target){
    const used=api.used(city),offer=s.markets[city].map((m,j)=>({j,...m,ratio:m.price/GOODS[j][2]})).filter(m=>m.stock>=140&&m.ratio<=.85).sort((a,b)=>a.ratio-b.ratio||a.j-b.j)[0];
    if(offer&&used<p.target){
-    const blocks=Math.max(0,Math.min(2,Math.ceil((p.target-api.base)/100)));if(blocks&&api.rent)api.rent(blocks);
+    const blocks=Math.max(0,Math.min(2,Math.ceil((p.target-api.base)/100)));if(blocks&&api.rent)api.rent(blocks);w=s.warehouses[city];q=ship();
     const n=Math.max(0,Math.min(offer.stock,capacity(q)-load(q),p.target-used,api.capacity(city)-used,Math.floor(Math.min(s.gold*p.fraction,Math.max(0,s.gold-p.reserve))/offer.price)));
     if(n){$('qty'+offer.j).value=n;const before=q.cargo[offer.j]||0;trade(offer.j,1);const bought=(q.cargo[offer.j]||0)-before;if(bought){$('warehouseQty'+offer.j).value=bought;if(!warehouseTransfer(offer.j,1))throw Error('planned storage rejected');lots[city+':'+offer.j]??={day:totalDay(),cost:w.costs[offer.j]};trace.push({day:totalDay(),city,j:offer.j,n:bought,cost:offer.price});activity=true}}
    }

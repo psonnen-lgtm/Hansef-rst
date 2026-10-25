@@ -1,0 +1,2198 @@
+{
+  "gameSHA256": "7e85ac510654e3aec8b41328b3a508cdc3030eac8b4ab2981e40f30b1efc2a19",
+  "kind": "historical_state_preservation_not_complete_strategy_runs",
+  "checks": [
+    {
+      "policy": "normal",
+      "seed": 10001,
+      "originalSHA256": "9f63193ab168a3d116d11f68670796706790b791786fde4193672743d3128f59",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10002,
+      "originalSHA256": "24767db64cf067dda3878e23e6d859575948e1fcb312a419ba43397245bdb639",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10003,
+      "originalSHA256": "29803c6be3f0df3e2e214ff9681572df7b9bd5abe42f21ca869ec5599ef4928e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10004,
+      "originalSHA256": "1a17f848d620adfa53110c918a9b9c03717443e44969c03e0baedf53f197f3a6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10005,
+      "originalSHA256": "3f3f94c421590a09d6fb8e99d7bdfead52f3cd5a3ad4f8aeb8103b97ffc1f217",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10006,
+      "originalSHA256": "2ce3722f652e329f2461f408090563af27ed64ef7698b9de502ea9bca99a0826",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10007,
+      "originalSHA256": "eaaede6df769ffbb65b7203142b2b49675a7951924718ca5d49ba44436de04a6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10008,
+      "originalSHA256": "4d71aa73b7f3b6fe6dc5546d8fff46e6b6a905858b55807b8ef327088230682c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10009,
+      "originalSHA256": "6334b66d1c43a53e1ba3a3f7cba6637bfa0a5665db11d8eb4219071eba18a86f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10010,
+      "originalSHA256": "6f958fc2a2d09b00e3ccaa70b9f278aaffd87a1e7886402dd795d409d46dcbc4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10011,
+      "originalSHA256": "8bf0c7f844cb9eb1166e29e7b735a8251d86efbbcc8e00d6618ea5cb1f5985e8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "normal",
+      "seed": 10012,
+      "originalSHA256": "e109b327c8ee6a31c3af72d78ddfc77bc305323f7113dd4dc61b63fce7adc4d9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10001,
+      "originalSHA256": "d36646d08353a5854f8de21b605806d5d2a79999e516a549afb06dc6814ae3a1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10002,
+      "originalSHA256": "ce71bc902a28c1d8495c91aab7efc29774f95708801a7b310875b89fbc83e947",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10003,
+      "originalSHA256": "339bdf528084e437496898ea524b52b05e31fdc189a8f02853b458add4dc832f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10004,
+      "originalSHA256": "6522bc0df5ef5faf55b8ada10dd70aea14a00f9c214339c1f1c62404352356be",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10005,
+      "originalSHA256": "4cb583d5b52495b337cc54adf743b45413b0ffbf3a8e4659c4604c00c72e536b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10006,
+      "originalSHA256": "b2c81668e7958d4c01e0df2059dec2d4fe31fa5ddf7e9ad6c19b02e97d985ce6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10007,
+      "originalSHA256": "bc729180fbbaf5dc645f58836eb66682926b7d3e0b535658e27580adb1302e0b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10008,
+      "originalSHA256": "d3dff0ca454401bb837f6d5d37d65f3a739fe80090ab2d7d40b3fb25cc95b3d4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10009,
+      "originalSHA256": "71e0ff11eb72237b0154159adb5d6dad17c259852bfa23bc5972a83e8ff5b4f5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10010,
+      "originalSHA256": "108d8957d09b52eab2df9d14ca04e3239647c9977bdd63782c5d421f0633517e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10011,
+      "originalSHA256": "b5a02ca7cc3369edda43888858c85ac8c1103bbf9bfff38c22bbbc952fe27c75",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "remote",
+      "seed": 10012,
+      "originalSHA256": "a347c5e6915f4251ea450b7241aa6d26dbb6b7df88b915ece38f0b8e05a4bc5b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10001,
+      "originalSHA256": "a880352e3e823992af28f4a4632e2e8e17c5c332d4edce181933fb755f332af1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10002,
+      "originalSHA256": "4756a0c71720ed3e0407c5fc849f0271f928bbd8c2ae80550ed776054422a57d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10003,
+      "originalSHA256": "c9258252d2d5176cf67429a54d63298d168420da292e9a8bdd37d9fbb37e3957",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10004,
+      "originalSHA256": "54aa6d36d0d29eb5a9f7f993d717312b802b0762ba82579b4eb822900f9fe1a3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10005,
+      "originalSHA256": "54eb063bc9b8af2096addb19a08d3872baec7948bf03604da82971d83e2a5be0",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10006,
+      "originalSHA256": "97674c36fc0a430910d7b5260870ed95cfa6540aa795022cb2a131a4c437f7bf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10007,
+      "originalSHA256": "643b0c4d874c47d38770579fc248dcf14905843d564c9c236b73c4cd0e3f455d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10008,
+      "originalSHA256": "5c08f2ce1dcfb3c4bb6cc836b153018c166e941e1df731d7c355ae9e0d5502fb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10009,
+      "originalSHA256": "d36a6e6be2761f31cc470ce70eb0836e6a4cf5a8f31fe339bd9af179f92cf581",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10010,
+      "originalSHA256": "5f248bd6a052acf4d9c22bed64f589434ac07058d276a45faf60611e2eb2e628",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10011,
+      "originalSHA256": "88ef1c648ce97e4bf7b71a835bca2a9ab0fa739190b76bdf1ffb16d17b3865bb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10012,
+      "originalSHA256": "9e072ea541e034609f24a95437fe9e3d2c6ee4f4a47ab2cba7844287569cf4fc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10013,
+      "originalSHA256": "375fd69b4cb50a922fd60769054b18c71976fded8b3103ced19c5422afee9939",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10014,
+      "originalSHA256": "e598ab3dbd7fa7ec740ffa87dad9a5462325c184f3245d291a4cbc34b58e7a6b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10015,
+      "originalSHA256": "9f3d114a48010efba09b64669a24429da30625a929da27d3be704930855e5319",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10016,
+      "originalSHA256": "370cca1eaa841471eb10c20a46c06239b5c4a7951e91ffb4b3b8854d6cc740c2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10017,
+      "originalSHA256": "0925bbf4d9955b2b3f2f1a2aab59cd7f9b1737b29a67a64aea2164dfeb6857cc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10018,
+      "originalSHA256": "de99e332f063a07722347964de5b8d7243fc05229dc84d9313c61311c4ab45aa",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10019,
+      "originalSHA256": "a1ae677c9d048c457fbc1494c2f9a75ea2e1c1ea01780431c04f59d5db7e66b8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10020,
+      "originalSHA256": "952349216220c657b0a2ca920718f60ff646cffd00c686e6ad972b6a310b89bf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10021,
+      "originalSHA256": "5f6eb2af0216a33ca2887aafa81d0374d9d3d5aa12e92d7b140d7f1133720873",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10022,
+      "originalSHA256": "8395f4a1469d5250e584c29626cba93b485125705cf96ef2fa7ecda076233364",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10023,
+      "originalSHA256": "afe77ca6ba7e3974d78352fdf87748260e617d24f232ddb588330a8b303e4763",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10024,
+      "originalSHA256": "6472ad6041ff0b81d7236017c8681b688d5eb6dd6a4eeb35150eda74b08ab19f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10025,
+      "originalSHA256": "b7649b10199095cb6627353b1e55aa03eefc211ea665bc65d5435c7f65529e11",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10026,
+      "originalSHA256": "1aaa51df5687c0f1c9d6b76b6a3135e9bc59763aea9365eb42571640948ee5c6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10027,
+      "originalSHA256": "1b69cb67f3187a056254a1b65d7ccc306c9091d5ae13c32d88d92038653bcf00",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10028,
+      "originalSHA256": "023d3268d9a0265bc0de10db09fa9ab35f2dcdfe850f141b8299b05205dca57c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10029,
+      "originalSHA256": "05d8a7fa1966eb92c1264abd8d2d7f0a35a9b8d6532217354fc5e782c8c07c9d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10030,
+      "originalSHA256": "6e893e6e05051fed57eca9478c9963d84117520eb13edc65ad0c67256244e3e5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10031,
+      "originalSHA256": "27319e9d7b4288bbfa50477d6230adfda7b9e2372d6ee5de4d2f3f9ae966b2ea",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10032,
+      "originalSHA256": "d7425c35b6b4804094f0ed823880d8a11d1fb6229db534ccb3bd2cbf1b6d8bbc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10033,
+      "originalSHA256": "3f515f13cfc0d86a7dc42e2306e2a511c5c4a9128c0f7ce244feb4725e38242a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10034,
+      "originalSHA256": "4f65eb5be50f77102863fd7b514fdf2a50bd45928d2e72b87ae8cc8dd8697e2a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10035,
+      "originalSHA256": "94339c302c6155aadd77fb05a74fee715995cc10ce84645e543c6cc96de63726",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10036,
+      "originalSHA256": "64728b5e603d9aa2c3a7aaf3d1245765793f10ccb34dc121e4f65908f7bd816a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10037,
+      "originalSHA256": "248eec8cb4dab9945ad978d2da436ffc433c37ed0ca708a33f174ea1e6dd284a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10038,
+      "originalSHA256": "95472063db4f7a3ae222326238f406498398ce123e2fd2f44492f2524921bc85",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10039,
+      "originalSHA256": "d8858ff8943ab5e341669caf5e360c39411978e82b291c1519b266b0b2f49037",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10040,
+      "originalSHA256": "98984bc0d3062d4923a0128d2e473b2934d476ec4fdc403f6b1beb556e4d00c4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10041,
+      "originalSHA256": "080f6452564a7a6eaa47b80df6645d4f6a2e9fba4b1b188ecba275b799aaa197",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10042,
+      "originalSHA256": "7e91dcbe14c04707597962b6a74ea25d02bc4afa75dbf12bb2cb11e3d7bb38ad",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10043,
+      "originalSHA256": "5e7b81809e761265c72933bac04718a51f966a309898c1accee28df9dc4679ac",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10044,
+      "originalSHA256": "7b803747024c1acfe53ede9701c1c56caba3b8d364a85039947760f5c978c070",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10045,
+      "originalSHA256": "7087e7285ed95142b52f55306076a90030afd296a38aff0f73d882fa89411ed8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10046,
+      "originalSHA256": "83edb3686c406809a0c973325b392462c95f23be74650e27b9d6c2bfd5824a8b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10047,
+      "originalSHA256": "105caa31eabc73f8f7a41a1c1f831a2720f73e2d6bcc2f6587a297876fa19b07",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10048,
+      "originalSHA256": "eb625ccf6d548e7ff7af0a025b07370e1f49ccd79cd3436ab281b681b0fbaedf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10049,
+      "originalSHA256": "58fedfa9a5ad0f42948ec7ee5fb84a05d462212248efb15884ba96c76ca5eb31",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10050,
+      "originalSHA256": "b197ef88b07738c389508975acbf4a809f28f416c1157a0740442d767faa72b3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10051,
+      "originalSHA256": "c78d3aade506ac5cd1e810d98c47a70082c0ded0b5c4e2107ff892663fbff250",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10052,
+      "originalSHA256": "080e9550abe77fefe1bb6979f2e5f022f551f177b88c8df9d8a94467a405b311",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10053,
+      "originalSHA256": "bc2056d5e0cca921f9a96bdf456afcaad6da5803c6f2ae37fb94fbfbe1c2f5ea",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10054,
+      "originalSHA256": "005eb7a7241a5bf38b382014b4940c8990b7eadb3f26783d89daa937793d2a2a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10055,
+      "originalSHA256": "002cbbde5dbdcf5cf5a4049191efef5d4cb7b9d5cceca57ee2aa8a83289db2e1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10056,
+      "originalSHA256": "3ec8520d0f5f1757b9668db7a8f11770cc07259ebce8c96ebb054588e8afeec1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10057,
+      "originalSHA256": "94556ee8a0e1ab044d5a4122bd5ff118908217016a640854fcc842782049df3e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10058,
+      "originalSHA256": "d0962f57597aa28e5ea7cf0f44ecf4e47a1a2ecf26a89778001a065961953186",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10059,
+      "originalSHA256": "0218cf3d86e79d617e088862eedc061db536555dd680110d8a212a2b5cd386eb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10060,
+      "originalSHA256": "40701e8c0ff622d177379ef11c43854bfab6a0ae650b5fe5ff54b3e30cca08cf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10061,
+      "originalSHA256": "8767e91dcccb103e59eac8ba050fb929672a730beaad0040d80e1abb95c61fd3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10062,
+      "originalSHA256": "1b6ec9fb1282702a2d8d02d4997127aff160b142112f7f7fec6d19c3da967055",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10063,
+      "originalSHA256": "28e93ea8233e65f2a8368958c2e746116915598c1430c61f3d76a9db717d310d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10064,
+      "originalSHA256": "8c29d6ad33aecef3795379295fd7935850e60c3c365ab3e1283de225803f03bc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10065,
+      "originalSHA256": "b0213ae0335ee579e4e92fc2b3825a7220a7ccb3b85943633a4ed8c9c5048999",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10066,
+      "originalSHA256": "9120913221723085e59fc4c2e43d20f2e4fbf2718608d319e525cd330371abe3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10067,
+      "originalSHA256": "77397b1c999a0be9a5e85f94797e14ea0e4f69fe6e0e8f1a5275aa2f0542da7f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10068,
+      "originalSHA256": "35e1b5eae7f9d3696ffadbefb491427a1d829003cb9dc662cfcfb0ec33f2f96e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10069,
+      "originalSHA256": "ed363b2613a604b6cbc4a397f1142b58a2dcb4e7b6936247eaf775b0d7db0236",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10070,
+      "originalSHA256": "24cf760b22d7bbec48bdba84ad5f0ebe5151d5729e89c4b91c5657064b95f2be",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10071,
+      "originalSHA256": "53f547fe50b9c9a977d1697f230dbdf825ea71494fb80e20ee6663419e253573",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10072,
+      "originalSHA256": "8f474a888dc00f25df0c5339f90c279c550384ddc8f497f6417b7f5f4e7ba3a2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10073,
+      "originalSHA256": "708fb9897af38c05abf2cb82326bfd73a1689ab091f36d5864548f041d3eab82",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10074,
+      "originalSHA256": "0a88792a9f893ab96b514bad213f191114682b26b20d9db06c325a17c4341ca2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10075,
+      "originalSHA256": "ac8dfb19b05e271edee90e0341def62611aba6ac4d6b318e52cca8636fe3fc48",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10076,
+      "originalSHA256": "8c1b7568e9a6ea4a8e291627ba8f6320ee8c7fdfed7ca37df9c7ac2e73ebd8ee",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10077,
+      "originalSHA256": "80799895ad117973f1ab0fb12a9f3e52d649b34ed5606ac227b2f07d28d10c44",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10078,
+      "originalSHA256": "deb739e61f00eb87a2d79f50da92f53895562a9d2e78152a3a25ad19941fae4e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10079,
+      "originalSHA256": "200d64ca71ac5d4ffd634fda2aabeb78cc2111e36aaddfbaf5ed1ac256d3929a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10080,
+      "originalSHA256": "66a1df62c1ee4b3a21b21ab81dc544adb5bd3aa26bc2d7fe99fd966daa410fc0",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10081,
+      "originalSHA256": "ee2d74e4770affeaffaf1ddb382fd6be7f1cbfeeb17c6bd5fc002e26e5bcc8b0",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10082,
+      "originalSHA256": "a3a3f3cd471a2e3850f81dc18d872ed93e0e1ddf0df3403595ae256b845e3c16",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10083,
+      "originalSHA256": "68abbd8c6ee79a270aa1d9d7831ec59a824c5e89b3ef126f78bd460e92c3b41c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10084,
+      "originalSHA256": "fbe19e549eda679b8365427ea421994faad453aa8610e6108649c6f321459021",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10085,
+      "originalSHA256": "5594520edb22b7a41d0ccd390b2412dfd760dd1d4fe79cb921011807a14ad35e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10086,
+      "originalSHA256": "a65be409ec05b95c487e6a6208daa2b6ed3de67aa608dd1f5940af1288e3d7a4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10087,
+      "originalSHA256": "cdfff7a10fc9afa4dcdf258d96cf7f65364373bb4b2c14bf1a502f51ca3352b7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10088,
+      "originalSHA256": "daf512b510632f325bb14a1db3658790cf43c1ac75034cd97ef165f89d78b135",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10089,
+      "originalSHA256": "6ce7a676f486b78472c8c656c09ba28328b15ff1f58767e0c0385fd740b5aa83",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10090,
+      "originalSHA256": "5130cf4b3685855d6f5339dee680907f518111450f870d9c8202fbd44e786ac2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10091,
+      "originalSHA256": "4140a04e14344db8535556b5efad701c345561c3639d9ec23e3a950638e2093f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10092,
+      "originalSHA256": "939cdc6f62addbcaa0d80157d3cce864dabe486a87b50ea1720faa2b9e719be3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10093,
+      "originalSHA256": "19ceb7e1216e5ba697664eb4328e5d0ae9f5727b853d9863a0c5d59e6fe828c5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10094,
+      "originalSHA256": "bdf147ec4685695dad864f3f0e86c0433f280b0fa821d13bbd42a924fa045839",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10095,
+      "originalSHA256": "52e539bf4d5a1336ddac3aba6c8d40ee05a85c8fbf6f3a08b8b3821648835697",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10096,
+      "originalSHA256": "053d1dbb7d26043fcb5baad261526b046fa29b36c8549ee830ad26271c47034c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10097,
+      "originalSHA256": "849e17bfd15c315f3b66b09bfca245e5117ac431802fdd40803a33d0970f0e70",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10098,
+      "originalSHA256": "fcf7bb50380b7e7d8fe15be0155a5140f5d3031a2f97159f54bbba509a2c3521",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10099,
+      "originalSHA256": "66951371b390029ba6d8c1882073f4e54fd86d2802f665f685cf83852f2ab5db",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10100,
+      "originalSHA256": "7337374512866d160c212bf525146138a8a8376e5c712b0b654f2e0cac1daf46",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10101,
+      "originalSHA256": "c168ee1c5c973bdddfffb3fb455abc325691c6a506bea9dfdf5befd87a6c81fd",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10102,
+      "originalSHA256": "a36e3ff2dcb83e6d539f973c32a64f612d1ea46e8e75de7c659bd9be0d9c5703",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10103,
+      "originalSHA256": "ab85fdf8fdaab5273109b394e6f682b7efd449f7e6dc726e7195f2e659e37cd8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10104,
+      "originalSHA256": "d2b25c512732b3d6b7c516433a8b86132f24ad3c25f98e610f3e7846e9f26d62",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10105,
+      "originalSHA256": "d3814e94c6af71c4f20a7e40d50056ce4d6d674884e4d218b1b6f44cf1125d99",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10106,
+      "originalSHA256": "5d4025ce7f8614b780bc5b9d7e1340e93d2befa4efdecd958adad74bd2e4ef0c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10107,
+      "originalSHA256": "5bde9c9e830a3186f2f5eba520e89ba6259f8d98b44b494530b6d5964cb0c1a6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10108,
+      "originalSHA256": "9c93658644600d2dbb5ecba6631832e541ff5b675b7e2777e908899762a0ad7c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10109,
+      "originalSHA256": "3c2f37b609477d6297aaa1ac765b23619529462f575ff269d250573d602ff88d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10110,
+      "originalSHA256": "e8b1215ebdf4ec4ddefd0c3e8316d12b5bcf5c82ece1d087f65ff855db87cced",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10111,
+      "originalSHA256": "64fc0e2e998589a78d7efa97abceb331391f16019d65ad4ecbc5c9925e12874d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10112,
+      "originalSHA256": "64b61a3482456337c304bde4be4beb4f9fa3361e7527ce6be28b4e63fdbd0ee5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10113,
+      "originalSHA256": "538af749c2f8c155864c07f63cf74b30d38c6e7dc51431438218ecfe9cc6dc5b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10114,
+      "originalSHA256": "ea8a2cd50b3374f22883e7e5c92b480c88cb57d4d89582e1ab07fc5b2c37bed5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10115,
+      "originalSHA256": "e07895978d50770f95e88122fee8ed7e6f2ad2d6367528c784fea54679897fda",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10116,
+      "originalSHA256": "ef061d063ddad3d5fb08cf6ab77a6a0f8a7b35b920b007b718f1d24e0b472abe",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10117,
+      "originalSHA256": "1a5bd5d15aa58e40b33444042b0176b89745cded79ef630834a9a609ea10324b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10118,
+      "originalSHA256": "f754e6da329baf27acd9b8e0a916f8587fd473a56776bea8f7a266835fe1d035",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10119,
+      "originalSHA256": "f308cb473bf153b95b925e575ea794b770fe62c304af992cc970a7fe38cb7312",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10120,
+      "originalSHA256": "28cdb6647a96a15615545266cb4e6045a3c55d7a92a7017ec72abf7e4223297d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10121,
+      "originalSHA256": "ef6f12b96886a974fdb3a75d758e734ec581502b698fd536ea39c59b4136a44e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10122,
+      "originalSHA256": "5b5f5064939f986d05c32d5fdc4582d18148e5b6fb7d8a7b43f9a26aa75dd333",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10123,
+      "originalSHA256": "5821b10477881c1fbdec8b0a8dc18922616230942eb707d0cdcbc0178e2e86a5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10124,
+      "originalSHA256": "7a40cb4e21c57362bdd3c985e86a84a62c03c00470e32cb672289363dae5b8b7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10125,
+      "originalSHA256": "abde10404e38b66f0d3f6891249bb8aef3faac53b1cd24890cf4f4304c31d36d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10126,
+      "originalSHA256": "ece437ba64b7d94a17717160aa8c24aaa2662e6400ae92444342b0e07ed43c9b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10127,
+      "originalSHA256": "cb4e191caee2b9b79aa305675565938d321d98904c5e66b4a166dc82ef9ce579",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10128,
+      "originalSHA256": "4d1845c4755b8ddece3987cce42ad945190e5f1f26fe3a28f14a79dda698afad",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10129,
+      "originalSHA256": "934d612721d87128789e2335d0fc4e063a40bfe2b840a54264266fba349014dc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10130,
+      "originalSHA256": "4a085b6d015adda5a3c440ef2f1dc7ea24e1ee910c9c4ad12e52f3368896a29a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10131,
+      "originalSHA256": "b579e4a50f0c11816e0dc854418632470abaf2fc30edeb2fdf7aaf668356ac0c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10132,
+      "originalSHA256": "9f7cd810330cdf8bb91e2ee7cca9eeaa3cd33becbad076222db00735be240c03",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10133,
+      "originalSHA256": "ab02abe8bf36ba4c3556a7ddbe24ba96ecfa9ce185c7bb47b22eddead5a39655",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10134,
+      "originalSHA256": "7a8e0e21abf4cb655555e7fbac852f55c9845732be80b230dd1c7c71c95a7062",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10135,
+      "originalSHA256": "842ec6b840e1a5dbe155b3be22afcc131adf790be794fe1b8dcef062590dbed5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10136,
+      "originalSHA256": "1d93ec53ac83aaea9fcbfd7f997822f48c073035d904223e28f7d805724e3a0a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10137,
+      "originalSHA256": "8c10257d8538ce305d84e55a31c544ba12ba0052eee57da8775f40045e1a370e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10138,
+      "originalSHA256": "9771da7564cb70da68024c1a3ccf698793b1d0018509b4f34ee468f898333a8b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10139,
+      "originalSHA256": "8ec2799992923049128c3a8185e0a27f38670c143e58f94d01c1f1e1daf95e69",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10140,
+      "originalSHA256": "78220da88598f6c7e1b3f01dd8e3cee1d13b075ad715c329f2046c6c4c6e9cf7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10141,
+      "originalSHA256": "eb714cb6c02337a59f03fcfcf059e17b83c0cc46eec3d41073acf3ab8f83acb2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10142,
+      "originalSHA256": "bd1317ec51d9f6677e381361249a201f6d7729a4c96ec9bbb004cdd447f2847b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10143,
+      "originalSHA256": "7dc1aaa6f3cad044ad9a8b7b7a967a0a7056aca0743b4236a24470a694f47f9d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10144,
+      "originalSHA256": "bf8ec714306df3b22aff9ac7fb72288ff89924f534811eb8eaa1569c4a0e7309",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10145,
+      "originalSHA256": "323199fc9c7431bdc3dba6139df7e48db419f0110dda4d8ade346691ad9ea9f4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10146,
+      "originalSHA256": "b4f1fd15618176dd44befa62fd21b647be585b03277f9e4c05133d7b2ed9faf4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10147,
+      "originalSHA256": "080c3437aa25e9203d47c69338006b6601ef4baedb811be4e7615eaa4892d5cf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10148,
+      "originalSHA256": "0de23e425e4ece640e819cf4d296b5d86e7f38f7530b8272bbab5e1771cea902",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10149,
+      "originalSHA256": "563778f8133943e3fc9b7358c62a93a2ec690ca53564d59db2ab0875d8ec56a2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10150,
+      "originalSHA256": "9208e75dc5d11e1949a812d282172ce4495cc13ec93c8517b187a14fa5c886ad",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10151,
+      "originalSHA256": "fc6d6c9df8a9cd430f5b3a46c00d4647b40320e4af9a7210429b66a76c3a8226",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10152,
+      "originalSHA256": "b4032cd020bb949df62a0a1f17d0ea7623bd384aa077836ddcc2b3d48e560d3e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10153,
+      "originalSHA256": "97bc60ec0fd7472507805a09707aa0560a66452c885178ffbb2252f945299828",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10154,
+      "originalSHA256": "d3aa8f68b3f58129a3820695eb17bfaa2c7dde8f0d8bb66ad6cdefc43ddbec9c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10155,
+      "originalSHA256": "bb88d55e54b7d528303aa74748c590bf904cb33ed7c866525bae8f2f6887f246",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10156,
+      "originalSHA256": "ded9a214fda4ed045af26fad8443d2320c8a2b963c6bf5496fccd3e7bf0a7692",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10157,
+      "originalSHA256": "71a3c2a9109a423c29c1580f47e219a7f16ae6c5f525e29764528d2659f4fc13",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10158,
+      "originalSHA256": "abe5aa29c506d3b991d6f3780f4488401f8ef4f888b2fe081d2ada5c4e239ac9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10159,
+      "originalSHA256": "6bae7189b40ec0e3ddb9ce9037bf3e1e49b7119f79192581b03636bc164512cb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10160,
+      "originalSHA256": "fa1242d185bc60fbebe2e68316f80fcb9a322afdf8b2b6880c80b2b772db107a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10161,
+      "originalSHA256": "9603cb91c39b2c5022ce3ba12cc255f60fda800917a6ef56d7b060b3992d625a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10162,
+      "originalSHA256": "837da11d4c788e2d00f864de72e3a96299a93333e75b2f30201097c218167947",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10163,
+      "originalSHA256": "3174f42335505f03866e671e42cfdbc2998c1c095b502c778454c6ed1ebad718",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10164,
+      "originalSHA256": "410674d9bda4a31a5486993f5dc6dfdedbc9487ce1d5de1d39b21a24d5bcb6ec",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10165,
+      "originalSHA256": "c01fe0dabb7107bbaa1ff63da5b923dbeb0eff0bcc76c0360dadaf42247ca0d9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10166,
+      "originalSHA256": "573b0ac779c73926fa3373a378fdb7ba3ec1c98126e251842fc0c8a0eb7ef74f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10167,
+      "originalSHA256": "8084f50f57638b3bae00b0e7a6afe8695c21643120a4574b2bd3857cde0b1394",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10168,
+      "originalSHA256": "9cd23ee845661f436a6a22747960587bfbb26c24e5f55d305657f4b36f047fa3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10169,
+      "originalSHA256": "83101452883f0c8b591959510b24ecce08a0b19dd90487427833e36024bb86ca",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10170,
+      "originalSHA256": "2a7a6ba375d2e15cfad3a48913589068af890089fd6bf650d6e01121716da7f9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10171,
+      "originalSHA256": "9f91712b0267fea43cc570c176ecb99b1a4f2b34ee8e9a16fbe9cf7e0b1d9c2f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10172,
+      "originalSHA256": "6a52cbd1f576f83bbea6d87a3cd53fac883898d1aba1cb55c27873204b674896",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10173,
+      "originalSHA256": "0eba39cb60d79f9c0fa6446680a02f122f86a4bb8ed64596af7aabd41b1948cf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10174,
+      "originalSHA256": "887a32005e69496cedeb1add0740e3d735a65fc27ef19abd6367496d51df4681",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10175,
+      "originalSHA256": "e857e6ae9c2747f8737035291a1a35db20514ffd7d5a8130147e43bdc8e22b85",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10176,
+      "originalSHA256": "061814528e88d9d5b1083e9b578d7766975ca98f6b19e380353f2edc517e943b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10177,
+      "originalSHA256": "2b4feb52aac8f3bdcfd6ebafd0c1c88aa7a687e503dbc3bb0d9cbd8ebd9c6c77",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10178,
+      "originalSHA256": "801777a2d9a0629eb7ec8809b26f5a8737c59dfa1e799a04b66074557109e27d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10179,
+      "originalSHA256": "8fa73a679849b9f7c17dae674b3b36665f0c787d3b45d45f823e2c4ec518eb7f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10180,
+      "originalSHA256": "7f97dbe981b7374f5163c70e815daf1bbf8153e68d52c0b7883f0e042d2b58f7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10181,
+      "originalSHA256": "a2d749409deed329dc2b2bae7d2855bdb9dfb07bd81c66e64fad488eb8ce1000",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10182,
+      "originalSHA256": "92f495b37be2718a79142d3803aded359cb153966c8f55ea813b41f7137ef8ee",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10183,
+      "originalSHA256": "f1d8044469c68e70108e35f9da8231fc04969076e793dabb011fa0eb4186ceb0",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10184,
+      "originalSHA256": "1602822e1c536c7189aec8bcfb7f00ff42bed97f8b5e4db388ca539116475fce",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10185,
+      "originalSHA256": "25d6e12f04ae79a486ba0fa988b8e6ebda12354f97b22f3d5c6ef8e9d504e399",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10186,
+      "originalSHA256": "faca554835c4aac4a0b329891b4ce2eb58b4ecf7b971b91204fb6194104a7a82",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10187,
+      "originalSHA256": "92a64e97cb987ae86a307905ac7d363f85982f95820c0dd490f666403eec00a9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10188,
+      "originalSHA256": "621d5cdeefccd0df80102e5df5bb411f3363c21dc338f56fcf24d4745ab022c4",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10189,
+      "originalSHA256": "121cd8759150a277b40d3320faca26bc25c4f0761a27a44fb8a5db9ebd2453eb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10190,
+      "originalSHA256": "153d3e25d80604900feee9b218a8127d54e53eabf0e6a00d6b5c6d45656623c5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10191,
+      "originalSHA256": "ac71183520938287e02611b40a37317116c6a69d95d2b57c86341670b08c5c3f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10192,
+      "originalSHA256": "725388c87eb547616d21d3ff028458bb5208af9ce1bf33e60d96d9c2469250b1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10193,
+      "originalSHA256": "e1194cdc01a2ecd65fe69d15f2b3657980fabf8a73fc0e7269aeab625641aeeb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10194,
+      "originalSHA256": "4d2d46b575b2cb514177d79c06f94b225d6ddacf04dae0114f798b4912dc2ea7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10195,
+      "originalSHA256": "2e6df9da8d8b4bf257cefd5af249e19e918525f83212fdbf5fc31d5e07e1cadf",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10196,
+      "originalSHA256": "9dd768204f4f9a1017dfceb2c43414417efd479347e4f4db5ff1ed954581fc92",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10197,
+      "originalSHA256": "1d4a98fade8b9bb78b59f98ad9a553196ca6f260a61eb85e02a16c90210c8fde",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10198,
+      "originalSHA256": "f8d855414e39551a52a4635c9e80122d4442e425bd39c977bf961eea669c6b08",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10199,
+      "originalSHA256": "179d0e7534b848b88e4ec412008c2dc582a783fbcdd858b1a96633506a553a45",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10200,
+      "originalSHA256": "912abf5765fe06d8707e8907f81dcc87a1995acec534e4e751032da6162476fc",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10201,
+      "originalSHA256": "36c7733abaa092df447099420f40275d07675d26adff66f488bbce162cb5774b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10202,
+      "originalSHA256": "0353d7d9676ae7dc249bfe620f40ff8330c7711518b824efed4cbe5e56a7d9ca",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10203,
+      "originalSHA256": "32a9953e9bd54ea2d7157298feb065e071daa09c19eb50a758cc5e9aca2d5566",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10204,
+      "originalSHA256": "67ea242efe05747acda9e620e3b15c40d1bc2d2541f0131bbba14c8cf933c7dd",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10205,
+      "originalSHA256": "d6c59a8b231d2ee7eae21513ad3c186d1e41dd854e436fd481a814e80f0a0f49",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10206,
+      "originalSHA256": "1e36f39f20e6174a9cee6841e3a59c7584e2ba4eec1b1cb88920ee58bf2985e5",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10207,
+      "originalSHA256": "f24c553992aa387fb5b76ae505b3a7d8d522301c77d0dad9c3d4c3383efbee64",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10208,
+      "originalSHA256": "4dd8eca15b805b33a0b89dec1df9fd907b0e33e39f2260770497704c1bd83119",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10209,
+      "originalSHA256": "252c24a906f7caf6d7bed8a4433884ab7cce1e6066b86502cadfbf3167496e72",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10210,
+      "originalSHA256": "e26dcd8b140cd5484f5830808878ef9c006e4cd26683a04f91e6c887c58515e8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10211,
+      "originalSHA256": "111352d093136e47c9d08cd52be6c162e76f3b8db92cbc16e9a0aee0ee5b77b7",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10212,
+      "originalSHA256": "4d113a0cc177871f18023f21478b0b65faea9ce54f1798503e0cc79836b27658",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10213,
+      "originalSHA256": "4bdf31df5acad376a4d13abfa810f8f3977d861a6af7d1a2b587556e0e1a3446",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10214,
+      "originalSHA256": "7cd432497bdbec9834bb0fbc78fa9fa6a7c8f5b20afa6ae7a574a21173209acb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10215,
+      "originalSHA256": "e2755c5038869e718935336f8164a5a57f5788106d91cff03bcc85d555d2e187",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10216,
+      "originalSHA256": "d9fa66cca7d609476a4bd2ed7aaa5de280b72f801dbdccf38313d0e15a30408d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10217,
+      "originalSHA256": "84217e0804757035580ce68c09b4f538e6dc7b62e8c7032f884593ee8b823d5d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10218,
+      "originalSHA256": "fdb388aa07998d8d6a81edf5f34ad74e155275504ac536e008f8fdd9bdc471a2",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10219,
+      "originalSHA256": "73416841ff393d2cc87298e15b69176379083b7925563299bd0ccf3ded56b131",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10220,
+      "originalSHA256": "0d6a160f747b489a8fcf62e6dba4557a0d4ecd916a21d83680f26739c21982fb",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10221,
+      "originalSHA256": "cf37f4fc3a158a8a2de260e93a80e62ab22c18b9d778ea20bd8cef1d53276989",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10222,
+      "originalSHA256": "3baed6e5887c633ebac5de79172777954fa90588fb8eb3ebc3734453ba21e3f6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10223,
+      "originalSHA256": "a674dcf50fb708cbe0f92e66c38a5d7f9c76104adbe90816a3ba5fc2f20e2e6f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10224,
+      "originalSHA256": "1b09d1fd1625b7652b270c128d60b99cd0bb56f2f2cc49b87571c2c150381482",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10225,
+      "originalSHA256": "c1ec7b091b65c70def1d199c36fa418933d3fa6d5dcc7f3114dd964eb1672f9a",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10226,
+      "originalSHA256": "aeb4fbb5fb4e8603b8da4dedcbf4c882417e23c47655b37847ed802793e7fac6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10227,
+      "originalSHA256": "46fdd58b7f632e783780e972c06b84b45c17693cff20241f47f75dd9278467b6",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10228,
+      "originalSHA256": "403b462ce6ccb6e304ef2a85c464500b10f9e79235f24b1bc360768840c915ce",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10229,
+      "originalSHA256": "6d7ed069cde32d3451f6855b830e86c63907fb2c23e6fe93a9f494d99c3e03ee",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10230,
+      "originalSHA256": "a6757efa2aed04e446b5e3bb0ad74cb767c1018c869bbe692d24c45a7f3f47d9",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10231,
+      "originalSHA256": "6869dd11619596bf47e7b89c4d3e3406cc6e8f92dffc4207d43c9a433b5e4ef8",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10232,
+      "originalSHA256": "66f9d355c3bb328fa2afc6217361d51f2c0498f81fbbe5362e5a77e2af792da1",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10233,
+      "originalSHA256": "2a09c145235f19e900a8bdb9669bf0ceb0eb42bcfb5b26848bc7116260df9276",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10234,
+      "originalSHA256": "632506d68c5c42fdebe30b7e201f5380ebd967c1397ecb1f90e848b5598252b3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10235,
+      "originalSHA256": "296b255c6f0a1610712e05ee6b36362a69cb70d8ae2b394d929d4f5b27e9d750",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10236,
+      "originalSHA256": "d2aaa0be30d93b983b396dbcf053b3142e98ca4627bedd6f5ab9175df43070c3",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10237,
+      "originalSHA256": "dce1171d9cf273e03db31c2805d31c133a6e80b1a72ccd7cddddfcff389bd1db",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10238,
+      "originalSHA256": "9338ac9d4c7be130c0d5b267690645d769508f9b9c1c2b5dcc7d00007b1d1926",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10239,
+      "originalSHA256": "ec790e31d6915dbc59949fd17e8e4b6257cfdb1b520cedae6c0f7d06e29755ed",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10240,
+      "originalSHA256": "20ee8df18aea45543819a354d701693ec33b1a4b48c2296892c7efe93f2bab77",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10241,
+      "originalSHA256": "b87767b2b487e2c94176100759d84528fb62b4e85c5d711d889939e2b980815c",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10242,
+      "originalSHA256": "5fb0468e3cb78219dcd7742d40a68d6130fe542e3fd6533a2b0cc2e69e0e290d",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10243,
+      "originalSHA256": "0a5b223db50f638413e1403d0998a2d9d8ba7c63414f546f40ba7c73647bba4f",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10244,
+      "originalSHA256": "cf3fa5f699ddd63e0ae884333714c025049a91ae50deafcccf5bfec417ea8c31",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10245,
+      "originalSHA256": "90c68f9f3d2f51576319727b1f0d1b7569dbd89ecb5b12e0bdce9a667d8bc110",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10246,
+      "originalSHA256": "49eaed7252faa1459c4c6360ad80f9963a3a63bc07378457c6455f83832e1fea",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10247,
+      "originalSHA256": "6a3ced97e7e830db3272a10f6f80d889ea947df5cbcbb0dadd551966ab1e2e3e",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10248,
+      "originalSHA256": "835a14d5ff8f5d38ccfe33904d08a8b180b1e7e135af8b7354ec7ebcc8b32079",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10249,
+      "originalSHA256": "4e77e05f577f48c56efb9622d6564518d0902cf4a9adc88de7a2a5c6c3dc305b",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    },
+    {
+      "policy": "recovery20",
+      "seed": 10250,
+      "originalSHA256": "9997eedcf259dc2b263025962da880dec86d6f21d20d8dc9a02f26569c12d917",
+      "allOriginalFieldsPreserved": true,
+      "roundTripExact": true,
+      "oneDayKeepsGoldCargoFIFOAndFlags": true
+    }
+  ]
+}
