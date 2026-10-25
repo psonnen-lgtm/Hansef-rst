@@ -1,0 +1,279 @@
+{
+  "base": "1b2b8cbf300786efba188f59979a51ec26c5e092",
+  "testedSimulationSourceCommit": "d994013d7eb235538c2bba1f1a937173ccb1a98b",
+  "productionUnchanged": true,
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "simulationSourceHashesStillMatch": true,
+  "historicalFiles": [
+    {
+      "file": "tests/simulation/baseline/game-0.4.1.html.gz",
+      "sha256": "b18c07976dd794751a59035d7685c35f687559eeacfb0fb13cb7a935912be5a5"
+    },
+    {
+      "file": "tests/simulation/baseline/results.json.gz",
+      "sha256": "f745847528828366548330e590910529decfd3503692b5dce64275a1272670d4"
+    },
+    {
+      "file": "tests/simulation/baseline/summary.json",
+      "sha256": "475aa3810a8b7209607a9aff1c20e6f7c4e6e10d8cb37bd3e4d4e2eca741e1ca"
+    },
+    {
+      "file": "tests/simulation/phase05d-eleven-cities-sample.json",
+      "sha256": "50e5b36396341ae779720bacc6c9c30c2e654337612928f7059dadf1afa9c7fe"
+    },
+    {
+      "file": "tests/simulation/phase05d-eleven-cities-verification.json",
+      "sha256": "55cfc677141f4b5c56f3616fe6db173150ad6a958043605743a58a701857f554"
+    },
+    {
+      "file": "tests/simulation/phase05d-new-city-starts-sample.json",
+      "sha256": "3ed237fd1d79cb5bd58940372515affcb7782eb09e7223c3eeaf9de388799a9a"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/aggressive.tar.gz",
+      "sha256": "fbea70db74e7b9c39ab58f35474f401e12eb4dff8d50d1857bb0767c9312c9b4"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/attempts.jsonl",
+      "sha256": "28d7b167110e34454b2c620df1a9f9d69b2bac14d00aaa20e8bdf38d2d87faca"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/cautious.tar.gz",
+      "sha256": "92371dd1a61224ad28f2805859ab32586063ba29ffcc5c339842f40cd3a02af4"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/execution-complete.json",
+      "sha256": "1e054ccb35060eb83e492eb6379eeb816074c79e895c431b495aaeb5a7f32b6b"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/manifest.json",
+      "sha256": "60966613b3ef89e6dd7d77c60d6f33cbcdd5a35acf630138b6de596d945e2775"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/mechanism-checks.json",
+      "sha256": "7f7910fc5f5709269813cc10858c767428376b03b13552607aec657b7207a900"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/normal.tar.gz",
+      "sha256": "0fd6031b1c9bbabd769a80a64e6a8f10e9d1bd6aa9486bb4e24e80ac5cf91547"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/observer-parity.json",
+      "sha256": "5886a925ec092d69a8405711fcf0443b19ad2d185a04e2e4af5e528fec206142"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/optimized.tar.gz",
+      "sha256": "918ab87935534273c32322aee731d69407e7b0014ef8928eb7275ea648733774"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/originals-verification.json",
+      "sha256": "6b08a222a7bf664b245173477e4e3e43beb55c209a7c4e3f1e2d1ab10a5a2349"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/pilot-complete.json",
+      "sha256": "fe96b0c819f0fed2d3e884ec6f0ce89f8fd5a5bbfb8c87eb5a908f573f32ceaa"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/provenance.json",
+      "sha256": "3b7e7f29f8ea0c61913f190bcb34f14fe9cfc20277336409adf8bd8cc4b2bf44"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/reconciled-complete.json",
+      "sha256": "432452efd7660b63ad8601364a3a0e4ba322035ec72e46d12e6651a200a765a9"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/recovery20.tar.gz",
+      "sha256": "6581a229083b0d0d85d94cb41d4a16d2daf130d95653e793e28731d9f2c90149"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/regressions.json",
+      "sha256": "eef7ea8a3c46ed4bb1d39d8024ec3a155998ba5453eb8932638ed82ad43df077"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/remote.tar.gz",
+      "sha256": "7595136e08504e14b7fb9f4bf6b6a918a0439dbac66eeac8eaccd9759cc3a0ae"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/results-manifest.json",
+      "sha256": "04059cec590677d50830be887fab3b3090f6f3612db95e81f8b0c39d3c98e541"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/retry-validation.json",
+      "sha256": "8fd7747f85d33cf3b62486078e7a94c57eed220ed55492c40686915af4465abd"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/summary.json",
+      "sha256": "59045eb9ee0258c630306efe5b370876cbba17737d16c409110bbe1788bb3070"
+    },
+    {
+      "file": "tests/simulation/phase05f-browser.json",
+      "sha256": "94a2da5a2f25dc30b26aaf7258c9af980623162cfa566c783a0585fc81a8da00"
+    },
+    {
+      "file": "tests/simulation/phase05f-final-verification.json",
+      "sha256": "757a7a762cb9240b652de4966546e4b34f5eda4d3b71ba16a4e89c0657261dbb"
+    },
+    {
+      "file": "tests/simulation/phase05f-historical.json",
+      "sha256": "49d1e05278257c405676583e467b8da89371f44bba6105ae2f48e91003601ba5"
+    },
+    {
+      "file": "tests/simulation/phase05f-regressions.json",
+      "sha256": "1a964daeede9c812d2a5010ea4acd508b3dc1057d7639073f5becf2814129272"
+    },
+    {
+      "file": "tests/simulation/phase05g-browser.json",
+      "sha256": "afcdc713527996308d9dfb0316c6269cbeffc25a1f5d802c28f70fe54b6f8eb9"
+    },
+    {
+      "file": "tests/simulation/phase05g-final-verification.json",
+      "sha256": "ed17b02f71d131431cde5ee8effe0becfff56add88a06a0590561fbcc5c14905"
+    },
+    {
+      "file": "tests/simulation/phase05g-historical.json",
+      "sha256": "1d3f7ab01230ca38cbafc8d392ad6fe73bf0ca9837c0b2110ef44ded9331bfb9"
+    },
+    {
+      "file": "tests/simulation/phase05g-regressions.json",
+      "sha256": "3f126b32fbd4b42bf4f5c44a67a3e65fe1333fdc84ee2c7c11d17cba7f32f742"
+    },
+    {
+      "file": "tests/simulation/phase1-results.json.gz",
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199"
+    },
+    {
+      "file": "tests/simulation/phase15-results.json.gz",
+      "sha256": "a670305fcfee7bcacfe41e4ab39d8756ff4911e2d5de3e34744c5cd45932921b"
+    },
+    {
+      "file": "tests/simulation/phase15-summary.json",
+      "sha256": "5593ece79cb04b116166c9257abe4cd7fbdbdf6d5bd62b9e5bdaae13a8701099"
+    },
+    {
+      "file": "tests/simulation/phase15a-results.json",
+      "sha256": "f24453f36354bd2a3a8ec2cc224d199a42f281e8d43579ae0f3e44be81d675b8"
+    },
+    {
+      "file": "tests/simulation/phase15b-results.json.gz",
+      "sha256": "f23436a896680956bee4f627f793d73ef50ae30d2cbd875196ee5162eb5edb18"
+    },
+    {
+      "file": "tests/simulation/phase15b-summary.json",
+      "sha256": "9c180a8bcd95f00697fd5b601915f7d3346541b68886a7d28702a759c9f70a37"
+    },
+    {
+      "file": "tests/simulation/phase15c-results.json",
+      "sha256": "8631e5e19abc77294e9ae64eae5f3e54056845411f720269cf26b5c3d432c9e5"
+    },
+    {
+      "file": "tests/simulation/phase15d-results.json.gz",
+      "sha256": "b85553b6fe63ef953a9819282230e60619957da62d102eb52ed9bb20116b1f16"
+    },
+    {
+      "file": "tests/simulation/phase15d-summary.json",
+      "sha256": "869a61192910a9528943243d335abb952870da1ae5e5810faab491ac17a5e0d3"
+    },
+    {
+      "file": "tests/simulation/phase15e-regressions.json",
+      "sha256": "cbbac3dab76ecfa603cd1f553d22b06ff14c5df8c3a0b5266e53d456a7e84847"
+    },
+    {
+      "file": "tests/simulation/phase15e-results.json.gz",
+      "sha256": "fd9267609cb9af83c75c0310a08af7740c663ffd37423d46e34d34f08e154426"
+    },
+    {
+      "file": "tests/simulation/phase15e-summary.json",
+      "sha256": "6ccf0b48a86e06335f20d3545b8a6179436f5dcc088b7ac9987df8349b592af4"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/aggressive.tar.gz",
+      "sha256": "e5eb252749e06fc5103b9300d586f6de67a7df67654586ea1ddd15bc2adcacd0"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/attempts.jsonl",
+      "sha256": "03180671a3c6f16ff755834333e8ec65612b411c81581a3bdeb8ad11cac1dc0e"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/cautious.tar.gz",
+      "sha256": "deecb52b6932ccb3ffcb48b4634c16e432df6fa2a110b1c6ccc25449d5b22ee2"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/delivery.tar.gz",
+      "sha256": "b5afe2ecc76c660e8c7d04d0a562562009ec048b0f21a0e588b8eb9c86ef2c76"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/manifest.json",
+      "sha256": "8cad32cfbedf635477a6062172f73ab349fcbe0b51b838a2568f778f690d3980"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/normal.tar.gz",
+      "sha256": "7b7f572997c9bd57233e5fbdec273f764041d4e7f4bb474502191fc96837ec6b"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/optimized.tar.gz",
+      "sha256": "2c5416cbcd6800c0e6faa9f3d19481511d97d6417b2b6314bf56e868f5c71719"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery10.tar.gz",
+      "sha256": "a37bc574fe36939acb57896813cda0955eb1506ffb7995f59d4983b2222f7d9b"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery20.tar.gz",
+      "sha256": "63ef4dd32baaddc1accf28b58a2590ae1bd1a0c37179f258c68f2d63814b33ab"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery30.tar.gz",
+      "sha256": "0af675a4e2e72ce6725801c1d59fc30a47b43b06c6aa664523f011a2b29b3a7e"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery5.tar.gz",
+      "sha256": "d45b21828d7cf55e70290d937df04e27d83c6782cab4bb40df6560e25ff17173"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/results-manifest.json",
+      "sha256": "b81ccbbf629a559a4cb4a2513989c75fd4b367e4b983459ad5c7389840d83748"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/summary.json",
+      "sha256": "629199d11af9786fd269b3564898b4db0cfb1dbb22adb8afd16d1ae5345539b0"
+    },
+    {
+      "file": "tests/simulation/results.json.gz",
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199"
+    },
+    {
+      "file": "tests/simulation/summary-phase1.json",
+      "sha256": "a695d8cff2edfa5b59ef272da29261439bd70d218709232797a390088701e81d"
+    },
+    {
+      "file": "tests/simulation/summary.json",
+      "sha256": "7a635b8f670f67487b90312b99cc368f91a4d9a0a3dad319c523fcd3475ecc6a"
+    }
+  ],
+  "currentRegressionCommands": 16,
+  "prototypeMechanismGroups": 10,
+  "crossMechanicModels": 4,
+  "distinctCases": 288,
+  "mainPilotReplays": 24,
+  "firstAttemptControlExecutions": 12,
+  "completedFullExecutions": 324,
+  "technicalWorkerAborts": 4,
+  "controlledMarketTrajectories": 16,
+  "controlledTrajectoryDays": 2160,
+  "controlledRouteFixtures": 36,
+  "controlledRouteJourneys": 864,
+  "browserChecksRun": false,
+  "historicalSnapshotTestsReclassified": false,
+  "fixtureCorrections": [
+    {
+      "check": "regional-safety-checks.cjs",
+      "initialFailure": "Compared reset JSON in same context after RNG had advanced",
+      "correction": "Independent same-seed same-model context, exact assertions retained"
+    },
+    {
+      "check": "regional-safety-checks.cjs",
+      "initialFailure": "Read quote.revenue instead of existing quote.price",
+      "correction": "Use actual API field, expected 2320 unchanged"
+    }
+  ]
+}
