@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "rostock-1350.png",
+      "encoded": "rostock-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4101629,
+      "encodedBytes": 2895800,
+      "sourceSHA256": "fd65d10c5f6015243105788f22c136aeb78e58fbd52b4433bc15a36cadf63d73",
+      "encodedSHA256": "881d5f5792c50d9422ba62337d102d2c455aa1af304a4eb509ae502b136f3e61",
+      "decodedRGBA256": "ee204831371ed795a921799edfcaeadb362cc4b5d91c6779c7f548e878db90a6",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

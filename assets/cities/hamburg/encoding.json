@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "hamburg-1350.png",
+      "encoded": "hamburg-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 3951836,
+      "encodedBytes": 2809664,
+      "sourceSHA256": "bbe41db9c8a5e62de86c5e75f2c92f7dc643114560a73fa986537cd676d74aca",
+      "encodedSHA256": "67a5cdc73acb1959d6d30c5c8fb538663013e7f1b3b6d0db7ba0211486beb55d",
+      "decodedRGBA256": "b8d63b638bcdea323d760835ebb5c1683a3abc2ddeb0944c9fc2a8f90f1d20b7",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}
