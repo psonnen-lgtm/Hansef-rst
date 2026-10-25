@@ -19,7 +19,7 @@ const CityLife=(()=>{
   {id:'market-merchant',route:[[392,246],[411,254],[429,260],[447,266]],speed:6,phase:7,coat:'#7e483d',scale:.82},
   {id:'council-courier',route:[[708,270],[725,284],[741,297]],speed:8,phase:14,coat:'#45605d',scale:.86},
   {id:'bath-citizen',route:[[175,344],[204,354],[236,363]],speed:5,phase:32,coat:'#7d7043',scale:.9},
-  {id:'church-monk',route:[[301,192],[318,214],[332,237]],speed:5,phase:18,coat:'#554b43',scale:.8},
+  {id:'church-monk',route:[[195,367],[225,377],[249,386]],speed:5,phase:18,coat:'#554b43',scale:.8},
   {id:'kontor-merchant',route:[[840,353],[858,366],[871,383]],speed:6,phase:5,coat:'#6c4e65',scale:.92},
   {id:'barrel-carrier',route:[[368,455],[412,471],[452,484]],speed:7,phase:8,coat:'#3e6661',scale:1.05,load:true},
   {id:'quay-worker',route:[[542,490],[578,510],[618,520]],speed:6,phase:29,coat:'#86613e',scale:1.05,load:true},
