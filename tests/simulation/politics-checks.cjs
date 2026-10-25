@@ -9,7 +9,10 @@ function cycle(g,city=g.eval('s.city')){
  if(g.eval('s.city')!==city)sail(g,city);
  if(g.eval('s.politics.issued[s.city].supply>=politicalPeriod()||s.politics.issued[s.city].accord>=politicalPeriod()'))g.eval('advance(s.politics.since+(politicalPeriod()+1)*s.politics.rules.sectionDays-totalDay())');
  assert(g.eval("acceptPoliticalJob('supply')"));assert(g.eval("acceptPoliticalJob('accord')"));const supply=clean(g.eval("s.politics.jobs.find(q=>q.kind==='supply'&&q.city===s.city)")),accord=clean(g.eval("s.politics.jobs.find(q=>q.kind==='accord'&&q.city===s.city)"));
- sail(g,accord.partner);assert(g.eval('witnessPoliticalJob('+JSON.stringify(accord.id)+')'));g.eval("$('qty"+supply.good+"').value="+supply.n+";trade("+supply.good+",1)");assert(g.eval('ship().cargo['+supply.good+']')>=supply.n);sail(g,city);g.eval("$('qty"+supply.good+"').value="+supply.n+";trade("+supply.good+",-1)");assert(g.eval('s.politics.records.some(r=>r.id==='+JSON.stringify(supply.id)+')'));assert(g.eval('finishPoliticalAccord('+JSON.stringify(accord.id)+')'));g.eval('validate(s)');return {supply,accord};
+ sail(g,accord.partner);assert(g.eval('witnessPoliticalJob('+JSON.stringify(accord.id)+')'));
+ const sources=clean(g.eval('CITIES.map((_,c)=>c).filter(c=>c!=='+city+').sort((a,b)=>routeTravelDays(s.city,a,1)-routeTravelDays(s.city,b,1))'));sources.unshift(accord.partner);
+ for(const source of [...new Set(sources)]){const have=g.eval('ship().cargo['+supply.good+']||0');if(have>=supply.n)break;if(g.eval('s.city')!==source)sail(g,source);const n=Math.min(supply.n-have,g.eval('s.markets[s.city]['+supply.good+'].stock'));if(n>0)g.eval("$('qty"+supply.good+"').value="+n+";trade("+supply.good+",1)")}
+ assert(g.eval('ship().cargo['+supply.good+']')>=supply.n);sail(g,city);g.eval("$('qty"+supply.good+"').value="+supply.n+";trade("+supply.good+",-1)");assert(g.eval('s.politics.records.some(r=>r.id==='+JSON.stringify(supply.id)+')'));assert(g.eval('finishPoliticalAccord('+JSON.stringify(accord.id)+')'));g.eval('validate(s)');return {supply,accord};
 }
 function elect(g,city=g.eval('s.city')){for(let i=0;i<4;i++)cycle(g,city);assert(g.eval('mayorQuote().willWin'));assert(g.eval('runMayorElection()'));assert.equal(g.eval('s.rank'),3)}
 function boot(stored={},fault=()=>false){
