@@ -2,10 +2,10 @@ const fs=require('fs'),vm=require('vm'),assert=require('node:assert/strict');
 const html=fs.readFileSync(__dirname+'/../Hansefuerst_0_4.html','utf8');let src=html.match(/<script>([\s\S]*?)<\/script>/)[1];src=src.slice(0,src.indexOf('try{let raw=localStorage.getItem(KEY)'));
 const nodes={},ctx={performance:{now:()=>100},setInterval(){},window:{addEventListener(){}},console,Date,Math,alert(){},confirm:()=>true,localStorage:{setItem(){}},document:{addEventListener(){},hasFocus:()=>true,hidden:false,getElementById(id){return nodes[id]??={value:1,innerHTML:'',classList:{remove(){},add(){}}}}}};vm.createContext(ctx);vm.runInContext(src,ctx);let checks=0;function test(name,code){assert.equal(vm.runInContext('(()=>{'+code+'})()',ctx),true,name);console.log('PASS '+name);checks++}
 vm.runInContext('render=()=>{};drawMap=()=>{};s=fresh("Ulf","Ulf");',ctx);
-test('fresh save validates','return migrate(s)?.v===10');
+test('fresh save validates','return migrate(s)?.v===11');
 test('invalid v3 rejected','return migrate({v:3})===null');
 test('negative gold rejected','let x=fresh("Ulf","Ulf");x.gold=-1;return migrate(x)===null');
-test('v3 assigns all ship locations','let x=fresh("Ulf","Ulf");x.v=3;delete x.shipyard;delete x.economy;delete x.storage;x.markets=x.markets.slice(0,5).map(c=>c.slice(0,7));x.warehouses=emptyWarehouses(5);x.city=2;delete x.ships[0].city;return migrate(x).ships[0].city===2');
+test('v3 assigns all ship locations','let x=fresh("Ulf","Ulf");x.v=3;delete x.politics;delete x.shipyard;delete x.economy;delete x.storage;x.markets=x.markets.slice(0,5).map(c=>c.slice(0,7));x.warehouses=emptyWarehouses(5);x.city=2;delete x.ships[0].city;return migrate(x).ships[0].city===2');
 test('legacy cargo has unknown cost','let x=migrate({version:1,ship:{cargo:{0:10}},markets:s.markets.slice(0,5).map(c=>c.slice(0,7))});return x&&x.ships[0].costs[0]===null');
 test('malformed cargo rejected','let x=fresh("Ulf","Ulf");x.ships[0].cargo={0:-1};return migrate(x)===null');
 test('credit does not grow with borrowing','s=fresh("Ulf","Ulf");let a=creditLimit();s.gold+=a;s.debt+=a;return creditLimit()===a&&creditLimit()-s.debt===0');

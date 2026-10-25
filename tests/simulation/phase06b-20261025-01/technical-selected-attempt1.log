@@ -1,0 +1,34 @@
+PASS V11 catalog reuses eleven concept profiles and exactly two rivals without economic privileges
+PASS first two ranks remain available; wealth reputation waiting and old global counts cannot grant office
+PASS letters are fixed per city period; open cancel reentry stale confirmation and quota do not duplicate
+PASS same-city and unknown goods cannot earn supply; foreign FIFO sale records once and consumes no extra cash
+PASS real controlled travel and market purchases fulfil a supply and a held council agreement
+PASS supplier sale and ordinary quest reward are atomic with the political receipt on write failure
+PASS expired supply and separate partial sales cannot create a service
+node:internal/assert/utils:77
+    throw err;
+    ^
+
+AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:
+
+  assert(g.eval('ship().cargo['+supply.good+']')>=supply.n)
+
+    at cycle (/workspace/Hansef-rst/tests/simulation/politics-checks.cjs:12:172)
+    at elect (/workspace/Hansef-rst/tests/simulation/politics-checks.cjs:14:61)
+    at /workspace/Hansef-rst/tests/simulation/politics-checks.cjs:41:72
+    at check (/workspace/Hansef-rst/tests/simulation/politics-checks.cjs:5:40)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/politics-checks.cjs:40:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19) {
+  generatedMessage: true,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: '==',
+  diff: 'simple'
+}
+
+Node.js v24.19.0

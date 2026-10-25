@@ -1,0 +1,3758 @@
+{
+  "kind": "saved_pre_title_events_only_no_engine_execution",
+  "cases": 208,
+  "journeysMin": 78,
+  "journeysMedian": 124.0,
+  "journeysMax": 438,
+  "localServicesMin": 15,
+  "localServicesMedian": 16.0,
+  "localServicesMax": 22,
+  "citiesVisitedMin": 4,
+  "rows": [
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 574,
+      "journeys": 162,
+      "purchases": 166,
+      "sales": 166,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 546,
+      "journeys": 162,
+      "purchases": 165,
+      "sales": 165,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 506,
+      "journeys": 151,
+      "purchases": 154,
+      "sales": 154,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 619,
+      "journeys": 171,
+      "purchases": 176,
+      "sales": 173,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 456,
+      "journeys": 124,
+      "purchases": 127,
+      "sales": 127,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 542,
+      "journeys": 141,
+      "purchases": 143,
+      "sales": 143,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 473,
+      "journeys": 134,
+      "purchases": 138,
+      "sales": 137,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 575,
+      "journeys": 164,
+      "purchases": 169,
+      "sales": 168,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1157,
+      "journeys": 107,
+      "purchases": 105,
+      "sales": 104,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1041,
+      "journeys": 94,
+      "purchases": 92,
+      "sales": 92,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 984,
+      "journeys": 90,
+      "purchases": 88,
+      "sales": 87,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1069,
+      "journeys": 98,
+      "purchases": 96,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 534,
+      "journeys": 145,
+      "purchases": 150,
+      "sales": 148,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 541,
+      "journeys": 156,
+      "purchases": 162,
+      "sales": 161,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 526,
+      "journeys": 154,
+      "purchases": 160,
+      "sales": 160,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 563,
+      "journeys": 162,
+      "purchases": 167,
+      "sales": 166,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1223,
+      "journeys": 372,
+      "purchases": 378,
+      "sales": 375,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1067,
+      "journeys": 328,
+      "purchases": 332,
+      "sales": 332,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1242,
+      "journeys": 395,
+      "purchases": 399,
+      "sales": 399,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1384,
+      "journeys": 432,
+      "purchases": 435,
+      "sales": 434,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 601,
+      "journeys": 146,
+      "purchases": 149,
+      "sales": 149,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 439,
+      "journeys": 122,
+      "purchases": 126,
+      "sales": 126,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 503,
+      "journeys": 142,
+      "purchases": 146,
+      "sales": 146,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 556,
+      "journeys": 165,
+      "purchases": 168,
+      "sales": 168,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 485,
+      "journeys": 121,
+      "purchases": 124,
+      "sales": 124,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 546,
+      "journeys": 123,
+      "purchases": 126,
+      "sales": 126,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 429,
+      "journeys": 112,
+      "purchases": 115,
+      "sales": 115,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 563,
+      "journeys": 151,
+      "purchases": 154,
+      "sales": 153,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 971,
+      "journeys": 91,
+      "purchases": 90,
+      "sales": 89,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 982,
+      "journeys": 88,
+      "purchases": 87,
+      "sales": 86,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1152,
+      "journeys": 103,
+      "purchases": 101,
+      "sales": 100,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 934,
+      "journeys": 99,
+      "purchases": 97,
+      "sales": 97,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 538,
+      "journeys": 144,
+      "purchases": 151,
+      "sales": 150,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 526,
+      "journeys": 146,
+      "purchases": 154,
+      "sales": 152,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 524,
+      "journeys": 145,
+      "purchases": 152,
+      "sales": 150,
+      "localServices": 21,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 585,
+      "journeys": 156,
+      "purchases": 163,
+      "sales": 162,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1123,
+      "journeys": 344,
+      "purchases": 348,
+      "sales": 348,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1067,
+      "journeys": 320,
+      "purchases": 327,
+      "sales": 323,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1071,
+      "journeys": 335,
+      "purchases": 339,
+      "sales": 339,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1133,
+      "journeys": 352,
+      "purchases": 355,
+      "sales": 355,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1140,
+      "journeys": 181,
+      "purchases": 186,
+      "sales": 186,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 945,
+      "journeys": 141,
+      "purchases": 146,
+      "sales": 146,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 761,
+      "journeys": 98,
+      "purchases": 102,
+      "sales": 102,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 906,
+      "journeys": 128,
+      "purchases": 131,
+      "sales": 131,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 886,
+      "journeys": 134,
+      "purchases": 142,
+      "sales": 140,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 874,
+      "journeys": 154,
+      "purchases": 160,
+      "sales": 160,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 855,
+      "journeys": 128,
+      "purchases": 138,
+      "sales": 133,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 707,
+      "journeys": 118,
+      "purchases": 122,
+      "sales": 122,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1238,
+      "journeys": 84,
+      "purchases": 81,
+      "sales": 81,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1243,
+      "journeys": 94,
+      "purchases": 91,
+      "sales": 91,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1169,
+      "journeys": 86,
+      "purchases": 85,
+      "sales": 84,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1189,
+      "journeys": 95,
+      "purchases": 93,
+      "sales": 93,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 925,
+      "journeys": 115,
+      "purchases": 122,
+      "sales": 121,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 804,
+      "journeys": 112,
+      "purchases": 118,
+      "sales": 118,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 798,
+      "journeys": 102,
+      "purchases": 109,
+      "sales": 108,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 816,
+      "journeys": 108,
+      "purchases": 114,
+      "sales": 113,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 2066,
+      "journeys": 212,
+      "purchases": 217,
+      "sales": 217,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 2154,
+      "journeys": 237,
+      "purchases": 242,
+      "sales": 241,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 550,
+      "journeys": 160,
+      "purchases": 165,
+      "sales": 162,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 537,
+      "journeys": 153,
+      "purchases": 157,
+      "sales": 156,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 485,
+      "journeys": 148,
+      "purchases": 153,
+      "sales": 152,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 547,
+      "journeys": 168,
+      "purchases": 171,
+      "sales": 170,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 463,
+      "journeys": 128,
+      "purchases": 128,
+      "sales": 127,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 477,
+      "journeys": 133,
+      "purchases": 135,
+      "sales": 135,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 371,
+      "journeys": 107,
+      "purchases": 109,
+      "sales": 109,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 529,
+      "journeys": 154,
+      "purchases": 155,
+      "sales": 155,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1057,
+      "journeys": 97,
+      "purchases": 93,
+      "sales": 93,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 885,
+      "journeys": 92,
+      "purchases": 89,
+      "sales": 89,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1089,
+      "journeys": 98,
+      "purchases": 96,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1065,
+      "journeys": 100,
+      "purchases": 98,
+      "sales": 98,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 546,
+      "journeys": 148,
+      "purchases": 152,
+      "sales": 150,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 531,
+      "journeys": 156,
+      "purchases": 161,
+      "sales": 161,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 522,
+      "journeys": 155,
+      "purchases": 162,
+      "sales": 160,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 529,
+      "journeys": 148,
+      "purchases": 151,
+      "sales": 151,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1193,
+      "journeys": 360,
+      "purchases": 363,
+      "sales": 363,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1137,
+      "journeys": 343,
+      "purchases": 347,
+      "sales": 347,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1061,
+      "journeys": 331,
+      "purchases": 334,
+      "sales": 334,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1368,
+      "journeys": 438,
+      "purchases": 441,
+      "sales": 441,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 546,
+      "journeys": 166,
+      "purchases": 171,
+      "sales": 170,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 586,
+      "journeys": 181,
+      "purchases": 186,
+      "sales": 185,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 519,
+      "journeys": 155,
+      "purchases": 159,
+      "sales": 159,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 580,
+      "journeys": 177,
+      "purchases": 180,
+      "sales": 180,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 503,
+      "journeys": 138,
+      "purchases": 141,
+      "sales": 141,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 567,
+      "journeys": 145,
+      "purchases": 148,
+      "sales": 148,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 520,
+      "journeys": 132,
+      "purchases": 135,
+      "sales": 135,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 511,
+      "journeys": 136,
+      "purchases": 139,
+      "sales": 139,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 832,
+      "journeys": 84,
+      "purchases": 83,
+      "sales": 82,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1031,
+      "journeys": 95,
+      "purchases": 93,
+      "sales": 93,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 938,
+      "journeys": 92,
+      "purchases": 91,
+      "sales": 90,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1021,
+      "journeys": 98,
+      "purchases": 98,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 514,
+      "journeys": 149,
+      "purchases": 155,
+      "sales": 155,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 554,
+      "journeys": 159,
+      "purchases": 164,
+      "sales": 164,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 521,
+      "journeys": 153,
+      "purchases": 159,
+      "sales": 158,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 599,
+      "journeys": 173,
+      "purchases": 180,
+      "sales": 178,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1057,
+      "journeys": 331,
+      "purchases": 336,
+      "sales": 335,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1257,
+      "journeys": 400,
+      "purchases": 402,
+      "sales": 402,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1179,
+      "journeys": 365,
+      "purchases": 368,
+      "sales": 368,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1181,
+      "journeys": 354,
+      "purchases": 357,
+      "sales": 357,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 536,
+      "journeys": 142,
+      "purchases": 145,
+      "sales": 145,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 536,
+      "journeys": 155,
+      "purchases": 161,
+      "sales": 159,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 526,
+      "journeys": 151,
+      "purchases": 154,
+      "sales": 154,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 567,
+      "journeys": 161,
+      "purchases": 166,
+      "sales": 165,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 513,
+      "journeys": 116,
+      "purchases": 121,
+      "sales": 119,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 524,
+      "journeys": 153,
+      "purchases": 162,
+      "sales": 153,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 424,
+      "journeys": 117,
+      "purchases": 120,
+      "sales": 120,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 583,
+      "journeys": 134,
+      "purchases": 138,
+      "sales": 137,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1011,
+      "journeys": 90,
+      "purchases": 88,
+      "sales": 88,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1138,
+      "journeys": 103,
+      "purchases": 101,
+      "sales": 100,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 994,
+      "journeys": 95,
+      "purchases": 95,
+      "sales": 93,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1108,
+      "journeys": 94,
+      "purchases": 92,
+      "sales": 92,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 514,
+      "journeys": 136,
+      "purchases": 143,
+      "sales": 141,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 539,
+      "journeys": 154,
+      "purchases": 157,
+      "sales": 157,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 563,
+      "journeys": 157,
+      "purchases": 164,
+      "sales": 163,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 519,
+      "journeys": 145,
+      "purchases": 151,
+      "sales": 151,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1133,
+      "journeys": 341,
+      "purchases": 345,
+      "sales": 344,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1175,
+      "journeys": 355,
+      "purchases": 357,
+      "sales": 357,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1316,
+      "journeys": 417,
+      "purchases": 422,
+      "sales": 420,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1267,
+      "journeys": 392,
+      "purchases": 396,
+      "sales": 396,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 614,
+      "journeys": 114,
+      "purchases": 117,
+      "sales": 117,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 649,
+      "journeys": 128,
+      "purchases": 131,
+      "sales": 131,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 620,
+      "journeys": 119,
+      "purchases": 122,
+      "sales": 122,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 660,
+      "journeys": 139,
+      "purchases": 142,
+      "sales": 142,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 552,
+      "journeys": 119,
+      "purchases": 122,
+      "sales": 122,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 615,
+      "journeys": 121,
+      "purchases": 125,
+      "sales": 125,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 510,
+      "journeys": 113,
+      "purchases": 116,
+      "sales": 116,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 563,
+      "journeys": 113,
+      "purchases": 118,
+      "sales": 116,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 963,
+      "journeys": 85,
+      "purchases": 83,
+      "sales": 83,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 962,
+      "journeys": 89,
+      "purchases": 87,
+      "sales": 86,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1014,
+      "journeys": 100,
+      "purchases": 100,
+      "sales": 98,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1159,
+      "journeys": 112,
+      "purchases": 112,
+      "sales": 110,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 604,
+      "journeys": 114,
+      "purchases": 120,
+      "sales": 119,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 657,
+      "journeys": 111,
+      "purchases": 116,
+      "sales": 116,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 611,
+      "journeys": 118,
+      "purchases": 122,
+      "sales": 122,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 610,
+      "journeys": 108,
+      "purchases": 113,
+      "sales": 113,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1750,
+      "journeys": 308,
+      "purchases": 312,
+      "sales": 312,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1668,
+      "journeys": 290,
+      "purchases": 293,
+      "sales": 293,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1672,
+      "journeys": 282,
+      "purchases": 284,
+      "sales": 284,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1382,
+      "journeys": 376,
+      "purchases": 381,
+      "sales": 378,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 878,
+      "journeys": 110,
+      "purchases": 114,
+      "sales": 114,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 867,
+      "journeys": 130,
+      "purchases": 134,
+      "sales": 133,
+      "localServices": 15,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 826,
+      "journeys": 109,
+      "purchases": 114,
+      "sales": 113,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 931,
+      "journeys": 119,
+      "purchases": 127,
+      "sales": 123,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 657,
+      "journeys": 102,
+      "purchases": 108,
+      "sales": 107,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 739,
+      "journeys": 113,
+      "purchases": 119,
+      "sales": 118,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 746,
+      "journeys": 111,
+      "purchases": 117,
+      "sales": 117,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 685,
+      "journeys": 109,
+      "purchases": 113,
+      "sales": 113,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1158,
+      "journeys": 84,
+      "purchases": 82,
+      "sales": 81,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1249,
+      "journeys": 95,
+      "purchases": 94,
+      "sales": 93,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1060,
+      "journeys": 83,
+      "purchases": 81,
+      "sales": 81,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1389,
+      "journeys": 103,
+      "purchases": 100,
+      "sales": 99,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 728,
+      "journeys": 90,
+      "purchases": 96,
+      "sales": 96,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 775,
+      "journeys": 103,
+      "purchases": 109,
+      "sales": 108,
+      "localServices": 19,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 751,
+      "journeys": 93,
+      "purchases": 100,
+      "sales": 99,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 773,
+      "journeys": 85,
+      "purchases": 93,
+      "sales": 91,
+      "localServices": 21,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 2123,
+      "journeys": 200,
+      "purchases": 204,
+      "sales": 204,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 700,
+      "journeys": 109,
+      "purchases": 113,
+      "sales": 112,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 632,
+      "journeys": 117,
+      "purchases": 122,
+      "sales": 121,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 729,
+      "journeys": 125,
+      "purchases": 128,
+      "sales": 128,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 951,
+      "journeys": 155,
+      "purchases": 160,
+      "sales": 160,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 658,
+      "journeys": 154,
+      "purchases": 157,
+      "sales": 157,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 585,
+      "journeys": 117,
+      "purchases": 121,
+      "sales": 121,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 626,
+      "journeys": 107,
+      "purchases": 110,
+      "sales": 110,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 610,
+      "journeys": 130,
+      "purchases": 133,
+      "sales": 133,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1026,
+      "journeys": 96,
+      "purchases": 94,
+      "sales": 94,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1027,
+      "journeys": 98,
+      "purchases": 97,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1172,
+      "journeys": 103,
+      "purchases": 102,
+      "sales": 101,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1015,
+      "journeys": 98,
+      "purchases": 97,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 631,
+      "journeys": 122,
+      "purchases": 128,
+      "sales": 128,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 636,
+      "journeys": 118,
+      "purchases": 125,
+      "sales": 124,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 634,
+      "journeys": 118,
+      "purchases": 123,
+      "sales": 123,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 703,
+      "journeys": 127,
+      "purchases": 132,
+      "sales": 132,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "wealth",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1874,
+      "journeys": 278,
+      "purchases": 281,
+      "sales": 281,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "wealth",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1703,
+      "journeys": 273,
+      "purchases": 277,
+      "sales": 276,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1792,
+      "journeys": 264,
+      "purchases": 268,
+      "sales": 268,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "wealth",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1968,
+      "journeys": 294,
+      "purchases": 300,
+      "sales": 298,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1107,
+      "journeys": 169,
+      "purchases": 174,
+      "sales": 173,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 4
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 851,
+      "journeys": 131,
+      "purchases": 135,
+      "sales": 135,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 811,
+      "journeys": 125,
+      "purchases": 130,
+      "sales": 128,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 931,
+      "journeys": 133,
+      "purchases": 137,
+      "sales": 137,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 676,
+      "journeys": 119,
+      "purchases": 125,
+      "sales": 124,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 639,
+      "journeys": 109,
+      "purchases": 114,
+      "sales": 113,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 623,
+      "journeys": 95,
+      "purchases": 101,
+      "sales": 100,
+      "localServices": 19,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 762,
+      "journeys": 104,
+      "purchases": 111,
+      "sales": 110,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1143,
+      "journeys": 94,
+      "purchases": 91,
+      "sales": 91,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1364,
+      "journeys": 104,
+      "purchases": 103,
+      "sales": 102,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1153,
+      "journeys": 87,
+      "purchases": 85,
+      "sales": 85,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1194,
+      "journeys": 90,
+      "purchases": 89,
+      "sales": 88,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 893,
+      "journeys": 124,
+      "purchases": 130,
+      "sales": 130,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 795,
+      "journeys": 113,
+      "purchases": 119,
+      "sales": 119,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 773,
+      "journeys": 108,
+      "purchases": 114,
+      "sales": 114,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 869,
+      "journeys": 137,
+      "purchases": 143,
+      "sales": 143,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "wealth",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 2163,
+      "journeys": 234,
+      "purchases": 238,
+      "sales": 238,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1361,
+      "journeys": 120,
+      "purchases": 124,
+      "sales": 124,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1118,
+      "journeys": 103,
+      "purchases": 108,
+      "sales": 105,
+      "localServices": 17,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1300,
+      "journeys": 123,
+      "purchases": 127,
+      "sales": 127,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1246,
+      "journeys": 105,
+      "purchases": 108,
+      "sales": 108,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1249,
+      "journeys": 110,
+      "purchases": 117,
+      "sales": 117,
+      "localServices": 22,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 959,
+      "journeys": 100,
+      "purchases": 105,
+      "sales": 105,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 980,
+      "journeys": 106,
+      "purchases": 112,
+      "sales": 110,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 5
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1008,
+      "journeys": 91,
+      "purchases": 95,
+      "sales": 95,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "remote",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1143,
+      "journeys": 78,
+      "purchases": 76,
+      "sales": 76,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "remote",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1020,
+      "journeys": 84,
+      "purchases": 81,
+      "sales": 80,
+      "localServices": 15,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "remote",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1381,
+      "journeys": 101,
+      "purchases": 102,
+      "sales": 99,
+      "localServices": 18,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "remote",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1354,
+      "journeys": 98,
+      "purchases": 96,
+      "sales": 96,
+      "localServices": 16,
+      "leagueServices": 1,
+      "citiesVisited": 11
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "supply",
+        "seed": 91001,
+        "gold": 5000
+      },
+      "day": 1250,
+      "journeys": 102,
+      "purchases": 107,
+      "sales": 107,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "supply",
+        "seed": 91002,
+        "gold": 5000
+      },
+      "day": 1124,
+      "journeys": 92,
+      "purchases": 97,
+      "sales": 97,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "supply",
+        "seed": 91003,
+        "gold": 2500
+      },
+      "day": 1058,
+      "journeys": 83,
+      "purchases": 88,
+      "sales": 88,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 6
+    },
+    {
+      "task": {
+        "mode": "main",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "supply",
+        "seed": 91004,
+        "gold": 2500
+      },
+      "day": 1059,
+      "journeys": 85,
+      "purchases": 89,
+      "sales": 89,
+      "localServices": 20,
+      "leagueServices": 1,
+      "citiesVisited": 7
+    }
+  ],
+  "limit": "These are bot actions, not human play hours or a fun measurement."
+}

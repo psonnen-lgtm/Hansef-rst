@@ -1,0 +1,76 @@
+{
+  "source": "saved 88-case pilot only",
+  "groups": [
+    {
+      "sectionDays": 30,
+      "mayorWealth": 45000,
+      "cases": 22,
+      "mayors": 22,
+      "eld": 22,
+      "blocked": 0,
+      "mayorDaysMedian": 237.5,
+      "eldDaysMedian": 669.0,
+      "eldDaysMin": 426,
+      "eldDaysMax": 1366,
+      "servicesMedian": 16.5,
+      "wealthMedian": 673767.5
+    },
+    {
+      "sectionDays": 30,
+      "mayorWealth": 85000,
+      "cases": 22,
+      "mayors": 22,
+      "eld": 22,
+      "blocked": 0,
+      "mayorDaysMedian": 405.0,
+      "eldDaysMedian": 661.0,
+      "eldDaysMin": 439,
+      "eldDaysMax": 1484,
+      "servicesMedian": 22.5,
+      "wealthMedian": 728597.0
+    },
+    {
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "cases": 22,
+      "mayors": 22,
+      "eld": 22,
+      "blocked": 0,
+      "mayorDaysMedian": 269.0,
+      "eldDaysMedian": 626.0,
+      "eldDaysMin": 452,
+      "eldDaysMax": 1364,
+      "servicesMedian": 16.0,
+      "wealthMedian": 717729.0
+    },
+    {
+      "sectionDays": 60,
+      "mayorWealth": 85000,
+      "cases": 22,
+      "mayors": 22,
+      "eld": 22,
+      "blocked": 0,
+      "mayorDaysMedian": 381.0,
+      "eldDaysMedian": 621.0,
+      "eldDaysMin": 452,
+      "eldDaysMax": 1264,
+      "servicesMedian": 19.0,
+      "wealthMedian": 736184.0
+    }
+  ],
+  "selected": {
+    "sectionDays": 60,
+    "mayorWealth": 45000
+  },
+  "reason": "Earlier municipal access without repeating many deeds while accumulating 85000; 60-day sections leave actual economic play between limited civic offers. No monetary privilege. All four achieved both titles in these 22-case samples.",
+  "limits": [
+    "one shared pilot seed and two policies, not city balance proof",
+    "20-30 human hours unmeasured",
+    "different actions alter later RNG; time is not monotonic in section length",
+    "Venlo/Nowgorod absolute office access still later than Luebeck"
+  ],
+  "fullPilotCases": 88,
+  "exactPilotReplays": 12,
+  "pilotFullExecutions": 100,
+  "mainPlannedCases": 220
+}

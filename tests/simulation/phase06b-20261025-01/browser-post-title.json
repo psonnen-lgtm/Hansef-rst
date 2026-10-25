@@ -1,0 +1,16 @@
+{
+  "kind": "one_funded_post_title_browser_fixture_not_full_career",
+  "gameCommit": "6d1399c8f974f3b51835fc28f73928620dbb20cc",
+  "gameSHA256": "778bcbaf6b1c2cc98bd69b7cd52fd2bbfbcb1fdc9b5c158448f6c907fd7bb85c",
+  "browser": "154.0.8037.57",
+  "viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "passed": true,
+  "actualResignationClick": true,
+  "actualClockExpiryAndReload": true,
+  "earliestCertificateRetained": true,
+  "eldermanTitleRetained": true,
+  "errors": []
+}

@@ -1,0 +1,2002 @@
+{
+  "base": "eef7eb3ebbe9abd5e68936496ea6d19dc17813ab",
+  "identity": {
+    "gameCommit": "e5dd699fede2d5db156027e355bbadbff3de110c",
+    "sourceCommit": "76019689bcd2c578b325863816ee4b6e823e3055",
+    "gameSHA256": "e6563f83f689cbd4a95ad61a1e8e485ecc78396cfea7af70095cb22e010ce9fa",
+    "files": {
+      "phase06b-run.cjs": "66183caa514c39361c3b739f249089c21cdb32fc8a04e9a3f5cc12b4aa59ec39",
+      "politics-strategy.js": "d2c00e9a052ea46928ad57fe11468d70b25b8abdf56f2cece292aa8f8b4a580d",
+      "headless.cjs": "5d6526a38b8f303c8a357b2a2f8be3e1ba451f3cf956324c64d319c22cdfc2c0",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+    }
+  },
+  "mode": "main",
+  "tasks": [
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 0,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 1,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 2,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 3,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 4,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 5,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 6,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 7,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 8,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 9,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "wealth",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "wealth",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "wealth",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "wealth",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "early",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "early",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "early",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "early",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "supply",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "supply",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "supply",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "supply",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "remote",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "remote",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "remote",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "remote",
+      "seed": 91004,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "balanced",
+      "seed": 91001,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "balanced",
+      "seed": 91002,
+      "gold": 5000
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "balanced",
+      "seed": 91003,
+      "gold": 2500
+    },
+    {
+      "mode": "main",
+      "sectionDays": 60,
+      "mayorWealth": 45000,
+      "city": 10,
+      "behavior": "balanced",
+      "seed": 91004,
+      "gold": 2500
+    }
+  ],
+  "limits": {
+    "days": 2160,
+    "decisions": 1200
+  },
+  "note": "controlled test starts only; no production start selector; two budgets; no historical rerun"
+}

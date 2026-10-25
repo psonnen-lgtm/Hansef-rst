@@ -1,0 +1,84 @@
+{
+  "date": "2026-10-25",
+  "branch": "feature/phase06b-politics-career",
+  "baseCommit": "eef7eb3ebbe9abd5e68936496ea6d19dc17813ab",
+  "pilotGameCommit": "d0d4ff697ab21034a5aafe5120ad0d7f76ce6fe9",
+  "mainGameCommit": "e5dd699fede2d5db156027e355bbadbff3de110c",
+  "finalTestedGameCommit": "6d1399c8f974f3b51835fc28f73928620dbb20cc",
+  "finalGameSHA256": "778bcbaf6b1c2cc98bd69b7cd52fd2bbfbcb1fdc9b5c158448f6c907fd7bb85c",
+  "selectedRules": {
+    "sectionDays": 60,
+    "mayorWealth": 45000
+  },
+  "distinctFullCases": 308,
+  "pilotCases": 88,
+  "mainCases": 220,
+  "exactPilotReplays": 12,
+  "fullExecutions": 320,
+  "initialStartupAbortsBeforeFirstStep": 4,
+  "shortControllerCases": 6,
+  "finalTechnicalGroups": 22,
+  "browserVersion": "154.0.8037.57",
+  "existingRegressionPrograms": 8,
+  "regressionGameCommit": "d6d879f30f4ad6774c8e364253830ea803a764be",
+  "gameDecisionFunctionsPreservedFromMain": 162,
+  "mainEldermann": 208,
+  "mainMayor": 211,
+  "mainFinancialBlocks": 0,
+  "oldEndpointsMigrated": 500,
+  "historicalFilesUnchanged": 1486,
+  "savedCashLedgersPassed": 308,
+  "completeHumanPlaytests": 0,
+  "SafariOrPhysicalAppleTests": 0,
+  "screenshotHashes": {
+    "2026-10-25_0.6b_ratskammer-390.png": "9716e64150c72105b47b712b44f36b968d7eaf6750bc58e7be6db1dd5e23e6d3",
+    "2026-10-25_0.6b_buergermeister-390.png": "09ea8e38ee602f848399ae45ef3e74348a0be4404810a4877998e47bce2ddd89",
+    "2026-10-25_0.6b_hanseversammlung-390.png": "918b362f2c43d2b5aa0af665906523f13d3edf6027cb52da272c745c305fe1e0",
+    "2026-10-25_0.6b_ratskammer-820.png": "c39bf649ae92cd4f6748744ebd0dee8217a9f940b33e7fd7e872508d50d612e5",
+    "2026-10-25_0.6b_buergermeister-820.png": "2da2b8e68bd1e3bfcf15fe2b85b0a7114be449beacf36a3e02ce90d7f9d57cc8",
+    "2026-10-25_0.6b_hanseversammlung-820.png": "cf76b1565622f129581aaba27ce62f23cdd26db3c45901c989238b6f37116e67",
+    "2026-10-25_0.6b_ratskammer-1280.png": "c630dd1266a20dede3d72632e484924d6e41db11d450d9886d51726283efc340",
+    "2026-10-25_0.6b_buergermeister-1280.png": "e298b3f12460f657601f5f83de9ab1f6106df5639b5859920205bfe772dba169",
+    "2026-10-25_0.6b_hanseversammlung-1280.png": "2e7b4dd0a08d388a5269a065626406735912a6fab7bda008226528d9b158d07e"
+  },
+  "limitations": [
+    "bots and test-adapter starts, not production free start selection",
+    "same seeds are paired conditions, actions alter later RNG",
+    "2160-day horizon, final trip may exceed",
+    "wealth is book value, trade profit before voyage costs",
+    "no conversion to human hours",
+    "rivals are deterministic factions, no separate trading AI",
+    "political award inputs are stored historical outputs, not rerun careers"
+  ],
+  "additionalIntegrationFixtures": [
+    "concurrent term/ship/harbor work",
+    "post-Eldermann renewed office and valid certificate"
+  ],
+  "layoutBrowserCommit": "4b8cc100d4e8e1ee0cd1e33549ca966617048a02",
+  "finalPostTitleBrowserCommit": "6d1399c8f974f3b51835fc28f73928620dbb20cc",
+  "finalPostTitleBrowserViewport": {
+    "width": 390,
+    "height": 844
+  },
+  "browserGroups": {
+    "layoutAndImportFaults": 6,
+    "postTitle": 1
+  },
+  "postTitleCorrection": "Keep earliest proven tenure so a renewed office cannot invalidate Eldermann certificate",
+  "savedFullCasesOutsideCorrectedBranch": 308,
+  "finalSourcePreservation": "ui-and-tenure-preservation.json",
+  "historicalMigrationCommit": "d6d879f30f4ad6774c8e364253830ea803a764be",
+  "activityAtTitle": {
+    "journeysMin": 78,
+    "journeysMedian": 124.0,
+    "journeysMax": 438,
+    "localServicesMin": 15,
+    "localServicesMedian": 16.0,
+    "localServicesMax": 22
+  },
+  "layoutBrowserGroups": 6,
+  "targetedPostTitleBrowserGroups": 1,
+  "localDocumentLinksChecked": 128,
+  "baselineDefaultDistAbsent": true,
+  "historicalFilesVerifiedAgainAtHandoff": 1486
+}

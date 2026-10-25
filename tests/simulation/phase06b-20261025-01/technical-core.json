@@ -1,0 +1,265 @@
+{
+  "kind": "focused_actual_rule_fixtures_not_full_careers",
+  "gameSHA256": "215a1a85961445f218abdfb31506a782fc1528b9688a0c9f7e45c235fd9f16fb",
+  "checks": [
+    {
+      "name": "V11 catalog reuses eleven concept profiles and exactly two rivals without economic privileges",
+      "passed": true,
+      "evidence": {
+        "cities": 11,
+        "rivals": 22,
+        "version": 11
+      }
+    },
+    {
+      "name": "first two ranks remain available; wealth reputation waiting and old global counts cannot grant office",
+      "passed": true,
+      "evidence": {
+        "rank": 2,
+        "noInventedServices": true
+      }
+    },
+    {
+      "name": "letters are fixed per city period; open cancel reentry stale confirmation and quota do not duplicate",
+      "passed": true,
+      "evidence": {
+        "cancelAtomic": true,
+        "quotaAtomic": true,
+        "reentrySafe": true,
+        "staleRejected": true
+      }
+    },
+    {
+      "name": "same-city and unknown goods cannot earn supply; foreign FIFO sale records once and consumes no extra cash",
+      "passed": true,
+      "evidence": {
+        "origins": [
+          0,
+          null,
+          1
+        ],
+        "onlyForeignEarns": true,
+        "noBonusGold": true
+      }
+    },
+    {
+      "name": "real controlled travel and market purchases fulfil a supply and a held council agreement",
+      "passed": true,
+      "evidence": {
+        "actualTravel": true,
+        "actualBuySell": true,
+        "records": 2
+      }
+    },
+    {
+      "name": "supplier sale and ordinary quest reward are atomic with the political receipt on write failure",
+      "passed": true,
+      "evidence": {
+        "fullTradeRollback": true,
+        "questAndPoliticalReceiptOnce": true
+      }
+    },
+    {
+      "name": "expired supply and separate partial sales cannot create a service",
+      "passed": true,
+      "evidence": {
+        "expiredNoReceipt": true,
+        "partialThreePlusThreeNoReceipt": true
+      }
+    },
+    {
+      "name": "all eleven mayoral challenges are reachable by actual controlled services without receipt injection",
+      "passed": true,
+      "evidence": [
+        {
+          "city": 0,
+          "score": 100,
+          "day": 486095,
+          "records": 8
+        },
+        {
+          "city": 1,
+          "score": 100,
+          "day": 486095,
+          "records": 8
+        },
+        {
+          "city": 2,
+          "score": 100,
+          "day": 486095,
+          "records": 8
+        },
+        {
+          "city": 3,
+          "score": 100,
+          "day": 486095,
+          "records": 8
+        },
+        {
+          "city": 4,
+          "score": 100,
+          "day": 486095,
+          "records": 8
+        },
+        {
+          "city": 5,
+          "score": 100,
+          "day": 486099,
+          "records": 8
+        },
+        {
+          "city": 6,
+          "score": 100,
+          "day": 486111,
+          "records": 8
+        },
+        {
+          "city": 7,
+          "score": 100,
+          "day": 486101,
+          "records": 8
+        },
+        {
+          "city": 8,
+          "score": 100,
+          "day": 486105,
+          "records": 8
+        },
+        {
+          "city": 9,
+          "score": 100,
+          "day": 486141,
+          "records": 8
+        },
+        {
+          "city": 10,
+          "score": 100,
+          "day": 486105,
+          "records": 8
+        }
+      ]
+    },
+    {
+      "name": "deterministic loss preserves deeds and prevents repeated same-day candidacy",
+      "passed": true,
+      "evidence": {
+        "noRandomLoss": true,
+        "deedsKept": true,
+        "cooldown": true
+      }
+    },
+    {
+      "name": "an office stays at origin, has duties, ends without title loss and supports explicit later change",
+      "passed": true,
+      "evidence": {
+        "originStable": true,
+        "proofNeedsNewDeeds": true,
+        "singleOffice": true,
+        "titleKept": true
+      }
+    },
+    {
+      "name": "passive expiry without duties preserves rank but does not fabricate proven tenure",
+      "passed": true,
+      "evidence": {
+        "noAutomaticDemotion": true,
+        "noIdleTenure": true
+      }
+    },
+    {
+      "name": "political wealth subtracts rent once and stays unchanged on actual repayment; arrears bar candidacy",
+      "passed": true,
+      "evidence": {
+        "samePoliticalNetBeforeAfter": true,
+        "noDoubleBankDebt": true,
+        "noTitleLoss": true
+      }
+    },
+    {
+      "name": "cross-city seals need local deeds and explicit audience; full assembly needs tenure regions and agreement",
+      "passed": true,
+      "evidence": {
+        "fourCities": true,
+        "twoRegions": true,
+        "threeForeignPledges": true,
+        "actualAgreement": true,
+        "tradeAfterElderman": true
+      }
+    },
+    {
+      "name": "view and political actions introduce no game RNG draws",
+      "passed": true,
+      "evidence": {
+        "views": 30,
+        "draws": 0
+      }
+    },
+    {
+      "name": "V10 ranks and pending shipbuilding migrate with every old field unchanged and no invented civic history",
+      "passed": true,
+      "evidence": {
+        "ranks": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "oldFieldsExact": true,
+        "legacyOfficeNotInvented": true,
+        "pendingShipExact": true
+      }
+    },
+    {
+      "name": "original backup collision and load/import write failures keep original data and current politics",
+      "passed": true,
+      "evidence": {
+        "failurePoints": 3,
+        "collisionProtected": true
+      }
+    },
+    {
+      "name": "active political letters receipts office and contracts survive repeated V11 import exactly",
+      "passed": true,
+      "evidence": {
+        "imports": 5,
+        "allPoliticalFieldsExact": true
+      }
+    },
+    {
+      "name": "invalid schema duplicated receipts fabricated endorsements and ambiguous offices are rejected",
+      "passed": true,
+      "evidence": {
+        "rejected": 10
+      }
+    },
+    {
+      "name": "R1 bank storage sale and shipbuilding stay exact; no-politics seeded path preserves economy and RNG",
+      "passed": true,
+      "evidence": {
+        "unchangedFunctions": 18,
+        "normalizedHooks": 2,
+        "seededDays": 100,
+        "seeds": 2
+      }
+    },
+    {
+      "name": "V11 harbor aid crosses political term end atomically; its only eligibility change is the schema gate",
+      "passed": true,
+      "evidence": {
+        "singleDurableWrite": true,
+        "officeEndIncluded": true,
+        "wageOnce": true,
+        "titleKept": true
+      }
+    },
+    {
+      "name": "rent debt blocks an otherwise complete Hanse candidate without stripping old office titles",
+      "passed": true,
+      "evidence": {
+        "debtBlock": true,
+        "titleKept": true
+      }
+    }
+  ]
+}

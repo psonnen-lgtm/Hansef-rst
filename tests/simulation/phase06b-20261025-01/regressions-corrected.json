@@ -1,0 +1,20 @@
+[
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-capacity-checks.cjs",
+      "tests/simulation/phase06b-20261025-01/capacity.json"
+    ],
+    "exit": 0,
+    "output": "PASS same R1, catalogs and protected economic mechanisms; identical fresh RNG and 400-day no-rent path\nPASS 121 old city/good stocks and FIFO preserved exactly, v7 backup and repeated migration/load\nPASS overfull old warehouses allow withdrawal but not new deposits or retroactive rent\nPASS all eleven cities and eleven goods: exact limit succeeds, one extra fails, mixed goods and withdrawal\nPASS rent day boundary, at sea multi-day charges and city independence\nPASS size reduction never renews prepaid deadline; voluntary cancellation needs room; no refund\nPASS no cash accrues required rent debt, preserves goods and bank/debt, blocks storage, permits withdrawal\nPASS reopen and save/load do not duplicate fees; same-size rent is idempotent\nPASS rent and cargo operations roll back atomically on quota error\nPASS backup collision preserves original; backup/target failures stop migration and import\nPASS actual FileReader v7 import, current export roundtrip and invalid future schemas\nPASS paid transfer FIFO and immediate buy/store/load/sell cannot mint money or premium\nPASS liquidity aid and ship sale protections survive active or stopped rental\nPASS cancelled or quota-failed new game preserves unloaded old original\nPASS archived normal and remote v7 saves retain all old data through v8\nPASS rent confirmation cannot reenter or apply a stale offer, and cancellation spends nothing\nPASS year boundary and rent changes consume no random numbers beyond ordinary advance\n17 warehouse capacity groups passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-arrears-checks.cjs",
+      "tests/simulation/phase06b-20261025-01/arrears.json"
+    ],
+    "exit": 0,
+    "output": "PASS 230/300/140 fass without cash accrue exactly 1/2/0 gold per day\nPASS missing optional capacity ends, still needed capacity is assessed; voluntary paid extra remains\nPASS withdrawal reduces 2 to 1 to 0 required blocks; existing debt survives contract end\nPASS global entry/expansion lock, free withdrawal, real sale and unchanged origins\nPASS complete local repayment spends once and changes no bank, day, RNG or rental deadline\nPASS partial cash does not reduce debt; quota, cancellation and reentry cannot duplicate repayment\nPASS stale repayment confirmation preserves outside changes instead of paying stale amount\nPASS real 37-day sea journey charges all eleven warehouses exactly once each day\nPASS save/load, repeated actual imports and export serialization never create or reset debt\nPASS v8 to v9 preserves all old economic fields and active prepaid deadline, zero retroactive debt\nPASS v9 backup collisions and migration/import target failures preserve existing originals\nPASS old stocks above 350 remain intact, cannot grow, and cross into normal future billing without loss\nPASS finite whole debts after 100000 actual debt-clock days; no interest or fixed free-storage cap\nPASS negative, fractional, infinite, oversized or impossible debts and future schemas reject\nPASS harbor work and ship sale unchanged, no automatic bank loan or rent-debt repayment\nPASS all 121 city/good combinations preserve FIFO, prices and financial state while debt blocks only entry\nPASS protected R1, bank, credit, cargo book values, travel and FIFO source bodies stay exact\nPASS paying one city leaves other city arrears and global locks intact\nPASS maximum valid calendar still has finite exact debt growth without a free-storage ceiling\n19 arrears groups passed\n"
+  }
+]

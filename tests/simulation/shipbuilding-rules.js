@@ -11,7 +11,7 @@ function validateShipyard(x){
 }
 function migrateShipyard(raw){try{if(raw?.v===10){const x=JSON.parse(JSON.stringify(raw));validate(x);if(!Object.hasOwn(x.shipyard,'lastShipId'))x.shipyard.lastShipId=Math.ceil(Math.max(0,...x.ships.map(q=>q.id),...x.shipyard.orders.map(o=>o.shipId)));validate(x);return x}const x=migrateStorage(raw);if(!x||Object.hasOwn(x,'shipyard'))return null;x.v=10;x.shipyard=freshShipyard(x.ships);validate(x);return x}catch(e){return null}}
 function backupShipyardMigration(raw,imported=false,force=false){
- if(!force&&JSON.parse(raw).v===10&&Object.hasOwn(JSON.parse(raw).shipyard||{},'lastShipId'))return;
+ if(!force&&JSON.parse(raw).v>=10&&Object.hasOwn(JSON.parse(raw).shipyard||{},'lastShipId'))return;
  const base=KEY+'-shipyard-v10-'+(imported?'import':'startup')+'-backup';
  for(let i=0;i<100;i++){const key=base+(i?'-'+(i+1):''),existing=localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}
  throw Error('Keine freie Originalsicherung. Bitte zuerst Sicherungen exportieren.');
