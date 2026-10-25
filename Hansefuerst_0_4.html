@@ -282,7 +282,7 @@ function migrateFiveCitySave(raw){try{if(raw?.v>=6)return null;let x=JSON.parse(
  if(x.v<5){for(let city=0;city<5;city++)for(let j=LEGACY_GOOD_COUNT;j<GOOD_COUNT;j++){const range=NEW_GOOD_STOCKS[city][j-LEGACY_GOOD_COUNT];x.markets[city].push({price:GOODS[j][2],stock:(range[0]+range[1])/2})}for(const entry of Object.values(x.journal))entry.prices.push(...Array(GOOD_COUNT-LEGACY_GOOD_COUNT).fill(null));x.v=5}
  for(const q of x.ships){q.origins??={};q.bookCosts??={};for(const [j,n] of Object.entries(q.cargo)){q.origins[j]??=[{city:null,n}];if(q.costs[j]==null&&q.bookCosts[j]==null)q.bookCosts[j]=Math.min(GOODS[j][2],x.markets[q.city][j].price)}}validate(x);return x;}catch(e){return null}}
 // Production politics. Verbatim copy in the HTML; no financial privileges.
-const POLITICAL_RULES=Object.freeze({sectionDays:30,mayorWealth:45000,rep:55,services:6,periods:3,kinds:2,termDays:360,maxRecords:8192});
+const POLITICAL_RULES=Object.freeze({sectionDays:60,mayorWealth:45000,rep:55,services:6,periods:3,kinds:2,termDays:360,maxRecords:8192});
 let politicsBusy=false,politicalTradeStaging=false;
 function freshPolitics(now=1350*360+1,legacyRank=0){return {version:1,since:now,rules:{sectionDays:POLITICAL_RULES.sectionDays,mayorWealth:POLITICAL_RULES.mayorWealth},legacyRank,records:[],issued:Array.from({length:CITY_COUNT},()=>({supply:-1,accord:-1})),jobs:[],office:null,terms:Array(CITY_COUNT).fill(null),appointments:Array(CITY_COUNT).fill(null),nextElection:Array(CITY_COUNT).fill(0),endorsements:Array(CITY_COUNT).fill(null),league:null,leagueIssued:Array(CITY_COUNT).fill(-1),elderman:null}}
 function politicalPeriod(){return Math.floor((totalDay()-s.politics.since)/s.politics.rules.sectionDays)}

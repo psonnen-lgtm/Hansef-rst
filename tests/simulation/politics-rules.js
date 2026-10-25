@@ -1,5 +1,5 @@
 // Production politics. Verbatim copy in the HTML; no financial privileges.
-const POLITICAL_RULES=Object.freeze({sectionDays:30,mayorWealth:45000,rep:55,services:6,periods:3,kinds:2,termDays:360,maxRecords:8192});
+const POLITICAL_RULES=Object.freeze({sectionDays:60,mayorWealth:45000,rep:55,services:6,periods:3,kinds:2,termDays:360,maxRecords:8192});
 let politicsBusy=false,politicalTradeStaging=false;
 function freshPolitics(now=1350*360+1,legacyRank=0){return {version:1,since:now,rules:{sectionDays:POLITICAL_RULES.sectionDays,mayorWealth:POLITICAL_RULES.mayorWealth},legacyRank,records:[],issued:Array.from({length:CITY_COUNT},()=>({supply:-1,accord:-1})),jobs:[],office:null,terms:Array(CITY_COUNT).fill(null),appointments:Array(CITY_COUNT).fill(null),nextElection:Array(CITY_COUNT).fill(0),endorsements:Array(CITY_COUNT).fill(null),league:null,leagueIssued:Array(CITY_COUNT).fill(-1),elderman:null}}
 function politicalPeriod(){return Math.floor((totalDay()-s.politics.since)/s.politics.rules.sectionDays)}
