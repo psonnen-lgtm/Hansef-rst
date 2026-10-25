@@ -1,0 +1,12 @@
+{
+  "testedGameCommit": "2c3d0ad53eba0d931616b5e96a8fdcc78621d85c",
+  "previousFunctionalTestCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "onlyCityLayoutRegistryChanged": true,
+  "wholeRemainingHTMLExact": true,
+  "changedMarkers": [
+    "Stralsund/church",
+    "Stralsund/harbor",
+    "Danzig/church",
+    "Visby/bath"
+  ]
+}
