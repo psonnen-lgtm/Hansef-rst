@@ -348,17 +348,17 @@ function hanseQuote(){
  return {eligible:!reasons.length,reasons,home,external,cities,regions:regions.size};
 }
 function politicalAction(message,change){
- if(politicsBusy||!s)return false;const original=s,expected=JSON.stringify(s);let committed=false,events=[];politicsBusy=true;
- const oldEvent=Testlog.event;
+ if(politicsBusy||!s)return false;const original=s,expected=JSON.stringify(s);let committed=false,events=[],snapshots=[];politicsBusy=true;
+ const oldEvent=Testlog.event,oldSnapshot=Testlog.snapshot;
  try{
   if(message&&!confirm(message))return false;
   if(JSON.stringify(s)!==expected)return false;
-  s=JSON.parse(expected);Testlog.event=(type,details={})=>events.push({type,details});
+  s=JSON.parse(expected);Testlog.event=(type,details={})=>events.push({type,details});Testlog.snapshot=reason=>snapshots.push(reason);
   if(change()===false){s=original;return false}
   validate(s);localStorage.setItem(KEY,JSON.stringify(s));committed=true;
  }catch(e){if(!committed)s=original;notice('Politische Entscheidung nicht gespeichert. Deine Partie bleibt unverändert.');return false}
- finally{Testlog.event=oldEvent;politicsBusy=false}
- for(const event of events)oldEvent(event.type,event.details);render();hallView();return true;
+ finally{Testlog.event=oldEvent;Testlog.snapshot=oldSnapshot;politicsBusy=false}
+ for(const event of events)oldEvent(event.type,event.details);for(const reason of snapshots)oldSnapshot(reason);render();hallView();return true;
 }
 function acceptPoliticalJob(kind){
  const offer=politicalOffer(kind);if(!offer)return false;
