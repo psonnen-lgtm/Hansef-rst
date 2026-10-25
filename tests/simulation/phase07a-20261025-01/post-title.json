@@ -1,0 +1,12 @@
+{
+  "kind": "controlled_post_title_regression_not_full_game",
+  "gameCommit": "f31431575666daa1a7c79fdd468419c05f11392c",
+  "gameSHA256": "433840b60c5bc7cdcf664a53c1821a7c10e98a73c3534dade0f83901321a0977",
+  "expectBug": false,
+  "originalProofEnd": 486411,
+  "eldermanDay": 486411,
+  "acceptedVoluntaryExit": true,
+  "passiveLoadValid": true,
+  "afterPassiveProofEnd": 486411,
+  "passed": true
+}
