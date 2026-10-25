@@ -18,7 +18,6 @@
   "initialStartupAbortsBeforeFirstStep": 4,
   "shortControllerCases": 6,
   "finalTechnicalGroups": 22,
-  "finalBrowserGroups": 6,
   "browserVersion": "154.0.8037.57",
   "existingRegressionPrograms": 8,
   "regressionGameCommit": "d6d879f30f4ad6774c8e364253830ea803a764be",
@@ -76,5 +75,10 @@
     "localServicesMin": 15,
     "localServicesMedian": 16.0,
     "localServicesMax": 22
-  }
+  },
+  "layoutBrowserGroups": 6,
+  "targetedPostTitleBrowserGroups": 1,
+  "localDocumentLinksChecked": 128,
+  "baselineDefaultDistAbsent": true,
+  "historicalFilesVerifiedAgainAtHandoff": 1486
 }
