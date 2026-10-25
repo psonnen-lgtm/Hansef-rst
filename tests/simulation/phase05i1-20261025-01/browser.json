@@ -1,0 +1,85 @@
+{
+  "testedGameCommit": "a60415b6fed39455074496086d9ce5b127f1fc26",
+  "gameSHA256": "7d05e28fb55267a585dc91b476074a6e796c3572ffc90f540818145a84dd8c62",
+  "browser": "Chromium only, no Safari/physical iPhone or iPad",
+  "browserVersion": "154.0.8037.57",
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "exact v8 migration and old/new originals",
+        "real daily nonpayment assessment",
+        "reopening no charges",
+        "withdraw below free limit and real sale",
+        "downloaded debt-bearing export, repeated imports and reload",
+        "actual full repayment once",
+        "entry unlocked after repayment",
+        "real travel charges daily",
+        "no horizontal page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "exact v8 migration and old/new originals",
+        "real daily nonpayment assessment",
+        "reopening no charges",
+        "withdraw below free limit and real sale",
+        "downloaded debt-bearing export, repeated imports and reload",
+        "actual full repayment once",
+        "entry unlocked after repayment",
+        "real travel charges daily",
+        "no horizontal page overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "exact v8 migration and old/new originals",
+        "real daily nonpayment assessment",
+        "reopening no charges",
+        "withdraw below free limit and real sale",
+        "downloaded debt-bearing export, repeated imports and reload",
+        "actual full repayment once",
+        "entry unlocked after repayment",
+        "real travel charges daily",
+        "no horizontal page overflow"
+      ]
+    },
+    {
+      "check": "real v8 backup/target failure leaves original and retries safely",
+      "passed": true
+    },
+    {
+      "check": "real quota-failed repayment leaves gold/debt exact; safe retry pays once",
+      "passed": true
+    },
+    {
+      "check": "invalid huge debt fails load without overwriting original",
+      "passed": true
+    },
+    {
+      "check": "actual old v8 client rejects v9 without truncation",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-25_0.5i1_mietbuch-390.png": "b47cb656bb7e6933b56284d11b92525b2a9ecfe3918c6d06ea7a3ac50a9320af",
+    "2026-10-25_0.5i1_mietbuch-820.png": "8454016c2050e33201fdf536116266659f9056c954602d96c05a44b3ae4a2323",
+    "2026-10-25_0.5i1_mietbuch-1280.png": "1e317ceec7049d1e0cc6470264b1914a87b49e656e8e9d1d3c228ad7d876d663"
+  }
+}

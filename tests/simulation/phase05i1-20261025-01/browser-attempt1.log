@@ -1,0 +1,7 @@
+PASS rent-debt UI 390x844
+PASS rent-debt UI 820x1180
+PASS rent-debt UI 1280x900
+TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string or an instance of Buffer or URL. Received undefined
+    at Object.openSync (node:fs:623:5)
+    at Object.readFileSync (node:fs:488:35)
+    at /workspace/Hansef-rst/tests/simulation/warehouse-arrears-browser-checks.cjs:22:148

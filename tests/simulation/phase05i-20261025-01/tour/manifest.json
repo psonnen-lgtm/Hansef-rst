@@ -1,0 +1,56 @@
+{
+  "kind": "supplemental_full_games_forced_all_eleven_ports",
+  "distinctCases": 60,
+  "exactReplays": 4,
+  "models": [
+    "before",
+    "capacity"
+  ],
+  "strategies": [
+    "none",
+    "occasional",
+    "regional",
+    "bulk",
+    "stress"
+  ],
+  "seeds": [
+    74001,
+    74002,
+    74003,
+    74004,
+    74005,
+    74006
+  ],
+  "limits": {
+    "days": 1440,
+    "decisions": 800,
+    "lastTripMayExceed": true,
+    "workers": 4
+  },
+  "planner": "same local/own-pricebook normal planner limited to next port in fixed tour",
+  "tour": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    7,
+    6,
+    9,
+    8,
+    10
+  ],
+  "reason": "main 200 had zero journeys >=20 days; add remote storage/cost exposure without altering rules",
+  "identity": {
+    "gameCommit": "ca2c36e859837a6668bf82e9da8abb1978f8bc10",
+    "gameSHA256": "7e85ac510654e3aec8b41328b3a508cdc3030eac8b4ab2981e40f30b1efc2a19",
+    "hashes": {
+      "phase05i-run.cjs": "319944d26ba271bc22b26d4a69653ddd425a7631047ef7c3ccca13fda65daa56",
+      "warehouse-strategies.js": "f1b86264f66c2beb1ca0d483b6e213e8df9b0810f591b9a3f855ff82322b0d60",
+      "headless.cjs": "5d6526a38b8f303c8a357b2a2f8be3e1ba451f3cf956324c64d319c22cdfc2c0",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+    }
+  },
+  "supplementalSourceSHA256": "c2eb44777c148aa3b570f4cb8be6328c7053be999bf5eaced64b858aedf35568"
+}

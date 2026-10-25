@@ -1,0 +1,13 @@
+{
+  "base": "46e425c7c0dabf51ab5d964194b2530639781dfc",
+  "testedGameCommit": "a60415b6fed39455074496086d9ce5b127f1fc26",
+  "gameSHA256": "7d05e28fb55267a585dc91b476074a6e796c3572ffc90f540818145a84dd8c62",
+  "fullEconomicGamesRun": 0,
+  "savedEndpointsReadOnly": 260,
+  "historicalFilesUnchanged": 1196,
+  "newArrearsGroups": 19,
+  "existingCapacityGroups": 17,
+  "browserGroups": 7,
+  "browserErrors": [],
+  "historicalSimulationsNotRerun": true
+}
