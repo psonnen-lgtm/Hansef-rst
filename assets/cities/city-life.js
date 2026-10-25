@@ -6,7 +6,7 @@ const CityLife=(()=>{
  let config=profiles.get(0),places=config.places,actors=config.actors;
  let root=null,world=null,canvas=null,ctx=null,host=null,scroll=null,motionButton=null,labelButton=null,status=null;
  let city=-1,open=null,fallback=null,failedCities=new Set(),raf=0,time=0,last=0,lastDraw=0,inside=true,manualMotion=null,media=null,observer=null,panelObserver=null;
- let ready=false,imageSwaps=0,mounts=0,frames=0,maxPending=0,frameCosts=[],boat=null,boatReady=false;
+ let ready=false,imageSwaps=0,mounts=0,frames=0,maxPending=0,frameCosts=[],boat=null,boatReady=false,riverBoat=null,riverReady=false,riverFailed=false;
  function enabled(){return manualMotion===null?!media?.matches:manualMotion}
  function reasons(){const r=[];if(!profiles.has(city)||!root||root.hidden)r.push('other-city');if(typeof document!=='undefined'&&document.hidden)r.push('hidden-page');if(!inside)r.push('offscreen');if(!enabled())r.push('reduced-motion');if(!ready)r.push('loading');const overlay=typeof document!=='undefined'?document.getElementById('overlay'):null;if(overlay&&!overlay.classList.contains('hidden'))r.push('dialog');return r}
  function queue(){if(!raf&&!reasons().length){raf=requestAnimationFrame(tick);maxPending=Math.max(maxPending,Number(!!raf))}}
@@ -49,7 +49,7 @@ const CityLife=(()=>{
   const bob=Math.sin(time*.8)*1.2;
   if(boatReady&&config.cog){const q=config.cog;ctx.save();ctx.translate(q.x,q.y+bob);ctx.rotate(Math.sin(time*.55)*.004);const h=q.width*boat.naturalHeight/boat.naturalWidth;ctx.drawImage(boat,-q.width/2,q.baseline-h,q.width,h);ctx.restore()}
   // A small local service skiff is decorative, never an owned inventory ship.
-  const service=config.serviceBoat;if(!service)return;ctx.save();ctx.translate(Math.round(service.x+Math.sin(time*.18)*(service.sway??5)),Math.round(service.y+Math.sin(time*.9+2)));if(service.angle)ctx.rotate(service.angle);if(service.kind==='barge'){riverBarge(service);ctx.restore();return}
+  const service=config.serviceBoat;if(!service)return;ctx.save();ctx.translate(Math.round(service.x+Math.sin(time*.18)*(service.sway??5)),Math.round(service.y+Math.sin(time*.9+2)));if(service.angle)ctx.rotate(service.angle);if(service.kind==='barge'){if(riverReady){const width=service.width||132,height=width*riverBoat.naturalHeight/riverBoat.naturalWidth;ctx.drawImage(riverBoat,-width/2,18-height,width,height)}else if(riverFailed)riverBarge(service);ctx.restore();return}
   ctx.globalAlpha=.25;box(-29,6,56,3,'#1c494e');ctx.globalAlpha=1;box(-27,0,52,5,'#473b2b');box(-23,5,44,3,'#7b5734');box(-25,-1,48,2,'#bc9661');box(-19,1,35,2,'#ad8450');box(-1,-6,4,7,'#4f625b');box(0,-9,3,3,'#d7af78');box(-13,2,29,1,'#41372b');box(7,-2,2,13,'#b39460');ctx.restore();
  }
  function riverBarge(q){
@@ -77,7 +77,7 @@ const CityLife=(()=>{
   const nav=root.querySelector('nav');for(const place of places){const b=document.createElement('button');b.type='button';b.className='city-door';b.dataset.place=place.id;b.setAttribute('aria-label',place.name+' – '+place.hint);b.title=place.name+' · '+place.hint;b.style.left=place.x/W*100+'%';b.style.top=place.y/H*100+'%';b.innerHTML='<span class="city-door-mark" aria-hidden="true"></span><span class="city-door-name" aria-hidden="true">'+place.name+'</span>';b.addEventListener('click',()=>activate(places.find(p=>p.id===place.id)));b.addEventListener('focus',()=>{b.scrollIntoView({block:'nearest',inline:'nearest',behavior:'auto'})});nav.append(b)}
   motionButton.addEventListener('click',()=>{manualMotion=!enabled();sync();draw()});labelButton.addEventListener('click',()=>{const on=labelButton.getAttribute('aria-pressed')!=='true';labelButton.setAttribute('aria-pressed',String(on));labelButton.textContent=on?'Ortsnamen ausblenden':'Orte zeigen';root.classList.toggle('city-show-labels',on)});root.querySelector('[data-city-tool="harbor"]').addEventListener('click',()=>pan('harbor',true));
   const bg=root.querySelector('img');bg.onload=()=>{if(city!==Number(bg.dataset.scene))return;ready=true;root.classList.add('city-art-ready');draw();sync()};bg.onerror=()=>{const failed=Number(bg.dataset.scene);failedCities.add(failed);if(city!==failed)return;ready=false;hide();if(fallback)fallback()};
-  boat=new Image();boat.onload=()=>{boatReady=true;draw()};// The shared sea cog is loaded only when a city's water needs it.
+  boat=new Image();boat.onload=()=>{boatReady=true;draw()};riverBoat=new Image();riverBoat.onload=()=>{riverReady=true;draw()};riverBoat.onerror=()=>{riverFailed=true;draw()};// The shared sea cog is loaded only when a city's water needs it.
   document.addEventListener('visibilitychange',sync);media?.addEventListener('change',sync);
   if(typeof IntersectionObserver==='function'){observer=new IntersectionObserver(entries=>{inside=entries[0].isIntersecting;sync()},{threshold:.03});observer.observe(scroll)}
   const overlay=document.getElementById('overlay');if(overlay&&typeof MutationObserver==='function'){panelObserver=new MutationObserver(sync);panelObserver.observe(overlay,{attributes:true,attributeFilter:['class']})}
@@ -87,13 +87,13 @@ const CityLife=(()=>{
  function configure(index){
   stop();config=profiles.get(index);places=config.places;actors=config.actors;ready=false;imageSwaps++;root.classList.remove('city-art-ready');root.setAttribute('aria-label',config.name+': begehbare Handelsstadt');root.querySelector('.city-kicker').textContent=config.kicker;root.querySelector('.city-title-name').textContent=config.name;root.querySelector('.city-title-water').textContent=config.waterName;root.querySelector('.city-flavor').textContent=config.flavor;scroll.setAttribute('aria-label',config.name+': Stadtbild, waagerecht und senkrecht verschiebbar');root.querySelector('nav').setAttribute('aria-label','Gebäude in '+config.name);const bg=root.querySelector('img');bg.alt=config.alt;
   for(const p of places){const b=root.querySelector('[data-place="'+p.id+'"]');b.style.left=p.x/W*100+'%';b.style.top=p.y/H*100+'%';b.setAttribute('aria-label',p.name+' – '+p.hint);b.title=p.name+' · '+p.hint;b.querySelector('.city-door-name').textContent=p.name;b.removeAttribute('data-selected')}
-  if(config.cog&&!boat.src)boat.src=asset('cog');bg.dataset.scene=String(index);bg.src=asset(config.art);world.style.background=config.seaColor||'#426e69';
+  if(config.cog&&!boat.src)boat.src=asset('cog');if(config.serviceBoat?.kind==='barge'&&!riverBoat.src)riverBoat.src=asset('riverboat');bg.dataset.scene=String(index);bg.src=asset(config.art);world.style.background=config.seaColor||'#426e69';
  }
  function mount(index,openView,onFallback){
   if(!profiles.has(index)||failedCities.has(index)){hide();return false}if(!root&&!build(openView,onFallback))return false;
   const first=city!==index;city=index;open=openView;fallback=onFallback;root.hidden=false;host.classList.add('city-live');if(first)configure(index);document.getElementById('cityArt').hidden=true;document.getElementById('cityCanvas').style.display='none';
   if(first){inside=true;draw();scroll.scrollTo({left:Math.max(0,config.initial[0]/W*world.clientWidth-scroll.clientWidth/2),top:config.initial[1]||0,behavior:'auto'})}sync();return true;
  }
- function diagnostics(){const costs=[...frameCosts].sort((a,b)=>a-b);return {city,sceneId:config.id,configuredCities:[...profiles.keys()],assetReady:ready,visualReady:ready&&(!config.cog||boatReady),imageSwaps,mounts,frames,pending:!!raf,maxPending,time,renderFPSLimit:FPS,pausedReasons:reasons(),motionEnabled:enabled(),actors:actors.map(a=>({id:a.id,...pathPosition(a,time)})),boatReady,frameMS:{samples:costs.length,median:costs[Math.floor(costs.length*.5)]||0,p95:costs[Math.floor(costs.length*.95)]||0,max:costs.at(-1)||0},places:places.map(p=>({...p}))}}
+ function diagnostics(){const costs=[...frameCosts].sort((a,b)=>a-b);return {city,sceneId:config.id,configuredCities:[...profiles.keys()],assetReady:ready,visualReady:ready&&(!config.cog||boatReady)&&(config.serviceBoat?.kind!=='barge'||riverReady||riverFailed),imageSwaps,mounts,frames,pending:!!raf,maxPending,time,renderFPSLimit:FPS,pausedReasons:reasons(),motionEnabled:enabled(),actors:actors.map(a=>({id:a.id,...pathPosition(a,time)})),boatReady,riverReady,riverFailed,frameMS:{samples:costs.length,median:costs[Math.floor(costs.length*.5)]||0,p95:costs[Math.floor(costs.length*.95)]||0,max:costs.at(-1)||0},places:places.map(p=>({...p}))}}
  return Object.freeze({mount,hide,pan,diagnostics});
 })();

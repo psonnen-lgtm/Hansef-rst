@@ -465,8 +465,8 @@
         "id": "book",
         "name": "Handelsbuch",
         "hint": "Eigene Preisaufzeichnungen",
-        "x": 459,
-        "y": 277,
+        "x": 379,
+        "y": 261,
         "view": "book"
       }
     ],
@@ -925,7 +925,7 @@
       "x": 195,
       "y": 555,
       "kind": "barge",
-      "width": 95,
+      "width": 132,
       "angle": 0.12,
       "cargo": "cloth"
     },
