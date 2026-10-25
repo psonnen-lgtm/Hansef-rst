@@ -1,0 +1,902 @@
+{
+  "base": "eef7eb3ebbe9abd5e68936496ea6d19dc17813ab",
+  "identity": {
+    "gameCommit": "d0d4ff697ab21034a5aafe5120ad0d7f76ce6fe9",
+    "sourceCommit": "d0d4ff697ab21034a5aafe5120ad0d7f76ce6fe9",
+    "gameSHA256": "c48c8f11647e03ae5ac502a711dca1813687309f81ccf1ce5ba8acef9dba382a",
+    "files": {
+      "phase06b-run.cjs": "552c38be0a347877785bdb88c165316ff98a5546270681eb23081d23faa41acd",
+      "politics-strategy.js": "d2c00e9a052ea46928ad57fe11468d70b25b8abdf56f2cece292aa8f8b4a580d",
+      "headless.cjs": "5d6526a38b8f303c8a357b2a2f8be3e1ba451f3cf956324c64d319c22cdfc2c0",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+    }
+  },
+  "mode": "pilot",
+  "tasks": [
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 30,
+        "mayorWealth": 85000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 45000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 0,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 0,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 1,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 1,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 2,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 2,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 3,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 3,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 4,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 4,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 5,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 5,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 6,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 6,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 7,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 7,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 8,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 8,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 9,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 9,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ],
+    [
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 10,
+        "behavior": "early",
+        "seed": 90001,
+        "gold": 5000
+      },
+      {
+        "mode": "pilot",
+        "sectionDays": 60,
+        "mayorWealth": 85000,
+        "city": 10,
+        "behavior": "balanced",
+        "seed": 90001,
+        "gold": 5000
+      }
+    ]
+  ],
+  "limits": {
+    "days": 2160,
+    "decisions": 1200
+  },
+  "note": "controlled test starts only; no production start selector; two budgets; no historical rerun"
+}
