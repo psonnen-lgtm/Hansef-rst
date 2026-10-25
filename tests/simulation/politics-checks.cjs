@@ -89,6 +89,11 @@ check('V11 harbor aid crosses political term end atomically; its only eligibilit
 check('rent debt blocks an otherwise complete Hanse candidate without stripping old office titles',()=>{
  const g=fixture();elect(g);g.eval('s.year+=10;s.storage.rentals[1]={blocks:0,until:totalDay()+1,arrears:1};validate(s)');assert(g.eval('hanseQuote().reasons.some(r=>r.includes("Mietrückstände"))'));assert(!g.eval('runHanseAssembly()'));assert.equal(g.eval('s.rank'),3);return {debtBlock:true,titleKept:true};
 });
+check('active civic letter cannot reward buy-back washing or warehouse movement; only actual foreign sale earns once',()=>{
+ const g=fixture();assert(g.eval("acceptPoliticalJob('supply')"));const q=clean(g.eval('s.politics.jobs[0]')),cash=g.eval('s.gold');
+ g.eval("$('qty"+q.good+"').value="+q.n+";trade("+q.good+",1);trade("+q.good+",-1)");assert.equal(g.eval('s.gold'),cash);assert.equal(g.eval('s.politics.records.length'),0);
+ sail(g,1);g.eval("$('qty"+q.good+"').value="+q.n+";trade("+q.good+",1)");sail(g,0);g.eval("$('warehouseQty"+q.good+"').value="+q.n+";warehouseTransfer("+q.good+",1);warehouseTransfer("+q.good+",-1)");assert.equal(g.eval('s.politics.records.length'),0);g.eval("$('qty"+q.good+"').value="+q.n+";trade("+q.good+",-1)");assert.equal(g.eval('s.politics.records.length'),1);assert(!g.eval("acceptPoliticalJob('supply')"));return {washProfit:0,washReceipts:0,transferReceipts:0,foreignSaleReceipts:1,periodReissue:false};
+});
 assert(process.argv[2]);fs.writeFileSync(process.argv[2],JSON.stringify({kind:'focused_actual_rule_fixtures_not_full_careers',gameSHA256:hash,checks},null,2)+'\n',{flag:'wx'});console.log(checks.length+' political groups passed');
 }
 module.exports={cycle,fixture,sail,boot};
