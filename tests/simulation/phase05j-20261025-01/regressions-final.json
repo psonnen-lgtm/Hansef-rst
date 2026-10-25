@@ -1,0 +1,23 @@
+{
+  "kind": "necessary_final_baseline_checks_after_persistent_identity_migration",
+  "gameCommit": "330a0d83b437f67607748d9f3e0c52618ee2b1c2",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "results": [
+    {
+      "command": [
+        "node",
+        "tests/test-v04.cjs"
+      ],
+      "exit": 0,
+      "output": "PASS fresh save validates\nPASS invalid v3 rejected\nPASS negative gold rejected\nPASS v3 assigns all ship locations\nPASS legacy cargo has unknown cost\nPASS malformed cargo rejected\nPASS credit does not grow with borrowing\nPASS single arrival moves only chosen ship and cannot repeat\nPASS remote cargo cannot be traded\nPASS quest completion waits five days for new offer\nPASS expired quest gives no reward\nPASS unknown cost survives mixed purchase\nPASS known weighted purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/phase1.cjs"
+      ],
+      "exit": 0,
+      "output": "PASS preview and reopening use no random draw\nPASS arrival rolls once and repeated arrival is inert\nPASS same-place wash sale cannot fulfil quest\nPASS foreign delivery fulfils quest\nPASS mixed FIFO cargo cannot multiply eligible goods\nPASS legacy cargo is retained but not invented as foreign\nPASS piracy consumes proven origin too\nPASS origins and book values survive save and reload\nPASS same duration has equal interest across year boundary\nPASS full year effective rates remain two and six percent\nPASS no time means no interest\nPASS migration does not backcharge interest or demote\nPASS unrealised gain cannot increase worth or credit\nPASS unrealised gain cannot cross promotion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n"
+    }
+  ]
+}

@@ -1,0 +1,1456 @@
+{
+  "kind": "read_saved_data_and_migrate_only_no_full_execution",
+  "testedGameCommit": "330a0d83b437f67607748d9f3e0c52618ee2b1c2",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "originalSimulationCommit": "ca7f971b3a653e848c1c58dc8d4064ed531eda61",
+  "fullDistinctCases": 240,
+  "exactPilotReplays": 20,
+  "fullExecutions": 260,
+  "newFullExecutionsOnResume": 0,
+  "inventoryFilesUnchanged": 262,
+  "savedFinalsMigrated": 240,
+  "materialShipsCompleted": 216,
+  "checks": [
+    {
+      "file": "control--1-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control--1-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-0-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-1-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "control-2-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material--1-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-0-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-1-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-0-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-4-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82001.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82002.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82003.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82004.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82005.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82006.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82007.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82008.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82009.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82010.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82011.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    },
+    {
+      "file": "material-2-6-82012.json.gz",
+      "oldEconomicFieldsExact": true,
+      "noSaleInMain": true,
+      "safeWatermark": true
+    }
+  ],
+  "limitation": "No complete economic run on the identity fix; existing full-game results retain original source identity."
+}

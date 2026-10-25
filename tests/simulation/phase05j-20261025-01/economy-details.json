@@ -1,0 +1,116 @@
+{
+  "kind": "saved_event_analysis_no_simulation",
+  "cashLedgersVerified": 240,
+  "noMainShipSales": true,
+  "materialUnitsByGood": {
+    "2": 10296,
+    "7": 3312,
+    "8": 2736,
+    "9": 2880
+  },
+  "groups": [
+    {
+      "type": 0,
+      "yard": 0,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 8,
+      "readyToFirstDepartureDaysMedian": 4.0,
+      "readyToFirstDepartureDaysMin": 0,
+      "readyToFirstDepartureDaysMax": 7,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 0,
+      "yard": 4,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 0,
+      "readyToFirstDepartureDaysMedian": 6.0,
+      "readyToFirstDepartureDaysMin": 0,
+      "readyToFirstDepartureDaysMax": 8,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 0,
+      "yard": 6,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 29,
+      "readyToFirstDepartureDaysMedian": 13.0,
+      "readyToFirstDepartureDaysMin": 2,
+      "readyToFirstDepartureDaysMax": 19,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 1,
+      "yard": 0,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 8,
+      "readyToFirstDepartureDaysMedian": 1.0,
+      "readyToFirstDepartureDaysMin": 1,
+      "readyToFirstDepartureDaysMax": 7,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 1,
+      "yard": 4,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 0,
+      "readyToFirstDepartureDaysMedian": 5.0,
+      "readyToFirstDepartureDaysMin": 1,
+      "readyToFirstDepartureDaysMax": 9,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 1,
+      "yard": 6,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 32,
+      "readyToFirstDepartureDaysMedian": 13.0,
+      "readyToFirstDepartureDaysMin": 4,
+      "readyToFirstDepartureDaysMax": 24,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 2,
+      "yard": 0,
+      "procurementDaysMedian": 8.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 10,
+      "readyToFirstDepartureDaysMedian": 4.0,
+      "readyToFirstDepartureDaysMin": 0,
+      "readyToFirstDepartureDaysMax": 11,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 2,
+      "yard": 4,
+      "procurementDaysMedian": 0.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 6,
+      "readyToFirstDepartureDaysMedian": 7.0,
+      "readyToFirstDepartureDaysMin": 0,
+      "readyToFirstDepartureDaysMax": 13,
+      "completionDelayMax": 0
+    },
+    {
+      "type": 2,
+      "yard": 6,
+      "procurementDaysMedian": 30.0,
+      "procurementDaysMin": 0,
+      "procurementDaysMax": 42,
+      "readyToFirstDepartureDaysMedian": 18.0,
+      "readyToFirstDepartureDaysMin": 3,
+      "readyToFirstDepartureDaysMax": 22,
+      "completionDelayMax": 0
+    }
+  ],
+  "bankMaximum": 0,
+  "bankDebtMaximum": 0,
+  "rentTotal": 0,
+  "arrearsTotal": 0
+}
