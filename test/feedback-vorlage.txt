@@ -1,0 +1,21 @@
+Hansefürst – Rückmeldung zur begleiteten Testrunde 0.8b
+Freiwilliger Code (T1–T4):
+Datum / Sitzung:
+Gerät / Browser:
+Ungefähr aktive Minuten / Pausen:
+Gewählter Kaufmann / Startstadt / aktueller Hafen:
+
+1. Spielspaß 1–5; bester Moment; Langeweile:
+2. Verständlichkeit/Bedienung 1–5; gefunden/gesucht; Text/Touch:
+3. Handelsentscheidung; Gewinn/Erlös/Kosten verstanden?:
+4. Reise/Gebühr/Gefahr/Erholung:
+5. Badehaus: Hinweis, Frist, Reisezeit und Ergebnis:
+6. Politikbrief / nächstes Ziel / Unklarheit:
+7. Technik / Bilder / Export-Dateiablage-Import / Speicherwarnung:
+8. Grund fürs Aufhören / Lust auf eine weitere Sitzung:
+
+Fehler wiederholen (Schritte, erwartetes/tatsächliches Verhalten):
+Freiwilliger Screenshot / Testexport vorhanden?:
+
+Keine automatische Übertragung. Datei außerhalb des Testpaket-/Serverordners
+aufbewahren und nur bewusst weitergeben. Spielstandexport ist eine andere Datei.
