@@ -1,0 +1,19 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "checks": [
+    {
+      "name": "low cash warning does not grant or spend gold",
+      "passed": true
+    },
+    {
+      "name": "native Tab Shift-Tab wrap and Escape keep dialogue usable",
+      "passed": true
+    },
+    {
+      "name": "focused shipyard title clears sticky close bar on SE viewport",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "scope": "bounded keyboard/cash feedback fixture, no real hardware"
+}
