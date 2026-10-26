@@ -1,0 +1,25 @@
+{
+  "testedGameCommit": "1d716b7348a307c7c949c7e710d27e2152cbca5f",
+  "browser": "154.0.8037.57",
+  "viewport": {
+    "width": 375,
+    "height": 667
+  },
+  "rumorButton": {
+    "requestedView": "bath",
+    "actualHeading": "🗣️ Gerüchtebuch"
+  },
+  "sheetScroll": {
+    "oldScroll": 1011,
+    "newScroll": 1011
+  },
+  "closeButton": {
+    "width": 37.40625,
+    "height": 35,
+    "visible": false,
+    "label": null
+  },
+  "bathCostMentionsDay": false,
+  "telemetryVersion": "0.4.2",
+  "errors": []
+}
