@@ -1,0 +1,57 @@
+# INACTIVE EXAMPLE. Not in .github/workflows. Copy/activate ONLY after explicit public approval.
+# A Pages deployment REPLACES the existing Pages artifact. Inspect Settings > Pages first.
+name: Freigegebene Hansefuerst-Testfassung
+on:
+  workflow_dispatch:
+    inputs:
+      public_approval:
+        description: 'Nach ausdrücklicher Freigabe: OEFFENTLICH-FREIGEGEBEN'
+        required: true
+        type: string
+      existing_site_reviewed:
+        description: 'Bisherige Pages-Inhalte geprüft; Ersetzung bewusst freigegeben: JA'
+        required: true
+        type: string
+      reviewed_ref:
+        description: 'Vollständige geprüfte Commit-ID, siehe 0.8b-Abschlussbericht'
+        required: true
+        type: string
+permissions:
+  contents: read
+concurrency:
+  group: hansefuerst-approved-pages
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: inputs.public_approval == 'OEFFENTLICH-FREIGEGEBEN' && inputs.existing_site_reviewed == 'JA'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ inputs.reviewed_ref }}
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /Hansefuerst_0_4.html
+            /assets/cities/city-assets.json
+            /releases/hansefuerst-0.8a-assets.zip
+            /deployment/phase08b/
+            /tools/build-private-test.py
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Nur statische Testdateien bauen
+        run: python tools/build-private-test.py --directory build/pages-review --zip build/pages-review.zip
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build/pages-review/hansefuerst-0.8b
+      - name: Ausdruecklich freigegebene oeffentliche Veroeffentlichung
+        id: deployment
+        uses: actions/deploy-pages@v4

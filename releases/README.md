@@ -1,3 +1,15 @@
+# Vorbereitetes Testpaket 0.8b – noch keine neue öffentliche Spieladresse
+
+[Testpaket 0.8b herunterladen](hansefuerst-0.8b-testpaket.zip), 34,67 MB. Vollständig entpacken, mit vorhandenem Python 3.9+ `START_TEST.py` starten (`python`, `python3` oder `py -3`). Die lokale Startseite öffnet sich nur auf dem PC. iPhone/iPad im gleichen Heimnetz: eigene private PC-IP nachsehen, z.B. `python START_TEST.py --lan 192.168.178.20`, dann diese Adresse mit Port 8000 in Safari öffnen. Keine Router-/Internetfreigabe einrichten; PC muss laufen. Alle Details in der beiliegenden `LIESMICH.txt`.
+
+Enthält das **unveränderte Spiel 0.8a/V11**, Startseite, Törnanleitung, Sicherungsschritte und freiwilligen Fragebogen ohne Sendeformular. Original-HTML und ältere ZIPs bleiben erhalten. [Bericht mit Gerätenachweisen und Grenzen](../docs/entwicklungsberichte/2026-10-26_0.8b_private_testversion.md), [Bereitstellungshinweise](../deployment/phase08b/README.md). Echte Apple-/LAN-/Dateiproben fehlen noch.
+
+GitHub Pages wäre öffentlich und ist für diese neue Testfassung nicht freigegeben/aktiviert. Die Repositoryquellen einschließlich ZIP sind wie bisher öffentlich lesbar. Vor öffentlicher Bereitstellung bestehende Pages-Inhalte prüfen; kein automatisches Überschreiben. Vor Datei-/Adress-/Gerätewechsel immer die vorhandene Partie extern exportieren, Sicherungen und ausgefüllte Antworten außerhalb des Paketordners halten. Keine Cloud-Synchronisierung.
+
+Frühere Ausgaben:
+
+---
+
 # Aktuelle Prüffassung: Hansefürst 0.8a
 
 [Zusatzpaket 0.8a herunterladen](hansefuerst-0.8a-assets.zip) (34,65 MB), vollständig entpacken und HTML/Assets zusammenlassen. Die vollständige HTML-Datei im Repository bleibt erhalten (46,30 MB). [Bericht mit Bildern und Grenzen](../docs/entwicklungsberichte/2026-10-26_0.8a_spielspass_bedienung_qualitaet.md).

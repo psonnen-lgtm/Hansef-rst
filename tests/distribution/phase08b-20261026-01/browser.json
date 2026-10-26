@@ -1,0 +1,733 @@
+{
+  "testedPackagingCommit": "5ae2cb73c1d4241fbe809cab18bf51aced149e47",
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "gameSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "browser": "154.0.8037.57",
+  "scope": "actual loopback static package and emulated Chromium; no live Pages, Safari hardware, full careers or human time",
+  "checks": [
+    {
+      "name": "local package first voyage and guides 375",
+      "passed": true,
+      "width": 375,
+      "height": 667,
+      "player": "Ulf",
+      "city": 0,
+      "dest": 1,
+      "landing": {
+        "htmlBytes": 2314,
+        "resources": [
+          {
+            "path": "/test.css",
+            "bytes": 1397
+          }
+        ],
+        "scrollWidth": 375,
+        "width": 375
+      },
+      "quantityBought": 10,
+      "quantitySold": 10,
+      "buyPrice": 19,
+      "sellPrice": 18,
+      "travelDays": 2,
+      "cashChange": -16,
+      "realFeedbackDownload": true,
+      "nativeFileChooserImport": true,
+      "actualReload": true
+    },
+    {
+      "name": "local package first voyage and guides 390",
+      "passed": true,
+      "width": 390,
+      "height": 844,
+      "player": "Anders",
+      "city": 6,
+      "dest": 0,
+      "landing": {
+        "htmlBytes": 2314,
+        "resources": [
+          {
+            "path": "/test.css",
+            "bytes": 1397
+          }
+        ],
+        "scrollWidth": 390,
+        "width": 390
+      },
+      "quantityBought": 10,
+      "quantitySold": 10,
+      "buyPrice": 14,
+      "sellPrice": 19,
+      "travelDays": 12,
+      "cashChange": 44,
+      "realFeedbackDownload": true,
+      "nativeFileChooserImport": true,
+      "actualReload": true
+    },
+    {
+      "name": "local package first voyage and guides 820",
+      "passed": true,
+      "width": 820,
+      "height": 1180,
+      "player": "Franziskus",
+      "city": 9,
+      "dest": 5,
+      "landing": {
+        "htmlBytes": 2314,
+        "resources": [
+          {
+            "path": "/test.css",
+            "bytes": 1397
+          }
+        ],
+        "scrollWidth": 820,
+        "width": 820
+      },
+      "quantityBought": 10,
+      "quantitySold": 10,
+      "buyPrice": 19,
+      "sellPrice": 17,
+      "travelDays": 20,
+      "cashChange": -26,
+      "realFeedbackDownload": true,
+      "nativeFileChooserImport": true,
+      "actualReload": true
+    },
+    {
+      "name": "local package first voyage and guides 1280",
+      "passed": true,
+      "width": 1280,
+      "height": 900,
+      "player": "Micha",
+      "city": 10,
+      "dest": 8,
+      "landing": {
+        "htmlBytes": 2314,
+        "resources": [
+          {
+            "path": "/test.css",
+            "bytes": 1397
+          }
+        ],
+        "scrollWidth": 1280,
+        "width": 1280
+      },
+      "quantityBought": 10,
+      "quantitySold": 10,
+      "buyPrice": 16,
+      "sellPrice": 16,
+      "travelDays": 7,
+      "cashChange": -6,
+      "realFeedbackDownload": true,
+      "nativeFileChooserImport": true,
+      "actualReload": true
+    },
+    {
+      "name": "nested project path loads all eleven backgrounds and 121 functional entrances",
+      "passed": true,
+      "cities": 11,
+      "accesses": 121
+    },
+    {
+      "name": "observed app and helper requests are static local GETs only",
+      "passed": true,
+      "requests": 83,
+      "uploadedGameOrFeedbackBodies": 0,
+      "externalRequests": 0
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "requests": [
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/kurzanleitung.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/spielstand-sichern.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/feedback.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/index.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/cog.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/luebeck-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/hamburg/hamburg-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/hamburg/hamburg-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/kurzanleitung.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/spielstand-sichern.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/feedback.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/index.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/cog.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/bergen/bergen-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/luebeck-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/cog.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/luebeck/luebeck-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/kurzanleitung.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/spielstand-sichern.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/feedback.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/index.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/shared/river-barge.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/nowgorod/nowgorod-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/danzig/danzig-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/shared/river-barge.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/danzig/danzig-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/kurzanleitung.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/spielstand-sichern.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/feedback.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/index.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/shared/river-barge.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/venlo/venlo-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/bruegge/bruegge-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/shared/river-barge.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8808",
+      "path": "/assets/cities/bruegge/bruegge-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/test.css",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/Hansefuerst_0_4.html",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/luebeck/cog.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/luebeck/luebeck-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/hamburg/hamburg-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/rostock/rostock-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/stralsund/stralsund-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/stettin/stettin-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/shared/river-barge.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/danzig/danzig-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/bergen/bergen-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/visby/visby-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/bruegge/bruegge-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/nowgorod/nowgorod-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    },
+    {
+      "method": "GET",
+      "origin": "http://127.0.0.1:8794",
+      "path": "/build/phase08b-preview/hansefuerst-0.8b/assets/cities/venlo/venlo-1350.webp",
+      "query": "",
+      "bodyPresent": false
+    }
+  ],
+  "screenshots": {
+    "2026-10-26_0.8b_startseite-375.png": "e4600520a180b5540ff36a8b71cf1c0b863fdcc54cd8275392b54ddf68fc083e",
+    "2026-10-26_0.8b_sichern-iphone-375.png": "f1d8467563fd83d752057cb1826f4b56306d287fc78d0ccc0a5f29bf797c4891",
+    "2026-10-26_0.8b_fragebogen-375.png": "1a153d9f03c861219bba37ecb241ca127568dbd15f4cad964ef6e2766e78d9da",
+    "2026-10-26_0.8b_erster-handel-375.png": "ac9c38cb9971a08246cc2d2d586b1c7f33efc95ae63e27925291f3674e18277e",
+    "2026-10-26_0.8b_werft-375.png": "c01c1ae7ff64df2609790d70d6451dcf90c6d410169b5ab285542cc1962ff4a0",
+    "2026-10-26_0.8b_startseite-390.png": "3f6f8774cf9a478ec98e87fd59ce512155d33cb0e63c0b576ebdbfbc3174a0ef",
+    "2026-10-26_0.8b_startseite-820.png": "06b62de9ef5734b6f1029b4bee1ed8bccf9ae93e3c4516dfed90de6a767ffcec",
+    "2026-10-26_0.8b_startseite-1280.png": "de425697376b33f71bf05642e326b1986d77e1c66fcb6a50392f72f91b6cd8bf"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "testedPackagingCommit": "5ae2cb73c1d4241fbe809cab18bf51aced149e47",
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "gameSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "scope": "static delivery and localhost server only; no live Pages deployment or simulation",
+  "checks": [
+    {
+      "name": "unchanged game, V11, graphics and historical data",
+      "passed": true,
+      "evidence": {
+        "basis": "ad9982d7ec95c7f8ecf31cf63811230507af3404",
+        "wholeCanonicalHTMLExact": true,
+        "allProtectedRulesAssetsHistoricalSimulationFilesAndOldArchivesExact": true,
+        "saveVersion": 11,
+        "newCompleteGames": 0
+      }
+    },
+    {
+      "name": "complete reproducible asset package",
+      "passed": true,
+      "evidence": {
+        "manifestFiles": 23,
+        "zipCRCValid": true,
+        "twoBuildsByteIdentical": true,
+        "zipSHA256": "1e2ca6d6f1ac7264b01946ebdf947bf1782104783efb23dbd1609ed358c419e5",
+        "allElevenCities": 11
+      }
+    },
+    {
+      "name": "relative navigation and local-only questionnaire",
+      "passed": true,
+      "evidence": {
+        "pages": 4,
+        "relativeLinks": 25,
+        "noFormsScriptsOrExternalEmbeds": true,
+        "manualFeedbackTemplate": true
+      }
+    },
+    {
+      "name": "publication stays inactive",
+      "passed": true,
+      "evidence": {
+        "inactiveExampleOnly": true,
+        "noPushPRScheduleTrigger": true,
+        "publicAndExistingSiteAcknowledgmentsRequired": true,
+        "githubExecution": "not performed; no publication approval"
+      }
+    },
+    {
+      "name": "local server serves only reviewed static files on loopback",
+      "passed": true,
+      "evidence": {
+        "defaultHost": "127.0.0.1",
+        "staticImageHeads": 13,
+        "unknownBackupRejected": true,
+        "traversalAndListingRejected": true,
+        "dummyPOSTRejected": 405,
+        "realLANDeviceTest": false
+      }
+    },
+    {
+      "name": "no accidental global or public binding",
+      "passed": true,
+      "evidence": {
+        "globalOrPublicBindingsRejected": [
+          "0.0.0.0",
+          "8.8.8.8",
+          "::"
+        ],
+        "noLANBindingStartedByTests": true
+      }
+    }
+  ]
+}

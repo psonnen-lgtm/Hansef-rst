@@ -1,0 +1,13 @@
+{
+  "branch": "feature/phase08b-private-test",
+  "publishedReportCommit": "eaf4eed913e82ab2330fd26482896022b3a71c06",
+  "testedPackagingCommit": "5ae2cb73c1d4241fbe809cab18bf51aced149e47",
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "pullRequestCreated": false,
+  "pullRequestFailure": "Post https://api.github.com/graphql: Forbidden",
+  "compareURL": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...feature/phase08b-private-test?expand=1",
+  "remoteDevelopmentCommit": "ad9982d7ec95c7f8ecf31cf63811230507af3404",
+  "remoteMainCommit": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+  "merged": false,
+  "publicDeploymentPerformed": false
+}
