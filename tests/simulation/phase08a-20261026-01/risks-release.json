@@ -1,0 +1,72 @@
+{
+  "testedGameCommit": "8516770f817a61388cbab094df449457fcebb045",
+  "gameSHA256": "8f235c055dcbfacc240c72482a1dc8187d5d24a92b38d5370c225c2e1e23c930",
+  "browser": "154.0.8037.57",
+  "mode": "risks",
+  "scope": "controlled storage/rare-event fixtures, actual UI calls; not regular careers or event-frequency estimate",
+  "checks": [
+    {
+      "name": "controlled actual pirates arrival and consequences",
+      "passed": true,
+      "forcedBranch": true,
+      "cargo": 2,
+      "condition": 100,
+      "gold": 4914,
+      "ships": 1
+    },
+    {
+      "name": "controlled actual defended arrival and consequences",
+      "passed": true,
+      "forcedBranch": true,
+      "cargo": 5,
+      "condition": 100,
+      "gold": 4384,
+      "ships": 1
+    },
+    {
+      "name": "controlled actual storm arrival and consequences",
+      "passed": true,
+      "forcedBranch": true,
+      "cargo": 5,
+      "condition": 90,
+      "gold": 4929,
+      "ships": 1
+    },
+    {
+      "name": "actual last-resort harbor work pays once, days/interest run and reload retains consumed flag",
+      "passed": true,
+      "fixtureDebt": 6000,
+      "payment": 20,
+      "days": 3
+    },
+    {
+      "name": "actual overfull-rent debt outload sale cancellation and full repayment recovery",
+      "passed": true,
+      "fixtureStock": 230,
+      "remaining": 150,
+      "paid": 1
+    },
+    {
+      "name": "actual paid bath day and clearly expired rumor display",
+      "passed": true,
+      "cost": 15,
+      "days": 1
+    }
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "type": "confirm",
+      "message": "Einmalig drei Spieltage Hafenarbeit für 20 Gold annehmen?\nKreditzinsen, Märkte und Fristen laufen normal weiter. Die Gelegenheit ist danach verbraucht, auch wenn du erneut feststeckst. Eine geplante Reise muss neu geplant werden."
+    },
+    {
+      "type": "confirm",
+      "message": "Alle 1 G Mietrückstände in Lübeck jetzt aus Bargeld begleichen? Laufende Tagesmiete bleibt bestehen."
+    }
+  ],
+  "screenshots": {
+    "2026-10-26_0.8a_release-piraten-375.png": "e2a86b11321cfca8cb78144ba54ad3b03e4d5af8ef3e36e61adf04b9c102b284",
+    "2026-10-26_0.8a_release-mietbuch-375.png": "b8b47c5d06090819d5bf6e8a457ca29197d081b5d2a6f2e5bd17f7165c154a47",
+    "2026-10-26_0.8a_release-geruechte-375.png": "8757e4bc59f803bcca75523619a2d3547bfb866f02b1435c229aeaa2737ea7b1"
+  }
+}
