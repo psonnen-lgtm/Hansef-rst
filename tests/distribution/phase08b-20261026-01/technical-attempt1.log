@@ -1,0 +1,6 @@
+PASS unchanged game, V11, graphics and historical data
+PASS complete reproducible asset package
+PASS relative navigation and local-only questionnaire
+PASS publication stays inactive
+PASS local server serves only reviewed static files on loopback
+PASS no accidental global or public binding

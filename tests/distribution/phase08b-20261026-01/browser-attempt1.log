@@ -1,0 +1,14 @@
+TypeError [ERR_INVALID_ARG_VALUE]: The argument 'stdio' is invalid. Received WriteStream {
+  fd: null,
+  path: '/workspace/Hansef-rst/tests/distribution/phase08b-20261026-01/browser-server.log',
+  flags: '...
+    at node:internal/child_process:1116:13
+    at Array.reduce (<anonymous>)
+    at getValidStdio (node:internal/child_process:1043:11)
+    at ChildProcess.spawn (node:internal/child_process:364:11)
+    at spawn (node:child_process:813:9)
+    at /workspace/Hansef-rst/tests/distribution/private-test-browser.cjs:4:87
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/distribution/private-test-browser.cjs:19:123)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)

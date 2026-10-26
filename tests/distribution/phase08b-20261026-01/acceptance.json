@@ -1,0 +1,27 @@
+{
+  "scope": "unchanged game and local static delivery only; no public deployment, no complete simulation",
+  "records": {
+    "technical": {
+      "groups": 6,
+      "gameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "packagingCommit": "5ae2cb73c1d4241fbe809cab18bf51aced149e47",
+      "errors": []
+    },
+    "browser": {
+      "groups": 6,
+      "gameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "packagingCommit": "5ae2cb73c1d4241fbe809cab18bf51aced149e47",
+      "errors": []
+    },
+    "storage": {
+      "groups": 10,
+      "gameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "packagingCommit": null,
+      "errors": []
+    }
+  },
+  "historicalReportsImagesReleasesPreserved": 235,
+  "publicDeploymentPerformed": false,
+  "newAccountOrPaidServiceConfigured": false,
+  "realAppleHardwareTested": false
+}
