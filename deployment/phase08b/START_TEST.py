@@ -5,6 +5,7 @@ from http.server import ThreadingHTTPServer,SimpleHTTPRequestHandler
 from urllib.parse import unquote,urlsplit
 
 def main():
+    if sys.version_info<(3,9):sys.exit('Für den lokalen Helfer ist Python 3.9 oder neuer nötig.')
     cli=argparse.ArgumentParser(description='Hansefürst lokal öffnen; kein öffentlicher Host und kein Upload.')
     cli.add_argument('--lan',metavar='PRIVATE_PC_IP',help='Optional: eigene private IPv4 des PCs für dasselbe Heimnetz. Kein 0.0.0.0, keine öffentliche Adresse.')
     cli.add_argument('--port',type=int,default=8000)

@@ -38,7 +38,7 @@ files['LIESMICH.txt']='''Hansefürst – begleitetes Testpaket 0.8b (unveränder
 ZIP vollständig entpacken. Der Ordner hansefuerst-0.8b bleibt zusammen.
 Kein öffentlicher Host wird dadurch eingerichtet. Keine Accounts oder Cloud.
 
-PC mit vorhandenem Python 3: im entpackten Ordner
+PC mit vorhandenem Python 3.9 oder neuer: im entpackten Ordner
   python START_TEST.py
 (je nach System python3 oder py -3). Ein Browser öffnet die lokale Startseite.
 Nur dieser PC ist standardmäßig erreichbar; mit Strg+C beenden.
