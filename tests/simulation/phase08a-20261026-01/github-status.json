@@ -1,0 +1,10 @@
+{
+  "branch": "feature/phase08a-usability-quality",
+  "publishedReportCommit": "95d6a541f0d28309ecaf13dd968b1a1eabf0ae90",
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "pullRequestCreated": false,
+  "pullRequestFailure": "Post https://api.github.com/graphql: Forbidden",
+  "compareURL": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...feature/phase08a-usability-quality?expand=1",
+  "remoteDevelopmentCommit": "1d716b7348a307c7c949c7e710d27e2152cbca5f",
+  "merged": false
+}
