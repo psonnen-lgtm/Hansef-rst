@@ -1,0 +1,5 @@
+PASS whole script exact after explicit UI/version projection; no changed business, storage, risk or animation code
+PASS 44 starts and next RNG exact; only observational helper output added
+PASS supported old save versions import and roundtrip identically to baseline; no invented beginning
+PASS unchanged transactional import: corrupt JSON cancellation and both write faults protect main; retry works
+PASS all historical data and original graphics preserved
