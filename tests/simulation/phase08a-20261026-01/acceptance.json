@@ -1,0 +1,40 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "scope": "no full economy/career runs; do not sum repeated fixtures as independent samples",
+  "records": {
+    "technical-accepted": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 5
+    },
+    "cities-accepted": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 44
+    },
+    "journeys-accepted": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 8
+    },
+    "storage-accepted": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 10
+    },
+    "risks-release": {
+      "testedGameCommit": "8516770f817a61388cbab094df449457fcebb045",
+      "passedGroups": 6
+    },
+    "dialogue-details": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 3
+    },
+    "mobile-se": {
+      "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+      "passedGroups": 3
+    }
+  },
+  "persistentWarningExportPassed": true,
+  "zipIntegrityPassed": true,
+  "historicalTestsAndAssetFilesExact": 2206,
+  "historicalReportsImagesAndReleasesExact": 196,
+  "humanFunHoursValidated": false,
+  "physicalSafariValidated": false
+}

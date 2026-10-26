@@ -1,0 +1,5 @@
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+597 !== 0
+
+    at /workspace/Hansef-rst/tests/simulation/phase08a-browser.cjs:10:407

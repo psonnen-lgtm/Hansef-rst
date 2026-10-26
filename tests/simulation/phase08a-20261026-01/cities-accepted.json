@@ -1,0 +1,366 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "gameSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "browser": "154.0.8037.57",
+  "mode": "matrix",
+  "scope": "Chromium emulated viewports and actual UI; controlled seed/starts, no human playtime or full career",
+  "checks": [
+    {
+      "name": "Lübeck 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Hamburg 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Rostock 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stralsund 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stettin 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Danzig 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Bergen 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Visby 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Brügge 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Nowgorod 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Venlo 375",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Lübeck 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Hamburg 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Rostock 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stralsund 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stettin 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Danzig 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Bergen 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Visby 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Brügge 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Nowgorod 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Venlo 390",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Lübeck 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Hamburg 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Rostock 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stralsund 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stettin 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Danzig 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Bergen 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Visby 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Brügge 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Nowgorod 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Venlo 820",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Lübeck 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Hamburg 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Rostock 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stralsund 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Stettin 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Danzig 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Bergen 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Visby 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Brügge 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Nowgorod 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    },
+    {
+      "name": "Venlo 1280",
+      "passed": true,
+      "entrances": 11,
+      "allDialogueActionsAtLeast44": true,
+      "stickyClose": true,
+      "stateStableWhileAnimating": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "screenshots": {
+    "2026-10-26_0.8a_final-stadt-se-375.png": "e6ecc5bf5264122bb4e97ea0692bcd9c811d1f797782e927eaa9806d3e7bf1d8"
+  }
+}

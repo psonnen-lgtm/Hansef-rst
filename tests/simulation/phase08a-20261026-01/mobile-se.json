@@ -1,0 +1,25 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "scope": "desktop Chromium native touch emulation, not physical iPhone",
+  "checks": [
+    {
+      "name": "actual SE touch drag 0",
+      "passed": true,
+      "before": 280,
+      "after": 397,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "actual SE touch drag 9",
+      "passed": true,
+      "before": 280,
+      "after": 397,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "SE live animation save/RNG neutrality and harbor focus with singleton",
+      "passed": true,
+      "rngCalls": 0
+    }
+  ]
+}

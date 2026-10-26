@@ -1,0 +1,1705 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "scope": "static actual route duration enumeration; unweighted 110 directed city pairs, no simulated journeys, not probability or human hours",
+  "assumption": "undamaged selected ship, immediate departure, cargo already available; excludes purchase delays and later price changes",
+  "rareHintDays": [
+    3,
+    6
+  ],
+  "rows": [
+    {
+      "type": "Schnigge",
+      "speed": 1.5,
+      "pairs": 110,
+      "reachableWithinShortestRareTip": 20,
+      "reachableWithinLongestRareTip": 46,
+      "citiesWithoutAnySixDayDestination": [
+        "Bergen",
+        "Nowgorod"
+      ],
+      "routes": [
+        {
+          "from": 0,
+          "to": 1,
+          "days": 2
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "days": 2
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "days": 3
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "days": 6
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "days": 8
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "days": 5
+        },
+        {
+          "from": 0,
+          "to": 8,
+          "days": 7
+        },
+        {
+          "from": 0,
+          "to": 9,
+          "days": 16
+        },
+        {
+          "from": 0,
+          "to": 10,
+          "days": 11
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "days": 2
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "days": 3
+        },
+        {
+          "from": 1,
+          "to": 4,
+          "days": 4
+        },
+        {
+          "from": 1,
+          "to": 5,
+          "days": 6
+        },
+        {
+          "from": 1,
+          "to": 6,
+          "days": 7
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "days": 6
+        },
+        {
+          "from": 1,
+          "to": 8,
+          "days": 6
+        },
+        {
+          "from": 1,
+          "to": 9,
+          "days": 17
+        },
+        {
+          "from": 1,
+          "to": 10,
+          "days": 9
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "days": 5
+        },
+        {
+          "from": 2,
+          "to": 6,
+          "days": 9
+        },
+        {
+          "from": 2,
+          "to": 7,
+          "days": 4
+        },
+        {
+          "from": 2,
+          "to": 8,
+          "days": 8
+        },
+        {
+          "from": 2,
+          "to": 9,
+          "days": 15
+        },
+        {
+          "from": 2,
+          "to": 10,
+          "days": 11
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "days": 2
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "days": 3
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "days": 2
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "days": 4
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "days": 10
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "days": 5
+        },
+        {
+          "from": 3,
+          "to": 8,
+          "days": 8
+        },
+        {
+          "from": 3,
+          "to": 9,
+          "days": 16
+        },
+        {
+          "from": 3,
+          "to": 10,
+          "days": 12
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "days": 3
+        },
+        {
+          "from": 4,
+          "to": 1,
+          "days": 4
+        },
+        {
+          "from": 4,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 4,
+          "to": 3,
+          "days": 2
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "days": 3
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "days": 10
+        },
+        {
+          "from": 4,
+          "to": 7,
+          "days": 6
+        },
+        {
+          "from": 4,
+          "to": 8,
+          "days": 9
+        },
+        {
+          "from": 4,
+          "to": 9,
+          "days": 17
+        },
+        {
+          "from": 4,
+          "to": 10,
+          "days": 13
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "days": 6
+        },
+        {
+          "from": 5,
+          "to": 1,
+          "days": 6
+        },
+        {
+          "from": 5,
+          "to": 2,
+          "days": 5
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "days": 4
+        },
+        {
+          "from": 5,
+          "to": 4,
+          "days": 3
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "days": 13
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "days": 4
+        },
+        {
+          "from": 5,
+          "to": 8,
+          "days": 12
+        },
+        {
+          "from": 5,
+          "to": 9,
+          "days": 15
+        },
+        {
+          "from": 5,
+          "to": 10,
+          "days": 15
+        },
+        {
+          "from": 6,
+          "to": 0,
+          "days": 8
+        },
+        {
+          "from": 6,
+          "to": 1,
+          "days": 7
+        },
+        {
+          "from": 6,
+          "to": 2,
+          "days": 9
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "days": 10
+        },
+        {
+          "from": 6,
+          "to": 4,
+          "days": 10
+        },
+        {
+          "from": 6,
+          "to": 5,
+          "days": 13
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "days": 12
+        },
+        {
+          "from": 6,
+          "to": 8,
+          "days": 12
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "days": 23
+        },
+        {
+          "from": 6,
+          "to": 10,
+          "days": 16
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "days": 5
+        },
+        {
+          "from": 7,
+          "to": 1,
+          "days": 6
+        },
+        {
+          "from": 7,
+          "to": 2,
+          "days": 4
+        },
+        {
+          "from": 7,
+          "to": 3,
+          "days": 5
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "days": 6
+        },
+        {
+          "from": 7,
+          "to": 5,
+          "days": 4
+        },
+        {
+          "from": 7,
+          "to": 6,
+          "days": 12
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "days": 11
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "days": 11
+        },
+        {
+          "from": 7,
+          "to": 10,
+          "days": 15
+        },
+        {
+          "from": 8,
+          "to": 0,
+          "days": 7
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "days": 6
+        },
+        {
+          "from": 8,
+          "to": 2,
+          "days": 8
+        },
+        {
+          "from": 8,
+          "to": 3,
+          "days": 8
+        },
+        {
+          "from": 8,
+          "to": 4,
+          "days": 9
+        },
+        {
+          "from": 8,
+          "to": 5,
+          "days": 12
+        },
+        {
+          "from": 8,
+          "to": 6,
+          "days": 12
+        },
+        {
+          "from": 8,
+          "to": 7,
+          "days": 11
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "days": 22
+        },
+        {
+          "from": 8,
+          "to": 10,
+          "days": 6
+        },
+        {
+          "from": 9,
+          "to": 0,
+          "days": 16
+        },
+        {
+          "from": 9,
+          "to": 1,
+          "days": 17
+        },
+        {
+          "from": 9,
+          "to": 2,
+          "days": 15
+        },
+        {
+          "from": 9,
+          "to": 3,
+          "days": 16
+        },
+        {
+          "from": 9,
+          "to": 4,
+          "days": 17
+        },
+        {
+          "from": 9,
+          "to": 5,
+          "days": 15
+        },
+        {
+          "from": 9,
+          "to": 6,
+          "days": 23
+        },
+        {
+          "from": 9,
+          "to": 7,
+          "days": 11
+        },
+        {
+          "from": 9,
+          "to": 8,
+          "days": 22
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "days": 26
+        },
+        {
+          "from": 10,
+          "to": 0,
+          "days": 11
+        },
+        {
+          "from": 10,
+          "to": 1,
+          "days": 9
+        },
+        {
+          "from": 10,
+          "to": 2,
+          "days": 11
+        },
+        {
+          "from": 10,
+          "to": 3,
+          "days": 12
+        },
+        {
+          "from": 10,
+          "to": 4,
+          "days": 13
+        },
+        {
+          "from": 10,
+          "to": 5,
+          "days": 15
+        },
+        {
+          "from": 10,
+          "to": 6,
+          "days": 16
+        },
+        {
+          "from": 10,
+          "to": 7,
+          "days": 15
+        },
+        {
+          "from": 10,
+          "to": 8,
+          "days": 6
+        },
+        {
+          "from": 10,
+          "to": 9,
+          "days": 26
+        }
+      ]
+    },
+    {
+      "type": "Kogge",
+      "speed": 1,
+      "pairs": 110,
+      "reachableWithinShortestRareTip": 14,
+      "reachableWithinLongestRareTip": 28,
+      "citiesWithoutAnySixDayDestination": [
+        "Bergen",
+        "Brügge",
+        "Nowgorod",
+        "Venlo"
+      ],
+      "routes": [
+        {
+          "from": 0,
+          "to": 1,
+          "days": 2
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "days": 3
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "days": 4
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "days": 8
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "days": 12
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "days": 7
+        },
+        {
+          "from": 0,
+          "to": 8,
+          "days": 10
+        },
+        {
+          "from": 0,
+          "to": 9,
+          "days": 22
+        },
+        {
+          "from": 0,
+          "to": 10,
+          "days": 14
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "days": 2
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "days": 3
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "days": 4
+        },
+        {
+          "from": 1,
+          "to": 4,
+          "days": 5
+        },
+        {
+          "from": 1,
+          "to": 5,
+          "days": 9
+        },
+        {
+          "from": 1,
+          "to": 6,
+          "days": 10
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "days": 8
+        },
+        {
+          "from": 1,
+          "to": 8,
+          "days": 8
+        },
+        {
+          "from": 1,
+          "to": 9,
+          "days": 23
+        },
+        {
+          "from": 1,
+          "to": 10,
+          "days": 12
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "days": 3
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "days": 2
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "days": 3
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "days": 7
+        },
+        {
+          "from": 2,
+          "to": 6,
+          "days": 13
+        },
+        {
+          "from": 2,
+          "to": 7,
+          "days": 5
+        },
+        {
+          "from": 2,
+          "to": 8,
+          "days": 11
+        },
+        {
+          "from": 2,
+          "to": 9,
+          "days": 20
+        },
+        {
+          "from": 2,
+          "to": 10,
+          "days": 15
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "days": 3
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "days": 4
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "days": 2
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "days": 2
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "days": 6
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "days": 14
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "days": 7
+        },
+        {
+          "from": 3,
+          "to": 8,
+          "days": 12
+        },
+        {
+          "from": 3,
+          "to": 9,
+          "days": 22
+        },
+        {
+          "from": 3,
+          "to": 10,
+          "days": 16
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "days": 4
+        },
+        {
+          "from": 4,
+          "to": 1,
+          "days": 5
+        },
+        {
+          "from": 4,
+          "to": 2,
+          "days": 3
+        },
+        {
+          "from": 4,
+          "to": 3,
+          "days": 2
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "days": 4
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "days": 15
+        },
+        {
+          "from": 4,
+          "to": 7,
+          "days": 8
+        },
+        {
+          "from": 4,
+          "to": 8,
+          "days": 13
+        },
+        {
+          "from": 4,
+          "to": 9,
+          "days": 23
+        },
+        {
+          "from": 4,
+          "to": 10,
+          "days": 17
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "days": 8
+        },
+        {
+          "from": 5,
+          "to": 1,
+          "days": 9
+        },
+        {
+          "from": 5,
+          "to": 2,
+          "days": 7
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "days": 6
+        },
+        {
+          "from": 5,
+          "to": 4,
+          "days": 4
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "days": 19
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "days": 5
+        },
+        {
+          "from": 5,
+          "to": 8,
+          "days": 17
+        },
+        {
+          "from": 5,
+          "to": 9,
+          "days": 20
+        },
+        {
+          "from": 5,
+          "to": 10,
+          "days": 21
+        },
+        {
+          "from": 6,
+          "to": 0,
+          "days": 12
+        },
+        {
+          "from": 6,
+          "to": 1,
+          "days": 10
+        },
+        {
+          "from": 6,
+          "to": 2,
+          "days": 13
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "days": 14
+        },
+        {
+          "from": 6,
+          "to": 4,
+          "days": 15
+        },
+        {
+          "from": 6,
+          "to": 5,
+          "days": 19
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "days": 18
+        },
+        {
+          "from": 6,
+          "to": 8,
+          "days": 18
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "days": 33
+        },
+        {
+          "from": 6,
+          "to": 10,
+          "days": 22
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "days": 7
+        },
+        {
+          "from": 7,
+          "to": 1,
+          "days": 8
+        },
+        {
+          "from": 7,
+          "to": 2,
+          "days": 5
+        },
+        {
+          "from": 7,
+          "to": 3,
+          "days": 7
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "days": 8
+        },
+        {
+          "from": 7,
+          "to": 5,
+          "days": 5
+        },
+        {
+          "from": 7,
+          "to": 6,
+          "days": 18
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "days": 16
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "days": 15
+        },
+        {
+          "from": 7,
+          "to": 10,
+          "days": 20
+        },
+        {
+          "from": 8,
+          "to": 0,
+          "days": 10
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "days": 8
+        },
+        {
+          "from": 8,
+          "to": 2,
+          "days": 11
+        },
+        {
+          "from": 8,
+          "to": 3,
+          "days": 12
+        },
+        {
+          "from": 8,
+          "to": 4,
+          "days": 13
+        },
+        {
+          "from": 8,
+          "to": 5,
+          "days": 17
+        },
+        {
+          "from": 8,
+          "to": 6,
+          "days": 18
+        },
+        {
+          "from": 8,
+          "to": 7,
+          "days": 16
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "days": 31
+        },
+        {
+          "from": 8,
+          "to": 10,
+          "days": 7
+        },
+        {
+          "from": 9,
+          "to": 0,
+          "days": 22
+        },
+        {
+          "from": 9,
+          "to": 1,
+          "days": 23
+        },
+        {
+          "from": 9,
+          "to": 2,
+          "days": 20
+        },
+        {
+          "from": 9,
+          "to": 3,
+          "days": 22
+        },
+        {
+          "from": 9,
+          "to": 4,
+          "days": 23
+        },
+        {
+          "from": 9,
+          "to": 5,
+          "days": 20
+        },
+        {
+          "from": 9,
+          "to": 6,
+          "days": 33
+        },
+        {
+          "from": 9,
+          "to": 7,
+          "days": 15
+        },
+        {
+          "from": 9,
+          "to": 8,
+          "days": 31
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "days": 35
+        },
+        {
+          "from": 10,
+          "to": 0,
+          "days": 14
+        },
+        {
+          "from": 10,
+          "to": 1,
+          "days": 12
+        },
+        {
+          "from": 10,
+          "to": 2,
+          "days": 15
+        },
+        {
+          "from": 10,
+          "to": 3,
+          "days": 16
+        },
+        {
+          "from": 10,
+          "to": 4,
+          "days": 17
+        },
+        {
+          "from": 10,
+          "to": 5,
+          "days": 21
+        },
+        {
+          "from": 10,
+          "to": 6,
+          "days": 22
+        },
+        {
+          "from": 10,
+          "to": 7,
+          "days": 20
+        },
+        {
+          "from": 10,
+          "to": 8,
+          "days": 7
+        },
+        {
+          "from": 10,
+          "to": 9,
+          "days": 35
+        }
+      ]
+    },
+    {
+      "type": "Holk",
+      "speed": 0.72,
+      "pairs": 110,
+      "reachableWithinShortestRareTip": 8,
+      "reachableWithinLongestRareTip": 20,
+      "citiesWithoutAnySixDayDestination": [
+        "Bergen",
+        "Visby",
+        "Brügge",
+        "Nowgorod",
+        "Venlo"
+      ],
+      "routes": [
+        {
+          "from": 0,
+          "to": 1,
+          "days": 3
+        },
+        {
+          "from": 0,
+          "to": 2,
+          "days": 3
+        },
+        {
+          "from": 0,
+          "to": 3,
+          "days": 5
+        },
+        {
+          "from": 0,
+          "to": 4,
+          "days": 6
+        },
+        {
+          "from": 0,
+          "to": 5,
+          "days": 12
+        },
+        {
+          "from": 0,
+          "to": 6,
+          "days": 17
+        },
+        {
+          "from": 0,
+          "to": 7,
+          "days": 10
+        },
+        {
+          "from": 0,
+          "to": 8,
+          "days": 14
+        },
+        {
+          "from": 0,
+          "to": 9,
+          "days": 30
+        },
+        {
+          "from": 0,
+          "to": 10,
+          "days": 19
+        },
+        {
+          "from": 1,
+          "to": 0,
+          "days": 3
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "days": 5
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "days": 6
+        },
+        {
+          "from": 1,
+          "to": 4,
+          "days": 7
+        },
+        {
+          "from": 1,
+          "to": 5,
+          "days": 13
+        },
+        {
+          "from": 1,
+          "to": 6,
+          "days": 14
+        },
+        {
+          "from": 1,
+          "to": 7,
+          "days": 12
+        },
+        {
+          "from": 1,
+          "to": 8,
+          "days": 12
+        },
+        {
+          "from": 1,
+          "to": 9,
+          "days": 31
+        },
+        {
+          "from": 1,
+          "to": 10,
+          "days": 16
+        },
+        {
+          "from": 2,
+          "to": 0,
+          "days": 3
+        },
+        {
+          "from": 2,
+          "to": 1,
+          "days": 5
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "days": 3
+        },
+        {
+          "from": 2,
+          "to": 4,
+          "days": 5
+        },
+        {
+          "from": 2,
+          "to": 5,
+          "days": 10
+        },
+        {
+          "from": 2,
+          "to": 6,
+          "days": 19
+        },
+        {
+          "from": 2,
+          "to": 7,
+          "days": 7
+        },
+        {
+          "from": 2,
+          "to": 8,
+          "days": 16
+        },
+        {
+          "from": 2,
+          "to": 9,
+          "days": 27
+        },
+        {
+          "from": 2,
+          "to": 10,
+          "days": 20
+        },
+        {
+          "from": 3,
+          "to": 0,
+          "days": 5
+        },
+        {
+          "from": 3,
+          "to": 1,
+          "days": 6
+        },
+        {
+          "from": 3,
+          "to": 2,
+          "days": 3
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "days": 3
+        },
+        {
+          "from": 3,
+          "to": 5,
+          "days": 9
+        },
+        {
+          "from": 3,
+          "to": 6,
+          "days": 20
+        },
+        {
+          "from": 3,
+          "to": 7,
+          "days": 10
+        },
+        {
+          "from": 3,
+          "to": 8,
+          "days": 17
+        },
+        {
+          "from": 3,
+          "to": 9,
+          "days": 30
+        },
+        {
+          "from": 3,
+          "to": 10,
+          "days": 22
+        },
+        {
+          "from": 4,
+          "to": 0,
+          "days": 6
+        },
+        {
+          "from": 4,
+          "to": 1,
+          "days": 7
+        },
+        {
+          "from": 4,
+          "to": 2,
+          "days": 5
+        },
+        {
+          "from": 4,
+          "to": 3,
+          "days": 3
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "days": 6
+        },
+        {
+          "from": 4,
+          "to": 6,
+          "days": 21
+        },
+        {
+          "from": 4,
+          "to": 7,
+          "days": 12
+        },
+        {
+          "from": 4,
+          "to": 8,
+          "days": 19
+        },
+        {
+          "from": 4,
+          "to": 9,
+          "days": 31
+        },
+        {
+          "from": 4,
+          "to": 10,
+          "days": 23
+        },
+        {
+          "from": 5,
+          "to": 0,
+          "days": 12
+        },
+        {
+          "from": 5,
+          "to": 1,
+          "days": 13
+        },
+        {
+          "from": 5,
+          "to": 2,
+          "days": 10
+        },
+        {
+          "from": 5,
+          "to": 3,
+          "days": 9
+        },
+        {
+          "from": 5,
+          "to": 4,
+          "days": 6
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "days": 27
+        },
+        {
+          "from": 5,
+          "to": 7,
+          "days": 7
+        },
+        {
+          "from": 5,
+          "to": 8,
+          "days": 24
+        },
+        {
+          "from": 5,
+          "to": 9,
+          "days": 27
+        },
+        {
+          "from": 5,
+          "to": 10,
+          "days": 28
+        },
+        {
+          "from": 6,
+          "to": 0,
+          "days": 17
+        },
+        {
+          "from": 6,
+          "to": 1,
+          "days": 14
+        },
+        {
+          "from": 6,
+          "to": 2,
+          "days": 19
+        },
+        {
+          "from": 6,
+          "to": 3,
+          "days": 20
+        },
+        {
+          "from": 6,
+          "to": 4,
+          "days": 21
+        },
+        {
+          "from": 6,
+          "to": 5,
+          "days": 27
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "days": 25
+        },
+        {
+          "from": 6,
+          "to": 8,
+          "days": 25
+        },
+        {
+          "from": 6,
+          "to": 9,
+          "days": 45
+        },
+        {
+          "from": 6,
+          "to": 10,
+          "days": 30
+        },
+        {
+          "from": 7,
+          "to": 0,
+          "days": 10
+        },
+        {
+          "from": 7,
+          "to": 1,
+          "days": 12
+        },
+        {
+          "from": 7,
+          "to": 2,
+          "days": 7
+        },
+        {
+          "from": 7,
+          "to": 3,
+          "days": 10
+        },
+        {
+          "from": 7,
+          "to": 4,
+          "days": 12
+        },
+        {
+          "from": 7,
+          "to": 5,
+          "days": 7
+        },
+        {
+          "from": 7,
+          "to": 6,
+          "days": 25
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "days": 23
+        },
+        {
+          "from": 7,
+          "to": 9,
+          "days": 20
+        },
+        {
+          "from": 7,
+          "to": 10,
+          "days": 27
+        },
+        {
+          "from": 8,
+          "to": 0,
+          "days": 14
+        },
+        {
+          "from": 8,
+          "to": 1,
+          "days": 12
+        },
+        {
+          "from": 8,
+          "to": 2,
+          "days": 16
+        },
+        {
+          "from": 8,
+          "to": 3,
+          "days": 17
+        },
+        {
+          "from": 8,
+          "to": 4,
+          "days": 19
+        },
+        {
+          "from": 8,
+          "to": 5,
+          "days": 24
+        },
+        {
+          "from": 8,
+          "to": 6,
+          "days": 25
+        },
+        {
+          "from": 8,
+          "to": 7,
+          "days": 23
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "days": 42
+        },
+        {
+          "from": 8,
+          "to": 10,
+          "days": 9
+        },
+        {
+          "from": 9,
+          "to": 0,
+          "days": 30
+        },
+        {
+          "from": 9,
+          "to": 1,
+          "days": 31
+        },
+        {
+          "from": 9,
+          "to": 2,
+          "days": 27
+        },
+        {
+          "from": 9,
+          "to": 3,
+          "days": 30
+        },
+        {
+          "from": 9,
+          "to": 4,
+          "days": 31
+        },
+        {
+          "from": 9,
+          "to": 5,
+          "days": 27
+        },
+        {
+          "from": 9,
+          "to": 6,
+          "days": 45
+        },
+        {
+          "from": 9,
+          "to": 7,
+          "days": 20
+        },
+        {
+          "from": 9,
+          "to": 8,
+          "days": 42
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "days": 47
+        },
+        {
+          "from": 10,
+          "to": 0,
+          "days": 19
+        },
+        {
+          "from": 10,
+          "to": 1,
+          "days": 16
+        },
+        {
+          "from": 10,
+          "to": 2,
+          "days": 20
+        },
+        {
+          "from": 10,
+          "to": 3,
+          "days": 22
+        },
+        {
+          "from": 10,
+          "to": 4,
+          "days": 23
+        },
+        {
+          "from": 10,
+          "to": 5,
+          "days": 28
+        },
+        {
+          "from": 10,
+          "to": 6,
+          "days": 30
+        },
+        {
+          "from": 10,
+          "to": 7,
+          "days": 27
+        },
+        {
+          "from": 10,
+          "to": 8,
+          "days": 9
+        },
+        {
+          "from": 10,
+          "to": 9,
+          "days": 47
+        }
+      ]
+    }
+  ]
+}

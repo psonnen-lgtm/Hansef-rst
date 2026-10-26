@@ -3,8 +3,8 @@ from pathlib import Path
 import argparse,base64,hashlib,json,re,zipfile
 root=Path(__file__).resolve().parents[1]
 parser=argparse.ArgumentParser()
-parser.add_argument('--directory',default='build/hansefuerst-0.7b-package')
-parser.add_argument('--zip',dest='archive',default='releases/hansefuerst-0.7b-assets.zip')
+parser.add_argument('--directory',default='build/hansefuerst-0.8a-package')
+parser.add_argument('--zip',dest='archive',default='releases/hansefuerst-0.8a-assets.zip')
 args=parser.parse_args()
 target=(root/args.directory).resolve();archive=(root/args.archive).resolve()
 assert target.is_relative_to(root) and archive.is_relative_to(root)
@@ -21,7 +21,7 @@ assert re.search(r'<script>([\s\S]*?)</script>',html)[1]==re.search(r'<script>([
 target.mkdir(parents=True)
 files={'Hansefuerst_0_4.html':html.encode()}
 for file in catalog.values():files[file]=(root/file).read_bytes()
-files['BITTE_LESEN.txt']='''Hansefürst 0.7b – zusätzliches Grafikpaket
+files['BITTE_LESEN.txt']='''Hansefürst 0.8a – zusätzliches Grafikpaket
 
 Das ZIP vollständig entpacken. Hansefuerst_0_4.html und den Ordner assets zusammenlassen.
 Das HTML verwendet relative lokale Bilder und benötigt dafür keinen externen Dienst.

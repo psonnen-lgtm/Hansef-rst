@@ -1,0 +1,109 @@
+{
+  "testedGameCommit": "8516770f817a61388cbab094df449457fcebb045",
+  "gameSHA256": "8f235c055dcbfacc240c72482a1dc8187d5d24a92b38d5370c225c2e1e23c930",
+  "browser": "154.0.8037.57",
+  "mode": "storage",
+  "scope": "controlled storage/rare-event fixtures, actual UI calls; not regular careers or event-frequency estimate",
+  "checks": [
+    {
+      "name": "corrupt import preserves original",
+      "passed": true
+    },
+    {
+      "name": "future import preserves original",
+      "passed": true
+    },
+    {
+      "name": "declined real import preserves original",
+      "passed": true
+    },
+    {
+      "name": "real import backup/target write failures and successful retry",
+      "passed": true,
+      "faults": 2
+    },
+    {
+      "name": "autosave quota: disk retains previous state, active game exports, recovery saves before reload",
+      "passed": true,
+      "limitation": "ordinary legacy actions are not globally transactional; closing before export/recovery can lose unsaved actions"
+    },
+    {
+      "name": "same-origin mono package mono real V11 transfer",
+      "passed": true
+    },
+    {
+      "name": "different origin has separate storage; explicit FileReader transfer works without synchronization",
+      "passed": true,
+      "origins": [
+        "http://127.0.0.1:8794",
+        "http://localhost:8794"
+      ]
+    },
+    {
+      "name": "real old V3 import preserves original and migrates supported fields",
+      "passed": true,
+      "city": 4,
+      "gold": 5000
+    },
+    {
+      "name": "actual declined new game and return preserve current save",
+      "passed": true
+    },
+    {
+      "name": "unloaded unreadable primary backed up by successful real import",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "type": "alert",
+      "message": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+    },
+    {
+      "type": "alert",
+      "message": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+    },
+    {
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "type": "alert",
+      "message": "Sicherung nicht möglich. Bitte zuerst exportieren."
+    },
+    {
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "type": "alert",
+      "message": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+    },
+    {
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "type": "alert",
+      "message": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+    },
+    {
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "type": "confirm",
+      "message": "Neue Partie mit Ulf in Venlo beginnen? Die bisherige Partie wird zuvor unverändert gesichert."
+    },
+    {
+      "type": "alert",
+      "message": "Spielstand konnte nicht sicher übernommen werden. Originaldaten bleiben erhalten. Bitte prüfe freien Speicher oder importiere eine Sicherung."
+    }
+  ],
+  "screenshots": {}
+}
