@@ -1,0 +1,9 @@
+{
+  "checkedOn": "2026-10-26",
+  "repository": "psonnen-lgtm/Hansef-rst",
+  "repositoryWebPage": {"url": "https://github.com/psonnen-lgtm/Hansef-rst", "httpStatus": 200, "embeddedIsPrivate": false, "visibilityLabel": "Public", "listedPagesURL": "https://psonnen-lgtm.github.io/Hansef-rst/"},
+  "limitations": {"repositoryREST": "Get https://api.github.com/repos/psonnen-lgtm/Hansef-rst: Forbidden", "pagesLiveRead": "Tunnel connection failed: 403 Forbidden", "officialPagesDocsRead": "Tunnel connection failed: 403 Forbidden", "configuredPagesSource": "unknown; owner must inspect existing Settings > Pages before activation"},
+  "hostingDecision": "Standard GitHub Pages for this public repository must be treated as public, no password protection. No service, source branch, deployment or visibility setting changed.",
+  "newPublicationApproved": false,
+  "newDeploymentPerformed": false
+}
