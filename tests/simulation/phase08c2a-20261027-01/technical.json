@@ -1,0 +1,282 @@
+{
+  "base": "569afbac5ecff9abf8dfaae6f77815716a561f07",
+  "testedGameCommit": "b5e4874bef7e68e8207209ba9133028220f08dbf",
+  "gameSHA256": "55d1935c918567997927626bf49efdbbbc4069f17fb75e08bda645e4b8a56ab7",
+  "scope": "bounded UI actual trades two paired trips and saved V11 roundtrips; zero full economy or career simulations",
+  "checks": [
+    {
+      "name": "whole HTML equality outside explicit market UI and scoped CSS; all economy travel save and church code exact",
+      "passed": true,
+      "evidence": {
+        "onlyMarketViewHelpersAndScopedCSS": true,
+        "unchangedTradeFIFOPricesRisksPoliticsSaveAndChurch": true,
+        "saveVersion": 11
+      }
+    },
+    {
+      "name": "eleven zero quantities and disabled trades; changing goods or ships discards stale entered amounts",
+      "passed": true,
+      "evidence": {
+        "goods": 11,
+        "initialZero": true,
+        "explicitTradeRequired": true,
+        "goodsAndShipReset": true
+      }
+    },
+    {
+      "name": "buy maxima respect cash price stock real armed capacity and zero limits without transactions",
+      "passed": true,
+      "evidence": [
+        {
+          "name": "space",
+          "expected": 90,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "cash",
+          "expected": 5,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "stock",
+          "expected": 7,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "loaded armed",
+          "expected": 42,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "zero cash",
+          "expected": 0,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "full hold",
+          "expected": 0,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "empty market",
+          "expected": 0,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "three arms",
+          "expected": 48,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        },
+        {
+          "name": "fractional legacy capacity",
+          "expected": 55,
+          "writes": 0,
+          "confirms": 0,
+          "events": 0
+        }
+      ]
+    },
+    {
+      "name": "sell max uses only selected local ship good; remote ships warehouses and other goods remain untouched",
+      "passed": true,
+      "evidence": {
+        "firstShipGrain": 10,
+        "secondShipGrain": 3,
+        "secondShipBeer": 2,
+        "remoteGrain": 17,
+        "warehouseGrain": 30,
+        "noMovement": true
+      }
+    },
+    {
+      "name": "local selection changes only active ship; remote or invalid indices cannot enable trade or move any ship",
+      "passed": true,
+      "evidence": {
+        "localOnly": true,
+        "remoteLuebeckBrugge": true,
+        "shipCitiesUnchanged": true,
+        "invalidIndicesRejected": true
+      }
+    },
+    {
+      "name": "explicit purchases and FIFO sales exactly match baseline gold costs origins markets events and RNG",
+      "passed": true,
+      "evidence": {
+        "steps": [
+          {
+            "gold": 5100,
+            "active": 0,
+            "cargo": {
+              "0": 5
+            },
+            "costs": {
+              "0": 15
+            },
+            "origins": {
+              "0": [
+                {
+                  "city": 0,
+                  "n": 5
+                }
+              ]
+            }
+          },
+          {
+            "gold": 5040,
+            "active": 0,
+            "cargo": {
+              "0": 8
+            },
+            "costs": {
+              "0": 16.875
+            },
+            "origins": {
+              "0": [
+                {
+                  "city": 0,
+                  "n": 8
+                }
+              ]
+            }
+          },
+          {
+            "gold": 5000,
+            "active": 1,
+            "cargo": {
+              "0": 5,
+              "1": 2
+            },
+            "costs": {
+              "0": 14,
+              "1": 25
+            },
+            "origins": {
+              "0": [
+                {
+                  "city": 8,
+                  "n": 3
+                },
+                {
+                  "city": 0,
+                  "n": 2
+                }
+              ],
+              "1": [
+                {
+                  "city": 0,
+                  "n": 2
+                }
+              ]
+            }
+          },
+          {
+            "gold": 5080,
+            "active": 1,
+            "cargo": {
+              "0": 1,
+              "1": 2
+            },
+            "costs": {
+              "0": 14,
+              "1": 25
+            },
+            "origins": {
+              "0": [
+                {
+                  "city": 0,
+                  "n": 1
+                }
+              ],
+              "1": [
+                {
+                  "city": 0,
+                  "n": 2
+                }
+              ]
+            }
+          }
+        ],
+        "baselineEventsExact": true,
+        "noNewDays": true
+      }
+    },
+    {
+      "name": "zero amount and declined existing 70 percent warning cannot buy; max never asks for confirmation",
+      "passed": true,
+      "evidence": {
+        "maxDoesNotConfirmOrBuy": true,
+        "zeroDoesNothing": true,
+        "oldWarningDeclinePreserved": true
+      }
+    },
+    {
+      "name": "single and local convoy travel remain identical to baseline including risks fees remote ships and next RNG",
+      "passed": true,
+      "evidence": [
+        {
+          "convoy": false,
+          "ships": 1,
+          "event": "storm",
+          "days": 2,
+          "fee": 4,
+          "allStateAndRNGExact": true
+        },
+        {
+          "convoy": true,
+          "ships": 2,
+          "event": "storm",
+          "days": 2,
+          "fee": 10,
+          "allStateAndRNGExact": true
+        }
+      ]
+    },
+    {
+      "name": "eleven archived V11 states load save and reimport unchanged with no new storage fields",
+      "passed": true,
+      "evidence": {
+        "states": [
+          "0-balanced-normal-93002.json.gz",
+          "1-balanced-normal-93002.json.gz",
+          "2-balanced-normal-93002.json.gz",
+          "3-balanced-normal-93002.json.gz",
+          "4-balanced-normal-93002.json.gz",
+          "5-balanced-normal-93002.json.gz",
+          "6-balanced-normal-93002.json.gz",
+          "7-balanced-normal-93002.json.gz",
+          "8-balanced-normal-93002.json.gz",
+          "9-balanced-normal-93002.json.gz",
+          "10-balanced-normal-93002.json.gz"
+        ],
+        "version": 11,
+        "allFieldsExact": true
+      }
+    },
+    {
+      "name": "existing ordinary autosave semantics survive ship selection and trading including quota warning and recovery",
+      "passed": true,
+      "evidence": {
+        "activeSelectionAndBuySaved": true,
+        "quotaKeepsOldDiskAndWarns": true,
+        "recovery": true,
+        "limitation": "legacy ordinary autosaves can leave newer RAM than disk; export or recover before closing"
+      }
+    }
+  ]
+}
