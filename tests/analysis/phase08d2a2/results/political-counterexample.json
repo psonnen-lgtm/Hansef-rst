@@ -1,0 +1,23 @@
+{
+  "testedCommit": "fd8eb340092d0dcff08b2c67cfb4dc6680258804",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "constructionOnly": true,
+  "noCareerExecuted": true,
+  "failedAcceptance": "political wealth cap breaks the invariant after a prior genuine loss; wealth-only mayor gate can be crossed by local neutral wash",
+  "loss": -1800,
+  "before": {
+    "gold": 36200,
+    "financial": 44610,
+    "political": 44610,
+    "eligibleWealth": false
+  },
+  "after": {
+    "gold": 36200,
+    "financial": 45595,
+    "political": 45595,
+    "eligibleWealth": true
+  },
+  "goldDelta": 0,
+  "reputationDelta": 0,
+  "readyForProductiveUse": false
+}

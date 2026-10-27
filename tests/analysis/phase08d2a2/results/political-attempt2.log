@@ -1,0 +1,27 @@
+PASS local sale/rebuy 90 9x10 and90x1 have no political wealth or reputation gains
+PASS buy then sell and repeated circles do not gain recognition
+PASS two ships warehouse and direct button callbacks share exact political accounting
+PASS full analysis and political observer exports retain awards costs and worth
+PASS foreign genuine profits split neutrally but reveal a changed reputation rate
+PASS honest old local profit is financially preserved but not fully credited politically
+PASS real losses remain real and unknown legacy costs create no fictional recognition
+PASS real transport market change and later repurchase are allowed without editing financial FIFO
+PASS no unchanged-day reset of political protection
+PASS thresholds early rank mayor and elder do not accept local wash revaluation
+evalmachine.<anonymous>:427
+ const p=x.politics,now=x.year*360+x.day,object=o=>o&&typeof o==='object'&&!Array.isArray(o),keys=(o,names)=>object(o)&&Object.keys(o).length===names.length&&names.every(k=>Object.hasOwn(o,k)),int=(n,a=0,b=360000000)=>Number.isSafeInteger(n)&&n>=a&&n<=b,day=n=>int(n,p?.since,now),bad=()=>{throw Error('Ungültige politische Daten')};
+                                                                                                                                                                                                                                                                                                  ^
+
+Error: Ungültige politische Daten
+    at bad (evalmachine.<anonymous>:427:297)
+    at content (evalmachine.<anonymous>:439:101)
+    at validatePolitics (evalmachine.<anonymous>:454:3)
+    at validate (evalmachine.<anonymous>:262:142)
+    at evalmachine.<anonymous>:1:232
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.evaluate [as eval] (/workspace/Hansef-rst/tests/analysis/phase08d2a2/harness.cjs:18:54)
+    at /workspace/Hansef-rst/tests/analysis/phase08d2a2/political-checks.cjs:51:102
+    at check (/workspace/Hansef-rst/tests/analysis/phase08d2a2/political-checks.cjs:5:40)
+
+Node.js v24.19.0
