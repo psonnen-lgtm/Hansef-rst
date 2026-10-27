@@ -14,7 +14,7 @@ record('whole HTML equality outside explicit market UI and scoped CSS; all econo
  new vm.Script(html.match(/<script>([\s\S]*?)<\/script>/)[1]);return {onlyMarketViewHelpersAndScopedCSS:true,unchangedTradeFIFOPricesRisksPoliticsSaveAndChurch:true,saveVersion:11};
 });
 record('eleven zero quantities and disabled trades; changing goods or ships discards stale entered amounts',()=>{
- const g=fixture();g.eval(fleet+'marketView()');const text=g.eval('$("sheet").innerHTML');assert.equal((text.match(/type="number" min="0" step="1" value="0"/g)||[]).length,11);assert.equal((text.match(/id="market(?:Buy|Sell)\d+" disabled/g)||[]).length,22);
+ const g=fixture();g.eval(fleet+'marketView()');const text=g.eval('$("sheet").innerHTML');assert.equal((text.match(/type="number" min="0" step="1" value="0"/g)||[]).length,11);assert.equal((text.match(/id="market(?:Buy|Sell)\d+"[^>]*\bdisabled\b/g)||[]).length,22);
  g.eval('marketSetMax(0,1)');assert(g.eval('Number($("qty0").value)')>0);g.eval('marketChooseGood(1)');assert.equal(g.eval('Number($("qty0").value)'),0);assert.equal(g.eval('Number($("qty1").value)'),0);
  g.eval('marketSetMax(1,-1)');assert.equal(g.eval('Number($("qty1").value)'),0); // no beer on first ship
  assert(g.eval('marketSelect(1)'));assert.equal(g.eval('marketQuantityGood'),null);assert.equal((g.eval('$("sheet").innerHTML').match(/value="0" aria-label="Menge /g)||[]).length,11);
