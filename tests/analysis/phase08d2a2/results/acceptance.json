@@ -34,5 +34,9 @@
   "mainOrPagesChanged": false,
   "historicalPhaseFilesChanged": false,
   "fullCareerOrEconomicSimulations": 0,
-  "prStatus": "pending actual attempt after report publication"
+  "prStatus": "actual gh pr create attempted; GraphQL Forbidden; no PR created",
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/phase08d2a2-anchor-political?expand=1",
+  "localLinksVerified": 39,
+  "originalIndexPrefixPreserved": true,
+  "frozenSourceHashesPreserved": true
 }
