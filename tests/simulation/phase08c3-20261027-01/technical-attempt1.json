@@ -1,0 +1,499 @@
+{
+  "base": "07dfaee9ca3a12df680d0ec5ac07eeff0381681e",
+  "testedGameCommit": "4570c8a4d0bcefb3a739b0955544887d127af1e4",
+  "gameSHA256": "5e8e3c463824a807bfe323986136d5a6964a2119f0915dd4ef01cee222da7da4",
+  "scope": "bounded synthetic/archived snapshots and isolated actions, no full career/economy simulations",
+  "checks": [
+    {
+      "name": "complete baseline projection, shared thresholds and verbatim production politics mirror",
+      "passed": true,
+      "evidence": {
+        "allOtherFunctionsExact": 187,
+        "quoteAndProofBodiesExactAfterConstantSubstitution": true,
+        "existingConstantsUnchanged": true,
+        "economyAndTravelAndStorageExact": true,
+        "mirrorExact": true
+      }
+    },
+    {
+      "name": "new game and real historical V11 policy parameters appear without invented birthplace or office",
+      "passed": true,
+      "evidence": {
+        "fresh": {
+          "sectionDays": 60,
+          "mayorWealth": 45000
+        },
+        "archived": {
+          "file": "phase06b-20261025-01/pilot/30-85000-0-balanced-90001.json.gz",
+          "sectionDays": 30,
+          "mayorWealth": 85000
+        },
+        "noInventedBirthplaceOrOffice": true
+      }
+    },
+    {
+      "name": "wealth and reputation immediately below at and above actual thresholds match baseline decisions",
+      "passed": true,
+      "evidence": {
+        "cases": 162,
+        "mayorWealth": [
+          45000,
+          85000
+        ],
+        "mayorRep": 55,
+        "elderWealth": 180000,
+        "elderRep": 90,
+        "allQuotesExact": true
+      }
+    },
+    {
+      "name": "ranks zero through four title and office are distinct; fulfilled needs are not next recommendations",
+      "passed": true,
+      "evidence": [
+        {
+          "kind": "fresh",
+          "rank": 0,
+          "next": "Im Abschnitt „Dein nächster Kaufmannsrang“ die noch offenen Voraussetzungen erfüllen und den Aufstieg ausdrücklich beantragen."
+        },
+        {
+          "kind": "merchant",
+          "rank": 1,
+          "next": "Im Abschnitt „Dein nächster Kaufmannsrang“ die noch offenen Voraussetzungen erfüllen und den Aufstieg ausdrücklich beantragen."
+        },
+        {
+          "kind": "candidate",
+          "rank": 2,
+          "next": "Kandidatur und örtliche Mehrheit sind belegt. Du kannst ausdrücklich kandidieren."
+        },
+        {
+          "kind": "office",
+          "rank": 3,
+          "next": "Amtsbewährung in Lübeck: zwei neue Dienste aus verschiedenen Abschnitten erfüllen, darunter eine Ratsvereinbarung. Bereits vor Amtsantritt erworbene Dienste zählen hierfür nicht."
+        },
+        {
+          "kind": "proved",
+          "rank": 3,
+          "next": "Das Amtsmandat zählt als Heimatsiegel. In anderen Städten Versorgung und Ratsvereinbarung beurkunden und ausdrücklich um deren Siegel bitten."
+        },
+        {
+          "kind": "ready",
+          "rank": 3,
+          "next": "Alle Hansebedingungen sind erfüllt. Du kannst ausdrücklich vor die Hanseversammlung treten."
+        },
+        {
+          "kind": "elder",
+          "rank": 4,
+          "next": "Du hast den Eldermann-Titel erworben. Handel und Stadtleben gehen weiter; ein erneuter Aufstieg ist nicht nötig."
+        },
+        {
+          "kind": "legacy-title",
+          "rank": 3,
+          "next": "Durch Handel Buchvermögen aufbauen; Mietrückstände werden zusätzlich abgezogen."
+        }
+      ]
+    },
+    {
+      "name": "services sections kinds pledges and per-city support are actual distinct quantities",
+      "passed": true,
+      "evidence": {
+        "deedCases": [
+          {
+            "records": 0,
+            "pledges": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 1,
+            "pledges": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 2,
+            "pledges": [
+              false,
+              false,
+              false,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 3,
+            "pledges": [
+              true,
+              false,
+              false,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 4,
+            "pledges": [
+              true,
+              false,
+              true,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 5,
+            "pledges": [
+              true,
+              true,
+              true,
+              false
+            ],
+            "eligible": false
+          },
+          {
+            "records": 6,
+            "pledges": [
+              true,
+              true,
+              true,
+              true
+            ],
+            "eligible": true
+          }
+        ],
+        "cities": 11,
+        "noIndividualRivalWealthShipsVotes": true
+      }
+    },
+    {
+      "name": "eligible losing candidacy and sufficient majority remain separate and elections match base exactly",
+      "passed": true,
+      "evidence": {
+        "results": [
+          {
+            "wealth": 45000,
+            "won": false,
+            "wait": 60
+          },
+          {
+            "wealth": 180000,
+            "won": true,
+            "wait": 60
+          }
+        ],
+        "repeatElectionGuard": true,
+        "stateEventsAndReasonsExact": true
+      }
+    },
+    {
+      "name": "cooldown, active office and rent blockers stay visible and do not fabricate candidates",
+      "passed": true,
+      "evidence": {
+        "wait": 17,
+        "rentBlock": true,
+        "activeOfficeBlock": true
+      }
+    },
+    {
+      "name": "tenure proof requires new local deeds in distinct periods and an accord, equal to baseline",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "n": 6,
+            "alter": "none",
+            "proved": false,
+            "syntheticPredicateProbe": false
+          },
+          {
+            "n": 7,
+            "alter": "none",
+            "proved": false,
+            "syntheticPredicateProbe": false
+          },
+          {
+            "n": 8,
+            "alter": "none",
+            "proved": false,
+            "syntheticPredicateProbe": false
+          },
+          {
+            "n": 9,
+            "alter": "none",
+            "proved": true,
+            "syntheticPredicateProbe": false
+          },
+          {
+            "n": 10,
+            "alter": "none",
+            "proved": true,
+            "syntheticPredicateProbe": false
+          },
+          {
+            "n": 10,
+            "alter": "same-period",
+            "proved": false,
+            "syntheticPredicateProbe": true
+          },
+          {
+            "n": 10,
+            "alter": "no-accord",
+            "proved": false,
+            "syntheticPredicateProbe": true
+          },
+          {
+            "n": 10,
+            "alter": "wrong-city",
+            "proved": false,
+            "syntheticPredicateProbe": true
+          }
+        ],
+        "note": "Malformed-field probes test predicates only, not import acceptance; normal snapshots validate."
+      }
+    },
+    {
+      "name": "foreign seals regions and Hanse contract remain separate; every missing requirement blocks assembly",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "change": "none",
+            "assembled": true
+          },
+          {
+            "change": "s.gold+=179999-politicalWorth()",
+            "assembled": false
+          },
+          {
+            "change": "s.rep=89",
+            "assembled": false
+          },
+          {
+            "change": "s.politics.terms[0]=null",
+            "assembled": false
+          },
+          {
+            "change": "s.politics.endorsements[7]=null",
+            "assembled": false
+          },
+          {
+            "change": "s.politics.records=s.politics.records.filter(v=>v.kind!==\"league\")",
+            "assembled": false
+          },
+          {
+            "change": "s.storage.rentals[0]={blocks:0,until:totalDay()+1,arrears:1}",
+            "assembled": false
+          }
+        ],
+        "sameRegionThreeForeignSealsStillFail": true,
+        "syntheticPredicateProbe": true
+      }
+    },
+    {
+      "name": "repeated actual views leave all state disk events and seeded RNG unchanged",
+      "passed": true,
+      "evidence": {
+        "openings": 210,
+        "noWritesDaysGoldReputationMessagesOrRewards": true,
+        "nextSeededRandomExact": true
+      }
+    },
+    {
+      "name": "small explicit political job actions and quota failures have unchanged results and no double services",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "kind": "supply",
+            "failure": "none",
+            "jobs": 1
+          },
+          {
+            "kind": "supply",
+            "failure": "cancel",
+            "jobs": 0
+          },
+          {
+            "kind": "supply",
+            "failure": "quota",
+            "jobs": 0
+          },
+          {
+            "kind": "accord",
+            "failure": "none",
+            "jobs": 1
+          },
+          {
+            "kind": "accord",
+            "failure": "cancel",
+            "jobs": 0
+          },
+          {
+            "kind": "accord",
+            "failure": "quota",
+            "jobs": 0
+          }
+        ],
+        "atomicUnchanged": true
+      }
+    },
+    {
+      "name": "archived historical and regular V11 import save and reload preserve every field",
+      "passed": true,
+      "evidence": {
+        "files": [
+          {
+            "file": "phase06b-20261025-01/main/60-45000-0-balanced-91001.json.gz",
+            "sha256": "d2c8f066b341ce70a87b4139950721bbb0df17814a73b1965e92e62c38cc7b1f",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06b-20261025-01/pilot/30-85000-0-balanced-90001.json.gz",
+            "sha256": "8d4d422695bdcfbdaeeb164184a7e82e7c8c76d6af08b37e788004d7fc22b07d",
+            "rules": {
+              "sectionDays": 30,
+              "mayorWealth": 85000
+            }
+          },
+          {
+            "file": "phase06b-20261025-01/main/60-45000-8-wealth-91002.json.gz",
+            "sha256": "644492d54a3704fa8d136a7f2fed949f645685d265b46e42bef6cda9513b2b8f",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/0-balanced-normal-93002.json.gz",
+            "sha256": "71e641ff973ef54a24870f11fe158022b9e63140452f6bc4ad0b32efdf75f18a",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/1-balanced-normal-93002.json.gz",
+            "sha256": "651d934d3a73c38b3c92c294e5b898822ccaa455108ee3b1227f119bb6a79143",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/2-balanced-normal-93002.json.gz",
+            "sha256": "a2c20e91c686ffd90c2ef83d053e00729236d538bbce675e5d125b57c7076daa",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/3-balanced-normal-93002.json.gz",
+            "sha256": "b439a19d7b419203b5b9caed0bf00fa1116de5e1a67274d79a84dd572a7eec12",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/4-balanced-normal-93002.json.gz",
+            "sha256": "39a7c7b19e8c18195f8cc2663ae836615c6845a37a82d60169470bea1388df28",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/5-balanced-normal-93002.json.gz",
+            "sha256": "b36eec8eb01c4eae4b9bcf750fdfcc398c8101f1a27bc44697e624fdc7f993a3",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/6-balanced-normal-93002.json.gz",
+            "sha256": "2299d096991a4e3f7f345ef450ec8f4379211e161d466e7b811d54a50b831a4b",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/7-balanced-normal-93002.json.gz",
+            "sha256": "f51b7d5371c004d2c2678658981160ccc61d25f8e7054a0be9ebe5ea4122840a",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/8-balanced-normal-93002.json.gz",
+            "sha256": "1dd02a35e21d6b84442f5ba1055acde263550ff281e1f6a67746e999b0aa0450",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/9-balanced-normal-93002.json.gz",
+            "sha256": "c6268d9e10d22a52e4623906b2874c570c72e918ba6ea57d59813f96e7ef4bf8",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/10-balanced-normal-93002.json.gz",
+            "sha256": "a0e7e0a3d35ddab02a5543cb02f2af450e02c111662f6a6f999bf7f8a780e1ea",
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          }
+        ],
+        "allPoliticalEconomicFleetWarehouseFieldsExact": true
+      }
+    },
+    {
+      "name": "autosave warning persists through views and protected import failures keep old disk and RAM",
+      "passed": true,
+      "evidence": {
+        "viewKeepsWarningAndNoWrites": true,
+        "failedImportAtomic": true,
+        "recoveryExact": true
+      }
+    },
+    {
+      "name": "trade ship navigation and actual single convoy arrivals still match integrated base",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "convoy": false,
+            "days": 3,
+            "fee": 6,
+            "remoteShipCity": 8
+          },
+          {
+            "convoy": true,
+            "days": 3,
+            "fee": 10,
+            "remoteShipCity": 8
+          }
+        ],
+        "entireStateAndEventsAndRNGExact": true
+      }
+    }
+  ]
+}
