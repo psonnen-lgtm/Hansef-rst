@@ -1,0 +1,26 @@
+PASS whole HTML equality outside explicit market UI and scoped CSS; all economy travel save and church code exact
+PASS eleven zero quantities and disabled trades; changing goods or ships discards stale entered amounts
+PASS buy maxima respect cash price stock real armed capacity and zero limits without transactions
+PASS sell max uses only selected local ship good; remote ships warehouses and other goods remain untouched
+PASS local selection changes only active ship; remote or invalid indices cannot enable trade or move any ship
+PASS explicit purchases and FIFO sales exactly match baseline gold costs origins markets events and RNG
+PASS zero amount and declined existing 70 percent warning cannot buy; max never asks for confirmation
+PASS single and local convoy travel remain identical to baseline including risks fees remote ships and next RNG
+PASS eleven archived V11 states load save and reimport unchanged with no new storage fields
+evalmachine.<anonymous>:636
+function trade(j,dir){if(!politicalTradeStaging&&dir===-1&&politicalSupplyPending(j))return politicalTrade(j,dir);if(!isGoodIndex(j))return;if(ship().city!==s.city)return notice('Dieses Schiff liegt in einem anderen Hafen.');let n=Math.floor(Number($('qty'+j).value)),m=s.markets[s.city][j],q=ship();if(!Number.isFinite(n)||n<1)return notice('Bitte eine gültige Fasszahl eingeben.');if(dir===1){if(n>m.stock||n>capacity(q)-load(q)||n*m.price>s.gold)return notice('Nicht genügend Gold, Warenbestand oder Laderaum.');if(n*m.price>s.gold*.7&&!confirm('Du investierst über 70 % deines Bargelds. Trotzdem kaufen?'))return;ensureCargoRecords(q);let old=q.cargo[j]||0,bookBefore=cargoBookPrice(q,j);q.bookCosts[j]=(bookBefore*old+m.price*n)/(old+n);let lots=q.origins[j]??=[];let lastLot=lots[lots.length-1];if(lastLot?.city===s.city)lastLot.n+=n;else lots.push({city:s.city,n});q.costs[j]=old&&q.costs[j]==null?null:((q.costs[j]||0)*old+m.price*n)/(old+n);q.cargo[j]=old+n;s.gold-=n*m.price;Testlog.event('buy',{shipId:q.id,routeId:Testlog.route(q.id),good:GOODS[j][0],quantity:n,unitPrice:m.price,total:n*m.price,averageCost:q.costs[j]});m.stock-=n;log(`${n} Fass ${GOODS[j][0]} für ${fmt(n*m.price)} G gekauft.`)}else{if(n>(q.cargo[j]||0))return notice('So viel Ware hast du nicht an Bord.');let paid=q.costs[j]??null,gain=n*m.price,profit=q.costs[j]==null?null:n*(m.price-q.costs[j]);let eligible=consumeOrigins(q,j,n,s.city);s.gold+=gain;q.cargo[j]-=n;if(!q.cargo[j]){delete q.cargo[j];delete q.costs[j];if(q.bookCosts)delete q.bookCosts[j]}m.stock+=n;Testlog.event('sell',{shipId:q.id,routeId:Testlog.route(q.id),good:GOODS[j][0],quantity:n,unitPrice:m.price,total:gain,averageCost:paid,profit});s.rep+=profit>0?Math.min(2,Math.floor(profit/250)):0;log(`${n} Fass ${GOODS[j][0]} verkauft: ${fmt(gain)} G (${profit===null?'Einkaufspreis unbekannt':(profit>=0?'+':'')+fmt(profit)+' G Warengewinn'}).`);completeQuests(j,eligible);completePoliticalSupply(j,eligible)}observe();render();marketView()}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+
+TypeError: Testlog.route is not a function
+    at trade (evalmachine.<anonymous>:636:1035)
+    at evalmachine.<anonymous>:1:19
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/simulation/start-selection-checks.cjs:9:93)
+    at /workspace/Hansef-rst/tests/simulation/market-controls-checks.cjs:52:75
+    at record (/workspace/Hansef-rst/tests/simulation/market-controls-checks.cjs:6:65)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/market-controls-checks.cjs:50:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+
+Node.js v24.19.0

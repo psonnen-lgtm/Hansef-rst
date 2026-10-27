@@ -1,0 +1,227 @@
+{
+  "base": "569afbac5ecff9abf8dfaae6f77815716a561f07",
+  "testedGameCommit": "b5e4874bef7e68e8207209ba9133028220f08dbf",
+  "gameSHA256": "55d1935c918567997927626bf49efdbbbc4069f17fb75e08bda645e4b8a56ab7",
+  "browser": "154.0.8037.57",
+  "scope": "four Chromium viewport/touch emulations and isolated synthetic V11 states; no real Apple hardware and no complete simulations",
+  "checks": [
+    {
+      "name": "native market workflow 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "input": "tap",
+      "zeroAndGoodsReset": true,
+      "buyMax": 7,
+      "sellMaxSelectedShip": 5,
+      "stockZeroMax": true,
+      "onlyLocalShips": true,
+      "remoteFleetSelectionHandled": true,
+      "armedFreeSpace": [
+        68,
+        61
+      ],
+      "secondShipFreeSpace": [
+        42,
+        47
+      ],
+      "explicitBuyAndSellOnly": true,
+      "noUnexpectedCargoMovement": true,
+      "V11ActualDownloadImportReloadExact": true,
+      "autosaveQuotaExportRecovery": true,
+      "noNewDays": true,
+      "all44TradeButtonsAtLeast44px": true,
+      "stickyCloseAndScroll": true,
+      "noHorizontalOverflow": true,
+      "layout": {
+        "baseline": {
+          "firstQuantityOffset": 559,
+          "cardHeight": 155,
+          "dialogScrollHeight": 2384
+        },
+        "current": {
+          "firstQuantityOffset": 514,
+          "cardHeight": 227,
+          "dialogScrollHeight": 2826
+        }
+      }
+    },
+    {
+      "name": "native market workflow 390x844",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "tap",
+      "zeroAndGoodsReset": true,
+      "buyMax": 7,
+      "sellMaxSelectedShip": 5,
+      "stockZeroMax": true,
+      "onlyLocalShips": true,
+      "remoteFleetSelectionHandled": true,
+      "armedFreeSpace": [
+        68,
+        61
+      ],
+      "secondShipFreeSpace": [
+        42,
+        47
+      ],
+      "explicitBuyAndSellOnly": true,
+      "noUnexpectedCargoMovement": true,
+      "V11ActualDownloadImportReloadExact": true,
+      "autosaveQuotaExportRecovery": false,
+      "noNewDays": true,
+      "all44TradeButtonsAtLeast44px": true,
+      "stickyCloseAndScroll": true,
+      "noHorizontalOverflow": true,
+      "layout": {
+        "baseline": {
+          "firstQuantityOffset": 567,
+          "cardHeight": 155,
+          "dialogScrollHeight": 2392
+        },
+        "current": {
+          "firstQuantityOffset": 522,
+          "cardHeight": 227,
+          "dialogScrollHeight": 2834
+        }
+      }
+    },
+    {
+      "name": "native market workflow 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "input": "tap",
+      "zeroAndGoodsReset": true,
+      "buyMax": 7,
+      "sellMaxSelectedShip": 5,
+      "stockZeroMax": true,
+      "onlyLocalShips": true,
+      "remoteFleetSelectionHandled": true,
+      "armedFreeSpace": [
+        68,
+        61
+      ],
+      "secondShipFreeSpace": [
+        42,
+        47
+      ],
+      "explicitBuyAndSellOnly": true,
+      "noUnexpectedCargoMovement": true,
+      "V11ActualDownloadImportReloadExact": true,
+      "autosaveQuotaExportRecovery": false,
+      "noNewDays": true,
+      "all44TradeButtonsAtLeast44px": true,
+      "stickyCloseAndScroll": true,
+      "noHorizontalOverflow": true,
+      "layout": {
+        "baseline": {
+          "firstQuantityOffset": 724,
+          "cardHeight": 254,
+          "dialogScrollHeight": 1678
+        },
+        "current": {
+          "firstQuantityOffset": 720,
+          "cardHeight": 254,
+          "dialogScrollHeight": 1557
+        }
+      }
+    },
+    {
+      "name": "native market workflow 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "input": "click",
+      "zeroAndGoodsReset": true,
+      "buyMax": 7,
+      "sellMaxSelectedShip": 5,
+      "stockZeroMax": true,
+      "onlyLocalShips": true,
+      "remoteFleetSelectionHandled": true,
+      "armedFreeSpace": [
+        68,
+        61
+      ],
+      "secondShipFreeSpace": [
+        42,
+        47
+      ],
+      "explicitBuyAndSellOnly": true,
+      "noUnexpectedCargoMovement": true,
+      "V11ActualDownloadImportReloadExact": true,
+      "autosaveQuotaExportRecovery": false,
+      "noNewDays": true,
+      "all44TradeButtonsAtLeast44px": true,
+      "stickyCloseAndScroll": true,
+      "noHorizontalOverflow": true,
+      "layout": {
+        "baseline": {
+          "firstQuantityOffset": 724,
+          "cardHeight": 254,
+          "dialogScrollHeight": 1678
+        },
+        "current": {
+          "firstQuantityOffset": 720,
+          "cardHeight": 254,
+          "dialogScrollHeight": 1557
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "dialogs": [
+    {
+      "width": 375,
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "width": 375,
+      "type": "alert",
+      "message": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+    },
+    {
+      "width": 390,
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "width": 820,
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    },
+    {
+      "width": 1280,
+      "type": "confirm",
+      "message": "Den aktuellen Spielstand überschreiben?"
+    }
+  ],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2a_attempt1_markt-375.png",
+      "sha256": "6fcfa6d6d2f99154d1aee59e1f7361f076e80190f38a5220ac5675385715009b"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2a_attempt1_markt-390.png",
+      "sha256": "e6b55341185f52ad66e8826a5feaf106a7178d3c8310c8b8ae82aa7bfd82fc27"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2a_attempt1_markt-820.png",
+      "sha256": "43ae15e83982fc3d0abb916b9c34d465aa0b8f07be3a639f5d866527fcb16fe7"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2a_attempt1_markt-1280.png",
+      "sha256": "b978abb9e9ae8dc00a185c8a55c9a431fc93bbac6b68e2e8e60202b4bb74b3d3"
+    }
+  ]
+}
