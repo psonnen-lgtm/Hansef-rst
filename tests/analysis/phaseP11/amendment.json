@@ -1,0 +1,14 @@
+{
+  "reason": "First run: repeated-restoration fixture reused prior transaction ID; duplicate refusal correct. Changed only that receipt ID. Source review additionally made cross-episode persistence explicit and prevents cancellation of an old claim from expanding a new need budget. No price, voter, merit or support constants changed.",
+  "fixtureOnlyRepair": "new-restoration ID",
+  "modelLifecycleAmendment": [
+    "next_need requires expiry and two recovery observations",
+    "copy existing debts/claims/seen",
+    "revocation frees capacity only in its own still-active certificate"
+  ],
+  "sourceSHA256": {
+    "tests/analysis/phaseP11/model.py": "7ae4ddff37f03784b858a5963be5a4120b6465df0f6f6f630a165612df546351",
+    "tests/analysis/phaseP11/checks.py": "d11baf5b074bff31c4e952e8e96e46721ec92ee4246abfc2e33c347741c35e22"
+  },
+  "tests": "rerun small arithmetic groups and one added lifetime lifecycle group; no gameplay"
+}

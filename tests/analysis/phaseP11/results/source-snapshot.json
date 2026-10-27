@@ -1,0 +1,15 @@
+{
+  "base": "808d3a981093d99b3b57be94bc96184191398066",
+  "files": {
+    "tests/analysis/phaseP11/checks.py": "d11baf5b074bff31c4e952e8e96e46721ec92ee4246abfc2e33c347741c35e22",
+    "tests/analysis/phaseP11/election_boundary.py": "a04b34484d5065f32ff16dfdc6b35cb89f40c703451d4d86fe8c9fdf2b15da62",
+    "tests/analysis/phaseP11/final_receipts.py": "528dd9cecc2f32c659c626d3bb64958768763e7758a75a4d5b601b442a9e530c",
+    "tests/analysis/phaseP11/model.py": "7ae4ddff37f03784b858a5963be5a4120b6465df0f6f6f630a165612df546351"
+  },
+  "testedVersions": {
+    "main13groups": "699b6d3b101e119e0c67d26115e04f7e4b2d021d",
+    "negativeElectionBoundary": "12dc5d0dc61f805aa0c6842e3fb9766aabfa0944",
+    "finalQuantityCases": "379a86099abc5e486f5f6f62c3b243c0bd691c2e"
+  },
+  "unchangedAfterTheirTests": true
+}

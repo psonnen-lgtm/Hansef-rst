@@ -1,0 +1,36 @@
+{
+  "phase": "P1.1",
+  "base": "808d3a981093d99b3b57be94bc96184191398066",
+  "branch": "analysis/p11-year-round-support",
+  "reportsCommit": "35da0f9",
+  "pr": {
+    "attempted": true,
+    "created": false,
+    "error": "Post \"https://api.github.com/graphql\": Forbidden"
+  },
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/p11-year-round-support?expand=1",
+  "evidence": {
+    "mainMathGroups": 13,
+    "mainTechnicalPass": true,
+    "additionalElectionCounterexample": 1,
+    "observerGeneralPoliticalProtection": false,
+    "finalAcceptanceQuantityCases": 6,
+    "integratedProtectionProven": false,
+    "calibratedBalance": false,
+    "readyForProduction": false
+  },
+  "verification": {
+    "htmlByteEqualBase": true,
+    "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "oldIndexPrefixPreserved": true,
+    "allHistoricFilesUnchanged": true,
+    "testedSourceHashesUnchanged": true,
+    "relativeLinks": 29,
+    "main": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+    "development": "808d3a981093d99b3b57be94bc96184191398066"
+  },
+  "noGameExecution": true,
+  "noMigration": true,
+  "noCareerOrEconomicSimulation": true,
+  "taskEnded": true
+}
