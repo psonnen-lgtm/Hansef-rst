@@ -199,7 +199,7 @@ function migratePolitics(raw){
  }catch(e){return null}
 }
 function backupPoliticsMigration(raw,imported=false,force=false){
- if(!force&&JSON.parse(raw).v===11)return;const base=KEY+'-politics-v11-'+(imported?'import':'startup')+'-backup';
+ if(!force&&JSON.parse(raw).v>=11)return;const base=KEY+'-politics-v11-'+(imported?'import':'startup')+'-backup';
  for(let i=0;i<100;i++){const key=base+(i?'-'+(i+1):''),old=localStorage.getItem(key);if(old===raw)return;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}
  throw Error('Keine freie politische Originalsicherung. Bitte Sicherungen exportieren.');
 }
