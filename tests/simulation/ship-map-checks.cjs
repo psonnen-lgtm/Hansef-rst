@@ -5,7 +5,7 @@ const {create,hash}=require('./headless.cjs'),{boot}=require('./start-selection-
 function context(text){const c=vm.createContext({Math,Date});vm.runInContext(text.match(/<script>([\s\S]*?)<\/script>/)[1].split('// Opt-in local test analysis.')[0].replace(/^const ART=.*;$/m,'const ART={};'),c);return c}
 const current=context(html),previous=context(old),fn=(name,c=current)=>vm.runInContext(name+'.toString()',c);
 function record(name,f){checks.push({name,passed:true,evidence:f()});console.log('PASS '+name)}
-function fixture(source=null){const g=create(42,source);g.load(fn('notice',source?previous:current));g.eval('openSheet=(title,html)=>{$("sheet").innerHTML=html}');return g}
+function fixture(source=null){const g=create(42,source);g.load(fn('notice',source?previous:current));g.eval('drawMap=()=>{};openSheet=(title,html)=>{$("sheet").innerHTML=html}');return g}
 const fleet=`s.ships.push(makeShip(0,{id:2,city:8}),makeShip(2,{id:3,city:0}));ship().name='Lübecker Kogge';s.ships[1].name='Schnigge & West';s.ships[2].name='Holk';s.ships[2].condition=70;ship().cargo={0:10};ship().costs={0:15};ship().origins={0:[{city:1,n:4},{city:0,n:6}]};s.ships[1].cargo={5:4};s.ships[1].costs={5:50};s.ships[1].origins={5:[{city:8,n:4}]};s.ships[2].arms=1;s.warehouses[0]={cargo:{0:30},costs:{0:4},bookCosts:{0:4},origins:{0:[{city:1,n:30}]}};observe();validate(s);`;
 
 record('whole HTML exact after enumerated UI projection; travel planner only adds explicit existing convoy choice',()=>{
