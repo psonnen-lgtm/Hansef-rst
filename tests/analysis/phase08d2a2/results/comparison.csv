@@ -1,0 +1,10 @@
+route,seed,policy,trips,days,oldNet,newNet,deltaNet,oldProfit,newProfit,oldCash,newCash,fees,oldWorth,newWorth,oldSold,newSold,positiveBefore,positiveAfter,ledgersVerified,sameRng
+"luebeck-hamburg",81001,"small22",12,29,-960,-1020,-60,-854,-912,4040,3980,72,8674.5,8614.5,255,255,false,false,true,true
+"bergen-luebeck",81001,"small22",9,115,1061,951,-110,1115,1005,6061,5951,54,10587,10477,198,198,true,true,true,true
+"nowgorod-bruegge",81001,"small22",3,93,2583,2581,-2,2601,2599,7583,7581,18,12543,12541,66,66,true,true,true,true
+"luebeck-hamburg",81002,"small22",12,26,-1729,-1855,-126,-1577,-1703,3271,3145,72,7970.6,7844.6,223,223,false,false,true,true
+"bergen-luebeck",81002,"small22",9,115,317,276,-41,427.3636363636364,386.3636363636364,5317,5276,54,9864.7,9823.7,196,196,true,true,true,true
+"nowgorod-bruegge",81002,"small22",3,93,3147,3143,-4,3380.409090909091,3376.409090909091,8147,8143,18,13107,13103,63,63,true,true,true,true
+"luebeck-hamburg",81003,"small22",12,24,-1217,-1063,154,-1115,-961,3783,3937,72,8677.9,8831.9,238,238,false,false,true,true
+"bergen-luebeck",81003,"small22",9,112,160,28.999999999999957,-131.00000000000006,299.6363636363636,170.2272727272727,5160,5029,54,9903,9772,194,194,true,true,true,true
+"nowgorod-bruegge",81003,"small22",3,93,396,405,9,414,423,5396,5405,18,10356,10365,66,66,true,true,true,true
