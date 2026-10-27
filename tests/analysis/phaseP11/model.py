@@ -24,7 +24,7 @@ def certify(samples,base,day):
     Each observed debt sums persistent actor-specific net withdrawals, no yearly reset.
     """
     integer(base,1);integer(day)
-    if len(samples)!=2 or samples[1]['day']-samples[0]['day']!=1:return None
+    if len(samples)!=2 or samples[1]['day']-samples[0]['day']!=1 or samples[1]['day']!=day:return None
     for s in samples:
         integer(s['stock']);integer(s['debt']);integer(s['price'],1)
         if s['stock']+s['debt']>40 or s.get('special',False):return None
@@ -64,7 +64,7 @@ def settle(previous,day,entries):
         for c in sorted(x['claims'],key=lambda c:(-MODES[c['mode']],-c['day'],c['actor'])):
             if c['actor']!=actor or c['mode']=='C':continue
             used=min(withdraw,c['n']);c['n']-=used;withdraw-=used
-            if active:x['remaining']=min(x['capacity'],x['remaining']+used)
+            if active and c['source']==x['id']:x['remaining']=min(x['capacity'],x['remaining']+used)
         newDebt=max(0,old-net);x['debts'][actor]=newDebt
         repairs+=min(old,max(0,net))
         eligible=max(0,net-old)
@@ -89,6 +89,21 @@ def settle(previous,day,entries):
     assert 0<=x['remaining']<=x['capacity']
     assert all(d>=0 for d in x['debts'].values())
     return x
+
+def next_need(previous,samples,recovery,base,day):
+    """New certificate preserves the market's owner debt and old revocable claims.
+    Two recovery observations and expiry are required; never reset this book yearly.
+    """
+    if day<=previous['expires'] or len(recovery)!=2:return None
+    if recovery[1]['day']-recovery[0]['day']!=1:return None
+    if not previous['day']<recovery[0]['day']<recovery[1]['day']<samples[0]['day']:return None
+    if any(r['stock']+r['debt']<90 or r.get('special',False) for r in recovery):return None
+    if samples[-1]['debt']!=sum(previous['debts'].values()):raise ValueError('persistent debt mismatch')
+    new=certify(samples,base,day)
+    if new is None:return None
+    new['debts']=deepcopy(previous['debts']);new['claims']=deepcopy(previous['claims']);new['seen']=deepcopy(previous['seen'])
+    new['lastDay']=day-1;new['recoveryProof']=deepcopy(recovery)
+    return new
 
 def civic_weights(actor,day,claims,donations=(),festivals=(),services=()):
     units=[F(0) for _ in GROUPS];pop=[F(0) for _ in GROUPS];giving=[F(0) for _ in GROUPS]

@@ -3,7 +3,7 @@ import sys,json,hashlib,subprocess,re
 from pathlib import Path
 from copy import deepcopy
 from itertools import permutations
-from model import F,allocate,certify,ledger,settle,civic_weights,votes
+from model import F,allocate,certify,ledger,settle,next_need,civic_weights,votes
 ROOT=Path(__file__).resolve().parents[3];HERE=Path(__file__).resolve().parent
 out=Path(sys.argv[1]);assert not out.exists(),'new output required'
 checks=[]
@@ -63,7 +63,7 @@ def loops():
         same=settle(ledger(),1,{'player':entry([90],mode,buys=90)});assert not same['claims']
         sold=settle(ledger(),1,{'player':entry([90],mode)})
         bought=settle(sold,400,{'player':{'buys':90}});assert not bought['claims'];assert bought['debts']['player']==90
-        repaid=settle(bought,401,{'player':entry([90],mode)});assert not repaid['claims'];assert repaid['debts']['player']==0
+        restoration=entry([90],mode);restoration['sales'][0]['id']='new-restoration';repaid=settle(bought,401,{'player':restoration});assert not repaid['claims'];assert repaid['debts']['player']==0
         rows.append({'mode':mode,'sameDayMerit':0,'lateWithdrawalDay':400,'lateTrust':civic_weights('player',400,bought['claims'])['trust'],'debtAfterPurchase':90,'restorationNewMerit':0})
     donation=settle(ledger(),1,{'player':entry([90],'C')});late=settle(donation,400,{'player':{'buys':90}});assert sum(c['n'] for c in late['claims'])==90
     return {'rows':rows,'donatedUnitsRemainHistoricalMerit':90,'importantLimit':'election winner history is not revoked; a post-election withdrawal is a new subsequent civic action, not proof that the former date had the same available stock'}
@@ -147,5 +147,25 @@ def serialization():
     assert len(prior)==5
     return {'constructedJSONRoundTrip':True,'gameHash':hashlib.sha256(raw).hexdigest(),'sourceFunctions':inventory,'priorReportsUnchanged':prior,'noGameCodeEvaluated':True,'noRNGUsed':True,'notAProductSaveMigration':True}
 check('reproducible constructed state export and read-only source preservation',serialization)
+
+def lifetime():
+    old=settle(ledger(),1,{'player':entry([30],'B')})
+    recovery=[{'day':100,'stock':100,'debt':0},{'day':101,'stock':100,'debt':0}]
+    scarce=[{'day':149,'stock':20,'debt':0,'price':30},{'day':150,'stock':20,'debt':0,'price':30}]
+    new=next_need(old,scarce,recovery,16,150);assert new and new['claims']==old['claims'] and new['seen']==old['seen']
+    e=entry([40]);e['sales'][0]['id']='new-episode-sale';new=settle(new,151,{'player':e});assert new['remaining']==50
+    after=settle(new,152,{'player':{'buys':10}})
+    # The higher valued old B claim is revoked first; no extra space in new certificate.
+    assert after['remaining']==50
+    assert sum(c['n'] for c in after['claims'] if c['source']==after['id'])+after['remaining']==90
+    assert after['debts']['player']==10
+    assert next_need(old,scarce,[],16,150) is None
+    assert next_need(old,[{'day':50,'stock':20,'debt':0,'price':30},{'day':51,'stock':20,'debt':0,'price':30}],recovery,16,51) is None
+    blocked=deepcopy(old);blocked['debts']['player']=90
+    own=[{'day':149,'stock':20,'debt':90,'price':30},{'day':150,'stock':20,'debt':90,'price':30}]
+    assert next_need(blocked,own,recovery,16,150) is None
+    return {'oldClaimsPreserved':True,'oldReceiptsPreserved':True,'oldRevocationDoesNotRefillNewNeed':True,'newNeedCapacity':90,'currentAllocated':40,'currentRemainingAfterOldRevocation':50,'debtAfterWithdrawal':10,'noResetThroughNewEpisode':True,'recoveryAndExpiryRequired':True}
+check('new shortage episode preserves lifetime debts and old receipts without extra capacity',lifetime)
+
 result={'phase':'P1.1','base':'808d3a981093d99b3b57be94bc96184191398066','testedAnalysisCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'productCodeCommit':'c42c25cf5cf372c210b47f25b00b9f0106044ed3','scope':'small synthetic receipt mathematics only','checks':checks,'notExecuted':['HTML game','economic simulation','mayor or elder career','productive migration','browser integration'],'readyForProduction':False}
 out.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps({'groups':len(checks),'failures':sum(not c['passed'] for c in checks),'noGameExecution':True}));sys.exit(1 if any(not c['passed'] for c in checks) else 0)

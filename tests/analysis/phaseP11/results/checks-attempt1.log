@@ -1,0 +1,24 @@
+PASS finite whole-vote balance for multiple candidates
+PASS actual shortage observations versus own withdrawals and price-only signal
+PASS 90 versus9x10 versus90x1 is identical for all three supply modes
+PASS profitable normal delivery fair concession and irrevocable goods donation
+Traceback (most recent call last):
+  File "/workspace/Hansef-rst/tests/analysis/phaseP11/checks.py", line 11, in check
+    try:checks.append({'name':name,'executed':True,'passed':True,'evidence':fn()});print('PASS '+name)
+                                                                            ^^^^
+  File "/workspace/Hansef-rst/tests/analysis/phaseP11/checks.py", line 66, in loops
+    repaid=settle(bought,401,{'player':entry([90],mode)});assert not repaid['claims'];assert repaid['debts']['player']==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/Hansef-rst/tests/analysis/phaseP11/model.py", line 51, in settle
+    if r['id'] in ids:raise ValueError('duplicate receipt')
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: duplicate receipt
+
+PASS restore own removals first and do not manufacture rescue through gifts
+PASS competition shared need order invariance no duplicates or free rival cargo
+PASS year-round long trust and short enthusiasm decay independently
+PASS repeated real donations split neutral and capped without annual reset
+PASS different real dates preserve long merit but may change current enthusiasm
+PASS six understandable annual event-list examples with active competitor
+PASS reproducible constructed state export and read-only source preservation
+{"groups": 12, "failures": 1, "noGameExecution": true}

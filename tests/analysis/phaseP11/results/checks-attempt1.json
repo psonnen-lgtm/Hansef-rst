@@ -1,0 +1,1698 @@
+{
+  "phase": "P1.1",
+  "base": "808d3a981093d99b3b57be94bc96184191398066",
+  "testedAnalysisCommit": "edc0bc7cd6c3ab70843b97cc9f24ae86c66d3204",
+  "productCodeCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "scope": "small synthetic receipt mathematics only",
+  "checks": [
+    {
+      "name": "finite whole-vote balance for multiple candidates",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "electors": 1,
+            "allocation": {
+              "p": 0,
+              "r1": 1,
+              "r2": 0,
+              "u": 0
+            }
+          },
+          {
+            "electors": 3,
+            "allocation": {
+              "p": 0,
+              "r1": 1,
+              "r2": 1,
+              "u": 1
+            }
+          },
+          {
+            "electors": 7,
+            "allocation": {
+              "p": 1,
+              "r1": 2,
+              "r2": 2,
+              "u": 2
+            }
+          },
+          {
+            "electors": 1000,
+            "allocation": {
+              "p": 180,
+              "r1": 320,
+              "r2": 300,
+              "u": 200
+            }
+          },
+          {
+            "electors": 5000,
+            "allocation": {
+              "p": 900,
+              "r1": 1600,
+              "r2": 1500,
+              "u": 1000
+            }
+          },
+          {
+            "electors": 8000,
+            "allocation": {
+              "p": 1440,
+              "r1": 2560,
+              "r2": 2400,
+              "u": 1600
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual shortage observations versus own withdrawals and price-only signal",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "natural": {
+          "id": "constructed-need:2",
+          "day": 2,
+          "expires": 92,
+          "capacity": 90,
+          "remaining": 90,
+          "base": 16,
+          "claims": [],
+          "debts": {},
+          "seen": [],
+          "lastDay": 1,
+          "scarcityObservation": [
+            {
+              "day": 1,
+              "stock": 20,
+              "debt": 0,
+              "price": 30
+            },
+            {
+              "day": 2,
+              "stock": 20,
+              "debt": 0,
+              "price": 30
+            }
+          ],
+          "priceCorroborates": true
+        },
+        "selfInducedRejected": [
+          {
+            "day": 1,
+            "stock": 20,
+            "debt": 90,
+            "price": 30
+          },
+          {
+            "day": 2,
+            "stock": 20,
+            "debt": 90,
+            "price": 40
+          }
+        ],
+        "highPriceAloneRejected": true,
+        "cheapRealStockShortageAccepted": true,
+        "specialOverwriteExcluded": true,
+        "noCounterfactualSimulation": true
+      }
+    },
+    {
+      "name": "90 versus9x10 versus90x1 is identical for all three supply modes",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "mode": "A",
+            "parts": 1,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                284,
+                186,
+                186,
+                110
+              ],
+              "popularity": [
+                90,
+                45,
+                45,
+                22
+              ],
+              "units": [
+                "90",
+                "45",
+                "45",
+                "45/2"
+              ]
+            }
+          },
+          {
+            "mode": "A",
+            "parts": 9,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                284,
+                186,
+                186,
+                110
+              ],
+              "popularity": [
+                90,
+                45,
+                45,
+                22
+              ],
+              "units": [
+                "90",
+                "45",
+                "45",
+                "45/2"
+              ]
+            }
+          },
+          {
+            "mode": "A",
+            "parts": 90,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                284,
+                186,
+                186,
+                110
+              ],
+              "popularity": [
+                90,
+                45,
+                45,
+                22
+              ],
+              "units": [
+                "90",
+                "45",
+                "45",
+                "45/2"
+              ]
+            }
+          },
+          {
+            "mode": "B",
+            "parts": 1,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                344,
+                241,
+                241,
+                151
+              ],
+              "popularity": [
+                98,
+                49,
+                49,
+                24
+              ],
+              "units": [
+                "135",
+                "135/2",
+                "135/2",
+                "135/4"
+              ]
+            }
+          },
+          {
+            "mode": "B",
+            "parts": 9,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                344,
+                241,
+                241,
+                151
+              ],
+              "popularity": [
+                98,
+                49,
+                49,
+                24
+              ],
+              "units": [
+                "135",
+                "135/2",
+                "135/2",
+                "135/4"
+              ]
+            }
+          },
+          {
+            "mode": "B",
+            "parts": 90,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                344,
+                241,
+                241,
+                151
+              ],
+              "popularity": [
+                98,
+                49,
+                49,
+                24
+              ],
+              "units": [
+                "135",
+                "135/2",
+                "135/2",
+                "135/4"
+              ]
+            }
+          },
+          {
+            "mode": "C",
+            "parts": 1,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                385,
+                284,
+                284,
+                186
+              ],
+              "popularity": [
+                102,
+                51,
+                51,
+                25
+              ],
+              "units": [
+                "180",
+                "90",
+                "90",
+                "45"
+              ]
+            }
+          },
+          {
+            "mode": "C",
+            "parts": 9,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                385,
+                284,
+                284,
+                186
+              ],
+              "popularity": [
+                102,
+                51,
+                51,
+                25
+              ],
+              "units": [
+                "180",
+                "90",
+                "90",
+                "45"
+              ]
+            }
+          },
+          {
+            "mode": "C",
+            "parts": 90,
+            "accepted": 90,
+            "remaining": 0,
+            "weights": {
+              "trust": [
+                385,
+                284,
+                284,
+                186
+              ],
+              "popularity": [
+                102,
+                51,
+                51,
+                25
+              ],
+              "units": [
+                "180",
+                "90",
+                "90",
+                "45"
+              ]
+            }
+          }
+        ],
+        "sameDayOnly": true,
+        "no90ActionGamePath": true
+      }
+    },
+    {
+      "name": "profitable normal delivery fair concession and irrevocable goods donation",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "mode": "A",
+            "quantity": 90,
+            "salePrice": 30,
+            "acquisitionCostPerUnit": 8,
+            "goldReceipts": 2700,
+            "realizedFinancialResult": 1980,
+            "householdTrust": 284,
+            "householdPopularity": 90,
+            "votes": {
+              "merchant": 143,
+              "supplier": 176,
+              "host": 154,
+              "player": 212,
+              "undecided": 315
+            },
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "mode": "B",
+            "quantity": 90,
+            "salePrice": 16,
+            "acquisitionCostPerUnit": 8,
+            "goldReceipts": 1440,
+            "realizedFinancialResult": 720,
+            "householdTrust": 344,
+            "householdPopularity": 98,
+            "votes": {
+              "merchant": 138,
+              "supplier": 168,
+              "host": 147,
+              "player": 246,
+              "undecided": 301
+            },
+            "units": [
+              "135",
+              "135/2",
+              "135/2",
+              "135/4"
+            ]
+          },
+          {
+            "mode": "C",
+            "quantity": 90,
+            "salePrice": 0,
+            "acquisitionCostPerUnit": 8,
+            "goldReceipts": 0,
+            "realizedFinancialResult": -720,
+            "householdTrust": 385,
+            "householdPopularity": 102,
+            "votes": {
+              "merchant": 134,
+              "supplier": 162,
+              "host": 143,
+              "player": 270,
+              "undecided": 291
+            },
+            "units": [
+              "180",
+              "90",
+              "90",
+              "45"
+            ]
+          }
+        ],
+        "note": "C financial result is real goods cost, not a synthetic sale or cash debit"
+      }
+    },
+    {
+      "name": "buy sell and sale rebuy no new credit including long delayed withdrawal",
+      "executed": true,
+      "passed": false,
+      "error": "Traceback (most recent call last):\n  File \"/workspace/Hansef-rst/tests/analysis/phaseP11/checks.py\", line 11, in check\n    try:checks.append({'name':name,'executed':True,'passed':True,'evidence':fn()});print('PASS '+name)\n                                                                            ^^^^\n  File \"/workspace/Hansef-rst/tests/analysis/phaseP11/checks.py\", line 66, in loops\n    repaid=settle(bought,401,{'player':entry([90],mode)});assert not repaid['claims'];assert repaid['debts']['player']==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/workspace/Hansef-rst/tests/analysis/phaseP11/model.py\", line 51, in settle\n    if r['id'] in ids:raise ValueError('duplicate receipt')\n                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nValueError: duplicate receipt\n"
+    },
+    {
+      "name": "restore own removals first and do not manufacture rescue through gifts",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "previousWithdrawals": 80,
+        "grossReturn": 90,
+        "eligibleForeignExtra": 10,
+        "sameGoodDonationCannotEraseMarketDebt": true,
+        "localOrUnknownOriginsNoSupplyMerit": true,
+        "debtNoYearlyReset": true
+      }
+    },
+    {
+      "name": "competition shared need order invariance no duplicates or free rival cargo",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "orders": [
+          {
+            "player": 45,
+            "rival": 45
+          },
+          {
+            "player": 45,
+            "rival": 45
+          }
+        ],
+        "capacity": 90,
+        "totalClaimed": 90,
+        "duplicateRejected": true,
+        "emptyCargoDonationRejected": true,
+        "rivalPaidExample": {
+          "goods": 240,
+          "gift": 200,
+          "festival": 800,
+          "transport": 60,
+          "service": 100
+        },
+        "annualSpend": 1400,
+        "cashAfter": 1400,
+        "noRivalMarketAIExecuted": true
+      }
+    },
+    {
+      "name": "year-round long trust and short enthusiasm decay independently",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "day": 1,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              270,
+              180,
+              153,
+              112
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 30,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              168,
+              114,
+              96,
+              72
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 61,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              60,
+              45,
+              36,
+              30
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 180,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 360,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 361,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          {
+            "day": 720,
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          }
+        ],
+        "noElectionOrYearReset": true,
+        "historicalTrustRetainedUnlessOwnMarketWithdrawal": true
+      }
+    },
+    {
+      "name": "repeated real donations split neutral and capped without annual reset",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "sameBucketSplit": {
+          "trust": [
+            11,
+            5,
+            2,
+            5
+          ],
+          "popularity": [
+            24,
+            12,
+            6,
+            12
+          ],
+          "units": [
+            "2",
+            "1",
+            "1/2",
+            "1"
+          ]
+        },
+        "annualGold": 600,
+        "day360": {
+          "trust": [
+            33,
+            17,
+            8,
+            17
+          ],
+          "popularity": [
+            9,
+            4,
+            2,
+            4
+          ],
+          "units": [
+            "6",
+            "3",
+            "3/2",
+            "3"
+          ]
+        },
+        "day720NoNewGiving": {
+          "trust": [
+            33,
+            17,
+            8,
+            17
+          ],
+          "popularity": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "units": [
+            "6",
+            "3",
+            "3/2",
+            "3"
+          ]
+        },
+        "largeGoldStillBounded": {
+          "trust": [
+            599,
+            599,
+            599,
+            599
+          ],
+          "popularity": [
+            61,
+            30,
+            15,
+            30
+          ],
+          "units": [
+            "10000000",
+            "5000000",
+            "2500000",
+            "5000000"
+          ]
+        }
+      }
+    },
+    {
+      "name": "different real dates preserve long merit but may change current enthusiasm",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "dailyVersusEarlyBulkDay90": {
+          "daily": {
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              118,
+              59,
+              59,
+              29
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          },
+          "bulk": {
+            "trust": [
+              284,
+              186,
+              186,
+              110
+            ],
+            "popularity": [
+              0,
+              0,
+              0,
+              0
+            ],
+            "units": [
+              "90",
+              "45",
+              "45",
+              "45/2"
+            ]
+          }
+        },
+        "trustEqual": true,
+        "popularityDifferentForRealDates": true,
+        "notAnActionSplitExploit": true
+      }
+    },
+    {
+      "name": "six understandable annual event-list examples with active competitor",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "scenarios": [
+          {
+            "scenario": "idle",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 225,
+                  "host": 197,
+                  "player": 0,
+                  "undecided": 400
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 225,
+                  "host": 197,
+                  "player": 0,
+                  "undecided": 400
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 162,
+                  "supplier": 304,
+                  "host": 175,
+                  "player": 0,
+                  "undecided": 359
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 154,
+                  "supplier": 332,
+                  "host": 169,
+                  "player": 0,
+                  "undecided": 345
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 148,
+                  "supplier": 358,
+                  "host": 163,
+                  "player": 0,
+                  "undecided": 331
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 148,
+                  "supplier": 358,
+                  "host": 163,
+                  "player": 0,
+                  "undecided": 331
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 669,
+            "abstentions": 331,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          },
+          {
+            "scenario": "reliable",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 164,
+                  "supplier": 204,
+                  "host": 177,
+                  "player": 91,
+                  "undecided": 364
+                },
+                "playerTrust": [
+                  100,
+                  54,
+                  54,
+                  28
+                ],
+                "playerPopularity": [
+                  48,
+                  24,
+                  24,
+                  12
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 168,
+                  "supplier": 210,
+                  "host": 184,
+                  "player": 63,
+                  "undecided": 375
+                },
+                "playerTrust": [
+                  100,
+                  54,
+                  54,
+                  28
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 134,
+                  "supplier": 250,
+                  "host": 145,
+                  "player": 174,
+                  "undecided": 297
+                },
+                "playerTrust": [
+                  247,
+                  200,
+                  171,
+                  186
+                ],
+                "playerPopularity": [
+                  40,
+                  20,
+                  20,
+                  10
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 127,
+                  "supplier": 270,
+                  "host": 138,
+                  "player": 181,
+                  "undecided": 284
+                },
+                "playerTrust": [
+                  284,
+                  225,
+                  200,
+                  200
+                ],
+                "playerPopularity": [
+                  24,
+                  12,
+                  12,
+                  6
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 122,
+                  "supplier": 291,
+                  "host": 133,
+                  "player": 182,
+                  "undecided": 272
+                },
+                "playerTrust": [
+                  314,
+                  247,
+                  225,
+                  212
+                ],
+                "playerPopularity": [
+                  8,
+                  4,
+                  4,
+                  2
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 122,
+                  "supplier": 291,
+                  "host": 133,
+                  "player": 182,
+                  "undecided": 272
+                },
+                "playerTrust": [
+                  314,
+                  247,
+                  225,
+                  212
+                ],
+                "playerPopularity": [
+                  7,
+                  3,
+                  3,
+                  1
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 728,
+            "abstentions": 272,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          },
+          {
+            "scenario": "giving",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 224,
+                  "host": 194,
+                  "player": 6,
+                  "undecided": 398
+                },
+                "playerTrust": [
+                  2,
+                  1,
+                  0,
+                  1
+                ],
+                "playerPopularity": [
+                  8,
+                  4,
+                  2,
+                  4
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 177,
+                  "supplier": 223,
+                  "host": 194,
+                  "player": 11,
+                  "undecided": 395
+                },
+                "playerTrust": [
+                  8,
+                  4,
+                  2,
+                  4
+                ],
+                "playerPopularity": [
+                  9,
+                  4,
+                  2,
+                  4
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 159,
+                  "supplier": 300,
+                  "host": 173,
+                  "player": 15,
+                  "undecided": 353
+                },
+                "playerTrust": [
+                  17,
+                  8,
+                  4,
+                  8
+                ],
+                "playerPopularity": [
+                  9,
+                  4,
+                  2,
+                  4
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 152,
+                  "supplier": 325,
+                  "host": 166,
+                  "player": 18,
+                  "undecided": 339
+                },
+                "playerTrust": [
+                  25,
+                  13,
+                  6,
+                  13
+                ],
+                "playerPopularity": [
+                  9,
+                  4,
+                  2,
+                  4
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 146,
+                  "supplier": 349,
+                  "host": 159,
+                  "player": 22,
+                  "undecided": 324
+                },
+                "playerTrust": [
+                  33,
+                  17,
+                  8,
+                  17
+                ],
+                "playerPopularity": [
+                  9,
+                  4,
+                  2,
+                  4
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 146,
+                  "supplier": 348,
+                  "host": 160,
+                  "player": 22,
+                  "undecided": 324
+                },
+                "playerTrust": [
+                  33,
+                  17,
+                  8,
+                  17
+                ],
+                "playerPopularity": [
+                  8,
+                  4,
+                  2,
+                  4
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 676,
+            "abstentions": 324,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          },
+          {
+            "scenario": "acute",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 225,
+                  "host": 197,
+                  "player": 0,
+                  "undecided": 400
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 225,
+                  "host": 197,
+                  "player": 0,
+                  "undecided": 400
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 162,
+                  "supplier": 304,
+                  "host": 175,
+                  "player": 0,
+                  "undecided": 359
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 154,
+                  "supplier": 332,
+                  "host": 169,
+                  "player": 0,
+                  "undecided": 345
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 120,
+                  "supplier": 283,
+                  "host": 129,
+                  "player": 202,
+                  "undecided": 266
+                },
+                "playerTrust": [
+                  385,
+                  284,
+                  284,
+                  186
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 121,
+                  "supplier": 282,
+                  "host": 129,
+                  "player": 202,
+                  "undecided": 266
+                },
+                "playerTrust": [
+                  385,
+                  284,
+                  284,
+                  186
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 734,
+            "abstentions": 266,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          },
+          {
+            "scenario": "active-rival-and-engaged-player",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 178,
+                  "supplier": 225,
+                  "host": 197,
+                  "player": 0,
+                  "undecided": 400
+                },
+                "playerTrust": [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 158,
+                  "supplier": 192,
+                  "host": 169,
+                  "player": 134,
+                  "undecided": 347
+                },
+                "playerTrust": [
+                  186,
+                  110,
+                  110,
+                  60
+                ],
+                "playerPopularity": [
+                  36,
+                  18,
+                  18,
+                  9
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 133,
+                  "supplier": 245,
+                  "host": 142,
+                  "player": 188,
+                  "undecided": 292
+                },
+                "playerTrust": [
+                  287,
+                  189,
+                  187,
+                  114
+                ],
+                "playerPopularity": [
+                  72,
+                  36,
+                  36,
+                  18
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 127,
+                  "supplier": 271,
+                  "host": 138,
+                  "player": 180,
+                  "undecided": 284
+                },
+                "playerTrust": [
+                  302,
+                  238,
+                  214,
+                  209
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 113,
+                  "supplier": 268,
+                  "host": 122,
+                  "player": 245,
+                  "undecided": 252
+                },
+                "playerTrust": [
+                  357,
+                  281,
+                  262,
+                  235
+                ],
+                "playerPopularity": [
+                  120,
+                  90,
+                  72,
+                  60
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 113,
+                  "supplier": 268,
+                  "host": 122,
+                  "player": 245,
+                  "undecided": 252
+                },
+                "playerTrust": [
+                  357,
+                  281,
+                  262,
+                  235
+                ],
+                "playerPopularity": [
+                  118,
+                  88,
+                  70,
+                  59
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 748,
+            "abstentions": 252,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          },
+          {
+            "scenario": "year-vote-after-reliable-service",
+            "checkpoints": [
+              {
+                "day": 30,
+                "votes": {
+                  "merchant": 164,
+                  "supplier": 204,
+                  "host": 177,
+                  "player": 91,
+                  "undecided": 364
+                },
+                "playerTrust": [
+                  100,
+                  54,
+                  54,
+                  28
+                ],
+                "playerPopularity": [
+                  48,
+                  24,
+                  24,
+                  12
+                ]
+              },
+              {
+                "day": 90,
+                "votes": {
+                  "merchant": 168,
+                  "supplier": 210,
+                  "host": 184,
+                  "player": 63,
+                  "undecided": 375
+                },
+                "playerTrust": [
+                  100,
+                  54,
+                  54,
+                  28
+                ],
+                "playerPopularity": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              },
+              {
+                "day": 180,
+                "votes": {
+                  "merchant": 134,
+                  "supplier": 250,
+                  "host": 145,
+                  "player": 174,
+                  "undecided": 297
+                },
+                "playerTrust": [
+                  247,
+                  200,
+                  171,
+                  186
+                ],
+                "playerPopularity": [
+                  40,
+                  20,
+                  20,
+                  10
+                ]
+              },
+              {
+                "day": 270,
+                "votes": {
+                  "merchant": 127,
+                  "supplier": 270,
+                  "host": 138,
+                  "player": 181,
+                  "undecided": 284
+                },
+                "playerTrust": [
+                  284,
+                  225,
+                  200,
+                  200
+                ],
+                "playerPopularity": [
+                  24,
+                  12,
+                  12,
+                  6
+                ]
+              },
+              {
+                "day": 360,
+                "votes": {
+                  "merchant": 122,
+                  "supplier": 291,
+                  "host": 133,
+                  "player": 182,
+                  "undecided": 272
+                },
+                "playerTrust": [
+                  314,
+                  247,
+                  225,
+                  212
+                ],
+                "playerPopularity": [
+                  8,
+                  4,
+                  4,
+                  2
+                ]
+              },
+              {
+                "day": 361,
+                "votes": {
+                  "merchant": 122,
+                  "supplier": 291,
+                  "host": 133,
+                  "player": 182,
+                  "undecided": 272
+                },
+                "playerTrust": [
+                  314,
+                  247,
+                  225,
+                  212
+                ],
+                "playerPopularity": [
+                  7,
+                  3,
+                  3,
+                  1
+                ]
+              }
+            ],
+            "day360HighestVotes": "supplier",
+            "cast": 728,
+            "abstentions": 272,
+            "officeAssigned": false,
+            "notCareerSimulation": true
+          }
+        ],
+        "note": "six fixed event-list examples; last case deliberately repeats the reliable endpoint as the annual arithmetic count, not a new economic run"
+      }
+    },
+    {
+      "name": "reproducible constructed state export and read-only source preservation",
+      "executed": true,
+      "passed": true,
+      "evidence": {
+        "constructedJSONRoundTrip": true,
+        "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+        "sourceFunctions": {
+          "regionalStock": 863,
+          "regionalPrice": 856,
+          "regionalMarketDay": 868,
+          "trade": 905,
+          "consumeOrigins": 790,
+          "completePoliticalSupply": 439,
+          "completeQuests": 990,
+          "donate": 910,
+          "donationGain": 908,
+          "advance": 874,
+          "politicsClock": 392
+        },
+        "priorReportsUnchanged": {
+          "docs/entwicklungsberichte/2026-10-27_P1_bestandsschutz.md": "9d953760fe3578851f0e346bb868a09de69b2b9789d7e96de6d8793ae1478375",
+          "docs/entwicklungsberichte/2026-10-27_P1_einwohner_waehler.md": "2c7a4aebd3b71b84c63bd7086daea6bed80423d552b388fc69bf24579d272463",
+          "docs/entwicklungsberichte/2026-10-27_P1_entscheidungsgrundlage.md": "f19367b9c9d5e066e00a984a4a815373df2f7ce997889cdde86d42f8bc01dd42",
+          "docs/entwicklungsberichte/2026-10-27_P1_rivalen_stimmen.md": "369a2cbd2b8acd8bdff988476f00540d16303c8f57093b4f716384e53f522ab5",
+          "docs/entwicklungsberichte/2026-10-27_P1_wahlordnung.md": "431068e26f47bcd509987228a5a5b11ebf1e059df37d4bdeb92dba36ef850174"
+        },
+        "noGameCodeEvaluated": true,
+        "noRNGUsed": true,
+        "notAProductSaveMigration": true
+      }
+    }
+  ],
+  "notExecuted": [
+    "HTML game",
+    "economic simulation",
+    "mayor or elder career",
+    "productive migration",
+    "browser integration"
+  ],
+  "readyForProduction": false
+}
