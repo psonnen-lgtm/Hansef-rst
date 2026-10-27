@@ -1,0 +1,1609 @@
+{
+  "phase": "0.8c.0",
+  "dateBerlin": "2026-10-27",
+  "baseCommit": "ac31692d2a4e5787b2f85216cb6185b15e419656",
+  "gameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "gameSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "scope": "read-only historical data and static extracted donation function; no complete simulation, no real savegames, no browser or deployment actions",
+  "functionComparisonTo06cSimulationCommit": "3dfeaeefb0a8ff5bbad54030dfa51cce7cad84ae",
+  "functions": {
+    "regionalPrice": {
+      "exact": true,
+      "currentSHA256": "e8bb6d9084eb08e274234e062ac4bc17906c387af1806289add404aa860ad9cd"
+    },
+    "regionalStock": {
+      "exact": true,
+      "currentSHA256": "8cfc030ded4c083730250a49be3e5eda5c0e972968c8d020fe18c8d73e63e691"
+    },
+    "regionalMarketDay": {
+      "exact": true,
+      "currentSHA256": "54008d97fe4933c814c643f416311d34bf17782d201cde79c4df00da295e9d35"
+    },
+    "creditLimit": {
+      "exact": true,
+      "currentSHA256": "2c6af14f8bc1dfb99befabccdb703b9fd33e79b6b56071332f77c290b681a3f1"
+    },
+    "bankOp": {
+      "exact": true,
+      "currentSHA256": "a6b6bdbcc36607ba676313842c3c1907d97e4d4c7767819d7fe8d34b3e8dfd16"
+    },
+    "donate": {
+      "exact": true,
+      "currentSHA256": "025187d4cb4f78202ec860f3abb52d2402e46be1ba84e4ab99aff520d5e08f4f"
+    },
+    "completeQuests": {
+      "exact": true,
+      "currentSHA256": "20b479a6037b51afb5060c8df1fdcf6d1a05b07489317b586115f58702c02448"
+    },
+    "consumeOrigins": {
+      "exact": true,
+      "currentSHA256": "20e4ed091e7a6863c112554e40744d2e3af500935e6f88e6bc3fabcc9baef206"
+    },
+    "capacity": {
+      "exact": true,
+      "currentSHA256": "6226620510ae9447777dd81f4042ee413ce1b64042f8214d23ec7eb2e4d14b35"
+    },
+    "routeTravelDays": {
+      "exact": true,
+      "currentSHA256": "33904c56239841bdc2b59c7ede4cb99c555a06c1e1d14e11131eeebddccefadd"
+    },
+    "rollTravel": {
+      "exact": true,
+      "currentSHA256": "03ff117eee996204405ce2b9ddf03498009721d474d9b8e3c2b13206e6978c32"
+    },
+    "shipSaleValue": {
+      "exact": true,
+      "currentSHA256": "1e6566161ebdd91d02ef614884f8c1b89ed2e14de45128a9c9865e5241662d57"
+    },
+    "shipbuildingQuote": {
+      "exact": true,
+      "currentSHA256": "e63af3033332bd29defbc1995bcb78207ad7aaae8c9843e0d450b1c47414b68c"
+    },
+    "politicalSupport": {
+      "exact": true,
+      "currentSHA256": "6f44b5fe664018f165bd240dda35efaf31189d6973890e7d4987cbac47edac0f"
+    },
+    "hanseQuote": {
+      "exact": true,
+      "currentSHA256": "a5e90264e03738e503d605d02e3177a95ece6f101aa3c6a6706c0f1b722bd2dc"
+    },
+    "mayorQuote": {
+      "exact": true,
+      "currentSHA256": "20b31da9b1431108dfbed56570c64fe50484008ce64066bd617b72957f948ed1"
+    },
+    "advance": {
+      "exact": true,
+      "currentSHA256": "8fbe28e66e7a8abdc839f4d49496ff06c7eb2dd5e6cda99e9fa209e39347a8c7"
+    },
+    "trade": {
+      "exact": true,
+      "currentSHA256": "b79818f41b654ba9b2a07a81273f42836b8f87d26fa32707a78e32baf170fea0"
+    }
+  },
+  "historicalFilesRead": {
+    "05h3": 216,
+    "06c": 132,
+    "05j": 240
+  },
+  "historicalFilesSHA256MatchedToTheirExistingManifests": {
+    "05h3": 216,
+    "06c": 132,
+    "05j": 240
+  },
+  "sortedPathAndHashDigests": {
+    "05h3": "d9861cbc3358b387aca046014e904982e4bfb3a202f8d8f9a53075721483607b",
+    "06c": "76df953e787b1617c280f4ed8655b5c6747fe499b8cc0c0929dd76e874db21f4",
+    "05j": "2c1f985d13b4c2b1dd4a118943623e2848f658f5d65fb126d7ee2533eca5b48d"
+  },
+  "inputSHA256": {
+    "tests/simulation/phase05h3-20261025-01/summary.json.gz": "7f78a3b284b98f8ab92fc54b3b1f46d56a36ffe9d490b0f28e775f91ff0b8437",
+    "tests/simulation/phase05h3-20261025-01/choice-probes.json.gz": "cef4e9250f3f3fa8d3387a42c9d6452825340389ee5c32d5cf508f27498b1dd4",
+    "tests/simulation/phase06c-20261025-01/summary.json": "4fddee89f9c02028ef427d6dc5f1e461f98c67c1a0d2bfe88b0bd30310ca8ddf",
+    "tests/simulation/phase05j-20261025-01/summary.json": "3078f90013624d0338269af6f890a2ef84878701edabfdac07799ec27eb2b747",
+    "tests/simulation/phase08a-20261026-01/acceptance.json": "6f9a458339243736a2945e9661e72614b9564ca62f0a659074edc148abbe6942",
+    "tests/distribution/phase08b-20261026-01/acceptance.json": "c6921bcaca4fc333d279aeaac604c6a97ec755939f3d3e6940dab8acd779f48d"
+  },
+  "church": {
+    "method": "unchanged donate function only, isolated VM fixtures, no game boot, saves, storage, RNG or advance",
+    "matrix": [
+      {
+        "rep": 0,
+        "small": {
+          "startRep": 0,
+          "spent": 50,
+          "gain": 2,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+2 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 0,
+          "spent": 200,
+          "gain": 5,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 5
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+5 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 0,
+          "spent": 200,
+          "gain": 8,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+2 Ansehen).",
+            "50 G für die Stadt gespendet (+2 Ansehen).",
+            "50 G für die Stadt gespendet (+2 Ansehen).",
+            "50 G für die Stadt gespendet (+2 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 54,
+        "small": {
+          "startRep": 54,
+          "spent": 50,
+          "gain": 2,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+2 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 54,
+          "spent": 200,
+          "gain": 5,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 5
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+5 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 54,
+          "spent": 200,
+          "gain": 5,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 2
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+2 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 55,
+        "small": {
+          "startRep": 55,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 55,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 4
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+4 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 55,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 109,
+        "small": {
+          "startRep": 109,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 109,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 4
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+4 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 109,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 110,
+        "small": {
+          "startRep": 110,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 110,
+          "spent": 200,
+          "gain": 3,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 3
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+3 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 110,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 164,
+        "small": {
+          "startRep": 164,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 164,
+          "spent": 200,
+          "gain": 3,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 3
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+3 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 164,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 165,
+        "small": {
+          "startRep": 165,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 165,
+          "spent": 200,
+          "gain": 2,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 2
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+2 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 165,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 219,
+        "small": {
+          "startRep": 219,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 219,
+          "spent": 200,
+          "gain": 2,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 2
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+2 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 219,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 220,
+        "small": {
+          "startRep": 220,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 220,
+          "spent": 200,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 220,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 274,
+        "small": {
+          "startRep": 274,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 274,
+          "spent": 200,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 274,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 275,
+        "small": {
+          "startRep": 275,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 275,
+          "spent": 200,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 275,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      },
+      {
+        "rep": 550,
+        "small": {
+          "startRep": 550,
+          "spent": 50,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "large": {
+          "startRep": 550,
+          "spent": 200,
+          "gain": 1,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 200,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "200 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        },
+        "fourSmall": {
+          "startRep": 550,
+          "spent": 200,
+          "gain": 4,
+          "day": 1,
+          "year": 1350,
+          "events": [
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            },
+            {
+              "type": "donation",
+              "cost": 50,
+              "reputation": 1
+            }
+          ],
+          "messages": [
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen).",
+            "50 G für die Stadt gespendet (+1 Ansehen)."
+          ]
+        }
+      }
+    ],
+    "insufficient": {
+      "startRep": 55,
+      "spent": 0,
+      "gain": 0,
+      "day": 1,
+      "year": 1350,
+      "events": [],
+      "messages": [
+        "Dafür reicht dein Gold nicht."
+      ]
+    },
+    "repeated": {
+      "startRep": 0,
+      "spent": 5000,
+      "gain": 128,
+      "day": 1,
+      "year": 1350,
+      "events": 100,
+      "messages": 100
+    }
+  },
+  "regionalHistoricalGroups": {
+    "cautious": {
+      "cases": 12,
+      "wealthMedian": 360391.5,
+      "cashMedian": 356950.5,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "netPerTrip": 800.6229266494655,
+      "netPerGameDay": 251.10867052023121,
+      "tradeProfitSum": 4428782,
+      "harborFeesSum": 32556,
+      "pirateCargoBookCostSum": 52046,
+      "feesAndLossesFractionOfTradeProfit": 0.01910276911349441,
+      "topFiveRoutesByNetSum": [
+        [
+          "Stralsund → Rostock",
+          {
+            "journeys": 808,
+            "days": 2413,
+            "profit": 701769,
+            "fees": 4848,
+            "pirateLossCost": 7473,
+            "negativeTrips": 4,
+            "net": 689448,
+            "netPerTrip": 853.2772277227723,
+            "netPerDay": 285.7223373394115
+          }
+        ],
+        [
+          "Rostock → Stralsund",
+          {
+            "journeys": 831,
+            "days": 2478,
+            "profit": 590377,
+            "fees": 4986,
+            "pirateLossCost": 7906,
+            "negativeTrips": 7,
+            "net": 577485,
+            "netPerTrip": 694.9277978339351,
+            "netPerDay": 233.044794188862
+          }
+        ],
+        [
+          "Lübeck → Rostock",
+          {
+            "journeys": 611,
+            "days": 1799,
+            "profit": 573641,
+            "fees": 3666,
+            "pirateLossCost": 5868,
+            "negativeTrips": 4,
+            "net": 564107,
+            "netPerTrip": 923.252045826514,
+            "netPerDay": 313.56698165647583
+          }
+        ],
+        [
+          "Rostock → Lübeck",
+          {
+            "journeys": 579,
+            "days": 1711,
+            "profit": 444495,
+            "fees": 3474,
+            "pirateLossCost": 6164,
+            "negativeTrips": 2,
+            "net": 434857,
+            "netPerTrip": 751.0483592400691,
+            "netPerDay": 254.15371127995326
+          }
+        ],
+        [
+          "Stettin → Stralsund",
+          {
+            "journeys": 561,
+            "days": 1680,
+            "profit": 389757,
+            "fees": 3366,
+            "pirateLossCost": 4891,
+            "negativeTrips": 1,
+            "net": 381500,
+            "netPerTrip": 680.0356506238859,
+            "netPerDay": 227.08333333333334
+          }
+        ]
+      ]
+    },
+    "normal": {
+      "cases": 12,
+      "wealthMedian": 532944.0,
+      "cashMedian": 529503.0,
+      "daysMin": 1440,
+      "daysMax": 1444,
+      "netPerTrip": 1563.234335839599,
+      "netPerGameDay": 360.47535109518583,
+      "tradeProfitSum": 6302909,
+      "harborFeesSum": 23940,
+      "pirateCargoBookCostSum": 41664,
+      "feesAndLossesFractionOfTradeProfit": 0.010408527237185243,
+      "topFiveRoutesByNetSum": [
+        [
+          "Stralsund → Rostock",
+          {
+            "journeys": 324,
+            "days": 963,
+            "profit": 435546,
+            "fees": 1944,
+            "pirateLossCost": 3509,
+            "negativeTrips": 11,
+            "net": 430093,
+            "netPerTrip": 1327.4475308641975,
+            "netPerDay": 446.6178608515057
+          }
+        ],
+        [
+          "Hamburg → Rostock",
+          {
+            "journeys": 221,
+            "days": 884,
+            "profit": 424993,
+            "fees": 1326,
+            "pirateLossCost": 2440,
+            "negativeTrips": 1,
+            "net": 421227,
+            "netPerTrip": 1906.0045248868778,
+            "netPerDay": 476.50113122171945
+          }
+        ],
+        [
+          "Lübeck → Rostock",
+          {
+            "journeys": 271,
+            "days": 805,
+            "profit": 400600,
+            "fees": 1626,
+            "pirateLossCost": 2838,
+            "negativeTrips": 3,
+            "net": 396136,
+            "netPerTrip": 1461.7564575645756,
+            "netPerDay": 492.0944099378882
+          }
+        ],
+        [
+          "Rostock → Stralsund",
+          {
+            "journeys": 309,
+            "days": 922,
+            "profit": 376359,
+            "fees": 1854,
+            "pirateLossCost": 3256,
+            "negativeTrips": 5,
+            "net": 371249,
+            "netPerTrip": 1201.4530744336569,
+            "netPerDay": 402.65618221258137
+          }
+        ],
+        [
+          "Hamburg → Lübeck",
+          {
+            "journeys": 245,
+            "days": 730,
+            "profit": 364427,
+            "fees": 1470,
+            "pirateLossCost": 2665,
+            "negativeTrips": 5,
+            "net": 360292,
+            "netPerTrip": 1470.5795918367346,
+            "netPerDay": 493.55068493150685
+          }
+        ]
+      ]
+    },
+    "aggressive": {
+      "cases": 12,
+      "wealthMedian": 272045.85,
+      "cashMedian": 268377.0,
+      "daysMin": 1440,
+      "daysMax": 1467,
+      "netPerTrip": 3364.6569579288025,
+      "netPerGameDay": 179.26530260359792,
+      "tradeProfitSum": 3133894,
+      "harborFeesSum": 5562,
+      "pirateCargoBookCostSum": 9295,
+      "feesAndLossesFractionOfTradeProfit": 0.004740747453487578,
+      "topFiveRoutesByNetSum": [
+        [
+          "Brügge → Danzig",
+          {
+            "journeys": 27,
+            "days": 525,
+            "profit": 168540,
+            "fees": 162,
+            "pirateLossCost": 363,
+            "negativeTrips": 0,
+            "net": 168015,
+            "netPerTrip": 6222.777777777777,
+            "netPerDay": 320.0285714285714
+          }
+        ],
+        [
+          "Nowgorod → Lübeck",
+          {
+            "journeys": 32,
+            "days": 813,
+            "profit": 163158,
+            "fees": 192,
+            "pirateLossCost": 780,
+            "negativeTrips": 0,
+            "net": 162186,
+            "netPerTrip": 5068.3125,
+            "netPerDay": 199.49077490774908
+          }
+        ],
+        [
+          "Lübeck → Nowgorod",
+          {
+            "journeys": 44,
+            "days": 1100,
+            "profit": 119303,
+            "fees": 264,
+            "pirateLossCost": 158,
+            "negativeTrips": 6,
+            "net": 118881,
+            "netPerTrip": 2701.840909090909,
+            "netPerDay": 108.07363636363637
+          }
+        ],
+        [
+          "Rostock → Bergen",
+          {
+            "journeys": 35,
+            "days": 549,
+            "profit": 101036,
+            "fees": 210,
+            "pirateLossCost": 278,
+            "negativeTrips": 0,
+            "net": 100548,
+            "netPerTrip": 2872.8,
+            "netPerDay": 183.14754098360655
+          }
+        ],
+        [
+          "Bergen → Rostock",
+          {
+            "journeys": 29,
+            "days": 459,
+            "profit": 100770,
+            "fees": 174,
+            "pirateLossCost": 778,
+            "negativeTrips": 1,
+            "net": 99818,
+            "netPerTrip": 3442.0,
+            "netPerDay": 217.46840958605665
+          }
+        ]
+      ]
+    },
+    "optimized": {
+      "cases": 12,
+      "wealthMedian": 623195.5,
+      "cashMedian": 619754.5,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "netPerTrip": 1673.0622531939605,
+      "netPerGameDay": 416.47582976754944,
+      "tradeProfitSum": 7286503,
+      "harborFeesSum": 25830,
+      "pirateCargoBookCostSum": 58140,
+      "feesAndLossesFractionOfTradeProfit": 0.011524046583114012,
+      "topFiveRoutesByNetSum": [
+        [
+          "Stralsund → Rostock",
+          {
+            "journeys": 474,
+            "days": 1421,
+            "profit": 787593,
+            "fees": 2844,
+            "pirateLossCost": 6607,
+            "negativeTrips": 2,
+            "net": 778142,
+            "netPerTrip": 1641.649789029536,
+            "netPerDay": 547.6016889514426
+          }
+        ],
+        [
+          "Lübeck → Rostock",
+          {
+            "journeys": 418,
+            "days": 1242,
+            "profit": 674811,
+            "fees": 2508,
+            "pirateLossCost": 5903,
+            "negativeTrips": 3,
+            "net": 666400,
+            "netPerTrip": 1594.2583732057417,
+            "netPerDay": 536.5539452495974
+          }
+        ],
+        [
+          "Rostock → Stralsund",
+          {
+            "journeys": 466,
+            "days": 1396,
+            "profit": 601427,
+            "fees": 2796,
+            "pirateLossCost": 4929,
+            "negativeTrips": 7,
+            "net": 593702,
+            "netPerTrip": 1274.038626609442,
+            "netPerDay": 425.2879656160458
+          }
+        ],
+        [
+          "Hamburg → Lübeck",
+          {
+            "journeys": 257,
+            "days": 762,
+            "profit": 487519,
+            "fees": 1542,
+            "pirateLossCost": 3387,
+            "negativeTrips": 4,
+            "net": 482590,
+            "netPerTrip": 1877.7821011673152,
+            "netPerDay": 633.3202099737533
+          }
+        ],
+        [
+          "Rostock → Lübeck",
+          {
+            "journeys": 404,
+            "days": 1203,
+            "profit": 465903,
+            "fees": 2424,
+            "pirateLossCost": 6974,
+            "negativeTrips": 9,
+            "net": 456505,
+            "netPerTrip": 1129.9628712871288,
+            "netPerDay": 379.47215295095594
+          }
+        ]
+      ]
+    },
+    "remote": {
+      "cases": 12,
+      "wealthMedian": 270207.0,
+      "cashMedian": 266766.0,
+      "daysMin": 1441,
+      "daysMax": 1468,
+      "netPerTrip": 1937.786945812808,
+      "netPerGameDay": 180.55918297091054,
+      "tradeProfitSum": 3170218,
+      "harborFeesSum": 9744,
+      "pirateCargoBookCostSum": 13508,
+      "feesAndLossesFractionOfTradeProfit": 0.007334511380605372,
+      "topFiveRoutesByNetSum": [
+        [
+          "Nowgorod → Lübeck",
+          {
+            "journeys": 132,
+            "days": 3543,
+            "profit": 431199,
+            "fees": 792,
+            "pirateLossCost": 1452,
+            "negativeTrips": 4,
+            "net": 428955,
+            "netPerTrip": 3249.659090909091,
+            "netPerDay": 121.07112616426757
+          }
+        ],
+        [
+          "Stettin → Danzig",
+          {
+            "journeys": 132,
+            "days": 724,
+            "profit": 334209,
+            "fees": 792,
+            "pirateLossCost": 1610,
+            "negativeTrips": 14,
+            "net": 331807,
+            "netPerTrip": 2513.689393939394,
+            "netPerDay": 458.29696132596683
+          }
+        ],
+        [
+          "Lübeck → Rostock",
+          {
+            "journeys": 133,
+            "days": 393,
+            "profit": 311458,
+            "fees": 798,
+            "pirateLossCost": 281,
+            "negativeTrips": 16,
+            "net": 310379,
+            "netPerTrip": 2333.6766917293235,
+            "netPerDay": 789.7684478371501
+          }
+        ],
+        [
+          "Hamburg → Brügge",
+          {
+            "journeys": 141,
+            "days": 1424,
+            "profit": 291681,
+            "fees": 846,
+            "pirateLossCost": 1383,
+            "negativeTrips": 24,
+            "net": 289452,
+            "netPerTrip": 2052.851063829787,
+            "netPerDay": 203.26685393258427
+          }
+        ],
+        [
+          "Brügge → Venlo",
+          {
+            "journeys": 140,
+            "days": 1178,
+            "profit": 287734,
+            "fees": 840,
+            "pirateLossCost": 1251,
+            "negativeTrips": 14,
+            "net": 285643,
+            "netPerTrip": 2040.307142857143,
+            "netPerDay": 242.48132427843802
+          }
+        ]
+      ]
+    },
+    "explorer": {
+      "cases": 12,
+      "wealthMedian": 498636.5,
+      "cashMedian": 495195.5,
+      "daysMin": 1440,
+      "daysMax": 1452,
+      "netPerTrip": 1569.5076510067115,
+      "netPerGameDay": 337.7869193436561,
+      "tradeProfitSum": 5904690,
+      "harborFeesSum": 22350,
+      "pirateCargoBookCostSum": 35924,
+      "feesAndLossesFractionOfTradeProfit": 0.00986910405118643,
+      "topFiveRoutesByNetSum": [
+        [
+          "Stralsund → Rostock",
+          {
+            "journeys": 336,
+            "days": 1002,
+            "profit": 478110,
+            "fees": 2016,
+            "pirateLossCost": 2970,
+            "negativeTrips": 7,
+            "net": 473124,
+            "netPerTrip": 1408.107142857143,
+            "netPerDay": 472.1796407185629
+          }
+        ],
+        [
+          "Rostock → Stralsund",
+          {
+            "journeys": 344,
+            "days": 1029,
+            "profit": 446714,
+            "fees": 2064,
+            "pirateLossCost": 2740,
+            "negativeTrips": 1,
+            "net": 441910,
+            "netPerTrip": 1284.6220930232557,
+            "netPerDay": 429.4557823129252
+          }
+        ],
+        [
+          "Lübeck → Rostock",
+          {
+            "journeys": 261,
+            "days": 776,
+            "profit": 415359,
+            "fees": 1566,
+            "pirateLossCost": 2362,
+            "negativeTrips": 4,
+            "net": 411431,
+            "netPerTrip": 1576.3639846743295,
+            "netPerDay": 530.194587628866
+          }
+        ],
+        [
+          "Hamburg → Lübeck",
+          {
+            "journeys": 236,
+            "days": 700,
+            "profit": 414445,
+            "fees": 1416,
+            "pirateLossCost": 1664,
+            "negativeTrips": 2,
+            "net": 411365,
+            "netPerTrip": 1743.072033898305,
+            "netPerDay": 587.6642857142857
+          }
+        ],
+        [
+          "Lübeck → Hamburg",
+          {
+            "journeys": 235,
+            "days": 695,
+            "profit": 339654,
+            "fees": 1410,
+            "pirateLossCost": 1569,
+            "negativeTrips": 7,
+            "net": 336675,
+            "netPerTrip": 1432.659574468085,
+            "netPerDay": 484.42446043165467
+          }
+        ]
+      ]
+    }
+  },
+  "regionalControlledRouteProbes": [
+    {
+      "route": "Bergen–Lübeck",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "negative": 0,
+      "netPerTrip": 454.8541666666667,
+      "netPerGameDay": 35.50081300813008
+    },
+    {
+      "route": "Bergen–Lübeck",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "negative": 13,
+      "netPerTrip": 802,
+      "netPerGameDay": 62.59512195121951
+    },
+    {
+      "route": "Lübeck–Hamburg",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "negative": 12,
+      "netPerTrip": 106.125,
+      "netPerGameDay": 36.91304347826087
+    },
+    {
+      "route": "Lübeck–Hamburg",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "negative": 23,
+      "netPerTrip": 161.4375,
+      "netPerGameDay": 56.15217391304348
+    },
+    {
+      "route": "Nowgorod–Brügge",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "negative": 11,
+      "netPerTrip": 1067.2708333333333,
+      "netPerGameDay": 32.79705505761844
+    },
+    {
+      "route": "Nowgorod–Brügge",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "negative": 32,
+      "netPerTrip": -35,
+      "netPerGameDay": -1.0755441741357235
+    }
+  ],
+  "startCityHistoricalMainGroups": {
+    "normal": {
+      "n": 55,
+      "mayors": 53,
+      "eld": 52,
+      "blocked": 0,
+      "mayorDayMedian": 390,
+      "eldDayMedian": 808.5,
+      "wealthMedian": 673237,
+      "cashMedian": 669796,
+      "feesMedian": 2838,
+      "journeysMedian": 473
+    },
+    "earlyArms": {
+      "n": 55,
+      "mayors": 51,
+      "eld": 50,
+      "blocked": 0,
+      "mayorDayMedian": 468,
+      "eldDayMedian": 1033.5,
+      "wealthMedian": 471371,
+      "cashMedian": 467930,
+      "feesMedian": 2754,
+      "journeysMedian": 459
+    }
+  },
+  "historicalActualBuildCosts": {
+    "0": {
+      "ships": 72,
+      "min": 3614,
+      "median": 3896.0,
+      "max": 4270
+    },
+    "1": {
+      "ships": 72,
+      "min": 5894,
+      "median": 6379.0,
+      "max": 7042
+    },
+    "2": {
+      "ships": 72,
+      "min": 9826,
+      "median": 11137.0,
+      "max": 12651
+    }
+  }
+}
