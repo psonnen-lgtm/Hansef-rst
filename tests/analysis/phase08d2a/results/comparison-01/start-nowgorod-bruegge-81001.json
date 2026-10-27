@@ -1,0 +1,1368 @@
+{
+  "analysisOnly": true,
+  "model": "A",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "game": {
+    "v": 13,
+    "information": {
+      "version": 2,
+      "archive": null,
+      "reports": [],
+      "filed": [],
+      "letters": {
+        "version": 1,
+        "since": 486001,
+        "index": 0,
+        "lastDay": 486001,
+        "nextDay": 486011,
+        "offer": null,
+        "receipts": [],
+        "filed": [],
+        "archiveFirstReceipt": null
+      }
+    },
+    "politics": {
+      "version": 1,
+      "since": 486001,
+      "rules": {
+        "sectionDays": 60,
+        "mayorWealth": 45000
+      },
+      "legacyRank": 0,
+      "records": [],
+      "issued": [
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        },
+        {
+          "supply": -1,
+          "accord": -1
+        }
+      ],
+      "jobs": [],
+      "office": null,
+      "terms": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "appointments": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "nextElection": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "endorsements": [
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "league": null,
+      "leagueIssued": [
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      "elderman": null
+    },
+    "shipyard": {
+      "version": 1,
+      "nextId": 1,
+      "lastShipId": 0,
+      "orders": []
+    },
+    "economy": {
+      "version": 1,
+      "reports": []
+    },
+    "storage": {
+      "version": 2,
+      "since": 486001,
+      "rentals": [
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        },
+        {
+          "blocks": 0,
+          "until": 0,
+          "arrears": 0
+        }
+      ]
+    },
+    "player": "Ulf",
+    "name": "Mengenprobe",
+    "day": 1,
+    "year": 1350,
+    "city": 9,
+    "gold": 5000,
+    "rep": 0,
+    "rank": 0,
+    "ships": [
+      {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 9,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {},
+        "costs": {}
+      }
+    ],
+    "active": 0,
+    "bank": 0,
+    "debt": 0,
+    "markets": [
+      [
+        {
+          "price": 13,
+          "stock": 90
+        },
+        {
+          "price": 29,
+          "stock": 96
+        },
+        {
+          "price": 18,
+          "stock": 91
+        },
+        {
+          "price": 32,
+          "stock": 102
+        },
+        {
+          "price": 28,
+          "stock": 115
+        },
+        {
+          "price": 55,
+          "stock": 90
+        },
+        {
+          "price": 91,
+          "stock": 79
+        },
+        {
+          "price": 40,
+          "stock": 69
+        },
+        {
+          "price": 34,
+          "stock": 60
+        },
+        {
+          "price": 89,
+          "stock": 77
+        },
+        {
+          "price": 85,
+          "stock": 14
+        }
+      ],
+      [
+        {
+          "price": 16,
+          "stock": 59
+        },
+        {
+          "price": 18,
+          "stock": 57
+        },
+        {
+          "price": 14,
+          "stock": 53
+        },
+        {
+          "price": 27,
+          "stock": 104
+        },
+        {
+          "price": 22,
+          "stock": 77
+        },
+        {
+          "price": 59,
+          "stock": 119
+        },
+        {
+          "price": 73,
+          "stock": 64
+        },
+        {
+          "price": 41,
+          "stock": 38
+        },
+        {
+          "price": 20,
+          "stock": 39
+        },
+        {
+          "price": 67,
+          "stock": 52
+        },
+        {
+          "price": 129,
+          "stock": 10
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 93
+        },
+        {
+          "price": 31,
+          "stock": 38
+        },
+        {
+          "price": 23,
+          "stock": 96
+        },
+        {
+          "price": 22,
+          "stock": 67
+        },
+        {
+          "price": 27,
+          "stock": 38
+        },
+        {
+          "price": 52,
+          "stock": 38
+        },
+        {
+          "price": 96,
+          "stock": 58
+        },
+        {
+          "price": 31,
+          "stock": 71
+        },
+        {
+          "price": 33,
+          "stock": 64
+        },
+        {
+          "price": 66,
+          "stock": 70
+        },
+        {
+          "price": 131,
+          "stock": 13
+        }
+      ],
+      [
+        {
+          "price": 21,
+          "stock": 87
+        },
+        {
+          "price": 20,
+          "stock": 119
+        },
+        {
+          "price": 19,
+          "stock": 117
+        },
+        {
+          "price": 27,
+          "stock": 91
+        },
+        {
+          "price": 19,
+          "stock": 127
+        },
+        {
+          "price": 60,
+          "stock": 83
+        },
+        {
+          "price": 103,
+          "stock": 38
+        },
+        {
+          "price": 24,
+          "stock": 91
+        },
+        {
+          "price": 26,
+          "stock": 84
+        },
+        {
+          "price": 81,
+          "stock": 57
+        },
+        {
+          "price": 105,
+          "stock": 15
+        }
+      ],
+      [
+        {
+          "price": 16,
+          "stock": 53
+        },
+        {
+          "price": 18,
+          "stock": 59
+        },
+        {
+          "price": 20,
+          "stock": 71
+        },
+        {
+          "price": 32,
+          "stock": 47
+        },
+        {
+          "price": 18,
+          "stock": 129
+        },
+        {
+          "price": 49,
+          "stock": 102
+        },
+        {
+          "price": 76,
+          "stock": 50
+        },
+        {
+          "price": 26,
+          "stock": 109
+        },
+        {
+          "price": 36,
+          "stock": 90
+        },
+        {
+          "price": 83,
+          "stock": 54
+        },
+        {
+          "price": 123,
+          "stock": 23
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 125
+        },
+        {
+          "price": 29,
+          "stock": 85
+        },
+        {
+          "price": 23,
+          "stock": 93
+        },
+        {
+          "price": 37,
+          "stock": 39
+        },
+        {
+          "price": 26,
+          "stock": 62
+        },
+        {
+          "price": 51,
+          "stock": 53
+        },
+        {
+          "price": 86,
+          "stock": 38
+        },
+        {
+          "price": 37,
+          "stock": 113
+        },
+        {
+          "price": 31,
+          "stock": 115
+        },
+        {
+          "price": 71,
+          "stock": 35
+        },
+        {
+          "price": 118,
+          "stock": 23
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 55
+        },
+        {
+          "price": 26,
+          "stock": 35
+        },
+        {
+          "price": 23,
+          "stock": 62
+        },
+        {
+          "price": 36,
+          "stock": 37
+        },
+        {
+          "price": 20,
+          "stock": 123
+        },
+        {
+          "price": 44,
+          "stock": 46
+        },
+        {
+          "price": 105,
+          "stock": 39
+        },
+        {
+          "price": 23,
+          "stock": 40
+        },
+        {
+          "price": 21,
+          "stock": 73
+        },
+        {
+          "price": 61,
+          "stock": 52
+        },
+        {
+          "price": 128,
+          "stock": 15
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 46
+        },
+        {
+          "price": 30,
+          "stock": 76
+        },
+        {
+          "price": 17,
+          "stock": 60
+        },
+        {
+          "price": 25,
+          "stock": 60
+        },
+        {
+          "price": 25,
+          "stock": 65
+        },
+        {
+          "price": 69,
+          "stock": 59
+        },
+        {
+          "price": 81,
+          "stock": 74
+        },
+        {
+          "price": 23,
+          "stock": 80
+        },
+        {
+          "price": 28,
+          "stock": 41
+        },
+        {
+          "price": 68,
+          "stock": 70
+        },
+        {
+          "price": 130,
+          "stock": 15
+        }
+      ],
+      [
+        {
+          "price": 12,
+          "stock": 63
+        },
+        {
+          "price": 24,
+          "stock": 59
+        },
+        {
+          "price": 14,
+          "stock": 34
+        },
+        {
+          "price": 28,
+          "stock": 62
+        },
+        {
+          "price": 22,
+          "stock": 56
+        },
+        {
+          "price": 70,
+          "stock": 115
+        },
+        {
+          "price": 102,
+          "stock": 47
+        },
+        {
+          "price": 33,
+          "stock": 64
+        },
+        {
+          "price": 34,
+          "stock": 43
+        },
+        {
+          "price": 70,
+          "stock": 102
+        },
+        {
+          "price": 139,
+          "stock": 16
+        }
+      ],
+      [
+        {
+          "price": 20,
+          "stock": 67
+        },
+        {
+          "price": 24,
+          "stock": 34
+        },
+        {
+          "price": 18,
+          "stock": 80
+        },
+        {
+          "price": 38,
+          "stock": 40
+        },
+        {
+          "price": 28,
+          "stock": 86
+        },
+        {
+          "price": 72,
+          "stock": 65
+        },
+        {
+          "price": 82,
+          "stock": 53
+        },
+        {
+          "price": 30,
+          "stock": 104
+        },
+        {
+          "price": 25,
+          "stock": 92
+        },
+        {
+          "price": 70,
+          "stock": 65
+        },
+        {
+          "price": 123,
+          "stock": 67
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 83
+        },
+        {
+          "price": 31,
+          "stock": 60
+        },
+        {
+          "price": 22,
+          "stock": 84
+        },
+        {
+          "price": 36,
+          "stock": 41
+        },
+        {
+          "price": 28,
+          "stock": 63
+        },
+        {
+          "price": 46,
+          "stock": 59
+        },
+        {
+          "price": 61,
+          "stock": 76
+        },
+        {
+          "price": 28,
+          "stock": 43
+        },
+        {
+          "price": 31,
+          "stock": 58
+        },
+        {
+          "price": 81,
+          "stock": 58
+        },
+        {
+          "price": 109,
+          "stock": 13
+        }
+      ]
+    ],
+    "journal": {
+      "9": {
+        "day": 1,
+        "year": 1350,
+        "prices": [
+          20,
+          24,
+          18,
+          38,
+          28,
+          72,
+          82,
+          30,
+          25,
+          70,
+          123
+        ]
+      }
+    },
+    "messages": [
+      "Willkommen in Nowgorod! Die Hanse erwartet einen neuen Kaufmann."
+    ],
+    "rumors": [],
+    "quests": [],
+    "completed": 0,
+    "birthdaySeen": {},
+    "flags": {},
+    "visits": 1,
+    "warehouses": {
+      "0": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "1": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "2": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "3": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "4": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "5": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "6": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "7": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "8": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "9": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      },
+      "10": {
+        "cargo": {},
+        "costs": {},
+        "bookCosts": {},
+        "origins": {}
+      }
+    },
+    "beginning": {
+      "version": 1,
+      "city": 9,
+      "merchant": "Ulf"
+    }
+  },
+  "anchors": [
+    [
+      {
+        "price": 13,
+        "stock": 90
+      },
+      {
+        "price": 29,
+        "stock": 96
+      },
+      {
+        "price": 18,
+        "stock": 91
+      },
+      {
+        "price": 32,
+        "stock": 102
+      },
+      {
+        "price": 28,
+        "stock": 115
+      },
+      {
+        "price": 55,
+        "stock": 90
+      },
+      {
+        "price": 91,
+        "stock": 79
+      },
+      {
+        "price": 40,
+        "stock": 69
+      },
+      {
+        "price": 34,
+        "stock": 60
+      },
+      {
+        "price": 89,
+        "stock": 77
+      },
+      {
+        "price": 85,
+        "stock": 14
+      }
+    ],
+    [
+      {
+        "price": 16,
+        "stock": 59
+      },
+      {
+        "price": 18,
+        "stock": 57
+      },
+      {
+        "price": 14,
+        "stock": 53
+      },
+      {
+        "price": 27,
+        "stock": 104
+      },
+      {
+        "price": 22,
+        "stock": 77
+      },
+      {
+        "price": 59,
+        "stock": 119
+      },
+      {
+        "price": 73,
+        "stock": 64
+      },
+      {
+        "price": 41,
+        "stock": 38
+      },
+      {
+        "price": 20,
+        "stock": 39
+      },
+      {
+        "price": 67,
+        "stock": 52
+      },
+      {
+        "price": 129,
+        "stock": 10
+      }
+    ],
+    [
+      {
+        "price": 19,
+        "stock": 93
+      },
+      {
+        "price": 31,
+        "stock": 38
+      },
+      {
+        "price": 23,
+        "stock": 96
+      },
+      {
+        "price": 22,
+        "stock": 67
+      },
+      {
+        "price": 27,
+        "stock": 38
+      },
+      {
+        "price": 52,
+        "stock": 38
+      },
+      {
+        "price": 96,
+        "stock": 58
+      },
+      {
+        "price": 31,
+        "stock": 71
+      },
+      {
+        "price": 33,
+        "stock": 64
+      },
+      {
+        "price": 66,
+        "stock": 70
+      },
+      {
+        "price": 131,
+        "stock": 13
+      }
+    ],
+    [
+      {
+        "price": 21,
+        "stock": 87
+      },
+      {
+        "price": 20,
+        "stock": 119
+      },
+      {
+        "price": 19,
+        "stock": 117
+      },
+      {
+        "price": 27,
+        "stock": 91
+      },
+      {
+        "price": 19,
+        "stock": 127
+      },
+      {
+        "price": 60,
+        "stock": 83
+      },
+      {
+        "price": 103,
+        "stock": 38
+      },
+      {
+        "price": 24,
+        "stock": 91
+      },
+      {
+        "price": 26,
+        "stock": 84
+      },
+      {
+        "price": 81,
+        "stock": 57
+      },
+      {
+        "price": 105,
+        "stock": 15
+      }
+    ],
+    [
+      {
+        "price": 16,
+        "stock": 53
+      },
+      {
+        "price": 18,
+        "stock": 59
+      },
+      {
+        "price": 20,
+        "stock": 71
+      },
+      {
+        "price": 32,
+        "stock": 47
+      },
+      {
+        "price": 18,
+        "stock": 129
+      },
+      {
+        "price": 49,
+        "stock": 102
+      },
+      {
+        "price": 76,
+        "stock": 50
+      },
+      {
+        "price": 26,
+        "stock": 109
+      },
+      {
+        "price": 36,
+        "stock": 90
+      },
+      {
+        "price": 83,
+        "stock": 54
+      },
+      {
+        "price": 123,
+        "stock": 23
+      }
+    ],
+    [
+      {
+        "price": 19,
+        "stock": 125
+      },
+      {
+        "price": 29,
+        "stock": 85
+      },
+      {
+        "price": 23,
+        "stock": 93
+      },
+      {
+        "price": 37,
+        "stock": 39
+      },
+      {
+        "price": 26,
+        "stock": 62
+      },
+      {
+        "price": 51,
+        "stock": 53
+      },
+      {
+        "price": 86,
+        "stock": 38
+      },
+      {
+        "price": 37,
+        "stock": 113
+      },
+      {
+        "price": 31,
+        "stock": 115
+      },
+      {
+        "price": 71,
+        "stock": 35
+      },
+      {
+        "price": 118,
+        "stock": 23
+      }
+    ],
+    [
+      {
+        "price": 19,
+        "stock": 55
+      },
+      {
+        "price": 26,
+        "stock": 35
+      },
+      {
+        "price": 23,
+        "stock": 62
+      },
+      {
+        "price": 36,
+        "stock": 37
+      },
+      {
+        "price": 20,
+        "stock": 123
+      },
+      {
+        "price": 44,
+        "stock": 46
+      },
+      {
+        "price": 105,
+        "stock": 39
+      },
+      {
+        "price": 23,
+        "stock": 40
+      },
+      {
+        "price": 21,
+        "stock": 73
+      },
+      {
+        "price": 61,
+        "stock": 52
+      },
+      {
+        "price": 128,
+        "stock": 15
+      }
+    ],
+    [
+      {
+        "price": 19,
+        "stock": 46
+      },
+      {
+        "price": 30,
+        "stock": 76
+      },
+      {
+        "price": 17,
+        "stock": 60
+      },
+      {
+        "price": 25,
+        "stock": 60
+      },
+      {
+        "price": 25,
+        "stock": 65
+      },
+      {
+        "price": 69,
+        "stock": 59
+      },
+      {
+        "price": 81,
+        "stock": 74
+      },
+      {
+        "price": 23,
+        "stock": 80
+      },
+      {
+        "price": 28,
+        "stock": 41
+      },
+      {
+        "price": 68,
+        "stock": 70
+      },
+      {
+        "price": 130,
+        "stock": 15
+      }
+    ],
+    [
+      {
+        "price": 12,
+        "stock": 63
+      },
+      {
+        "price": 24,
+        "stock": 59
+      },
+      {
+        "price": 14,
+        "stock": 34
+      },
+      {
+        "price": 28,
+        "stock": 62
+      },
+      {
+        "price": 22,
+        "stock": 56
+      },
+      {
+        "price": 70,
+        "stock": 115
+      },
+      {
+        "price": 102,
+        "stock": 47
+      },
+      {
+        "price": 33,
+        "stock": 64
+      },
+      {
+        "price": 34,
+        "stock": 43
+      },
+      {
+        "price": 70,
+        "stock": 102
+      },
+      {
+        "price": 139,
+        "stock": 16
+      }
+    ],
+    [
+      {
+        "price": 20,
+        "stock": 67
+      },
+      {
+        "price": 24,
+        "stock": 34
+      },
+      {
+        "price": 18,
+        "stock": 80
+      },
+      {
+        "price": 38,
+        "stock": 40
+      },
+      {
+        "price": 28,
+        "stock": 86
+      },
+      {
+        "price": 72,
+        "stock": 65
+      },
+      {
+        "price": 82,
+        "stock": 53
+      },
+      {
+        "price": 30,
+        "stock": 104
+      },
+      {
+        "price": 25,
+        "stock": 92
+      },
+      {
+        "price": 70,
+        "stock": 65
+      },
+      {
+        "price": 123,
+        "stock": 67
+      }
+    ],
+    [
+      {
+        "price": 19,
+        "stock": 83
+      },
+      {
+        "price": 31,
+        "stock": 60
+      },
+      {
+        "price": 22,
+        "stock": 84
+      },
+      {
+        "price": 36,
+        "stock": 41
+      },
+      {
+        "price": 28,
+        "stock": 63
+      },
+      {
+        "price": 46,
+        "stock": 59
+      },
+      {
+        "price": 61,
+        "stock": 76
+      },
+      {
+        "price": 28,
+        "stock": 43
+      },
+      {
+        "price": 31,
+        "stock": 58
+      },
+      {
+        "price": 81,
+        "stock": 58
+      },
+      {
+        "price": 109,
+        "stock": 13
+      }
+    ]
+  ],
+  "rng": {
+    "state": 2688942072,
+    "draws": 243
+  },
+  "clock": 1700000000001
+}

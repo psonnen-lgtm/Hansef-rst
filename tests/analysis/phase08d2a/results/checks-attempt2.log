@@ -1,0 +1,15 @@
+PASS production HTML and all existing tracked files untouched; exact VM substitutions recorded
+PASS integer totals split neutral for 90, 9x10 and 90x1 buys including reload/views
+PASS sale 90, 9x10, 90x1 and both round-trip directions have exactly equal gold
+PASS mathematical path additivity monotone edges floor ceiling and exact half-up rounding
+PASS stock zero one three, fractional or insufficient gold, capacity and partial load bounded
+PASS no trade part may exceed money, stock or ship space even when all limits coincide
+PASS own ships and warehouse movement share market path and preserve origins and costs
+PASS existing mixed lots and unknown purchase cost preserve accounting semantics
+PASS same game seed, clocks, rules and random state repeat; quotes consume zero RNG
+PASS with no trading all daily markets risks letters politics rates and next random are identical
+PASS existing V13 data stay V13; prototype sidecar reload retains anchor without a game migration
+PASS capital constrained entry F2 remains a distinct static probe, not proof of rescue
+PASS all seven quantities for low middle high goods respect actual ship caps and availability
+PASS twelve bounded hull probes keep current types capacity speed fee and partial loads
+14 groups passed; no comparison trajectories in this script
