@@ -1,0 +1,3222 @@
+{
+  "metrics": {
+    "id": "luebeck-hamburg-81001-small22-B1",
+    "seed": 81001,
+    "route": "luebeck-hamburg",
+    "policy": "small22",
+    "model": "B1",
+    "initialHash": "e48ffc786329c977d43579259f6271893133427b300a8e563b2ddb73c92d2027",
+    "initialGameHash": "814663aeebafd9ec320bc698c4a857a61e948d436c7e63b18eb62e8b5491465d",
+    "stop": "maxTrips",
+    "trips": 12,
+    "days": 29,
+    "decisions": 24,
+    "bought": 256,
+    "sold": 255,
+    "buyCost": 7722,
+    "revenue": 5097,
+    "realizedProfit": -2584,
+    "fees": 72,
+    "pirateBookLoss": 41,
+    "net": -2697,
+    "profitPerSoldBarrel": -10.133333333333333,
+    "profitPerDay": -89.10344827586206,
+    "netPerDay": -93,
+    "cash": 2303,
+    "minimumCash": 1994,
+    "netWorth": 6937.5,
+    "politicalWorth": 6937.5,
+    "debt": 0,
+    "bank": 0,
+    "creditUsed": 0,
+    "creditAvailable": 3122,
+    "openInventoryCost": 0,
+    "openInventory": 0,
+    "freeHold": 90,
+    "negativeSales": 10,
+    "emptyTrips": 0,
+    "goldConstrainedPurchases": 0,
+    "zeroPurchasesForGold": 0,
+    "failedExecutedPurchases": 0,
+    "endCanPayFee": true,
+    "meanUnusedHold": 68.66666666666667,
+    "travelBlock": false,
+    "economicDeadEndProven": false,
+    "informationCosts": 0,
+    "rep": 12,
+    "rank": 0,
+    "lettersGenerated": 2,
+    "condition": 85,
+    "goods": [
+      "Bier",
+      "Salz"
+    ],
+    "goodsSold": {
+      "Salz": 123,
+      "Bier": 132
+    },
+    "rng": {
+      "state": 380656038,
+      "draws": 8489
+    }
+  },
+  "legs": [
+    {
+      "trip": 1,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 102,
+        "initialPrice": 32,
+        "cash": 5000,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 26,
+        "stock": 115
+      },
+      "quote": {
+        "total": 729,
+        "average": 33.13636363636363,
+        "quantity": 22,
+        "stockAfter": 80
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": null,
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 33.13636363636363,
+        "total": 729,
+        "averageCost": 33.13636363636363
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v29-i5npe2uerp",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 24.90909090909091,
+        "total": 548,
+        "averageCost": 33.13636363636363,
+        "profit": -180.9999999999999
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v29-i5npe2uerp",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 22
+            },
+            "costs": {
+              "3": 33.13636363636363
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "3": 22
+        },
+        "costs": {
+          "3": 33.13636363636363
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 33.13636363636363
+        }
+      },
+      "elapsed": 2,
+      "cash": 4813,
+      "free": 90
+    },
+    {
+      "trip": 2,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 70,
+        "initialPrice": 18,
+        "cash": 4813,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 27,
+        "stock": 106
+      },
+      "quote": {
+        "total": 406,
+        "average": 18.454545454545453,
+        "quantity": 22,
+        "stockAfter": 48
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v29-i5npe2uerp",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 18.454545454545453,
+        "total": 406,
+        "averageCost": 18.454545454545453
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2a-104rz9ee48jp",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 25.90909090909091,
+        "total": 570,
+        "averageCost": 18.454545454545453,
+        "profit": 164
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2a-104rz9ee48jp",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 18.454545454545453
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 18.454545454545453
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 18.454545454545453
+        }
+      },
+      "elapsed": 4,
+      "cash": 4971,
+      "free": 90
+    },
+    {
+      "trip": 3,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 61,
+        "initialPrice": 33,
+        "cash": 4971,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 24,
+        "stock": 140
+      },
+      "quote": {
+        "total": 741,
+        "average": 33.68181818181818,
+        "quantity": 22,
+        "stockAfter": 39
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2a-104rz9ee48jp",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 33.68181818181818,
+        "total": 741,
+        "averageCost": 33.68181818181818
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2b-9trskexk9rs",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 22.90909090909091,
+        "total": 504,
+        "averageCost": 33.68181818181818,
+        "profit": -237
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2b-9trskexk9rs",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 22
+            },
+            "costs": {
+              "3": 33.68181818181818
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "3": 22
+        },
+        "costs": {
+          "3": 33.68181818181818
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 33.68181818181818
+        }
+      },
+      "elapsed": 6,
+      "cash": 4728,
+      "free": 90
+    },
+    {
+      "trip": 4,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 62,
+        "initialPrice": 20,
+        "cash": 4728,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 25,
+        "stock": 151
+      },
+      "quote": {
+        "total": 450,
+        "average": 20.454545454545453,
+        "quantity": 22,
+        "stockAfter": 40
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2b-9trskexk9rs",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 20.454545454545453,
+        "total": 450,
+        "averageCost": 20.454545454545453
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2c-fjtjbh3g17p",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 23.818181818181817,
+        "total": 524,
+        "averageCost": 20.454545454545453,
+        "profit": 74
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2c-fjtjbh3g17p",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 20.454545454545453
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 20.454545454545453
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 20.454545454545453
+        }
+      },
+      "elapsed": 8,
+      "cash": 4796,
+      "free": 90
+    },
+    {
+      "trip": 5,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 53,
+        "initialPrice": 36,
+        "cash": 4796,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 21,
+        "stock": 162
+      },
+      "quote": {
+        "total": 806,
+        "average": 36.63636363636363,
+        "quantity": 22,
+        "stockAfter": 31
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2c-fjtjbh3g17p",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 36.63636363636363,
+        "total": 806,
+        "averageCost": 36.63636363636363
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2d-55nalp3pns6",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 19.954545454545453,
+        "total": 439,
+        "averageCost": 36.63636363636363,
+        "profit": -366.9999999999999
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2d-55nalp3pns6",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 22
+            },
+            "costs": {
+              "3": 36.63636363636363
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "3": 22
+        },
+        "costs": {
+          "3": 36.63636363636363
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 36.63636363636363
+        }
+      },
+      "elapsed": 10,
+      "cash": 4423,
+      "free": 90
+    },
+    {
+      "trip": 6,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 45,
+        "initialPrice": 23,
+        "cash": 4423,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 23,
+        "stock": 178
+      },
+      "quote": {
+        "total": 513,
+        "average": 23.318181818181817,
+        "quantity": 22,
+        "stockAfter": 23
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2d-55nalp3pns6",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 23.318181818181817,
+        "total": 513,
+        "averageCost": 23.318181818181817
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2e-v7wiq86ifp",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 21.863636363636363,
+        "total": 481,
+        "averageCost": 23.318181818181817,
+        "profit": -32
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2e-v7wiq86ifp",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 2,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 23.318181818181817
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 23.318181818181817
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 23.318181818181817
+        }
+      },
+      "elapsed": 12,
+      "cash": 4385,
+      "free": 90
+    },
+    {
+      "trip": 7,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 44,
+        "initialPrice": 38,
+        "cash": 4385,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 19,
+        "stock": 193
+      },
+      "quote": {
+        "total": 849,
+        "average": 38.59090909090909,
+        "quantity": 22,
+        "stockAfter": 22
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2e-v7wiq86ifp",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 38.59090909090909,
+        "total": 849,
+        "averageCost": 38.59090909090909
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2f-xj2lsjhrezg",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 18.045454545454547,
+        "total": 397,
+        "averageCost": 38.59090909090909,
+        "profit": -452
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2f-xj2lsjhrezg",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 2,
+        "fee": 6,
+        "event": "storm",
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 22
+            },
+            "costs": {
+              "3": 38.59090909090909
+            },
+            "condition": 95
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "3": 22
+        },
+        "costs": {
+          "3": 38.59090909090909
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 38.59090909090909
+        }
+      },
+      "elapsed": 14,
+      "cash": 3927,
+      "free": 90
+    },
+    {
+      "trip": 8,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 37,
+        "initialPrice": 24,
+        "cash": 3927,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 19,
+        "stock": 212
+      },
+      "quote": {
+        "total": 531,
+        "average": 24.136363636363637,
+        "quantity": 22,
+        "stockAfter": 15
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2f-xj2lsjhrezg",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 24.136363636363637,
+        "total": 531,
+        "averageCost": 24.136363636363637
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2g-hrl0f7omyrp",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 18.045454545454547,
+        "total": 397,
+        "averageCost": 24.136363636363637,
+        "profit": -134
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2g-hrl0f7omyrp",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 3,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 24.136363636363637
+            },
+            "condition": 95
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 95,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 24.136363636363637
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 24.136363636363637
+        }
+      },
+      "elapsed": 17,
+      "cash": 3787,
+      "free": 90
+    },
+    {
+      "trip": 9,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 34,
+        "initialPrice": 42,
+        "cash": 3787,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 17,
+        "stock": 196
+      },
+      "quote": {
+        "total": 935,
+        "average": 42.5,
+        "quantity": 22,
+        "stockAfter": 12
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2g-hrl0f7omyrp",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 42.5,
+        "total": 935,
+        "averageCost": 42.5
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2h-xtl1t7jn69p",
+        "good": "Salz",
+        "quantity": 22,
+        "unitPrice": 16.181818181818183,
+        "total": 356,
+        "averageCost": 42.5,
+        "profit": -579
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2h-xtl1t7jn69p",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 3,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 22
+            },
+            "costs": {
+              "3": 42.5
+            },
+            "condition": 95
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 95,
+        "arms": 0,
+        "cargo": {
+          "3": 22
+        },
+        "costs": {
+          "3": 42.5
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 42.5
+        }
+      },
+      "elapsed": 20,
+      "cash": 3202,
+      "free": 90
+    },
+    {
+      "trip": 10,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 31,
+        "initialPrice": 26,
+        "cash": 3202,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 18,
+        "stock": 219
+      },
+      "quote": {
+        "total": 572,
+        "average": 26,
+        "quantity": 22,
+        "stockAfter": 9
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2h-xtl1t7jn69p",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 26,
+        "total": 572,
+        "averageCost": 26
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2i-29ehch7d7qv",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 17.136363636363637,
+        "total": 377,
+        "averageCost": 26,
+        "profit": -195
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2i-29ehch7d7qv",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 3,
+        "fee": 6,
+        "event": "storm",
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 26
+            },
+            "condition": 85
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 95,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 26
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 26
+        }
+      },
+      "elapsed": 23,
+      "cash": 3001,
+      "free": 90
+    },
+    {
+      "trip": 11,
+      "decisionInput": {
+        "city": 0,
+        "good": 3,
+        "stock": 14,
+        "initialPrice": 41,
+        "cash": 3001,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 14,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 15,
+        "stock": 211
+      },
+      "quote": {
+        "total": 574,
+        "average": 41,
+        "quantity": 14,
+        "stockAfter": 0
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2i-29ehch7d7qv",
+        "good": "Salz",
+        "quantity": 14,
+        "unitPrice": 41,
+        "total": 574,
+        "averageCost": 41
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2j-mlp3fuv65fh",
+        "good": "Salz",
+        "quantity": 13,
+        "unitPrice": 14.538461538461538,
+        "total": 189,
+        "averageCost": 41,
+        "profit": -344
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2j-mlp3fuv65fh",
+        "from": "Lübeck",
+        "to": "Hamburg",
+        "days": 3,
+        "fee": 6,
+        "event": "pirates",
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "3": 13
+            },
+            "costs": {
+              "3": 41
+            },
+            "condition": 85
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 41,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 0,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 85,
+        "arms": 0,
+        "cargo": {
+          "3": 14
+        },
+        "costs": {
+          "3": 41
+        },
+        "origins": {
+          "3": [
+            {
+              "city": 0,
+              "n": 14
+            }
+          ]
+        },
+        "bookCosts": {
+          "3": 41
+        }
+      },
+      "elapsed": 26,
+      "cash": 2610,
+      "free": 90
+    },
+    {
+      "trip": 12,
+      "decisionInput": {
+        "city": 1,
+        "good": 1,
+        "stock": 27,
+        "initialPrice": 28,
+        "cash": 2610,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 22,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 15,
+        "stock": 237
+      },
+      "quote": {
+        "total": 616,
+        "average": 28,
+        "quantity": 22,
+        "stockAfter": 5
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2j-mlp3fuv65fh",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 28,
+        "total": 616,
+        "averageCost": 28
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2k-fhwxf3ymbo7",
+        "good": "Bier",
+        "quantity": 22,
+        "unitPrice": 14.318181818181818,
+        "total": 315,
+        "averageCost": 28,
+        "profit": -301
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2k-fhwxf3ymbo7",
+        "from": "Hamburg",
+        "to": "Lübeck",
+        "days": 3,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "1": 22
+            },
+            "costs": {
+              "1": 28
+            },
+            "condition": 85
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 1,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 85,
+        "arms": 0,
+        "cargo": {
+          "1": 22
+        },
+        "costs": {
+          "1": 28
+        },
+        "origins": {
+          "1": [
+            {
+              "city": 1,
+              "n": 22
+            }
+          ]
+        },
+        "bookCosts": {
+          "1": 28
+        }
+      },
+      "elapsed": 29,
+      "cash": 2303,
+      "free": 90
+    }
+  ],
+  "events": [
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": null,
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 33.13636363636363,
+      "total": 729,
+      "averageCost": 33.13636363636363
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v29-i5npe2uerp",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 22
+          },
+          "costs": {
+            "3": 33.13636363636363
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v29-i5npe2uerp",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 24.90909090909091,
+      "total": 548,
+      "averageCost": 33.13636363636363,
+      "profit": -180.9999999999999
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v29-i5npe2uerp",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 18.454545454545453,
+      "total": 406,
+      "averageCost": 18.454545454545453
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2a-104rz9ee48jp",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 18.454545454545453
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2a-104rz9ee48jp",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 25.90909090909091,
+      "total": 570,
+      "averageCost": 18.454545454545453,
+      "profit": 164
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2a-104rz9ee48jp",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 33.68181818181818,
+      "total": 741,
+      "averageCost": 33.68181818181818
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2b-9trskexk9rs",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 22
+          },
+          "costs": {
+            "3": 33.68181818181818
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2b-9trskexk9rs",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 22.90909090909091,
+      "total": 504,
+      "averageCost": 33.68181818181818,
+      "profit": -237
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2b-9trskexk9rs",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 20.454545454545453,
+      "total": 450,
+      "averageCost": 20.454545454545453
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2c-fjtjbh3g17p",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 20.454545454545453
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2c-fjtjbh3g17p",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 23.818181818181817,
+      "total": 524,
+      "averageCost": 20.454545454545453,
+      "profit": 74
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2c-fjtjbh3g17p",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 36.63636363636363,
+      "total": 806,
+      "averageCost": 36.63636363636363
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2d-55nalp3pns6",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 22
+          },
+          "costs": {
+            "3": 36.63636363636363
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2d-55nalp3pns6",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 19.954545454545453,
+      "total": 439,
+      "averageCost": 36.63636363636363,
+      "profit": -366.9999999999999
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2d-55nalp3pns6",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 23.318181818181817,
+      "total": 513,
+      "averageCost": 23.318181818181817
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2e-v7wiq86ifp",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 2,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 23.318181818181817
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2e-v7wiq86ifp",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 21.863636363636363,
+      "total": 481,
+      "averageCost": 23.318181818181817,
+      "profit": -32
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2e-v7wiq86ifp",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 38.59090909090909,
+      "total": 849,
+      "averageCost": 38.59090909090909
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2f-xj2lsjhrezg",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 2,
+      "fee": 6,
+      "event": "storm",
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 22
+          },
+          "costs": {
+            "3": 38.59090909090909
+          },
+          "condition": 95
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2f-xj2lsjhrezg",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 18.045454545454547,
+      "total": 397,
+      "averageCost": 38.59090909090909,
+      "profit": -452
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2f-xj2lsjhrezg",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 24.136363636363637,
+      "total": 531,
+      "averageCost": 24.136363636363637
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2g-hrl0f7omyrp",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 3,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 24.136363636363637
+          },
+          "condition": 95
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2g-hrl0f7omyrp",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 18.045454545454547,
+      "total": 397,
+      "averageCost": 24.136363636363637,
+      "profit": -134
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2g-hrl0f7omyrp",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 42.5,
+      "total": 935,
+      "averageCost": 42.5
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2h-xtl1t7jn69p",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 3,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 22
+          },
+          "costs": {
+            "3": 42.5
+          },
+          "condition": 95
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2h-xtl1t7jn69p",
+      "good": "Salz",
+      "quantity": 22,
+      "unitPrice": 16.181818181818183,
+      "total": 356,
+      "averageCost": 42.5,
+      "profit": -579
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2h-xtl1t7jn69p",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 26,
+      "total": 572,
+      "averageCost": 26
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2i-29ehch7d7qv",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 3,
+      "fee": 6,
+      "event": "storm",
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 26
+          },
+          "condition": 85
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2i-29ehch7d7qv",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 17.136363636363637,
+      "total": 377,
+      "averageCost": 26,
+      "profit": -195
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2i-29ehch7d7qv",
+      "good": "Salz",
+      "quantity": 14,
+      "unitPrice": 41,
+      "total": 574,
+      "averageCost": 41
+    },
+    {
+      "type": "pirate_loss",
+      "shipId": 1700000000000.827,
+      "good": "Salz",
+      "quantity": 1,
+      "averageCost": 41
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2j-mlp3fuv65fh",
+      "from": "Lübeck",
+      "to": "Hamburg",
+      "days": 3,
+      "fee": 6,
+      "event": "pirates",
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "3": 13
+          },
+          "costs": {
+            "3": 41
+          },
+          "condition": 85
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "pirates",
+      "routeId": "loyw3v2j-mlp3fuv65fh",
+      "result": "pirates",
+      "ships": [
+        1700000000000.827
+      ]
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2j-mlp3fuv65fh",
+      "good": "Salz",
+      "quantity": 13,
+      "unitPrice": 14.538461538461538,
+      "total": 189,
+      "averageCost": 41,
+      "profit": -344
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2j-mlp3fuv65fh",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 28,
+      "total": 616,
+      "averageCost": 28
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2k-fhwxf3ymbo7",
+      "from": "Hamburg",
+      "to": "Lübeck",
+      "days": 3,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "1": 22
+          },
+          "costs": {
+            "1": 28
+          },
+          "condition": 85
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2k-fhwxf3ymbo7",
+      "good": "Bier",
+      "quantity": 22,
+      "unitPrice": 14.318181818181818,
+      "total": 315,
+      "averageCost": 28,
+      "profit": -301
+    }
+  ],
+  "end": {
+    "analysisOnly": true,
+    "model": "B1",
+    "parameter": 220,
+    "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "game": {
+      "v": 13,
+      "information": {
+        "version": 2,
+        "archive": null,
+        "reports": [],
+        "filed": [],
+        "letters": {
+          "version": 1,
+          "since": 486001,
+          "index": 2,
+          "lastDay": 486022,
+          "nextDay": 486041,
+          "offer": {
+            "id": "letter:486001:2",
+            "serial": 2,
+            "source": "sealed_letter",
+            "city": 9,
+            "goods": [
+              {
+                "good": 10,
+                "price": 118,
+                "band": "ordinary"
+              },
+              {
+                "good": 4,
+                "price": 23,
+                "band": "ordinary"
+              }
+            ],
+            "reportedAt": 486022,
+            "offeredAt": 486022,
+            "until": 486024,
+            "cost": 60
+          },
+          "receipts": [],
+          "filed": [],
+          "archiveFirstReceipt": null
+        }
+      },
+      "politics": {
+        "version": 1,
+        "since": 486001,
+        "rules": {
+          "sectionDays": 60,
+          "mayorWealth": 45000
+        },
+        "legacyRank": 0,
+        "records": [],
+        "issued": [
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          }
+        ],
+        "jobs": [],
+        "office": null,
+        "terms": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "appointments": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nextElection": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "endorsements": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "league": null,
+        "leagueIssued": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "elderman": null
+      },
+      "shipyard": {
+        "version": 1,
+        "nextId": 1,
+        "lastShipId": 0,
+        "orders": []
+      },
+      "economy": {
+        "version": 1,
+        "reports": []
+      },
+      "storage": {
+        "version": 2,
+        "since": 486001,
+        "rentals": [
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          }
+        ]
+      },
+      "player": "Ulf",
+      "name": "Mengenprobe",
+      "day": 30,
+      "year": 1350,
+      "city": 0,
+      "gold": 2303,
+      "rep": 12,
+      "rank": 0,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "name": "Kogge",
+          "type": 1,
+          "city": 0,
+          "capacity": 90,
+          "speed": 1,
+          "condition": 85,
+          "arms": 0,
+          "cargo": {},
+          "costs": {},
+          "origins": {},
+          "bookCosts": {}
+        }
+      ],
+      "active": 0,
+      "bank": 0,
+      "debt": 0,
+      "markets": [
+        [
+          {
+            "price": 13,
+            "stock": 131
+          },
+          {
+            "price": 14,
+            "stock": 259
+          },
+          {
+            "price": 19,
+            "stock": 99
+          },
+          {
+            "price": 42,
+            "stock": 24
+          },
+          {
+            "price": 27,
+            "stock": 93
+          },
+          {
+            "price": 63,
+            "stock": 72
+          },
+          {
+            "price": 100,
+            "stock": 77
+          },
+          {
+            "price": 37,
+            "stock": 71
+          },
+          {
+            "price": 31,
+            "stock": 81
+          },
+          {
+            "price": 96,
+            "stock": 81
+          },
+          {
+            "price": 95,
+            "stock": 29
+          }
+        ],
+        [
+          {
+            "price": 19,
+            "stock": 67
+          },
+          {
+            "price": 28,
+            "stock": 8
+          },
+          {
+            "price": 18,
+            "stock": 43
+          },
+          {
+            "price": 14,
+            "stock": 219
+          },
+          {
+            "price": 18,
+            "stock": 107
+          },
+          {
+            "price": 71,
+            "stock": 110
+          },
+          {
+            "price": 81,
+            "stock": 125
+          },
+          {
+            "price": 39,
+            "stock": 71
+          },
+          {
+            "price": 24,
+            "stock": 21
+          },
+          {
+            "price": 63,
+            "stock": 67
+          },
+          {
+            "price": 149,
+            "stock": 55
+          }
+        ],
+        [
+          {
+            "price": 26,
+            "stock": 142
+          },
+          {
+            "price": 28,
+            "stock": 73
+          },
+          {
+            "price": 24,
+            "stock": 75
+          },
+          {
+            "price": 26,
+            "stock": 52
+          },
+          {
+            "price": 30,
+            "stock": 77
+          },
+          {
+            "price": 56,
+            "stock": 58
+          },
+          {
+            "price": 102,
+            "stock": 98
+          },
+          {
+            "price": 34,
+            "stock": 94
+          },
+          {
+            "price": 26,
+            "stock": 97
+          },
+          {
+            "price": 70,
+            "stock": 48
+          },
+          {
+            "price": 140,
+            "stock": 28
+          }
+        ],
+        [
+          {
+            "price": 17,
+            "stock": 147
+          },
+          {
+            "price": 24,
+            "stock": 125
+          },
+          {
+            "price": 20,
+            "stock": 97
+          },
+          {
+            "price": 29,
+            "stock": 82
+          },
+          {
+            "price": 21,
+            "stock": 116
+          },
+          {
+            "price": 68,
+            "stock": 67
+          },
+          {
+            "price": 113,
+            "stock": 37
+          },
+          {
+            "price": 35,
+            "stock": 64
+          },
+          {
+            "price": 29,
+            "stock": 117
+          },
+          {
+            "price": 70,
+            "stock": 72
+          },
+          {
+            "price": 120,
+            "stock": 41
+          }
+        ],
+        [
+          {
+            "price": 15,
+            "stock": 41
+          },
+          {
+            "price": 22,
+            "stock": 64
+          },
+          {
+            "price": 21,
+            "stock": 101
+          },
+          {
+            "price": 36,
+            "stock": 17
+          },
+          {
+            "price": 16,
+            "stock": 124
+          },
+          {
+            "price": 60,
+            "stock": 110
+          },
+          {
+            "price": 74,
+            "stock": 95
+          },
+          {
+            "price": 32,
+            "stock": 117
+          },
+          {
+            "price": 34,
+            "stock": 123
+          },
+          {
+            "price": 89,
+            "stock": 76
+          },
+          {
+            "price": 128,
+            "stock": 60
+          }
+        ],
+        [
+          {
+            "price": 22,
+            "stock": 112
+          },
+          {
+            "price": 36,
+            "stock": 88
+          },
+          {
+            "price": 16,
+            "stock": 153
+          },
+          {
+            "price": 38,
+            "stock": 110
+          },
+          {
+            "price": 27,
+            "stock": 79
+          },
+          {
+            "price": 61,
+            "stock": 37
+          },
+          {
+            "price": 84,
+            "stock": 60
+          },
+          {
+            "price": 39,
+            "stock": 109
+          },
+          {
+            "price": 29,
+            "stock": 132
+          },
+          {
+            "price": 84,
+            "stock": 74
+          },
+          {
+            "price": 132,
+            "stock": 11
+          }
+        ],
+        [
+          {
+            "price": 18,
+            "stock": 38
+          },
+          {
+            "price": 37,
+            "stock": 33
+          },
+          {
+            "price": 25,
+            "stock": 56
+          },
+          {
+            "price": 35,
+            "stock": 83
+          },
+          {
+            "price": 19,
+            "stock": 148
+          },
+          {
+            "price": 65,
+            "stock": 62
+          },
+          {
+            "price": 107,
+            "stock": 49
+          },
+          {
+            "price": 31,
+            "stock": 47
+          },
+          {
+            "price": 25,
+            "stock": 87
+          },
+          {
+            "price": 65,
+            "stock": 49
+          },
+          {
+            "price": 136,
+            "stock": 37
+          }
+        ],
+        [
+          {
+            "price": 17,
+            "stock": 45
+          },
+          {
+            "price": 29,
+            "stock": 71
+          },
+          {
+            "price": 17,
+            "stock": 78
+          },
+          {
+            "price": 21,
+            "stock": 107
+          },
+          {
+            "price": 22,
+            "stock": 67
+          },
+          {
+            "price": 57,
+            "stock": 44
+          },
+          {
+            "price": 86,
+            "stock": 78
+          },
+          {
+            "price": 29,
+            "stock": 99
+          },
+          {
+            "price": 28,
+            "stock": 112
+          },
+          {
+            "price": 71,
+            "stock": 78
+          },
+          {
+            "price": 159,
+            "stock": 13
+          }
+        ],
+        [
+          {
+            "price": 15,
+            "stock": 60
+          },
+          {
+            "price": 23,
+            "stock": 81
+          },
+          {
+            "price": 17,
+            "stock": 30
+          },
+          {
+            "price": 40,
+            "stock": 84
+          },
+          {
+            "price": 27,
+            "stock": 56
+          },
+          {
+            "price": 63,
+            "stock": 84
+          },
+          {
+            "price": 131,
+            "stock": 69
+          },
+          {
+            "price": 36,
+            "stock": 86
+          },
+          {
+            "price": 36,
+            "stock": 80
+          },
+          {
+            "price": 65,
+            "stock": 154
+          },
+          {
+            "price": 174,
+            "stock": 22
+          }
+        ],
+        [
+          {
+            "price": 20,
+            "stock": 67
+          },
+          {
+            "price": 29,
+            "stock": 10
+          },
+          {
+            "price": 19,
+            "stock": 91
+          },
+          {
+            "price": 39,
+            "stock": 45
+          },
+          {
+            "price": 24,
+            "stock": 93
+          },
+          {
+            "price": 74,
+            "stock": 40
+          },
+          {
+            "price": 92,
+            "stock": 75
+          },
+          {
+            "price": 28,
+            "stock": 110
+          },
+          {
+            "price": 29,
+            "stock": 137
+          },
+          {
+            "price": 75,
+            "stock": 82
+          },
+          {
+            "price": 125,
+            "stock": 112
+          }
+        ],
+        [
+          {
+            "price": 21,
+            "stock": 97
+          },
+          {
+            "price": 28,
+            "stock": 111
+          },
+          {
+            "price": 23,
+            "stock": 103
+          },
+          {
+            "price": 37,
+            "stock": 82
+          },
+          {
+            "price": 30,
+            "stock": 62
+          },
+          {
+            "price": 47,
+            "stock": 60
+          },
+          {
+            "price": 74,
+            "stock": 107
+          },
+          {
+            "price": 34,
+            "stock": 67
+          },
+          {
+            "price": 32,
+            "stock": 90
+          },
+          {
+            "price": 98,
+            "stock": 57
+          },
+          {
+            "price": 137,
+            "stock": 45
+          }
+        ]
+      ],
+      "journal": {
+        "0": {
+          "day": 30,
+          "year": 1350,
+          "prices": [
+            13,
+            14,
+            19,
+            42,
+            27,
+            63,
+            100,
+            37,
+            31,
+            96,
+            95
+          ]
+        },
+        "1": {
+          "day": 27,
+          "year": 1350,
+          "prices": [
+            18,
+            28,
+            18,
+            14,
+            18,
+            67,
+            81,
+            43,
+            22,
+            65,
+            151
+          ]
+        }
+      },
+      "messages": [
+        "Tag 30: 22 Fass Bier verkauft: 315 G (-301 G Warengewinn).",
+        "Tag 30: In Lübeck angekommen (+1 Ansehen).",
+        "Tag 30: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 27: 22 Fass Bier für 616 G gekauft.",
+        "Tag 27: 13 Fass Salz verkauft: 189 G (-344 G Warengewinn).",
+        "Tag 27: In Hamburg angekommen (+1 Ansehen).",
+        "Tag 27: Piraten raubten 1 Fass Salz.",
+        "Tag 27: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 24: 14 Fass Salz für 574 G gekauft.",
+        "Tag 24: 22 Fass Bier verkauft: 377 G (-195 G Warengewinn).",
+        "Tag 24: In Lübeck angekommen (+1 Ansehen).",
+        "Tag 24: Sturm auf See: Einige Schiffe wurden beschädigt.",
+        "Tag 24: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 21: 22 Fass Bier für 572 G gekauft.",
+        "Tag 21: 22 Fass Salz verkauft: 356 G (-579 G Warengewinn).",
+        "Tag 21: In Hamburg angekommen (+1 Ansehen).",
+        "Tag 21: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 18: 22 Fass Salz für 935 G gekauft.",
+        "Tag 18: 22 Fass Bier verkauft: 397 G (-134 G Warengewinn).",
+        "Tag 18: In Lübeck angekommen (+1 Ansehen).",
+        "Tag 18: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 15: 22 Fass Bier für 531 G gekauft.",
+        "Tag 15: 22 Fass Salz verkauft: 397 G (-452 G Warengewinn).",
+        "Tag 15: In Hamburg angekommen (+1 Ansehen).",
+        "Tag 15: Sturm auf See: Einige Schiffe wurden beschädigt.",
+        "Tag 15: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 13: 22 Fass Salz für 849 G gekauft.",
+        "Tag 13: 22 Fass Bier verkauft: 481 G (-32 G Warengewinn).",
+        "Tag 13: In Lübeck angekommen (+1 Ansehen).",
+        "Tag 13: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 11: 22 Fass Bier für 513 G gekauft.",
+        "Tag 11: 22 Fass Salz verkauft: 439 G (-367 G Warengewinn).",
+        "Tag 11: In Hamburg angekommen (+1 Ansehen).",
+        "Tag 11: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 9: 22 Fass Salz für 806 G gekauft.",
+        "Tag 9: 22 Fass Bier verkauft: 524 G (+74 G Warengewinn).",
+        "Tag 9: In Lübeck angekommen (+1 Ansehen).",
+        "Tag 9: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 7: 22 Fass Bier für 450 G gekauft.",
+        "Tag 7: 22 Fass Salz verkauft: 504 G (-237 G Warengewinn)."
+      ],
+      "rumors": [],
+      "quests": [],
+      "completed": 0,
+      "birthdaySeen": {},
+      "flags": {},
+      "visits": 13,
+      "warehouses": {
+        "0": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "1": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "2": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "3": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "4": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "5": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "6": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "7": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "8": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "9": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "10": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        }
+      },
+      "beginning": {
+        "version": 1,
+        "city": 0,
+        "merchant": "Ulf"
+      }
+    },
+    "anchors": [
+      [
+        {
+          "price": 13,
+          "stock": 131
+        },
+        {
+          "price": 15,
+          "stock": 237
+        },
+        {
+          "price": 19,
+          "stock": 99
+        },
+        {
+          "price": 42,
+          "stock": 24
+        },
+        {
+          "price": 27,
+          "stock": 93
+        },
+        {
+          "price": 63,
+          "stock": 72
+        },
+        {
+          "price": 100,
+          "stock": 77
+        },
+        {
+          "price": 37,
+          "stock": 71
+        },
+        {
+          "price": 31,
+          "stock": 81
+        },
+        {
+          "price": 96,
+          "stock": 81
+        },
+        {
+          "price": 95,
+          "stock": 29
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 67
+        },
+        {
+          "price": 28,
+          "stock": 8
+        },
+        {
+          "price": 18,
+          "stock": 43
+        },
+        {
+          "price": 14,
+          "stock": 219
+        },
+        {
+          "price": 18,
+          "stock": 107
+        },
+        {
+          "price": 71,
+          "stock": 110
+        },
+        {
+          "price": 81,
+          "stock": 125
+        },
+        {
+          "price": 39,
+          "stock": 71
+        },
+        {
+          "price": 24,
+          "stock": 21
+        },
+        {
+          "price": 63,
+          "stock": 67
+        },
+        {
+          "price": 149,
+          "stock": 55
+        }
+      ],
+      [
+        {
+          "price": 26,
+          "stock": 142
+        },
+        {
+          "price": 28,
+          "stock": 73
+        },
+        {
+          "price": 24,
+          "stock": 75
+        },
+        {
+          "price": 26,
+          "stock": 52
+        },
+        {
+          "price": 30,
+          "stock": 77
+        },
+        {
+          "price": 56,
+          "stock": 58
+        },
+        {
+          "price": 102,
+          "stock": 98
+        },
+        {
+          "price": 34,
+          "stock": 94
+        },
+        {
+          "price": 26,
+          "stock": 97
+        },
+        {
+          "price": 70,
+          "stock": 48
+        },
+        {
+          "price": 140,
+          "stock": 28
+        }
+      ],
+      [
+        {
+          "price": 17,
+          "stock": 147
+        },
+        {
+          "price": 24,
+          "stock": 125
+        },
+        {
+          "price": 20,
+          "stock": 97
+        },
+        {
+          "price": 29,
+          "stock": 82
+        },
+        {
+          "price": 21,
+          "stock": 116
+        },
+        {
+          "price": 68,
+          "stock": 67
+        },
+        {
+          "price": 113,
+          "stock": 37
+        },
+        {
+          "price": 35,
+          "stock": 64
+        },
+        {
+          "price": 29,
+          "stock": 117
+        },
+        {
+          "price": 70,
+          "stock": 72
+        },
+        {
+          "price": 120,
+          "stock": 41
+        }
+      ],
+      [
+        {
+          "price": 15,
+          "stock": 41
+        },
+        {
+          "price": 22,
+          "stock": 64
+        },
+        {
+          "price": 21,
+          "stock": 101
+        },
+        {
+          "price": 36,
+          "stock": 17
+        },
+        {
+          "price": 16,
+          "stock": 124
+        },
+        {
+          "price": 60,
+          "stock": 110
+        },
+        {
+          "price": 74,
+          "stock": 95
+        },
+        {
+          "price": 32,
+          "stock": 117
+        },
+        {
+          "price": 34,
+          "stock": 123
+        },
+        {
+          "price": 89,
+          "stock": 76
+        },
+        {
+          "price": 128,
+          "stock": 60
+        }
+      ],
+      [
+        {
+          "price": 22,
+          "stock": 112
+        },
+        {
+          "price": 36,
+          "stock": 88
+        },
+        {
+          "price": 16,
+          "stock": 153
+        },
+        {
+          "price": 38,
+          "stock": 110
+        },
+        {
+          "price": 27,
+          "stock": 79
+        },
+        {
+          "price": 61,
+          "stock": 37
+        },
+        {
+          "price": 84,
+          "stock": 60
+        },
+        {
+          "price": 39,
+          "stock": 109
+        },
+        {
+          "price": 29,
+          "stock": 132
+        },
+        {
+          "price": 84,
+          "stock": 74
+        },
+        {
+          "price": 132,
+          "stock": 11
+        }
+      ],
+      [
+        {
+          "price": 18,
+          "stock": 38
+        },
+        {
+          "price": 37,
+          "stock": 33
+        },
+        {
+          "price": 25,
+          "stock": 56
+        },
+        {
+          "price": 35,
+          "stock": 83
+        },
+        {
+          "price": 19,
+          "stock": 148
+        },
+        {
+          "price": 65,
+          "stock": 62
+        },
+        {
+          "price": 107,
+          "stock": 49
+        },
+        {
+          "price": 31,
+          "stock": 47
+        },
+        {
+          "price": 25,
+          "stock": 87
+        },
+        {
+          "price": 65,
+          "stock": 49
+        },
+        {
+          "price": 136,
+          "stock": 37
+        }
+      ],
+      [
+        {
+          "price": 17,
+          "stock": 45
+        },
+        {
+          "price": 29,
+          "stock": 71
+        },
+        {
+          "price": 17,
+          "stock": 78
+        },
+        {
+          "price": 21,
+          "stock": 107
+        },
+        {
+          "price": 22,
+          "stock": 67
+        },
+        {
+          "price": 57,
+          "stock": 44
+        },
+        {
+          "price": 86,
+          "stock": 78
+        },
+        {
+          "price": 29,
+          "stock": 99
+        },
+        {
+          "price": 28,
+          "stock": 112
+        },
+        {
+          "price": 71,
+          "stock": 78
+        },
+        {
+          "price": 159,
+          "stock": 13
+        }
+      ],
+      [
+        {
+          "price": 15,
+          "stock": 60
+        },
+        {
+          "price": 23,
+          "stock": 81
+        },
+        {
+          "price": 17,
+          "stock": 30
+        },
+        {
+          "price": 40,
+          "stock": 84
+        },
+        {
+          "price": 27,
+          "stock": 56
+        },
+        {
+          "price": 63,
+          "stock": 84
+        },
+        {
+          "price": 131,
+          "stock": 69
+        },
+        {
+          "price": 36,
+          "stock": 86
+        },
+        {
+          "price": 36,
+          "stock": 80
+        },
+        {
+          "price": 65,
+          "stock": 154
+        },
+        {
+          "price": 174,
+          "stock": 22
+        }
+      ],
+      [
+        {
+          "price": 20,
+          "stock": 67
+        },
+        {
+          "price": 29,
+          "stock": 10
+        },
+        {
+          "price": 19,
+          "stock": 91
+        },
+        {
+          "price": 39,
+          "stock": 45
+        },
+        {
+          "price": 24,
+          "stock": 93
+        },
+        {
+          "price": 74,
+          "stock": 40
+        },
+        {
+          "price": 92,
+          "stock": 75
+        },
+        {
+          "price": 28,
+          "stock": 110
+        },
+        {
+          "price": 29,
+          "stock": 137
+        },
+        {
+          "price": 75,
+          "stock": 82
+        },
+        {
+          "price": 125,
+          "stock": 112
+        }
+      ],
+      [
+        {
+          "price": 21,
+          "stock": 97
+        },
+        {
+          "price": 28,
+          "stock": 111
+        },
+        {
+          "price": 23,
+          "stock": 103
+        },
+        {
+          "price": 37,
+          "stock": 82
+        },
+        {
+          "price": 30,
+          "stock": 62
+        },
+        {
+          "price": 47,
+          "stock": 60
+        },
+        {
+          "price": 74,
+          "stock": 107
+        },
+        {
+          "price": 34,
+          "stock": 67
+        },
+        {
+          "price": 32,
+          "stock": 90
+        },
+        {
+          "price": 98,
+          "stock": 57
+        },
+        {
+          "price": 137,
+          "stock": 45
+        }
+      ]
+    ],
+    "rng": {
+      "state": 380656038,
+      "draws": 8489
+    },
+    "clock": 1700000000013
+  }
+}
