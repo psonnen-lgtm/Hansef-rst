@@ -1,0 +1,13 @@
+PASS 01-existing-V13-without-public-consumption
+PASS 02-public-A
+PASS 03-public-B
+PASS 04-public-C
+PASS 05-under-and-over-need-with-mixed-modes
+PASS 06-nine-times-ten
+PASS 07-ninety-times-one
+PASS 08-own-ships-warehouse-and-unknown-costs
+PASS 09-self-created-scarcity-and-buy-return
+PASS 10-own-withdrawal-pre-election-sale-and-real-next-days
+PASS 11-failure-atomicity-quests-export-and-idempotence
+PASS 12-identical-seed-exact-A-reproduction
+{"trajectories":12,"completed":12,"failures":0,"arithmeticGroups":1}

@@ -1,0 +1,46 @@
+{
+  "phase": "P1.2",
+  "base": "22fe3c4d92c9dbac439f247ac294104d388b2f6a",
+  "branch": "analysis/p12-public-grain",
+  "reportsCommit": "6dd4786",
+  "testedAdapterCommit": "6179fa16df15c49afb80e550ba5c43874b0da5d9",
+  "pr": {
+    "attempted": true,
+    "created": false,
+    "error": "Post \"https://api.github.com/graphql\": Forbidden"
+  },
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/p12-public-grain?expand=1",
+  "results": {
+    "actualV13Trajectories": 12,
+    "completedFirstRun": 12,
+    "failures": 0,
+    "cashAndGoodsLedgers": 12,
+    "maxDays": 7,
+    "trips": 0,
+    "scope": {
+      "city": 0,
+      "good": 0
+    },
+    "votesOrOffices": false,
+    "productionReady": false,
+    "measuredDay7": {
+      "baselineStock": 111,
+      "baselinePrice": 28,
+      "publicStock": 29,
+      "publicPrice": 29
+    }
+  },
+  "verification": {
+    "htmlByteEqualBase": true,
+    "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "oldFilesUnchanged": true,
+    "oldIndexPrefixPreserved": true,
+    "testedCodeUnchanged": true,
+    "relativeLinks": 34,
+    "main": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+    "development": "22fe3c4d92c9dbac439f247ac294104d388b2f6a"
+  },
+  "noMigration": true,
+  "noLargeSimulation": true,
+  "taskEnded": true
+}
