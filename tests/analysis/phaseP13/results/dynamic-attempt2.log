@@ -1,0 +1,12 @@
+PASS 01-normal-sale-no-public
+PASS 02-public-A-15
+PASS 03-public-A-30
+PASS 04-public-A-60
+PASS 06-small-cash-A15
+PASS 07-voluntary-B30-ordinary60
+PASS 08-gift-C30-ordinary60
+PASS 09-no-help-no-sale-natural-shortage
+PASS 10-calendar-only-negative-control-three-A15
+PASS 11-self-crisis-warehouse-two-ships-year
+PASS 12-three-splits-A30
+{"paths":11,"completed":11,"paired":true,"passed":true}
