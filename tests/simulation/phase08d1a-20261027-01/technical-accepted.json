@@ -1,0 +1,331 @@
+{
+  "base": "61dae76d3bf25490e37570fad56d1b77f5f826b0",
+  "testedGameCommit": "a03c673828d2f3b0e9350a2be8f4035d43647598",
+  "gameSHA256": "c27a4f97d7b2aa67437b896b3fba07a93cfb446fef28c821a9b75bf31a96e38a",
+  "scope": "isolated information/migration actions, one-day old bath fixtures and two bounded journeys; no full economy or careers",
+  "checks": [
+    {
+      "name": "full HTML only approved information UI/version/migration hooks; economics and politics protected",
+      "passed": true,
+      "evidence": {
+        "otherFunctionsByteExact": 180,
+        "originalTakeBathAndPriceTradeOriginsJourneysAndPoliticalPredicatesExact": true,
+        "harborAndBeginningOnlyVersionGateExtended": true,
+        "importOnlyAddsOriginalBackup": true,
+        "mirrorExact": true
+      }
+    },
+    {
+      "name": "free gossip is world-day stable across views cities ships export import and next real day only",
+      "passed": true,
+      "evidence": {
+        "repeatedViews": 30,
+        "writes": 0,
+        "goldDaysReputationAndMarketsExact": true,
+        "globalDailyId": "harbor:486001",
+        "allHarborsSame": true,
+        "newDayViaActualAdvance": true,
+        "importExportStable": true
+      }
+    },
+    {
+      "name": "all supported price boundaries including old 1-3 and one billion fit their corridor",
+      "passed": true,
+      "evidence": {
+        "prices": 88,
+        "invalidRejected": 6,
+        "currentFloor4AndHistoricalMinimum1": true
+      }
+    },
+    {
+      "name": "exactly twenty gold buys the selected immutable snapshot with only acquired coarse data",
+      "passed": true,
+      "evidence": {
+        "report": {
+          "id": "informant:486001:8:5",
+          "source": "informant",
+          "city": 8,
+          "good": 5,
+          "day": 486001,
+          "purchasedAt": 486001,
+          "low": 40,
+          "high": 79,
+          "band": "abundant"
+        },
+        "cost": 20,
+        "noDaysReputationMarketsCargoFinanceOrJournalChanges": true,
+        "noExactPriceOrQuantityInReceipt": true,
+        "durableBeforeExposure": true
+      }
+    },
+    {
+      "name": "19 gold, invalid indices and declined confirmation buy nothing and reveal no free receipt",
+      "passed": true,
+      "evidence": {
+        "insufficient19": true,
+        "declinedNoChargeNoReceipt": true,
+        "invalidPairs": 6,
+        "noCreditOrDay": true
+      }
+    },
+    {
+      "name": "all 121 city-good pairs use actual current price band and stock band after explicit payment",
+      "passed": true,
+      "evidence": {
+        "paidPairs": 121,
+        "ownCityAllowedWithFreeMarketNotice": true,
+        "allSourcePricesCovered": true,
+        "marketsUnchanged": true
+      }
+    },
+    {
+      "name": "duplicate clicks reentry and later market changes cannot charge twice or refresh the same daily report",
+      "passed": true,
+      "evidence": {
+        "doubleClickAndReentrySafe": true,
+        "reads": 10,
+        "cost": 20,
+        "snapshotUnchangedAfterPrice999Stock0": true
+      }
+    },
+    {
+      "name": "later actual day creates a second distinguishable report and preserves the previous one",
+      "passed": true,
+      "evidence": {
+        "yearBoundary": true,
+        "reports": 2,
+        "cost": 40,
+        "oldReceiptPreserved": true
+      }
+    },
+    {
+      "name": "archive costs 300 once, old reports require explicit free filing, new ones file automatically",
+      "passed": true,
+      "evidence": {
+        "archiveCost": 300,
+        "reportCostStill20": true,
+        "priorManualFiling": true,
+        "newAutomaticFiling": true,
+        "noDuplicateIdsOrCharge": true,
+        "ownObservationsExact": true
+      }
+    },
+    {
+      "name": "299 gold or archive cancellation keep ordinary trading and acquired report access available",
+      "passed": true,
+      "evidence": {
+        "insufficient299AndCancel": true,
+        "ordinaryTradeWithoutArchiveMatchesBase": true,
+        "paidReportReadableBeforeArchive": true
+      }
+    },
+    {
+      "name": "quota failures atomically roll back purchase archive and filing; existing warning and export state retained",
+      "passed": true,
+      "evidence": {
+        "actionsRolledBack": [
+          "buyInformation(8,5)",
+          "buyInformationArchive()",
+          "fileExistingInformation()"
+        ],
+        "warningNotCleared": true,
+        "RAMExportStillOriginal": true
+      }
+    },
+    {
+      "name": "stale RAM disk and changed confirmation reject purchase without overwriting another state",
+      "passed": true,
+      "evidence": {
+        "staleGuards": 3,
+        "concurrentChangeNotUndone": true,
+        "postCommitUIErrorKeepsDurablePurchase": true
+      }
+    },
+    {
+      "name": "bounded schema rejects malformed duplicate orphan fabricated corridor and future data",
+      "passed": true,
+      "evidence": {
+        "rejected": 18,
+        "noLettersOrExactPriceFieldsAllowed": true
+      }
+    },
+    {
+      "name": "capacity preserves all old receipts and blocks only new purchases; older records remain accessible",
+      "passed": true,
+      "evidence": {
+        "limit": 2048,
+        "noDeletionOrCharge": true,
+        "paging20": true,
+        "allOldReceiptsReadable": true
+      }
+    },
+    {
+      "name": "historical V11 endpoints migrate losslessly; V12 receipt archive import reload is exact",
+      "passed": true,
+      "evidence": {
+        "files": [
+          {
+            "file": "phase06b-20261025-01/pilot/30-85000-0-balanced-90001.json.gz",
+            "sha256": "8d4d422695bdcfbdaeeb164184a7e82e7c8c76d6af08b37e788004d7fc22b07d",
+            "politicalRules": {
+              "sectionDays": 30,
+              "mayorWealth": 85000
+            }
+          },
+          {
+            "file": "phase06b-20261025-01/main/60-45000-8-wealth-91002.json.gz",
+            "sha256": "644492d54a3704fa8d136a7f2fed949f645685d265b46e42bef6cda9513b2b8f",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/0-balanced-normal-93002.json.gz",
+            "sha256": "71e641ff973ef54a24870f11fe158022b9e63140452f6bc4ad0b32efdf75f18a",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/1-balanced-normal-93002.json.gz",
+            "sha256": "651d934d3a73c38b3c92c294e5b898822ccaa455108ee3b1227f119bb6a79143",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/2-balanced-normal-93002.json.gz",
+            "sha256": "a2c20e91c686ffd90c2ef83d053e00729236d538bbce675e5d125b57c7076daa",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/3-balanced-normal-93002.json.gz",
+            "sha256": "b439a19d7b419203b5b9caed0bf00fa1116de5e1a67274d79a84dd572a7eec12",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/4-balanced-normal-93002.json.gz",
+            "sha256": "39a7c7b19e8c18195f8cc2663ae836615c6845a37a82d60169470bea1388df28",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/5-balanced-normal-93002.json.gz",
+            "sha256": "b36eec8eb01c4eae4b9bcf750fdfcc398c8101f1a27bc44697e624fdc7f993a3",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/6-balanced-normal-93002.json.gz",
+            "sha256": "2299d096991a4e3f7f345ef450ec8f4379211e161d466e7b811d54a50b831a4b",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/7-balanced-normal-93002.json.gz",
+            "sha256": "f51b7d5371c004d2c2678658981160ccc61d25f8e7054a0be9ebe5ea4122840a",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/8-balanced-normal-93002.json.gz",
+            "sha256": "1dd02a35e21d6b84442f5ba1055acde263550ff281e1f6a67746e999b0aa0450",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/9-balanced-normal-93002.json.gz",
+            "sha256": "c6268d9e10d22a52e4623906b2874c570c72e918ba6ea57d59813f96e7ef4bf8",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          },
+          {
+            "file": "phase06c-20261025-01/main/10-balanced-normal-93002.json.gz",
+            "sha256": "a0e7e0a3d35ddab02a5543cb02f2af450e02c111662f6a6f999bf7f8a780e1ea",
+            "politicalRules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            }
+          }
+        ],
+        "V12ReportsAndArchiveExact": true,
+        "noCityGoodsIDsOrOldHistoryChanged": true
+      }
+    },
+    {
+      "name": "actual startup V11 backups, collisions and write failures protect originals; repeated startup adds no migration",
+      "passed": true,
+      "evidence": {
+        "startupBackupExact": true,
+        "collisionProtected": true,
+        "repeatedMigrationIdempotent": true,
+        "failurePoints": 3,
+        "corruptImportRejected": true
+      }
+    },
+    {
+      "name": "all supported old schemas match baseline migration with only V12 information appended",
+      "passed": true,
+      "evidence": {
+        "versions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "version1": true,
+        "unknownVersion2NotPromised": true
+      }
+    },
+    {
+      "name": "old bath random special false tips and expiry produce exactly baseline markets and events",
+      "passed": true,
+      "evidence": {
+        "oneDayBathCases": 30,
+        "kinds": [
+          "special",
+          "ordinary",
+          "false"
+        ],
+        "oldSpecialExpiryExact": true,
+        "originalCost15Day1MarketEffectAndRNGExact": true
+      }
+    },
+    {
+      "name": "unchanged trade FIFO singleton convoy and political decisions remain equal with empty information state",
+      "passed": true,
+      "evidence": {
+        "twoPairedJourneys": true,
+        "actualOneTimeHarborAidV12MatchesV11": true,
+        "allOtherEconomicAndPoliticalFieldsAndRNGEqual": true,
+        "noInformationRequirementForTrade": true
+      }
+    }
+  ]
+}
