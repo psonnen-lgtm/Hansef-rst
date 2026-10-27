@@ -1,0 +1,23 @@
+{
+  "phase": "0.8d.2a.3",
+  "base": "f6a211508d112a12871f20eafe08506c1715b1b1",
+  "branch": "analysis/phase08d2a3-political-performance",
+  "reportsCommit": "c7ba8b1",
+  "pr": {
+    "attempted": true,
+    "created": false,
+    "error": "Post \"https://api.github.com/graphql\": Forbidden"
+  },
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/phase08d2a3-political-performance?expand=1",
+  "verification": {
+    "htmlByteEqualBase": true,
+    "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "oldIndexPrefixPreserved": true,
+    "localLinksChecked": 26,
+    "historicalFilesUnchanged": true,
+    "mainUnchanged": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+    "developmentUnchanged": "f6a211508d112a12871f20eafe08506c1715b1b1"
+  },
+  "readyForV14": false,
+  "taskEnded": true
+}
