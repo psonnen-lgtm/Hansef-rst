@@ -1,0 +1,39 @@
+{
+  "status": "concept-only-unapproved-parameters",
+  "base": "a5ec92a19018a4049567c80f8e8fbd687f3a8d3e",
+  "cities": [
+    {"index":0,"id":"luebeck","name":"Lübeck","population":25000,"electors":5000,"minPopulation":12500,"maxPopulation":37500},
+    {"index":1,"id":"hamburg","name":"Hamburg","population":16000,"electors":3200,"minPopulation":8000,"maxPopulation":24000},
+    {"index":2,"id":"rostock","name":"Rostock","population":12000,"electors":2400,"minPopulation":6000,"maxPopulation":18000},
+    {"index":3,"id":"stralsund","name":"Stralsund","population":10000,"electors":2000,"minPopulation":5000,"maxPopulation":15000},
+    {"index":4,"id":"stettin","name":"Stettin","population":9000,"electors":1800,"minPopulation":4500,"maxPopulation":13500},
+    {"index":5,"id":"danzig","name":"Danzig","population":20000,"electors":4000,"minPopulation":10000,"maxPopulation":30000},
+    {"index":6,"id":"bergen","name":"Bergen","population":8000,"electors":1600,"minPopulation":4000,"maxPopulation":12000},
+    {"index":7,"id":"visby","name":"Visby","population":6000,"electors":1200,"minPopulation":3000,"maxPopulation":9000},
+    {"index":8,"id":"bruegge","name":"Brügge","population":40000,"electors":8000,"minPopulation":20000,"maxPopulation":60000},
+    {"index":9,"id":"nowgorod","name":"Nowgorod","population":30000,"electors":6000,"minPopulation":15000,"maxPopulation":45000},
+    {"index":10,"id":"venlo","name":"Venlo","population":5000,"electors":1000,"minPopulation":2500,"maxPopulation":7500}
+  ],
+  "groups": [
+    {"id":"households","name":"Bürgerhaushalte","weight":40},
+    {"id":"crafts","name":"Handwerk","weight":25},
+    {"id":"seafaring","name":"Seeleute und Hafenleute","weight":20},
+    {"id":"commerce","name":"Kaufleute und Ratsfamilien","weight":15}
+  ],
+  "mayor": {"yearDays":360,"nominationLastDay":270,"campaignFirstDay":271,"electionDay":360,"campaignDays":90,"termDays":360,"rivalCount":3,"totalCandidatesWithPlayer":4,"candidateRange":[2,6],"runoffDays":7},
+  "hanse": {"delegatesPerCity":3,"totalDelegates":33,"intervalDays":720,"termDays":720,"campaignDays":120,"candidateRange":[2,4],"runoffDays":15},
+  "baselineWeights": {"rivalMerchant":[130,170,180,320],"rivalSupplier":[270,200,240,130],"rivalHost":[200,230,180,150],"uncommitted":[400,400,400,400],"player":[0,0,0,0]},
+  "actions": [
+    {"id":"food","maxAffinity":[180,60,45,15],"durationDays":180,"limit":"one fulfilled public need ID, one slot per30 days"},
+    {"id":"shortage","maxAffinity":[70,140,120,40],"durationDays":180,"limit":"one fulfilled public need ID, one slot per30 days"},
+    {"id":"council","maxAffinity":[30,70,40,130],"durationDays":180,"limit":"one original service ID, once per60 days"},
+    {"id":"church","maxAffinity":[80,30,20,30],"durationDays":60,"limit":"cumulative gold per30-day calendar bucket, same category cap"},
+    {"id":"social","maxAffinity":[150,60,45,15],"durationDays":120,"limit":"one project ID per90 days"},
+    {"id":"festival","maxAffinity":[160,120,100,80],"durationDays":90,"limit":"one public event ID per90 days"},
+    {"id":"harbor","maxAffinity":[30,110,150,90],"durationDays":180,"limit":"one public project ID per180 days"},
+    {"id":"pledgeKept","maxAffinity":[50,60,50,80],"durationDays":180,"limit":"one pledge ID, no extra award for existing service ID"},
+    {"id":"pledgeBroken","maxAffinity":[-100,-100,-100,-150],"durationDays":90,"limit":"one recorded missed pledge ID"},
+    {"id":"poorSupply","maxAffinity":[-150,-70,-50,-30],"durationDays":60,"limit":"responsible incumbent only, one crisis ID per30 days"},
+    {"id":"failedEvent","maxAffinity":[-80,-60,-50,-40],"durationDays":60,"limit":"one actual failed event ID"}
+  ]
+}

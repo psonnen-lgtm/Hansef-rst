@@ -1,0 +1,33 @@
+{
+  "phase": "P1-election-order",
+  "base": "a5ec92a19018a4049567c80f8e8fbd687f3a8d3e",
+  "branch": "analysis/p1-election-concept",
+  "reportsCommit": "2a2895b",
+  "analysisTestCommit": "9fd3b0851738ec161b19d6d370e99e7a62a19eac",
+  "pr": {
+    "attempted": true,
+    "created": false,
+    "error": "Post \"https://api.github.com/graphql\": Forbidden"
+  },
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/p1-election-concept?expand=1",
+  "verification": {
+    "htmlByteEqualBase": true,
+    "htmlSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "oldIndexPrefixPreserved": true,
+    "allHistoricalFilesUnchanged": true,
+    "sourceUnchangedSinceArithmeticCheck": true,
+    "relativeLinksChecked": 40,
+    "fiveReports": true,
+    "main": "c1280228951d581c7b3131279b8ff164a8e36dfa"
+  },
+  "executed": "seven document arithmetic and read-only inventory groups, no game evaluation",
+  "notExecuted": [
+    "election engine",
+    "migration",
+    "browser checks",
+    "economic simulations",
+    "career playthroughs"
+  ],
+  "noProductionImplementation": true,
+  "taskEnded": true
+}
