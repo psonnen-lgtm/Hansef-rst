@@ -1,0 +1,98 @@
+{
+  "testedGameCommit": "534994cc4605d578fd7b6516e946154f2c2275de",
+  "gameSHA256": "a2f60a647db6411477daedc5bea6b4a371eea4a50146d18d49963cdfee66fcc6",
+  "browser": "154.0.8037.57",
+  "scope": "local Chromium viewport/touch emulation, not physical iPhone iPad or Safari; no complete simulations",
+  "checks": [
+    {
+      "name": "church and V11 file roundtrip at 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "nativeInput": "tap",
+      "previews": [
+        2,
+        5
+      ],
+      "firstGain": 2,
+      "nextPreviews": [
+        1,
+        4
+      ],
+      "secondGain": 4,
+      "donationEvents": 2,
+      "noNewDays": true,
+      "saveBeforeDonationsExact": true,
+      "afterDonationReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalSheetOverflow": true
+    },
+    {
+      "name": "church and V11 file roundtrip at 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "nativeInput": "tap",
+      "previews": [
+        2,
+        5
+      ],
+      "firstGain": 2,
+      "nextPreviews": [
+        1,
+        4
+      ],
+      "secondGain": 4,
+      "donationEvents": 2,
+      "noNewDays": true,
+      "saveBeforeDonationsExact": true,
+      "afterDonationReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalSheetOverflow": true
+    },
+    {
+      "name": "church and V11 file roundtrip at 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "nativeInput": "click",
+      "previews": [
+        2,
+        5
+      ],
+      "firstGain": 2,
+      "nextPreviews": [
+        1,
+        4
+      ],
+      "secondGain": 4,
+      "donationEvents": 2,
+      "noNewDays": true,
+      "saveBeforeDonationsExact": true,
+      "afterDonationReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalSheetOverflow": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c1_kirche-375.png",
+      "sha256": "caabf5391befe6647db4c7a57c06802093e487231daca865849f54733193f9c9"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c1_kirche-820.png",
+      "sha256": "d81f15072be55f2f25e8bbf6758e759a462524abd0d55b395ddc16cdb98ec4c9"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c1_kirche-1280.png",
+      "sha256": "d745db2de3c5898a0aaf715a7e9c410395dc8ffb14197bc70f6f8ae4be3b6238"
+    }
+  ]
+}

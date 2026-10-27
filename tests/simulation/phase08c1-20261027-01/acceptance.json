@@ -1,0 +1,19 @@
+{
+  "base": "a44671964f5eca752c537f4fd7d9b7ecb57446ad",
+  "testedGameCommit": "534994cc4605d578fd7b6516e946154f2c2275de",
+  "gameSHA256": "a2f60a647db6411477daedc5bea6b4a371eea4a50146d18d49963cdfee66fcc6",
+  "testHarnessCommit": "3dd19513ec14b950154a737d56c3f737f3b73338",
+  "passed": {
+    "donationGroups": 6,
+    "baselineChecks": 19,
+    "tradeChecks": 18,
+    "browserViewports": 3
+  },
+  "initialTestHarnessFailurePreserved": "technical-attempt1.log",
+  "existingHistoricalResultsAndScriptsUnmodified": true,
+  "indexPreviousContentsExact": true,
+  "relativeReportLinksValid": 17,
+  "fullEconomyOrCareerSimulations": 0,
+  "physicalAppleHardwareOrSafariTested": false,
+  "oldReleaseArchivesAndPagesFilesUnchanged": true
+}
