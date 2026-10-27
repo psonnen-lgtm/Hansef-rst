@@ -35,7 +35,7 @@
     },
     {
       "path": "tests/analysis/phase08d2a2/political-checks.cjs",
-      "sha256": "053daa5d2e5346929dae3b031ca492c058655a1097e36f4e6dbc25d7c60de689"
+      "sha256": "7900b33b3223ad86c7ed3081f59ce3ce8b2fec3bfaeff0a59367c1b0e22873e3"
     },
     {
       "path": "tests/analysis/phase08d2a2/political-model.cjs",
@@ -43,7 +43,7 @@
     },
     {
       "path": "tests/analysis/phase08d2a2/price-checks.cjs",
-      "sha256": "1d6285b94202438ee850a7c74e46711f6e76dd6caff4ffe3b415ac5dbbcc0285"
+      "sha256": "89ce1a65f65c14f71eb7f7dd802d0c54c3ac1e41b711d6c9b3711b733a235a82"
     },
     {
       "path": "tests/analysis/phase08d2a2/price-model.cjs",
@@ -53,5 +53,9 @@
       "path": "tests/analysis/phase08d2a2/rational.cjs",
       "sha256": "580f8b50c69f8a4b332b959e7af87496a1ae9f819930974307eb2dc48cf1642b"
     }
+  ],
+  "fixtureRepairsBeforeComparisons": [
+    "half-boundary fixture now uses canonical reduced fraction; core correctly rejected noncanonical input",
+    "supply fixture uses actual politicalOffer good instead of invalid forced grain"
   ]
 }

@@ -40,7 +40,7 @@ check('bounds illegal stock/gold/space and exact difficult rounding schemas fail
  for(const S of [0,1,3]){const g=fixture(4,S),before=g.state();assert.equal(g.trade(0,S+1,1),null);assert.deepEqual(g.state(),before)}
  const g=fixture();g.eval('s.gold=20');assert.equal(g.trade(0,90,1),null);assert.equal(g.state().gold,20);
  assert.throws(()=>Q.quote(Q.basis(20,1e9),1e9,1,-1));assert.throws(()=>Q.basis(3,110));assert.throws(()=>R.rat(1,0));assert.throws(()=>R.rat('1'+'0'.repeat(4096)));assert.throws(()=>R.valid({n:'02',d:'1'}));
- const a={n:'4250017',d:'2',revision:0,day:0};assert.equal(Q.edge(a,1),9);assert.equal(Q.edge({...a,n:'4250016'},1),8);const p=Q.basis(1e9,1e9);assert.equal(Q.edge(p,1),1e9);
+ const a={n:'4250017',d:'2',revision:0,day:0};assert.equal(Q.edge(a,1),9);assert.equal(Q.edge({...a,...R.rat('4250016','2')},1),8);const p=Q.basis(1e9,1e9);assert.equal(Q.edge(p,1),1e9);
  return {lowStocks:[0,1,3],stockMax:1e9,precisionBudgetDigits:R.MAX_DIGITS,overflowRejectsInsteadOfRounding:true};
 });
 check('original no-trade daily markets and RNG; saved/new specials and expiry',()=>{
