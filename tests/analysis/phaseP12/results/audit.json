@@ -1,0 +1,552 @@
+{
+  "phase": "P1.2",
+  "auditCommit": "108c64231fa079641946f315f9bcbac4ae231e85",
+  "testedAdapterCommit": "6179fa16df15c49afb80e550ba5c43874b0da5d9",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "readOnly": true,
+  "noAdditionalTrajectories": true,
+  "trajectories": 12,
+  "maximumDays": 7,
+  "cashAndGoodsLedgers": [
+    {
+      "name": "01-existing-V13-without-public-consumption",
+      "initialGold": 10000,
+      "actualSales": 5400,
+      "actualPurchases": 2700,
+      "questReward": 0,
+      "finalGold": 12700,
+      "initialOwned": 90,
+      "bought": 90,
+      "sold": 180,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 111,
+      "publicConsumed": 0,
+      "naturalStockDeltaObserved": 1,
+      "days": 7,
+      "receipts": 0,
+      "recognitions": 0,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "02-public-A",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 12700,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 29,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 9,
+      "days": 7,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "03-public-B",
+      "initialGold": 10000,
+      "actualSales": 1440,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 11440,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 29,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 9,
+      "days": 7,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "04-public-C",
+      "initialGold": 10000,
+      "actualSales": 0,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 10000,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 0,
+      "donated": 90,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 29,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 9,
+      "days": 7,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "05-under-and-over-need-with-mixed-modes",
+      "initialGold": 10000,
+      "actualSales": 2640,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 12640,
+      "initialOwned": 140,
+      "bought": 0,
+      "sold": 130,
+      "donated": 0,
+      "finalOwned": 10,
+      "initialMarket": 20,
+      "finalMarket": 60,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 3,
+      "recognitions": 2,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "06-nine-times-ten",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 12700,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 20,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 9,
+      "recognitions": 9,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "07-ninety-times-one",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 12700,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 20,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 90,
+      "recognitions": 90,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "08-own-ships-warehouse-and-unknown-costs",
+      "initialGold": 10000,
+      "actualSales": 900,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 10900,
+      "initialOwned": 120,
+      "bought": 0,
+      "sold": 30,
+      "donated": 60,
+      "finalOwned": 30,
+      "initialMarket": 20,
+      "finalMarket": 20,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 2,
+      "recognitions": 2,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "09-self-created-scarcity-and-buy-return",
+      "initialGold": 10000,
+      "actualSales": 2400,
+      "actualPurchases": 2400,
+      "questReward": 0,
+      "finalGold": 10000,
+      "initialOwned": 90,
+      "bought": 80,
+      "sold": 80,
+      "donated": 0,
+      "finalOwned": 90,
+      "initialMarket": 110,
+      "finalMarket": 110,
+      "publicConsumed": 0,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 0,
+      "recognitions": 0,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "10-own-withdrawal-pre-election-sale-and-real-next-days",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 600,
+      "questReward": 0,
+      "finalGold": 12100,
+      "initialOwned": 90,
+      "bought": 20,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 20,
+      "initialMarket": 20,
+      "finalMarket": 26,
+      "publicConsumed": 70,
+      "naturalStockDeltaObserved": 6,
+      "days": 2,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "11-failure-atomicity-quests-export-and-idempotence",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 0,
+      "questReward": 100,
+      "finalGold": 12800,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 20,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 0,
+      "days": 0,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    },
+    {
+      "name": "12-identical-seed-exact-A-reproduction",
+      "initialGold": 10000,
+      "actualSales": 2700,
+      "actualPurchases": 0,
+      "questReward": 0,
+      "finalGold": 12700,
+      "initialOwned": 90,
+      "bought": 0,
+      "sold": 90,
+      "donated": 0,
+      "finalOwned": 0,
+      "initialMarket": 20,
+      "finalMarket": 29,
+      "publicConsumed": 90,
+      "naturalStockDeltaObserved": 9,
+      "days": 7,
+      "receipts": 1,
+      "recognitions": 1,
+      "bankDebtUnchanged": true
+    }
+  ],
+  "comparisons": [
+    {
+      "mode": "V13",
+      "immediate": {
+        "gold": 12700,
+        "owned": 0,
+        "market": 110,
+        "price": 30,
+        "nextBuyPrice": 30,
+        "nextSellPrice": 30,
+        "consumed": 0,
+        "remaining": null,
+        "rep": 2,
+        "rank": 0,
+        "day": 486001,
+        "financial": 21100,
+        "rng": {
+          "state": 71201,
+          "draws": 0,
+          "clock": 1700000100000
+        }
+      },
+      "day7": {
+        "gold": 12700,
+        "owned": 0,
+        "market": 111,
+        "price": 28,
+        "nextBuyPrice": 28,
+        "nextSellPrice": 28,
+        "consumed": 0,
+        "remaining": null,
+        "rep": 2,
+        "rank": 0,
+        "day": 486008,
+        "financial": 21100,
+        "rng": {
+          "state": 1924053999,
+          "draws": 2006,
+          "clock": 1700000100000
+        }
+      }
+    },
+    {
+      "mode": "A",
+      "immediate": {
+        "gold": 12700,
+        "owned": 0,
+        "market": 20,
+        "price": 30,
+        "nextBuyPrice": 30,
+        "nextSellPrice": 30,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 2,
+        "rank": 0,
+        "day": 486001,
+        "financial": 21100,
+        "rng": {
+          "state": 71201,
+          "draws": 0,
+          "clock": 1700000100000
+        }
+      },
+      "day7": {
+        "gold": 12700,
+        "owned": 0,
+        "market": 29,
+        "price": 29,
+        "nextBuyPrice": 29,
+        "nextSellPrice": 29,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 2,
+        "rank": 0,
+        "day": 486008,
+        "financial": 21100,
+        "rng": {
+          "state": 1924053999,
+          "draws": 2006,
+          "clock": 1700000100000
+        }
+      }
+    },
+    {
+      "mode": "B",
+      "immediate": {
+        "gold": 11440,
+        "owned": 0,
+        "market": 20,
+        "price": 30,
+        "nextBuyPrice": 30,
+        "nextSellPrice": 30,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 2,
+        "rank": 0,
+        "day": 486001,
+        "financial": 19840,
+        "rng": {
+          "state": 71201,
+          "draws": 0,
+          "clock": 1700000100000
+        }
+      },
+      "day7": {
+        "gold": 11440,
+        "owned": 0,
+        "market": 29,
+        "price": 29,
+        "nextBuyPrice": 29,
+        "nextSellPrice": 29,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 2,
+        "rank": 0,
+        "day": 486008,
+        "financial": 19840,
+        "rng": {
+          "state": 1924053999,
+          "draws": 2006,
+          "clock": 1700000100000
+        }
+      }
+    },
+    {
+      "mode": "C",
+      "immediate": {
+        "gold": 10000,
+        "owned": 0,
+        "market": 20,
+        "price": 30,
+        "nextBuyPrice": 30,
+        "nextSellPrice": 30,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "financial": 18400,
+        "rng": {
+          "state": 71201,
+          "draws": 0,
+          "clock": 1700000100000
+        }
+      },
+      "day7": {
+        "gold": 10000,
+        "owned": 0,
+        "market": 29,
+        "price": 29,
+        "nextBuyPrice": 29,
+        "nextSellPrice": 29,
+        "consumed": 90,
+        "remaining": 0,
+        "rep": 0,
+        "rank": 0,
+        "day": 486008,
+        "financial": 18400,
+        "rng": {
+          "state": 1924053999,
+          "draws": 2006,
+          "clock": 1700000100000
+        }
+      }
+    }
+  ],
+  "other120MarketsEqualAcrossFourArms": true,
+  "requirements": [
+    {
+      "requirement": 1,
+      "status": "PASS_LIMITED",
+      "evidence": "02 actual native sale and final90-unit receipt"
+    },
+    {
+      "requirement": 2,
+      "status": "PASS_LIMITED",
+      "evidence": "03 actual16-price execution, quote restored30, lower real revenue"
+    },
+    {
+      "requirement": 3,
+      "status": "PASS_LIMITED",
+      "evidence": "04 source FIFO removal, no sell/quest/Gold fiction"
+    },
+    {
+      "requirement": 4,
+      "status": "PASS_LIMITED",
+      "evidence": "05 first30 accepted leaves60"
+    },
+    {
+      "requirement": 5,
+      "status": "PASS_LIMITED",
+      "evidence": "05 B90 accepts60, ordinary surplus30 retained at market"
+    },
+    {
+      "requirement": 6,
+      "status": "PASS_LIMITED",
+      "evidence": "05/06/07 shared single need with multiple receipts"
+    },
+    {
+      "requirement": 7,
+      "status": "PASS_LIMITED",
+      "evidence": "02/06/07 actual90 vs9x10 vs90x1 A; B/C additional arithmetic"
+    },
+    {
+      "requirement": 8,
+      "status": "PASS_LIMITED",
+      "evidence": "09 real80-unit same-town buy/sell, no need or recognition"
+    },
+    {
+      "requirement": 9,
+      "status": "PASS_LIMITED",
+      "evidence": "10 actual359->newyear1,70 consumed,90-unit rebuy refused"
+    },
+    {
+      "requirement": 10,
+      "status": "PASS_LIMITED",
+      "evidence": "09 stock30+D80=110 refuses self-induced crisis"
+    },
+    {
+      "requirement": 11,
+      "status": "PASS_LIMITED",
+      "evidence": "10 restores20 earlier removals, recognizes70 only"
+    },
+    {
+      "requirement": 12,
+      "status": "PASS_LIMITED",
+      "evidence": "08 native warehouse transfer, two own ships, unknown weighted costs"
+    },
+    {
+      "requirement": 13,
+      "status": "PASS_LIMITED",
+      "evidence": "07/11 same ID returns receipt without replaying trade"
+    },
+    {
+      "requirement": 14,
+      "status": "PASS_LIMITED",
+      "evidence": "05 no second need, covered C refuses, A rest unrecognized"
+    },
+    {
+      "requirement": 15,
+      "status": "PASS_LIMITED",
+      "evidence": "4 same-seed seven-day real production/price paths; observed differences"
+    },
+    {
+      "requirement": 16,
+      "status": "PASS_LIMITED",
+      "evidence": "02/03/04/10 advancing days emits no new recognition"
+    },
+    {
+      "requirement": 17,
+      "status": "PASS_LIMITED",
+      "evidence": "costs8/12, mixed null, native weighted12 after own purchase"
+    },
+    {
+      "requirement": 18,
+      "status": "PASS_LIMITED",
+      "evidence": "12 independently read cash/owned/market/public consumption ledgers"
+    },
+    {
+      "requirement": 19,
+      "status": "PASS_LIMITED",
+      "evidence": "11 cancel, invalid requests, quota, stale store, reentry all atomic in simulation"
+    },
+    {
+      "requirement": 20,
+      "status": "PASS_LIMITED",
+      "evidence": "12 repeats A, all game/events/RNG/supply state identical"
+    }
+  ],
+  "acceptance": {
+    "actualV13TechnicalProofInScope": true,
+    "goldGoodsConserved": true,
+    "ordinaryTradeUnmodified": false,
+    "originalNativeFunctionsPreserved": true,
+    "publicConsumptionRequiresOwnTransactionalPath": true,
+    "washCannotReacquireConsumedUnitsWithoutRealNewSupply": true,
+    "votesOrOfficesNotImplemented": true,
+    "politicalBalanceNotMeasured": true,
+    "productionReady": false
+  },
+  "limitations": [
+    "controlled need, not autonomous real crisis detector",
+    "one market/good and player only",
+    "simulated storage/CAS, not browser multi-tab/Quota validation",
+    "V13 reputation action dependence preserved",
+    "no new product migration",
+    "market caps additionally arithmetic, not full extreme-state VM sweep"
+  ]
+}
