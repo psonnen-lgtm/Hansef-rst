@@ -33,8 +33,9 @@
   "productiveMigration": false,
   "pagesChanged": false,
   "historicalPhaseFilesChanged": false,
-  "pullRequest": "pending actual attempt after report publication",
+  "pullRequest": "actual gh pr create attempted; GraphQL Forbidden; no PR created",
   "localReportAndPrototypeLinksVerified": 27,
   "oldIndexPrefixPreserved": true,
-  "originalAndFrozenSourceHashesPreserved": true
+  "originalAndFrozenSourceHashesPreserved": true,
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/phase08d2a1-price-calibration?expand=1"
 }
