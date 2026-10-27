@@ -1,0 +1,20 @@
+PASS whole HTML exact after enumerated UI projection; travel planner only adds explicit existing convoy choice
+PASS same-harbor selection and repeated Luebeck Brugge selection only change city and active index
+PASS invalid or unknown harbor never invents a location; damaged ships retain their actual harbor
+evalmachine.<anonymous>:948
+ const cv=$(id);if(!cv)return;const c=cv.getContext('2d');if(!c)return;c.imageSmoothingEnabled=false;const h=cv.height||520;
+                                         ^
+
+TypeError: cv.getContext is not a function
+    at drawMap (evalmachine.<anonymous>:948:42)
+    at mapView (evalmachine.<anonymous>:747:2)
+    at mapChooseDestination (evalmachine.<anonymous>:734:105)
+    at evalmachine.<anonymous>:1:1
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/simulation/headless.cjs:5:1384)
+    at /workspace/Hansef-rst/tests/simulation/ship-map-checks.cjs:26:336
+    at record (/workspace/Hansef-rst/tests/simulation/ship-map-checks.cjs:7:64)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/ship-map-checks.cjs:25:1)
+
+Node.js v24.19.0

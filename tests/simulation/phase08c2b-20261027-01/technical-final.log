@@ -1,0 +1,12 @@
+PASS whole HTML exact after enumerated UI projection; travel planner only adds explicit existing convoy choice
+PASS same-harbor selection and repeated Luebeck Brugge selection only change city and active index
+PASS invalid or unknown harbor never invents a location; damaged ships retain their actual harbor
+PASS open preparation preserves ship IDs source target and all state while rejecting another fleet selection
+PASS only explicit confirmed discard cancels preparation without cost time cargo or RNG changes
+PASS chart renders eleven named targets and existing segments connect all 110 directed port pairs only
+PASS 220 explicit single and convoy previews and plans equal baseline duration fees and ship participants
+PASS actual single and convoy arrivals and repeat-arrival guard preserve baseline outcomes and remote ships
+PASS remote ship cannot trade in viewed harbor; explicit ship navigation opens only its own local market
+PASS real uncompleted shipyard order remains intact and absent from selectable fleet on navigation
+PASS historical multiship save migrates identically to baseline; eleven historical V11 saves roundtrip exactly
+PASS navigation autosave and quota warning preserve old disk then save complete new view on recovery
