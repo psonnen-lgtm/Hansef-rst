@@ -35,7 +35,7 @@
     },
     {
       "path": "tests/analysis/phase08d2a2/political-checks.cjs",
-      "sha256": "7900b33b3223ad86c7ed3081f59ce3ce8b2fec3bfaeff0a59367c1b0e22873e3"
+      "sha256": "db202248901355abb79b0eaa28851a55a0194795ba331e772d9604a5478b411b"
     },
     {
       "path": "tests/analysis/phase08d2a2/political-model.cjs",
@@ -56,6 +56,7 @@
   ],
   "fixtureRepairsBeforeComparisons": [
     "half-boundary fixture now uses canonical reduced fraction; core correctly rejected noncanonical input",
-    "supply fixture uses actual politicalOffer good instead of invalid forced grain"
+    "supply fixture uses actual politicalOffer good instead of invalid forced grain",
+    "supply fixture accepts original job so issued-period record is valid"
   ]
 }
