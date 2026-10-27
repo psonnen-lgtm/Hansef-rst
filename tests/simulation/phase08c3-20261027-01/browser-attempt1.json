@@ -1,0 +1,300 @@
+{
+  "base": "07dfaee9ca3a12df680d0ec5ac07eeff0381681e",
+  "testedGameCommit": "4570c8a4d0bcefb3a739b0955544887d127af1e4",
+  "gameSHA256": "5e8e3c463824a807bfe323986136d5a6964a2119f0915dd4ef01cee222da7da4",
+  "browser": "154.0.8037.57",
+  "scope": "four Chromium/touch sizes, imported isolated QA states and individual elections, not complete careers or real Apple hardware",
+  "checks": [
+    {
+      "name": "political progress 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "input": "native emulated tap",
+      "visibleIndividualConditions": 14,
+      "linksAtLeast44px": true,
+      "allFiveNavigationLinksUsed": true,
+      "viewsNoStateDiskRNGChange": true,
+      "twoActualPoliticalGroups": true,
+      "actualElectionAndAssemblyEqualBase": true,
+      "proofCountersVisible": true,
+      "actualV11DownloadFileReaderImportReloadExact": true,
+      "archivedRules": {
+        "sectionDays": 30,
+        "mayorWealth": 85000
+      },
+      "autosaveQuotaWarningExportRecovery": true,
+      "scrollable": true,
+      "stickyCloseReachable": true,
+      "noHorizontalOverflow": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Bürgermeisterwahl in Lübeck: 90.0 von 80 nötiger Ratsunterstützung. Die zugesagte Mehrheit reicht. Kein Wahlzufall. Nächste Kandidatur nach einem Ratsabschnitt."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Die Hanseversammlung prüft deine bewährte Amtsführung, vier Stadtsiegel, Handelsräume, Fürsprecher und den gehaltenen Hansevertrag. Die Voraussetzungen reichen; kein Wahlzufall. Zum Eldermann wählen lassen?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+        }
+      ]
+    },
+    {
+      "name": "political progress 390x844",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "native emulated tap",
+      "visibleIndividualConditions": 14,
+      "linksAtLeast44px": true,
+      "allFiveNavigationLinksUsed": true,
+      "viewsNoStateDiskRNGChange": true,
+      "twoActualPoliticalGroups": true,
+      "actualElectionAndAssemblyEqualBase": true,
+      "proofCountersVisible": true,
+      "actualV11DownloadFileReaderImportReloadExact": true,
+      "archivedRules": {
+        "sectionDays": 30,
+        "mayorWealth": 85000
+      },
+      "autosaveQuotaWarningExportRecovery": false,
+      "scrollable": true,
+      "stickyCloseReachable": true,
+      "noHorizontalOverflow": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Bürgermeisterwahl in Lübeck: 90.0 von 80 nötiger Ratsunterstützung. Die zugesagte Mehrheit reicht. Kein Wahlzufall. Nächste Kandidatur nach einem Ratsabschnitt."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Die Hanseversammlung prüft deine bewährte Amtsführung, vier Stadtsiegel, Handelsräume, Fürsprecher und den gehaltenen Hansevertrag. Die Voraussetzungen reichen; kein Wahlzufall. Zum Eldermann wählen lassen?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "political progress 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "input": "native emulated tap",
+      "visibleIndividualConditions": 14,
+      "linksAtLeast44px": true,
+      "allFiveNavigationLinksUsed": true,
+      "viewsNoStateDiskRNGChange": true,
+      "twoActualPoliticalGroups": true,
+      "actualElectionAndAssemblyEqualBase": true,
+      "proofCountersVisible": true,
+      "actualV11DownloadFileReaderImportReloadExact": true,
+      "archivedRules": {
+        "sectionDays": 30,
+        "mayorWealth": 85000
+      },
+      "autosaveQuotaWarningExportRecovery": false,
+      "scrollable": true,
+      "stickyCloseReachable": true,
+      "noHorizontalOverflow": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Bürgermeisterwahl in Lübeck: 90.0 von 80 nötiger Ratsunterstützung. Die zugesagte Mehrheit reicht. Kein Wahlzufall. Nächste Kandidatur nach einem Ratsabschnitt."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Die Hanseversammlung prüft deine bewährte Amtsführung, vier Stadtsiegel, Handelsräume, Fürsprecher und den gehaltenen Hansevertrag. Die Voraussetzungen reichen; kein Wahlzufall. Zum Eldermann wählen lassen?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "political progress 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "input": "click",
+      "visibleIndividualConditions": 14,
+      "linksAtLeast44px": true,
+      "allFiveNavigationLinksUsed": true,
+      "viewsNoStateDiskRNGChange": true,
+      "twoActualPoliticalGroups": true,
+      "actualElectionAndAssemblyEqualBase": true,
+      "proofCountersVisible": true,
+      "actualV11DownloadFileReaderImportReloadExact": true,
+      "archivedRules": {
+        "sectionDays": 30,
+        "mayorWealth": 85000
+      },
+      "autosaveQuotaWarningExportRecovery": false,
+      "scrollable": true,
+      "stickyCloseReachable": true,
+      "noHorizontalOverflow": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Bürgermeisterwahl in Lübeck: 90.0 von 80 nötiger Ratsunterstützung. Die zugesagte Mehrheit reicht. Kein Wahlzufall. Nächste Kandidatur nach einem Ratsabschnitt."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Die Hanseversammlung prüft deine bewährte Amtsführung, vier Stadtsiegel, Handelsräume, Fürsprecher und den gehaltenen Hansevertrag. Die Voraussetzungen reichen; kein Wahlzufall. Zum Eldermann wählen lassen?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_anfang-375.png",
+      "sha256": "15983dbc7b5847b5b28b87e965bd160275dba67f7a60a86a6d99664c5a1c4836"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_rivalen-375.png",
+      "sha256": "75f8ae6af6b072fca9fe9bfe7bc8bdfca6396c2bf75877226bb8050419b521fe"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_hanse-375.png",
+      "sha256": "0423a92abfc4ec19d323deacf04adc5db36ab890a65d4f5ccc805502bf43a4c0"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_anfang-390.png",
+      "sha256": "a68732961f6126e1aea7285acdd6f0aecd618ebd789f27bdf1cd6b243173cfd8"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_rivalen-390.png",
+      "sha256": "5e6d2ea99c6afb999e5b9debda6d57604997255fc062fbc1c7bf71c3c85e6f6e"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_hanse-390.png",
+      "sha256": "8510dacc132c2052f1e7e16723cd6137857e3fc4e768ddbe9572dda661360f9d"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_anfang-820.png",
+      "sha256": "89eccf57d50672123f68bda296d271c560efe313db4509202e85d22156de9318"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_rivalen-820.png",
+      "sha256": "9d9161c431b60bb098e59129c15f218b7df254df641ad776e09a58476d7e949b"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_hanse-820.png",
+      "sha256": "5b3532da50704d8e4c32c29a5515050fecac0a4f2bd875e6438456546b7b6113"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_anfang-1280.png",
+      "sha256": "0b99ebffdf2bd8a9cbaaa66c59e79dad5344f6c2f4e077933f90f7916d1be0f3"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_rivalen-1280.png",
+      "sha256": "36b3f83a13231f5273013362d65a341bae5cf784dc9cd581f052f0e0fa4dec15"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c3_attempt1_hanse-1280.png",
+      "sha256": "27d4b1b94e339393112391b52b722dc56a3342d6018137ee88f225188e302301"
+    }
+  ]
+}
