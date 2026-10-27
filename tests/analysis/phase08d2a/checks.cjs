@@ -8,7 +8,7 @@ function close(a,b){assert(Math.abs(a-b)<1e-7,`${a} != ${b}`)}
 function fixture(model='B',price=20,stock=240,gold=100000,type=2){const g=create(81001,0,model);g.eval(`s.gold=${gold};s.ships[0]={...makeShip(${type},{id:1,city:0})};s.markets[0][0]={price:${price},stock:${stock}};observe();validate(s);`);g.resetAnchors();return g}
 function buyParts(parts,options={}){let g=fixture();for(const n of parts){assert(g.trade(0,n,1));if(options.reload)g=create(0,0,'B',g.snapshot());if(options.views)g.eval('informationBookPanel();tradeLetterPanel();harborGossip();observe()')}return g}
 check('production HTML and all existing tracked files untouched; exact VM substitutions recorded',()=>{
- const b=execFileSync('git',['show','f7b3b336da911804101b3a38e8773128bff44164:Hansefuerst_0_4.html'],{cwd:root});assert.equal(hash(html),hash(b));
+ const b=execFileSync('git',['show','f7b3b336da911804101b3a38e8773128bff44164:Hansefuerst_0_4.html'],{cwd:root,maxBuffer:100000000});assert.equal(hash(html),hash(b));
  const g=fixture();return {gameHash:hash(html),release:html.match(/const RELEASE='([^']+)'/)[1],saveVersion:g.eval('s.v'),substitutions:g.edits};
 });
 check('integer totals split neutral for 90, 9x10 and 90x1 buys including reload/views',()=>{
