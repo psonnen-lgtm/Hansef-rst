@@ -1,0 +1,2869 @@
+{
+  "historicalManifestEntries": 67,
+  "historicalArmsRead": 36,
+  "newArmsRead": 54,
+  "gameFunctionsExecuted": 0,
+  "historyTrajectoriesReplayed": 0,
+  "rawChecks": [
+    {
+      "id": "luebeck-hamburg-81001-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": false
+    },
+    {
+      "id": "bergen-luebeck-81001-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": false
+    },
+    {
+      "id": "bergen-luebeck-81003-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-small22-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-small22-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-largeCashLimited90-A",
+      "source": "historical-read-only",
+      "model": "A",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-largeCashLimited90-B",
+      "source": "historical-read-only",
+      "model": "H110",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": false,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81001-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81001-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81001-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81002-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81002-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81002-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "luebeck-hamburg-81003-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": false
+    },
+    {
+      "id": "bergen-luebeck-81003-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "bergen-luebeck-81003-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-small22-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-small22-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-small22-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-largeCashLimited90-B1",
+      "source": "new",
+      "model": "B1",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-largeCashLimited90-B2",
+      "source": "new",
+      "model": "B2",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    },
+    {
+      "id": "nowgorod-bruegge-81003-largeCashLimited90-B3",
+      "source": "new",
+      "model": "B3",
+      "cashLedger": true,
+      "goodsLedger": true,
+      "profitLedger": true,
+      "bookAndPoliticalWorth": true,
+      "pureQuotesIndependentlyChecked": true,
+      "endCanPayFee": true
+    }
+  ],
+  "paired": [
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": -447,
+      "net": -2697,
+      "deltaNetVsA": -2250,
+      "deltaProfitVsA": -2243,
+      "deltaNetVsH110": 2279,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": -447,
+      "net": -1340,
+      "deltaNetVsA": -893,
+      "deltaProfitVsA": -889,
+      "deltaNetVsH110": 3636,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": -447,
+      "net": -960,
+      "deltaNetVsA": -513,
+      "deltaProfitVsA": -513,
+      "deltaNetVsH110": 4016,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -544,
+      "net": -3241,
+      "deltaNetVsA": -2697,
+      "deltaProfitVsA": -2692,
+      "deltaNetVsH110": 1757,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -544,
+      "net": -1955,
+      "deltaNetVsA": -1411,
+      "deltaProfitVsA": -1408,
+      "deltaNetVsH110": 3043,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -544,
+      "net": -1197.0000000000005,
+      "deltaNetVsA": -653.0000000000005,
+      "deltaProfitVsA": -652.0000000000005,
+      "deltaNetVsH110": 3800.9999999999995,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 1112,
+      "net": 248,
+      "deltaNetVsA": -864,
+      "deltaProfitVsA": -864,
+      "deltaNetVsH110": 1536,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 1112,
+      "net": 785,
+      "deltaNetVsA": -327,
+      "deltaProfitVsA": -327,
+      "deltaNetVsH110": 2073,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 1112,
+      "net": 1061,
+      "deltaNetVsA": -51,
+      "deltaProfitVsA": -51,
+      "deltaNetVsH110": 2349,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -88,
+      "net": -4981,
+      "deltaNetVsA": -4893,
+      "deltaProfitVsA": -4893,
+      "deltaNetVsH110": -5,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -88,
+      "net": -4427,
+      "deltaNetVsA": -4339,
+      "deltaProfitVsA": -4339,
+      "deltaNetVsH110": 549,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -88,
+      "net": -2939,
+      "deltaNetVsA": -2851,
+      "deltaProfitVsA": -2851,
+      "deltaNetVsH110": 2037,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 2644,
+      "net": 2234.9999999999995,
+      "deltaNetVsA": -409.00000000000045,
+      "deltaProfitVsA": -409.00000000000045,
+      "deltaNetVsH110": 1216.9999999999995,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 2644,
+      "net": 2493,
+      "deltaNetVsA": -151,
+      "deltaProfitVsA": -151,
+      "deltaNetVsH110": 1475,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 2644,
+      "net": 2583,
+      "deltaNetVsA": -61,
+      "deltaProfitVsA": -61,
+      "deltaNetVsH110": 1565,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": 6156,
+      "net": 3287,
+      "deltaNetVsA": -2869,
+      "deltaProfitVsA": -2869,
+      "deltaNetVsH110": 4010,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": 6156,
+      "net": 4947,
+      "deltaNetVsA": -1209,
+      "deltaProfitVsA": -1209,
+      "deltaNetVsH110": 5670,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81001,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": 6156,
+      "net": 5457,
+      "deltaNetVsA": -699,
+      "deltaProfitVsA": -699,
+      "deltaNetVsH110": 6180,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": -1531,
+      "net": -3199,
+      "deltaNetVsA": -1668,
+      "deltaProfitVsA": -1665.7272727272725,
+      "deltaNetVsH110": 1782,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": -1531,
+      "net": -2281,
+      "deltaNetVsA": -750,
+      "deltaProfitVsA": -749,
+      "deltaNetVsH110": 2700,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": -1531,
+      "net": -1729,
+      "deltaNetVsA": -198,
+      "deltaProfitVsA": -198,
+      "deltaNetVsH110": 3252,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -1873,
+      "net": -3785,
+      "deltaNetVsA": -1912,
+      "deltaProfitVsA": -1905.25,
+      "deltaNetVsH110": 1196,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -1873,
+      "net": -2728,
+      "deltaNetVsA": -855,
+      "deltaProfitVsA": -852.25,
+      "deltaNetVsH110": 2253,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -1873,
+      "net": -2257.0000000000005,
+      "deltaNetVsA": -384.00000000000045,
+      "deltaProfitVsA": -382.60000000000036,
+      "deltaNetVsH110": 2723.9999999999995,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 546,
+      "net": -768.0000000000001,
+      "deltaNetVsA": -1314,
+      "deltaProfitVsA": -1311.6363636363637,
+      "deltaNetVsH110": 2090,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": true,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 546,
+      "net": 61.999999999999915,
+      "deltaNetVsA": -484.0000000000001,
+      "deltaProfitVsA": -482.909090909091,
+      "deltaNetVsH110": 2920,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 546,
+      "net": 317,
+      "deltaNetVsA": -229,
+      "deltaProfitVsA": -228.63636363636363,
+      "deltaNetVsH110": 3175,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -606,
+      "net": -4964,
+      "deltaNetVsA": -4358,
+      "deltaProfitVsA": -4347.866666666667,
+      "deltaNetVsH110": 25.99999999999909,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -606,
+      "net": -4794.999999999999,
+      "deltaNetVsA": -4188.999999999999,
+      "deltaProfitVsA": -4184.644444444443,
+      "deltaNetVsH110": 195,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -606,
+      "net": -4112,
+      "deltaNetVsA": -3506,
+      "deltaProfitVsA": -3503.7555555555555,
+      "deltaNetVsH110": 877.9999999999991,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 3249,
+      "net": 2908,
+      "deltaNetVsA": -341,
+      "deltaProfitVsA": -334.4545454545455,
+      "deltaNetVsH110": 845,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 3249,
+      "net": 3082,
+      "deltaNetVsA": -167,
+      "deltaProfitVsA": -164.22727272727252,
+      "deltaNetVsH110": 1019,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 3249,
+      "net": 3147,
+      "deltaNetVsA": -102,
+      "deltaProfitVsA": -100.59090909090901,
+      "deltaNetVsH110": 1084,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": 7339,
+      "net": 4491,
+      "deltaNetVsA": -2848,
+      "deltaProfitVsA": -2828.5777777777776,
+      "deltaNetVsH110": 4450.000000000001,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": 7339,
+      "net": 6038,
+      "deltaNetVsA": -1301,
+      "deltaProfitVsA": -1292.9078853046594,
+      "deltaNetVsH110": 5997.000000000001,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81002,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": 7339,
+      "net": 6663,
+      "deltaNetVsA": -676,
+      "deltaProfitVsA": -672.0682539682539,
+      "deltaNetVsH110": 6622.000000000001,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": -461,
+      "net": -2637.9999999999995,
+      "deltaNetVsA": -2176.9999999999995,
+      "deltaProfitVsA": -2173.863636363636,
+      "deltaNetVsH110": 2303.0000000000005,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": -461,
+      "net": -1489,
+      "deltaNetVsA": -1028,
+      "deltaProfitVsA": -1026.5,
+      "deltaNetVsH110": 3452,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": -461,
+      "net": -1217,
+      "deltaNetVsA": -756,
+      "deltaProfitVsA": -755,
+      "deltaNetVsH110": 3724,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -188,
+      "net": -3513,
+      "deltaNetVsA": -3325,
+      "deltaProfitVsA": -3317,
+      "deltaNetVsH110": 1484.000000000001,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -188,
+      "net": -1947,
+      "deltaNetVsA": -1759,
+      "deltaProfitVsA": -1755.695652173913,
+      "deltaNetVsH110": 3050.000000000001,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -188,
+      "net": -1023,
+      "deltaNetVsA": -835,
+      "deltaProfitVsA": -834,
+      "deltaNetVsH110": 3974.000000000001,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 373,
+      "net": -474.99999999999994,
+      "deltaNetVsA": -848,
+      "deltaProfitVsA": -837.7272727272727,
+      "deltaNetVsH110": 1488,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": true,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 373,
+      "net": -114.00000000000001,
+      "deltaNetVsA": -487,
+      "deltaProfitVsA": -478.8636363636364,
+      "deltaNetVsH110": 1849,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": true,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 373,
+      "net": 160,
+      "deltaNetVsA": -213,
+      "deltaProfitVsA": -209.36363636363637,
+      "deltaNetVsH110": 2123,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -1220,
+      "net": -4998.000000000001,
+      "deltaNetVsA": -3778.000000000001,
+      "deltaProfitVsA": -3739.833333333334,
+      "deltaNetVsH110": -4.0000000000009095,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -1220,
+      "net": -4904,
+      "deltaNetVsA": -3684,
+      "deltaProfitVsA": -3660.866666666667,
+      "deltaNetVsH110": 90,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -1220,
+      "net": -4405.999999999999,
+      "deltaNetVsA": -3185.999999999999,
+      "deltaProfitVsA": -3174.5666666666657,
+      "deltaNetVsH110": 588.0000000000009,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B1",
+      "baselineNet": 488,
+      "net": 26,
+      "deltaNetVsA": -462,
+      "deltaProfitVsA": -462,
+      "deltaNetVsH110": 1066.0000000000002,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B2",
+      "baselineNet": 488,
+      "net": 320,
+      "deltaNetVsA": -168,
+      "deltaProfitVsA": -168,
+      "deltaNetVsH110": 1360.0000000000002,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "model": "B3",
+      "baselineNet": 488,
+      "net": 396,
+      "deltaNetVsA": -92,
+      "deltaProfitVsA": -92,
+      "deltaNetVsH110": 1436.0000000000002,
+      "baselineAlreadyLosing": false,
+      "newlyUnprofitable": false,
+      "positivePreserved": true
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B1",
+      "baselineNet": -284,
+      "net": -2334,
+      "deltaNetVsA": -2050,
+      "deltaProfitVsA": -2050,
+      "deltaNetVsH110": 1254,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B2",
+      "baselineNet": -284,
+      "net": -1455.999999999999,
+      "deltaNetVsA": -1171.999999999999,
+      "deltaProfitVsA": -1171.999999999999,
+      "deltaNetVsH110": 2132.000000000001,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    },
+    {
+      "seed": 81003,
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "model": "B3",
+      "baselineNet": -284,
+      "net": -1001,
+      "deltaNetVsA": -717,
+      "deltaProfitVsA": -717,
+      "deltaNetVsH110": 2587,
+      "baselineAlreadyLosing": true,
+      "newlyUnprofitable": false,
+      "positivePreserved": false
+    }
+  ],
+  "groups": [
+    {
+      "model": "A",
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -360,
+      "netMedian": -461,
+      "profitRange": [
+        -1379,
+        -341
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -30.873417721518987,
+      "profitPerBarrel": -2.905027932960894,
+      "cashMedian": 4539,
+      "cashMinimum": 3469,
+      "negativeSales": 21,
+      "sold": 716,
+      "positive": 0
+    },
+    {
+      "model": "A",
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -435,
+      "netMedian": -544,
+      "profitRange": [
+        -1721,
+        -87
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -32.9746835443038,
+      "profitPerBarrel": -2.6513002364066196,
+      "cashMedian": 4456,
+      "cashMinimum": 3127,
+      "negativeSales": 25,
+      "sold": 846,
+      "positive": 0
+    },
+    {
+      "model": "A",
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": 656,
+      "netMedian": 546,
+      "profitRange": [
+        509,
+        1166
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": 5.93859649122807,
+      "profitPerBarrel": 3.9642857142857144,
+      "cashMedian": 5546,
+      "cashMinimum": 5373,
+      "negativeSales": 7,
+      "sold": 588,
+      "positive": 3
+    },
+    {
+      "model": "A",
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -496,
+      "netMedian": -606,
+      "profitRange": [
+        -1076,
+        -34
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -5.5964912280701755,
+      "profitPerBarrel": -0.8156424581005587,
+      "cashMedian": 4394,
+      "cashMinimum": 3780,
+      "negativeSales": 16,
+      "sold": 1969,
+      "positive": 0
+    },
+    {
+      "model": "A",
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 2662,
+      "netMedian": 2644,
+      "profitRange": [
+        506,
+        3481
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": 22.870967741935484,
+      "profitPerBarrel": 34.0974358974359,
+      "cashMedian": 7644,
+      "cashMinimum": 5488,
+      "negativeSales": 1,
+      "sold": 195,
+      "positive": 3
+    },
+    {
+      "model": "A",
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 6174,
+      "netMedian": 6156,
+      "profitRange": [
+        -266,
+        7571
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": 47.35125448028674,
+      "profitPerBarrel": 24.914972273567468,
+      "cashMedian": 11156,
+      "cashMinimum": 4716,
+      "negativeSales": 2,
+      "sold": 541,
+      "positive": 2
+    },
+    {
+      "model": "H110",
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -4830.454545454545,
+      "netMedian": -4976,
+      "profitRange": [
+        -4841,
+        -4821.636363636364
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -188.58227848101265,
+      "profitPerBarrel": -23.955522163786625,
+      "cashMedian": 24,
+      "cashMinimum": 19,
+      "negativeSales": 33,
+      "sold": 605,
+      "positive": 0
+    },
+    {
+      "model": "H110",
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -4861.075000000001,
+      "netMedian": -4997.000000000001,
+      "profitRange": [
+        -4926,
+        -4803.525
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -189.56962025316454,
+      "profitPerBarrel": -24.563299663299663,
+      "cashMedian": 3,
+      "cashMinimum": 2,
+      "negativeSales": 24,
+      "sold": 594,
+      "positive": 0
+    },
+    {
+      "model": "H110",
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -1802.2272727272727,
+      "netMedian": -1963,
+      "profitRange": [
+        -2742.4545454545455,
+        -1234
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -17.862573099415204,
+      "profitPerBarrel": -9.82769016697588,
+      "cashMedian": 3037,
+      "cashMinimum": 2142,
+      "negativeSales": 24,
+      "sold": 588,
+      "positive": 0
+    },
+    {
+      "model": "H110",
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -4850.533333333333,
+      "netMedian": -4989.999999999999,
+      "profitRange": [
+        -4922,
+        -4789.235294117647
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -43.74269005847953,
+      "profitPerBarrel": -20.28101480146376,
+      "cashMedian": 10,
+      "cashMinimum": 6,
+      "negativeSales": 18,
+      "sold": 718,
+      "positive": 0
+    },
+    {
+      "model": "H110",
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 1036,
+      "netMedian": 1018,
+      "profitRange": [
+        -1022.0000000000002,
+        2314.590909090909
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": 7.315412186379928,
+      "profitPerBarrel": 11.94149184149184,
+      "cashMedian": 6018,
+      "cashMinimum": 3960,
+      "negativeSales": 2,
+      "sold": 195,
+      "positive": 2
+    },
+    {
+      "model": "H110",
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": -705,
+      "netMedian": -723,
+      "profitRange": [
+        -3570,
+        330.0154373927953
+      ],
+      "deltaNetMedianVsA": null,
+      "netPerDay": -15.304659498207888,
+      "profitPerBarrel": -9.692836763162665,
+      "cashMedian": 4277,
+      "cashMinimum": 1412,
+      "negativeSales": 6,
+      "sold": 407,
+      "positive": 1
+    },
+    {
+      "model": "B1",
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -2584,
+      "netMedian": -2697,
+      "profitRange": [
+        -3044.7272727272725,
+        -2533.863636363636
+      ],
+      "deltaNetMedianVsA": -2176.9999999999995,
+      "netPerDay": -108.0253164556962,
+      "profitPerBarrel": -11.400266632808531,
+      "cashMedian": 2303,
+      "cashMinimum": 1801,
+      "negativeSales": 32,
+      "sold": 716,
+      "positive": 0
+    },
+    {
+      "model": "B1",
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -3404,
+      "netMedian": -3513,
+      "profitRange": [
+        -3626.25,
+        -3127
+      ],
+      "deltaNetMedianVsA": -2697,
+      "netPerDay": -133.40506329113924,
+      "profitPerBarrel": -12.006205673758865,
+      "cashMedian": 1487,
+      "cashMinimum": 1215,
+      "negativeSales": 34,
+      "sold": 846,
+      "positive": 0
+    },
+    {
+      "model": "B1",
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -328.7272727272727,
+      "netMedian": -474.99999999999994,
+      "profitRange": [
+        -655.6363636363637,
+        302
+      ],
+      "deltaNetMedianVsA": -864,
+      "netPerDay": -2.909356725146199,
+      "profitPerBarrel": -1.1604823747680892,
+      "cashMedian": 4525,
+      "cashMinimum": 4232,
+      "negativeSales": 17,
+      "sold": 588,
+      "positive": 1
+    },
+    {
+      "model": "B1",
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -4843.866666666667,
+      "netMedian": -4981,
+      "profitRange": [
+        -4927,
+        -4815.833333333334
+      ],
+      "deltaNetMedianVsA": -4358,
+      "netPerDay": -43.69298245614035,
+      "profitPerBarrel": -11.660031974420464,
+      "cashMedian": 19,
+      "cashMinimum": 2,
+      "negativeSales": 24,
+      "sold": 1251,
+      "positive": 0
+    },
+    {
+      "model": "B1",
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 2252.9999999999995,
+      "netMedian": 2234.9999999999995,
+      "profitRange": [
+        44,
+        3146.5454545454545
+      ],
+      "deltaNetMedianVsA": -409.00000000000045,
+      "netPerDay": 18.526881720430108,
+      "profitPerBarrel": 27.915617715617714,
+      "cashMedian": 7235,
+      "cashMinimum": 5026,
+      "negativeSales": 2,
+      "sold": 195,
+      "positive": 3
+    },
+    {
+      "model": "B1",
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 3305,
+      "netMedian": 3287,
+      "profitRange": [
+        -2316,
+        4742.422222222222
+      ],
+      "deltaNetMedianVsA": -2848,
+      "netPerDay": 19.512544802867385,
+      "profitPerBarrel": 11.304580319964936,
+      "cashMedian": 8287,
+      "cashMinimum": 2666,
+      "negativeSales": 2,
+      "sold": 507,
+      "positive": 2
+    },
+    {
+      "model": "B2",
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -1386.5,
+      "netMedian": -1489,
+      "profitRange": [
+        -2128,
+        -1230
+      ],
+      "deltaNetMedianVsA": -893,
+      "netPerDay": -64.68354430379746,
+      "profitPerBarrel": -6.626396648044692,
+      "cashMedian": 3511,
+      "cashMinimum": 2719,
+      "negativeSales": 27,
+      "sold": 716,
+      "positive": 0
+    },
+    {
+      "model": "B2",
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -1843,
+      "netMedian": -1955,
+      "profitRange": [
+        -2573.25,
+        -1842.695652173913
+      ],
+      "deltaNetMedianVsA": -1411,
+      "netPerDay": -83.92405063291139,
+      "profitPerBarrel": -7.398280912735122,
+      "cashMedian": 3045,
+      "cashMinimum": 2272,
+      "negativeSales": 31,
+      "sold": 846,
+      "positive": 0
+    },
+    {
+      "model": "B2",
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": 173.090909090909,
+      "netMedian": 61.999999999999915,
+      "profitRange": [
+        30.136363636363626,
+        839
+      ],
+      "deltaNetMedianVsA": -484.0000000000001,
+      "netPerDay": 2.143274853801169,
+      "profitPerBarrel": 1.7724953617810757,
+      "cashMedian": 5062,
+      "cashMinimum": 4886,
+      "negativeSales": 9,
+      "sold": 588,
+      "positive": 2
+    },
+    {
+      "model": "B2",
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -4680.644444444443,
+      "netMedian": -4794.999999999999,
+      "profitRange": [
+        -4736.866666666667,
+        -4373
+      ],
+      "deltaNetMedianVsA": -4188.999999999999,
+      "netPerDay": -41.30409356725146,
+      "profitPerBarrel": -8.189139614674055,
+      "cashMedian": 205,
+      "cashMinimum": 96,
+      "negativeSales": 24,
+      "sold": 1684,
+      "positive": 0
+    },
+    {
+      "model": "B2",
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 2511,
+      "netMedian": 2493,
+      "profitRange": [
+        338,
+        3316.7727272727275
+      ],
+      "deltaNetMedianVsA": -167,
+      "netPerDay": 21.129032258064516,
+      "profitPerBarrel": 31.619347319347323,
+      "cashMedian": 7493,
+      "cashMinimum": 5320,
+      "negativeSales": 2,
+      "sold": 195,
+      "positive": 3
+    },
+    {
+      "model": "B2",
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 4965,
+      "netMedian": 4947,
+      "profitRange": [
+        -1437.999999999999,
+        6278.092114695341
+      ],
+      "deltaNetMedianVsA": -1209,
+      "netPerDay": 34.15412186379928,
+      "profitPerBarrel": 18.535145774471342,
+      "cashMedian": 9947,
+      "cashMinimum": 3544,
+      "negativeSales": 2,
+      "sold": 529,
+      "positive": 2
+    },
+    {
+      "model": "B3",
+      "route": "luebeck-hamburg",
+      "policy": "small22",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -1115,
+      "netMedian": -1217,
+      "profitRange": [
+        -1577,
+        -854
+      ],
+      "deltaNetMedianVsA": -513,
+      "netPerDay": -49.44303797468354,
+      "profitPerBarrel": -4.9525139664804465,
+      "cashMedian": 3783,
+      "cashMinimum": 3271,
+      "negativeSales": 25,
+      "sold": 716,
+      "positive": 0
+    },
+    {
+      "model": "B3",
+      "route": "luebeck-hamburg",
+      "policy": "largeCashLimited90",
+      "days": [
+        29,
+        26,
+        24
+      ],
+      "trips": [
+        12,
+        12,
+        12
+      ],
+      "count": 3,
+      "profitMedian": -1087.0000000000005,
+      "netMedian": -1197.0000000000005,
+      "profitRange": [
+        -2103.6000000000004,
+        -921
+      ],
+      "deltaNetMedianVsA": -653.0000000000005,
+      "netPerDay": -56.670886075949376,
+      "profitPerBarrel": -4.860047281323878,
+      "cashMedian": 3803,
+      "cashMinimum": 2743,
+      "negativeSales": 29,
+      "sold": 846,
+      "positive": 0
+    },
+    {
+      "model": "B3",
+      "route": "bergen-luebeck",
+      "policy": "small22",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": 427.3636363636364,
+      "netMedian": 317,
+      "profitRange": [
+        299.6363636363636,
+        1115
+      ],
+      "deltaNetMedianVsA": -213,
+      "netPerDay": 4.497076023391813,
+      "profitPerBarrel": 3.13265306122449,
+      "cashMedian": 5317,
+      "cashMinimum": 5160,
+      "negativeSales": 8,
+      "sold": 588,
+      "positive": 3
+    },
+    {
+      "model": "B3",
+      "route": "bergen-luebeck",
+      "policy": "largeCashLimited90",
+      "days": [
+        115,
+        115,
+        112
+      ],
+      "trips": [
+        9,
+        9,
+        9
+      ],
+      "count": 3,
+      "profitMedian": -3999.7555555555555,
+      "netMedian": -4112,
+      "profitRange": [
+        -4250.566666666666,
+        -2885
+      ],
+      "deltaNetMedianVsA": -3185.999999999999,
+      "netPerDay": -33.5,
+      "profitPerBarrel": -5.894823833892123,
+      "cashMedian": 888,
+      "cashMinimum": 594,
+      "negativeSales": 21,
+      "sold": 1889,
+      "positive": 0
+    },
+    {
+      "model": "B3",
+      "route": "nowgorod-bruegge",
+      "policy": "small22",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 2601,
+      "netMedian": 2583,
+      "profitRange": [
+        414,
+        3380.409090909091
+      ],
+      "deltaNetMedianVsA": -92,
+      "netPerDay": 21.956989247311828,
+      "profitPerBarrel": 32.7969696969697,
+      "cashMedian": 7583,
+      "cashMinimum": 5396,
+      "negativeSales": 2,
+      "sold": 195,
+      "positive": 3
+    },
+    {
+      "model": "B3",
+      "route": "nowgorod-bruegge",
+      "policy": "largeCashLimited90",
+      "days": [
+        93,
+        93,
+        93
+      ],
+      "trips": [
+        3,
+        3,
+        3
+      ],
+      "count": 3,
+      "profitMedian": 5475,
+      "netMedian": 5457,
+      "profitRange": [
+        -983,
+        6898.931746031746
+      ],
+      "deltaNetMedianVsA": -699,
+      "netPerDay": 39.85304659498208,
+      "profitPerBarrel": 21.291461207535974,
+      "cashMedian": 10457,
+      "cashMinimum": 3999,
+      "negativeSales": 2,
+      "sold": 535,
+      "positive": 2
+    }
+  ],
+  "totals": [
+    {
+      "model": "A",
+      "count": 18,
+      "profit": 16530,
+      "net": 14665,
+      "fees": 864,
+      "pirateBookLoss": 1001,
+      "sold": 4855,
+      "days": 1400,
+      "trips": 144,
+      "positive": 8,
+      "smallPositive": 6,
+      "negativeSales": 72,
+      "emptyTrips": 0,
+      "goldConstrainedPurchases": 4,
+      "zeroPurchasesForGold": 0,
+      "failedExecutedPurchases": 0,
+      "departureBlocks": 0,
+      "endCantPayFee": 0,
+      "minCash": 3127,
+      "medianCash": 4912,
+      "maxCash": 12339,
+      "worthRange": [
+        7826.6,
+        17299
+      ],
+      "meanUnusedHold": 56.104166666666664,
+      "openGoods": 0,
+      "newlyUnprofitable": 0,
+      "baselineBad": 0
+    },
+    {
+      "model": "H110",
+      "count": 18,
+      "profit": -51040.53500824,
+      "net": -53172,
+      "fees": 864,
+      "pirateBookLoss": 1267.4649917599972,
+      "sold": 3107,
+      "days": 1400,
+      "trips": 144,
+      "positive": 3,
+      "smallPositive": 2,
+      "negativeSales": 107,
+      "emptyTrips": 22,
+      "goldConstrainedPurchases": 59,
+      "zeroPurchasesForGold": 22,
+      "failedExecutedPurchases": 0,
+      "departureBlocks": 0,
+      "endCantPayFee": 2,
+      "minCash": 2,
+      "medianCash": 1412,
+      "maxCash": 7063,
+      "worthRange": [
+        4550,
+        12023
+      ],
+      "meanUnusedHold": 68.25694444444444,
+      "openGoods": 0,
+      "newlyUnprofitable": 0,
+      "baselineBad": 0
+    },
+    {
+      "model": "B1",
+      "count": 18,
+      "profit": -22413.93686868687,
+      "net": -24398,
+      "fees": 864,
+      "pirateBookLoss": 1120.0631313131312,
+      "sold": 4103,
+      "days": 1400,
+      "trips": 144,
+      "positive": 6,
+      "smallPositive": 4,
+      "negativeSales": 111,
+      "emptyTrips": 1,
+      "goldConstrainedPurchases": 18,
+      "zeroPurchasesForGold": 1,
+      "failedExecutedPurchases": 0,
+      "departureBlocks": 1,
+      "endCantPayFee": 1,
+      "minCash": 2,
+      "medianCash": 2666,
+      "maxCash": 9491,
+      "worthRange": [
+        4545,
+        14451
+      ],
+      "meanUnusedHold": 61.326388888888886,
+      "openGoods": 0,
+      "newlyUnprofitable": 2,
+      "baselineBad": 10
+    },
+    {
+      "model": "B2",
+      "count": 18,
+      "profit": -7780.864648589682,
+      "net": -9709,
+      "fees": 864,
+      "pirateBookLoss": 1064.1353514103164,
+      "sold": 4558,
+      "days": 1400,
+      "trips": 144,
+      "positive": 7,
+      "smallPositive": 5,
+      "negativeSales": 95,
+      "emptyTrips": 0,
+      "goldConstrainedPurchases": 11,
+      "zeroPurchasesForGold": 0,
+      "failedExecutedPurchases": 0,
+      "departureBlocks": 0,
+      "endCantPayFee": 0,
+      "minCash": 96,
+      "medianCash": 3660,
+      "maxCash": 11038,
+      "worthRange": [
+        4752.7,
+        15998
+      ],
+      "meanUnusedHold": 58.166666666666664,
+      "openGoods": 0,
+      "newlyUnprofitable": 1,
+      "baselineBad": 10
+    },
+    {
+      "model": "B3",
+      "count": 18,
+      "profit": 835.4186147186156,
+      "net": -1057,
+      "fees": 864,
+      "pirateBookLoss": 1028.4186147186147,
+      "sold": 4769,
+      "days": 1400,
+      "trips": 144,
+      "positive": 8,
+      "smallPositive": 6,
+      "negativeSales": 87,
+      "emptyTrips": 0,
+      "goldConstrainedPurchases": 6,
+      "zeroPurchasesForGold": 0,
+      "failedExecutedPurchases": 0,
+      "departureBlocks": 0,
+      "endCantPayFee": 0,
+      "minCash": 594,
+      "medianCash": 4040,
+      "maxCash": 11663,
+      "worthRange": [
+        5336.999999999999,
+        16623
+      ],
+      "meanUnusedHold": 56.701388888888886,
+      "openGoods": 0,
+      "newlyUnprofitable": 0,
+      "baselineBad": 10
+    }
+  ],
+  "previewExamples": {
+    "B1": {
+      "synthetic": true,
+      "good": "Tuch",
+      "cityLabel": "Lübeck (synthetic market)",
+      "anchor": {
+        "price": 45,
+        "stock": 180
+      },
+      "quote": {
+        "total": 939,
+        "average": 46.95,
+        "quantity": 20,
+        "stockAfter": 160,
+        "first": 45,
+        "restGold": 4061
+      }
+    },
+    "B2": {
+      "synthetic": true,
+      "good": "Tuch",
+      "cityLabel": "Lübeck (synthetic market)",
+      "anchor": {
+        "price": 45,
+        "stock": 180
+      },
+      "quote": {
+        "total": 920,
+        "average": 46,
+        "quantity": 20,
+        "stockAfter": 160,
+        "first": 45,
+        "restGold": 4080
+      }
+    },
+    "B3": {
+      "synthetic": true,
+      "good": "Tuch",
+      "cityLabel": "Lübeck (synthetic market)",
+      "anchor": {
+        "price": 45,
+        "stock": 180
+      },
+      "quote": {
+        "total": 911,
+        "average": 45.55,
+        "quantity": 20,
+        "stockAfter": 160,
+        "first": 45,
+        "restGold": 4089
+      }
+    }
+  }
+}

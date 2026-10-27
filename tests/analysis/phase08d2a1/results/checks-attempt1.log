@@ -1,0 +1,73 @@
+PASS B1 production HTML and all existing tracked files untouched; exact VM substitutions recorded
+PASS B1 integer totals split neutral for 90, 9x10 and 90x1 buys including reload/views
+PASS B1 sale 90, 9x10, 90x1 and both round-trip directions have exactly equal gold
+PASS B1 mathematical path additivity monotone edges floor ceiling and exact half-up rounding
+PASS B1 stock zero one three, fractional or insufficient gold, capacity and partial load bounded
+PASS B1 no trade part may exceed money, stock or ship space even when all limits coincide
+PASS B1 own ships and warehouse movement share market path and preserve origins and costs
+PASS B1 existing mixed lots and unknown purchase cost preserve accounting semantics
+PASS B1 same game seed, clocks, rules and random state repeat; quotes consume zero RNG
+PASS B1 with no trading all daily markets risks letters politics rates and next random are identical
+PASS B1 existing V13 data stay V13; prototype sidecar reload retains anchor without a game migration
+PASS B1 capital constrained entry F2 remains a distinct static probe, not proof of rescue
+PASS B1 sale splits across reloads and repeated views retain the same market anchor
+PASS B1 same-day gold neutrality does not erase old book-wealth and reputation wash-trade risk
+PASS B1 all nine quantities for low middle high goods respect actual ship caps and availability
+PASS B1 twelve bounded hull probes keep current types capacity speed fee and partial loads
+PASS B1 current hulls full partial luxury mixed and incremental cargo have bounded costed roles
+PASS B1 5000 and low gold budgets preserve genuine affordability and current ship capacities
+PASS B1 single known loss followed by a small favorable mass-good deal permits local recovery without gifts
+PASS B1 new special injection and expiry update anchors without extra random draws or rewriting receipts
+PASS B1 already saved special and year crossing preserve original market and information state
+PASS B1 paid B and C snapshots remain immutable after quantity trade special changes travel and reload
+PASS B1 rounded reanchoring alone can change the price path: record actual one-day counterexample
+PASS B1 split profitable old inventory sales can change reputation while sale gold is split neutral
+PASS B2 production HTML and all existing tracked files untouched; exact VM substitutions recorded
+PASS B2 integer totals split neutral for 90, 9x10 and 90x1 buys including reload/views
+PASS B2 sale 90, 9x10, 90x1 and both round-trip directions have exactly equal gold
+PASS B2 mathematical path additivity monotone edges floor ceiling and exact half-up rounding
+PASS B2 stock zero one three, fractional or insufficient gold, capacity and partial load bounded
+PASS B2 no trade part may exceed money, stock or ship space even when all limits coincide
+PASS B2 own ships and warehouse movement share market path and preserve origins and costs
+PASS B2 existing mixed lots and unknown purchase cost preserve accounting semantics
+PASS B2 same game seed, clocks, rules and random state repeat; quotes consume zero RNG
+PASS B2 with no trading all daily markets risks letters politics rates and next random are identical
+PASS B2 existing V13 data stay V13; prototype sidecar reload retains anchor without a game migration
+PASS B2 capital constrained entry F2 remains a distinct static probe, not proof of rescue
+PASS B2 sale splits across reloads and repeated views retain the same market anchor
+PASS B2 same-day gold neutrality does not erase old book-wealth and reputation wash-trade risk
+PASS B2 all nine quantities for low middle high goods respect actual ship caps and availability
+PASS B2 twelve bounded hull probes keep current types capacity speed fee and partial loads
+PASS B2 current hulls full partial luxury mixed and incremental cargo have bounded costed roles
+PASS B2 5000 and low gold budgets preserve genuine affordability and current ship capacities
+PASS B2 single known loss followed by a small favorable mass-good deal permits local recovery without gifts
+PASS B2 new special injection and expiry update anchors without extra random draws or rewriting receipts
+PASS B2 already saved special and year crossing preserve original market and information state
+PASS B2 paid B and C snapshots remain immutable after quantity trade special changes travel and reload
+PASS B2 rounded reanchoring alone can change the price path: record actual one-day counterexample
+PASS B2 split profitable old inventory sales can change reputation while sale gold is split neutral
+PASS B3 production HTML and all existing tracked files untouched; exact VM substitutions recorded
+PASS B3 integer totals split neutral for 90, 9x10 and 90x1 buys including reload/views
+PASS B3 sale 90, 9x10, 90x1 and both round-trip directions have exactly equal gold
+PASS B3 mathematical path additivity monotone edges floor ceiling and exact half-up rounding
+PASS B3 stock zero one three, fractional or insufficient gold, capacity and partial load bounded
+PASS B3 no trade part may exceed money, stock or ship space even when all limits coincide
+PASS B3 own ships and warehouse movement share market path and preserve origins and costs
+PASS B3 existing mixed lots and unknown purchase cost preserve accounting semantics
+PASS B3 same game seed, clocks, rules and random state repeat; quotes consume zero RNG
+PASS B3 with no trading all daily markets risks letters politics rates and next random are identical
+PASS B3 existing V13 data stay V13; prototype sidecar reload retains anchor without a game migration
+PASS B3 capital constrained entry F2 remains a distinct static probe, not proof of rescue
+PASS B3 sale splits across reloads and repeated views retain the same market anchor
+PASS B3 same-day gold neutrality does not erase old book-wealth and reputation wash-trade risk
+PASS B3 all nine quantities for low middle high goods respect actual ship caps and availability
+PASS B3 twelve bounded hull probes keep current types capacity speed fee and partial loads
+PASS B3 current hulls full partial luxury mixed and incremental cargo have bounded costed roles
+PASS B3 5000 and low gold budgets preserve genuine affordability and current ship capacities
+PASS B3 single known loss followed by a small favorable mass-good deal permits local recovery without gifts
+PASS B3 new special injection and expiry update anchors without extra random draws or rewriting receipts
+PASS B3 already saved special and year crossing preserve original market and information state
+PASS B3 paid B and C snapshots remain immutable after quantity trade special changes travel and reload
+PASS B3 rounded reanchoring alone can change the price path: record actual one-day counterexample
+PASS B3 split profitable old inventory sales can change reputation while sale gold is split neutral
+72 focused groups passed; 0 route comparison arms in this script
