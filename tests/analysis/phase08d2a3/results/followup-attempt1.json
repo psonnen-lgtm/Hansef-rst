@@ -1,0 +1,3699 @@
+{
+  "testedCommit": "4439d901a5e5dbddac867594c4b700e09983ac26",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "politicalCoreUnchanged": true,
+  "findings": [
+    {
+      "name": "minimal mathematical buy/sell counterexample explains the first actual VM failure",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": false,
+      "FAILED_ACCEPTANCE": "holder FIFO shadow costs sell historical cheap units after purchase; restored physical quantity and gold still leave inflated political inventory",
+      "kind": "mathematical",
+      "before": 100720,
+      "after": 102776,
+      "gold": 100000,
+      "newRep": 2,
+      "delta": 2056
+    },
+    {
+      "name": "two-good exact loss/wash arithmetic explains preservation of the documented lower value",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "kind": "mathematical",
+      "before": 46410,
+      "afterLoss": 44610,
+      "afterWash": 44610
+    },
+    {
+      "name": "corrected supply fixture uses native cargo records and rewards exactly one valid delivery",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "requirements": [
+        19,
+        24,
+        25
+      ],
+      "path": {
+        "name": "supply-fixed-only",
+        "decisions": 4,
+        "trips": 0,
+        "days": 0
+      },
+      "initial": {
+        "game": {
+          "analysisOnly": true,
+          "model": "precise",
+          "parameter": 500,
+          "basisSchema": 1,
+          "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+          "game": {
+            "v": 13,
+            "information": {
+              "version": 2,
+              "archive": null,
+              "reports": [],
+              "filed": [],
+              "letters": {
+                "version": 1,
+                "since": 486001,
+                "index": 0,
+                "lastDay": 486001,
+                "nextDay": 486011,
+                "offer": null,
+                "receipts": [],
+                "filed": [],
+                "archiveFirstReceipt": null
+              }
+            },
+            "politics": {
+              "version": 1,
+              "since": 486001,
+              "rules": {
+                "sectionDays": 60,
+                "mayorWealth": 45000
+              },
+              "legacyRank": 0,
+              "records": [],
+              "issued": [
+                {
+                  "supply": 0,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                }
+              ],
+              "jobs": [
+                {
+                  "id": "supply:0:0",
+                  "city": 0,
+                  "kind": "supply",
+                  "period": 0,
+                  "started": 486001,
+                  "until": 486181,
+                  "partner": -1,
+                  "good": 4,
+                  "n": 6,
+                  "witnessed": false
+                }
+              ],
+              "office": null,
+              "terms": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "appointments": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "nextElection": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "endorsements": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "league": null,
+              "leagueIssued": [
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "elderman": null
+            },
+            "shipyard": {
+              "version": 1,
+              "nextId": 1,
+              "lastShipId": 0,
+              "orders": []
+            },
+            "economy": {
+              "version": 1,
+              "reports": []
+            },
+            "storage": {
+              "version": 2,
+              "since": 486001,
+              "rentals": [
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                }
+              ]
+            },
+            "player": "Ulf",
+            "name": "Mengenprobe",
+            "day": 1,
+            "year": 1350,
+            "city": 0,
+            "gold": 5000,
+            "rep": 0,
+            "rank": 0,
+            "ships": [
+              {
+                "id": 1,
+                "name": "Holk",
+                "type": 2,
+                "city": 0,
+                "capacity": 140,
+                "speed": 0.72,
+                "condition": 100,
+                "arms": 0,
+                "cargo": {
+                  "4": 6
+                },
+                "costs": {
+                  "4": 8
+                },
+                "origins": {
+                  "4": [
+                    {
+                      "city": 1,
+                      "n": 6
+                    }
+                  ]
+                },
+                "bookCosts": {
+                  "4": 8
+                }
+              },
+              {
+                "id": 2,
+                "name": "Schnigge",
+                "type": 0,
+                "city": 0,
+                "capacity": 55,
+                "speed": 1.5,
+                "condition": 100,
+                "arms": 0,
+                "cargo": {
+                  "4": 6
+                },
+                "costs": {
+                  "4": 8
+                },
+                "origins": {
+                  "4": [
+                    {
+                      "city": 0,
+                      "n": 6
+                    }
+                  ]
+                },
+                "bookCosts": {
+                  "4": 8
+                }
+              }
+            ],
+            "active": 0,
+            "bank": 0,
+            "debt": 0,
+            "markets": [
+              [
+                {
+                  "price": 13,
+                  "stock": 90
+                },
+                {
+                  "price": 29,
+                  "stock": 96
+                },
+                {
+                  "price": 18,
+                  "stock": 91
+                },
+                {
+                  "price": 32,
+                  "stock": 102
+                },
+                {
+                  "price": 28,
+                  "stock": 115
+                },
+                {
+                  "price": 55,
+                  "stock": 90
+                },
+                {
+                  "price": 91,
+                  "stock": 79
+                },
+                {
+                  "price": 40,
+                  "stock": 69
+                },
+                {
+                  "price": 34,
+                  "stock": 60
+                },
+                {
+                  "price": 89,
+                  "stock": 77
+                },
+                {
+                  "price": 85,
+                  "stock": 14
+                }
+              ],
+              [
+                {
+                  "price": 16,
+                  "stock": 59
+                },
+                {
+                  "price": 18,
+                  "stock": 57
+                },
+                {
+                  "price": 14,
+                  "stock": 53
+                },
+                {
+                  "price": 27,
+                  "stock": 104
+                },
+                {
+                  "price": 22,
+                  "stock": 77
+                },
+                {
+                  "price": 59,
+                  "stock": 119
+                },
+                {
+                  "price": 73,
+                  "stock": 64
+                },
+                {
+                  "price": 41,
+                  "stock": 38
+                },
+                {
+                  "price": 20,
+                  "stock": 39
+                },
+                {
+                  "price": 67,
+                  "stock": 52
+                },
+                {
+                  "price": 129,
+                  "stock": 10
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 93
+                },
+                {
+                  "price": 31,
+                  "stock": 38
+                },
+                {
+                  "price": 23,
+                  "stock": 96
+                },
+                {
+                  "price": 22,
+                  "stock": 67
+                },
+                {
+                  "price": 27,
+                  "stock": 38
+                },
+                {
+                  "price": 52,
+                  "stock": 38
+                },
+                {
+                  "price": 96,
+                  "stock": 58
+                },
+                {
+                  "price": 31,
+                  "stock": 71
+                },
+                {
+                  "price": 33,
+                  "stock": 64
+                },
+                {
+                  "price": 66,
+                  "stock": 70
+                },
+                {
+                  "price": 131,
+                  "stock": 13
+                }
+              ],
+              [
+                {
+                  "price": 21,
+                  "stock": 87
+                },
+                {
+                  "price": 20,
+                  "stock": 119
+                },
+                {
+                  "price": 19,
+                  "stock": 117
+                },
+                {
+                  "price": 27,
+                  "stock": 91
+                },
+                {
+                  "price": 19,
+                  "stock": 127
+                },
+                {
+                  "price": 60,
+                  "stock": 83
+                },
+                {
+                  "price": 103,
+                  "stock": 38
+                },
+                {
+                  "price": 24,
+                  "stock": 91
+                },
+                {
+                  "price": 26,
+                  "stock": 84
+                },
+                {
+                  "price": 81,
+                  "stock": 57
+                },
+                {
+                  "price": 105,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 16,
+                  "stock": 53
+                },
+                {
+                  "price": 18,
+                  "stock": 59
+                },
+                {
+                  "price": 20,
+                  "stock": 71
+                },
+                {
+                  "price": 32,
+                  "stock": 47
+                },
+                {
+                  "price": 18,
+                  "stock": 129
+                },
+                {
+                  "price": 49,
+                  "stock": 102
+                },
+                {
+                  "price": 76,
+                  "stock": 50
+                },
+                {
+                  "price": 26,
+                  "stock": 109
+                },
+                {
+                  "price": 36,
+                  "stock": 90
+                },
+                {
+                  "price": 83,
+                  "stock": 54
+                },
+                {
+                  "price": 123,
+                  "stock": 23
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 125
+                },
+                {
+                  "price": 29,
+                  "stock": 85
+                },
+                {
+                  "price": 23,
+                  "stock": 93
+                },
+                {
+                  "price": 37,
+                  "stock": 39
+                },
+                {
+                  "price": 26,
+                  "stock": 62
+                },
+                {
+                  "price": 51,
+                  "stock": 53
+                },
+                {
+                  "price": 86,
+                  "stock": 38
+                },
+                {
+                  "price": 37,
+                  "stock": 113
+                },
+                {
+                  "price": 31,
+                  "stock": 115
+                },
+                {
+                  "price": 71,
+                  "stock": 35
+                },
+                {
+                  "price": 118,
+                  "stock": 23
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 55
+                },
+                {
+                  "price": 26,
+                  "stock": 35
+                },
+                {
+                  "price": 23,
+                  "stock": 62
+                },
+                {
+                  "price": 36,
+                  "stock": 37
+                },
+                {
+                  "price": 20,
+                  "stock": 123
+                },
+                {
+                  "price": 44,
+                  "stock": 46
+                },
+                {
+                  "price": 105,
+                  "stock": 39
+                },
+                {
+                  "price": 23,
+                  "stock": 40
+                },
+                {
+                  "price": 21,
+                  "stock": 73
+                },
+                {
+                  "price": 61,
+                  "stock": 52
+                },
+                {
+                  "price": 128,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 46
+                },
+                {
+                  "price": 30,
+                  "stock": 76
+                },
+                {
+                  "price": 17,
+                  "stock": 60
+                },
+                {
+                  "price": 25,
+                  "stock": 60
+                },
+                {
+                  "price": 25,
+                  "stock": 65
+                },
+                {
+                  "price": 69,
+                  "stock": 59
+                },
+                {
+                  "price": 81,
+                  "stock": 74
+                },
+                {
+                  "price": 23,
+                  "stock": 80
+                },
+                {
+                  "price": 28,
+                  "stock": 41
+                },
+                {
+                  "price": 68,
+                  "stock": 70
+                },
+                {
+                  "price": 130,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 12,
+                  "stock": 63
+                },
+                {
+                  "price": 24,
+                  "stock": 59
+                },
+                {
+                  "price": 14,
+                  "stock": 34
+                },
+                {
+                  "price": 28,
+                  "stock": 62
+                },
+                {
+                  "price": 22,
+                  "stock": 56
+                },
+                {
+                  "price": 70,
+                  "stock": 115
+                },
+                {
+                  "price": 102,
+                  "stock": 47
+                },
+                {
+                  "price": 33,
+                  "stock": 64
+                },
+                {
+                  "price": 34,
+                  "stock": 43
+                },
+                {
+                  "price": 70,
+                  "stock": 102
+                },
+                {
+                  "price": 139,
+                  "stock": 16
+                }
+              ],
+              [
+                {
+                  "price": 20,
+                  "stock": 67
+                },
+                {
+                  "price": 24,
+                  "stock": 34
+                },
+                {
+                  "price": 18,
+                  "stock": 80
+                },
+                {
+                  "price": 38,
+                  "stock": 40
+                },
+                {
+                  "price": 28,
+                  "stock": 86
+                },
+                {
+                  "price": 72,
+                  "stock": 65
+                },
+                {
+                  "price": 82,
+                  "stock": 53
+                },
+                {
+                  "price": 30,
+                  "stock": 104
+                },
+                {
+                  "price": 25,
+                  "stock": 92
+                },
+                {
+                  "price": 70,
+                  "stock": 65
+                },
+                {
+                  "price": 123,
+                  "stock": 67
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 83
+                },
+                {
+                  "price": 31,
+                  "stock": 60
+                },
+                {
+                  "price": 22,
+                  "stock": 84
+                },
+                {
+                  "price": 36,
+                  "stock": 41
+                },
+                {
+                  "price": 28,
+                  "stock": 63
+                },
+                {
+                  "price": 46,
+                  "stock": 59
+                },
+                {
+                  "price": 61,
+                  "stock": 76
+                },
+                {
+                  "price": 28,
+                  "stock": 43
+                },
+                {
+                  "price": 31,
+                  "stock": 58
+                },
+                {
+                  "price": 81,
+                  "stock": 58
+                },
+                {
+                  "price": 109,
+                  "stock": 13
+                }
+              ]
+            ],
+            "journal": {
+              "0": {
+                "day": 1,
+                "year": 1350,
+                "prices": [
+                  13,
+                  29,
+                  18,
+                  32,
+                  28,
+                  55,
+                  91,
+                  40,
+                  34,
+                  89,
+                  85
+                ]
+              }
+            },
+            "messages": [
+              "Tag 1: Versiegelten Versorgungsbrief in Lübeck angenommen.",
+              "Willkommen in Lübeck! Die Hanse erwartet einen neuen Kaufmann."
+            ],
+            "rumors": [],
+            "quests": [
+              {
+                "city": 0,
+                "j": 4,
+                "n": 6,
+                "reward": 100,
+                "until": 486006
+              }
+            ],
+            "completed": 0,
+            "birthdaySeen": {},
+            "flags": {},
+            "visits": 1,
+            "warehouses": {
+              "0": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "1": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "2": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "3": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "4": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "5": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "6": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "7": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "8": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "9": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "10": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              }
+            },
+            "beginning": {
+              "version": 1,
+              "city": 0,
+              "merchant": "Ulf"
+            }
+          },
+          "anchors": [
+            [
+              {
+                "n": "3355300",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7517264",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4649058",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8332928",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7370300",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "14195500",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "23317931",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "10190440",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8622400",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "22777681",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "21266660",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4055696",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4558482",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "3539326",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7042032",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5630438",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15585499",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18549008",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "10309204",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5030420",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "16931168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32262900",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4914331",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7794764",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5961968",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5598758",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6788988",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "13075088",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "24322944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7906271",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8385168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "16823400",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32772139",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5408949",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5283220",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5010091",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6973587",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5056451",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15413340",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "25898732",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6198744",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6683456",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20513169",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "26273625",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4044944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4562658",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5100820",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8070688",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4799538",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "12759796",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "19190000",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6808906",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9291600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20992028",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "30815067",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5046875",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7459525",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5948927",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9306277",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6599944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "12893259",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "21624184",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9722453",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8159975",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17836975",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "29562422",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4807475",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6531850",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5838412",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9049284",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5302580",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "11093104",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "26409705",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5786800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5361909",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15414944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32028800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4790204",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7673280",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4311200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6340000",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6355625",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17490189",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20693556",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5897200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7047068",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17333200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32529250",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "3047628",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6083544",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "3516184",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7107632",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5568992",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18425750",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "25725318",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8385168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8562866",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18228280",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "34785584",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5089780",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6027744",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4615200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9560800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7207088",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18304200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20730338",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7824480",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6461600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17795750",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "31302147",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4880891",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7861600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5655232",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9060516",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7111132",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "11660126",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15602336",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7051772",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7854284",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20522484",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "27268421",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ]
+          ],
+          "rng": {
+            "state": 2688942072,
+            "draws": 243
+          },
+          "clock": 1700000000001
+        },
+        "political": {
+          "version": 1,
+          "gameHash": "2c4f9597a0d75733f565f6f8659f077bf8eb8c39258ff9d54cf2446fa687c81e",
+          "priceHash": "3c3818d2864380adf18ba197275e455f1dc5917636215585ebb5f85592407d52",
+          "ledger": {
+            "version": 1,
+            "seq": 0,
+            "holdings": {
+              "s:1:4": [
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                }
+              ],
+              "s:2:4": [
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                }
+              ]
+            },
+            "tickets": {},
+            "campaigns": {
+              "legacy:4:8:true": {
+                "margin": {
+                  "n": "0",
+                  "d": "1"
+                }
+              }
+            },
+            "awarded": 0
+          }
+        }
+      },
+      "final": {
+        "game": {
+          "analysisOnly": true,
+          "model": "precise",
+          "parameter": 500,
+          "basisSchema": 1,
+          "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+          "game": {
+            "v": 13,
+            "information": {
+              "version": 2,
+              "archive": null,
+              "reports": [],
+              "filed": [],
+              "letters": {
+                "version": 1,
+                "since": 486001,
+                "index": 0,
+                "lastDay": 486001,
+                "nextDay": 486011,
+                "offer": null,
+                "receipts": [],
+                "filed": [],
+                "archiveFirstReceipt": null
+              }
+            },
+            "politics": {
+              "version": 1,
+              "since": 486001,
+              "rules": {
+                "sectionDays": 60,
+                "mayorWealth": 45000
+              },
+              "legacyRank": 0,
+              "records": [
+                {
+                  "id": "supply:0:0",
+                  "city": 0,
+                  "kind": "supply",
+                  "period": 0,
+                  "day": 486001,
+                  "partner": -1,
+                  "good": 4,
+                  "n": 6,
+                  "witnesses": []
+                }
+              ],
+              "issued": [
+                {
+                  "supply": 0,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                },
+                {
+                  "supply": -1,
+                  "accord": -1
+                }
+              ],
+              "jobs": [],
+              "office": null,
+              "terms": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "appointments": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "nextElection": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              "endorsements": [
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null,
+                null
+              ],
+              "league": null,
+              "leagueIssued": [
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1,
+                -1
+              ],
+              "elderman": null
+            },
+            "shipyard": {
+              "version": 1,
+              "nextId": 1,
+              "lastShipId": 0,
+              "orders": []
+            },
+            "economy": {
+              "version": 1,
+              "reports": []
+            },
+            "storage": {
+              "version": 2,
+              "since": 486001,
+              "rentals": [
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                },
+                {
+                  "blocks": 0,
+                  "until": 0,
+                  "arrears": 0
+                }
+              ]
+            },
+            "player": "Ulf",
+            "name": "Mengenprobe",
+            "day": 1,
+            "year": 1350,
+            "city": 0,
+            "gold": 5436,
+            "rep": 4,
+            "rank": 0,
+            "ships": [
+              {
+                "id": 1,
+                "name": "Holk",
+                "type": 2,
+                "city": 0,
+                "capacity": 140,
+                "speed": 0.72,
+                "condition": 100,
+                "arms": 0,
+                "cargo": {},
+                "costs": {},
+                "origins": {},
+                "bookCosts": {}
+              },
+              {
+                "id": 2,
+                "name": "Schnigge",
+                "type": 0,
+                "city": 0,
+                "capacity": 55,
+                "speed": 1.5,
+                "condition": 100,
+                "arms": 0,
+                "cargo": {},
+                "costs": {},
+                "origins": {},
+                "bookCosts": {}
+              }
+            ],
+            "active": 0,
+            "bank": 0,
+            "debt": 0,
+            "markets": [
+              [
+                {
+                  "price": 13,
+                  "stock": 90
+                },
+                {
+                  "price": 29,
+                  "stock": 96
+                },
+                {
+                  "price": 18,
+                  "stock": 91
+                },
+                {
+                  "price": 32,
+                  "stock": 102
+                },
+                {
+                  "price": 28,
+                  "stock": 127
+                },
+                {
+                  "price": 55,
+                  "stock": 90
+                },
+                {
+                  "price": 91,
+                  "stock": 79
+                },
+                {
+                  "price": 40,
+                  "stock": 69
+                },
+                {
+                  "price": 34,
+                  "stock": 60
+                },
+                {
+                  "price": 89,
+                  "stock": 77
+                },
+                {
+                  "price": 85,
+                  "stock": 14
+                }
+              ],
+              [
+                {
+                  "price": 16,
+                  "stock": 59
+                },
+                {
+                  "price": 18,
+                  "stock": 57
+                },
+                {
+                  "price": 14,
+                  "stock": 53
+                },
+                {
+                  "price": 27,
+                  "stock": 104
+                },
+                {
+                  "price": 22,
+                  "stock": 77
+                },
+                {
+                  "price": 59,
+                  "stock": 119
+                },
+                {
+                  "price": 73,
+                  "stock": 64
+                },
+                {
+                  "price": 41,
+                  "stock": 38
+                },
+                {
+                  "price": 20,
+                  "stock": 39
+                },
+                {
+                  "price": 67,
+                  "stock": 52
+                },
+                {
+                  "price": 129,
+                  "stock": 10
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 93
+                },
+                {
+                  "price": 31,
+                  "stock": 38
+                },
+                {
+                  "price": 23,
+                  "stock": 96
+                },
+                {
+                  "price": 22,
+                  "stock": 67
+                },
+                {
+                  "price": 27,
+                  "stock": 38
+                },
+                {
+                  "price": 52,
+                  "stock": 38
+                },
+                {
+                  "price": 96,
+                  "stock": 58
+                },
+                {
+                  "price": 31,
+                  "stock": 71
+                },
+                {
+                  "price": 33,
+                  "stock": 64
+                },
+                {
+                  "price": 66,
+                  "stock": 70
+                },
+                {
+                  "price": 131,
+                  "stock": 13
+                }
+              ],
+              [
+                {
+                  "price": 21,
+                  "stock": 87
+                },
+                {
+                  "price": 20,
+                  "stock": 119
+                },
+                {
+                  "price": 19,
+                  "stock": 117
+                },
+                {
+                  "price": 27,
+                  "stock": 91
+                },
+                {
+                  "price": 19,
+                  "stock": 127
+                },
+                {
+                  "price": 60,
+                  "stock": 83
+                },
+                {
+                  "price": 103,
+                  "stock": 38
+                },
+                {
+                  "price": 24,
+                  "stock": 91
+                },
+                {
+                  "price": 26,
+                  "stock": 84
+                },
+                {
+                  "price": 81,
+                  "stock": 57
+                },
+                {
+                  "price": 105,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 16,
+                  "stock": 53
+                },
+                {
+                  "price": 18,
+                  "stock": 59
+                },
+                {
+                  "price": 20,
+                  "stock": 71
+                },
+                {
+                  "price": 32,
+                  "stock": 47
+                },
+                {
+                  "price": 18,
+                  "stock": 129
+                },
+                {
+                  "price": 49,
+                  "stock": 102
+                },
+                {
+                  "price": 76,
+                  "stock": 50
+                },
+                {
+                  "price": 26,
+                  "stock": 109
+                },
+                {
+                  "price": 36,
+                  "stock": 90
+                },
+                {
+                  "price": 83,
+                  "stock": 54
+                },
+                {
+                  "price": 123,
+                  "stock": 23
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 125
+                },
+                {
+                  "price": 29,
+                  "stock": 85
+                },
+                {
+                  "price": 23,
+                  "stock": 93
+                },
+                {
+                  "price": 37,
+                  "stock": 39
+                },
+                {
+                  "price": 26,
+                  "stock": 62
+                },
+                {
+                  "price": 51,
+                  "stock": 53
+                },
+                {
+                  "price": 86,
+                  "stock": 38
+                },
+                {
+                  "price": 37,
+                  "stock": 113
+                },
+                {
+                  "price": 31,
+                  "stock": 115
+                },
+                {
+                  "price": 71,
+                  "stock": 35
+                },
+                {
+                  "price": 118,
+                  "stock": 23
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 55
+                },
+                {
+                  "price": 26,
+                  "stock": 35
+                },
+                {
+                  "price": 23,
+                  "stock": 62
+                },
+                {
+                  "price": 36,
+                  "stock": 37
+                },
+                {
+                  "price": 20,
+                  "stock": 123
+                },
+                {
+                  "price": 44,
+                  "stock": 46
+                },
+                {
+                  "price": 105,
+                  "stock": 39
+                },
+                {
+                  "price": 23,
+                  "stock": 40
+                },
+                {
+                  "price": 21,
+                  "stock": 73
+                },
+                {
+                  "price": 61,
+                  "stock": 52
+                },
+                {
+                  "price": 128,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 46
+                },
+                {
+                  "price": 30,
+                  "stock": 76
+                },
+                {
+                  "price": 17,
+                  "stock": 60
+                },
+                {
+                  "price": 25,
+                  "stock": 60
+                },
+                {
+                  "price": 25,
+                  "stock": 65
+                },
+                {
+                  "price": 69,
+                  "stock": 59
+                },
+                {
+                  "price": 81,
+                  "stock": 74
+                },
+                {
+                  "price": 23,
+                  "stock": 80
+                },
+                {
+                  "price": 28,
+                  "stock": 41
+                },
+                {
+                  "price": 68,
+                  "stock": 70
+                },
+                {
+                  "price": 130,
+                  "stock": 15
+                }
+              ],
+              [
+                {
+                  "price": 12,
+                  "stock": 63
+                },
+                {
+                  "price": 24,
+                  "stock": 59
+                },
+                {
+                  "price": 14,
+                  "stock": 34
+                },
+                {
+                  "price": 28,
+                  "stock": 62
+                },
+                {
+                  "price": 22,
+                  "stock": 56
+                },
+                {
+                  "price": 70,
+                  "stock": 115
+                },
+                {
+                  "price": 102,
+                  "stock": 47
+                },
+                {
+                  "price": 33,
+                  "stock": 64
+                },
+                {
+                  "price": 34,
+                  "stock": 43
+                },
+                {
+                  "price": 70,
+                  "stock": 102
+                },
+                {
+                  "price": 139,
+                  "stock": 16
+                }
+              ],
+              [
+                {
+                  "price": 20,
+                  "stock": 67
+                },
+                {
+                  "price": 24,
+                  "stock": 34
+                },
+                {
+                  "price": 18,
+                  "stock": 80
+                },
+                {
+                  "price": 38,
+                  "stock": 40
+                },
+                {
+                  "price": 28,
+                  "stock": 86
+                },
+                {
+                  "price": 72,
+                  "stock": 65
+                },
+                {
+                  "price": 82,
+                  "stock": 53
+                },
+                {
+                  "price": 30,
+                  "stock": 104
+                },
+                {
+                  "price": 25,
+                  "stock": 92
+                },
+                {
+                  "price": 70,
+                  "stock": 65
+                },
+                {
+                  "price": 123,
+                  "stock": 67
+                }
+              ],
+              [
+                {
+                  "price": 19,
+                  "stock": 83
+                },
+                {
+                  "price": 31,
+                  "stock": 60
+                },
+                {
+                  "price": 22,
+                  "stock": 84
+                },
+                {
+                  "price": 36,
+                  "stock": 41
+                },
+                {
+                  "price": 28,
+                  "stock": 63
+                },
+                {
+                  "price": 46,
+                  "stock": 59
+                },
+                {
+                  "price": 61,
+                  "stock": 76
+                },
+                {
+                  "price": 28,
+                  "stock": 43
+                },
+                {
+                  "price": 31,
+                  "stock": 58
+                },
+                {
+                  "price": 81,
+                  "stock": 58
+                },
+                {
+                  "price": 109,
+                  "stock": 13
+                }
+              ]
+            ],
+            "journal": {
+              "0": {
+                "day": 1,
+                "year": 1350,
+                "prices": [
+                  13,
+                  29,
+                  18,
+                  32,
+                  28,
+                  55,
+                  91,
+                  40,
+                  34,
+                  89,
+                  85
+                ]
+              }
+            },
+            "messages": [
+              "Tag 1: 6 Fass Fisch verkauft: 168 G (+0 G Warengewinn).",
+              "Tag 1: 6 Fass Fisch für 168 G gekauft.",
+              "Tag 1: Fremde Ware ordnungsgemäß geliefert – Verdienst in Lübeck beurkundet.",
+              "Tag 1: Handelsauftrag erfüllt! +100 G und +4 Ansehen.",
+              "Tag 1: 6 Fass Fisch verkauft: 168 G (+120 G Warengewinn).",
+              "Tag 1: 6 Fass Fisch verkauft: 168 G (+120 G Warengewinn).",
+              "Tag 1: Versiegelten Versorgungsbrief in Lübeck angenommen.",
+              "Willkommen in Lübeck! Die Hanse erwartet einen neuen Kaufmann."
+            ],
+            "rumors": [],
+            "quests": [],
+            "completed": 1,
+            "birthdaySeen": {},
+            "flags": {},
+            "visits": 1,
+            "warehouses": {
+              "0": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "1": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "2": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "3": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "4": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "5": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "6": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "7": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "8": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "9": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              },
+              "10": {
+                "cargo": {},
+                "costs": {},
+                "bookCosts": {},
+                "origins": {}
+              }
+            },
+            "beginning": {
+              "version": 1,
+              "city": 0,
+              "merchant": "Ulf"
+            },
+            "questAvailableAt": 486006
+          },
+          "anchors": [
+            [
+              {
+                "n": "3355300",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7517264",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4649058",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8332928",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7370300",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "14195500",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "23317931",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "10190440",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8622400",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "22777681",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "21266660",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4055696",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4558482",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "3539326",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7042032",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5630438",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15585499",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18549008",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "10309204",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5030420",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "16931168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32262900",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4914331",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7794764",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5961968",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5598758",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6788988",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "13075088",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "24322944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7906271",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8385168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "16823400",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32772139",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5408949",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5283220",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5010091",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6973587",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5056451",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15413340",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "25898732",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6198744",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6683456",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20513169",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "26273625",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4044944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4562658",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5100820",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8070688",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4799538",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "12759796",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "19190000",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6808906",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9291600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20992028",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "30815067",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5046875",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7459525",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5948927",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9306277",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6599944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "12893259",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "21624184",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9722453",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8159975",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17836975",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "29562422",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4807475",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6531850",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5838412",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9049284",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5302580",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "11093104",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "26409705",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5786800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5361909",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15414944",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32028800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4790204",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7673280",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4311200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6340000",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6355625",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17490189",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20693556",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5897200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7047068",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17333200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "32529250",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "3047628",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6083544",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "3516184",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7107632",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5568992",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18425750",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "25725318",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8385168",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "8562866",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18228280",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "34785584",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "5089780",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6027744",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "4615200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9560800",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7207088",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "18304200",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20730338",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7824480",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "6461600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "17795750",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "31302147",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ],
+            [
+              {
+                "n": "4880891",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7861600",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "5655232",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "9060516",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7111132",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "11660126",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "15602336",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7051772",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "7854284",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "20522484",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              },
+              {
+                "n": "27268421",
+                "d": "1",
+                "revision": 0,
+                "day": 486001
+              }
+            ]
+          ],
+          "rng": {
+            "state": 2688942072,
+            "draws": 243
+          },
+          "clock": 1700000000001
+        },
+        "political": {
+          "version": 1,
+          "gameHash": "d6a2a44cae2250dc77bfc5ab82d5262533b0dda948006ab11b498559b9fb6434",
+          "priceHash": "3c3818d2864380adf18ba197275e455f1dc5917636215585ebb5f85592407d52",
+          "ledger": {
+            "version": 1,
+            "seq": 4,
+            "holdings": {
+              "s:1:4": [],
+              "s:2:4": []
+            },
+            "tickets": {
+              "0:4": [
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                },
+                {
+                  "cost": {
+                    "n": "8",
+                    "d": "1"
+                  },
+                  "known": true,
+                  "campaign": "legacy:4:8:true"
+                }
+              ]
+            },
+            "campaigns": {
+              "legacy:4:8:true": {
+                "margin": {
+                  "n": "240",
+                  "d": "1"
+                }
+              }
+            },
+            "awarded": 0
+          }
+        }
+      },
+      "events": [
+        {
+          "type": "political_job_accepted",
+          "id": "supply:0:0",
+          "city": 0,
+          "kind": "supply",
+          "period": 0,
+          "started": 486001,
+          "until": 486181,
+          "partner": -1,
+          "good": 4,
+          "n": 6,
+          "witnessed": false
+        },
+        {
+          "type": "sell",
+          "shipId": 2,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 6,
+          "unitPrice": 28,
+          "total": 168,
+          "averageCost": 8,
+          "profit": 120
+        },
+        {
+          "type": "sell",
+          "shipId": 1,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 6,
+          "unitPrice": 28,
+          "total": 168,
+          "averageCost": 8,
+          "profit": 120
+        },
+        {
+          "type": "quest_reward",
+          "good": "Fisch",
+          "quantity": 6,
+          "reward": 100
+        },
+        {
+          "type": "political_service",
+          "id": "supply:0:0",
+          "city": 0,
+          "kind": "supply",
+          "period": 0,
+          "day": 486001,
+          "partner": -1,
+          "good": 4,
+          "n": 6,
+          "witnesses": []
+        },
+        {
+          "type": "buy",
+          "shipId": 1,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 6,
+          "unitPrice": 28,
+          "total": 168,
+          "averageCost": 28
+        },
+        {
+          "type": "sell",
+          "shipId": 1,
+          "routeId": null,
+          "good": "Fisch",
+          "quantity": 6,
+          "unitPrice": 28,
+          "total": 168,
+          "averageCost": 28,
+          "profit": 0
+        }
+      ],
+      "localOriginRefused": true,
+      "services": 1,
+      "quests": 1,
+      "questReward": 100,
+      "legacyQuestRep": 4
+    }
+  ]
+}
