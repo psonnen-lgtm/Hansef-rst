@@ -1,0 +1,22 @@
+{
+  "base": "22fe3c4d92c9dbac439f247ac294104d388b2f6a",
+  "branch": "analysis/p12-public-grain",
+  "maxTrajectories": 12,
+  "actualScope": {
+    "city": 0,
+    "good": 0
+  },
+  "daysPerPathMaximum": 7,
+  "trips": 0,
+  "publicNeedTestQuantity": 90,
+  "testExpiryDays": 90,
+  "voteOrOfficeAssignment": false,
+  "newProductSaveVersion": false,
+  "sha256": {
+    "Hansefuerst_0_4.html": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "tests/simulation/headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+    "tests/analysis/phaseP12/harness.cjs": "633d9e848152684add898a31f501f2ba724a7e79e24957520dbd3f2e042a5e0a",
+    "tests/analysis/phaseP12/adapter.cjs": "4e999bf302326043b38b12f2c274f2adc1985e2d69a84ba852df55aa4c8bb15b",
+    "tests/analysis/phaseP12/checks.cjs": "d677b53a98ffdd7adf7ffa9b7fc901b9a1c0822f7441f60b9ccc968b3b483ad1"
+  }
+}
