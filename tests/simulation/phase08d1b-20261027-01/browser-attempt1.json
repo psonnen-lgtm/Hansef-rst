@@ -1,0 +1,328 @@
+{
+  "base": "99aae02577a60fdb89d069a1b644a44a2b743267",
+  "testedGameCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "browser": "154.0.8037.57",
+  "scope": "four Chromium/touch viewports, synthetic V12/V13 imports and bounded real journey/bath/purchase workflows; no physical Apple hardware or full careers",
+  "checks": [
+    {
+      "name": "trade letters 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "input": "native emulated tap and select",
+      "V12OriginalBackupAndBReceiptsPreserved": true,
+      "actualJourneyCreatesFirstOffer": true,
+      "creationPriceExact": true,
+      "pricesHiddenBeforePurchase": true,
+      "cancelNoCharge": true,
+      "price60Once": true,
+      "readAfterCity8Switch": true,
+      "pastReceiptNotRefreshed": true,
+      "archiveCost300OldManualNewAutomatic": true,
+      "secondOfferViaExistingBathDays": 9,
+      "unpaidOfferExpiresAfterNativeBathDays": 2,
+      "noViewOrPurchaseRNG": true,
+      "originalJournalAndBReportsUnchanged": true,
+      "quotaRollbackRAMExportRecovery": true,
+      "V13RealDownloadFileReaderImportReload": true,
+      "damagedImportRejected": true,
+      "buttons44px": true,
+      "scrollableNoHorizontalOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Nowgorod über Pelze und Fisch für 60 Gold kaufen? Stand Tag 22, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "alert",
+          "text": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "alert",
+          "text": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "trade letters 390x844",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "native emulated tap and select",
+      "V12OriginalBackupAndBReceiptsPreserved": true,
+      "actualJourneyCreatesFirstOffer": true,
+      "creationPriceExact": true,
+      "pricesHiddenBeforePurchase": true,
+      "cancelNoCharge": true,
+      "price60Once": true,
+      "readAfterCity8Switch": true,
+      "pastReceiptNotRefreshed": true,
+      "archiveCost300OldManualNewAutomatic": true,
+      "secondOfferViaExistingBathDays": 9,
+      "unpaidOfferExpiresAfterNativeBathDays": 2,
+      "noViewOrPurchaseRNG": true,
+      "originalJournalAndBReportsUnchanged": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "V13RealDownloadFileReaderImportReload": true,
+      "damagedImportRejected": true,
+      "buttons44px": true,
+      "scrollableNoHorizontalOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Nowgorod über Pelze und Fisch für 60 Gold kaufen? Stand Tag 22, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "trade letters 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "input": "native emulated tap and select",
+      "V12OriginalBackupAndBReceiptsPreserved": true,
+      "actualJourneyCreatesFirstOffer": true,
+      "creationPriceExact": true,
+      "pricesHiddenBeforePurchase": true,
+      "cancelNoCharge": true,
+      "price60Once": true,
+      "readAfterCity8Switch": true,
+      "pastReceiptNotRefreshed": true,
+      "archiveCost300OldManualNewAutomatic": true,
+      "secondOfferViaExistingBathDays": 9,
+      "unpaidOfferExpiresAfterNativeBathDays": 2,
+      "noViewOrPurchaseRNG": true,
+      "originalJournalAndBReportsUnchanged": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "V13RealDownloadFileReaderImportReload": true,
+      "damagedImportRejected": true,
+      "buttons44px": true,
+      "scrollableNoHorizontalOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Nowgorod über Pelze und Fisch für 60 Gold kaufen? Stand Tag 22, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "trade letters 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "input": "click and select",
+      "V12OriginalBackupAndBReceiptsPreserved": true,
+      "actualJourneyCreatesFirstOffer": true,
+      "creationPriceExact": true,
+      "pricesHiddenBeforePurchase": true,
+      "cancelNoCharge": true,
+      "price60Once": true,
+      "readAfterCity8Switch": true,
+      "pastReceiptNotRefreshed": true,
+      "archiveCost300OldManualNewAutomatic": true,
+      "secondOfferViaExistingBathDays": 9,
+      "unpaidOfferExpiresAfterNativeBathDays": 2,
+      "noViewOrPurchaseRNG": true,
+      "originalJournalAndBReportsUnchanged": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "V13RealDownloadFileReaderImportReload": true,
+      "damagedImportRejected": true,
+      "buttons44px": true,
+      "scrollableNoHorizontalOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Danzig über Tuch und Salz für 60 Gold kaufen? Stand Tag 11, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Bestätigten Handelsbrief aus Nowgorod über Pelze und Fisch für 60 Gold kaufen? Stand Tag 22, Jahr 1350, kein garantierter Preis bei Ankunft."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_angebot-375.png",
+      "sha256": "badc027c1ae021ef8304dc030799e925daf71b46c18bff3b34bc40b1a8b1b26d"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_brief-375.png",
+      "sha256": "6033a454fb4fb4a238f72a9c749ac64a87c40fd159a681d2c252d1c614ef2a73"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_handelsbuch-375.png",
+      "sha256": "657003b5994cd78b5782232d3b697e6c7ae82f0a007b688259fdee4a307ac679"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_angebot-390.png",
+      "sha256": "5a17b44df940fc2d92a857322e364af1ea46d50b1a0fced9a2d3955137cbd54d"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_brief-390.png",
+      "sha256": "ce547a065bb2b819084bf12cc62de08f094965eaaf7ed048af93ebdf2df1aa68"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_handelsbuch-390.png",
+      "sha256": "dbb7d2db3669bd116d96773552aa049c1393981705b066f1674bc595e52c56ac"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_angebot-820.png",
+      "sha256": "a894b070e454507d4b367bc53970683dec55bfc1de945de0a7bc29dd4615d296"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_brief-820.png",
+      "sha256": "869db8acd4eaf6d18b57571e90b7f9a4f7c46447117635eed05b8443f46ef4d1"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_handelsbuch-820.png",
+      "sha256": "3e918d4311c383189df5dd142411822fc8da659a2be6eede74e56a78a8ccdde7"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_angebot-1280.png",
+      "sha256": "103fdbc316aa7e68162ff1fa4e3e18d2331841225d26481739ca5fe9694d3082"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_brief-1280.png",
+      "sha256": "d08b415651fdfae23ae429863b02ab96ace0a3f8932a2d5af407e9544a5ee68d"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1b_attempt1_handelsbuch-1280.png",
+      "sha256": "56161b32881f20fd1e84cbbfdeecc8568fb3de6a11998b10e39dc1d838a33dc8"
+    }
+  ]
+}

@@ -1,0 +1,363 @@
+{
+  "base": "99aae02577a60fdb89d069a1b644a44a2b743267",
+  "testedGameCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "scope": "bounded clock/transactions/archived save fixtures and two actual long routes, no full economic or career simulations",
+  "checks": [
+    {
+      "name": "whole source projected exactly; 1a validators and transactions preserved; advance only hooks pure clock",
+      "passed": true,
+      "evidence": {
+        "allOtherFunctionsExact": 193,
+        "allMarketTradeRiskCreditStoragePoliticalFunctionsExact": true,
+        "advanceOnlyClockHook": true,
+        "V12ValidatorAndPurchaseCommitAlgorithmExact": true
+      }
+    },
+    {
+      "name": "reproducible separate calendar has varying 10-20 gaps 3-6 inclusive windows and one/two distinct goods",
+      "passed": true,
+      "evidence": {
+        "scheduleSamples": 80,
+        "gaps": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "windows": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "goodsCounts": [
+          1,
+          2
+        ],
+        "noEconomicRandomDraw": true
+      }
+    },
+    {
+      "name": "offers arise only on real daily progress; copied price and band match exact creation point without market writes",
+      "passed": true,
+      "evidence": {
+        "actualOffers": [
+          {
+            "id": "letter:486001:1",
+            "day": 486011,
+            "until": 486014,
+            "city": 5,
+            "goods": [
+              {
+                "good": 5,
+                "price": 72,
+                "band": "ordinary"
+              },
+              {
+                "good": 3,
+                "price": 23,
+                "band": "ordinary"
+              }
+            ]
+          },
+          {
+            "id": "letter:486001:2",
+            "day": 486022,
+            "until": 486024,
+            "city": 9,
+            "goods": [
+              {
+                "good": 10,
+                "price": 142,
+                "band": "ordinary"
+              },
+              {
+                "good": 4,
+                "price": 22,
+                "band": "ordinary"
+              }
+            ]
+          },
+          {
+            "id": "letter:486001:3",
+            "day": 486041,
+            "until": 486043,
+            "city": 4,
+            "goods": [
+              {
+                "good": 0,
+                "price": 12,
+                "band": "ordinary"
+              },
+              {
+                "good": 2,
+                "price": 15,
+                "band": "ordinary"
+              }
+            ]
+          },
+          {
+            "id": "letter:486001:4",
+            "day": 486051,
+            "until": 486055,
+            "city": 4,
+            "goods": [
+              {
+                "good": 6,
+                "price": 80,
+                "band": "ordinary"
+              }
+            ]
+          }
+        ],
+        "allSnapshotsMatchActualGenerationMarket": true,
+        "noMarketMutation": true,
+        "maxActive": 1
+      }
+    },
+    {
+      "name": "views actual ship selection and V13 import preserve unpaid offer without exposing exact goods prices",
+      "passed": true,
+      "evidence": {
+        "pureViews": 20,
+        "noStorageWrites": true,
+        "actualShipSelectionStable": true,
+        "pricesHiddenUntilPurchased": true,
+        "unpaidSnapshotImportExact": true
+      }
+    },
+    {
+      "name": "purchase uses old snapshot after later market changes costs 60 once and emits one paid receipt",
+      "passed": true,
+      "evidence": {
+        "snapshot": {
+          "id": "letter:486001:1",
+          "serial": 1,
+          "source": "sealed_letter",
+          "city": 5,
+          "goods": [
+            {
+              "good": 5,
+              "price": 72,
+              "band": "ordinary"
+            },
+            {
+              "good": 3,
+              "price": 23,
+              "band": "ordinary"
+            }
+          ],
+          "reportedAt": 486011,
+          "offeredAt": 486011,
+          "until": 486014,
+          "cost": 60
+        },
+        "cost": 60,
+        "noFreshQuoteAtPurchase": true,
+        "readsFree": true,
+        "noDaysMarketsOrOwnJournalChange": true
+      }
+    },
+    {
+      "name": "59 gold, declined confirmation and reentrant double click never buy free or duplicate letters",
+      "passed": true,
+      "evidence": {
+        "gold59Rejected": true,
+        "cancelNoReceiptOrPayment": true,
+        "reentrySinglePayment": true
+      }
+    },
+    {
+      "name": "last stated date is inclusive; first expired day refuses unpaid offer; paid letter remains after replacements",
+      "passed": true,
+      "evidence": {
+        "inclusiveLastDay": 486014,
+        "firstInvalidDay": 486015,
+        "boughtReceiptPersists45DaysAndNewOffers": true
+      }
+    },
+    {
+      "name": "year change preserves date age and independent schedule; terminal calendar does not create invalid windows",
+      "passed": true,
+      "evidence": {
+        "newYear": 1351,
+        "age8": true,
+        "calendarEndNoFutureOffer": true
+      }
+    },
+    {
+      "name": "long actual single and convoy routes cross multiple offer dates with identical baseline economy events RNG",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "convoy": false,
+            "days": 59,
+            "offersGenerated": 4,
+            "lastId": "letter:486001:4",
+            "unpaidQueue": 0
+          },
+          {
+            "convoy": true,
+            "days": 59,
+            "offersGenerated": 4,
+            "lastId": "letter:486001:4",
+            "unpaidQueue": 0
+          }
+        ],
+        "allEconomicStateEventsAndNextRandomEqual": true
+      }
+    },
+    {
+      "name": "multi-day versus daily stepping without old expiry effects yields same calendar and no backlog purchases",
+      "passed": true,
+      "evidence": {
+        "days": 70,
+        "oneCurrentOfferOnly": true,
+        "missedNotPurchasable": true,
+        "stepwiseAndBulkExact": true
+      }
+    },
+    {
+      "name": "old bath special injection on creation day and later expiry leave letter at its exact earlier creation instant",
+      "passed": true,
+      "evidence": {
+        "specialOnCreationDayPreserved": true,
+        "snapshotBeforePostAdvanceInjection": true,
+        "oldExpiryAfterAdvancePreserved": true,
+        "noNewMarketOrRandomEffects": true
+      }
+    },
+    {
+      "name": "B reports and A gossip remain same; archive files both kinds once with separate dated sources",
+      "passed": true,
+      "evidence": {
+        "AandBPreserved": true,
+        "manualOldAndAutomaticNewLetters": true,
+        "noSecondArchiveFee": true,
+        "oldOwnJournalAndBReceiptsUnchanged": true,
+        "separateSourceLabels": true
+      }
+    },
+    {
+      "name": "purchase quota aborts gold receipt and filing atomically; stale warning and changed disk reject buys",
+      "passed": true,
+      "evidence": {
+        "quotaNoCostNoReceiptNoFiling": true,
+        "withAndWithoutArchive": true,
+        "existingWarningPreserved": true,
+        "staleDiskProtected": true
+      }
+    },
+    {
+      "name": "malformed new offers receipts schedule fields and duplicate ids are rejected without current market recheck",
+      "passed": true,
+      "evidence": {
+        "invalidCases": 22,
+        "noCurrentMarketHistoricalValidation": true,
+        "JSONKeyOrderIndependent": true
+      }
+    },
+    {
+      "name": "V12 purchased B/archive states and thirteen historical V11 endpoints migrate without old field changes",
+      "passed": true,
+      "evidence": {
+        "V12PurchasedBAndArchivePreserved": true,
+        "repeatIdempotent": true,
+        "firstOfferOnlyFuture": true,
+        "historicalV11": [
+          {
+            "file": "phase06b-20261025-01/pilot/30-85000-0-balanced-90001.json.gz",
+            "sha256": "8d4d422695bdcfbdaeeb164184a7e82e7c8c76d6af08b37e788004d7fc22b07d"
+          },
+          {
+            "file": "phase06b-20261025-01/main/60-45000-8-wealth-91002.json.gz",
+            "sha256": "644492d54a3704fa8d136a7f2fed949f645685d265b46e42bef6cda9513b2b8f"
+          },
+          {
+            "file": "phase06c-20261025-01/main/0-balanced-normal-93002.json.gz",
+            "sha256": "71e641ff973ef54a24870f11fe158022b9e63140452f6bc4ad0b32efdf75f18a"
+          },
+          {
+            "file": "phase06c-20261025-01/main/1-balanced-normal-93002.json.gz",
+            "sha256": "651d934d3a73c38b3c92c294e5b898822ccaa455108ee3b1227f119bb6a79143"
+          },
+          {
+            "file": "phase06c-20261025-01/main/2-balanced-normal-93002.json.gz",
+            "sha256": "a2c20e91c686ffd90c2ef83d053e00729236d538bbce675e5d125b57c7076daa"
+          },
+          {
+            "file": "phase06c-20261025-01/main/3-balanced-normal-93002.json.gz",
+            "sha256": "b439a19d7b419203b5b9caed0bf00fa1116de5e1a67274d79a84dd572a7eec12"
+          },
+          {
+            "file": "phase06c-20261025-01/main/4-balanced-normal-93002.json.gz",
+            "sha256": "39a7c7b19e8c18195f8cc2663ae836615c6845a37a82d60169470bea1388df28"
+          },
+          {
+            "file": "phase06c-20261025-01/main/5-balanced-normal-93002.json.gz",
+            "sha256": "b36eec8eb01c4eae4b9bcf750fdfcc398c8101f1a27bc44697e624fdc7f993a3"
+          },
+          {
+            "file": "phase06c-20261025-01/main/6-balanced-normal-93002.json.gz",
+            "sha256": "2299d096991a4e3f7f345ef450ec8f4379211e161d466e7b811d54a50b831a4b"
+          },
+          {
+            "file": "phase06c-20261025-01/main/7-balanced-normal-93002.json.gz",
+            "sha256": "f51b7d5371c004d2c2678658981160ccc61d25f8e7054a0be9ebe5ea4122840a"
+          },
+          {
+            "file": "phase06c-20261025-01/main/8-balanced-normal-93002.json.gz",
+            "sha256": "1dd02a35e21d6b84442f5ba1055acde263550ff281e1f6a67746e999b0aa0450"
+          },
+          {
+            "file": "phase06c-20261025-01/main/9-balanced-normal-93002.json.gz",
+            "sha256": "c6268d9e10d22a52e4623906b2874c570c72e918ba6ea57d59813f96e7ef4bf8"
+          },
+          {
+            "file": "phase06c-20261025-01/main/10-balanced-normal-93002.json.gz",
+            "sha256": "a0e7e0a3d35ddab02a5543cb02f2af450e02c111662f6a6f999bf7f8a780e1ea"
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual startup V12/V11 backup, collision, quota and V13 export-import-reload preserve original and receipt",
+      "passed": true,
+      "evidence": {
+        "V12OriginalBackupAndCollision": true,
+        "failedMigrationPreservesOriginal": true,
+        "repeatNoReset": true,
+        "V13PaidReceiptArchiveExact": true,
+        "failedAndDamagedImportsAtomic": true
+      }
+    },
+    {
+      "name": "bounded receipt map retains 512 purchased letters and refuses a 513th without deletion or charge",
+      "passed": true,
+      "evidence": {
+        "syntheticSchemaBoundaryNotPlayedHistory": true,
+        "retained": 512,
+        "no513thCharge": true,
+        "oldPaidLetterStillReadable": true,
+        "paging20": true
+      }
+    },
+    {
+      "name": "one-time harbor work political quotes and repeated creation flags keep baseline outcomes",
+      "passed": true,
+      "evidence": {
+        "harborWorkAndPoliticalPredicatesExact": true,
+        "noSecondCreationSameDay": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "phase": "0.8d.1b",
+  "baseCommit": "99aae02577a60fdb89d069a1b644a44a2b743267",
+  "testedGameCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "release": "0.8d.1b",
+  "saveVersion": 13,
+  "informationSchema": 2,
+  "technicalGroups": 18,
+  "scheduleProbes": 80,
+  "gaps": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "inclusiveWindowLengths": [
+    3,
+    4,
+    5,
+    6
+  ],
+  "optionalLetterPrice": 60,
+  "goodsPerLetter": [
+    1,
+    2
+  ],
+  "maxConcurrentOffer": 1,
+  "maxPaidLetters": 512,
+  "otherFunctionsByteExact": 193,
+  "actualPairedJourneyDays": [
+    59,
+    59
+  ],
+  "offersGeneratedPerPairedJourney": [
+    4,
+    4
+  ],
+  "historicalV11Sources": 13,
+  "V12ControlIsSynthetic": true,
+  "malformedCases": 22,
+  "basicChecks": 19,
+  "tradeChecks": 18,
+  "ChromiumSizes": 4,
+  "screenshots": 12,
+  "browserErrors": 0,
+  "fullEconomyCareerSimulations": 0,
+  "testFixtureFailurePreserved": "technical-accepted.log: ReferenceError run undefined; fixed final run passes",
+  "realAppleHardware": false,
+  "gameByteDelta": 12351,
+  "PRCreated": false,
+  "PRError": "GitHub GraphQL Forbidden",
+  "localReportLinks": 30
+}

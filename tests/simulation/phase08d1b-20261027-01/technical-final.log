@@ -1,0 +1,19 @@
+PASS whole source projected exactly; 1a validators and transactions preserved; advance only hooks pure clock
+PASS reproducible separate calendar has varying 10-20 gaps 3-6 inclusive windows and one/two distinct goods
+PASS offers arise only on real daily progress; copied price and band match exact creation point without market writes
+PASS views actual ship selection and V13 import preserve unpaid offer without exposing exact goods prices
+PASS purchase uses old snapshot after later market changes costs 60 once and emits one paid receipt
+PASS 59 gold, declined confirmation and reentrant double click never buy free or duplicate letters
+PASS last stated date is inclusive; first expired day refuses unpaid offer; paid letter remains after replacements
+PASS year change preserves date age and independent schedule; terminal calendar does not create invalid windows
+PASS long actual single and convoy routes cross multiple offer dates with identical baseline economy events RNG
+PASS multi-day versus daily stepping without old expiry effects yields same calendar and no backlog purchases
+PASS old bath special injection on creation day and later expiry leave letter at its exact earlier creation instant
+PASS B reports and A gossip remain same; archive files both kinds once with separate dated sources
+PASS purchase quota aborts gold receipt and filing atomically; stale warning and changed disk reject buys
+PASS malformed new offers receipts schedule fields and duplicate ids are rejected without current market recheck
+PASS V12 purchased B/archive states and thirteen historical V11 endpoints migrate without old field changes
+PASS actual startup V12/V11 backup, collision, quota and V13 export-import-reload preserve original and receipt
+PASS bounded receipt map retains 512 purchased letters and refuses a 513th without deletion or charge
+PASS one-time harbor work political quotes and repeated creation flags keep baseline outcomes
+18 trade letter groups passed
