@@ -1,0 +1,123 @@
+{
+  "phase": "0.8d.2a.2",
+  "testedCommit": "058c27613ced7aa5792b6380b640162f09ac91c1",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "checks": [
+    {
+      "name": "unchanged production source and only K500 selected",
+      "passed": true,
+      "evidence": {
+        "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+        "k": 500
+      }
+    },
+    {
+      "name": "exact same B3 initial transition prices across required stock and price matrix",
+      "passed": true,
+      "evidence": {
+        "edgeComparisons": 448,
+        "stockCases": [
+          0,
+          1,
+          3,
+          45,
+          90,
+          110,
+          240,
+          1000000000
+        ],
+        "no220or350Executed": true
+      }
+    },
+    {
+      "name": "unchanged economic market across arbitrary days retains exact basis and split costs",
+      "passed": true,
+      "evidence": {
+        "paths": 24,
+        "unchangedDayTransitions": 2160
+      }
+    },
+    {
+      "name": "old B3 +40 example becomes exactly zero after actual unchanged day and reload",
+      "passed": true,
+      "evidence": {
+        "buy": 575,
+        "sale": 575,
+        "goldGain": 0,
+        "historicalOldGainReadOnly": 40
+      }
+    },
+    {
+      "name": "90,9x10,90x1 actual VM buys and sales; reverse-first; no free view ship or warehouse reset",
+      "passed": true,
+      "evidence": {
+        "splits": [
+          1,
+          9,
+          90
+        ],
+        "warehouseAndTwoShips": true,
+        "bothDirectionsNeutral": true
+      }
+    },
+    {
+      "name": "true daily price and stock impulses retained; no-op does not create a revision",
+      "passed": true,
+      "evidence": {
+        "stockImpulse": {
+          "n": "5973324800",
+          "d": "2621",
+          "revision": 1,
+          "day": 1
+        },
+        "priceImpulse": {
+          "n": "8052302000",
+          "d": "2621",
+          "revision": 1,
+          "day": 1
+        },
+        "absoluteSpecial": {
+          "n": "9743200",
+          "d": "1",
+          "revision": 1,
+          "day": 2
+        }
+      }
+    },
+    {
+      "name": "bounds illegal stock/gold/space and exact difficult rounding schemas fail safely",
+      "passed": true,
+      "evidence": {
+        "lowStocks": [
+          0,
+          1,
+          3
+        ],
+        "stockMax": 1000000000,
+        "precisionBudgetDigits": 4096,
+        "overflowRejectsInsteadOfRounding": true
+      }
+    },
+    {
+      "name": "original no-trade daily markets and RNG; saved/new specials and expiry",
+      "passed": true,
+      "evidence": {
+        "actualOriginalBad": true,
+        "savedSpecial": true,
+        "expiryDays": 4,
+        "noAdditionalDraws": true
+      }
+    },
+    {
+      "name": "year crossing real multiday travel and original information snapshots survive complete export",
+      "passed": true,
+      "evidence": {
+        "year": 1351,
+        "paidBAndCPreserved": true,
+        "actualJourney": true,
+        "saveSchema": "analysis-only exact fractions",
+        "v": 13
+      }
+    }
+  ]
+}

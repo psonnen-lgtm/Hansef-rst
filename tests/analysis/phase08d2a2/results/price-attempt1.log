@@ -1,0 +1,23 @@
+PASS unchanged production source and only K500 selected
+PASS exact same B3 initial transition prices across required stock and price matrix
+PASS unchanged economic market across arbitrary days retains exact basis and split costs
+PASS old B3 +40 example becomes exactly zero after actual unchanged day and reload
+PASS 90,9x10,90x1 actual VM buys and sales; reverse-first; no free view ship or warehouse reset
+PASS true daily price and stock impulses retained; no-op does not create a revision
+/workspace/Hansef-rst/tests/analysis/phase08d2a2/rational.cjs:6
+function valid(x){if(!x||Object.keys(x).sort().join()!= 'd,n'||!/^(-?[0-9]{1,4096})$/.test(x.n)||!/^([0-9]{1,4096})$/.test(x.d))throw Error('fraction schema');const y=rat(x.n,x.d);if(y.n!==x.n||y.d!==x.d)throw Error('noncanonical fraction');return x}
+                                                                                                                                                                                                            ^
+
+Error: noncanonical fraction
+    at Object.valid (/workspace/Hansef-rst/tests/analysis/phase08d2a2/rational.cjs:6:211)
+    at validate (/workspace/Hansef-rst/tests/analysis/phase08d2a2/price-model.cjs:6:109)
+    at Object.edge (/workspace/Hansef-rst/tests/analysis/phase08d2a2/price-model.cjs:7:20)
+    at /workspace/Hansef-rst/tests/analysis/phase08d2a2/price-checks.cjs:43:90
+    at check (/workspace/Hansef-rst/tests/analysis/phase08d2a2/price-checks.cjs:5:63)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phase08d2a2/price-checks.cjs:39:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+
+Node.js v24.19.0
