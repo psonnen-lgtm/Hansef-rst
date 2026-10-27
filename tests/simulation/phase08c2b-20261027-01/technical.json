@@ -1,0 +1,184 @@
+{
+  "base": "02b87ca4a61ccbeeed5f520c3de483fa6ab7ab3c",
+  "testedGameCommit": "823ad94331d9e762e949447af4cab0bb1ec1dca4",
+  "gameSHA256": "b2b4bedaf07cf84e09fe5c1143347b6ac8d003368b6f0965e814d37f296dd15f",
+  "scope": "UI projections, dry route planning, two paired actual voyages and archived save roundtrips; no full economy/career simulations",
+  "checks": [
+    {
+      "name": "whole HTML exact after enumerated UI projection; travel planner only adds explicit existing convoy choice",
+      "passed": true,
+      "evidence": {
+        "allowedUIFunctions": [
+          "shipsView",
+          "mapView",
+          "travelView",
+          "drawMap",
+          "planTravel explicit-choice input only"
+        ],
+        "allOtherHTMLAndMapConstantsExact": true,
+        "economyRiskFIFOStorageAndMarketControlsExact": true
+      }
+    },
+    {
+      "name": "same-harbor selection and repeated Luebeck Brugge selection only change city and active index",
+      "passed": true,
+      "evidence": {
+        "selections": [
+          {
+            "index": 2,
+            "city": 0
+          },
+          {
+            "index": 0,
+            "city": 0
+          },
+          {
+            "index": 1,
+            "city": 8
+          },
+          {
+            "index": 0,
+            "city": 0
+          },
+          {
+            "index": 1,
+            "city": 8
+          },
+          {
+            "index": 2,
+            "city": 0
+          },
+          {
+            "index": 1,
+            "city": 8
+          },
+          {
+            "index": 0,
+            "city": 0
+          }
+        ],
+        "allOtherFieldsExact": true,
+        "events": 0,
+        "days": 0,
+        "fees": 0,
+        "RNGExact": true
+      }
+    },
+    {
+      "name": "invalid or unknown harbor never invents a location; damaged ships retain their actual harbor",
+      "passed": true,
+      "evidence": {
+        "invalidIndices": 4,
+        "unknownHarborRejected": true,
+        "conditionAndHarborPreserved": true
+      }
+    },
+    {
+      "name": "open preparation preserves ship IDs source target and all state while rejecting another fleet selection",
+      "passed": true,
+      "evidence": {
+        "notAtSeaBeforeConfirmation": true,
+        "planAndStateExact": true,
+        "otherSelectionBlocked": true,
+        "previewOnly": true
+      }
+    },
+    {
+      "name": "chart renders eleven named targets and existing segments connect all 110 directed port pairs only",
+      "passed": true,
+      "evidence": {
+        "markers": 11,
+        "pairs": 110,
+        "onlyOriginalSegments": true,
+        "noTravelOrStateMutation": true
+      }
+    },
+    {
+      "name": "220 explicit single and convoy previews and plans equal baseline duration fees and ship participants",
+      "passed": true,
+      "evidence": {
+        "planningCases": 220,
+        "actualJourneys": 0,
+        "allQuotesAndParticipantsEqual": true,
+        "noDaysOrRNG": true
+      }
+    },
+    {
+      "name": "actual single and convoy arrivals and repeat-arrival guard preserve baseline outcomes and remote ships",
+      "passed": true,
+      "evidence": [
+        {
+          "dest": 1,
+          "convoy": false,
+          "days": 2,
+          "fee": 6,
+          "event": "storm",
+          "allStateAndEventsExact": true
+        },
+        {
+          "dest": 8,
+          "convoy": true,
+          "days": 16,
+          "fee": 15,
+          "event": "storm",
+          "allStateAndEventsExact": true
+        }
+      ]
+    },
+    {
+      "name": "remote ship cannot trade in viewed harbor; explicit ship navigation opens only its own local market",
+      "passed": true,
+      "evidence": {
+        "remoteBlockedBeforeNavigation": true,
+        "explicitCity8Navigation": true,
+        "otherShipsStillLocalOnly": true
+      }
+    },
+    {
+      "name": "real uncompleted shipyard order remains intact and absent from selectable fleet on navigation",
+      "passed": true,
+      "evidence": {
+        "actualOpenOrder": true,
+        "selectableShips": 3,
+        "noPrematureCompletionOrCosts": true
+      }
+    },
+    {
+      "name": "historical multiship save migrates identically to baseline; eleven historical V11 saves roundtrip exactly",
+      "passed": true,
+      "evidence": {
+        "historicalMultiship": {
+          "file": "phase05j-20261025-01/main/material-1-0-82005.json.gz",
+          "originalVersion": 10,
+          "ships": 3,
+          "sha256": "ad84f7a32ad5b8cca60420f6e9616b0b45930abee6a0bb72d54f37d9a2ec9742",
+          "baselineMigrationExact": true
+        },
+        "V11Files": [
+          "phase06c-20261025-01/main/0-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/1-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/2-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/3-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/4-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/5-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/6-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/7-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/8-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/9-balanced-normal-93002.json.gz",
+          "phase06c-20261025-01/main/10-balanced-normal-93002.json.gz"
+        ],
+        "allFieldsPreserved": true
+      }
+    },
+    {
+      "name": "navigation autosave and quota warning preserve old disk then save complete new view on recovery",
+      "passed": true,
+      "evidence": {
+        "oldDiskKept": true,
+        "newRAMCity8Active1": true,
+        "existingWarning": true,
+        "recoveryExact": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+PASS fresh save validates
+PASS invalid v3 rejected
+PASS negative gold rejected
+PASS v3 assigns all ship locations
+PASS legacy cargo has unknown cost
+PASS malformed cargo rejected
+PASS credit does not grow with borrowing
+PASS single arrival moves only chosen ship and cannot repeat
+PASS remote cargo cannot be traded
+PASS quest completion waits five days for new offer
+PASS expired quest gives no reward
+PASS unknown cost survives mixed purchase
+PASS known weighted purchase and partial sale
+PASS arrival fee is charged exactly once
+PASS fee by ship type
+PASS convoy fee excludes remote ship
+PASS insufficient gold blocks departure
+PASS exact fee allows departure
+PASS planning does not charge fee
+19 checks passed

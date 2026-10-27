@@ -1,0 +1,25 @@
+{
+  "base": "02b87ca4a61ccbeeed5f520c3de483fa6ab7ab3c",
+  "testedGameCommit": "883a6ed63758357366a8ba4d80550fce279fa5ca",
+  "gameSHA256": "b443ef994bfb05daef675259c671ea2c4ef7877ca7f8cc0811f6d39d66dde924",
+  "passed": {
+    "focusedGroups": 12,
+    "baselineChecks": 19,
+    "tradeChecks": 18,
+    "browserSizes": 4
+  },
+  "dryQuoteComparisons": 220,
+  "originalChartSegmentPairs": 110,
+  "archivedV11Roundtrips": 11,
+  "historicalV10MultishipMigrationComparedToBaseline": true,
+  "noNavigationDaysFeesEventsOrRNG": true,
+  "fullEconomyOrCareerSimulations": 0,
+  "physicalAppleHardwareOrSafariTested": false,
+  "existingResultsTestsCityArtArchivesAndPagesUnmodified": true,
+  "newGameDependencies": 0,
+  "gameBytesAdded": 11152,
+  "relativeReportLinksChecked": 21,
+  "PRCreated": false,
+  "PRFailure": "Post \"https://api.github.com/graphql\": Forbidden",
+  "scope": "existing harbor semantics and UI only; explicit convoy choice and confirmed transient preparation discard, unchanged journey/economy rules"
+}
