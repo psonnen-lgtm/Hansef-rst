@@ -1,0 +1,1248 @@
+{
+  "phase": "0.8d.0",
+  "baseCommit": "e082e54e1aa76963323e712d4864bebe2e3859c3",
+  "gameCommit": "4570c8a4d0bcefb3a739b0955544887d127af1e4",
+  "gameSHA256": "5e8e3c463824a807bfe323986136d5a6964a2119f0915dd4ef01cee222da7da4",
+  "scope": "read-only archived events, static source comparisons, fictional arithmetic models; no engine import/execution/tests/deployment",
+  "functions": {
+    "trade": {
+      "byteExactTo08c0": true,
+      "sha256": "b79818f41b654ba9b2a07a81273f42836b8f87d26fa32707a78e32baf170fea0"
+    },
+    "regionalPrice": {
+      "byteExactTo08c0": true,
+      "sha256": "e8bb6d9084eb08e274234e062ac4bc17906c387af1806289add404aa860ad9cd"
+    },
+    "regionalStock": {
+      "byteExactTo08c0": true,
+      "sha256": "8cfc030ded4c083730250a49be3e5eda5c0e972968c8d020fe18c8d73e63e691"
+    },
+    "regionalMarketDay": {
+      "byteExactTo08c0": true,
+      "sha256": "54008d97fe4933c814c643f416311d34bf17782d201cde79c4df00da295e9d35"
+    },
+    "initialMarkets": {
+      "byteExactTo08c0": true,
+      "sha256": "b8744c6627fb6dd3f46f847af535dd3ba070e06bcbe5c33a8742fe234eaa917a"
+    },
+    "creditLimit": {
+      "byteExactTo08c0": true,
+      "sha256": "2c6af14f8bc1dfb99befabccdb703b9fd33e79b6b56071332f77c290b681a3f1"
+    },
+    "netWorth": {
+      "byteExactTo08c0": true,
+      "sha256": "dce4fbca940fba21e7aa2f2507e895a9294dfb067ba32f83d018e952516ed3dd"
+    },
+    "shipSaleValue": {
+      "byteExactTo08c0": true,
+      "sha256": "1e6566161ebdd91d02ef614884f8c1b89ed2e14de45128a9c9865e5241662d57"
+    },
+    "shipbuildingQuote": {
+      "byteExactTo08c0": true,
+      "sha256": "e63af3033332bd29defbc1995bcb78207ad7aaae8c9843e0d450b1c47414b68c"
+    },
+    "startShipbuilding": {
+      "byteExactTo08c0": true,
+      "sha256": "dcf30611fe98a92f25fec5f10fa97e0dcf42de271c8a7ffd3b517361f4af08c5"
+    },
+    "repairShip": {
+      "byteExactTo08c0": true,
+      "sha256": "891162b9d9584a58f89da3ef00f1da991d5da8f2cf6220eae05a2af6e0a0170a"
+    },
+    "armShip": {
+      "byteExactTo08c0": true,
+      "sha256": "144f8bddcaabf9af7a8ab9ad7de5a920731232d205d52d130f985b74ec28de9f"
+    },
+    "rollTravel": {
+      "byteExactTo08c0": true,
+      "sha256": "03ff117eee996204405ce2b9ddf03498009721d474d9b8e3c2b13206e6978c32"
+    },
+    "arrive": {
+      "byteExactTo08c0": true,
+      "sha256": "9539bc1a3f5c6504f64873294fc36b152886e73f80f5c3e72b3aee7e959577bc"
+    },
+    "takeBath": {
+      "byteExactTo08c0": true,
+      "sha256": "93545b28726a9e9189eebfda47ac436f72b05827c0a42d7b0e2894f8227772b6"
+    },
+    "observe": {
+      "byteExactTo08c0": true,
+      "sha256": "659ea12eb87c755646b135400ae3db2c529c7e88b8d2a8c124ade0d011a4adce"
+    },
+    "bookView": {
+      "byteExactTo08c0": true,
+      "sha256": "bb21cb7c10e289253c1715333aca4142490391143295c7b25b99ff62b5a3a73d"
+    },
+    "regionalReport": {
+      "byteExactTo08c0": true,
+      "sha256": "66121b04a4504e6c3662906173adf4cdabe33e480dae23397676a302debd57d8"
+    },
+    "warehouseTransfer": {
+      "byteExactTo08c0": true,
+      "sha256": "41fd10a3748ddf80077dbe1fdc954f78daa91b3c8829304fdf94a13fd828b1c9"
+    },
+    "warehouseRentDay": {
+      "byteExactTo08c0": true,
+      "sha256": "955f41a503407f231fd44997569593193a0688294690e56f3f8a68dade8c83ed"
+    },
+    "politicalSupport": {
+      "byteExactTo08c0": true,
+      "sha256": "6f44b5fe664018f165bd240dda35efaf31189d6973890e7d4987cbac47edac0f"
+    },
+    "runMayorElection": {
+      "byteExactTo08c0": true,
+      "sha256": "958eebebd6354736780b1324f2523bfcd9fb2867635eddc344d73ca52a999201"
+    },
+    "runHanseAssembly": {
+      "byteExactTo08c0": true,
+      "sha256": "c7425d2443f2682df193fb9850c1304749e1afa1bd350a039e6bd800ee468dd9"
+    }
+  },
+  "verifiedRawFiles": 182,
+  "verifiedInputFileNames": [
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10012.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10012.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10012.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10012.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10012.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10001.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10002.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10003.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10004.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10005.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10006.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10007.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10008.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10009.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10010.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10011.json.gz",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10012.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-balanced-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-early-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-remote-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-wealth-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-supply-normal-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-balanced-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-early-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-remote-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-wealth-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/0-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/1-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/10-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/2-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/3-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/4-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/5-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/6-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/7-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/8-supply-early-arms-93002.json.gz",
+    "tests/simulation/phase06c-20261025-01/main/9-supply-early-arms-93002.json.gz"
+  ],
+  "historicalRegionalGroups": {
+    "cautious": {
+      "cases": 12,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "wealthMedian": 360391.5,
+      "cashMedian": 356950.5,
+      "tradeProfit": 4428782,
+      "questPremiumsSeparately": 0,
+      "fees": 32556,
+      "pirateBookCost": 52046,
+      "journeys": 5426,
+      "soldUnits": 161299,
+      "netPerDay": 251.10867052023121,
+      "netPerJourney": 800.6229266494655,
+      "grossRealisedProfitPerSoldUnit": 27.456971214948634,
+      "feeAndPirateFraction": 0.01910276911349441,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Eisenwaren": {
+          "sold": 23556,
+          "profit": 756454
+        },
+        "Tuch": {
+          "sold": 19258,
+          "profit": 603656
+        },
+        "Salz": {
+          "sold": 17836,
+          "profit": 382981
+        },
+        "Fisch": {
+          "sold": 11998,
+          "profit": 182873
+        },
+        "Bier": {
+          "sold": 7481,
+          "profit": 92826
+        },
+        "Hansegras": {
+          "sold": 23185,
+          "profit": 673485
+        },
+        "Pelze": {
+          "sold": 29827,
+          "profit": 1320273
+        },
+        "Holz": {
+          "sold": 4681,
+          "profit": 63497
+        },
+        "Getreide": {
+          "sold": 5992,
+          "profit": 66490
+        },
+        "Hanf": {
+          "sold": 7709,
+          "profit": 114008
+        },
+        "Pech": {
+          "sold": 9776,
+          "profit": 172239
+        }
+      }
+    },
+    "normal": {
+      "cases": 12,
+      "daysMin": 1440,
+      "daysMax": 1444,
+      "wealthMedian": 532944.0,
+      "cashMedian": 529503.0,
+      "tradeProfit": 6302909,
+      "questPremiumsSeparately": 0,
+      "fees": 23940,
+      "pirateBookCost": 41664,
+      "journeys": 3990,
+      "soldUnits": 229577,
+      "netPerDay": 360.47535109518583,
+      "netPerJourney": 1563.234335839599,
+      "grossRealisedProfitPerSoldUnit": 27.454444478323175,
+      "feeAndPirateFraction": 0.010408527237185243,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Salz": {
+          "sold": 20914,
+          "profit": 393512
+        },
+        "Eisenwaren": {
+          "sold": 34200,
+          "profit": 1119034
+        },
+        "Tuch": {
+          "sold": 26672,
+          "profit": 810545
+        },
+        "Pelze": {
+          "sold": 45270,
+          "profit": 2027389
+        },
+        "Pech": {
+          "sold": 17503,
+          "profit": 301363
+        },
+        "Bier": {
+          "sold": 10279,
+          "profit": 119764
+        },
+        "Hansegras": {
+          "sold": 34139,
+          "profit": 940915
+        },
+        "Hanf": {
+          "sold": 10427,
+          "profit": 154466
+        },
+        "Getreide": {
+          "sold": 9415,
+          "profit": 114654
+        },
+        "Holz": {
+          "sold": 9212,
+          "profit": 149150
+        },
+        "Fisch": {
+          "sold": 11546,
+          "profit": 172117
+        }
+      }
+    },
+    "aggressive": {
+      "cases": 12,
+      "daysMin": 1440,
+      "daysMax": 1467,
+      "wealthMedian": 272045.85,
+      "cashMedian": 268377.0,
+      "tradeProfit": 3133894,
+      "questPremiumsSeparately": 0,
+      "fees": 5562,
+      "pirateBookCost": 9295,
+      "journeys": 927,
+      "soldUnits": 77710,
+      "netPerDay": 179.26530260359792,
+      "netPerJourney": 3364.6569579288025,
+      "grossRealisedProfitPerSoldUnit": 40.32806588598636,
+      "feeAndPirateFraction": 0.004740747453487578,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Salz": {
+          "sold": 5708,
+          "profit": 154965
+        },
+        "Eisenwaren": {
+          "sold": 12557,
+          "profit": 602484
+        },
+        "Hansegras": {
+          "sold": 11092,
+          "profit": 398141
+        },
+        "Pelze": {
+          "sold": 19350,
+          "profit": 963124
+        },
+        "Bier": {
+          "sold": 5001,
+          "profit": 122754
+        },
+        "Tuch": {
+          "sold": 12200,
+          "profit": 580039
+        },
+        "Pech": {
+          "sold": 3232,
+          "profit": 81804
+        },
+        "Fisch": {
+          "sold": 2691,
+          "profit": 67019
+        },
+        "Hanf": {
+          "sold": 3114,
+          "profit": 96934
+        },
+        "Getreide": {
+          "sold": 450,
+          "profit": 11520
+        },
+        "Holz": {
+          "sold": 2315,
+          "profit": 55110
+        }
+      }
+    },
+    "optimized": {
+      "cases": 12,
+      "daysMin": 1440,
+      "daysMax": 1443,
+      "wealthMedian": 623195.5,
+      "cashMedian": 619754.5,
+      "tradeProfit": 7286503,
+      "questPremiumsSeparately": 30444,
+      "fees": 25830,
+      "pirateBookCost": 58140,
+      "journeys": 4305,
+      "soldUnits": 177279,
+      "netPerDay": 416.47582976754944,
+      "netPerJourney": 1673.0622531939605,
+      "grossRealisedProfitPerSoldUnit": 41.101895881632906,
+      "feeAndPirateFraction": 0.011524046583114012,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Tuch": {
+          "sold": 24509,
+          "profit": 962691
+        },
+        "Eisenwaren": {
+          "sold": 32541,
+          "profit": 1432780
+        },
+        "Hansegras": {
+          "sold": 30707,
+          "profit": 1197177
+        },
+        "Pelze": {
+          "sold": 49721,
+          "profit": 2685012
+        },
+        "Salz": {
+          "sold": 13743,
+          "profit": 395991
+        },
+        "Hanf": {
+          "sold": 5300,
+          "profit": 129776
+        },
+        "Fisch": {
+          "sold": 7271,
+          "profit": 167389
+        },
+        "Pech": {
+          "sold": 6622,
+          "profit": 171374
+        },
+        "Holz": {
+          "sold": 2637,
+          "profit": 62016
+        },
+        "Bier": {
+          "sold": 2362,
+          "profit": 40867
+        },
+        "Getreide": {
+          "sold": 1866,
+          "profit": 41430
+        }
+      }
+    },
+    "remote": {
+      "cases": 12,
+      "daysMin": 1441,
+      "daysMax": 1468,
+      "wealthMedian": 270207.0,
+      "cashMedian": 266766.0,
+      "tradeProfit": 3170218,
+      "questPremiumsSeparately": 0,
+      "fees": 9744,
+      "pirateBookCost": 13508,
+      "journeys": 1624,
+      "soldUnits": 92135,
+      "netPerDay": 180.55918297091054,
+      "netPerJourney": 1937.786945812808,
+      "grossRealisedProfitPerSoldUnit": 34.408400716340154,
+      "feeAndPirateFraction": 0.007334511380605372,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Hansegras": {
+          "sold": 11321,
+          "profit": 342804
+        },
+        "Pelze": {
+          "sold": 20096,
+          "profit": 1184049
+        },
+        "Tuch": {
+          "sold": 10611,
+          "profit": 362253
+        },
+        "Eisenwaren": {
+          "sold": 14851,
+          "profit": 626067
+        },
+        "Fisch": {
+          "sold": 6561,
+          "profit": 114555
+        },
+        "Bier": {
+          "sold": 6976,
+          "profit": 142731
+        },
+        "Getreide": {
+          "sold": 4764,
+          "profit": 66052
+        },
+        "Salz": {
+          "sold": 7517,
+          "profit": 156560
+        },
+        "Holz": {
+          "sold": 2335,
+          "profit": 31929
+        },
+        "Pech": {
+          "sold": 3828,
+          "profit": 84025
+        },
+        "Hanf": {
+          "sold": 3275,
+          "profit": 59193
+        }
+      }
+    },
+    "explorer": {
+      "cases": 12,
+      "daysMin": 1440,
+      "daysMax": 1452,
+      "wealthMedian": 498636.5,
+      "cashMedian": 495195.5,
+      "tradeProfit": 5904690,
+      "questPremiumsSeparately": 0,
+      "fees": 22350,
+      "pirateBookCost": 35924,
+      "journeys": 3725,
+      "soldUnits": 211177,
+      "netPerDay": 337.7869193436561,
+      "netPerJourney": 1569.5076510067115,
+      "grossRealisedProfitPerSoldUnit": 27.96085747974448,
+      "feeAndPirateFraction": 0.00986910405118643,
+      "blocked": 0,
+      "nonpositiveWealth": 0,
+      "cashLedgersVerified": 12,
+      "byGood": {
+        "Salz": {
+          "sold": 19251,
+          "profit": 379543
+        },
+        "Eisenwaren": {
+          "sold": 31422,
+          "profit": 1007817
+        },
+        "Tuch": {
+          "sold": 26643,
+          "profit": 774043
+        },
+        "Pelze": {
+          "sold": 41833,
+          "profit": 1849321
+        },
+        "Hansegras": {
+          "sold": 32963,
+          "profit": 964439
+        },
+        "Bier": {
+          "sold": 7859,
+          "profit": 110475
+        },
+        "Pech": {
+          "sold": 14484,
+          "profit": 265721
+        },
+        "Fisch": {
+          "sold": 12060,
+          "profit": 183264
+        },
+        "Getreide": {
+          "sold": 7340,
+          "profit": 98835
+        },
+        "Hanf": {
+          "sold": 10771,
+          "profit": 170655
+        },
+        "Holz": {
+          "sold": 6551,
+          "profit": 100577
+        }
+      }
+    }
+  },
+  "historicalR1RouteProbes": [
+    {
+      "route": "Bergen–Lübeck",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 1056,
+      "days": 615,
+      "net": 21833,
+      "netPerTrip": 454.8541666666667,
+      "netPerDay": 35.50081300813008,
+      "netPerActualBoughtUnit": 20.675189393939394,
+      "negative": 0
+    },
+    {
+      "route": "Bergen–Lübeck",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 3206,
+      "days": 615,
+      "net": 38496,
+      "netPerTrip": 802.0,
+      "netPerDay": 62.59512195121951,
+      "netPerActualBoughtUnit": 12.007485963817842,
+      "negative": 13
+    },
+    {
+      "route": "Lübeck–Hamburg",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 1056,
+      "days": 138,
+      "net": 5094,
+      "netPerTrip": 106.125,
+      "netPerDay": 36.91304347826087,
+      "netPerActualBoughtUnit": 4.823863636363637,
+      "negative": 12
+    },
+    {
+      "route": "Lübeck–Hamburg",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 1854,
+      "days": 138,
+      "net": 7749,
+      "netPerTrip": 161.4375,
+      "netPerDay": 56.15217391304348,
+      "netPerActualBoughtUnit": 4.179611650485437,
+      "negative": 23
+    },
+    {
+      "route": "Nowgorod–Brügge",
+      "requested": 22,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 1056,
+      "days": 1562,
+      "net": 51229,
+      "netPerTrip": 1067.2708333333333,
+      "netPerDay": 32.79705505761844,
+      "netPerActualBoughtUnit": 48.51231060606061,
+      "negative": 11
+    },
+    {
+      "route": "Nowgorod–Brügge",
+      "requested": 90,
+      "cases": 3,
+      "trips": 48,
+      "actualBoughtUnits": 2806,
+      "days": 1562,
+      "net": -1680,
+      "netPerTrip": -35.0,
+      "netPerDay": -1.0755441741357235,
+      "netPerActualBoughtUnit": -0.5987170349251604,
+      "negative": 32
+    }
+  ],
+  "historicalFreeInformationComparison": {
+    "cautious": {
+      "F": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 288521.5,
+          "mean": 293770.9166666667,
+          "min": 235319,
+          "max": 344144
+        },
+        "netPerDay": 197.9624768732655,
+        "blocked": 0,
+        "insolvent": 0
+      },
+      "F_info": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 347629.5,
+          "mean": 342006.3333333333,
+          "min": 314654,
+          "max": 358687
+        },
+        "netPerDay": 231.42830712303422,
+        "blocked": 0,
+        "insolvent": 0
+      }
+    },
+    "normal": {
+      "F": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 387713.5,
+          "mean": 383948.5833333333,
+          "min": 291772,
+          "max": 530964
+        },
+        "netPerDay": 260.55805481669944,
+        "blocked": 0,
+        "insolvent": 0
+      },
+      "F_info": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 492317.0,
+          "mean": 495613.5833333333,
+          "min": 433397,
+          "max": 563488
+        },
+        "netPerDay": 337.786502571214,
+        "blocked": 0,
+        "insolvent": 0
+      }
+    },
+    "aggressive": {
+      "F": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 503659.0,
+          "mean": 485546.5833333333,
+          "min": 350735,
+          "max": 563769
+        },
+        "netPerDay": 331.0359641514889,
+        "blocked": 0,
+        "insolvent": 0
+      },
+      "F_info": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 294496.45,
+          "mean": 282813.94166666665,
+          "min": 180217.8,
+          "max": 353783
+        },
+        "netPerDay": 188.08647690900779,
+        "blocked": 0,
+        "insolvent": 0
+      }
+    },
+    "explorer": {
+      "F": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 457909.5,
+          "mean": 456398.75,
+          "min": 362633,
+          "max": 535575
+        },
+        "netPerDay": 310.7401005838488,
+        "blocked": 0,
+        "insolvent": 0
+      },
+      "F_info": {
+        "results": 12,
+        "wealth": {
+          "n": 12,
+          "median": 470246.0,
+          "mean": 476415.6666666667,
+          "min": 405082,
+          "max": 560272
+        },
+        "netPerDay": 324.7005492917028,
+        "blocked": 0,
+        "insolvent": 0
+      }
+    }
+  },
+  "historicalV11Main": {
+    "normal": {
+      "cases": 55,
+      "wealthMedian": 673237,
+      "goldMedian": 669796,
+      "mayors": 53,
+      "eldermen": 52,
+      "mayorDayMedian": 390,
+      "elderDayMedian": 808.5
+    },
+    "early-arms": {
+      "cases": 55,
+      "wealthMedian": 471371,
+      "goldMedian": 467930,
+      "mayors": 51,
+      "eldermen": 50,
+      "mayorDayMedian": 468,
+      "elderDayMedian": 1033.5
+    }
+  },
+  "historicalBuildCostsTakenFromEarlierAudit": {
+    "0": {
+      "ships": 72,
+      "min": 3614,
+      "median": 3896.0,
+      "max": 4270
+    },
+    "1": {
+      "ships": 72,
+      "min": 5894,
+      "median": 6379.0,
+      "max": 7042
+    },
+    "2": {
+      "ships": 72,
+      "min": 9826,
+      "median": 11137.0,
+      "max": 12651
+    }
+  },
+  "historicalBuildAuditLedgerCount": 240,
+  "analyticModels": {
+    "label": "fictional uncalibrated deterministic arithmetic, no simulations",
+    "quantityPrice20To30Lambda005": [
+      {
+        "quantity": 10,
+        "flatGross": 100,
+        "impactGross": 95.5,
+        "fee": 6,
+        "flatAfterFee": 94,
+        "impactAfterFee": 89.5
+      },
+      {
+        "quantity": 45,
+        "flatGross": 450,
+        "impactGross": 351.0,
+        "fee": 6,
+        "flatAfterFee": 444,
+        "impactAfterFee": 345.0
+      },
+      {
+        "quantity": 90,
+        "flatGross": 900,
+        "impactGross": 499.5,
+        "fee": 6,
+        "flatAfterFee": 894,
+        "impactAfterFee": 493.5
+      },
+      {
+        "quantity": 140,
+        "flatGross": 1400,
+        "impactGross": 427.0,
+        "fee": 6,
+        "flatAfterFee": 1394,
+        "impactAfterFee": 421.0
+      }
+    ],
+    "integerPotentialSplitAndRoundtripIdentity": true,
+    "informationValueSensitivity": [
+      {
+        "quantity": 8,
+        "incrementalMarginPerUnit": 2,
+        "fee": 20,
+        "grossDecisionBenefit": 16,
+        "netDecisionBenefit": -4,
+        "coverageFractionForBreakEven": 1.25
+      },
+      {
+        "quantity": 8,
+        "incrementalMarginPerUnit": 2,
+        "fee": 60,
+        "grossDecisionBenefit": 16,
+        "netDecisionBenefit": -44,
+        "coverageFractionForBreakEven": 3.75
+      },
+      {
+        "quantity": 45,
+        "incrementalMarginPerUnit": 4,
+        "fee": 20,
+        "grossDecisionBenefit": 180,
+        "netDecisionBenefit": 160,
+        "coverageFractionForBreakEven": 0.1111111111111111
+      },
+      {
+        "quantity": 45,
+        "incrementalMarginPerUnit": 4,
+        "fee": 60,
+        "grossDecisionBenefit": 180,
+        "netDecisionBenefit": 120,
+        "coverageFractionForBreakEven": 0.3333333333333333
+      },
+      {
+        "quantity": 90,
+        "incrementalMarginPerUnit": 4,
+        "fee": 20,
+        "grossDecisionBenefit": 360,
+        "netDecisionBenefit": 340,
+        "coverageFractionForBreakEven": 0.05555555555555555
+      },
+      {
+        "quantity": 90,
+        "incrementalMarginPerUnit": 4,
+        "fee": 60,
+        "grossDecisionBenefit": 360,
+        "netDecisionBenefit": 300,
+        "coverageFractionForBreakEven": 0.16666666666666666
+      }
+    ],
+    "warehouse30ShipbuildingCapacity": [
+      {
+        "type": "Schnigge",
+        "materials": [
+          24,
+          8,
+          6,
+          6
+        ],
+        "total": 44,
+        "maxOrderBaseCapacity30": 30,
+        "extraNeeded": 14,
+        "currentBuildWage": 2500,
+        "currentBuildDays": 20
+      },
+      {
+        "type": "Kogge",
+        "materials": [
+          44,
+          14,
+          12,
+          12
+        ],
+        "total": 82,
+        "maxOrderBaseCapacity30": 30,
+        "extraNeeded": 52,
+        "currentBuildWage": 3700,
+        "currentBuildDays": 35
+      },
+      {
+        "type": "Holk",
+        "materials": [
+          75,
+          24,
+          20,
+          22
+        ],
+        "total": 141,
+        "maxOrderBaseCapacity30": 30,
+        "extraNeeded": 111,
+        "currentBuildWage": 6200,
+        "currentBuildDays": 55
+      }
+    ],
+    "unarmedSoloPirateLossProbability": 0.0793,
+    "fullyArmedSoloPirateLossProbability": 0.0078000000000000074,
+    "singleShipExpectedStormRepairAtFullCondition": 7.280000000000001,
+    "fullArmingCost": 3300,
+    "threeArmingCapacityCost": 30
+  },
+  "inputSHA256": {
+    "docs/entwicklungsberichte/2026-10-27_0.8c0_nachweise.json": "8e1248232311a738a06188affa266d01b13ced3a44cabfcff736b998e447b2eb",
+    "tests/simulation/phase05h3-20261025-01/summary.json.gz": "7f78a3b284b98f8ab92fc54b3b1f46d56a36ffe9d490b0f28e775f91ff0b8437",
+    "tests/simulation/phase05h3-20261025-01/SHA256SUMS": "58c00265f79b013bbc20fc7b33271257cfc87f546de96ceb9531caf419516776",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10001.json.gz": "a8b075fbd733241859db52e88564eb1ff6d8db13270f4c585a1356bc1cf5ac2c",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10002.json.gz": "55564a1d70e3ded872602a1b9e77298acdea9d1685fc54211816758c36c8f90a",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10003.json.gz": "cdb6c80c9cab5686b5ec4bc0c78eda1df81a8b30844b903dd77936e16ae54163",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10004.json.gz": "e9d6fe57fa169f035d846fc18f815909bea9a5e534a394fd75d06ca2a8692e11",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10005.json.gz": "c84969d1470afb4aba1c5a198bb9eee10a26b3af5a569e1663759c4b99f85d2c",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10006.json.gz": "35b597ea050afeac57f4b5e9e0b256792569d04ea2e752b914dbdedec9017534",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10007.json.gz": "29b4d9ab8dd903ae8a0ba3342d4b91fd515516584be2d8825a369d82b0e5c262",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10008.json.gz": "aeaa9d27cc885c0f1037b0b1983f7589495af0095515f55b59e2acc4c70d7c52",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10009.json.gz": "9c254a22376ad74e95cd59569afa795e33a889c5aeb9385c3e8fa536951614e1",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10010.json.gz": "851fa3822d37ab60ef420b4383b78fb7b7809ca3c457cdf1137dd4ea290a7704",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10011.json.gz": "e8c46f877ca93a7b2deab27aaa57f66fb10337e1831d07ff4fb0fe44ba8cf2af",
+    "tests/simulation/phase05h3-20261025-01/regional-cautious-10012.json.gz": "86b656c07f38708b6b2a67a8ff481c19f0b77ae0dac7c65d24da9dea4e00b159",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10001.json.gz": "c465f7031ba34faf37ff135f4e1c1ea6b6ee638da590787be700c1c154bce8c8",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10002.json.gz": "464741507160e3364bf9e1388a28aa47115f58cd41c8f0df456dc279e840c4bd",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10003.json.gz": "d384cec7456f34b548c8f2e3c8aefcee67b09608af279b5b01a5d3572ee578ed",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10004.json.gz": "8bd6dd5f3956f226253037c1f3bdae6972df194cb9eebd8ac59cf7e55c38546e",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10005.json.gz": "fb61ace42ce67ff82366c79ac48241089012e32b3ec3cb1902abaa17f72b977a",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10006.json.gz": "3f6ebc082ea07c34e5241d41b44b22c32672c939962ae0610dde19f307c9719f",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10007.json.gz": "ccea48d140a6fb5db14366088ac6623de79d3f71ee6e3e1282d8a48c08085dad",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10008.json.gz": "ee864111a0588b3c5616788db80fc5b1c7152661d104b1bb79960133f17bbd73",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10009.json.gz": "d5c40712766ddea191611f6ba726cad3606c18f13ec1bec5a45ff652136a94b8",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10010.json.gz": "3352167254ee9be77468555003d57da4e4dba5072f7101dc1d1e1c6f0a701bb5",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10011.json.gz": "882bf4768dbc52b010764adc164c92ef1d42852267f2ff15054b755a0d8ba44d",
+    "tests/simulation/phase05h3-20261025-01/regional-normal-10012.json.gz": "a6270c2c18fb953c0ad20b5046d528d056ac3e2d1286cd7fa3306975a1a3a28c",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10001.json.gz": "06191160f011b6fdfed87e75d764b018d4e947d95cca41ed8bff0fbf78df9880",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10002.json.gz": "85de72e21d8873a8cd9ac4d354b574bc02f0b06f3a9780e4b0bb9999a0ed8655",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10003.json.gz": "d126dc93b0350c66380347eac97b6b7f3c8d3affc3498493041ad1a474768c95",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10004.json.gz": "3b26685a02f0cc62ff9c596cf4a734022233f2841b8302746e0cc04011b229fa",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10005.json.gz": "ad449e6b4162c9f993b30d4129503f4026aaf0121b39dc349d0c9650fedda21e",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10006.json.gz": "183636167fbf9693ef60ca37a7418ef4b4816150b1b459efb1d35ec0879ae9f9",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10007.json.gz": "ad7c5d10ec9e1a7340b594592c5261003f16e46fa3820048874e7bae8f21baf3",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10008.json.gz": "900352346c594366d7e3e5bee0195ce3d0717c3d77f61370a4b86e75b63eca96",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10009.json.gz": "4bacb4939fb9e5533b4e950a53f504ad3038c96799a40ab763a134c11487c86d",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10010.json.gz": "b324835b9e079748d5c82baa26a110d407bc0e6d2e337a8f6309c75002560049",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10011.json.gz": "8dd345a923e1bdc51d6d57102261c88c1add44bc7065254083cf644c1a6bd383",
+    "tests/simulation/phase05h3-20261025-01/regional-aggressive-10012.json.gz": "c0ba5470e5a239acff510477870dcaf3afdce332571fbacd7065a6e56cce4134",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10001.json.gz": "f3ebb915f69328ce0160dee501e4266e32f2e6a9df5944e1447e21acf5039dc7",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10002.json.gz": "e79154d5846d88d810f0f0ce4894898d15ed552f891362e164ebe49928ea5069",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10003.json.gz": "1b8f7d14d4d9763eb79dec7e509a205bd9dc741f9aa1def6a98a3d28d972d150",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10004.json.gz": "15dfe1f24204e65301a9972d594ce26ddbac22bf3b87307cdee4ce9112ac5129",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10005.json.gz": "8a460e9dc971a0f94e6583827f143e3bdfb9a9a93a5f516ad1700af7ddccb387",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10006.json.gz": "830483a7f55dbf9193bf42121cba717b7f7fbc888ed5c8a15adedd8a188b80b5",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10007.json.gz": "bb34c3a75d7bcaa5dd277c9309ed62d13b4cf6ea95aeffb974ff11c8ded24a66",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10008.json.gz": "f2f4a1a003e3581862b9d04f63ad22c04f23fe24800bf4600da9a01df6fcfb70",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10009.json.gz": "d32e983481c06efb6d14a9a5fe728ecf8fd3f0120282367baf7361adf323674c",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10010.json.gz": "ee13a0833a65d012c41bf34039c2d9a9a17fd436c493fb8ffc5d3ea14c7ad189",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10011.json.gz": "e30f16191782b6df60b7f9085c91228bf0b9d9b1adec2976b3902e3600a2b752",
+    "tests/simulation/phase05h3-20261025-01/regional-optimized-10012.json.gz": "6f95d4b68bd488cfac23d6fb556c807b65d99528b8e10ac0a4d60c0a4e2b1e3f",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10001.json.gz": "dcb4d07d2ee2962ef13d3fc9204e0762635476cbaed84758596a7a9437eee056",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10002.json.gz": "0f141bfa095eb006f50661f5d25a988aa3dc84bf13f6ec0275e2e2d4168475ec",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10003.json.gz": "4bdc6c6032df04ab8c71fc02fad52c197494225227718cb7a7aac1e62fa45607",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10004.json.gz": "7a3e4a4c04a31a4bdb939f846825363222988a010789cfca1c057764f3c27ade",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10005.json.gz": "83529ddc234192790e4780dd86afb47b754cae1812e0a3222be8bdc6e43965b1",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10006.json.gz": "59bc3012e2a8045a43ae84e0c5dfcd1902ca7cebd9ff3cd3940498ab02105ab3",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10007.json.gz": "62d05038782401d59021ae28c5ef3f2be5825d50534c99fee4fa12b9132e8ced",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10008.json.gz": "de349ae8e650143b9c491c898dd7fa014e5bd8df3d7973b96c0f8de71ac4ca3d",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10009.json.gz": "f77715031aaf5c3c4da728efb94c59b1da5be31ab81c43c0be35754954d86e90",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10010.json.gz": "65faea09324255a146cd2dc24e0e99add6553bf0b4fa3f923192f487964f4fa0",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10011.json.gz": "e3de8d53aed4213df842cefe16603af33136826c74618faa2f9a6a8c4865c3de",
+    "tests/simulation/phase05h3-20261025-01/regional-remote-10012.json.gz": "f866110dd62f2cd6f78a3f86fcd1fcd50a4271b741bd3f646690c5450ec410aa",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10001.json.gz": "4e8574254fc15634d4d780c421c0def3fef91601ad03c6abd694033e4c7f9bd7",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10002.json.gz": "6f0dcc8b0051fd260e158ea9b1017473fd808f18006c43faab76867bb8a2dac5",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10003.json.gz": "eb93d10746d8e48ead3ff355758bb68d09f973315fc4397d2ce8ad3b9a558607",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10004.json.gz": "46a480df8acd78a9ea001d3a7d8ae5b9d58f64c96714db9666c6ff3f041cc78d",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10005.json.gz": "33b2566bed26507c909198d4e33c5b71fcdf784ccca72dac10d01a847f064e63",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10006.json.gz": "6f51a96a198ae0964ae5ab89774256a26583f3cefc420e1c728cf5ff08911281",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10007.json.gz": "71c2d3aa902a6853cc3a92b196714a3507b71bcb94373ec8ffc57d2a6738f73f",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10008.json.gz": "a38cd9bb2b26acc0c09ee83baebf9a4c77e99a6eeca1986498bce17288b2ce38",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10009.json.gz": "9d90fee5f4677543b8f203792363f7f1031366c6c36613009b2ee7434faa9885",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10010.json.gz": "40ea5229ed4c0aed16821ad6e27895db2b144d569c971bb27ff3a4c536d478d0",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10011.json.gz": "63e0cffb6ed17e5b1a71c8ef4df133e6f7d6d279d402c16d1d8e1370bde1c8b8",
+    "tests/simulation/phase05h3-20261025-01/regional-explorer-10012.json.gz": "c2f3782bd8fd768d1bd6a1287879b8fa17bbcb05380cfa5d0c846f49f430588a",
+    "tests/simulation/phase05h3-20261025-01/choice-probes.json.gz": "cef4e9250f3f3fa8d3387a42c9d6452825340389ee5c32d5cf508f27498b1dd4",
+    "tests/simulation/phase05h2-20261025-01/summary.json.gz": "356c5d538a182b30b27f896e8421aaa8eb58d4691773a90adda48d603d5d78e9",
+    "tests/simulation/phase05h2-20261025-01/SHA256SUMS": "62f5ef7c0719d3e8bbaf070310aa043063380b953b89114d0577fe37b2c0c4ca",
+    "tests/simulation/phase06c-20261025-01/SHA256SUMS": "3d0baa6bdca353c9bcaa616c03f8400fa21e28bb49b0923b58815da40e400815",
+    "tests/simulation/phase06c-20261025-01/main/0-balanced-normal-93002.json.gz": "71e641ff973ef54a24870f11fe158022b9e63140452f6bc4ad0b32efdf75f18a",
+    "tests/simulation/phase06c-20261025-01/main/0-early-normal-93002.json.gz": "b1bd2aa5cbd23173d817be5b9ea96f736e052979af9725a9cc11760f4a5f515d",
+    "tests/simulation/phase06c-20261025-01/main/0-remote-normal-93002.json.gz": "1847f45c145fcee4a92ea61b190988b3859877d684379e19dd429d1a94724876",
+    "tests/simulation/phase06c-20261025-01/main/0-wealth-normal-93002.json.gz": "2adb2c7e04657196d7b946443b95ae6cdd010b5863dcd6ebe6535ec2741e1fcf",
+    "tests/simulation/phase06c-20261025-01/main/1-balanced-normal-93002.json.gz": "651d934d3a73c38b3c92c294e5b898822ccaa455108ee3b1227f119bb6a79143",
+    "tests/simulation/phase06c-20261025-01/main/1-early-normal-93002.json.gz": "885ecf523ce94b2d33cd838b72ffa8808f5b68f7b3406632700ee58bc77b867d",
+    "tests/simulation/phase06c-20261025-01/main/1-remote-normal-93002.json.gz": "cae2d1ce2271f432c0bd13a6db9cd2036235db1f09bece3f60e886f9b09735f9",
+    "tests/simulation/phase06c-20261025-01/main/1-wealth-normal-93002.json.gz": "9c42070fd2e17cffbee8b2de2714de210c8fcb02725c009e4baec8e9f4e70fbc",
+    "tests/simulation/phase06c-20261025-01/main/2-balanced-normal-93002.json.gz": "a2c20e91c686ffd90c2ef83d053e00729236d538bbce675e5d125b57c7076daa",
+    "tests/simulation/phase06c-20261025-01/main/2-early-normal-93002.json.gz": "c361f2272dc3125468b3fc93306a7c51366c85184002bfff803e84aba6a3b101",
+    "tests/simulation/phase06c-20261025-01/main/2-remote-normal-93002.json.gz": "b8923c3ee6d8f5ed6870346433b9046175bb31f75090d8c4a2d19a3013841d63",
+    "tests/simulation/phase06c-20261025-01/main/2-wealth-normal-93002.json.gz": "f65953667038106eed4c70ec8f68a402d5a359b896f0b5c03bf0fbaf1e16c36f",
+    "tests/simulation/phase06c-20261025-01/main/3-balanced-normal-93002.json.gz": "b439a19d7b419203b5b9caed0bf00fa1116de5e1a67274d79a84dd572a7eec12",
+    "tests/simulation/phase06c-20261025-01/main/3-early-normal-93002.json.gz": "ac456428fb2447a2f70025f0760761b8ae300eb43cd6311ec3e9c03c9d735611",
+    "tests/simulation/phase06c-20261025-01/main/3-remote-normal-93002.json.gz": "052fc3e5a21ba98459c2ab420469826fde4ee7f8bc15c190acc04fbc24874d38",
+    "tests/simulation/phase06c-20261025-01/main/3-wealth-normal-93002.json.gz": "2ac87af2784ac1339818e868f414f52fa58d25d394fbe0aa3ef5188e3c581161",
+    "tests/simulation/phase06c-20261025-01/main/4-balanced-normal-93002.json.gz": "39a7c7b19e8c18195f8cc2663ae836615c6845a37a82d60169470bea1388df28",
+    "tests/simulation/phase06c-20261025-01/main/4-early-normal-93002.json.gz": "88349f3a53cbe7d75861369a9354973bd71060d662c708fe7f95073b116a8574",
+    "tests/simulation/phase06c-20261025-01/main/4-remote-normal-93002.json.gz": "92aa9a48bac794afdc24c3e3af12055db83f97379e87fbee607ae4d8d3b97ab1",
+    "tests/simulation/phase06c-20261025-01/main/4-wealth-normal-93002.json.gz": "b1fc078e38cdabf12b6da59739c0e7eb3c9d7aee1685639462ac03aaced7e924",
+    "tests/simulation/phase06c-20261025-01/main/5-balanced-normal-93002.json.gz": "b36eec8eb01c4eae4b9bcf750fdfcc398c8101f1a27bc44697e624fdc7f993a3",
+    "tests/simulation/phase06c-20261025-01/main/5-early-normal-93002.json.gz": "7a1cdef8fdc003079fb99ea06e8ccf3d50443751f0fe3adde40b2acfecdeba30",
+    "tests/simulation/phase06c-20261025-01/main/5-remote-normal-93002.json.gz": "1a01c2356a62b48cf9158f612a6b7b66fe9b8a69541b2fd0e5b74e3296a71f50",
+    "tests/simulation/phase06c-20261025-01/main/5-wealth-normal-93002.json.gz": "aa9a7acca8f3bc36bb41ed1a0c16b07d07082bd02721a142e5b6f9f8c1b4784b",
+    "tests/simulation/phase06c-20261025-01/main/6-balanced-normal-93002.json.gz": "2299d096991a4e3f7f345ef450ec8f4379211e161d466e7b811d54a50b831a4b",
+    "tests/simulation/phase06c-20261025-01/main/6-early-normal-93002.json.gz": "80cdc47de769ff5eb9e07d55416d87508199c23b7664c69e2fce91e6ca4694d5",
+    "tests/simulation/phase06c-20261025-01/main/6-remote-normal-93002.json.gz": "cc509e7660562bf094b95556e720e4fd020bad78307a6ce8feb34200d5df77eb",
+    "tests/simulation/phase06c-20261025-01/main/6-wealth-normal-93002.json.gz": "d1362ec55d138359232d461e6415edf4db058dd77e7d0a0c80e535b9ab8444c9",
+    "tests/simulation/phase06c-20261025-01/main/7-balanced-normal-93002.json.gz": "f51b7d5371c004d2c2678658981160ccc61d25f8e7054a0be9ebe5ea4122840a",
+    "tests/simulation/phase06c-20261025-01/main/7-early-normal-93002.json.gz": "622d617b03adaa3baee1c8f1917af529f01e52db4c45026fdaa76605d9e1fb13",
+    "tests/simulation/phase06c-20261025-01/main/7-remote-normal-93002.json.gz": "dacdfa68a80784a3473f45772a96c30ef04bb7fe233236fc208a3c9b84961a5b",
+    "tests/simulation/phase06c-20261025-01/main/7-wealth-normal-93002.json.gz": "02b251fd95902b082931750cc7e6919ec7834643c1e78aa74ce1c1537964c5a4",
+    "tests/simulation/phase06c-20261025-01/main/8-balanced-normal-93002.json.gz": "1dd02a35e21d6b84442f5ba1055acde263550ff281e1f6a67746e999b0aa0450",
+    "tests/simulation/phase06c-20261025-01/main/8-early-normal-93002.json.gz": "18f0a9faa5dff120b239b0ea86f0421501beef3bf92f514121ad2db4e5cb03e6",
+    "tests/simulation/phase06c-20261025-01/main/8-remote-normal-93002.json.gz": "a4b38641a00f4e40b3499769e9b08902dbc1a2446ea779bd42209b3c54fdbda9",
+    "tests/simulation/phase06c-20261025-01/main/8-wealth-normal-93002.json.gz": "abcfd42e4228fbbede303fd92f539ff226228a8b219405b8a52f92baabd1adfc",
+    "tests/simulation/phase06c-20261025-01/main/9-balanced-normal-93002.json.gz": "c6268d9e10d22a52e4623906b2874c570c72e918ba6ea57d59813f96e7ef4bf8",
+    "tests/simulation/phase06c-20261025-01/main/9-early-normal-93002.json.gz": "405a64ebda1d3c32d4f079ae8844e21aa8aba557471799573a3ba61276e55b2f",
+    "tests/simulation/phase06c-20261025-01/main/9-remote-normal-93002.json.gz": "f792254d4c5814c0a54dac24edc3911dd2c669c7dbec0a7f7276e1ca4ea1fbbd",
+    "tests/simulation/phase06c-20261025-01/main/9-wealth-normal-93002.json.gz": "ade4abcd80d23eb46872c8b62ebe520ff6a5f2188368ff8a23b98685855c003f",
+    "tests/simulation/phase06c-20261025-01/main/10-balanced-normal-93002.json.gz": "a0e7e0a3d35ddab02a5543cb02f2af450e02c111662f6a6f999bf7f8a780e1ea",
+    "tests/simulation/phase06c-20261025-01/main/10-early-normal-93002.json.gz": "72ca24aec3577d92e19af6b7473497d87e46191bda36694d9c90e91e1a08db5e",
+    "tests/simulation/phase06c-20261025-01/main/10-remote-normal-93002.json.gz": "1ccb41ff60db5b5c71352c6c9a0b1c7c71667aa51746c26533b853ffe94413f3",
+    "tests/simulation/phase06c-20261025-01/main/10-wealth-normal-93002.json.gz": "4e19bb25f939f27ca8c275e4d70fae049d53a1904e104396d79497aff9d0a1d5",
+    "tests/simulation/phase06c-20261025-01/main/0-supply-normal-93002.json.gz": "e213821abd029bf584cb5572f2fa11b8fe88b677d72f6d5b9b49c035d5209d0a",
+    "tests/simulation/phase06c-20261025-01/main/1-supply-normal-93002.json.gz": "f67a0a468aae1ca5c3721fc5921e112ea1f2d2718d057f01dc081cb93037b7bc",
+    "tests/simulation/phase06c-20261025-01/main/10-supply-normal-93002.json.gz": "6c13fcd0be15875765bf491df0425b2bfbde49ac8f34a0e8ad9c126b2d0f4063",
+    "tests/simulation/phase06c-20261025-01/main/2-supply-normal-93002.json.gz": "8a709239c4b163cd6df1691d9d133e9b90f67946af224c482c6f0ea903ad0636",
+    "tests/simulation/phase06c-20261025-01/main/3-supply-normal-93002.json.gz": "9f78105d59e66e147dd469400ce7aef1f5ab6f23cbcad13e18d94ee1c2776f72",
+    "tests/simulation/phase06c-20261025-01/main/4-supply-normal-93002.json.gz": "60d00b25871c73e0cd037def4874f7905bfb8d2ee7441cedc8a3de7ea328c28e",
+    "tests/simulation/phase06c-20261025-01/main/5-supply-normal-93002.json.gz": "18172980c48571a6521288cb2b42d1ce41061607c56bec04365737b82feb3466",
+    "tests/simulation/phase06c-20261025-01/main/6-supply-normal-93002.json.gz": "ba07886920f9140b479941dd3a84b3a8512ea6140b3b6d467d365a9c0490443e",
+    "tests/simulation/phase06c-20261025-01/main/7-supply-normal-93002.json.gz": "b0920f35aca62af398d458da62a4dccf247b7d9296cc945927a310b3ee4b9e52",
+    "tests/simulation/phase06c-20261025-01/main/8-supply-normal-93002.json.gz": "b2dfa2ef1f9176de6c88bfbd36363feda30284bbbd2663c3864b356cff93d756",
+    "tests/simulation/phase06c-20261025-01/main/9-supply-normal-93002.json.gz": "d5bc27cfffe0e5234e7fc300aeaf7c8c11b0e9e693a00ff8d71046c3c62f83dc",
+    "tests/simulation/phase06c-20261025-01/main/0-balanced-early-arms-93002.json.gz": "9672a11b6309255fd4d6ba17091639786beb1d5f6ee2d8248d585193d3012577",
+    "tests/simulation/phase06c-20261025-01/main/0-early-early-arms-93002.json.gz": "b5bbfbfd1af81ea495bbafa44c5600598acfba50e23ea3c352b52232186abca8",
+    "tests/simulation/phase06c-20261025-01/main/0-remote-early-arms-93002.json.gz": "bc95e6af5fd154e492f39117f1722cf999c1f19f596f76e57a2cc3e04df03c4b",
+    "tests/simulation/phase06c-20261025-01/main/0-wealth-early-arms-93002.json.gz": "385b34d8244273c62307da59e3bc1c6f1e35915d2cd94437a1247dfa1b46008d",
+    "tests/simulation/phase06c-20261025-01/main/1-balanced-early-arms-93002.json.gz": "77be219b5b1f0f3b3317bdae58d131de60ef0469b450235b60ec08aea6c2ceed",
+    "tests/simulation/phase06c-20261025-01/main/1-early-early-arms-93002.json.gz": "e4a65ffae7d668e29a112e5e3e665b12ae7ce36d39753c8e8f9ab2cd106a7af2",
+    "tests/simulation/phase06c-20261025-01/main/1-remote-early-arms-93002.json.gz": "75c197a4cf9220e2d5e86704b4cf06b1fb794070e6bdeb5baf38d4aab8bccadf",
+    "tests/simulation/phase06c-20261025-01/main/1-wealth-early-arms-93002.json.gz": "1843a74831be7f76dae6d813fa187a3a8daff641d9696cbf6a7b2e4a988ee5c7",
+    "tests/simulation/phase06c-20261025-01/main/2-balanced-early-arms-93002.json.gz": "2343419b26c777d50230e3d532dbcc4b5cbe4b667fc57df6f20d739ea092c048",
+    "tests/simulation/phase06c-20261025-01/main/2-early-early-arms-93002.json.gz": "8286de831166871600d35e03e96966b71d2c6b821ca01b38f659cb55dec936c6",
+    "tests/simulation/phase06c-20261025-01/main/2-remote-early-arms-93002.json.gz": "4ab2b260a7468c9b6eca6cd935c9c79db7bf2269d840031573adeb25744c9114",
+    "tests/simulation/phase06c-20261025-01/main/2-wealth-early-arms-93002.json.gz": "e348ec9b914e2c7867786cd1eea352a56c7b16d6d968ad76c4991781468f706e",
+    "tests/simulation/phase06c-20261025-01/main/3-balanced-early-arms-93002.json.gz": "3f6e7e932ee08a306ebc2164e01c9aa2672df7d661b37d685ed44de51559c606",
+    "tests/simulation/phase06c-20261025-01/main/3-early-early-arms-93002.json.gz": "63fa0ee46e3238ccef49b4949d8f6d3a7469e6e0922e8688636a7ac42233af7f",
+    "tests/simulation/phase06c-20261025-01/main/3-remote-early-arms-93002.json.gz": "32ce79d845b710442245e69fd9e3572a61dcec4dd7a156fd7d727fa501919246",
+    "tests/simulation/phase06c-20261025-01/main/3-wealth-early-arms-93002.json.gz": "8e162fcca9e6b09c05c0df439680806b502cfb2ca4067d5bf5f60b81a165c549",
+    "tests/simulation/phase06c-20261025-01/main/4-balanced-early-arms-93002.json.gz": "a6ceca1b79bf3cee6513c6b8dc758bf2a896c0ae23618c8b9e721d22354378d7",
+    "tests/simulation/phase06c-20261025-01/main/4-early-early-arms-93002.json.gz": "b5f35ba2648a0944b7ce7610b514488384647a6eb99606e3475deff1ab294128",
+    "tests/simulation/phase06c-20261025-01/main/4-remote-early-arms-93002.json.gz": "b00f9dedc8d6c5e4d566d9a1a7af28a4f4a4fd3ed7be9980b4c0071cff4ddb1d",
+    "tests/simulation/phase06c-20261025-01/main/4-wealth-early-arms-93002.json.gz": "20bd73975af81b1ee00df4716af83ea48d0c391ad712d7a9f5b84b697fca5355",
+    "tests/simulation/phase06c-20261025-01/main/5-balanced-early-arms-93002.json.gz": "62b94cfd4180ded35e1fc765d5c7ded95668a405456ee126a7ffd46264b0ad46",
+    "tests/simulation/phase06c-20261025-01/main/5-early-early-arms-93002.json.gz": "c4105904dc9a8e809dac3e6c6032dd60d223a3211099f1ddd3dc4b1c96d50453",
+    "tests/simulation/phase06c-20261025-01/main/5-remote-early-arms-93002.json.gz": "d799c1ce569f3129ae8674002ece5d11fd4fc063e177713e2db2a5e1836c0a6f",
+    "tests/simulation/phase06c-20261025-01/main/5-wealth-early-arms-93002.json.gz": "5617f017cd81b164b65a7d4bbb8fcf915df836ce92ba816be6d5c5a808d442af",
+    "tests/simulation/phase06c-20261025-01/main/6-balanced-early-arms-93002.json.gz": "a6f19420213427b8b7ca9be2b05cc6e2b84defe6805fb55be3b1ad1dcc8ed5f0",
+    "tests/simulation/phase06c-20261025-01/main/6-early-early-arms-93002.json.gz": "a2a820a61df5498014eeed6afe693634561af1bc0905708f9acaa11e7bb6a132",
+    "tests/simulation/phase06c-20261025-01/main/6-remote-early-arms-93002.json.gz": "f8bfbfbb051f04695875d6f57f0830cf52bbfa8be8b58fd37df138b28deb39e0",
+    "tests/simulation/phase06c-20261025-01/main/6-wealth-early-arms-93002.json.gz": "6a8fe3859b57eeab33290eea3ba64c2b6cbc3a349f5bf1fc5d953a78c9ae7dc9",
+    "tests/simulation/phase06c-20261025-01/main/7-balanced-early-arms-93002.json.gz": "c3021db5add998ebadadc382e87c614b5fe4f1aa9cb53197c60c03c929907b71",
+    "tests/simulation/phase06c-20261025-01/main/7-early-early-arms-93002.json.gz": "94ec91df026312b13e7ba7611147c059b7c1ac8a62fbc5427ca828f28a92cc61",
+    "tests/simulation/phase06c-20261025-01/main/7-remote-early-arms-93002.json.gz": "7ce8bab8b9cf631b7132fad37e9266981c9bee7abcfda406d79a1edc07f7e52f",
+    "tests/simulation/phase06c-20261025-01/main/7-wealth-early-arms-93002.json.gz": "08ca6df3f032fcb60189eeae112615386689c32c7d669583973577ebb8239d8f",
+    "tests/simulation/phase06c-20261025-01/main/8-balanced-early-arms-93002.json.gz": "21739ce6d963b95851a999e7ae6b03122d0beed4029ad81cadea7fce623bb2e2",
+    "tests/simulation/phase06c-20261025-01/main/8-early-early-arms-93002.json.gz": "114a343f49f420ad76160bc0f93acebec57e0f2b0a37995baca2de208cbc2403",
+    "tests/simulation/phase06c-20261025-01/main/8-remote-early-arms-93002.json.gz": "be63dbe3849f755d297d0c60b0163b013102f96ae69127f4d0b1b3e6eb9891fa",
+    "tests/simulation/phase06c-20261025-01/main/8-wealth-early-arms-93002.json.gz": "025f78f35ea49af1a2ff4d1c5594fc0b1837c12c1d297b3b02a67d0c370f1810",
+    "tests/simulation/phase06c-20261025-01/main/9-balanced-early-arms-93002.json.gz": "69151f71d0b6b075f77440a368f8992d8f80931701d0ec3d76566efb123e2bcf",
+    "tests/simulation/phase06c-20261025-01/main/9-early-early-arms-93002.json.gz": "03bc92f96bcd3e3e082af39f501030630ddc8c2d3ead33b71df0d5b7dad52566",
+    "tests/simulation/phase06c-20261025-01/main/9-remote-early-arms-93002.json.gz": "c2d9a5d2a21ddcc44839a34b6152913b51e9009d22eae732ad96189df89446a8",
+    "tests/simulation/phase06c-20261025-01/main/9-wealth-early-arms-93002.json.gz": "8b19d0998c9824e656c6b7540fea3583ddd7f694f3cf17d6db94d34b00b65815",
+    "tests/simulation/phase06c-20261025-01/main/10-balanced-early-arms-93002.json.gz": "8351f443c9bdd2953e37935bb76bd1c5df3adbb97371ebf77765195ca42b5cb5",
+    "tests/simulation/phase06c-20261025-01/main/10-early-early-arms-93002.json.gz": "23d2432d78d4a4d03f29186cb93576f5be4d3491098e5ee0847d44e159d7b5ac",
+    "tests/simulation/phase06c-20261025-01/main/10-remote-early-arms-93002.json.gz": "983cfb41c240eaaae019199a564f3278cb4723aa0962cadb333d8060ea79723f",
+    "tests/simulation/phase06c-20261025-01/main/10-wealth-early-arms-93002.json.gz": "30b2b34ac224cdb345a786ae4258bf3d3dde261e2a21968cda3f97c4083a3b4f",
+    "tests/simulation/phase06c-20261025-01/main/0-supply-early-arms-93002.json.gz": "8e4e5cc12388a79c247a865fb0db58c903229eb29c594ee1fd0ba2412b71645c",
+    "tests/simulation/phase06c-20261025-01/main/1-supply-early-arms-93002.json.gz": "db84949e169f422212befa0ac36655c29d9cba021a3fae7e2607357da330b076",
+    "tests/simulation/phase06c-20261025-01/main/10-supply-early-arms-93002.json.gz": "e0815631873d3d1520fad8d7571c4ac97dbbc93d1f2a35a91e0398b3c1c7de3d",
+    "tests/simulation/phase06c-20261025-01/main/2-supply-early-arms-93002.json.gz": "45bca157d180a50c4cc24ce46723bbdd530695cbe61b15b4e1af2c914f6ad613",
+    "tests/simulation/phase06c-20261025-01/main/3-supply-early-arms-93002.json.gz": "d2e527ca917522ff7d3dcfdaee1709f61cacde18e27fd8ddb965fa4c5d2fd4cf",
+    "tests/simulation/phase06c-20261025-01/main/4-supply-early-arms-93002.json.gz": "2728556ab4edca5e3625db0007af068589856874016316b6e780e17039b530d1",
+    "tests/simulation/phase06c-20261025-01/main/5-supply-early-arms-93002.json.gz": "85ca56c00c78ecb1c148a83286906d3b06192881c9571f2bd1f40f7067e8d89f",
+    "tests/simulation/phase06c-20261025-01/main/6-supply-early-arms-93002.json.gz": "1b92383af31312897b8693b90cc2d0b07f3ca7f4ab61befeda2178e28d0ad985",
+    "tests/simulation/phase06c-20261025-01/main/7-supply-early-arms-93002.json.gz": "ab8e332d7bd974214f7a88b343eeb0530ec7c1204bf7167203a2c26254c605d6",
+    "tests/simulation/phase06c-20261025-01/main/8-supply-early-arms-93002.json.gz": "55e867d5b8d3250d6667e1c152f00a768b5c00c3c26bc86db7f281e62d6ef670",
+    "tests/simulation/phase06c-20261025-01/main/9-supply-early-arms-93002.json.gz": "8750d2e87123ad5795e5974193766a49a705b2743d7210b55ee6cf827f59242e",
+    "tests/simulation/phase05j-20261025-01/economy-details.json": "95e16e4255e1713435d75270a22621152fdf5c42909d2e028d2aaeb962cf47d5"
+  }
+}
