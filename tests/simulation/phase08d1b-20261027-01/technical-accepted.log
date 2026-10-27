@@ -1,0 +1,30 @@
+PASS whole source projected exactly; 1a validators and transactions preserved; advance only hooks pure clock
+PASS reproducible separate calendar has varying 10-20 gaps 3-6 inclusive windows and one/two distinct goods
+PASS offers arise only on real daily progress; copied price and band match exact creation point without market writes
+PASS views actual ship selection and V13 import preserve unpaid offer without exposing exact goods prices
+PASS purchase uses old snapshot after later market changes costs 60 once and emits one paid receipt
+PASS 59 gold, declined confirmation and reentrant double click never buy free or duplicate letters
+PASS last stated date is inclusive; first expired day refuses unpaid offer; paid letter remains after replacements
+PASS year change preserves date age and independent schedule; terminal calendar does not create invalid windows
+PASS long actual single and convoy routes cross multiple offer dates with identical baseline economy events RNG
+PASS multi-day versus daily stepping without old expiry effects yields same calendar and no backlog purchases
+PASS old bath special injection on creation day and later expiry leave letter at its exact earlier creation instant
+PASS B reports and A gossip remain same; archive files both kinds once with separate dated sources
+PASS purchase quota aborts gold receipt and filing atomically; stale warning and changed disk reject buys
+/workspace/Hansef-rst/tests/simulation/trade-letter-checks.cjs:57
+ const v11=JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(__dirname,'phase06c-20261025-01/main/0-balanced-normal-93002.json.gz')))).row.final,v11raw=JSON.stringify(v11),vb=boot({[key]:v11raw});run(vb);assert.equal(vb.store[backup],v11raw);assert.equal(vb.eval('s.v'),13);
+                                                                                                                                                                                                       ^
+
+ReferenceError: run is not defined
+    at /workspace/Hansef-rst/tests/simulation/trade-letter-checks.cjs:57:200
+    at check (/workspace/Hansef-rst/tests/simulation/trade-letter-checks.cjs:4:39)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/trade-letter-checks.cjs:56:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0
