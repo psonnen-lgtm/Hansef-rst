@@ -1,0 +1,9 @@
+'use strict';
+// One additional small construction to challenge the wealth cap, no career/strategy.
+const fs=require('node:fs'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
+const {create,root,hash,html,Q}=require('./harness.cjs'),{attach}=require('./political-model.cjs'),out=process.argv[2];if(!out||fs.existsSync(out))throw Error('new output required');
+const g=create();g.eval('s.gold=36000;s.ships[0]=makeShip(2,{id:1,city:0});ship().cargo={0:10,1:10};ship().costs={0:200,1:1};ship().bookCosts={0:200,1:1};ship().origins={0:[{city:0,n:10}],1:[{city:0,n:10}]};s.markets[0][0]={price:20,stock:110};s.markets[0][1]={price:100,stock:110};s.rank=2;s.rep=100;validate(s)');g.resetAnchors();const b=attach(g);
+const old=b.trade(0,10,-1);assert(old.profit<0);const before={gold:g.state().gold,financial:g.eval('netWorth()'),political:Q.R.number(b.worthExact()),eligibleWealth:g.eval('politicalWorth()>=45000')};
+assert(b.trade(1,10,-1));assert(b.trade(1,10,1));const after={gold:g.state().gold,financial:g.eval('netWorth()'),political:Q.R.number(b.worthExact()),eligibleWealth:g.eval('politicalWorth()>=45000')};
+assert.equal(before.gold,after.gold);assert(before.political<45000&&after.political>=45000);assert(after.political>before.political);assert.equal(g.state().rep,100);
+const evidence={testedCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),gameHash:hash(html),constructionOnly:true,noCareerExecuted:true,failedAcceptance:'political wealth cap breaks the invariant after a prior genuine loss; wealth-only mayor gate can be crossed by local neutral wash',loss:old.profit,before,after,goldDelta:0,reputationDelta:0,readyForProductiveUse:false};fs.writeFileSync(out,JSON.stringify(evidence,null,2)+'\n');console.log(JSON.stringify(evidence));
