@@ -58,6 +58,18 @@ check('existing V13 data stay V13; prototype sidecar reload retains anchor witho
 check('capital constrained entry F2 remains a distinct static probe, not proof of rescue',()=>{
  const rows=[];for(const p of [4,16,31,110])for(const model of ['A','B']){const g=fixture(model,p,110,20,1);const n=g.max(0,6);if(n)assert(g.trade(0,n,1));rows.push({model,price:p,quantity:n,cash:g.state().gold,canPayFee:g.state().gold>=6});assert(g.state().gold>=6)}return {fixture:'20 gold, no debt, reserve actual Kogge fee 6',rows};
 });
+check('sale splits across reloads and own ship selection retain the same market anchor',()=>{
+ const bulk=buyParts([90]);assert(bulk.trade(0,90,-1));let split=buyParts([90]);
+ for(let i=0;i<9;i++){assert(split.trade(0,10,-1));split=create(0,0,'B',split.snapshot());split.eval('informationBookPanel();tradeLetterPanel();observe()')}
+ assert.equal(split.state().gold,bulk.state().gold);assert.deepEqual(split.state().markets,bulk.state().markets);
+ return {saleParts:9,quantityPerPart:10,reloads:9,gold:split.state().gold};
+});
+check('same-day gold neutrality does not erase old book-wealth and reputation wash-trade risk',()=>{
+ const rows=[];for(const model of ['A','B']){const g=fixture(model,20,110);g.eval('ship().cargo[0]=45;ship().costs[0]=8;ship().bookCosts={0:8};ship().origins={0:[{city:1,n:45}]};');
+ const before={gold:g.state().gold,worth:g.eval('netWorth()'),rep:g.state().rep};const sale=g.trade(0,45,-1);assert(sale);assert(g.trade(0,45,1));
+ assert.equal(g.state().gold,before.gold);rows.push({model,before,after:{gold:g.state().gold,worth:g.eval('netWorth()'),rep:g.state().rep},recordedProfit:sale.profit});}
+ assert(rows.every(r=>r.after.worth>r.before.worth&&r.after.rep>r.before.rep));return {existingRuleRiskNotFixed:true,rows};
+});
 // Static, independent quantity tables: no journeys or market-day simulation.
 const quantities=[];
 for(const good of [{j:0,name:'Getreide',buy:16,sell:24},{j:3,name:'Salz',buy:31,sell:46},{j:10,name:'Pelze',buy:110,sell:165}])for(const n of [1,5,10,25,45,90,140])for(const model of ['A','B']){
