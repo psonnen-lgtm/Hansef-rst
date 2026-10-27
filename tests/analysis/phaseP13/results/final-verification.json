@@ -1,0 +1,18 @@
+{
+  "phase": "P1.3",
+  "readOnly": true,
+  "base": "bfdc410059bdf935b110382a775410e30d1bef0e",
+  "dynamicTestCommit": "69e41bc4f630c52e223bab8c42b3df5e4d66698c",
+  "elevenCompletePaths": true,
+  "firstFailedPreTradeContext": 1,
+  "totalContexts": 12,
+  "totalActualDaysAcrossIndependentPaths": 902,
+  "maxProtocolTradeCalls": 5,
+  "maxIncludingControlledCertificationsBySourceReview": 10,
+  "allOldFilesUnchangedExceptAppendOnlyIndex": true,
+  "oldFileCount": 3179,
+  "htmlHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "relativeLinksChecked": 38,
+  "testedDynamicSourcesUnchanged": true,
+  "checksAndLimits": "final read-only content/link/source review, no VM or new game actions"
+}
