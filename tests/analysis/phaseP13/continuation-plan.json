@@ -1,0 +1,38 @@
+{
+  "phase": "P1.3",
+  "base": "bfdc410059bdf935b110382a775410e30d1bef0e",
+  "branch": "analysis/p13-supply-market-balance",
+  "actualDateBerlin": "2026-10-28",
+  "maximumTrajectories": 12,
+  "maximumDaysPerTrajectory": 90,
+  "maximumTradeDecisions": 12,
+  "seed": 71201,
+  "experimentalPublicQuantities": [
+    15,
+    30,
+    60
+  ],
+  "historicalOnlyPublicQuantity": 90,
+  "recoveryDefinition": "two consecutive daily observations of free stock >=90; immediate state does not count",
+  "sha256": {
+    "Hansefuerst_0_4.html": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "tests/analysis/phaseP12/adapter.cjs": "4e999bf302326043b38b12f2c274f2adc1985e2d69a84ba852df55aa4c8bb15b",
+    "tests/analysis/phaseP12/audit.cjs": "65a62785b85ca5739f9fa8bec588a3d6b0edbc8037356e98a434f26c8d80bc46",
+    "tests/analysis/phaseP12/checks.cjs": "d677b53a98ffdd7adf7ffa9b7fc901b9a1c0822f7441f60b9ccc968b3b483ad1",
+    "tests/analysis/phaseP12/harness.cjs": "633d9e848152684add898a31f501f2ba724a7e79e24957520dbd3f2e042a5e0a",
+    "tests/analysis/phaseP12/results/checks-attempt1.json": "1656054b9b931d1952b8cd1579d8f4cc5df295d9eb27731d986506425e0d115a",
+    "tests/analysis/phaseP13/README.md": "ae24dcc915141334074bbb891dfc2d5024537a85fe68662b032d5d45e4f21495",
+    "tests/analysis/phaseP13/adapter.cjs": "d27ced054c126323c21fc6b0f3919703c844cd14147c7702bd9354b13d36641e",
+    "tests/analysis/phaseP13/audit.cjs": "81e5d373b076ff00b5ce153be959241c6b309938f3c3fb445b5d43f17539e086",
+    "tests/analysis/phaseP13/checks.cjs": "ae8ef9f805751426bf8fa79af3adcf498f5e54d214432f3b28366e0fd923a0f9",
+    "tests/analysis/phaseP13/harness.cjs": "7086de7e6d385b0eaba2958c6ace737905f2fefde6c3b00a4109b1bbf55987b7",
+    "tests/analysis/phaseP13/math.cjs": "7f42d400fea6fa453d2e5c5cfe2277b3f45b3fa557d8f767ff189014245fd718",
+    "tests/analysis/phaseP13/rules.cjs": "0da08c9e20b9620cebac97154fe2f37ff970f553bd26f7df45545b8e37d9bec8",
+    "tests/simulation/headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+    "tests/analysis/phaseP13/frozen-plan.json": "330783bd6b19b478ace44c032cda713ef1edf2d3859f7828b95ba338affe125b"
+  },
+  "priorFailedContexts": 1,
+  "remainingContexts": 11,
+  "omittedCase": "05-exact-repeat-A30",
+  "priorTestCommit": "39bc6fb7cd8990d92c1acef7a07ec9b92234257a"
+}

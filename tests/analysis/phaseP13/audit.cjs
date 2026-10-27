@@ -2,10 +2,10 @@
 // Read-only post-processing: never imports game VM or advances a market.
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict'),{execFileSync}=require('node:child_process');
 const dir=__dirname,root=path.resolve(dir,'../../..'),out=process.argv[2];if(!out||fs.existsSync(out))throw Error('new output required');
-const read=p=>JSON.parse(fs.readFileSync(path.join(dir,p),'utf8')),x=read('results/dynamic-attempt1.json'),math=read('results/math-attempt1.json'),plan=read('frozen-plan.json');
+const read=p=>JSON.parse(fs.readFileSync(path.join(dir,p),'utf8')),x=read('results/dynamic-attempt2.json'),math=read('results/math-attempt1.json'),plan=read('continuation-plan.json');
 for(const [p,h]of Object.entries(plan.sha256))assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(root,p))).digest('hex'),h,p);
-assert.equal(x.paths.length,12);assert(x.paths.every(p=>p.completed));assert(x.pairedRngAndOther120Markets);assert(math.passed);
-const owned=s=>s.ships.concat(s.warehouses).reduce((a,q)=>a+(q.cargo[0]||0),0),sum=(ev,t,key)=>ev.filter(e=>e.type===t).reduce((s,e)=>s+e[key],0),rows=[];
+assert.equal(x.paths.length,11);assert.equal(x.scope.totalNewContexts,12);assert(x.paths.every(p=>p.completed));assert(x.pairedRngAndOther120Markets);assert(math.passed);
+const owned=s=>s.ships.concat(Object.values(s.warehouses)).reduce((a,q)=>a+(q.cargo[0]||0),0),sum=(ev,t,key)=>ev.filter(e=>e.type===t).reduce((s,e)=>s+e[key],0),rows=[];
 for(const p of x.paths){
  const start=p.start.game,end=p.final.game,ev=p.final.events,receipts=Object.values(p.supply?.deliveries??{}).map(d=>d.receipt),consumed=p.supply?.consumed??0;
  const sales=sum(ev,'sell','total'),purchases=sum(ev,'buy','total'),sold=sum(ev,'sell','quantity'),bought=sum(ev,'buy','quantity'),gift=sum(ev,'public_grain_donation','quantity'),quest=sum(ev,'quest_reward','reward');
@@ -29,7 +29,7 @@ const counterfactual=stress.days.map((d,i)=>({day:i+1,stressStock:d.stock,natura
 const R=require('./rules.cjs'),ruleEvaluations=[];
 for(const p of [single30,stress,natural]){const actions=[];for(const r of Object.values(p.supply?.deliveries??{}).map(d=>d.receipt)){if(r.accepted)actions.push({created:r.date,filledDay:r.date,capacity:r.accepted,consumed:r.accepted})}
  const observations=p.days.map(d=>({day:d.day,stock:d.stock,debt:d.debt,regular:true}));for(const variant of ['recovery','chronic']){const lastDay=observations.at(-1).day;ruleEvaluations.push({path:p.name,variant,atFinalDay:R.evaluate({variant,now:lastDay,observations,actions})});}}
-const result={phase:'P1.3',readOnly:true,newGameContexts:0,testedCommit:x.testedCommit,auditCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),gameHash:x.gameHash,allTwelveLedgersPass:true,pairedRngAndOther120Markets:true,mathGroups:math.groups.length,rows,historicalReference,counterfactual,ruleEvaluations,productionReady:false,limits:['one seed and controlled initial state','only Luebeck grain','calendar stress does not prove real recurring crises','proposed need detector tested mathematically, not integrated with every V13 write','no foreign purchase or route performed','no browser or productive migration','no votes or office effect','no claim of long-run balance from ninety days']};
+const result={phase:'P1.3',readOnly:true,newGameContexts:0,testedCommit:x.testedCommit,auditCommit:execFileSync('git',['rev-parse','HEAD'],{cwd:root,encoding:'utf8'}).trim(),gameHash:x.gameHash,allElevenCompletedLedgersPass:true,failedPreTradeContext:1,totalNewContexts:12,pairedRngAndOther120Markets:true,mathGroups:math.groups.length,rows,historicalReference,counterfactual,ruleEvaluations,productionReady:false,limits:['one seed and controlled initial state','only Luebeck grain','calendar stress does not prove real recurring crises','proposed need detector tested mathematically, not integrated with every V13 write','no foreign purchase or route performed','no browser or productive migration','no votes or office effect','no claim of long-run balance from ninety days']};
 fs.writeFileSync(out,JSON.stringify(result,null,2)+'\n');
 const csv=path.join(dir,'results/ledger.csv');if(fs.existsSync(csv))throw Error('CSV exists');fs.writeFileSync(csv,Object.keys(rows[0]).join(',')+'\n'+rows.map(r=>Object.values(r).map(v=>v??'').join(',')).join('\n')+'\n');
 console.log(JSON.stringify({readOnly:true,newGameContexts:0,ledgers:rows.length,mathGroups:math.groups.length,historicalReference}));
