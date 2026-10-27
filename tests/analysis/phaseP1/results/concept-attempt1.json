@@ -1,0 +1,1488 @@
+{
+  "phase": "P1-election-order",
+  "status": "concept-validation-only",
+  "base": "a5ec92a19018a4049567c80f8e8fbd687f3a8d3e",
+  "testedAnalysisCommit": "9fd3b0851738ec161b19d6d370e99e7a62a19eac",
+  "productCodeCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "checks": [
+    {
+      "name": "actual eleven city identities, proposed totals and disjoint groups",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "rows": [
+          {
+            "index": 0,
+            "id": "luebeck",
+            "name": "Lübeck",
+            "population": 25000,
+            "electors": 5000,
+            "minPopulation": 12500,
+            "maxPopulation": 37500,
+            "nonElectors": 20000,
+            "groups": [
+              2000,
+              1250,
+              1000,
+              750
+            ]
+          },
+          {
+            "index": 1,
+            "id": "hamburg",
+            "name": "Hamburg",
+            "population": 16000,
+            "electors": 3200,
+            "minPopulation": 8000,
+            "maxPopulation": 24000,
+            "nonElectors": 12800,
+            "groups": [
+              1280,
+              800,
+              640,
+              480
+            ]
+          },
+          {
+            "index": 2,
+            "id": "rostock",
+            "name": "Rostock",
+            "population": 12000,
+            "electors": 2400,
+            "minPopulation": 6000,
+            "maxPopulation": 18000,
+            "nonElectors": 9600,
+            "groups": [
+              960,
+              600,
+              480,
+              360
+            ]
+          },
+          {
+            "index": 3,
+            "id": "stralsund",
+            "name": "Stralsund",
+            "population": 10000,
+            "electors": 2000,
+            "minPopulation": 5000,
+            "maxPopulation": 15000,
+            "nonElectors": 8000,
+            "groups": [
+              800,
+              500,
+              400,
+              300
+            ]
+          },
+          {
+            "index": 4,
+            "id": "stettin",
+            "name": "Stettin",
+            "population": 9000,
+            "electors": 1800,
+            "minPopulation": 4500,
+            "maxPopulation": 13500,
+            "nonElectors": 7200,
+            "groups": [
+              720,
+              450,
+              360,
+              270
+            ]
+          },
+          {
+            "index": 5,
+            "id": "danzig",
+            "name": "Danzig",
+            "population": 20000,
+            "electors": 4000,
+            "minPopulation": 10000,
+            "maxPopulation": 30000,
+            "nonElectors": 16000,
+            "groups": [
+              1600,
+              1000,
+              800,
+              600
+            ]
+          },
+          {
+            "index": 6,
+            "id": "bergen",
+            "name": "Bergen",
+            "population": 8000,
+            "electors": 1600,
+            "minPopulation": 4000,
+            "maxPopulation": 12000,
+            "nonElectors": 6400,
+            "groups": [
+              640,
+              400,
+              320,
+              240
+            ]
+          },
+          {
+            "index": 7,
+            "id": "visby",
+            "name": "Visby",
+            "population": 6000,
+            "electors": 1200,
+            "minPopulation": 3000,
+            "maxPopulation": 9000,
+            "nonElectors": 4800,
+            "groups": [
+              480,
+              300,
+              240,
+              180
+            ]
+          },
+          {
+            "index": 8,
+            "id": "bruegge",
+            "name": "Brügge",
+            "population": 40000,
+            "electors": 8000,
+            "minPopulation": 20000,
+            "maxPopulation": 60000,
+            "nonElectors": 32000,
+            "groups": [
+              3200,
+              2000,
+              1600,
+              1200
+            ]
+          },
+          {
+            "index": 9,
+            "id": "nowgorod",
+            "name": "Nowgorod",
+            "population": 30000,
+            "electors": 6000,
+            "minPopulation": 15000,
+            "maxPopulation": 45000,
+            "nonElectors": 24000,
+            "groups": [
+              2400,
+              1500,
+              1200,
+              900
+            ]
+          },
+          {
+            "index": 10,
+            "id": "venlo",
+            "name": "Venlo",
+            "population": 5000,
+            "electors": 1000,
+            "minPopulation": 2500,
+            "maxPopulation": 7500,
+            "nonElectors": 4000,
+            "groups": [
+              400,
+              250,
+              200,
+              150
+            ]
+          }
+        ],
+        "populationTotal": 181000,
+        "electorsTotal": 36200
+      }
+    },
+    {
+      "name": "integer allocations, conservation and repeated same input",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "cases": 40,
+        "rows": [
+          {
+            "electors": 1,
+            "candidates": 2,
+            "allocation": [
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "electors": 1,
+            "candidates": 3,
+            "allocation": [
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "electors": 1,
+            "candidates": 4,
+            "allocation": [
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "electors": 1,
+            "candidates": 5,
+            "allocation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          {
+            "electors": 1,
+            "candidates": 6,
+            "allocation": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "electors": 3,
+            "candidates": 2,
+            "allocation": [
+              0,
+              1,
+              2
+            ]
+          },
+          {
+            "electors": 3,
+            "candidates": 3,
+            "allocation": [
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "electors": 3,
+            "candidates": 4,
+            "allocation": [
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "electors": 3,
+            "candidates": 5,
+            "allocation": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "electors": 3,
+            "candidates": 6,
+            "allocation": [
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "electors": 7,
+            "candidates": 2,
+            "allocation": [
+              1,
+              2,
+              4
+            ]
+          },
+          {
+            "electors": 7,
+            "candidates": 3,
+            "allocation": [
+              1,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "electors": 7,
+            "candidates": 4,
+            "allocation": [
+              0,
+              1,
+              1,
+              2,
+              3
+            ]
+          },
+          {
+            "electors": 7,
+            "candidates": 5,
+            "allocation": [
+              0,
+              1,
+              1,
+              1,
+              2,
+              2
+            ]
+          },
+          {
+            "electors": 7,
+            "candidates": 6,
+            "allocation": [
+              0,
+              1,
+              1,
+              1,
+              1,
+              2,
+              1
+            ]
+          },
+          {
+            "electors": 1000,
+            "candidates": 2,
+            "allocation": [
+              116,
+              232,
+              652
+            ]
+          },
+          {
+            "electors": 1000,
+            "candidates": 3,
+            "allocation": [
+              86,
+              172,
+              258,
+              484
+            ]
+          },
+          {
+            "electors": 1000,
+            "candidates": 4,
+            "allocation": [
+              64,
+              128,
+              192,
+              256,
+              360
+            ]
+          },
+          {
+            "electors": 1000,
+            "candidates": 5,
+            "allocation": [
+              49,
+              97,
+              145,
+              194,
+              242,
+              273
+            ]
+          },
+          {
+            "electors": 1000,
+            "candidates": 6,
+            "allocation": [
+              38,
+              75,
+              113,
+              150,
+              188,
+              225,
+              211
+            ]
+          },
+          {
+            "electors": 1200,
+            "candidates": 2,
+            "allocation": [
+              139,
+              278,
+              783
+            ]
+          },
+          {
+            "electors": 1200,
+            "candidates": 3,
+            "allocation": [
+              103,
+              206,
+              310,
+              581
+            ]
+          },
+          {
+            "electors": 1200,
+            "candidates": 4,
+            "allocation": [
+              77,
+              154,
+              230,
+              307,
+              432
+            ]
+          },
+          {
+            "electors": 1200,
+            "candidates": 5,
+            "allocation": [
+              58,
+              116,
+              174,
+              233,
+              291,
+              328
+            ]
+          },
+          {
+            "electors": 1200,
+            "candidates": 6,
+            "allocation": [
+              45,
+              90,
+              135,
+              180,
+              225,
+              271,
+              254
+            ]
+          },
+          {
+            "electors": 1800,
+            "candidates": 2,
+            "allocation": [
+              208,
+              417,
+              1175
+            ]
+          },
+          {
+            "electors": 1800,
+            "candidates": 3,
+            "allocation": [
+              155,
+              309,
+              464,
+              872
+            ]
+          },
+          {
+            "electors": 1800,
+            "candidates": 4,
+            "allocation": [
+              115,
+              230,
+              345,
+              461,
+              649
+            ]
+          },
+          {
+            "electors": 1800,
+            "candidates": 5,
+            "allocation": [
+              87,
+              175,
+              262,
+              349,
+              436,
+              491
+            ]
+          },
+          {
+            "electors": 1800,
+            "candidates": 6,
+            "allocation": [
+              68,
+              135,
+              203,
+              270,
+              338,
+              405,
+              381
+            ]
+          },
+          {
+            "electors": 5000,
+            "candidates": 2,
+            "allocation": [
+              579,
+              1158,
+              3263
+            ]
+          },
+          {
+            "electors": 5000,
+            "candidates": 3,
+            "allocation": [
+              430,
+              860,
+              1289,
+              2421
+            ]
+          },
+          {
+            "electors": 5000,
+            "candidates": 4,
+            "allocation": [
+              320,
+              640,
+              959,
+              1279,
+              1802
+            ]
+          },
+          {
+            "electors": 5000,
+            "candidates": 5,
+            "allocation": [
+              242,
+              485,
+              727,
+              969,
+              1212,
+              1365
+            ]
+          },
+          {
+            "electors": 5000,
+            "candidates": 6,
+            "allocation": [
+              188,
+              375,
+              563,
+              751,
+              939,
+              1126,
+              1058
+            ]
+          },
+          {
+            "electors": 8000,
+            "candidates": 2,
+            "allocation": [
+              927,
+              1853,
+              5220
+            ]
+          },
+          {
+            "electors": 8000,
+            "candidates": 3,
+            "allocation": [
+              688,
+              1375,
+              2063,
+              3874
+            ]
+          },
+          {
+            "electors": 8000,
+            "candidates": 4,
+            "allocation": [
+              512,
+              1023,
+              1535,
+              2047,
+              2883
+            ]
+          },
+          {
+            "electors": 8000,
+            "candidates": 5,
+            "allocation": [
+              388,
+              775,
+              1163,
+              1551,
+              1939,
+              2184
+            ]
+          },
+          {
+            "electors": 8000,
+            "candidates": 6,
+            "allocation": [
+              300,
+              601,
+              901,
+              1202,
+              1502,
+              1802,
+              1692
+            ]
+          }
+        ],
+        "tieRule": "lexical stored priority keys, deterministic equal remainder example"
+      }
+    },
+    {
+      "name": "120 supporters transferred from existing pools with no new electors",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "before": [
+          180,
+          320,
+          300,
+          200
+        ],
+        "after": [
+          300,
+          273,
+          256,
+          171
+        ],
+        "delta": [
+          120,
+          -47,
+          -44,
+          -29
+        ],
+        "sumDelta": 0,
+        "note": "illustrative affinity example, not a guaranteed festival vote award"
+      }
+    },
+    {
+      "name": "same-day accepted event set order and pooled diminishing donation",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "eventOrders": 6,
+        "sameResult": [
+          265,
+          213,
+          228,
+          294
+        ],
+        "donation200Vs4x50Vs200x1Affinity": [
+          32,
+          32,
+          32
+        ],
+        "scope": "arithmetic only; resource reservation and duplicate-ID engine not implemented"
+      }
+    },
+    {
+      "name": "bounded public budget and festival affordability arithmetic",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "rows": [
+          {
+            "city": "Lübeck",
+            "campaignCap": 2200,
+            "initialCash": 4400,
+            "festivalCost": 1600,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1400
+          },
+          {
+            "city": "Hamburg",
+            "campaignCap": 1840,
+            "initialCash": 3680,
+            "festivalCost": 1240,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1220
+          },
+          {
+            "city": "Rostock",
+            "campaignCap": 1680,
+            "initialCash": 3360,
+            "festivalCost": 1080,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1140
+          },
+          {
+            "city": "Stralsund",
+            "campaignCap": 1600,
+            "initialCash": 3200,
+            "festivalCost": 1000,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1100
+          },
+          {
+            "city": "Stettin",
+            "campaignCap": 1560,
+            "initialCash": 3120,
+            "festivalCost": 960,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1080
+          },
+          {
+            "city": "Danzig",
+            "campaignCap": 2000,
+            "initialCash": 4000,
+            "festivalCost": 1400,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1300
+          },
+          {
+            "city": "Bergen",
+            "campaignCap": 1520,
+            "initialCash": 3040,
+            "festivalCost": 920,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1060
+          },
+          {
+            "city": "Visby",
+            "campaignCap": 1440,
+            "initialCash": 2880,
+            "festivalCost": 840,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1020
+          },
+          {
+            "city": "Brügge",
+            "campaignCap": 2800,
+            "initialCash": 5600,
+            "festivalCost": 2200,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1700
+          },
+          {
+            "city": "Nowgorod",
+            "campaignCap": 2400,
+            "initialCash": 4800,
+            "festivalCost": 1800,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1500
+          },
+          {
+            "city": "Venlo",
+            "campaignCap": 1400,
+            "initialCash": 2800,
+            "festivalCost": 800,
+            "remainingCampaignAfterFestival": 600,
+            "yearlyIncomeCap": 1000
+          }
+        ],
+        "noAIActionsExecuted": true
+      }
+    },
+    {
+      "name": "calendar interval and delegate count arithmetic",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "campaignDays": 90,
+        "annualDays": 360,
+        "delegates": 33,
+        "notTested": [
+          "actual count trigger",
+          "runoff",
+          "load around election",
+          "mayor/elder assignment"
+        ]
+      }
+    },
+    {
+      "name": "complete lexical source occurrence and affected test file inventory",
+      "passed": true,
+      "scope": "document-arithmetic-or-read-only-inventory",
+      "evidence": {
+        "htmlSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+        "sourceOccurrences": {
+          "rank": [
+            {
+              "line": 317,
+              "excerpt": " if(!isCityIndex(x.city)||!integer(x.day,1,360)||!integer(x.year,1,999999)||!integer(x.rank,0,4)||!num(x.rep)||!num(x.gold)||!num(x.bank)||!num(x.debt))throw Error('Ungültige Grunddaten');"
+            },
+            {
+              "line": 342,
+              "excerpt": " x.questAvailableAt=Number.isFinite(x.questAvailableAt)?x.questAvailableAt:0;x.electionAvailableAt=Number.isFinite(x.electionAvailableAt)?x.electionAvailableAt:0;"
+            },
+            {
+              "line": 349,
+              "excerpt": "function freshPolitics(now=1350*360+1,legacyRank=0){return {version:1,since:now,rules:{sectionDays:POLITICAL_RULES.sectionDays,mayorWealth:POLITICAL_RULES.mayorWealth},legacyRank,records:[],issued:Array.from({length:CITY_COUNT},()=>({supply:-1,accord:-1})),jobs:[],office:null,terms:Array(CITY_COUNT).fill(null),appointments:Array(CITY_COUNT).fill(null),nextElection:Array(CITY_COUNT).fill(0),endorsements:Array(CITY_COUNT).fill(null),league:null,leagueIssued:Array(CITY_COUNT).fill(-1),elderman:null}}"
+            },
+            {
+              "line": 370,
+              "excerpt": " if(s.rank<2)reasons.push('Zuerst den Rang Ratsherr erwerben.');"
+            },
+            {
+              "line": 398,
+              "excerpt": "function politicalLeagueAccess(){return s.rank===4||!!s.politics.office||s.politics.terms.some(Boolean)}"
+            },
+            {
+              "line": 402,
+              "excerpt": " if(s.rank>=4)return {eligible:false,reasons:['Der Eldermann-Titel ist bereits erworben. Der Handel geht weiter.'],home,external,cities,regions:regions.size};"
+            },
+            {
+              "line": 465,
+              "excerpt": "  if(quote.score>=quote.target){p.office={city:s.city,start:totalDay(),until:Math.min(360000000,totalDay()+360),firstReceipt:p.records.length};p.appointments[s.city]={city:s.city,day:totalDay(),support:quote.score};s.rank=Math.max(s.rank,3);politicalNote('Bürgermeisterwahl in '+CITIES[s.city]+' gewonnen. Die Mehrheit ist öffentlich belegt; ein Amt, keine Geldvergünstigungen.');Testlog.event('promotion',{rank:s.rank,officeCity:s.city})}"
+            },
+            {
+              "line": 492,
+              "excerpt": "  s.politics.elderman={day:totalDay(),home:q.home,cities:q.cities};s.rank=4;politicalNote('Die Hanseversammlung wählt dich zum Eldermann. Deine Leistungen und Fürsprecher sind beurkundet. Handel und Schiffbau gehen weiter.');Testlog.event('promotion',{rank:4});Testlog.snapshot('elderman');return true;"
+            },
+            {
+              "line": 497,
+              "excerpt": " if(!keys(p,['version','since','rules','legacyRank','records','issued','jobs','office','terms','appointments','nextElection','endorsements','league','leagueIssued','elderman'])||p.version!==1||!int(p.since,0,now)||!keys(p.rules,['sectionDays','mayorWealth'])||![30,60].includes(p.rules.sectionDays)||![45000,85000].includes(p.rules.mayorWealth)||!int(p.legacyRank,0,x.rank))bad();"
+            },
+            {
+              "line": 525,
+              "excerpt": " const o=p.office;if(o!==null&&(!keys(o,['city','start','until','firstReceipt'])||!isCityIndex(o.city)||!day(o.start)||o.until!==Math.min(360000000,o.start+360)||!int(o.firstReceipt,0,p.records.length)||!p.appointments[o.city]||x.rank<3))bad();"
+            },
+            {
+              "line": 529,
+              "excerpt": " const e=p.elderman;if(e!==null&&(!keys(e,['day','home','cities'])||!day(e.day)||!isCityIndex(e.home)||!p.terms[e.home]||p.terms[e.home].end>e.day||!Array.isArray(e.cities)||e.cities.length<4||e.cities.length>11||new Set(e.cities).size!==e.cities.length||!e.cities.includes(e.home)||e.cities.some(c=>!isCityIndex(c)||c!==e.home&&!p.endorsements[c])||new Set(e.cities.map(c=>POLITICAL_CITIES[c].region)).size<2||!p.records.some(r=>r.kind==='league'&&r.city===e.home&&r.day<=e.day)||x.rank!==4))bad();"
+            },
+            {
+              "line": 530,
+              "excerpt": " if(x.rank>=3&&p.legacyRank<3&&!p.appointments.some(Boolean))bad();"
+            },
+            {
+              "line": 531,
+              "excerpt": " if(x.rank===4&&p.legacyRank<4&&!e)bad();"
+            },
+            {
+              "line": 532,
+              "excerpt": " if(!Number.isSafeInteger(x.completed)||x.completed<0||!Number.isSafeInteger(x.visits)||x.visits<1||(Object.hasOwn(x,'electionAvailableAt')&&!int(x.electionAvailableAt,0,360000000))||!Number.isSafeInteger(x.shipyard.lastShipId))bad();"
+            },
+            {
+              "line": 539,
+              "excerpt": "  x.politics=freshPolitics(x.year*360+x.day,x.rank);x.v=11;"
+            },
+            {
+              "line": 542,
+              "excerpt": "  if(Object.hasOwn(x,'electionAvailableAt')&&(!Number.isSafeInteger(x.electionAvailableAt)||x.electionAvailableAt<0||x.electionAvailableAt>360000000))x.electionAvailableAt=0;"
+            },
+            {
+              "line": 558,
+              "excerpt": " const mayor=[row('rank','Rang Ratsherr',Math.min(s.rank,2),2,'Rangstufen','Im Rathaus den nächsten Kaufmannsrang beantragen; die Voraussetzungen stehen unter der Ratstafel.'),row('wealth','Politisches Vermögen',worth,p.rules.mayorWealth,'G','Durch Handel Buchvermögen aufbauen; Mietrückstände werden zusätzlich abgezogen.'),row('rep','Ansehen',s.rep,r.rep,'Punkte','Ansehen durch bestehende Handelsreisen, Verkäufe, erfüllte Aufträge oder Kirchenspenden gewinnen.'),row('services','Örtliche Dienste',q.records,r.services,'Dienste','Versiegelte Bürger- und Ratsbriefe dieser Stadt annehmen und regelgerecht abschließen.'),row('periods','Belegte Ratsa"
+            },
+            {
+              "line": 563,
+              "excerpt": " if(s.rank===4)nextStep='Du hast den Eldermann-Titel erworben. Handel und Stadtleben gehen weiter; ein erneuter Aufstieg ist nicht nötig.';"
+            },
+            {
+              "line": 565,
+              "excerpt": " else if(s.rank>=3&&h.eligible)nextStep='Alle Hansebedingungen sind erfüllt. Du kannst ausdrücklich vor die Hanseversammlung treten.';"
+            },
+            {
+              "line": 566,
+              "excerpt": " else if(s.rank>=3&&proved)nextStep=(elder.find(v=>!v.ok)?.hint||'Die offenen Mietrückstände begleichen.');"
+            },
+            {
+              "line": 567,
+              "excerpt": " else if(s.rank<2)nextStep='Im Abschnitt „Dein nächster Kaufmannsrang“ die noch offenen Voraussetzungen erfüllen und den Aufstieg ausdrücklich beantragen.';"
+            },
+            {
+              "line": 577,
+              "excerpt": " let html='<section class=\"political-letter career-board\" id=\"careerBoard\"><h3>⚜ Ratstafel deiner Laufbahn</h3><p><b>'+esc(s.name)+'</b> · erworbener Rang: <b>'+esc(rank())+'</b>.</p><p>'+(p.office?'Aktives Bürgermeisteramt: <b>'+esc(CITIES[p.office.city])+'</b>, noch '+Math.max(0,p.office.until-totalDay())+' Spieltage.':'Kein aktives Bürgermeisteramt. Ein erworbener Titel bleibt auch ohne örtliches Amt erhalten.')+'</p><p>'+(s.beginning?'Dein Starthafen ist '+esc(CITIES[s.beginning.city])+'.':'Der Starthafen dieser älteren Partie ist nicht überliefert.')+' Die Kandidatur unten gilt für <b>'+esc(CITIES[c])+'</b>; ein Amt wird nicht durch den "
+            },
+            {
+              "line": 584,
+              "excerpt": " let html='<section class=\"political-letter\"><h3>📜 Ratsbrief aus '+esc(CITIES[c])+'</h3><p>Dein erworbener Titel: <b>'+esc(rank())+'</b>. '+(p.legacyRank>=3&&!p.appointments.some(Boolean)?'Dein früherer Titel bleibt erhalten. Eine Amtsstadt wurde nicht erfunden; örtliche Amtsrechte erhältst du durch die unten erklärte Kandidatur.':'')+'</p><p>Politisches Vermögen: <b>'+fmt(politicalWorth())+' G</b> nach Abzug von '+fmt(warehouseArrears())+' G Mietrückstand. Allgemeines Buchvermögen und Kreditregeln bleiben unverändert.</p><p>Ratsabschnitt '+(period+1)+' · nächster Abschnitt in '+(next-totalDay())+' Spieltagen. Warten allein schafft keine Verd"
+            },
+            {
+              "line": 586,
+              "excerpt": " if(s.rank<2){const wealth=[18000,45000][s.rank],rep=[0,25][s.rank];html+='<section class=\"item\"><h3>Dein nächster Kaufmannsrang</h3><p>'+['Fernkaufmann','Ratsherr'][s.rank]+': '+fmt(wealth)+' G Buchvermögen und '+rep+' Ansehen.</p><button onclick=\"promote()\" '+(netWorth()<wealth||s.rep<rep?'disabled':'')+'>Aufstieg beantragen</button></section>'}"
+            },
+            {
+              "line": 603,
+              "excerpt": " html+='<button id=\"hanseCandidate\" onclick=\"runHanseAssembly()\" '+(!h.eligible?'disabled':'')+'>Vor die Hanseversammlung treten</button>'+(s.rank===4?'<p>🏆 Dein Eldermann-Titel bleibt. Handel, Lagerwirtschaft und Schiffbau gehen weiter.</p>':'')+'</section>';"
+            },
+            {
+              "line": 799,
+              "excerpt": "function rank(){return ['Kaufmann','Fernkaufmann','Ratsherr','Bürgermeister','Eldermann'][s.rank]}"
+            },
+            {
+              "line": 876,
+              "excerpt": "function render(){if(!s)return;const warehouseSpot=$('warehouseSpot');if(warehouseSpot)warehouseSpot.hidden=!isCityIndex(s.city); $('stats').innerHTML=`<div class=\"stat\"><small>Goldstücke</small><b>${fmt(s.gold)} 🪙</b></div><div class=\"stat\"><small>Rang</small><b>${esc(rank())}</b></div><div class=\"stat\"><small>Ansehen</small><b>${fmt(s.rep)} ⭐</b></div><div class=\"stat\"><small>Datum</small><b>Tag ${s.day} · ${s.year}</b></div>`;$('place').textContent='⚓ '+CITIES[s.city];$('hint').textContent=`${s.ships.length} Schiff(e) · ${fmt(netWorth())} G Nettovermögen zu Buchwerten`;drawCity();save();renderStorageStatus()}"
+            },
+            {
+              "line": 986,
+              "excerpt": "function contorView(){let level=s.rank>=3?3:s.rank>=2?2:s.rank>=1?1:0;let text=['Ein einfacher Schreibtisch, eine Seekarte und ein paar Kisten.','Ein ordentliches Kontor mit besseren Möbeln und gefüllten Regalen.','Ein gepflegtes Kaufmannshaus. Die Händler kennen deinen Namen.','Ein würdiges Haus mit einer großen Seekarte. Die Bürger grüßen respektvoll.'][level];openSheet('🏠 Dein Kontor',`<p>${text}</p>${harborLetter()}<section class=\"political-letter beginning-record\"><h3>📖 Dein Kaufmannsbuch</h3><p><b>${esc(s.name)}</b> · Figur: ${esc(MERCHANTS.find(m=>m.id===s.player)?MERCHANTS.find(m=>m.id===s.player).name+' '+MERCHANTS.find(m=>m.id===s.p"
+            },
+            {
+              "line": 988,
+              "excerpt": "function promote(){if(s.rank>=2)return runMayorElection();const i=s.rank+1;if(netWorth()<[0,18000,45000][i]||s.rep<[0,0,25][i])return false;return politicalAction(null,()=>{s.rank=i;politicalNote(s.name+' steigt auf: '+rank()+'!');Testlog.event('promotion',{rank:i});return true})}"
+            },
+            {
+              "line": 1247,
+              "excerpt": " function event(type,details={}){if(!enabled)return;safe(()=>{tick();data.events.push({...stamp(),type,details:{...details,netWorth:netWorth(),gold:s.gold,bank:s.bank,debt:s.debt,rank:s.rank,rep:s.rep}});if(data.events.length>3000){data.events.shift();data.droppedEvents++}dirty=true})}"
+            },
+            {
+              "line": 1248,
+              "excerpt": " function snapshot(reason='periodic'){if(!enabled||!s)return;safe(()=>{tick();data.snapshots.push({...stamp(),reason,state:{gold:s.gold,bank:s.bank,debt:s.debt,netWorth:netWorth(),rep:s.rep,rank:s.rank,completed:s.completed,markets:JSON.parse(JSON.stringify(s.markets)),ships:s.ships.map(q=>({id:q.id,type:q.type,city:q.city,condition:q.condition,arms:q.arms,cargo:{...q.cargo},costs:{...q.costs}}))}});if(data.snapshots.length>120){data.snapshots.shift();data.droppedSnapshots++}dirty=true;lastSnap=performance.now()})}"
+            }
+          ],
+          "politicalFunctions": [
+            {
+              "line": 110,
+              "excerpt": "function fresh(player,name){return {v:13,information:freshInformation(),politics:freshPolitics(),shipyard:freshShipyard(),economy:{version:1,reports:[]},storage:freshStorage(),player,name,day:1,year:1350,city:0,gold:5000,rep:0,rank:0,ships:[{...makeShip(1),city:0}],active:0,bank:0,debt:0,markets:initialMarkets(),journal:{},messages:['Willkommen in Lübeck! Die Hanse erwartet einen neuen Kaufmann.'],rumors:[],quests:[],completed:0,birthdaySeen:{},flags:{},visits:1,warehouses:emptyWarehouses()};}"
+            },
+            {
+              "line": 349,
+              "excerpt": "function freshPolitics(now=1350*360+1,legacyRank=0){return {version:1,since:now,rules:{sectionDays:POLITICAL_RULES.sectionDays,mayorWealth:POLITICAL_RULES.mayorWealth},legacyRank,records:[],issued:Array.from({length:CITY_COUNT},()=>({supply:-1,accord:-1})),jobs:[],office:null,terms:Array(CITY_COUNT).fill(null),appointments:Array(CITY_COUNT).fill(null),nextElection:Array(CITY_COUNT).fill(0),endorsements:Array(CITY_COUNT).fill(null),league:null,leagueIssued:Array(CITY_COUNT).fill(-1),elderman:null}}"
+            },
+            {
+              "line": 362,
+              "excerpt": "function politicalSupport(city=s.city){"
+            },
+            {
+              "line": 368,
+              "excerpt": "function mayorQuote(city=s.city){"
+            },
+            {
+              "line": 382,
+              "excerpt": "function politicalOfficeProof(office=s.politics.office){"
+            },
+            {
+              "line": 392,
+              "excerpt": "function politicsClock(){"
+            },
+            {
+              "line": 398,
+              "excerpt": "function politicalLeagueAccess(){return s.rank===4||!!s.politics.office||s.politics.terms.some(Boolean)}"
+            },
+            {
+              "line": 399,
+              "excerpt": "function politicalHome(){return s.politics.office?.city??s.politics.terms.find(t=>t)?.city??null}"
+            },
+            {
+              "line": 400,
+              "excerpt": "function hanseQuote(){"
+            },
+            {
+              "line": 412,
+              "excerpt": "function politicalAction(message,change){"
+            },
+            {
+              "line": 443,
+              "excerpt": "function politicalTrade(j,dir){"
+            },
+            {
+              "line": 461,
+              "excerpt": "function runMayorElection(){"
+            },
+            {
+              "line": 470,
+              "excerpt": "function resignMayor(){if(!s.politics.office)return false;return politicalAction('Bürgermeisteramt in '+CITIES[s.politics.office.city]+' beenden? Örtliche Amtsrechte enden, Titel und erworbene Verdienste bleiben.',()=>{politicalCloseOffice('freiwillig niedergelegt');return true})}"
+            },
+            {
+              "line": 471,
+              "excerpt": "function reviewMayor(){if(!s.politics.office||s.politics.office.until>totalDay())return false;return politicalAction(null,()=>{politicalCloseOffice('Amtsprüfung');return true})}"
+            },
+            {
+              "line": 472,
+              "excerpt": "function requestPoliticalEndorsement(){"
+            },
+            {
+              "line": 476,
+              "excerpt": "function acceptHanseAgreement(){"
+            },
+            {
+              "line": 480,
+              "excerpt": "function witnessHanseAgreement(){"
+            },
+            {
+              "line": 484,
+              "excerpt": "function finishHanseAgreement(){"
+            },
+            {
+              "line": 488,
+              "excerpt": "function runHanseAssembly(){"
+            },
+            {
+              "line": 495,
+              "excerpt": "function validatePolitics(x){"
+            },
+            {
+              "line": 535,
+              "excerpt": "function migratePolitics(raw){"
+            },
+            {
+              "line": 555,
+              "excerpt": "function politicalCareerModel(){"
+            },
+            {
+              "line": 573,
+              "excerpt": "function politicalCareerBoard(){"
+            },
+            {
+              "line": 581,
+              "excerpt": "function politicsHallView(){"
+            },
+            {
+              "line": 782,
+              "excerpt": "function save(){if(s)try{localStorage.setItem(KEY,JSON.stringify(s));storageWarning=false}catch(e){if(!storageWarning){storageWarning=true;alert('Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren.')}}}"
+            },
+            {
+              "line": 874,
+              "excerpt": "function advance(days){for(let i=0;i<days;i++){let bankInterest=s.bank*Math.expm1(Math.log1p(.02)/360),debtInterest=s.debt*Math.expm1(Math.log1p(.06)/360);s.bank+=bankInterest;s.debt+=debtInterest;if(bankInterest||debtInterest)Testlog.event('interest',{bankInterest,debtInterest});s.day++;if(s.day>360){s.day=1;s.year++;warehouseRentDay();log('Ein neues Spieljahr beginnt. Zinsen werden täglich zeitanteilig berechnet.')}else warehouseRentDay();for(let c=0;c<CITY_COUNT;c++)for(let j=0;j<GOODS.length;j++){let m=s.markets[c][j];regionalMarketDay(m,c,j)}tradeLetterClock();completeShipbuilding();politicsClock()}for(let tip of s.rumors){if(tip.special"
+            },
+            {
+              "line": 905,
+              "excerpt": "function trade(j,dir){if(!politicalTradeStaging&&dir===-1&&politicalSupplyPending(j))return politicalTrade(j,dir);if(!isGoodIndex(j))return;if(ship().city!==s.city)return notice('Dieses Schiff liegt in einem anderen Hafen.');let n=Math.floor(Number($('qty'+j).value)),m=s.markets[s.city][j],q=ship();if(!Number.isFinite(n)||n<1)return notice('Bitte eine gültige Fasszahl eingeben.');if(dir===1){if(n>m.stock||n>capacity(q)-load(q)||n*m.price>s.gold)return notice('Nicht genügend Gold, Warenbestand oder Laderaum.');if(n*m.price>s.gold*.7&&!confirm('Du investierst über 70 % deines Bargelds. Trotzdem kaufen?'))return;ensureCargoRecords(q);let old=q.c"
+            },
+            {
+              "line": 908,
+              "excerpt": "function donationGain(rep){return Math.max(1,rep-Math.floor(s.rep/55))}"
+            },
+            {
+              "line": 910,
+              "excerpt": "function donate(g,rep){if(s.gold<g)return notice('Dafür reicht dein Gold nicht.');s.gold-=g;let gain=donationGain(rep);s.rep+=gain;Testlog.event('donation',{cost:g,reputation:gain});log(`${g} G für die Stadt gespendet (+${gain} Ansehen).`);render();churchView(gain)}"
+            },
+            {
+              "line": 988,
+              "excerpt": "function promote(){if(s.rank>=2)return runMayorElection();const i=s.rank+1;if(netWorth()<[0,18000,45000][i]||s.rep<[0,0,25][i])return false;return politicalAction(null,()=>{s.rank=i;politicalNote(s.name+' steigt auf: '+rank()+'!');Testlog.event('promotion',{rank:i});return true})}"
+            },
+            {
+              "line": 990,
+              "excerpt": "function completeQuests(j,n){let found=s.quests.findIndex(q=>q.j===j&&q.city===s.city&&q.until>=totalDay()&&n>=q.n);if(found>=0){let q=s.quests.splice(found,1)[0];s.questAvailableAt=totalDay()+5;s.gold+=q.reward;s.rep+=4;s.completed++;Testlog.event('quest_reward',{good:GOODS[j][0],quantity:q.n,reward:q.reward});log(`Handelsauftrag erfüllt! +${q.reward} G und +4 Ansehen.`)}}"
+            },
+            {
+              "line": 1029,
+              "excerpt": "function exportGame(){let blob=new Blob([JSON.stringify(s,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='hansefuerst-spielstand.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}"
+            },
+            {
+              "line": 1030,
+              "excerpt": "function importGame(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{let committed=false;try{const raw=String(rd.result),parsed=JSON.parse(raw),x=migrate(parsed);if(!x)throw Error();if(s&&!confirm('Den aktuellen Spielstand überschreiben?'))return;if(!s){const original=startOriginal();if(original.raw!==null)backupPoliticsMigration(original.raw,true,true)}if(!backupCurrent())return;backupTradeLetterMigration(raw,true);backupInformationMigration(raw,true);backupPoliticsMigration(raw,true);backupShipyardMigration(raw,true);backupStorageMigration(raw,true);backupRegionalMigration(raw,true);backupCityMigration(raw,true"
+            },
+            {
+              "line": 1052,
+              "excerpt": "function newMerchantGame(player,name,city){"
+            }
+          ]
+        },
+        "affectedExistingTestFiles": [
+          {
+            "file": "tests/analysis/phase08d2a/compare.cjs",
+            "lines": [
+              66
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/analysis/phase08d2a1/compare.cjs",
+            "lines": [
+              78
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/analysis/phase08d2a2/compare.cjs",
+            "lines": [
+              79
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/analysis/phase08d2a2/political-checks.cjs",
+            "lines": [
+              45,
+              46,
+              47,
+              56,
+              57
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/analysis/phase08d2a2/political-counterexample.cjs",
+            "lines": [
+              5
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/analysis/phase08d2a3/checks.cjs",
+            "lines": [
+              9,
+              28,
+              32,
+              55,
+              61
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/phase1.cjs",
+            "lines": [
+              13,
+              15,
+              16
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/baseline/strategies.js",
+            "lines": [
+              8,
+              45,
+              46
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/city-life-politics-browser.cjs",
+            "lines": [
+              5
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/city-v6-migration-checks.cjs",
+            "lines": [
+              5
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/four-goods-checks.cjs",
+            "lines": [
+              7
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/harbor-work-checks.cjs",
+            "lines": [
+              25
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/information-checks.cjs",
+            "lines": [
+              92
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/integrated.cjs",
+            "lines": [
+              25,
+              45,
+              46
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase05e-observer.js",
+            "lines": [
+              8
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase05i-run.cjs",
+            "lines": [
+              13,
+              14
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06a-evidence.cjs",
+            "lines": [
+              14,
+              15,
+              23
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06a-mechanic-probes.cjs",
+            "lines": [
+              7,
+              14,
+              18,
+              19,
+              22,
+              44,
+              52,
+              56,
+              60
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06b-evidence.cjs",
+            "lines": [
+              7,
+              28,
+              33,
+              41
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06b-figures.py",
+            "lines": [
+              33
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06b-run.cjs",
+            "lines": [
+              13,
+              30
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06c-incomplete.cjs",
+            "lines": [
+              3
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/phase06c-run.cjs",
+            "lines": [
+              13
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/political-progress-browser.cjs",
+            "lines": [
+              27,
+              29
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/political-progress-checks.cjs",
+            "lines": [
+              8,
+              11,
+              13,
+              15,
+              29,
+              36,
+              39,
+              47
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/political-progress-fixtures.cjs",
+            "lines": [
+              8,
+              13
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-browser-checks.cjs",
+            "lines": [
+              4,
+              6,
+              19,
+              21,
+              24,
+              29
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-browser-post-title.cjs",
+            "lines": [
+              6,
+              7,
+              8
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-checks.cjs",
+            "lines": [
+              17,
+              26,
+              47,
+              50,
+              53,
+              56,
+              60,
+              62,
+              68,
+              78,
+              87,
+              90
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-concept-prototype.cjs",
+            "lines": [
+              18
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-concurrency-check.cjs",
+            "lines": [
+              3,
+              10
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-post-title-check.cjs",
+            "lines": [
+              3,
+              4,
+              9
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-rules.js",
+            "lines": [
+              4,
+              23,
+              25,
+              53,
+              55,
+              57,
+              116,
+              117,
+              119,
+              120,
+              144,
+              146,
+              147,
+              152,
+              180,
+              184,
+              185,
+              186,
+              194,
+              211,
+              213,
+              218,
+              220,
+              221,
+              222,
+              232,
+              237,
+              239,
+              241,
+              243,
+              258
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/politics-strategy.js",
+            "lines": [
+              40,
+              46,
+              47,
+              48,
+              54,
+              63,
+              64,
+              69,
+              82,
+              94,
+              95
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/ship-sale-checks.cjs",
+            "lines": [
+              6,
+              20,
+              21
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/shipbuilding-strategy.js",
+            "lines": [
+              13,
+              27
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/start-selection-browser.cjs",
+            "lines": [
+              9
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/start-selection-checks.cjs",
+            "lines": [
+              16
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/strategies.js",
+            "lines": [
+              13,
+              41,
+              42,
+              79,
+              100
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/trade-letter-checks.cjs",
+            "lines": [
+              74
+            ],
+            "historicalFileRemainsUnchanged": true
+          },
+          {
+            "file": "tests/simulation/warehouse-checks.cjs",
+            "lines": [
+              42,
+              44
+            ],
+            "historicalFileRemainsUnchanged": true
+          }
+        ],
+        "noCodeEvaluated": true
+      }
+    }
+  ],
+  "notRun": [
+    "game simulations",
+    "political careers",
+    "election prototype",
+    "productive migration",
+    "browser tests",
+    "full regression suites"
+  ],
+  "readyForProduction": false
+}
