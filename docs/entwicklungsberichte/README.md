@@ -281,3 +281,7 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.09 – Preisbildung, Warenwirtschaft und Kosten
 
 28.10.2026 – [Bericht](R1_09/R1_09_forschungsbericht.md), [39 Marktzeilen](R1_09/R1_09_preise_bestaende.csv), [Versuchsabläufe](R1_09/R1_09_versuchsablaeufe.md), [Kassenüberleitungen](R1_09/R1_09_kassenueberleitungen.csv), [Reisen](R1_09/R1_09_reisen.csv), [JSON](R1_09/R1_09_daten.json), [Katalog R1.09](forschungskatalog/R1_09_vergleich.md). Basis `b462fb226ff8857d3b03bdb3696bfc1ac1a96b40`, Branch `research/r1-09-prices-economy`. Getreide/Bier/Holz, zwölf Einzeltransaktionen, aktive und passive Tagesreihe, zwei zusätzliche Fahrten2+2Tage. Kleine Käufe ohne belegte Preisreaktion; Märkte ändern sich ohne Spielerhandel. Gebührenbegriff als Hafengebühr präzisiert, Rest17 bei neuer Rückfahrt und Rest7 ausR1.08 offen. Aktueller Codeblob erneut abgeglichen; keine Spielcode-/Save-/Pagesänderung, Simulation oder Merge. Historische Dateien erhalten, private Originalbelege getrennt.
+
+## Forschung R1.10 – Wiederaufnahme und Bestandssicherung
+
+28.10.2026 – [Bestandsaufnahme](R1_10/R1_10_bestandsaufnahme.md), [Inventar](R1_10/R1_10_bestand_bei_wiederaufnahme.json). Basis `7abf2eac15724d35839ca832fec6c0da9b7e1535`, Branch `research/r1-10-events-shipping`. Vor Fortsetzung kein R1.10-Commit und keine abgeschlossene neue Reise nachweisbar. Elf lokale Dateien unverändert privat gesichert. Vorläufige statische Abgrenzung des Reise-Würfelschutzes, keine Hansefürst-Ausführung/Änderung. Spätere Etappenergebnisse getrennt ergänzen.

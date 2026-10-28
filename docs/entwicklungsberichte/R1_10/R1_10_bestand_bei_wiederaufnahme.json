@@ -1,0 +1,100 @@
+{
+  "phase": "R1.10",
+  "checkpoint": "Wiederaufnahme vor neuen Versuchen",
+  "date": "2026-10-28",
+  "base_commit": "7abf2eac15724d35839ca832fec6c0da9b7e1535",
+  "published_r110_branch_found": false,
+  "published_r110_commit_found": false,
+  "new_completed_trips_evidenced": 0,
+  "new_travel_days_evidenced": 0,
+  "new_events_evidenced": 0,
+  "original_local_files": [
+    {
+      "private_path": "control.py",
+      "bytes": 373,
+      "sha256": "6e0cd47d6003671e63dcab10af1c572aace9abb9f41fcceaed147b82e56ac3f1"
+    },
+    {
+      "private_path": "crest.png",
+      "bytes": 47450,
+      "sha256": "b9679be20cc4dda91745b84ac3ef96eaccc49d71278bd2ea755d98e94a28ceeb"
+    },
+    {
+      "private_path": "evidence/load-ambiguous-crest.bmp",
+      "bytes": 921654,
+      "sha256": "86c371e1f78049022bb55461887020b85e950a659ae6c88a50a81cce225fdf65"
+    },
+    {
+      "private_path": "frame.bmp",
+      "bytes": 921654,
+      "sha256": "f4678933dd65a3b2f4651606d6313c8b4b5926b2bf8759ff8a2c425995c7424d"
+    },
+    {
+      "private_path": "input",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "private_path": "input-attempt1",
+      "bytes": 337,
+      "sha256": "954751e107bfa6c79c406369d117340342bcddc5b4ecf060181226a36a42a970"
+    },
+    {
+      "private_path": "input-attempt1.log",
+      "bytes": 555,
+      "sha256": "191c7301de9bd87be628425b02db7ecb5709d89a325ead49c15122f4b923a14e"
+    },
+    {
+      "private_path": "input.c",
+      "bytes": 2150,
+      "sha256": "99eabce60be7fb51ae20c2693579692464cfabaaa6fd259eaefa2b0f857aedba"
+    },
+    {
+      "private_path": "input.log",
+      "bytes": 555,
+      "sha256": "191c7301de9bd87be628425b02db7ecb5709d89a325ead49c15122f4b923a14e"
+    },
+    {
+      "private_path": "input.so",
+      "bytes": 16400,
+      "sha256": "4c74e1108f97f78da81345190c230f44f004e2f457f031863a3ca1dc351cbc62"
+    },
+    {
+      "private_path": "mapcrests.png",
+      "bytes": 747936,
+      "sha256": "631fd8704a298ad541c213f169d04b1784e78ad1c2b90d760330dd76ea8f57d5"
+    }
+  ],
+  "original_private_saves": [
+    {
+      "private_path": "private/game/PATRIZ/SPIELE.SAV/R108PRE.PSD",
+      "bytes": 28048,
+      "sha256": "deccb63a2101fa79eed771bd8a40d3705a52550f01f6b47b85217669e940ef68"
+    },
+    {
+      "private_path": "private/game/PATRIZ/SPIELE.SAV/R108RET.PSD",
+      "bytes": 28048,
+      "sha256": "589bede3f74149c494845227ddfe5c6faa1c21ece144be3734934cc52bc5ff0a"
+    },
+    {
+      "private_path": "private/game/PATRIZ/SPIELE.SAV/R109BASD.PSD",
+      "bytes": 28048,
+      "sha256": "f8ab787d7cf6a4bb9a67c7c709d5d6959812ef3088aa42f53fb6458529a1a41c"
+    },
+    {
+      "private_path": "private/game/PATRIZ/SPIELE.SAV/R109BASE.PSD",
+      "bytes": 28048,
+      "sha256": "8cb4ab2f228c63dd36026ae5bb1d0b42e018d39c4dd681f1d85c576a126980f9"
+    },
+    {
+      "private_path": "private/game/PATRIZ/SPIELE.SAV/SPIEL.PSD",
+      "bytes": 28048,
+      "sha256": "a61c8d454b296bac1e289eb572ba55029988aded9665ecf79346f99d00568374"
+    }
+  ],
+  "interruption_point": "Emulator regulär neu gestartet, vor erneutem Laden. Erster Wappenversuch Nimwegen abgewiesen; keine Spielwelt inR1.10 nachgewiesen.",
+  "old_save_loadability_on_resume": "noch ungeprüft",
+  "code_commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "code_blob": "7cf4c90244e4afef6d762a5e73ebf9d6bd9bfaa8",
+  "hansefuerst_executed": false
+}
