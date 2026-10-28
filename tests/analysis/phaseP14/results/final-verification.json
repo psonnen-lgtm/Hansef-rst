@@ -1,0 +1,15 @@
+{
+  "phase": "P1.4",
+  "dateBerlin": "2026-10-28",
+  "readOnly": true,
+  "base": "ffc0bfad0e36e4547f7a5750bb68b169f93f8009",
+  "oldTrackedFilesChecked": 3214,
+  "oldFilesByteEqualExceptAppendOnlyIndex": true,
+  "testedSourceUnchanged": true,
+  "relativeLinksChecked": 29,
+  "dynamicPaths": 8,
+  "maxDays": 73,
+  "totalVoyages": 8,
+  "noProductChanges": true,
+  "noNewMigrationOrBrowserClaims": true
+}
