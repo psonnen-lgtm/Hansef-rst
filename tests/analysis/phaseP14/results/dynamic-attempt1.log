@@ -1,0 +1,9 @@
+PASS Luebeck-Hamburg-A
+PASS Luebeck-Hamburg-B
+PASS Luebeck-Hamburg-C
+PASS Bergen-Novgorod-Holk-A
+PASS Bergen-Novgorod-Holk-B
+PASS Bergen-Novgorod-Holk-C
+PASS native-damaged-convoy-storm-remote-excluded
+PASS native-pirates-real-cargo-and-explicit-quest-shortfall
+{"created":8,"completed":8,"passed":true}

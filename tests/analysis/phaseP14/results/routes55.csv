@@ -1,0 +1,56 @@
+from;to;start;destination;gameDistance;handling;events;notes;A_0_100;A_1_100;A_2_100;A_0_30;A_1_30;A_2_30;B_0_100;B_1_100;B_2_100;B_0_30;B_1_30;B_2_30;C_0_100;C_1_100;C_2_100;C_0_30;C_1_30;C_2_30
+0;1;Lübeck;Hamburg;2;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;2;2;3;2;3;4;7;10;14;9;14;19;11;16;23;15;22;30
+0;2;Lübeck;Rostock;2;0;13% pirate encounter;14% storm;no added days;;2;2;3;2;3;4;2;2;3;2;3;4;2;2;3;2;3;4
+0;3;Lübeck;Stralsund;3;0;13% pirate encounter;14% storm;no added days;;2;3;5;3;4;6;2;3;5;3;4;6;2;3;5;3;4;6
+0;4;Lübeck;Stettin;4;0;13% pirate encounter;14% storm;no added days;;3;4;6;4;6;8;3;4;6;4;6;8;3;4;6;4;6;8
+0;5;Lübeck;Danzig;8;0;13% pirate encounter;14% storm;no added days;;6;8;12;8;11;15;6;9;13;8;12;17;8;11;16;10;15;21
+0;6;Lübeck;Bergen;12;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;8;12;17;11;16;23;10;14;20;13;19;26;12;18;25;16;24;34
+0;7;Lübeck;Visby;7;0;13% pirate encounter;14% storm;no added days;;5;7;10;7;10;13;6;8;12;8;11;15;7;10;14;9;14;19
+0;8;Lübeck;Brügge;10;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;7;10;14;9;14;19;8;12;17;11;16;23;11;16;23;15;22;30
+0;9;Lübeck;Nowgorod;19;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;16;22;30;20;29;38;19;26;35;24;34;46;24;34;47;31;45;61
+0;10;Lübeck;Venlo;11;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;11;14;19;13;18;24;12;16;22;15;21;27;15;20;27;19;26;35
+1;2;Hamburg;Rostock;3;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;2;3;5;3;4;6;7;10;14;9;14;19;11;16;23;15;22;30
+1;3;Hamburg;Stralsund;4;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;3;4;6;4;6;8;7;10;14;9;14;19;11;16;23;15;22;30
+1;4;Hamburg;Stettin;5;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;4;5;7;5;7;10;7;10;14;9;14;19;11;16;23;15;22;30
+1;5;Hamburg;Danzig;9;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;6;9;13;8;12;17;8;11;16;10;15;21;11;16;23;15;22;30
+1;6;Hamburg;Bergen;10;0;13% pirate encounter;14% storm;no added days;;7;10;14;9;14;19;8;12;17;11;16;23;10;15;21;14;20;28
+1;7;Hamburg;Visby;8;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;6;8;12;8;11;15;7;10;14;9;14;19;11;16;23;15;22;30
+1;8;Hamburg;Brügge;8;0;13% pirate encounter;14% storm;no added days;;6;8;12;8;11;15;6;9;13;8;12;17;8;11;16;10;15;21
+1;9;Hamburg;Nowgorod;20;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Novgorod handling3;17;23;31;21;30;40;19;27;37;25;35;48;25;35;48;32;46;62
+1;10;Hamburg;Venlo;9;3;13% pirate encounter;14% storm;no added days;Venlo handling3;9;12;16;11;15;20;11;14;19;13;18;24;12;16;22;15;21;27
+2;3;Rostock;Stralsund;2;0;13% pirate encounter;14% storm;no added days;;2;2;3;2;3;4;2;2;3;2;3;4;2;2;3;2;3;4
+2;4;Rostock;Stettin;3;0;13% pirate encounter;14% storm;no added days;;2;3;5;3;4;6;2;3;5;3;4;6;2;3;5;3;4;6
+2;5;Rostock;Danzig;7;0;13% pirate encounter;14% storm;no added days;;5;7;10;7;10;13;6;8;12;8;11;15;7;10;14;9;14;19
+2;6;Rostock;Bergen;13;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;9;13;19;12;18;24;11;16;23;15;22;30;14;20;28;18;27;37
+2;7;Rostock;Visby;5;0;13% pirate encounter;14% storm;no added days;;4;5;7;5;7;10;4;6;9;6;8;12;4;6;9;6;8;12
+2;8;Rostock;Brügge;11;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;8;11;16;10;15;21;9;13;19;12;18;24;12;17;24;16;23;32
+2;9;Rostock;Nowgorod;17;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;15;20;27;19;26;35;17;24;33;22;31;42;21;30;41;27;39;53
+2;10;Rostock;Venlo;12;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;11;15;20;14;19;26;13;17;23;16;22;29;15;21;28;19;27;37
+3;4;Stralsund;Stettin;2;0;13% pirate encounter;14% storm;no added days;;2;2;3;2;3;4;2;2;3;2;3;4;2;2;3;2;3;4
+3;5;Stralsund;Danzig;6;0;13% pirate encounter;14% storm;no added days;;4;6;9;6;8;12;5;7;10;7;10;13;6;8;12;8;11;15
+3;6;Stralsund;Bergen;14;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;10;14;20;13;19;26;12;17;24;16;23;32;15;22;31;20;30;41
+3;7;Stralsund;Visby;7;0;13% pirate encounter;14% storm;no added days;;5;7;10;7;10;13;6;8;12;8;11;15;7;10;14;9;14;19
+3;8;Stralsund;Brügge;12;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;8;12;17;11;16;23;10;14;20;13;19;26;12;18;25;16;24;34
+3;9;Stralsund;Nowgorod;19;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;16;22;30;20;29;38;19;26;35;24;34;46;24;34;47;31;45;61
+3;10;Stralsund;Venlo;13;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;12;16;22;15;21;27;14;19;26;18;25;33;17;23;31;21;30;40
+4;5;Stettin;Danzig;4;0;13% pirate encounter;14% storm;no added days;;3;4;6;4;6;8;3;4;6;4;6;8;3;4;6;4;6;8
+4;6;Stettin;Bergen;15;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;10;15;21;14;20;28;12;18;25;16;24;34;16;24;34;22;32;45
+4;7;Stettin;Visby;8;0;13% pirate encounter;14% storm;no added days;;6;8;12;8;11;15;6;9;13;8;12;17;8;11;16;10;15;21
+4;8;Stettin;Brügge;13;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;9;13;19;12;18;24;11;16;23;15;22;30;14;20;28;18;27;37
+4;9;Stettin;Nowgorod;20;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;17;23;31;21;30;40;19;27;37;25;35;48;25;35;48;32;46;62
+4;10;Stettin;Venlo;14;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;13;17;23;16;22;29;15;20;27;19;26;35;18;25;34;23;33;44
+5;6;Danzig;Bergen;19;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;13;19;27;17;26;35;16;23;32;21;31;43;21;31;44;28;42;58
+5;7;Danzig;Visby;5;0;13% pirate encounter;14% storm;no added days;;4;5;7;5;7;10;4;6;9;6;8;12;4;6;9;6;8;12
+5;8;Danzig;Brügge;17;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;12;17;24;16;23;32;14;21;30;19;28;39;18;27;38;24;36;50
+5;9;Danzig;Nowgorod;17;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;15;20;27;19;26;35;17;24;33;22;31;42;21;30;41;27;39;53
+5;10;Danzig;Venlo;18;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;15;21;28;19;27;37;18;25;34;23;33;44;23;32;44;29;42;57
+6;7;Bergen;Visby;18;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;12;18;25;16;24;34;15;22;31;20;30;41;20;29;41;26;39;54
+6;8;Bergen;Brügge;18;0;13% pirate encounter;14% storm;no added days;;12;18;25;16;24;34;15;22;31;20;30;41;20;29;41;26;39;54
+6;9;Bergen;Nowgorod;30;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Novgorod handling3;23;33;45;30;43;59;28;40;55;36;53;72;37;53;73;48;70;95
+6;10;Bergen;Venlo;19;3;13% pirate encounter;14% storm;no added days;Venlo handling3;16;22;30;20;29;38;19;26;35;24;34;46;24;34;47;31;45;61
+7;8;Visby;Brügge;16;0;13% pirate encounter;14% storm;no added days;North/Baltic sea transition;11;16;23;15;22;30;13;19;27;17;26;35;17;25;35;23;34;46
+7;9;Visby;Nowgorod;12;3;13% pirate encounter;14% storm;no added days;Novgorod handling3;11;15;20;14;19;26;13;17;23;16;22;29;15;21;28;19;27;37
+7;10;Visby;Venlo;17;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Venlo handling3;15;20;27;19;26;35;17;24;33;22;31;42;21;30;41;27;39;53
+8;9;Brügge;Nowgorod;28;3;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Novgorod handling3;22;31;42;28;41;55;26;37;51;34;49;66;34;49;67;44;64;88
+8;10;Brügge;Venlo;4;3;13% pirate encounter;14% storm;no added days;Venlo handling3;6;7;9;7;9;11;6;7;9;7;9;11;6;7;9;7;9;11
+9;10;Nowgorod;Venlo;29;6;13% pirate encounter;14% storm;no added days;North/Baltic sea transition,Novgorod handling3,Venlo handling3;26;35;47;32;45;60;30;42;56;38;54;73;38;54;73;49;70;95
