@@ -1,0 +1,8 @@
+branch,game_date,city,mode,grain_city,grain_ship,price,ship_cash,bought,sold,private_evidence
+A,1. Heuet 1355,Rostock,Verkauf,1889,1,32,84,0,0,rostock-sell.bmp
+A,1. Heuet 1355,Rostock,Kauf,1889,1,47,84,0,0,rostock-buy.bmp
+A,1. Heuet 1355,Rostock,Verkauf,1890,0,32,116,0,1,rostock-after-sale.bmp
+A,1. Heuet 1355,Rostock,Kauf,1889,1,47,69,1,0,rostock-after-buy.bmp
+B,4. Heuet 1355,Lübeck,Verkauf,1170,1,47,63,0,0,return-luebeck-sell.bmp
+B,4. Heuet 1355,Lübeck,Kauf,1170,1,68,63,0,0,return-luebeck-buy.bmp
+B,4. Heuet 1355,Lübeck,Verkauf,1171,0,47,110,0,1,return-after-sale.bmp

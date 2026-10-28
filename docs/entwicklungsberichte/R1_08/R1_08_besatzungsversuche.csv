@@ -1,0 +1,16 @@
+id,test,method,result
+B01,Quellenprüfung,Originalhandbuch PDF56/57 und WerftPDF40; Onlinehandbuch; zeitgenössische Rezension,"Personal vor Kamin, nicht Figur im Hintergrund"
+B02,Startsave,Minden regulär akzeptiert; SPIEL geladen; Hash unverändert,Albatross ausgewählt; Originalquelle erhalten
+B03,Richtiger Matrosenhotspot,"SDL280,315; Screenshotposition ungefähr560,315",0 Mann; Platz für113; Kasse15
+B04,Anwerbung5,5 und Return eingegeben,5 Mann; Platz108; Kasse10; benötigte5 im Buch
+B05,Zusatzfenster,"Versehentlich Helferbereich geöffnet, keine Zahl beauftragt",0 Gehilfen angezeigt; keine Einstellung
+B06,F2/Inspektion,F2 im Buch ohne sichtbare Wirkung; Werftinspektor per Maus,"bester Zustand; Name versehentlich geöffnet, unverändert bestätigt"
+B07,Auslauf nach Anwerbung,Wandkarte im Kontor,Bank-/Kontordialog statt Matrosenhinweis; Kasse später-2 statt10;12-Taler-Differenz ungeklärt
+B08,Unterbrechung,Laufende Sitzung nach weiterer Nutzeranweisung nicht mehr erreichbar,"R108PRE wieder regulär geladen, Utrecht akzeptiert; keine Spielpatches"
+B09,Kredit,100 bei Handwerker; sichtbares Angebot31%/241Tage,Buch zeigt98 und5Mann; neue100 Finanzierung kein Gewinn
+B10,Vorabfahrts-Save,R108PRE separat nach Anwerbung/Inspektion; später auf98 aktualisiert,Früher Save-Kassenwert nicht isoliert bestätigt;98-Fassung viaAarhus geladen und Buchwerte geprüft
+B11,ZweigA,"Lübeck-Rostock, lokaler Handel, versehentlichHamburg",A1/A2 als tatsächliche Fahrten erhalten
+B12,Wiederherstellung,Ladewappen Schiff; Helsingor/Helsingoer abgewiesen,Programm endet nach Kartenaufforderung; keine Umgehung
+B13,Normaler Neustart,"Erneut R108PRE, reguläre AntwortAarhus akzeptiert","29.Brachet,5Mann,98 wieder vorhanden"
+B14,ZweigB,Lu-Rostock und richtige Lübeck-Stadtikone,B1/B2; Rückkehr4.Heuet; keine Reisebeobachtung gelöscht
+B15,Taste C und Grenzen,Nach Schlussload in Kneipe C einmal gedrückt; keine sichtbare Änderung,Mausroute bestätigt; sofortigesheuern nicht erneut getestet; Zeit-/Geldmangelhypothese durch richtigen Hotspot ersetzt

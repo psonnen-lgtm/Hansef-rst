@@ -272,3 +272,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.07 - Handelskarte und erste Handelsdaten
 
 28.10.2026 - [Bericht](R1_07/R1_07_forschungsbericht.md), [Messwerte](R1_07/R1_07_messwerte.csv), [Bedienwege](R1_07/R1_07_bedienwege.csv), [Status](R1_07/R1_07_status.json). Basis `4b4722f32657c53408cf4f1e3e19963e678d66c4`, Branch `research/r1-07-trade-map`. Karte tatsächlich entpackt, Aalborg/Reval regulär akzeptiert, Welt/Save/Load geprüft. Lokaler Getreidekauf 68, Verkauf 47, Verlust21; Kredit100 getrennt. Zwei Hafentage; keine abgeschlossene Reise wegen Personal-/Auslaufblocker, keine Ereignisrate. Originale, Screenshots und Testspielstände privat. Kein Hansefürst-Code, Pages oder Simulationen verändert; keine Folgephase.
+
+
+## Forschung R1.08 - Besatzung, reale Fahrten und Vergleichskatalog
+
+28.10.2026 - [Bericht](R1_08/R1_08_forschungsbericht.md), [Reisen](R1_08/R1_08_reisen.csv), [Märkte](R1_08/R1_08_markt.csv), [Versuche](R1_08/R1_08_besatzungsversuche.csv), [JSON](R1_08/R1_08_daten.json), [dauerhafter Vergleichskatalog](forschungskatalog/README.md). Basis21440703255dd7df3a7360d8c63cf7f51ce31492. KorrekturR1.07:0 statt4Mann; richtiger Matrosenhotspot,5Anwerbungen/5Taler. Vier echte Fahrten inklusive FehlfahrtHamburg; korrigierte Lu-Rostock-Lu-Runde2+3Tage nach protokolliertem Save-Restore. Kredit100 getrennt, keine unabhängige Ereignisstatistik. Acht Katalogbereiche gegen0.8d.1b/V13-Quellcode02ee6b8 statisch geprüft; kein Produkt-/Pages-/Simulationslauf und keine Umsetzung. Originale/Save/Bilder privat; keine Folgephase.

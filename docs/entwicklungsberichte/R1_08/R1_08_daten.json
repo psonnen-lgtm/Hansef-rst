@@ -1,0 +1,351 @@
+{
+  "phase": "R1.08",
+  "date": "2026-10-28",
+  "base": "21440703255dd7df3a7360d8c63cf7f51ce31492",
+  "code_audit_commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "emulator": "DOSBox0.74-3",
+  "original_crew_before": 0,
+  "crew_hired": 5,
+  "crew_after": 5,
+  "required_crew": 5,
+  "additional_room_before": 113,
+  "additional_room_after": 108,
+  "available_sailor_pool": null,
+  "hire_cost": 5,
+  "original_start_hash": "a61c8d454b296bac1e289eb572ba55029988aded9665ecf79346f99d00568374",
+  "completed_trips": 4,
+  "branches": 2,
+  "desired_round_trip_branch": "B",
+  "desired_round_trip_elapsed_days": 5,
+  "new_loan_principal": 100,
+  "total_liabilities_audited": false,
+  "credit_offer_percent": 31,
+  "credit_offer_days": 241,
+  "unallocated_cash_adjustment": 12,
+  "branch_B_travel_cash_drop": 35,
+  "branch_A_first_cargo_realized_pnl": -36,
+  "branch_B_inherited_cargo_realized_pnl": -21,
+  "grain_cost_basis_from_R107": 68,
+  "unusual_offer_count": 1,
+  "unusual_offer_fraction": 0.25,
+  "sea_event_probability": null,
+  "statistics_warning": "Nur deskriptives1/4 bei Fahrtübergängen; n=4 und wiederhergestellter Start, keine unabhängige repräsentative Stichprobe. Keine Original-Seerate.",
+  "trips": [
+    {
+      "id": "A1",
+      "branch": "A - ursprünglicher Versuch",
+      "origin": "Lübeck",
+      "destination": "Rostock",
+      "departure": "29. Brachet 1355",
+      "arrival": "1. Heuet 1355",
+      "elapsed_days": 2,
+      "cash_before": 98,
+      "cash_after": 84,
+      "cash_drop": 14,
+      "crew_before": 5,
+      "crew_after": 5,
+      "cargo_before": 1,
+      "cargo_after": 1,
+      "condition_before": "bester Zustand",
+      "condition_after": "bester Zustand: später in Rostock geprüft",
+      "incident": "Heilerangebot 63, abgelehnt; Reise-/Ankunftsübergang, Auslösephase offen",
+      "extra_offer": true,
+      "evidence": "rostock-book.bmp",
+      "observed_at": "2026-10-28T14:00:42.905360+01:00",
+      "evidence_sha256": "661707e0202859beee9f44c9c6823c5d738dde98218f3f3e8c774072dcfb6e2f",
+      "ship": "Albatross",
+      "type": "Kraier laut dokumentiertem Normalstart; nicht als Typtext separat angezeigt"
+    },
+    {
+      "id": "A2",
+      "branch": "A - irrtümliches Ziel",
+      "origin": "Rostock",
+      "destination": "Hamburg",
+      "departure": "1. Heuet 1355",
+      "arrival": "19. Heuet 1355",
+      "elapsed_days": 18,
+      "cash_before": 69,
+      "cash_after": 40,
+      "cash_drop": 29,
+      "crew_before": 5,
+      "crew_after": 5,
+      "cargo_before": 1,
+      "cargo_after": null,
+      "condition_before": "bester Zustand",
+      "condition_after": null,
+      "incident": "Liegegebühr21 in Chronik; kein Sturm/Pirat beobachtet; falsch gewähltes Ziel",
+      "extra_offer": false,
+      "evidence": "hamburg-book.bmp",
+      "observed_at": "2026-10-28T14:05:26.397144+01:00",
+      "evidence_sha256": "25ec29b15101d52e3eb02da72b3ce552338623824a472c364eb881a724df0841",
+      "ship": "Albatross",
+      "type": "Kraier laut dokumentiertem Normalstart; nicht als Typtext separat angezeigt"
+    },
+    {
+      "id": "B1",
+      "branch": "B - R108PRE neu geladen; nicht unabhängig von A",
+      "origin": "Lübeck",
+      "destination": "Rostock",
+      "departure": "29. Brachet 1355",
+      "arrival": "1. Heuet 1355",
+      "elapsed_days": 2,
+      "cash_before": 98,
+      "cash_after": 84,
+      "cash_drop": 14,
+      "crew_before": 5,
+      "crew_after": 5,
+      "cargo_before": 1,
+      "cargo_after": null,
+      "condition_before": "zuletzt bester Zustand vor Save",
+      "condition_after": null,
+      "incident": "Liegegebühr14 gemeldet; kein zusätzliches Angebot/Sturm/Pirat beobachtet",
+      "extra_offer": false,
+      "evidence": "replay-rostock-book.bmp",
+      "observed_at": "2026-10-28T14:17:46.667614+01:00",
+      "evidence_sha256": "661707e0202859beee9f44c9c6823c5d738dde98218f3f3e8c774072dcfb6e2f",
+      "ship": "Albatross",
+      "type": "Kraier laut dokumentiertem Normalstart; nicht als Typtext separat angezeigt"
+    },
+    {
+      "id": "B2",
+      "branch": "B - korrigierter Rückweg",
+      "origin": "Rostock",
+      "destination": "Lübeck",
+      "departure": "1. Heuet 1355",
+      "arrival": "4. Heuet 1355",
+      "elapsed_days": 3,
+      "cash_before": 84,
+      "cash_after": 63,
+      "cash_drop": 21,
+      "crew_before": 5,
+      "crew_after": 5,
+      "cargo_before": null,
+      "cargo_after": 1,
+      "condition_before": "nicht erneut inspiziert",
+      "condition_after": "bester Zustand: nach Rückkehr geprüft",
+      "incident": "Liegegebühr14 gemeldet; kein zusätzliches Angebot/Sturm/Pirat beobachtet",
+      "extra_offer": false,
+      "evidence": "return-luebeck-book.bmp",
+      "observed_at": "2026-10-28T14:19:36.702334+01:00",
+      "evidence_sha256": "e308b14933fc750d1e7c107f001a77d6aab97d509103ba4fdf920e9a0d6d2025",
+      "ship": "Albatross",
+      "type": "Kraier laut dokumentiertem Normalstart; nicht als Typtext separat angezeigt"
+    }
+  ],
+  "market_rows": [
+    [
+      "A",
+      "1. Heuet 1355",
+      "Rostock",
+      "Verkauf",
+      1889,
+      1,
+      32,
+      84,
+      0,
+      0,
+      "rostock-sell.bmp"
+    ],
+    [
+      "A",
+      "1. Heuet 1355",
+      "Rostock",
+      "Kauf",
+      1889,
+      1,
+      47,
+      84,
+      0,
+      0,
+      "rostock-buy.bmp"
+    ],
+    [
+      "A",
+      "1. Heuet 1355",
+      "Rostock",
+      "Verkauf",
+      1890,
+      0,
+      32,
+      116,
+      0,
+      1,
+      "rostock-after-sale.bmp"
+    ],
+    [
+      "A",
+      "1. Heuet 1355",
+      "Rostock",
+      "Kauf",
+      1889,
+      1,
+      47,
+      69,
+      1,
+      0,
+      "rostock-after-buy.bmp"
+    ],
+    [
+      "B",
+      "4. Heuet 1355",
+      "Lübeck",
+      "Verkauf",
+      1170,
+      1,
+      47,
+      63,
+      0,
+      0,
+      "return-luebeck-sell.bmp"
+    ],
+    [
+      "B",
+      "4. Heuet 1355",
+      "Lübeck",
+      "Kauf",
+      1170,
+      1,
+      68,
+      63,
+      0,
+      0,
+      "return-luebeck-buy.bmp"
+    ],
+    [
+      "B",
+      "4. Heuet 1355",
+      "Lübeck",
+      "Verkauf",
+      1171,
+      0,
+      47,
+      110,
+      0,
+      1,
+      "return-after-sale.bmp"
+    ]
+  ],
+  "tests": [
+    [
+      "B01",
+      "Quellenprüfung",
+      "Originalhandbuch PDF56/57 und WerftPDF40; Onlinehandbuch; zeitgenössische Rezension",
+      "Personal vor Kamin, nicht Figur im Hintergrund"
+    ],
+    [
+      "B02",
+      "Startsave",
+      "Minden regulär akzeptiert; SPIEL geladen; Hash unverändert",
+      "Albatross ausgewählt; Originalquelle erhalten"
+    ],
+    [
+      "B03",
+      "Richtiger Matrosenhotspot",
+      "SDL280,315; Screenshotposition ungefähr560,315",
+      "0 Mann; Platz für113; Kasse15"
+    ],
+    [
+      "B04",
+      "Anwerbung5",
+      "5 und Return eingegeben",
+      "5 Mann; Platz108; Kasse10; benötigte5 im Buch"
+    ],
+    [
+      "B05",
+      "Zusatzfenster",
+      "Versehentlich Helferbereich geöffnet, keine Zahl beauftragt",
+      "0 Gehilfen angezeigt; keine Einstellung"
+    ],
+    [
+      "B06",
+      "F2/Inspektion",
+      "F2 im Buch ohne sichtbare Wirkung; Werftinspektor per Maus",
+      "bester Zustand; Name versehentlich geöffnet, unverändert bestätigt"
+    ],
+    [
+      "B07",
+      "Auslauf nach Anwerbung",
+      "Wandkarte im Kontor",
+      "Bank-/Kontordialog statt Matrosenhinweis; Kasse später-2 statt10;12-Taler-Differenz ungeklärt"
+    ],
+    [
+      "B08",
+      "Unterbrechung",
+      "Laufende Sitzung nach weiterer Nutzeranweisung nicht mehr erreichbar",
+      "R108PRE wieder regulär geladen, Utrecht akzeptiert; keine Spielpatches"
+    ],
+    [
+      "B09",
+      "Kredit",
+      "100 bei Handwerker; sichtbares Angebot31%/241Tage",
+      "Buch zeigt98 und5Mann; neue100 Finanzierung kein Gewinn"
+    ],
+    [
+      "B10",
+      "Vorabfahrts-Save",
+      "R108PRE separat nach Anwerbung/Inspektion; später auf98 aktualisiert",
+      "Früher Save-Kassenwert nicht isoliert bestätigt;98-Fassung viaAarhus geladen und Buchwerte geprüft"
+    ],
+    [
+      "B11",
+      "ZweigA",
+      "Lübeck-Rostock, lokaler Handel, versehentlichHamburg",
+      "A1/A2 als tatsächliche Fahrten erhalten"
+    ],
+    [
+      "B12",
+      "Wiederherstellung",
+      "Ladewappen Schiff; Helsingor/Helsingoer abgewiesen",
+      "Programm endet nach Kartenaufforderung; keine Umgehung"
+    ],
+    [
+      "B13",
+      "Normaler Neustart",
+      "Erneut R108PRE, reguläre AntwortAarhus akzeptiert",
+      "29.Brachet,5Mann,98 wieder vorhanden"
+    ],
+    [
+      "B14",
+      "ZweigB",
+      "Lu-Rostock und richtige Lübeck-Stadtikone",
+      "B1/B2; Rückkehr4.Heuet; keine Reisebeobachtung gelöscht"
+    ],
+    [
+      "B15",
+      "Taste C und Grenzen",
+      "Nach Schlussload in Kneipe C einmal gedrückt; keine sichtbare Änderung",
+      "Mausroute bestätigt; sofortigesheuern nicht erneut getestet; Zeit-/Geldmangelhypothese durch richtigen Hotspot ersetzt"
+    ]
+  ],
+  "pre_save_verified": true,
+  "return_save_verified": true,
+  "return_save_loaded_date": "4. Heuet 1355",
+  "return_save_loaded_crew": 5,
+  "return_save_loaded_cash": 104,
+  "return_save_loaded_grain": 0,
+  "post_trade_to_final_load_cash_difference": 6,
+  "post_trade_cash": 110,
+  "c_key_test": "DOS-Kneipe: c gedrückt, kein sichtbarer Dialogwechsel; keine allgemeine Aussage zur Unterstützung.",
+  "save_manifest": [
+    {
+      "name": "private/r107/saves/start-after-one-buy.PSD",
+      "bytes": 28048,
+      "sha256": "a61c8d454b296bac1e289eb572ba55029988aded9665ecf79346f99d00568374"
+    },
+    {
+      "name": "private/game/PATRIZ/SPIELE.SAV/SPIEL.PSD",
+      "bytes": 28048,
+      "sha256": "a61c8d454b296bac1e289eb572ba55029988aded9665ecf79346f99d00568374"
+    },
+    {
+      "name": "private/r108/saves/pre-sail.PSD",
+      "bytes": 28048,
+      "sha256": "deccb63a2101fa79eed771bd8a40d3705a52550f01f6b47b85217669e940ef68"
+    },
+    {
+      "name": "private/r108/saves/return-luebeck.PSD",
+      "bytes": 28048,
+      "sha256": "589bede3f74149c494845227ddfe5c6faa1c21ece144be3734934cc52bc5ff0a"
+    }
+  ]
+}
