@@ -293,3 +293,7 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.11 – Politik und Gesellschaft, Sicherungspunkt A
 
 28.10.2026 – [Politische Oberfläche](R1_11/R1_11_A_politische_oberflaeche.md), [Menüwege](R1_11/R1_11_A_politische_menues.csv), [Beobachtungen](R1_11/R1_11_A_beobachtungen.json). Basis `b71d467fd5437565fea8fa43ac2ea8c5b25d470b`, Branch `research/r1-11-politics-society`. R110A regulär geladen, Rathaus/Wahltafel/Auslieger/Umzug und ungeöffnete Amtstüren geprüft; qualitative Volksmeinung aufgenommen. Keine Wahl oder Kandidatur erreicht. Datum/Kasse unverändert; kein Produkt-/Pages-/Simulationslauf.
+
+### R1.11 – Sicherungspunkt B: Karriere und Quellen
+
+28.10.2026 – [Quellenanalyse](R1_11/R1_11_B_karriere_und_quellen.md), [Ämter/Voraussetzungen](R1_11/R1_11_B_aemter_voraussetzungen.csv), [Quellenmetadaten](R1_11/R1_11_B_quellen.json). Originalhandbuch belegt Heimat-Bürgermeister vor Ältermann, zweijährliche Wahlen/Hansetag sowie Gemeinwohl-, Gilden- und Gesellschaftsbezüge. Keine numerischen Original-Wahlformeln, Kandidatur oder tatsächliche Wahl nachgewiesen. Keine Produktänderung.

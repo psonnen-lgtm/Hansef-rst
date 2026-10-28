@@ -1,0 +1,128 @@
+{
+  "phase": "R1.11",
+  "checkpoint": "B",
+  "primary_source": "vom Nutzer bereitgestelltes Originalhandbuch1992",
+  "private_pdf_sha256": "7daf4f8b61cc91beb93df4a4240eac961aa30db66dca9eaec6ce59e0a5f9c816",
+  "sources": [
+    {
+      "id": "MAN-17",
+      "pdf_pages": [
+        17
+      ],
+      "printed": "1.1",
+      "claims": [
+        "Handel und soziales Engagement, Heimatstadt-Bürgermeister, Hansetag zweijährig, Wahl durch Händler aller Hansestädte und auswärtigen Kontore, Ältermann als Siegziel"
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": "MAN-37-38",
+      "pdf_pages": [
+        37,
+        38
+      ],
+      "printed": "3.3–3.4",
+      "claims": [
+        "Ältermann setzt Bürgermeister der Heimatstadt voraus; Gemeinwohl statt bloßer Reichtum; Spenden/Feste; Konkurrenten"
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": "MAN-66",
+      "pdf_pages": [
+        66
+      ],
+      "printed": "4.6",
+      "claims": [
+        "Volksmeinung für beide Wahlchancen; Bürgermeister-/Ältermannwahlen alle2Jahre"
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": "MAN-67-68",
+      "pdf_pages": [
+        67,
+        68
+      ],
+      "printed": "4.7–4.8",
+      "claims": [
+        "Kirchenspende, Bettler, Fest; politisch fragwürdiger Badehausweg nur angedeutet"
+      ],
+      "visually_reviewed": false,
+      "method": "OCR plus bereitgestellteAbbildung aus66; gesellschaftliche Seiten inEtappeC nachprüfen"
+    },
+    {
+      "id": "MAN-70-71",
+      "pdf_pages": [
+        70,
+        71
+      ],
+      "printed": "4.10–4.11",
+      "claims": [
+        "Amtstüren nach Bürgermeisterwahl; Gildenbeitritt und bessere Wahlchancen"
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "id": "MAN-87",
+      "pdf_pages": [
+        87
+      ],
+      "printed": "5.9",
+      "claims": [
+        "Bürgermeister verteidigt Stadt, Rat bezahlt200Soldaten, zusätzliche selbst; Handel/auswärtige Bekanntheit bleiben politischeAufgabe"
+      ],
+      "visually_reviewed": true
+    }
+  ],
+  "source_limits": "Historische Randspaltenerklärungen nicht automatisch als implementierte Spielregel behandeln; keine Originalwahlformel rekonstruiert.",
+  "offices": [
+    {
+      "office": "Kaufmann/Reeder",
+      "type": "Ausgangsrolle, keine nachgewiesene Rangstufe",
+      "requirements": "Eigene Spielfigur und Heimatkontor; kein neu gemessener Aufstieg",
+      "rights": "Handel und gesellschaftliche Aktionen",
+      "evidence": "bereitgestelltes Handbuch PDF17 (1.1), tatsächlicher Startsave",
+      "status": "Durch Originaldokumentation belegt / Direkt im Originalspiel beobachtet",
+      "unknown": "Formale weitere Kaufmannsränge und Vermögensgrenzen ungeprüft"
+    },
+    {
+      "office": "Bürgermeister",
+      "type": "Städtisches Amt",
+      "requirements": "Beliebtheit in Heimatstadt; geschickter Handel und gesellschaftliches Engagement dokumentiert; kein numerischer Mindestwert gefunden",
+      "rights": "Rathaus-Wehrwesen und Flottenpolitik; Teilnahme Hansetag dokumentiert",
+      "evidence": "Handbuch PDF17,37–38,66,69–70,87",
+      "status": "Durch Originaldokumentation belegt",
+      "unknown": "Kandidaturauslösung, Mindestvermögen, Stimmformel und konkrete Wahl nicht geprüft"
+    },
+    {
+      "office": "Ältermann/Eldermann",
+      "type": "Überregionales Zielamt",
+      "requirements": "Zuvor Bürgermeister der Heimatstadt; Popularität auch gegenüber Konkurrenten und überregionaler Ruf dokumentiert",
+      "rights": "Dokumentiertes Spielziel erreicht; weitere konkrete Amtsrechte nicht nachgewiesen",
+      "evidence": "Handbuch PDF17,37–38,66,87",
+      "status": "Durch Originaldokumentation belegt",
+      "unknown": "Stimmengewicht je Stadt, Kandidatenfilter, Wiederwahl/Weiterspielbarkeit ungeprüft"
+    },
+    {
+      "office": "Ratsherr / Patrizier als separate Freischaltstufen",
+      "type": "Keine belegte Original-Rangfolge in dieser Runde",
+      "requirements": "Nicht von Hansefürst oder späteren Patrizier-Teilen übertragen",
+      "rights": "nicht bestimmt",
+      "evidence": "Keine ausreichende Originalstelle oder Spielbeobachtung",
+      "status": "Noch ungeprüft",
+      "unknown": "Nicht als fehlendes Originalfeature oder implementierte Stufe ausgeben"
+    },
+    {
+      "office": "Gildenmitglied",
+      "type": "Mitgliedschaft, kein gewähltes politisches Amt",
+      "requirements": "Beitrittsgebühr aus Bordgeld; laut Handbuch bessere Wahlchancen",
+      "rights": "Informationen über Konkurrenten an Gildentür",
+      "evidence": "Handbuch PDF71, gedruckt4.11",
+      "status": "Durch Originaldokumentation belegt",
+      "unknown": "Kein belegter zwingender Kandidaturfilter und keine Chanceformel"
+    }
+  ],
+  "original_election_observed": false,
+  "original_hansetag_observed": false
+}
