@@ -1,0 +1,28 @@
+{
+  "phase": "R1.06",
+  "date": "2026-10-28",
+  "base_commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "emulator": "DOSBox 0.74-3",
+  "reused_r105": true,
+  "menu_reached": true,
+  "new_game_form_reached": true,
+  "home_city_selected": "Lübeck",
+  "fast_game_selected": false,
+  "copy_protection_prompt_observed": true,
+  "copy_protection_answer_attempts": 0,
+  "harbor_reached": false,
+  "start_save_created": false,
+  "completed_trips": 0,
+  "market_snapshots": 0,
+  "calendar_observations": 0,
+  "blocker": "Original asks for city matching a coat of arms on the separately supplied trade map; trade map not among provided sources. No answer or bypass attempted.",
+  "keyboard_control_probe": {
+    "method": "delayed Return after DOS PAUSE, then echo to INPUTOK.TXT",
+    "result": "INPUT_OK"
+  },
+  "input_limits": {
+    "minimum_delay_ms": 3000,
+    "event_spacing_ms": 150,
+    "screen_coordinate_mapping_observation": "For this screen/configuration, command x approximately half screenshot x; command y approximately screenshot y. Not a general mapping."
+  }
+}

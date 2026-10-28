@@ -1,0 +1,50 @@
+key 27
+release 27
+key 27
+release 27
+key 27
+release 27
+move 0 0
+move 545 397
+down 545 397
+up 545 397
+key 115
+release 115
+key 13
+release 13
+key 116
+release 116
+key 101
+release 101
+key 115
+release 115
+key 116
+release 116
+key 13
+release 13
+move 200 440
+down 200 440
+up 200 440
+move 155 130
+down 155 130
+up 155 130
+down 155 130
+up 155 130
+move 365 90
+down 365 90
+up 365 90
+move 188 240
+down 365 90
+up 365 90
+move 182 90
+down 182 90
+up 182 90
+down 182 90
+up 182 90
+key 13
+release 13
+key 13
+release 13
+move 220 308
+down 220 308
+up 220 308
