@@ -1,0 +1,40 @@
+{
+  "phase": "P1.4",
+  "dateBerlin": "2026-10-28",
+  "method": "Python urllib.request.urlopen, timeout18s, Mozilla/5.0",
+  "attempts": [
+    {
+      "url": "https://www.vikingeskibsmuseet.dk/en/professions/boatyard/building-projects/ottar",
+      "result": "URLError: Tunnel connection failed: 403 Forbidden",
+      "contentRetrieved": false,
+      "pageExistenceOrCurrentURLVerified": false
+    },
+    {
+      "url": "https://www.dsm.museum/en/exhibition/our-ships/the-bremen-cog",
+      "result": "URLError: Tunnel connection failed: 403 Forbidden",
+      "contentRetrieved": false,
+      "pageExistenceOrCurrentURLVerified": false
+    },
+    {
+      "url": "https://www.kiel-canal.org/english.htm",
+      "result": "URLError: Tunnel connection failed: 403 Forbidden",
+      "contentRetrieved": false,
+      "pageExistenceOrCurrentURLVerified": false
+    },
+    {
+      "url": "https://en.wikipedia.org/wiki/Cog_(ship)",
+      "result": "URLError: Tunnel connection failed: 403 Forbidden",
+      "contentRetrieved": false,
+      "pageExistenceOrCurrentURLVerified": false
+    }
+  ],
+  "noVerifiedHistoricalTravelTimes": true,
+  "leadsOnly": [
+    "Viking Ship Museum: experimental reconstruction Ottar / Skuldelev1, earlier than Hanse cogs",
+    "German Maritime Museum: Bremen cog, ship find and reconstruction",
+    "Kiel Canal history: modern canal must not be assumed for medieval sea journeys",
+    "Philippe Dollinger: Die Hanse, bibliographical lead not consulted here",
+    "Richard W. Unger: The Ship in the Medieval Economy 600–1600, bibliographical lead not consulted here"
+  ],
+  "policy": "No fetched quotation, exact historical speed or route duration claimed. No long reconstruction attempted."
+}

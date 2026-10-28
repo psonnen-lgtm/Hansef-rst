@@ -1,0 +1,22 @@
+{
+  "phase": "P1.4",
+  "base": "ffc0bfad0e36e4547f7a5750bb68b169f93f8009",
+  "models": [
+    "A",
+    "B",
+    "C"
+  ],
+  "plannedDynamicContexts": 8,
+  "maximumAuthorizedContexts": 12,
+  "seed": 71401,
+  "staticDoesNotInitializeGame": true,
+  "sha256": {
+    "tests/analysis/phaseP14/model.cjs": "66c763a9c98d764903131a7192e93fcb5131a40b04c582152c2d089e1d4c5189",
+    "tests/analysis/phaseP14/static.cjs": "d50e8594f075471acfb9b2bd32dc016223e24a2eca4fc67adb07cf047d1e3156",
+    "tests/analysis/phaseP14/dynamic.cjs": "c12e8734182085ec27f1c28c1649c9c0d9bf55a1d0eaf18fb00c48d88e984f7c",
+    "tests/analysis/phaseP14/README.md": "2418d7852518c3c433c4cb5799f68daf02c6ef261b0ea7f398553bc4442644c7",
+    "tests/analysis/phaseP14/source-access.json": "1af6f2b9757cdafd7c62146e674c8bd1c4a76e34d10b011ce127724b698e300b",
+    "tests/simulation/headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+    "Hansefuerst_0_4.html": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924"
+  }
+}
