@@ -1,0 +1,7 @@
+name,path,opening_clicks,result,cost,effect
+Kirche/Weihwasser,Hafen→Marktplatz→Kirche; erst Weihwasserbecken anlinkerSäule,2,OhneBeckenklick wiederholte Hinweisfrage; Ohja allein ersetztBeckenklick nicht,Kein sichtbarer Kassenabgang bis Spendenmaske248,keine isolierte Rufwirkung geprüft
+Kirchbauspende,Kirche→kirchenförmiger Opferstock,3,"100eingetragen, Rückmeldungzu kleinerSpende, danachmehrSpenden→Escape abgebrochen","100nichtbezahlt, Kasse248",sichtbare Rufkategorien unverändert; Mindestschwelle unbekannt
+Almosen,Kirche→Bettler rechts anSäule,3,"25eingegeben, RückkehrinKirche",248→223,sofort und nach1Tag gleiche qualitative Kategorien
+Badehaus,Marktplatz→linkes Haus→rechte Person,2,Fragealleinbaden?Nein; Bad-Rückmeldung; keineBestechung/Handelsinformation beobachtet,223→223; Kalender5.Heuetunverändert,gleiche Kategorien; keinebewiesene politische Wirkung
+Fest,Marktplatz→Gaukler links vorn,2,Festgeben?Ja/Nein;Nein gewählt,keinFest ausgerichtet,nichtgeprüft
+Gilde,Marktplatz→Gildenhaus hinten→Tür,3,GebührSt.JacobsGilde20630Taler angezeigt,"nurAngebot, nichtbezahlt",keineMitgliedschaft/Konkurrenteninformationen geöffnet

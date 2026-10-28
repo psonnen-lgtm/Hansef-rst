@@ -1,0 +1,146 @@
+{
+  "phase": "R1.11",
+  "checkpoint": "C",
+  "before_save_copy": "private R110A-Kopie before-social.PSD, inA regulär geladen geprüft",
+  "before_save_sha256": "e43a37fbab4438d997a9dfc1e11b77b7372977ed2b9773587bf4d0e1b4999e59",
+  "measurements": [
+    {
+      "id": "Q00",
+      "city": "Lübeck",
+      "game_date": "4. Heuet 1355",
+      "action": "vor gesellschaftlichen Versuchen",
+      "ship_cash": 248,
+      "confirmed_payment": 0,
+      "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+      "political_standing": "In der Politik sind Sie nicht vertreten!",
+      "artificial_rep_points": null,
+      "status": "Direkt im Originalspiel beobachtet",
+      "private_status_evidence": "opinion-A-before.bmp",
+      "status_sha256": "57d370485dd68c242f922a5392b8c5166135258b740fbd1d6498c9573431db70",
+      "private_cash_evidence": "start-book.bmp",
+      "captured_at": "2026-10-28T20:19:13.569714+01:00"
+    },
+    {
+      "id": "Q01",
+      "city": "Lübeck",
+      "game_date": "4. Heuet 1355",
+      "action": "100Taler Kirchenspende eingegeben, zurückgewiesen; keine Zahlung",
+      "ship_cash": 248,
+      "confirmed_payment": 0,
+      "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+      "political_standing": "In der Politik sind Sie nicht vertreten!",
+      "artificial_rep_points": null,
+      "status": "Direkt im Originalspiel beobachtet",
+      "private_status_evidence": "opinion-after-rejected-donation.bmp",
+      "status_sha256": "766e8d5f1f794d06ff1e76fd24eded1ef20cac5ecdbebfadb69cecc1caa3ec58",
+      "private_cash_evidence": "donation-more-choice.bmp",
+      "captured_at": "2026-10-28T20:32:06.617941+01:00"
+    },
+    {
+      "id": "Q02",
+      "city": "Lübeck",
+      "game_date": "4. Heuet 1355",
+      "action": "25Taler Almosen ausgeführt",
+      "ship_cash": 223,
+      "confirmed_payment": 25,
+      "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+      "political_standing": "In der Politik sind Sie nicht vertreten!",
+      "artificial_rep_points": null,
+      "status": "Direkt im Originalspiel beobachtet",
+      "private_status_evidence": "opinion-after-alms.bmp",
+      "status_sha256": "80c7e8f073d0bff6b5a232432853bdcd3b58ed02e2368e43606ee005a72148ba",
+      "private_cash_evidence": "alms-after-book.bmp",
+      "captured_at": "2026-10-28T20:33:43.531720+01:00"
+    },
+    {
+      "id": "Q03",
+      "city": "Lübeck",
+      "game_date": "5. Heuet 1355",
+      "action": "ein Tag ohne weitere Spende gewartet",
+      "ship_cash": 223,
+      "confirmed_payment": 0,
+      "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+      "political_standing": "In der Politik sind Sie nicht vertreten!",
+      "artificial_rep_points": null,
+      "status": "Direkt im Originalspiel beobachtet",
+      "private_status_evidence": "opinion-after-one-day.bmp",
+      "status_sha256": "0ef2e0391d2993712028ecf1973158e07b3897c016e5c7abf4af6c62397f17f6",
+      "private_cash_evidence": "alms-next-day-book.bmp",
+      "captured_at": "2026-10-28T20:35:25.171489+01:00"
+    },
+    {
+      "id": "Q04",
+      "city": "Lübeck",
+      "game_date": "5. Heuet 1355",
+      "action": "Badehaus besucht, Alleinbadenfrage Nein; Bad-Rückmeldung",
+      "ship_cash": 223,
+      "confirmed_payment": 0,
+      "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+      "political_standing": "In der Politik sind Sie nicht vertreten!",
+      "artificial_rep_points": null,
+      "status": "Direkt im Originalspiel beobachtet",
+      "private_status_evidence": "opinion-after-bath.bmp",
+      "status_sha256": "0bedc8a8a4b8675810ea925c90de8dd1f6e253ea3d2c6fe69e1e72b8967a48a1",
+      "private_cash_evidence": "bath-after-book.bmp",
+      "captured_at": "2026-10-28T20:39:43.448637+01:00"
+    }
+  ],
+  "society_menus": [
+    {
+      "name": "Kirche/Weihwasser",
+      "path": "Hafen→Marktplatz→Kirche; erst Weihwasserbecken anlinkerSäule",
+      "opening_clicks": 2,
+      "result": "OhneBeckenklick wiederholte Hinweisfrage; Ohja allein ersetztBeckenklick nicht",
+      "cost": "Kein sichtbarer Kassenabgang bis Spendenmaske248",
+      "effect": "keine isolierte Rufwirkung geprüft"
+    },
+    {
+      "name": "Kirchbauspende",
+      "path": "Kirche→kirchenförmiger Opferstock",
+      "opening_clicks": 3,
+      "result": "100eingetragen, Rückmeldungzu kleinerSpende, danachmehrSpenden→Escape abgebrochen",
+      "cost": "100nichtbezahlt, Kasse248",
+      "effect": "sichtbare Rufkategorien unverändert; Mindestschwelle unbekannt"
+    },
+    {
+      "name": "Almosen",
+      "path": "Kirche→Bettler rechts anSäule",
+      "opening_clicks": 3,
+      "result": "25eingegeben, RückkehrinKirche",
+      "cost": "248→223",
+      "effect": "sofort und nach1Tag gleiche qualitative Kategorien"
+    },
+    {
+      "name": "Badehaus",
+      "path": "Marktplatz→linkes Haus→rechte Person",
+      "opening_clicks": 2,
+      "result": "Fragealleinbaden?Nein; Bad-Rückmeldung; keineBestechung/Handelsinformation beobachtet",
+      "cost": "223→223; Kalender5.Heuetunverändert",
+      "effect": "gleiche Kategorien; keinebewiesene politische Wirkung"
+    },
+    {
+      "name": "Fest",
+      "path": "Marktplatz→Gaukler links vorn",
+      "opening_clicks": 2,
+      "result": "Festgeben?Ja/Nein;Nein gewählt",
+      "cost": "keinFest ausgerichtet",
+      "effect": "nichtgeprüft"
+    },
+    {
+      "name": "Gilde",
+      "path": "Marktplatz→Gildenhaus hinten→Tür",
+      "opening_clicks": 3,
+      "result": "GebührSt.JacobsGilde20630Taler angezeigt",
+      "cost": "nurAngebot, nichtbezahlt",
+      "effect": "keineMitgliedschaft/Konkurrenteninformationen geöffnet"
+    }
+  ],
+  "notes": [
+    "Qualitativ unverändert heißt nicht internwirkungslos.",
+    "Weihwasser gehört zum Bedienpaket derKirche; kein isolierterWeihwasser-Ruftest.",
+    "Nur ein akzeptierterAlmosenversuch, keine Wiederholbarkeits-/Missbrauchsquote.",
+    "Kein zweiter unabhängiger Nullaktions-Kontrollzweig.",
+    "KeineSeereise und keineWahl erzwungen.",
+    "Fest/Hochzeit/Konvoischutz quellenbelegt, nicht ausgedachten Resultaten ergänzt."
+  ]
+}

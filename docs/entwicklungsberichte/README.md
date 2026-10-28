@@ -297,3 +297,7 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### R1.11 – Sicherungspunkt B: Karriere und Quellen
 
 28.10.2026 – [Quellenanalyse](R1_11/R1_11_B_karriere_und_quellen.md), [Ämter/Voraussetzungen](R1_11/R1_11_B_aemter_voraussetzungen.csv), [Quellenmetadaten](R1_11/R1_11_B_quellen.json). Originalhandbuch belegt Heimat-Bürgermeister vor Ältermann, zweijährliche Wahlen/Hansetag sowie Gemeinwohl-, Gilden- und Gesellschaftsbezüge. Keine numerischen Original-Wahlformeln, Kandidatur oder tatsächliche Wahl nachgewiesen. Keine Produktänderung.
+
+### R1.11 – Sicherungspunkt C: Gesellschaft und Rufbeobachtung
+
+28.10.2026 – [Gesellschaftsanalyse](R1_11/R1_11_C_gesellschaft_und_ansehen.md), [Mess-CSV](R1_11/R1_11_C_ansehensmessungen.csv), [Menüs](R1_11/R1_11_C_gesellschaftsmenues.csv), [JSON](R1_11/R1_11_C_gesellschaft_beobachtungen.json). Kirchbauspende100 zurückgewiesen, keineZahlung; Almosen25 tatsächlich bezahlt. Qualitative Rufkategorien sofort und nach1Tag unverändert, keine interne Wirkungslosigkeit behauptet. Badehaus besucht, keine politischeManipulation nachgewiesen. Fest abgelehnt, Gildengebühr20630 angezeigt/nicht bezahlt. KeineWahl, Produktänderung oder Simulation.
