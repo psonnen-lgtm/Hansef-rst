@@ -1,0 +1,33 @@
+[
+  {
+    "name": "Der_Patrizier_German_Disk_1(1).IMA",
+    "size": 1474560,
+    "sha256": "15ff0e5d2b7f0a17d13f4b49ea5394ab8d97bc31415444ef5f21af2adc1f4a58",
+    "bpb": {
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 1,
+      "reserved": 1,
+      "fats": 2,
+      "root_entries": 224,
+      "sectors_per_fat": 9
+    }
+  },
+  {
+    "name": "Der_Patrizier_German_Disk_2(1).IMA",
+    "size": 1474560,
+    "sha256": "2bbbf5cf8bb674bfdf1d97528a5eb387ab8ba9133ddb0b26e468e6a43f3aeeb2",
+    "bpb": {
+      "bytes_per_sector": 512,
+      "sectors_per_cluster": 1,
+      "reserved": 1,
+      "fats": 2,
+      "root_entries": 224,
+      "sectors_per_fat": 9
+    }
+  },
+  {
+    "name": "Patrician, The (1992)_manual-de(1).pdf",
+    "size": 81076425,
+    "sha256": "7daf4f8b61cc91beb93df4a4240eac961aa30db66dca9eaec6ce59e0a5f9c816"
+  }
+]
