@@ -1,0 +1,37 @@
+{
+  "completed_trips": 5,
+  "cumulative_travel_days": 28,
+  "mean_travel_days": 5.6,
+  "groups": {
+    "continuous-A": {
+      "trips": 3,
+      "travel_days": 8
+    },
+    "reload-B": {
+      "trips": 2,
+      "travel_days": 20
+    }
+  },
+  "overlapping_calendar_days_replayed": 8,
+  "unique_calendar_span_days": 20,
+  "explicit_additional_messages": 1,
+  "trips_with_additional_message": 1,
+  "share_with_additional_message": 0.2,
+  "messages_per_trip": 0.2,
+  "messages_per_100_travel_days": 3.5714285714285716,
+  "identified_pirate_messages": 0,
+  "identified_storm_messages": 0,
+  "healer_offers": 0,
+  "crew_problems_observed": 0,
+  "financing_notices": 1,
+  "changed_condition_assessments": 1,
+  "extended_observations": 2,
+  "extended_observations_per_trip": 0.4,
+  "extended_observations_per_100_travel_days": 7.142857142857143,
+  "mean_attributed_event_cost": null,
+  "mean_event_cost_reason": "Keine eindeutig zugeordneten Ereigniskosten; Finanzierung ist kein Aufwand, Zustandsurteil nicht monetarisiert.",
+  "port_fees_shown_total": 77,
+  "mean_port_fee": 15.4,
+  "unallocated_trip_net_outflows": 129,
+  "statistical_warning": "n=5, zwei abhängige Zweige, identischerStartT01/T04, Einsekunden-Bildabtastung. Keine Originalwahrscheinlichkeit und keine belastbare Aussage zu seltenen Ereignissen oder längeren Routen."
+}

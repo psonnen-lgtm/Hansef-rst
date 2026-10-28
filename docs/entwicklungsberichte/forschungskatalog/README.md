@@ -153,3 +153,7 @@ Pflege: Neue Beobachtungen mit Phase, Quelle, Zustand und Datum ergänzen; Origi
 ## Fortschreibung R1.09 – aktueller Katalogstand
 
 28.10.2026: [Vergleich und Empfehlungen R1.09](R1_09_vergleich.md), [vollständiger versionierter Katalog JSON](mechaniken_R1_09.json), [Aussagen-CSV](mechaniken_R1_09.csv). Drei Waren, kleine Transaktionsreihen, aktive/passive Tageskontrolle und zusätzliche Kostenbelege. Acht stabile IDs fortgeführt; exakte R1.09-Statuskategorien und Empfehlungskategorien je Aussage. Vorstehender R1.08-Inhalt sowie mechaniken.json/CSV bleiben als historischer Stand erhalten. Keine Umsetzung beschlossen.
+
+## Fortschreibung R1.10 – aktueller Katalogstand
+
+28.10.2026: [Codevergleich und neue Originalbeobachtungen](R1_10_codevergleich.md), [JSON](mechaniken_R1_10.json), [Aussagen-CSV](mechaniken_R1_10.csv), [Forschungsbericht](../R1_10/R1_10_forschungsbericht.md). Acht IDs fortgeführt. Fünf neue Fahrten/28 aufsummierte Reisetage, abhängiger Restore-Versuch und Hamburgfahrt; Kreditmitteilung und qualitatives Zustandsurteil getrennt von Seegefahren. Persistenter Schutz gegen Vor-Reise-Save-Rollback im geprüften Hansefürst-Code nicht belegt; vorhandene Vorbereitungs-/Doppelauslösesicherung enger beschrieben. Historische Dateien bleiben erhalten; keine Umsetzung beschlossen.

@@ -1,0 +1,357 @@
+{
+  "version": "R1.10",
+  "date": "2026-10-28",
+  "previous_version": "mechaniken_R1_09.json",
+  "historical_data_preserved": true,
+  "categories": [
+    "Direkt gemessen",
+    "Durch Originalquellen belegt",
+    "Im Hansefürst-Code bestätigt",
+    "Hypothese",
+    "Noch ungeprüft"
+  ],
+  "recommendations": [
+    "Übernehmen",
+    "Verbessern",
+    "Beibehalten",
+    "Nicht übernehmen",
+    "Weitere Forschung erforderlich"
+  ],
+  "entries": [
+    {
+      "id": "ECON-01",
+      "area": "Handel, Preisbildung und Wirtschaftskreisläufe",
+      "assertions": [
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Keine neue Preisbildungsreihe in R1.10; R1.09 bleibt die historische Messbasis.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt gemessen",
+          "statement": "R1.10 fährt ohne Waren und ohne eigene Transaktionen; kein Handelsgewinn aus Kreditmeldungen.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          874,
+          905
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P2",
+      "proposal": "Bestehende Markt- und Finanzdaten getrennt halten.",
+      "effort": "niedrig für Erhalt",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Keine neue Wirtschaftsfunktion aus leerer Reiseprobe ableiten.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "SHIP-01",
+      "area": "Schiffe, Besatzung und Konvois",
+      "assertions": [
+        {
+          "category": "Direkt gemessen",
+          "statement": "Fünf Fahrten, Typ Kraier jetzt direkt in eigener Chronik. Besatzung vor/nach stets5, Ladung0. Reisezeiten2/3/3/3/17Tage.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt gemessen",
+          "statement": "Nach langer Hamburgfahrt Inspektorurteil gut statt best; kein quantifizierter Schaden oder Sturmauslöser bewiesen.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Drei Typen, Zustand beeinflusst Tempo; Konvoi nutzt langsamstes örtliches Schiff. Reparatur ceil((100-Zustand)*8), sofort auf100, kein zusätzlicher normaler Reiseverschleiß im geprüften arrive.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Originalheuer, Reparaturformel, Konvoiverhalten und Einfluss der Reisedauer auf Schaden.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          101,
+          104,
+          795,
+          970,
+          971,
+          1019,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P1",
+      "proposal": "Kosten-/Zustandsinformation beibehalten; gewöhnlichen Verschleiß erst separat bewerten.",
+      "effort": "mittel bis hoch",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Planbare Pflege könnte langfristig motivieren; zusätzliche Pflichtkosten können Erholung erschweren.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "EVENT-01",
+      "area": "Piraten und Reiseereignisse",
+      "assertions": [
+        {
+          "category": "Direkt gemessen",
+          "statement": "Keine identifizierte Piraten-/Sturm-/Heilermeldung bei5Fahrten/28aufsummiertenReisetagen; T04 ist abhängige Wiederholung aus R110A.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt gemessen",
+          "statement": "T05 enthält Kreditmeldung1596 am19.Heuet; separat Zustandsurteil gut stattbest nach17Tagen. Keine angebotene Entscheidung.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Piraten13%,Sturm14%,freundlicher Kapitän13% im geprüften rollTravel, nicht mit Reisedauer/Route skaliert. Konvoi/Waffen wirken auf Abwehr.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Vorbereitung würfelt nicht; arrived/resolved sperren doppeltes Auflösen. pending separat von s und nicht im Export; allgemeiner Schutz gegen alten Vor-Reise-Export nicht belegt.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Originalwahrscheinlichkeiten, RNG-Speicherung und tatsächliche Hansefürst-Reload/Import-Exploitwirkung.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          103,
+          782,
+          876,
+          1019,
+          1020,
+          1026,
+          1029,
+          1030
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P1",
+      "proposal": "Persistenzgrenze und Risiko je Fahrt versus Reisetag separat prüfen; keine Kalibrierung aus n=5.",
+      "effort": "mittel bis hoch",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Glaubwürdige Folgen und seltene Geschichten könnten motivieren; zu viele Unterbrechungen oder harte Rollback-Regeln könnten frustrieren.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "CITY-01",
+      "area": "Städte, Gebäude und Menüs",
+      "assertions": [
+        {
+          "category": "Direkt gemessen",
+          "statement": "Verzögerte Menüwechsel und Save-Namenseingabe erfordern Sichtprüfung. Drei Städte tatsächlich erreicht; keine saubere menschliche Bedienzeitmessung.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Hansefürst bietet Zielnamen, Reise-/Teilnehmer-/Gebührenvorschau.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Stadt-/Werftbilder und Rivalenchronik tragen Atmosphäre; wiederholte Kontrollen können Routine werden.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          1016,
+          1024,
+          1027
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P1",
+      "proposal": "Klare Zielbestätigung und abrufbare Kosteninformation erhalten.",
+      "effort": "niedrig bis mittel",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Kann Fehlklicks und unnötige Pflichtwege verringern, ohne Stadtatmosphäre aufzugeben.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "FIN-01",
+      "area": "Banken, Kredite und Finanzen",
+      "assertions": [
+        {
+          "category": "Direkt gemessen",
+          "statement": "Gebühren14/21/14/14/14, Summe77. Reise-Netto-Kassenreste0/10/99/0/20 bleiben ungeklärt, ebenso Kontrollwegabgänge. Werftleitung ist keine Rechnung.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt gemessen",
+          "statement": "Nach identischem Restore Schuldenübersicht250, EndeA500, EndeB1000. T05-Kreditmeldung1596 nicht als nachgewiesene Bordkasseneinnahme oder Aufwand gebucht.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Durch Originalquellen belegt",
+          "statement": "Handbuch PDF16 beschreibt unfreiwillige Kontorkredite nach Steuerabzug und Heimatkontenausgleich; genaue Zuordnung unserer Beträge offen.",
+          "source": "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Hansefürst trennt Warengewinn, Finanzierung, Reisegebühren und tägliche Zinsen/Mieten im Code.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          874,
+          884,
+          903,
+          911,
+          1019,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Verbessern",
+      "priority": "P1",
+      "proposal": "Zusammenhängende Reise-/Kontor-/Finanzierungsüberleitung vorschlagen.",
+      "effort": "mittel",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Nachvollziehbare Risiken und Erholung statt unerklärlicher Liquiditätsverluste; Gefahr doppelter Kosten oder falscher Mehrschiffzuordnung.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "SOC-01",
+      "area": "Badehaus und gesellschaftliches Leben",
+      "assertions": [
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Keine neue gesellschaftliche Aktion in R1.10. Historische R1.08/R1.09-Befunde bleiben erhalten.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Atmosphärebegegnungen getrennt von Schadensereignissen und Pflichtdialogen betrachten.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          906,
+          907
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P2",
+      "proposal": "Keine neue soziale Mechanik ohne Originalbeobachtung empfehlen.",
+      "effort": "mittel",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Abwechslung könnte motivieren; zu häufige Pflichtentscheidungen könnten stören.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "POL-01",
+      "area": "Bürgermeisterwahlen und Eldermann",
+      "assertions": [
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Keine neue Originalwahl und kein politischer Aufstieg in R1.10 gemessen.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Bestehende Hansefürst-Wahl-/Leistungsfunktionen bleiben unverändert.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Finanzierungs- und Reiserisikoregeln können politische Lieferdienste und Karrierefinanzierung beeinflussen.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          347,
+          368,
+          400,
+          461,
+          488
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P2",
+      "proposal": "Bestehenden politischen Aufbau schützen; Balancefolgen vorgeschlagener Reiseänderungen vor Umsetzung prüfen.",
+      "effort": "mittel bis hoch bei Wirtschaftsänderungen",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Vermeidet künstliche Verlängerung oder unbeabsichtigte Abkürzung der Karriere.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "LONG-01",
+      "area": "Langzeitmotivation und Schwierigkeitsgrad",
+      "assertions": [
+        {
+          "category": "Direkt gemessen",
+          "statement": "Langreise erzeugte Finanzierungsmitteilung und anderes Zustandsurteil; fünf Fahrten sind keine Langzeitstudie.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Nachvollziehbare Vorbereitung, verschiedene Reaktionen und Erholung dürften tragfähiger sein als reine Wartezeit oder Pflichtdialoge.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "90aktive Stunden, langfristige Originalereignisdichte und menschlicher Wiederholungsfrust nicht gemessen.",
+          "source": "../R1_10/R1_10_forschungsbericht.md"
+        }
+      ],
+      "code_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          874,
+          1019,
+          1020,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P1",
+      "proposal": "90Stunden als Ziel führen, nicht aus Reise- oder Spieltagen ableiten.",
+      "effort": "hoch für spätere Langzeitvalidierung",
+      "effort_status": "Hypothese",
+      "expected_effect_and_risks": "Mehr bedeutsame Entscheidungen könnten binden; reine Kostensteigerung könnte Erholung verhindern.",
+      "effect_status": "Hypothese",
+      "implementation_authorized": false
+    }
+  ]
+}

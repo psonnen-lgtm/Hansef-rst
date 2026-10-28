@@ -1,0 +1,4 @@
+test,save,method,result,trip_count
+SAVE-LOAD-01,R109BASE,OriginalkarteOldenburg,geladen4.Heuet1355/254Taler/5Mann,0
+SAVE-LOAD-02,R110A,"separat gespeichert, viaOldenburg geladen",4.Heuet/248Taler/5Mann; eigener Ausgangsstand geprüft,0
+REPEAT-01,identischesR110A,"nachT03viaHelsingör neu geladen, gleiche Route wieT01",T04:3Tage stattT01:2; beide14Gebühr; beide234Ankunftskasse; keineZusatzmeldung,1

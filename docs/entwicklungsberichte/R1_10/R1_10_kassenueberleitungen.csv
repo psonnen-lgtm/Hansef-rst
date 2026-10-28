@@ -1,0 +1,14 @@
+id,group,scope,game_date,kind,cash_before,cash_after,known_port_fee,unallocated_net_outflow,goods_income,goods_expense,confirmed_wallet_loan_inflow,confirmed_repayment,note
+PREP,preparation,ship_wallet,4. Heuet 1355,Kontrollweg vor Ausgangssave,254,248,0,6,0,0,0,0,Keine bewiesene Inspektionsgebühr. Kein Kreditantrag in dieser Phase.
+T01-TRAVEL,continuous-A,ship_wallet,4. Heuet 1355 → 6. Heuet 1355,Reiseübergang,248,234,14,0,0,0,0,0,"Ungeklärter NETTO-Kassenrest, keine bewiesene Aufwandsart; nicht automatisch Heuer/Zins. Kreditmeldung nicht inBordkasse zugerechnet."
+T01-CONTROL,continuous-A,ship_wallet,6. Heuet 1355,Kontrollweg nach Ankunft,234,229,0,5,0,0,0,0,Marktbuch/Inspektor/Schiffsbuch; keine behauptete spezifische Inspektionsrechnung.
+T02-TRAVEL,continuous-A,ship_wallet,6. Heuet 1355 → 9. Heuet 1355,Reiseübergang,229,198,21,10,0,0,0,0,"Ungeklärter NETTO-Kassenrest, keine bewiesene Aufwandsart; nicht automatisch Heuer/Zins. Kreditmeldung nicht inBordkasse zugerechnet."
+T02-CONTROL,continuous-A,ship_wallet,9. Heuet 1355,Kontrollweg nach Ankunft,198,192,0,6,0,0,0,0,Marktbuch/Inspektor/Schiffsbuch; keine behauptete spezifische Inspektionsrechnung.
+T03-TRAVEL,continuous-A,ship_wallet,9. Heuet 1355 → 12. Heuet 1355,Reiseübergang,192,79,14,99,0,0,0,0,"Ungeklärter NETTO-Kassenrest, keine bewiesene Aufwandsart; nicht automatisch Heuer/Zins. Kreditmeldung nicht inBordkasse zugerechnet."
+T03-CONTROL,continuous-A,ship_wallet,12. Heuet 1355,Kontrollweg nach Ankunft,79,65,0,14,0,0,0,0,Marktbuch/Inspektor/Schiffsbuch; keine behauptete spezifische Inspektionsrechnung.
+RESTORE,reload-B,restore_not_cashflow,12.→4.Heuet1355,R110A regulär wieder geladen,,248,0,,0,0,0,0,"65→248 Wiederherstellung, weder Einnahme noch neuer Kredit. Gruppen nicht zu einem Unternehmensergebnis addieren."
+T04-TRAVEL,reload-B,ship_wallet,4. Heuet 1355 → 7. Heuet 1355,Reiseübergang,248,234,14,0,0,0,0,0,"Ungeklärter NETTO-Kassenrest, keine bewiesene Aufwandsart; nicht automatisch Heuer/Zins. Kreditmeldung nicht inBordkasse zugerechnet."
+T04-CONTROL,reload-B,ship_wallet,7. Heuet 1355,Kontrollweg nach Ankunft,234,229,0,5,0,0,0,0,Marktbuch/Inspektor/Schiffsbuch; keine behauptete spezifische Inspektionsrechnung.
+T05-TRAVEL,reload-B,ship_wallet,7. Heuet 1355 → 24. Heuet 1355,Reiseübergang,229,195,14,20,0,0,,0,"Ungeklärter NETTO-Kassenrest, keine bewiesene Aufwandsart; nicht automatisch Heuer/Zins. Kreditmeldung nicht inBordkasse zugerechnet."
+T05-CONTROL,reload-B,ship_wallet,24. Heuet 1355,Kontrollweg nach Ankunft,195,189,0,6,0,0,0,0,Marktbuch/Inspektor/Schiffsbuch; keine behauptete spezifische Inspektionsrechnung.
+CREDIT-NOTICE,reload-B,company_financing_notice,19.Heuet1355,Kreditmeldung1596,,,,,0,0,,,"1596 gemeldeter Betrag, keine nachgewiesene Bordkasseneinnahme; Schuldenübersicht24.HeuetLübeck1000, Darstellungs-/Verrechnungsbasis ungeprüft."
