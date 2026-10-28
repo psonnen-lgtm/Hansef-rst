@@ -149,3 +149,7 @@ Pflege: Neue Beobachtungen mit Phase, Quelle, Zustand und Datum ergänzen; Origi
 ## Quellen und Grenzen
 
 [Originalhandbuch, online](https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf); zusätzlich bereitgestelltes Originalhandbuch PDF56/57 und Werft PDF40. [Beobachtungen R1.07](../R1_07/R1_07_forschungsbericht.md), [R1.08 samt Korrekturen](../R1_08/R1_08_forschungsbericht.md). Die Erwähnung von Piraten oder Wahlen in einem Text beweist keine Rate oder Formel. Die Funktion `rollTravel` belegt nur Hansefürst-Regeln, keine Originalwahrscheinlichkeit.
+
+## Fortschreibung R1.09 – aktueller Katalogstand
+
+28.10.2026: [Vergleich und Empfehlungen R1.09](R1_09_vergleich.md), [vollständiger versionierter Katalog JSON](mechaniken_R1_09.json), [Aussagen-CSV](mechaniken_R1_09.csv). Drei Waren, kleine Transaktionsreihen, aktive/passive Tageskontrolle und zusätzliche Kostenbelege. Acht stabile IDs fortgeführt; exakte R1.09-Statuskategorien und Empfehlungskategorien je Aussage. Vorstehender R1.08-Inhalt sowie mechaniken.json/CSV bleiben als historischer Stand erhalten. Keine Umsetzung beschlossen.

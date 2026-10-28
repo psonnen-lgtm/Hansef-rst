@@ -1,0 +1,11 @@
+id,branch,date,type,cash_before,income,expense,loan_received,loan_repaid,unallocated_outflow,cash_after,realized_goods_pnl,evidence,note
+F01,Vorbereitung,4. Heuet 1355,Kreditaufnahme,104,0,0,150,0,0,254,,start-book.bmp; loan-offer.bmp; funded-book.bmp,Angebot maximal250; angenommen150;31%/202Tage angezeigt. Keine Jahreszinsinterpretation.
+A-GRAIN,A,4. Heuet 1355,3 Einzelkäufe und3 Einzelverkäufe Getreide,254,141,204,0,0,0,191,-63,A01–A06,Einzelne Buchungen in Mess-CSV
+A-BEER,A,4. Heuet 1355,Bier Kauf1/Verkauf1,191,53,76,0,0,0,168,-23,A07/A08,
+A-WOOD,A,4. Heuet 1355,Holz Kauf1/Verkauf1,168,45,64,0,0,0,149,-19,A09/A10,
+A-WAIT,A,4.–7. Heuet 1355,Drei einzelne Wartetage,149,0,0,0,0,0,149,0,A-day5/6/7-book.bmp,Keine sichtbare Kassenbelastung; keine Aussage über andere Konten oder spätere Abrechnung
+RESTORE,B,4. Heuet 1355,R109BASE regulär laden,,0,0,0,0,0,254,,B-day4-book.bmp,"149→254 ist Wiederherstellung, weder Einnahme noch neuer Kredit! A und B nicht addieren."
+B-WAIT,B,4.–6. Heuet 1355,Zwei einzelne Wartetage ohne Handel,254,0,0,0,0,0,254,0,B-day5/6-book.bmp,
+B-TRIP1,B,6.–8. Heuet 1355,Lübeck→Rostock,254,0,14,0,0,0,240,0,voyage/014.bmp; B-rostock-book.bmp,Meldung Hafengebühr14 passt vollständig zum Kassenabgang14; keine allgemeine Heuerformel bewiesen.
+B-GRAIN,B,8. Heuet 1355,Rostock Getreide Kauf1/Verkauf1,240,33,48,0,0,0,225,-15,B01/B02,
+B-TRIP2,B,8.–10. Heuet 1355,Rostock→Lübeck,225,0,14,0,0,17,194,0,B-return-chronicle.bmp; B-return-book.bmp,Hafengebühr14 angezeigt; zusätzliche17 NICHT als Heuer/Zins/Reparatur bezeichnet. Endschuldenanzeige250 separat.

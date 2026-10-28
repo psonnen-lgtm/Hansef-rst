@@ -1,0 +1,3 @@
+id,branch,origin,destination,departure,arrival,elapsed_days,crew_before,crew_after,cargo_before,cargo_after,cash_before,cash_after,port_fee_shown,unallocated,extra_event_observed,incident,evidence
+R109-B1,B,Lübeck,Rostock,6. Heuet 1355,8. Heuet 1355,2,5,5,0,0,254,240,14,0,False,Kein zusätzlicher Reisevorfall beobachtet; reguläre Hafengebühr,voyage/014.bmp; B-rostock-book.bmp
+R109-B2,B,Rostock,Lübeck,8. Heuet 1355,10. Heuet 1355,2,5,5,0,0,225,194,14,17,False,Kein zusätzlicher Reisevorfall beobachtet; reguläre Hafengebühr; Rest17 ungeklärt,B-return-chronicle.bmp; B-return-book.bmp

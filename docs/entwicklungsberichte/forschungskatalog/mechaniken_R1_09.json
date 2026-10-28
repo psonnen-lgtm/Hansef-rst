@@ -1,0 +1,740 @@
+{
+  "version": "R1.09",
+  "date": "2026-10-28",
+  "code_audit_commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "categories": [
+    "Direkt im Originalspiel gemessen",
+    "Durch Originaldokumentation belegt",
+    "Im Hansefürst-Code bestätigt",
+    "Hypothese",
+    "Noch ungeprüft"
+  ],
+  "recommendation_values": [
+    "Übernehmen",
+    "Verbessern",
+    "Beibehalten",
+    "Nicht übernehmen",
+    "Weitere Forschung erforderlich"
+  ],
+  "historical_note": "mechaniken.json/CSV und bisheriger README-Inhalt R1.08 unverändert; alte Statuswörter bleiben im historischen Datensatz, neue Aussagen nutzen exakte R1.09-Kategorien.",
+  "entries": [
+    {
+      "id": "ECON-01",
+      "area": "Handel, Preisbildung und Wirtschaftskreisläufe",
+      "historical_r108": {
+        "id": "ECON-01",
+        "area": "Handel, Preisbildung und Wirtschaftskreisläufe",
+        "original_rule": "Dokumentiert: begrenzte Bestände, Angebot/Nachfrage und Rohstoff-/Bevölkerungsbezüge; exakte Originalformeln offen.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.07 Kauf68/Verkauf47; R1.08 Rostock Kauf47/Verkauf32. Einzeltransaktionen ändern Stadt-/Schiffsvorrat und Kasse.",
+        "original_status": "nachgewiesen: Beobachtung; dokumentiert: Abhängigkeiten; noch ungeprüft: Formeln",
+        "hansefuerst_implementation": "Markt und Kauf/Verkauf in trade; regionalMarketDay koppelt Profile, Bestände und Preisrücklauf. Kein Originalrezept-Nachweis daraus.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            802,
+            856,
+            874,
+            895,
+            905
+          ],
+          "functions": [
+            "trade",
+            "regionalPrice",
+            "regionalStock",
+            "regionalMarketDay",
+            "advance"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Hansefürst führt endliche Bestände und protokollierbare Kosten; Originalspread gibt unmittelbare Handelsreibung.",
+        "weaknesses": "Original und Hansefürst unterscheiden sich bei Preis-/Spreadmodell; Original-Rezeptfaktoren noch unbekannt.",
+        "possible_improvements": "Spread, Engpassanzeige und regionale Versorgung getrennt bewerten, bevor Parameter geändert werden.",
+        "expected_fun_atmosphere": "Verständliche Handelsmargen und merkbare Stadtversorgung könnten Entscheidungen stärken.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "mittel",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1",
+        "recommendation": "Zuerst Preis-/Kostenreihen vergleichen; keine ungeprüfte Originalformel übernehmen.",
+        "provided_manual_pdf_pages": [
+          17,
+          48,
+          62
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "R1.09: Getreide68/47,Bier76/53,Holz64/45 inLübeck4.Heuet. Kleine Einzelkäufe/-verkäufe verändern Vorräte und Kasse; keine belegte unmittelbare Preisstufe. Drei Getreideeinheiten und je1Bier/Holz vollständig zurückverkauft, Warenverlust105.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "Ohne eigene Transaktion 4→5.Heuet: Getreide1171→951,Kurse68/47→71/49; Bier279→220,Holz795→478 bei stabilen Kursen. A undB am5./6.Tag identisch.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "trade verändert m.stock und Geld, nicht m.price. Ein Kurs je Markt/Ware für beide Richtungen. regionalMarketDay/Price/Stock koppeln Tagesrauschen, Profile und Bestandsrücklauf; keine Rezept-/Bevölkerungsbilanz in diesem Ablauf.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Original-Preisformel, Schwellen, Marktupdatezeitpunkte und Herkunft von Bestandsänderungen; bleibender Warenentzug nicht getestet.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          855,
+          856,
+          863,
+          868,
+          874,
+          895,
+          905
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P1",
+      "proposed_action": "Engpass-Elastizität und Ursachenanzeige gezielt prüfen; bestehendes Regionalmodell als Basis nutzen.",
+      "implementation_effort": "mittel bis hoch",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Höhere Nachvollziehbarkeit könnte Strategien stärken; stärkere Elastizität kann Arbitrage, Versorgung und politische Lieferdienste verändern.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "SHIP-01",
+      "area": "Schiffe, Besatzung und Konvois",
+      "historical_r108": {
+        "id": "SHIP-01",
+        "area": "Schiffe, Besatzung und Konvois",
+        "original_rule": "Dokumentiert: vier Typen Kraier/Schnigge/Kogge/Holk, Besatzung in Kneipe; Konvois.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "Anwerbung0→5 kostet5, Plätze113→108; benötigt5. Vier reale Fahrten; ursprüngliche Vier-Mann-Annahme widerlegt. Kein Konvoi getestet.",
+        "original_status": "nachgewiesen: Besatzungsdialog/Fahrten; dokumentiert: Typ/Konvoi; noch ungeprüft: Konvoiverhalten",
+        "hansefuerst_implementation": "Drei SHIPTYPES: Schnigge/Kogge/Holk. makeShip speichert Zustand, Waffen, Ladung, keine Besatzung; planTravel nutzt Zustand/Geschwindigkeit und langsamstes örtliches Konvoischiff.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            101,
+            104,
+            795,
+            970,
+            1019
+          ],
+          "functions": [
+            "makeShip",
+            "routeTravelDays",
+            "planTravel",
+            "harborView"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Hansefürst zeigt Kosten/Teilnehmer vor Fahrt; Original bindet Personal an Hafenort.",
+        "weaknesses": "In geprüften Schiffs-/Abfahrtsfunktionen keine Anwerbe-/Mindestbesatzung; dies ist bewusster prüfbarer Unterschied, kein pauschaler Fehler.",
+        "possible_improvements": "Personal nur nach Entscheidung ergänzen; falls gewünscht eine einfache sichtbare Voraussetzung und garantierte Beschaffungsoption prototypisch planen.",
+        "expected_fun_atmosphere": "Verantwortung für Schiff kann Atmosphäre erhöhen; Suchklicks und unfreiwilliger Stillstand können Spielspaß senken.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "hoch für vollständiges Personalmodell; niedrig bis mittel für UI-Hinweise",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1",
+        "recommendation": "Keine Personalpflicht allein wegen Originalnähe einbauen.",
+        "provided_manual_pdf_pages": [
+          42,
+          56,
+          57,
+          80,
+          81,
+          82,
+          83
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "Zwei neue Fahrten6→8und8→10.Heuet, jeweils2Tage, Besatzung5. R1.08-Rückweg3Tage war kein fixer Routenwert.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Durch Originaldokumentation belegt",
+          "statement": "Originalhandbuch PDF16 beschreibt reiselängenabhängige Heuer aus Bordgeld.",
+          "source": "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Hansefürst plant Reisezeit und Gebühren vor Fahrt; langsamstes Konvoischiff/Zustand wirken auf Geschwindigkeit.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Original-Reise-/Heuerformel und Konvoikosten.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          795,
+          1019,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P1",
+      "proposed_action": "Sichtbare Abfahrtsvorschau erhalten; Originalkosten nicht aus Tageskorrelation ableiten.",
+      "implementation_effort": "niedrig für bestehende Kostenvorschau; mittel für weitere Abrechnung",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Klare Vorbereitung kann Fehlfahrten und unerklärliche Liquiditätsverluste reduzieren.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "EVENT-01",
+      "area": "Piraten und Reiseereignisse",
+      "historical_r108": {
+        "id": "EVENT-01",
+        "area": "Piraten und Reiseereignisse",
+        "original_rule": "Dokumentiert: Piraten, Sturm, aktive/passive Abwehr; Häufigkeiten offen.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.08 Heilerangebot im Reise-/Ankunftsübergang; abgelehnt. Zweite Fahrt meldet Liegegebühr21. ZweigB schließt Lübeck–Rostock–Lübeck mit2+3Tagen ab. Keine beobachteten Sturm-/Piratengefechte.",
+        "original_status": "nachgewiesen: sichtbare Vorfälle; noch ungeprüft: Originalauslöser und Häufigkeiten",
+        "hansefuerst_implementation": "rollTravel und arrive lösen Piraten/Abwehr/Sturm bei bestätigter Fahrt aus; Angriffsabwehr berücksichtigt Waffen und Anzahl Schiffe. Diese Codewahrscheinlichkeiten sind keine Originalraten.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            1020,
+            1026,
+            1027
+          ],
+          "functions": [
+            "rollTravel",
+            "arrive",
+            "arrivalView"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Wirkungen sind im Code und Log nachvollziehbar; Vorbereitung erzeugt keine Ereignisse.",
+        "weaknesses": "Nur vier Originalfahrten, eine fehlgeleitet und zwei aus wiederhergestelltem Ausgangssave; keine statistisch belastbare Ereignisrate.",
+        "possible_improvements": "Künftig Fahrtmanifest, Ereignisart und getrennte Kosten standardisiert erfassen; Hilfs-/Ankunftsangebote separat zählen.",
+        "expected_fun_atmosphere": "Seltene verständliche Vorfälle könnten Spannung schaffen, ohne jede Fahrt zu unterbrechen.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "mittel",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1",
+        "recommendation": "Erst genügend reguläre Fahrten messen; keine Rate aus n=4 kalibrieren.",
+        "provided_manual_pdf_pages": [
+          40,
+          77,
+          84,
+          85,
+          86,
+          87
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "R1.09 zwei abgeschlossene Reisen ohne zusätzliche Vorfallsmeldung. Hafengebühren sind reguläre Kosten, kein Zufallsereignis.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Originalraten und Auslöser; n=2 kein Häufigkeitsnachweis.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "rollTravel wird bei bestätigter Reise ausgewertet; keine Aussage über Originalraten.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          1020,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P2",
+      "proposed_action": "Reisegrundgesamtheit und Gebühren getrennt halten; keine Kalibrierung aus dieser Probe.",
+      "implementation_effort": "mittel",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Saubere Trennung schützt vor zu häufiger oder zu teurer Ereignisgestaltung.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "CITY-01",
+      "area": "Städte, Gebäude und Menüs",
+      "historical_r108": {
+        "id": "CITY-01",
+        "area": "Städte, Gebäude und Menüs",
+        "original_rule": "Dokumentiert: Hafen/Kontor/Markt/Rathaus/Kneipe/Bank als Funktionsorte.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.07 Stadtwege geöffnet; R1.08 falscher Piraten-/Personalhotspot und Fehlklick Hamburg belegen Verwechslungsrisiken.",
+        "original_status": "nachgewiesen: Bedienbeobachtung; noch ungeprüft: Touchvergleich",
+        "hansefuerst_implementation": "show/openSheet routen Funktionsorte; CityLife und Stadtlayouts sowie Seekartenmarker/Dropdown und Reisevorbereitung sind im Code vorhanden. Funktionale Schichten bleiben menü-/formularbasiert.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            878,
+            880,
+            886,
+            1012,
+            1016,
+            1153,
+            1188
+          ],
+          "functions": [
+            "show",
+            "openSheet",
+            "mapView",
+            "drawCity"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Hansefürst bietet Marker, Zielnamen und Bestätigung vor Fahrt; Original verbindet Orte atmosphärisch.",
+        "weaknesses": "Original kleine Trefferzonen/Modalantworten fehleranfällig; Hansefürst-Touchqualität hier nicht zur Laufzeit geprüft.",
+        "possible_improvements": "Zielnamen vor Abfahrt und klare beschriftete Gebäude beibehalten; Bedienwege mit echten Touchtests bewerten.",
+        "expected_fun_atmosphere": "Weniger Fehlklicks bei Erhalt des Stadtgefühls.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "niedrig bis mittel",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1",
+        "recommendation": "Bedienbarkeit priorisieren; keine pauschale Menüentfernung empfehlen.",
+        "provided_manual_pdf_pages": [
+          35,
+          45,
+          46,
+          48,
+          53,
+          56,
+          66,
+          69,
+          71
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "Offenes Kaufbuch: Warenklick+Ziffer+Return=3Handlungen für1Einheit; Moduswechsel bei Bedarf zusätzlich. Beide Kurse nicht gleichzeitig sichtbar. Hafen→Kontor→Buch2Öffnungsklicks.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Hansefürst zeigt einen gemeinsamen Kurs, Bestände, Ladung, Ø-Einkauf, Mengen/Max und Handelsbeleg; Preisaufzeichnungen datiert.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Kontor/Abakus schaffen Atmosphäre; Moduswechsel erschwert Vergleiche. Audio inDOS nicht bewertet.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          884,
+          890,
+          901,
+          903,
+          991
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P1",
+      "proposed_action": "Vorhandene Informationen erhalten, Kostenbeleg zusammenführen; keine fehlende Vergleichsnotiz behaupten.",
+      "implementation_effort": "niedrig bis mittel",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Weniger Rechnerei und Wiederholung bei erhaltenem Kaufmannsgefühl.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "FIN-01",
+      "area": "Banken, Kredite und Finanzen",
+      "historical_r108": {
+        "id": "FIN-01",
+        "area": "Banken, Kredite und Finanzen",
+        "original_rule": "Dokumentiert: Anbieter, Laufzeit, Zinsen, Tilgung und Rufabhängigkeit.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.07 100 Kredit getrennt vom Handel. R1.08 angenommener Kredit100, Angebot31%/241Tage; zusätzliche12-Taler-Änderung nicht vollständig zugeordnet.",
+        "original_status": "nachgewiesen: Angebote/Kassenwerte; noch ungeprüft: Originalzinsformel/Gesamtschuld",
+        "hansefuerst_implementation": "bankOp führt Guthaben/Schulden; creditLimit max(1000,45%Nettovermögen); advance berechnet tägliche Anteile zu effektiv2%/6% je360Tage.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            874,
+            911,
+            912,
+            913
+          ],
+          "functions": [
+            "bankOp",
+            "creditLimit",
+            "advance"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Hansefürst trennt Kreditprincipal und Ertrag sowie transparente feste Konditionen.",
+        "weaknesses": "Original variable Angebote schwer vergleichbar; Zeitraum der Originalprozentangabe nicht als Jahreszins nachgewiesen.",
+        "possible_improvements": "Finanzierung, Reiseaufwand und realisierten Warengewinn getrennt im Forschungsledger halten.",
+        "expected_fun_atmosphere": "Transparente Kosten verhindern irreführende Erfolgserlebnisse und Frust.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "niedrig für Katalog/Ledger; mittel für Produktdarstellung",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1",
+        "recommendation": "Keine Originalzinssätze ungeprüft übernehmen; keine Kredite als Gewinn werten.",
+        "provided_manual_pdf_pages": [
+          53,
+          54,
+          55
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "Neue Finanzierung150: Kasse104→254; Angebot31%/202Tage. Kontrollwarten ohne sichtbaren Abgang. Hinfahrt−14 mit Hafengebühr14; Rückfahrt−31 mit Hafengebühr14,Rest17ungeklärt; Endschuldenanzeige250.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "R1.08-Bezeichnung Liegegebühr anhand neuer Chronik präzisiert: Hafengebühr. R1.08-Abgang35 abzüglich gemeldeter28 lässt Rest7offen.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Hansefürst führt täglichen Bank-/Schuldzins, Lagergebühren und Reisegebühren; Warengewinn schließt diese Kosten ausdrücklich aus.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Originalrestbeträge, Zinsabgrenzung und exakte Heuer-/Hafengebührenformel.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          158,
+          874,
+          884,
+          905,
+          1019,
+          1026
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Verbessern",
+      "priority": "P1",
+      "proposed_action": "Eine zusammenhängende Reisekassenüberleitung ergänzen; Kreditprincipal/Warenergebnis/Kosten getrennt.",
+      "implementation_effort": "mittel",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Kann Gewinne verständlich und Rückschläge handhabbar machen; Gefahr doppelter Kostenanrechnung und falscher Reisezuordnung.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "SOC-01",
+      "area": "Badehaus und gesellschaftliches Leben",
+      "historical_r108": {
+        "id": "SOC-01",
+        "area": "Badehaus und gesellschaftliches Leben",
+        "original_rule": "Dokumentiert: Spenden, Feste, Hochzeit und politisch fragwürdiger Badehausweg.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "Badehaus besucht; Rückkehr per Figur, keine Bestechungs-/Rufwirkung belegt.",
+        "original_status": "dokumentiert: Originalwirkung; nachgewiesen: Ortsbesuch; noch ungeprüft: genaue Originalaktionen",
+        "hansefuerst_implementation": "bathView/takeBath kostet15Gold und1Tag; erzeugt Handelstipps mit möglichen Falschtipps/Sondergeschäften. Kirchen-/Politikfunktionen sind separat vorhanden; keine Originalbestechung dadurch bewiesen.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            906,
+            907,
+            908
+          ],
+          "functions": [
+            "bathView",
+            "takeBath"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Hansefürst verknüpft Information mit Zeit und Kosten; Original hat gesellschaftlichen Kontext.",
+        "weaknesses": "Original-Badehausmechanik nicht funktional untersucht; Informationsfunktion und politische Manipulation dürfen nicht gleichgesetzt werden.",
+        "possible_improvements": "Gesprächsinformation und politische Handlungen als eigenständige Mechaniken katalogisieren.",
+        "expected_fun_atmosphere": "Gerüchte können Hafenleben beleben; zu viele künstliche Sonderpreise könnten Handel verzerren.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "mittel",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P2",
+        "recommendation": "Bestehende Badehausfunktion evaluieren statt sie als fehlend auszugeben.",
+        "provided_manual_pdf_pages": [
+          65,
+          66,
+          67,
+          68
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Noch ungeprüft",
+          "statement": "R1.09 keine neue Badehaus-,Fest- oder Spendenmessung; R1.08-Belege historisch erhalten.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Bestehendes bathView/takeBath verknüpft Information mit15Gold/1Tag.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          906,
+          907
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P2",
+      "proposed_action": "Gerüchtewirkung später getrennt vom Marktgrundmodell prüfen.",
+      "implementation_effort": "mittel",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Zusätzliche Sonderpreise könnten Marktversuche verfälschen; keine neue Mechanik beschlossen.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "POL-01",
+      "area": "Bürgermeisterwahlen und Eldermann",
+      "historical_r108": {
+        "id": "POL-01",
+        "area": "Bürgermeisterwahlen und Eldermann",
+        "original_rule": "Dokumentiert: sozialer Ruf, Gilde, Versorgung und zweijährige Wahlen; keine Stimmenformel rekonstruiert.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.07 Wahltafel gelesen; keine tatsächliche Originalwahl.",
+        "original_status": "dokumentiert: Originalwahlregeln; noch ungeprüft: Originalwahlablauf/Formel",
+        "hansefuerst_implementation": "politicalSupport/mayorQuote/runMayorElection prüfen Vermögen, Ruf, Leistungsbelege/Zusagen. Bürgermeistermehrheit deterministisch; hanseQuote/runHanseAssembly prüfen Amtsführung, Stadtsiegel, Regionen und Vertrag.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            347,
+            362,
+            368,
+            400,
+            461,
+            488
+          ],
+          "functions": [
+            "politicalSupport",
+            "mayorQuote",
+            "runMayorElection",
+            "hanseQuote",
+            "runHanseAssembly"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Überregionale Verdienste und nachvollziehbare Mehrheiten sind bereits implementiert; kein bloßer Geld-Aufstieg.",
+        "weaknesses": "Originalwahl noch unbeobachtet, daher keine Aussage zur Originaltreue der Gewichte. Aktive Rivalen-KI durch Namens-/Zielwerte allein nicht nachgewiesen.",
+        "possible_improvements": "Wahlfortschritt und Rivalenhandlungen separat prüfen; bei späteren Tests reale Entscheidungen und Ressourcen zählen.",
+        "expected_fun_atmosphere": "Sichtbare politische Leistungen können Langzeitziele stärken.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "mittel bis hoch für Rivalen-/Wahlkampferweiterungen",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P2",
+        "recommendation": "Bestehende Politik als Ausgangspunkt verwenden; keine Neuimplementierung ohne Auftrag.",
+        "provided_manual_pdf_pages": [
+          17,
+          37,
+          38,
+          66,
+          71,
+          87
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Noch ungeprüft",
+          "statement": "R1.09 keine neue Originalwahl oder Wahlformel geprüft.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "politicalSupport/mayorQuote/hanseQuote und Wahlfunktionen weiterhin codebelegte Basis.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Jede Spread-/Versorgungsänderung kann wirtschaftliche Voraussetzungen politischer Lieferdienste beeinflussen.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          347,
+          368,
+          400,
+          461,
+          488,
+          905
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Beibehalten",
+      "priority": "P2",
+      "proposed_action": "Vorhandenen politischen Aufbau erhalten; ökonomische Vorschläge erst nach Wirkungsprüfung beschließen.",
+      "implementation_effort": "mittel bis hoch bei Wirtschaftsänderungen",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Vermeidet unbeabsichtigte Verzögerung oder Beschleunigung des Aufstiegs.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    },
+    {
+      "id": "LONG-01",
+      "area": "Langzeitmotivation und Schwierigkeitsgrad",
+      "historical_r108": {
+        "id": "LONG-01",
+        "area": "Langzeitmotivation und Schwierigkeitsgrad",
+        "original_rule": "Dokumentiert: Handelsausbau, Rivalen, Bürgermeister und Ältermann als Karriere.",
+        "original_sources": [
+          "https://www.mogelpower.de/manuals/Der_Patrizier_Handbuch.pdf",
+          "../R1_07/R1_07_forschungsbericht.md",
+          "../R1_08/R1_08_forschungsbericht.md"
+        ],
+        "original_observed": "R1.08 kurze Anfangsprobe; keine Wahlkampagne und keine menschliche Langzeitmessung.",
+        "original_status": "noch ungeprüft: reale Spielzeit, Original-Endspiel, Schwierigkeitskurve",
+        "hansefuerst_implementation": "advance lässt Märkte/Zinsen/Fristen fortlaufen; politischer Fortschritt benötigt Abschnitte, örtliche Leistungen, Fürsprecher und Hansevertrag. Keine belegte Garantie von90 aktiven Stunden.",
+        "hansefuerst_evidence": {
+          "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+          "path": "Hansefuerst_0_4.html",
+          "lines": [
+            347,
+            349,
+            368,
+            400,
+            476,
+            488,
+            874,
+            1024
+          ],
+          "functions": [
+            "advance",
+            "politicalPeriod",
+            "hanseQuote",
+            "acceptHanseAgreement"
+          ],
+          "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        "hansefuerst_status": "nachgewiesen: statische Codeprüfung, kein Laufzeittest",
+        "strengths": "Mehrstufige Aufgaben und Reisefristen sind codebelegt.",
+        "weaknesses": "Spieljahre, Ereigniszahl und aktive menschliche Stunden sind verschieden; Codeprüfung ersetzt keine Spielzeitstudie.",
+        "possible_improvements": "Später aktive Entscheidungszeit, Wiederholungsanteil, Sackgassen und Karriereetappen messen, Ziel90Stunden ausdrücklich validieren.",
+        "expected_fun_atmosphere": "Längere Motivation braucht abwechslungsreiche Entscheidungen, nicht bloß längere Wartezeiten.",
+        "effect_status": "vermutet: Designhypothese, nicht gemessen",
+        "effort": "hoch für fundierte Langzeitvalidierung",
+        "effort_status": "grobe qualitative Einschätzung, keine Umsetzungszusage",
+        "priority": "P1 Forschung, keine sofortige Balanceänderung",
+        "recommendation": "90Stunden als Ziel führen; kein Erfahrungswert aus dem Original ableiten.",
+        "provided_manual_pdf_pages": [
+          17,
+          38,
+          50,
+          51,
+          87
+        ]
+      },
+      "r109_assertions": [
+        {
+          "category": "Direkt im Originalspiel gemessen",
+          "statement": "Kleine lokale Rückverkäufe erzeugen imOriginal105Taler Warenverlust; Marktänderung ohne Handel kann Chancen/Risiken verändern.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Nachvollziehbare Risiken und Erholung sind fürLangzeitmotivation wichtiger als zusätzliche Routineklicks.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "90aktiveStunden, Original-Endspiel und längerfristige Handelsrendite nicht gemessen.",
+          "source": "../R1_09/R1_09_forschungsbericht.md"
+        }
+      ],
+      "hansefuerst_evidence": {
+        "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+        "path": "Hansefuerst_0_4.html",
+        "lines": [
+          874,
+          903,
+          905
+        ],
+        "url": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+      },
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "P1",
+      "proposed_action": "90Stunden als Ziel behalten; keine künstlichen Spreads oder Wartezeiten allein zur Streckung einführen.",
+      "implementation_effort": "hoch für belastbare Langzeitvalidierung",
+      "effort_category": "Hypothese",
+      "expected_effect_and_risks": "Breitere Strategien könnten motivieren; künstliche Liquiditätsfallen könnten Erholung verhindern.",
+      "effect_category": "Hypothese",
+      "user_approval_required_before_implementation": true
+    }
+  ]
+}
