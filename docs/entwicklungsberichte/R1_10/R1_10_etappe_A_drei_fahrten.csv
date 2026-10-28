@@ -1,0 +1,4 @@
+id,group,origin,destination,departure,arrival,days,crew_before,crew_after,condition_before,condition_after,cargo_before,cargo_after,cash_before,cash_after_trip,port_fee_shown,unallocated_trip_outflow,post_inspection_cash,unallocated_control_outflow
+T01,continuous-A,Lübeck,Rostock,4. Heuet 1355,6. Heuet 1355,2,5,5,bestem Zustand,bestem Zustand,0,0,248,234,14,0,229,5
+T02,continuous-A,Rostock,Lübeck,6. Heuet 1355,9. Heuet 1355,3,5,5,bestem Zustand,bestem Zustand,0,0,229,198,21,10,192,6
+T03,continuous-A,Lübeck,Rostock,9. Heuet 1355,12. Heuet 1355,3,5,5,bestem Zustand,bestem Zustand,0,0,192,79,14,99,65,14
