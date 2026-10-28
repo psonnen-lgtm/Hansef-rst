@@ -1,0 +1,279 @@
+{
+  "version": "R1.11",
+  "date": "2026-10-28",
+  "previous_version": "mechaniken_R1_10.json",
+  "code_commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "code_blob": "7cf4c90244e4afef6d762a5e73ebf9d6bd9bfaa8",
+  "categories": [
+    "Direkt im Originalspiel beobachtet",
+    "Durch Originaldokumentation belegt",
+    "Im Hansefürst-Code bestätigt",
+    "Hypothese",
+    "Noch ungeprüft"
+  ],
+  "recommendation_values": [
+    "Übernehmen",
+    "Verbessern",
+    "Beibehalten",
+    "Nicht übernehmen",
+    "Weitere Forschung erforderlich"
+  ],
+  "historical_versions_preserved": true,
+  "entries": [
+    {
+      "id": "ECON-01",
+      "area": "Handel, Preisbildung und Wirtschaftskreisläufe",
+      "topics": [],
+      "assertions": [
+        {
+          "category": "Durch Originaldokumentation belegt",
+          "statement": "Gemeinwohl und Versorgung statt bloßer Bereicherung sind im Originalhandbuch politische Empfehlungen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Politische Versorgungsbriefe verlangen nachgewiesene Fremdware; Warenkauf und Reise sind echte Aufwände, nicht zwingend Nettoverlust je Dienst.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Original-Liefermenge und konkrete Ruf-/Wahlformel nicht gemessen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        }
+      ],
+      "recommendation": "Verbessern",
+      "priority": "hoch",
+      "proposal": "Bestehende Versorgungsdienste abwechslungsreicher ausarbeiten, ohne Gratisurkunden.",
+      "effort": "mittel–hoch",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Wirtschaft/Politik könnten stärker zusammenwirken; Herkunfts-/Auftragsdaten und Marktversorgung schützen.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "SHIP-01",
+      "area": "Schiffe, Besatzung und Konvois",
+      "topics": [],
+      "assertions": [
+        {
+          "category": "Durch Originaldokumentation belegt",
+          "statement": "Auslieger/Konvoischutz sollen Dankbarkeit/Popularität bringen; Originalhandbuch PDF79–82.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Ausliegerangebot im Rathaus geöffnet und abgelehnt; keine neue Schutzfahrt.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Konvois verbessern Abwehr, geprüfte Ankunft bucht allgemeinen Ruf+1; kein besonderer politischer Schutzbonus dort.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "mittel",
+      "proposal": "Schutzverdienst nur für nachvollziehbare Leistung prüfen.",
+      "effort": "mittel",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Kann Vorbereitung lohnen; leere Kurzrouten dürfen keine unbeschränkten Sonderverdienste erzeugen.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "EVENT-01",
+      "area": "Piraten und Reiseereignisse",
+      "topics": [],
+      "assertions": [
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Keine neue Seereise oder Wahl ausgelöst; R1.10-Stichprobe unverändert.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Politische Ereigniswahrscheinlichkeiten und Original-Wahlzufall nicht rekonstruiert.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        }
+      ],
+      "recommendation": "Beibehalten",
+      "priority": "niedrig",
+      "proposal": "Historische R1.10-Datenbasis erhalten, keine Ereignisrate ausR1.11 ableiten.",
+      "effort": "niedrig",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Verhindert falsche Kalibrierung.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "CITY-01",
+      "area": "Städte, Gebäude und Menüs",
+      "topics": [],
+      "assertions": [
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Rathaus/Wahltafel, ungeöffnete Amtstüren, Umzug/Ausliegerangebote, Volksmeinung, Kirche, Bad, Fest und Gilde erreicht.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Weihwasserbecken ist im beobachteten Kirchenbedienweg vor Funktionszugang nötig.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Ratstafel zeigt Bedingungen, Unterstützungsbestandteile und nächsten Schritt bereits detailliert.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "recommendation": "Beibehalten",
+      "priority": "hoch",
+      "proposal": "Vorhandene Transparenz erhalten, lokale Wirkungsbelege verbessern statt hilfreiche Menüs entfernen.",
+      "effort": "niedrig–mittel",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Weniger Suchklicks und besseres Stadtgefühl; keine neue Mechanik allein wegen Originalritual.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "FIN-01",
+      "area": "Banken, Kredite und Finanzen",
+      "topics": [],
+      "assertions": [
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "25Almosen bezahlt:248→223;100Kirchbauspende zurückgewiesen, nicht bezahlt. Gildenangebot20630 nicht angenommen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Politisches Vermögen netWorth minus Mietrückstände; Spenden/Handel/Reisen getrennte Ruf- und Kostenquellen.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "recommendation": "Verbessern",
+      "priority": "hoch",
+      "proposal": "Gesellschaftliche Ausgaben mit Wirkung/Kategorien nachvollziehbar quittieren.",
+      "effort": "mittel",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Kann politische Kosten verständlich machen; keine Kredite als Gewinn oder Spenden als Garantiesieg.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "SOC-01",
+      "area": "Badehaus und gesellschaftliches Leben / Ansehen",
+      "topics": [
+        "Politik",
+        "Gesellschaft",
+        "Ansehen",
+        "Langzeitmotivation"
+      ],
+      "assertions": [
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Nach25Almosen sofort und1Tagspäter gleiche qualitative Rufkategorien; keine interne Wirkungslosigkeit bewiesen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Durch Originaldokumentation belegt",
+          "statement": "Feste/Hochzeit können lautOriginalhandbuch Ruf gewinnen oder bei schlechter Versorgung schädigen; Badehausweg nur angedeutet.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Spendenfunktion mit min1Rufgewinn und ohne zeitliche Begrenzung; Bad15G/1Tag plusHandels-/Politikhinweise schon vorhanden.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Wiederholte globale Ruffinanzierung ist als Codeinferenz möglich; das kauft keine örtlichen Dienste oder Siegel.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        }
+      ],
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "mittel",
+      "proposal": "Mehrere sinnvolle optionale Gesellschaftswege statt Pflichtspende; bestehende Funktionen zuerst bewerten.",
+      "effort": "mittel bis hoch",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Abwechslung könnte motivieren; neue Feste/Termine/Warenkosten brauchen Save- und Wirtschaftsplanung.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "POL-01",
+      "area": "Bürgermeisterwahlen, örtliches Vertrauen und Eldermann",
+      "topics": [
+        "Politik",
+        "Gesellschaft",
+        "Ansehen",
+        "Langzeitmotivation"
+      ],
+      "assertions": [
+        {
+          "category": "Direkt im Originalspiel beobachtet",
+          "statement": "Ratswahltafel19.Scheiding1356 gelesen; keine reale Kandidatur/Wahl/Abstimmung erreicht.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Durch Originaldokumentation belegt",
+          "statement": "Heimat-Bürgermeister vorÄltermann, zweijährlicheWahlen und gesellschaftlicherRuf; Originalschwellen/Stimmengewichte offen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Rangfolge und Mehrfachbedingungen, lokaleUrkunden/Mehrheit, Amtsbewährung und Siegel/Hansevertrag vorhanden. Rivalen sind Unterstützerkreise, keine eigenen Flotten/Vermögen/Stimmen.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "Niederlage bewahrtDienste; Wahlprüfung deterministisch, erneuteKandidatur nachRatsabschnitt. AktivesAmt/Titel getrennt.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        }
+      ],
+      "recommendation": "Verbessern",
+      "priority": "hoch",
+      "proposal": "Bestehendes örtliches Leistungsmodell variieren; aktive Gegenkandidaten/Wahlfenster separat konzipieren.",
+      "effort": "mittel–hoch",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Mehr Spannung möglich; transparente Folgen, faire Budgets und bestehende Titel/Fristen erhalten.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    },
+    {
+      "id": "LONG-01",
+      "area": "Langzeitmotivation und90Stunden",
+      "topics": [
+        "Politik",
+        "Gesellschaft",
+        "Ansehen",
+        "Langzeitmotivation"
+      ],
+      "assertions": [
+        {
+          "category": "Im Hansefürst-Code bestätigt",
+          "statement": "NachEldermann Handel/Lager/Schiffbau weiter; aktuelle Tages-/Urkundenschwellen garantieren keine aktive Spieldauer.",
+          "source": "https://github.com/psonnen-lgtm/Hansef-rst/blob/02ee6b8fc1507ad078b6b596c333e50d91eeea64/Hansefuerst_0_4.html"
+        },
+        {
+          "category": "Hypothese",
+          "statement": "Zielbudgets8+17+20+20+25=90aktiveStunden alsEntwurf, keine Mindestwartezeiten.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        },
+        {
+          "category": "Noch ungeprüft",
+          "statement": "Menschliche Langzeitdauer, Wiederholungsfrust und politische Rückschlagskurve nicht gemessen.",
+          "source": "../R1_11/R1_11_forschungsbericht.md"
+        }
+      ],
+      "recommendation": "Weitere Forschung erforderlich",
+      "priority": "hoch",
+      "proposal": "Karriereabschnitte mit neuer Entscheidungsqualität testen, bevor Regeln oder Beträge gestreckt werden.",
+      "effort": "hoch für Validierung",
+      "effort_category": "Hypothese",
+      "expected_fun_atmosphere_and_risks": "Bedeutsame Zwischenziele könnten binden; künstliche Wartezeiten und Pflichtlisten vermeiden.",
+      "effect_category": "Hypothese",
+      "implementation_authorized": false
+    }
+  ]
+}

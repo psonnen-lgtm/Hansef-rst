@@ -301,3 +301,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### R1.11 – Sicherungspunkt C: Gesellschaft und Rufbeobachtung
 
 28.10.2026 – [Gesellschaftsanalyse](R1_11/R1_11_C_gesellschaft_und_ansehen.md), [Mess-CSV](R1_11/R1_11_C_ansehensmessungen.csv), [Menüs](R1_11/R1_11_C_gesellschaftsmenues.csv), [JSON](R1_11/R1_11_C_gesellschaft_beobachtungen.json). Kirchbauspende100 zurückgewiesen, keineZahlung; Almosen25 tatsächlich bezahlt. Qualitative Rufkategorien sofort und nach1Tag unverändert, keine interne Wirkungslosigkeit behauptet. Badehaus besucht, keine politischeManipulation nachgewiesen. Fest abgelehnt, Gildengebühr20630 angezeigt/nicht bezahlt. KeineWahl, Produktänderung oder Simulation.
+
+
+### R1.11 – Abschluss: Vergleich und Karrierekonzept
+
+[Gesamtbericht](R1_11/R1_11_forschungsbericht.md) · [Codevergleich](R1_11/R1_11_D_vergleich_hansefuerst.md) · [90-Stunden-Entwurf](R1_11/R1_11_90_stunden_karrierekonzept.md) · [Fortgeschriebener Katalog](forschungskatalog/R1_11_politik_gesellschaft.md). Vier Sicherungspunkte; keine Produktänderung oder Folgephase.

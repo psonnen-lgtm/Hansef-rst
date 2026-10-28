@@ -1,0 +1,438 @@
+{
+  "phase": "R1.11",
+  "date": "2026-10-28",
+  "status": "bounded_research_completed",
+  "prior_commit": "b71d467fd5437565fea8fa43ac2ea8c5b25d470b",
+  "checkpoints": {
+    "A": "a7a02ce7b0143caa4d36abfaa0ab149e83ec54c4",
+    "B": "eb4723614bd6856ea05f3976285ac33a1853f91a",
+    "C": "0f366fb539d3dc0cd3558b36eb6519bd6a3c2d2f"
+  },
+  "new_voyages": 0,
+  "observed_elections": 0,
+  "observed_hanse_assemblies": 0,
+  "observed_elapsed_harbor_days": 1,
+  "original_reputation_numeric": null,
+  "internal_reputation_effect": "unresolved; unchanged qualitative categories do not prove zero effect",
+  "alms_paid": 25,
+  "church_building_donation_offered_not_paid": 100,
+  "final_cash": 223,
+  "source_save_sha256": "e43a37fbab4438d997a9dfc1e11b77b7372977ed2b9773587bf4d0e1b4999e59",
+  "end_save_sha256": "fdd69d652b8f8e72f6517f603c17e3d201fc91e174a373a1477d9995a760dc74",
+  "end_save_load_verified": false,
+  "code_audit": {
+    "commit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+    "path": "Hansefuerst_0_4.html",
+    "blob": "7cf4c90244e4afef6d762a5e73ebf9d6bd9bfaa8",
+    "method": "static; local exact blob match; no simulation"
+  },
+  "career_hour_budgets_hypothesis": [
+    8,
+    17,
+    20,
+    20,
+    25
+  ],
+  "implementation_authorized": false,
+  "observations_by_checkpoint": {
+    "A": {
+      "phase": "R1.11",
+      "checkpoint": "A",
+      "base": "b71d467fd5437565fea8fa43ac2ea8c5b25d470b",
+      "save": "R110A",
+      "save_sha256": "e43a37fbab4438d997a9dfc1e11b77b7372977ed2b9773587bf4d0e1b4999e59",
+      "game_date": "4. Heuet 1355",
+      "ship_cash_loaded": 248,
+      "crew": 5,
+      "menus": [
+        {
+          "id": "P01",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Rathaus",
+          "path": "Hafen→Marktplatz→mittlerer Rathausbogen",
+          "clicks_from_harbor": 2,
+          "shown": "Halle mit3Türen und2Tafeln",
+          "available": "Tafeln/Umzugsbestätigung erreichbar",
+          "close": "Escape",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "townhall.bmp",
+          "captured_at": "2026-10-28T20:15:41.954809+01:00",
+          "sha256": "642ae3cf88e23414b0f29a664591167be5da52a02dbdbfc7152b2fcbdea56695"
+        },
+        {
+          "id": "P02",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Wahltafel",
+          "path": "Rathaus→vordere linke Tafel",
+          "clicks_from_harbor": 3,
+          "shown": "Nächste Ratswahl19.Scheiding1356; Versteigerung24.Nebelung1356",
+          "available": "Nur Anzeige, keine Kandidaten/Stimmzahlen beobachtet",
+          "close": "Escape",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "election-board.bmp",
+          "captured_at": "2026-10-28T20:16:03.740068+01:00",
+          "sha256": "bc1332a7d133bcf8d5e2bdd77f42ac1062362404c93ee3a35024c28614ab2bff"
+        },
+        {
+          "id": "P03",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Wehrwesen",
+          "path": "Rathaus→linke Tür mit Waffen",
+          "clicks_from_harbor": 3,
+          "shown": "NachKlick kein neues Fenster",
+          "available": "Gesperrt lautHandbuch; imSpiel keine ausdrückliche Sperrmeldung",
+          "close": "bleibtRathaus",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "defence-door-attempt.bmp",
+          "captured_at": "2026-10-28T20:16:30.512462+01:00",
+          "sha256": "14b43080824365020135676bc070f55ada80e75c7d63dbf509bf7a327ea4ef7a"
+        },
+        {
+          "id": "P04",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Flottenpolitik",
+          "path": "Rathaus→mittlere Tür mit Schiff",
+          "clicks_from_harbor": 3,
+          "shown": "NachKlick kein neues Fenster",
+          "available": "Gesperrt lautHandbuch; imSpiel keine ausdrückliche Sperrmeldung",
+          "close": "bleibtRathaus",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "fleet-door-attempt.bmp",
+          "captured_at": "2026-10-28T20:16:52.759643+01:00",
+          "sha256": "e785646dc11821f5a7994036783b72ad31e8142e2250bc741b39cc2d7e559610"
+        },
+        {
+          "id": "P05",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Umzug",
+          "path": "Rathaus→rechte Tür mit Häusern",
+          "clicks_from_harbor": 3,
+          "shown": "Bestätigung: WollenSie wirklichumziehen?",
+          "available": "Ja/Nein angeboten;Nein gewählt, keinUmzug",
+          "close": "Nein",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "move-office.bmp",
+          "captured_at": "2026-10-28T20:16:55.797689+01:00",
+          "sha256": "d9c95c8e6cb85c09a1cf83f91fc981657fc7d09a4765d761d3c9da2f518f3e99"
+        },
+        {
+          "id": "P06",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Auslieger",
+          "path": "Rathaus→hintere linke Tafel",
+          "clicks_from_harbor": 3,
+          "shown": "Auslieger vorLübeck gesucht",
+          "available": "Folgefrage: SchiffzumAusliegermachen?Ja/Nein;Nein gewählt",
+          "close": "Nein führtRathaus",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "outlier-board.bmp",
+          "captured_at": "2026-10-28T20:17:18.692483+01:00",
+          "sha256": "0d206480665b5734b927ea75a1a87c64003cae8db2956c39ebe34f6aa8187eb9"
+        },
+        {
+          "id": "P07",
+          "game_date": "4. Heuet 1355",
+          "city": "Lübeck",
+          "menu": "Volksmeinung/Politikstatus",
+          "path": "Hafen→Marktplatz→Personengruppe linksderKirche",
+          "clicks_from_harbor": 2,
+          "shown": "In der Gunst des Volkes sind Sie nicht vorhanden / In der Politik sind Sie nicht vertreten!",
+          "available": "Qualitative Auskunft, keineRufpunkte",
+          "close": "Escape",
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_evidence": "opinion-A-before.bmp",
+          "captured_at": "2026-10-28T20:19:13.569714+01:00",
+          "sha256": "57d370485dd68c242f922a5392b8c5166135258b740fbd1d6498c9573431db70"
+        }
+      ],
+      "election_reached": false,
+      "hansetag_reached": false,
+      "confirmed_political_action_committed": false,
+      "technical_issue": "Einmal versehentlich leere Neuspiel-Namensmaske geöffnet; ohne Charakteranlage beendet, Emulator einmal neu gestartet. Danach Hauptmenü vorLadeklick sichtbar geprüft.",
+      "invalid_evidence_excluded": [
+        "invalid-opinion-path.bmp"
+      ],
+      "product_changes": false
+    },
+    "B": {
+      "phase": "R1.11",
+      "checkpoint": "B",
+      "primary_source": "vom Nutzer bereitgestelltes Originalhandbuch1992",
+      "private_pdf_sha256": "7daf4f8b61cc91beb93df4a4240eac961aa30db66dca9eaec6ce59e0a5f9c816",
+      "sources": [
+        {
+          "id": "MAN-17",
+          "pdf_pages": [
+            17
+          ],
+          "printed": "1.1",
+          "claims": [
+            "Handel und soziales Engagement, Heimatstadt-Bürgermeister, Hansetag zweijährig, Wahl durch Händler aller Hansestädte und auswärtigen Kontore, Ältermann als Siegziel"
+          ],
+          "visually_reviewed": true
+        },
+        {
+          "id": "MAN-37-38",
+          "pdf_pages": [
+            37,
+            38
+          ],
+          "printed": "3.3–3.4",
+          "claims": [
+            "Ältermann setzt Bürgermeister der Heimatstadt voraus; Gemeinwohl statt bloßer Reichtum; Spenden/Feste; Konkurrenten"
+          ],
+          "visually_reviewed": true
+        },
+        {
+          "id": "MAN-66",
+          "pdf_pages": [
+            66
+          ],
+          "printed": "4.6",
+          "claims": [
+            "Volksmeinung für beide Wahlchancen; Bürgermeister-/Ältermannwahlen alle2Jahre"
+          ],
+          "visually_reviewed": true
+        },
+        {
+          "id": "MAN-67-68",
+          "pdf_pages": [
+            67,
+            68
+          ],
+          "printed": "4.7–4.8",
+          "claims": [
+            "Kirchenspende, Bettler, Fest; politisch fragwürdiger Badehausweg nur angedeutet"
+          ],
+          "visually_reviewed": false,
+          "method": "OCR plus bereitgestellteAbbildung aus66; gesellschaftliche Seiten inEtappeC nachprüfen"
+        },
+        {
+          "id": "MAN-70-71",
+          "pdf_pages": [
+            70,
+            71
+          ],
+          "printed": "4.10–4.11",
+          "claims": [
+            "Amtstüren nach Bürgermeisterwahl; Gildenbeitritt und bessere Wahlchancen"
+          ],
+          "visually_reviewed": true
+        },
+        {
+          "id": "MAN-87",
+          "pdf_pages": [
+            87
+          ],
+          "printed": "5.9",
+          "claims": [
+            "Bürgermeister verteidigt Stadt, Rat bezahlt200Soldaten, zusätzliche selbst; Handel/auswärtige Bekanntheit bleiben politischeAufgabe"
+          ],
+          "visually_reviewed": true
+        }
+      ],
+      "source_limits": "Historische Randspaltenerklärungen nicht automatisch als implementierte Spielregel behandeln; keine Originalwahlformel rekonstruiert.",
+      "offices": [
+        {
+          "office": "Kaufmann/Reeder",
+          "type": "Ausgangsrolle, keine nachgewiesene Rangstufe",
+          "requirements": "Eigene Spielfigur und Heimatkontor; kein neu gemessener Aufstieg",
+          "rights": "Handel und gesellschaftliche Aktionen",
+          "evidence": "bereitgestelltes Handbuch PDF17 (1.1), tatsächlicher Startsave",
+          "status": "Durch Originaldokumentation belegt / Direkt im Originalspiel beobachtet",
+          "unknown": "Formale weitere Kaufmannsränge und Vermögensgrenzen ungeprüft"
+        },
+        {
+          "office": "Bürgermeister",
+          "type": "Städtisches Amt",
+          "requirements": "Beliebtheit in Heimatstadt; geschickter Handel und gesellschaftliches Engagement dokumentiert; kein numerischer Mindestwert gefunden",
+          "rights": "Rathaus-Wehrwesen und Flottenpolitik; Teilnahme Hansetag dokumentiert",
+          "evidence": "Handbuch PDF17,37–38,66,69–70,87",
+          "status": "Durch Originaldokumentation belegt",
+          "unknown": "Kandidaturauslösung, Mindestvermögen, Stimmformel und konkrete Wahl nicht geprüft"
+        },
+        {
+          "office": "Ältermann/Eldermann",
+          "type": "Überregionales Zielamt",
+          "requirements": "Zuvor Bürgermeister der Heimatstadt; Popularität auch gegenüber Konkurrenten und überregionaler Ruf dokumentiert",
+          "rights": "Dokumentiertes Spielziel erreicht; weitere konkrete Amtsrechte nicht nachgewiesen",
+          "evidence": "Handbuch PDF17,37–38,66,87",
+          "status": "Durch Originaldokumentation belegt",
+          "unknown": "Stimmengewicht je Stadt, Kandidatenfilter, Wiederwahl/Weiterspielbarkeit ungeprüft"
+        },
+        {
+          "office": "Ratsherr / Patrizier als separate Freischaltstufen",
+          "type": "Keine belegte Original-Rangfolge in dieser Runde",
+          "requirements": "Nicht von Hansefürst oder späteren Patrizier-Teilen übertragen",
+          "rights": "nicht bestimmt",
+          "evidence": "Keine ausreichende Originalstelle oder Spielbeobachtung",
+          "status": "Noch ungeprüft",
+          "unknown": "Nicht als fehlendes Originalfeature oder implementierte Stufe ausgeben"
+        },
+        {
+          "office": "Gildenmitglied",
+          "type": "Mitgliedschaft, kein gewähltes politisches Amt",
+          "requirements": "Beitrittsgebühr aus Bordgeld; laut Handbuch bessere Wahlchancen",
+          "rights": "Informationen über Konkurrenten an Gildentür",
+          "evidence": "Handbuch PDF71, gedruckt4.11",
+          "status": "Durch Originaldokumentation belegt",
+          "unknown": "Kein belegter zwingender Kandidaturfilter und keine Chanceformel"
+        }
+      ],
+      "original_election_observed": false,
+      "original_hansetag_observed": false
+    },
+    "C": {
+      "phase": "R1.11",
+      "checkpoint": "C",
+      "before_save_copy": "private R110A-Kopie before-social.PSD, inA regulär geladen geprüft",
+      "before_save_sha256": "e43a37fbab4438d997a9dfc1e11b77b7372977ed2b9773587bf4d0e1b4999e59",
+      "measurements": [
+        {
+          "id": "Q00",
+          "city": "Lübeck",
+          "game_date": "4. Heuet 1355",
+          "action": "vor gesellschaftlichen Versuchen",
+          "ship_cash": 248,
+          "confirmed_payment": 0,
+          "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+          "political_standing": "In der Politik sind Sie nicht vertreten!",
+          "artificial_rep_points": null,
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_status_evidence": "opinion-A-before.bmp",
+          "status_sha256": "57d370485dd68c242f922a5392b8c5166135258b740fbd1d6498c9573431db70",
+          "private_cash_evidence": "start-book.bmp",
+          "captured_at": "2026-10-28T20:19:13.569714+01:00"
+        },
+        {
+          "id": "Q01",
+          "city": "Lübeck",
+          "game_date": "4. Heuet 1355",
+          "action": "100Taler Kirchenspende eingegeben, zurückgewiesen; keine Zahlung",
+          "ship_cash": 248,
+          "confirmed_payment": 0,
+          "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+          "political_standing": "In der Politik sind Sie nicht vertreten!",
+          "artificial_rep_points": null,
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_status_evidence": "opinion-after-rejected-donation.bmp",
+          "status_sha256": "766e8d5f1f794d06ff1e76fd24eded1ef20cac5ecdbebfadb69cecc1caa3ec58",
+          "private_cash_evidence": "donation-more-choice.bmp",
+          "captured_at": "2026-10-28T20:32:06.617941+01:00"
+        },
+        {
+          "id": "Q02",
+          "city": "Lübeck",
+          "game_date": "4. Heuet 1355",
+          "action": "25Taler Almosen ausgeführt",
+          "ship_cash": 223,
+          "confirmed_payment": 25,
+          "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+          "political_standing": "In der Politik sind Sie nicht vertreten!",
+          "artificial_rep_points": null,
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_status_evidence": "opinion-after-alms.bmp",
+          "status_sha256": "80c7e8f073d0bff6b5a232432853bdcd3b58ed02e2368e43606ee005a72148ba",
+          "private_cash_evidence": "alms-after-book.bmp",
+          "captured_at": "2026-10-28T20:33:43.531720+01:00"
+        },
+        {
+          "id": "Q03",
+          "city": "Lübeck",
+          "game_date": "5. Heuet 1355",
+          "action": "ein Tag ohne weitere Spende gewartet",
+          "ship_cash": 223,
+          "confirmed_payment": 0,
+          "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+          "political_standing": "In der Politik sind Sie nicht vertreten!",
+          "artificial_rep_points": null,
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_status_evidence": "opinion-after-one-day.bmp",
+          "status_sha256": "0ef2e0391d2993712028ecf1973158e07b3897c016e5c7abf4af6c62397f17f6",
+          "private_cash_evidence": "alms-next-day-book.bmp",
+          "captured_at": "2026-10-28T20:35:25.171489+01:00"
+        },
+        {
+          "id": "Q04",
+          "city": "Lübeck",
+          "game_date": "5. Heuet 1355",
+          "action": "Badehaus besucht, Alleinbadenfrage Nein; Bad-Rückmeldung",
+          "ship_cash": 223,
+          "confirmed_payment": 0,
+          "public_opinion": "In der Gunst des Volkes sind Sie nicht vorhanden",
+          "political_standing": "In der Politik sind Sie nicht vertreten!",
+          "artificial_rep_points": null,
+          "status": "Direkt im Originalspiel beobachtet",
+          "private_status_evidence": "opinion-after-bath.bmp",
+          "status_sha256": "0bedc8a8a4b8675810ea925c90de8dd1f6e253ea3d2c6fe69e1e72b8967a48a1",
+          "private_cash_evidence": "bath-after-book.bmp",
+          "captured_at": "2026-10-28T20:39:43.448637+01:00"
+        }
+      ],
+      "society_menus": [
+        {
+          "name": "Kirche/Weihwasser",
+          "path": "Hafen→Marktplatz→Kirche; erst Weihwasserbecken anlinkerSäule",
+          "opening_clicks": 2,
+          "result": "OhneBeckenklick wiederholte Hinweisfrage; Ohja allein ersetztBeckenklick nicht",
+          "cost": "Kein sichtbarer Kassenabgang bis Spendenmaske248",
+          "effect": "keine isolierte Rufwirkung geprüft"
+        },
+        {
+          "name": "Kirchbauspende",
+          "path": "Kirche→kirchenförmiger Opferstock",
+          "opening_clicks": 3,
+          "result": "100eingetragen, Rückmeldungzu kleinerSpende, danachmehrSpenden→Escape abgebrochen",
+          "cost": "100nichtbezahlt, Kasse248",
+          "effect": "sichtbare Rufkategorien unverändert; Mindestschwelle unbekannt"
+        },
+        {
+          "name": "Almosen",
+          "path": "Kirche→Bettler rechts anSäule",
+          "opening_clicks": 3,
+          "result": "25eingegeben, RückkehrinKirche",
+          "cost": "248→223",
+          "effect": "sofort und nach1Tag gleiche qualitative Kategorien"
+        },
+        {
+          "name": "Badehaus",
+          "path": "Marktplatz→linkes Haus→rechte Person",
+          "opening_clicks": 2,
+          "result": "Fragealleinbaden?Nein; Bad-Rückmeldung; keineBestechung/Handelsinformation beobachtet",
+          "cost": "223→223; Kalender5.Heuetunverändert",
+          "effect": "gleiche Kategorien; keinebewiesene politische Wirkung"
+        },
+        {
+          "name": "Fest",
+          "path": "Marktplatz→Gaukler links vorn",
+          "opening_clicks": 2,
+          "result": "Festgeben?Ja/Nein;Nein gewählt",
+          "cost": "keinFest ausgerichtet",
+          "effect": "nichtgeprüft"
+        },
+        {
+          "name": "Gilde",
+          "path": "Marktplatz→Gildenhaus hinten→Tür",
+          "opening_clicks": 3,
+          "result": "GebührSt.JacobsGilde20630Taler angezeigt",
+          "cost": "nurAngebot, nichtbezahlt",
+          "effect": "keineMitgliedschaft/Konkurrenteninformationen geöffnet"
+        }
+      ],
+      "notes": [
+        "Qualitativ unverändert heißt nicht internwirkungslos.",
+        "Weihwasser gehört zum Bedienpaket derKirche; kein isolierterWeihwasser-Ruftest.",
+        "Nur ein akzeptierterAlmosenversuch, keine Wiederholbarkeits-/Missbrauchsquote.",
+        "Kein zweiter unabhängiger Nullaktions-Kontrollzweig.",
+        "KeineSeereise und keineWahl erzwungen.",
+        "Fest/Hochzeit/Konvoischutz quellenbelegt, nicht ausgedachten Resultaten ergänzt."
+      ]
+    }
+  }
+}

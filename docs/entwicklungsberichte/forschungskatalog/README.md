@@ -157,3 +157,8 @@ Pflege: Neue Beobachtungen mit Phase, Quelle, Zustand und Datum ergänzen; Origi
 ## Fortschreibung R1.10 – aktueller Katalogstand
 
 28.10.2026: [Codevergleich und neue Originalbeobachtungen](R1_10_codevergleich.md), [JSON](mechaniken_R1_10.json), [Aussagen-CSV](mechaniken_R1_10.csv), [Forschungsbericht](../R1_10/R1_10_forschungsbericht.md). Acht IDs fortgeführt. Fünf neue Fahrten/28 aufsummierte Reisetage, abhängiger Restore-Versuch und Hamburgfahrt; Kreditmitteilung und qualitatives Zustandsurteil getrennt von Seegefahren. Persistenter Schutz gegen Vor-Reise-Save-Rollback im geprüften Hansefürst-Code nicht belegt; vorhandene Vorbereitungs-/Doppelauslösesicherung enger beschrieben. Historische Dateien bleiben erhalten; keine Umsetzung beschlossen.
+
+
+## Fortschreibung R1.11 – Politik, Gesellschaft und Langzeitmotivation
+
+28.10.2026: [Katalog R1.11](R1_11_politik_gesellschaft.md), [JSON](mechaniken_R1_11.json), [Aussagen-CSV](mechaniken_R1_11.csv), [Gesamtbericht](../R1_11/R1_11_forschungsbericht.md). Acht Bereiche fortgeführt; qualitative Ansehensversuche und statischer Politikvergleich getrennt belegt. Keine Wahl beobachtet, keine numerische Originalrufwirkung rekonstruiert, keine Umsetzung beschlossen.
