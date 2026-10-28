@@ -1,0 +1,28 @@
+FAIL 01-normal-sale-no-public TypeError: s.warehouses.reduce is not a function
+    at metric (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:9:161)
+    at Object.ordinary (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:16:28)
+    at /workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:21:41
+    at run (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:19:19)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:9
+function metric(h,a){const s=h.state(),m=s.markets[0][0];return {day:s.year*360+s.day,gold:s.gold,owned:s.ships.reduce((t,q)=>t+(q.cargo[0]||0),0)+s.warehouses.reduce((t,q)=>t+(q.cargo[0]||0),0),stock:m.stock,price:m.price,buyPrice:m.price,sellPrice:m.price,affordableWith200:Math.min(m.stock,Math.floor(200/m.price)),consumed:a?.side().consumed??0,remaining:a?.side().need?.remaining??null,debt:a?.side().debt??0,rng:h.rng()};}
+                                                                                                                                                                ^
+
+TypeError: s.warehouses.reduce is not a function
+    at metric (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:9:161)
+    at run (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:19:266)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phaseP13/checks.cjs:21:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+
+Node.js v24.19.0

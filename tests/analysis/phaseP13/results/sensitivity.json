@@ -1,0 +1,45 @@
+{
+  "phase": "P1.3",
+  "pureMath": true,
+  "newGameContexts": 0,
+  "testedCommit": "3bb864a487e4c651fa3bfe7092cc805c4c5115e6",
+  "returnRate": 0.015,
+  "formula": "D_after=q/(1-(1-.015)^interval)",
+  "meaning": "quantity gap against same scheduled ordinary deliveries without public removal, under unclamped linear mean-return approximation",
+  "rows": [
+    {
+      "q": 15,
+      "interval": 30,
+      "retention": 0.6354580927313491,
+      "relativeDeficitJustAfter": 41.14753256323334,
+      "relativeDeficitJustBefore": 26.14753256323334
+    },
+    {
+      "q": 30,
+      "interval": 90,
+      "retention": 0.2566024181831758,
+      "relativeDeficitJustAfter": 40.35525637126986,
+      "relativeDeficitJustBefore": 10.35525637126986
+    },
+    {
+      "q": 60,
+      "interval": 90,
+      "retention": 0.2566024181831758,
+      "relativeDeficitJustAfter": 80.71051274253972,
+      "relativeDeficitJustBefore": 20.71051274253972
+    },
+    {
+      "q": 30,
+      "interval": 360,
+      "retention": 0.004335537821028035,
+      "relativeDeficitJustAfter": 30.130632496761205,
+      "relativeDeficitJustBefore": 0.13063249676120492
+    }
+  ],
+  "limits": [
+    "not absolute equilibrium stock",
+    "no random, clamp, player response or price effects modeled",
+    "not a new price or production formula",
+    "not evidence for long-run economic stability"
+  ]
+}

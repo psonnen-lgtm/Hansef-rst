@@ -1,0 +1,582 @@
+{
+  "phase": "P1.3",
+  "pureMath": true,
+  "newGameContexts": 0,
+  "testedCommit": "39bc6fb7cd8990d92c1acef7a07ec9b92234257a",
+  "groups": [
+    {
+      "name": "population tiers, shortage severity and all requested sizes",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "population": 5000,
+            "severe": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 15,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 15,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          },
+          {
+            "population": 10000,
+            "severe": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 15,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 15,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          },
+          {
+            "population": 16000,
+            "severe": {
+              "allowed": true,
+              "capacity": 30,
+              "populationCap": 30,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 30,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          },
+          {
+            "population": 25000,
+            "severe": {
+              "allowed": true,
+              "capacity": 30,
+              "populationCap": 30,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 30,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          },
+          {
+            "population": 30000,
+            "severe": {
+              "allowed": true,
+              "capacity": 30,
+              "populationCap": 30,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 30,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          },
+          {
+            "population": 40000,
+            "severe": {
+              "allowed": true,
+              "capacity": 45,
+              "populationCap": 45,
+              "corrected": [
+                20,
+                20
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            },
+            "mild": {
+              "allowed": true,
+              "capacity": 15,
+              "populationCap": 45,
+              "corrected": [
+                35,
+                35
+              ],
+              "publicDepletion": 0,
+              "recovered": true,
+              "normalSupplyReference": 110,
+              "variant": "recovery"
+            }
+          }
+        ],
+        "experimentalSizes": [
+          15,
+          30,
+          60
+        ],
+        "historicalOnly": 90,
+        "notProportionalToPopulation": true
+      }
+    },
+    {
+      "name": "two real consecutive days, no price-alone or special-event crisis",
+      "passed": true,
+      "evidence": {
+        "allRefusalsAsExpected": true,
+        "priceNotAnInput": true
+      }
+    },
+    {
+      "name": "self-created shortage and earlier public consumption correction",
+      "passed": true,
+      "evidence": {
+        "own": {
+          "allowed": false,
+          "reason": "no newly confirmed corrected shortage",
+          "corrected": [
+            110,
+            110
+          ],
+          "publicDepletion": 0
+        },
+        "chronic": {
+          "allowed": false,
+          "reason": "no newly confirmed corrected shortage",
+          "corrected": [
+            50,
+            50
+          ],
+          "publicDepletion": 30
+        },
+        "deeper": {
+          "allowed": true,
+          "capacity": 15,
+          "populationCap": 30,
+          "corrected": [
+            35,
+            35
+          ],
+          "publicDepletion": 30,
+          "recovered": false,
+          "normalSupplyReference": 110,
+          "variant": "chronic"
+        },
+        "notExactCounterfactualMarket": true
+      }
+    },
+    {
+      "name": "calendar alone, election and new year never refill existing or unchanged needs",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "now": 360,
+            "result": {
+              "allowed": false,
+              "reason": "free market has not recovered",
+              "corrected": [
+                25,
+                25
+              ]
+            }
+          },
+          {
+            "now": 361,
+            "result": {
+              "allowed": false,
+              "reason": "free market has not recovered",
+              "corrected": [
+                25,
+                25
+              ]
+            }
+          },
+          {
+            "now": 720,
+            "result": {
+              "allowed": false,
+              "reason": "free market has not recovered",
+              "corrected": [
+                25,
+                25
+              ]
+            }
+          },
+          {
+            "now": 1000,
+            "result": {
+              "allowed": false,
+              "reason": "free market has not recovered",
+              "corrected": [
+                25,
+                25
+              ]
+            }
+          }
+        ],
+        "tooSoon": {
+          "allowed": false,
+          "reason": "90-day minimum interval since final help",
+          "corrected": [
+            20,
+            20
+          ]
+        },
+        "realElectionNotImplemented": true
+      }
+    },
+    {
+      "name": "recovery plus fresh shortage can reopen; minimum measured since delivery",
+      "passed": true,
+      "evidence": {
+        "allowed": {
+          "allowed": true,
+          "capacity": 30,
+          "populationCap": 30,
+          "corrected": [
+            20,
+            20
+          ],
+          "publicDepletion": 0,
+          "recovered": true,
+          "normalSupplyReference": 110,
+          "variant": "recovery"
+        },
+        "tooSoon": {
+          "allowed": false,
+          "reason": "90-day minimum interval since final help",
+          "corrected": [
+            20,
+            20
+          ]
+        }
+      }
+    },
+    {
+      "name": "rolling budget survives year changes and counts reserved not only consumed",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "now": 360,
+            "result": {
+              "allowed": false,
+              "reason": "rolling 360-day budget exhausted"
+            }
+          },
+          {
+            "now": 361,
+            "result": {
+              "allowed": false,
+              "reason": "rolling 360-day budget exhausted"
+            }
+          },
+          {
+            "now": 400,
+            "result": {
+              "allowed": false,
+              "reason": "rolling 360-day budget exhausted"
+            }
+          }
+        ],
+        "released": {
+          "allowed": true,
+          "capacity": 30,
+          "populationCap": 30,
+          "corrected": [
+            0,
+            0
+          ],
+          "publicDepletion": 0,
+          "recovered": true,
+          "normalSupplyReference": 110,
+          "variant": "chronic"
+        }
+      }
+    },
+    {
+      "name": "one shared pool for different suppliers, IDs and delivery modes",
+      "passed": true,
+      "evidence": {
+        "pool": {
+          "remaining": 0,
+          "receipts": {
+            "player:one": {
+              "supplier": "player",
+              "id": "one",
+              "offered": 20,
+              "accepted": 20
+            },
+            "rival:1:one": {
+              "supplier": "rival:1",
+              "id": "one",
+              "offered": 20,
+              "accepted": 10
+            }
+          }
+        },
+        "noExtraPoolPerSupplier": true,
+        "onlyMathematicalNPCNotIntegrated": true
+      }
+    },
+    {
+      "name": "split amounts, finite receipts and known price/cost arithmetic",
+      "passed": true,
+      "evidence": [
+        {
+          "q": 15,
+          "mode": "A",
+          "count": 1,
+          "accepted": 15,
+          "revenue": 450,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 15,
+          "mode": "A",
+          "count": 3,
+          "accepted": 15,
+          "revenue": 450,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 15,
+          "mode": "B",
+          "count": 1,
+          "accepted": 15,
+          "revenue": 240,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 15,
+          "mode": "B",
+          "count": 3,
+          "accepted": 15,
+          "revenue": 240,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 15,
+          "mode": "C",
+          "count": 1,
+          "accepted": 15,
+          "revenue": 0,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 15,
+          "mode": "C",
+          "count": 3,
+          "accepted": 15,
+          "revenue": 0,
+          "knownGoodsCost": 120
+        },
+        {
+          "q": 30,
+          "mode": "A",
+          "count": 1,
+          "accepted": 30,
+          "revenue": 900,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 30,
+          "mode": "A",
+          "count": 3,
+          "accepted": 30,
+          "revenue": 900,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 30,
+          "mode": "B",
+          "count": 1,
+          "accepted": 30,
+          "revenue": 480,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 30,
+          "mode": "B",
+          "count": 3,
+          "accepted": 30,
+          "revenue": 480,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 30,
+          "mode": "C",
+          "count": 1,
+          "accepted": 30,
+          "revenue": 0,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 30,
+          "mode": "C",
+          "count": 3,
+          "accepted": 30,
+          "revenue": 0,
+          "knownGoodsCost": 240
+        },
+        {
+          "q": 60,
+          "mode": "A",
+          "count": 1,
+          "accepted": 60,
+          "revenue": 1800,
+          "knownGoodsCost": 480
+        },
+        {
+          "q": 60,
+          "mode": "A",
+          "count": 3,
+          "accepted": 60,
+          "revenue": 1800,
+          "knownGoodsCost": 480
+        },
+        {
+          "q": 60,
+          "mode": "B",
+          "count": 1,
+          "accepted": 60,
+          "revenue": 960,
+          "knownGoodsCost": 480
+        },
+        {
+          "q": 60,
+          "mode": "B",
+          "count": 3,
+          "accepted": 60,
+          "revenue": 960,
+          "knownGoodsCost": 480
+        },
+        {
+          "q": 60,
+          "mode": "C",
+          "count": 1,
+          "accepted": 60,
+          "revenue": 0,
+          "knownGoodsCost": 480
+        },
+        {
+          "q": 60,
+          "mode": "C",
+          "count": 3,
+          "accepted": 60,
+          "revenue": 0,
+          "knownGoodsCost": 480
+        }
+      ]
+    },
+    {
+      "name": "little cash and normal market supply are finite",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "price": 28,
+            "affordableWith200": 7,
+            "costFor15": 420,
+            "profit15AtForeignCost8": 300
+          },
+          {
+            "price": 29,
+            "affordableWith200": 6,
+            "costFor15": 435,
+            "profit15AtForeignCost8": 315
+          },
+          {
+            "price": 30,
+            "affordableWith200": 6,
+            "costFor15": 450,
+            "profit15AtForeignCost8": 330
+          },
+          {
+            "price": 31,
+            "affordableWith200": 6,
+            "costFor15": 465,
+            "profit15AtForeignCost8": 345
+          }
+        ],
+        "travelFeesAndOriginPurchaseNotSimulated": true
+      }
+    }
+  ],
+  "passed": true
+}

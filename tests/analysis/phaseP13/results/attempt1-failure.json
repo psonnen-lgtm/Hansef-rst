@@ -1,0 +1,12 @@
+{
+  "phase": "P1.3",
+  "testedCommit": "39bc6fb7cd8990d92c1acef7a07ec9b92234257a",
+  "createdContexts": 1,
+  "tradeDecisions": 0,
+  "elapsedDays": 0,
+  "error": "TypeError: s.warehouses.reduce is not a function",
+  "sourceLog": "dynamic-attempt1.log",
+  "beforeFirstTrade": true,
+  "completeGameSnapshotUnavailable": true,
+  "notReconstructed": true
+}
