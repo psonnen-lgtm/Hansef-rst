@@ -267,3 +267,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.06 - Neuspielstart und erste Handelsreise
 
 28.10.2026 - [Forschungsbericht](R1_06/R1_06_forschungsbericht.md), [Messschema](R1_06/R1_06_messwerte.csv), [Status](R1_06/R1_06_status.json). Basis `02ee6b8fc1507ad078b6b596c333e50d91eeea64`, Branch `research/r1-06-first-trade`. R1.05-Umgebung wiederverwendet; Tastaturprobe bestanden, Einbürgerung mit Heimat Lübeck und normaler Spielstart bis zur unbeantworteten Original-Kartenabfrage erreicht. Separate Handelskarte fehlt; keine Schutzumgehung. Keine Hafen-/Reise-/Marktmessung, CSV n=0, kein Startspielstand. Nur eigene Berichte/Konfiguration/Helfer/Bedienprotokolle veröffentlicht; Originalbildbeleg privat. Kein Hansefürst-Code, Pages, Spielstände oder Simulationen verändert/ausgeführt; frühere 1.500er-Ergebnisse nur Hintergrund. Keine Folgephase.
+
+
+## Forschung R1.07 - Handelskarte und erste Handelsdaten
+
+28.10.2026 - [Bericht](R1_07/R1_07_forschungsbericht.md), [Messwerte](R1_07/R1_07_messwerte.csv), [Bedienwege](R1_07/R1_07_bedienwege.csv), [Status](R1_07/R1_07_status.json). Basis `4b4722f32657c53408cf4f1e3e19963e678d66c4`, Branch `research/r1-07-trade-map`. Karte tatsächlich entpackt, Aalborg/Reval regulär akzeptiert, Welt/Save/Load geprüft. Lokaler Getreidekauf 68, Verkauf 47, Verlust21; Kredit100 getrennt. Zwei Hafentage; keine abgeschlossene Reise wegen Personal-/Auslaufblocker, keine Ereignisrate. Originale, Screenshots und Testspielstände privat. Kein Hansefürst-Code, Pages oder Simulationen verändert; keine Folgephase.

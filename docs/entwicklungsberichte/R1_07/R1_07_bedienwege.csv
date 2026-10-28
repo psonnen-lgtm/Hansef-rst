@@ -1,0 +1,17 @@
+function,successful_path,clicks_from_harbor_unless_noted,observed,close
+Werft,Neuspiel nach Schiffstaufe,0,Schiffsansicht; Name Albatross,Escape
+Hafen,Werft verlassen,1,Lübecker Hafen und Gebäude,kein allgemeiner Schließen-Dialog
+Kontor,Hafen: untere Tür des roten Kontorhauses,1,"Kleines/großes Buch, Karte, Dokumente, Federn",Escape
+Handel,Kontor: großes Buch,2,"Stadt-/Schiffsbestände, Kauf-/Verkaufspreise, Schiffskasse; 1 Einheit gekauft/verkauft",Escape
+Schiffsbuch,Kontor: kleines Buch,2,"Datum, Albatross, Geld, Besatzung 4, benötigt 5",Escape
+Optionen,Kontor: Federn,2,"Speichern, Beenden, Ton, Piratenabwehr, Monatsnamen, Meldungsdauer",Escape
+Speichern,"Kontor, Federn, Speichern, sichere Spiel, weiter",5,SPIEL.PSD 28048 Bytes erzeugt,Rückkehr ins Optionsmenü automatisch
+Laden,"Hauptmenü: Laden, Listeneintrag SPIEL, lade Datei",3,Danach erneut Kartenabfrage; Reval akzeptiert; gespeicherter Zustand wieder da,nach Abfrage Taste zum Zug
+Bank,Hafen: Obergeschoss des mittleren Hauses,1,Kredite tilgen/nehmen/geben; Partnerwahl; Angebot 250 zu 24% für 324 Tage,"Escape, soweit kein Antwortdialog"
+Kneipe,Hafen: untere Tür mittleres Haus,1,Personalhotspot vor Kamin: niemand übernimmt Job,"Antwortdialog per Klick, danach Escape"
+Marktplatz,Hafen: Gasse rechts vom Mittelhaus,1,"Rathaus, Badehaus, Kirche und Personen erreichbar/ansichtbar",Escape
+Rathaus,Marktplatz: mittlerer Torzugang,2,Halle mit Türen und Tafeln,Escape
+Wahltafel,Rathaus: linke vordere Tafel,3,Ratswahl 19. Scheiding 1356; Auktion 24. Nebelung 1356,Escape
+Badehaus,Marktplatz: linkes Wohnhaus,2,Badestube; Klick auf mittlere Person führte zurück zum Platz; keine weitere Wirkung belegt,Personenklick beobachtet
+Hafenwarten,Hafen: Schiffsrumpf vorn,1,Datum heute/bis; weniger/warten/mehr; Standard nächster Tag,warten bestätigt; Chronik/Taste führt zum Hafen
+Reisekarte,Kontor: Wandkarte,2,Abgewiesener Auslauf; Kontor/heuern als Rückwege,per Dialogantwort

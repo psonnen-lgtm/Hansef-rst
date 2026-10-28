@@ -1,0 +1,85 @@
+{
+  "phase": "R1.07",
+  "base_commit": "4b4722f32657c53408cf4f1e3e19963e678d66c4",
+  "date": "2026-10-28",
+  "emulator": "DOSBox 0.74-3",
+  "configuration_changed": false,
+  "map_source": "https://www.old-games.ru/game/download/2331.html",
+  "map_download_page": "https://www.old-games.ru/game/download/get.php?fileid=18221&modal=1",
+  "map_archive": "Patrician_Map_JPG.rar",
+  "map_pixels": [
+    3459,
+    2434
+  ],
+  "source_listing_year": 1993,
+  "provided_dos_file_label_year": 1992,
+  "compatibility": "Aalborg and Reval answers accepted by unchanged German DOS program",
+  "answer_attempts": [
+    {
+      "answer": "Riga",
+      "accepted": false,
+      "reason": "initial visual misidentification"
+    },
+    {
+      "answer": "Aalborg",
+      "accepted": true
+    },
+    {
+      "answer": "Reval",
+      "accepted": true,
+      "context": "load"
+    }
+  ],
+  "world_reached": true,
+  "save_created": true,
+  "load_verified": true,
+  "initial_ship_cash": 83,
+  "total_start_capital": null,
+  "ship_name": "Albatross",
+  "ship_type_ui_verified": false,
+  "home_city": "Lübeck",
+  "initial_ship_free_capacity": 28,
+  "completed_trips": 0,
+  "departure_preflight_rejections": 1,
+  "travel_events_observed": 0,
+  "event_rate": null,
+  "harbor_waits_days": [
+    1,
+    1
+  ],
+  "crew_available": 4,
+  "crew_required": 5,
+  "loan_received": 100,
+  "loan_offer_max": 250,
+  "loan_offer_percent": 24,
+  "loan_offer_days": 324,
+  "grain_trade_pnl": -21,
+  "pnl_excludes_loan": true,
+  "manifest_private": [
+    {
+      "name": "map.rar",
+      "size": 4215093,
+      "sha256": "b7d52453e3fd236d4e4fb4790ecba79197952ee39b2ee6ede1d458e56457d378",
+      "private": true
+    },
+    {
+      "name": "Patrician_map_big.jpg",
+      "size": 3461864,
+      "sha256": "1054481db9556dd3bb80feb487283556b7919a46224b22448639cb8c6196fe23",
+      "private": true
+    },
+    {
+      "name": "Patrician_map_med_hq.jpg",
+      "size": 760892,
+      "sha256": "2de7f0444bcc9fcbd4bd12ba89c2e6adc69d0b6fece74fd67306816635b3af2b",
+      "private": true
+    },
+    {
+      "name": "start-after-one-buy.PSD",
+      "size": 28048,
+      "sha256": "a61c8d454b296bac1e289eb572ba55029988aded9665ecf79346f99d00568374",
+      "private": true
+    }
+  ],
+  "final_save_verified": false
+}

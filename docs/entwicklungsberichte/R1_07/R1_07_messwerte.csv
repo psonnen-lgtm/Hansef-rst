@@ -1,0 +1,7 @@
+id,observed_at,game_date,city,commodity,mode,city_stock,ship_stock,displayed_price,ship_cash,bought_units,sold_units,evidence_private,evidence_sha256
+M01,2026-10-28T10:40:16.264461+01:00,29. Brachet 1355,Lübeck,Getreide,Kauf,1171,0,68,83,0,0,market-luebeck.bmp,0c67679758eef92ed06318839b05ffecdd36b86cecb7ae4695da5312a0307727
+M02,2026-10-28T10:41:07.798466+01:00,29. Brachet 1355,Lübeck,Getreide,Kauf,1170,1,68,15,1,0,market-after-buy.bmp,858180695705eb9b7f72bb1f20b6de145e4858e391abae7b55b8718cfa35b384
+M03,2026-10-28T10:44:42.210392+01:00,29. Brachet 1355,Lübeck,Getreide,Verkauf,1170,1,47,15,0,0,loaded-market.bmp,dd96cf6d7bd8ae07fe139703987052c815d9d0298958561dd7def92b59035bbd
+M04,2026-10-28T10:54:44.526092+01:00,30. Brachet 1355,Lübeck,Getreide,Verkauf,1170,1,47,115,0,0,market-day30.bmp,688e5a2439a63996ce33ad67641512da80e11983a18735ca72e8ee4c250da533
+M05,2026-10-28T10:56:18.671912+01:00,1. Heuet 1355,Lübeck,Getreide,Verkauf,1170,1,47,115,0,0,market-july-before-sale.bmp,688e5a2439a63996ce33ad67641512da80e11983a18735ca72e8ee4c250da533
+M06,2026-10-28T10:57:03.904683+01:00,1. Heuet 1355,Lübeck,Getreide,Verkauf,1171,0,47,162,0,1,market-after-sale.bmp,42094366514f8b74cd774ccceed24990bf0dc7d348495cbde3759999a8f8ef2e
