@@ -1,0 +1,21 @@
+{
+  "readOnly": true,
+  "noSimulationRerun": true,
+  "checks": [
+    {
+      "commit": "51a238499e7ff1ae8e02bf36fd0e5d335b67154a",
+      "htmlAvailable": true,
+      "sha256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af"
+    },
+    {
+      "commit": "51478fba2d36b78ed6d49231a9bd4fe582e19ea4",
+      "htmlAvailable": true,
+      "sha256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af"
+    },
+    {
+      "commit": "fc241b5196439cc3577675951be8b3ff2df42169",
+      "htmlAvailable": true,
+      "sha256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255"
+    }
+  ]
+}
