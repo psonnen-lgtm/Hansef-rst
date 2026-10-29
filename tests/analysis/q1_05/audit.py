@@ -9,6 +9,7 @@ assert len(idx)==111 and len({x['id'] for x in idx})==111
 for f,sha in json.loads((P/'frozen-sources.json').read_text()).items():assert hashlib.sha256((ROOT/f).read_bytes()).hexdigest()==sha,f
 assert subprocess.check_output(['git','show',plan['previous']+':tests/analysis/q1_04/policies.cjs'],cwd=ROOT)==(P/'policies.cjs').read_bytes()
 runs={i['id']:json.loads(gzip.decompress((O/'runs'/(i['id']+'.json.gz')).read_bytes())) for i in idx}
+for i in idx:assert hashlib.sha256(gzip.decompress((O/'runs'/(i['id']+'.json.gz')).read_bytes())).hexdigest()==i['traceHash'],i['id']
 close=lambda a,b:math.isclose(a,b,abs_tol=1e-6,rel_tol=1e-10)
 def sums(events,t,k):return sum(e.get(k,0) or 0 for e in events if e['type']==t)
 def meaningful(v):return v['bought']>=10

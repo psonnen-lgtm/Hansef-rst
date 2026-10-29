@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "luebeck_kogge__cautious__10003__12500__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 158,
+    "paid": true,
+    "paymentDay": 38,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "6fd7a0b5e7c10328c8a1b2a1765988c4bddd1b247be9ada9e9b8e5bfa16ca45b",
+    "ledgers": {
+      "sales": 22104,
+      "buys": 14374,
+      "profit": 7730,
+      "feeTotal": 150,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__12500__nominal",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 268,
+    "paid": true,
+    "paymentDay": 141,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "399f54470798d0d7238dc73b6ed6135e63d0af6b7b18773149ba33d8b1d919be",
+    "ledgers": {
+      "sales": 31578,
+      "buys": 23379,
+      "profit": 8199,
+      "feeTotal": 156,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__12500__nominal",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 202,
+    "paid": true,
+    "paymentDay": 75,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "d764e645a8b065cfc199d4a3006c783aaa4c768ef5f4515a327b54fc333d14e1",
+    "ledgers": {
+      "sales": 52978,
+      "buys": 34013,
+      "profit": 19128,
+      "feeTotal": 78,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 163,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__12500__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 25,
+    "paid": true,
+    "paymentDay": 15,
+    "stopReason": "insufficient_travel_cash",
+    "traceHash": "f1c5acf1da1ec50089331bc2cf3bcc2e87e6bf914bdfe61614c5d31a089f7d47",
+    "ledgers": {
+      "sales": 24198,
+      "buys": 18134,
+      "profit": 6064,
+      "feeTotal": 60,
+      "repair": 0,
+      "interest": 6.081974840328783,
+      "borrowed": 1500,
+      "lossCost": 0,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__12500__nominal",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 117,
+    "paid": true,
+    "paymentDay": 26,
+    "stopReason": "insufficient_travel_cash",
+    "traceHash": "0dbc2967c0cdc1ef316a639846f73c85f5169052cc686e49909013b16408dfb2",
+    "ledgers": {
+      "sales": 34672,
+      "buys": 27080,
+      "profit": 7592,
+      "feeTotal": 92,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__12500__nominal",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 12500,
+    "timing": "nominal",
+    "days": 120,
+    "paid": true,
+    "paymentDay": 21,
+    "stopReason": "insufficient_travel_cash",
+    "traceHash": "cc9e1d27e626f364715b04ea9b5bcb81dbb03dc8ef04d9f4622722f77db57594",
+    "ledgers": {
+      "sales": 31154,
+      "buys": 26415,
+      "profit": 4739,
+      "feeTotal": 225,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__12500__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 164,
+    "paid": true,
+    "paymentDay": 44,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "0e56784a67dc39d6ce84740c395079086c23ab1be26821ec92c53cd6750a52e1",
+    "ledgers": {
+      "sales": 124181,
+      "buys": 91017,
+      "profit": 33525,
+      "feeTotal": 366,
+      "repair": 536,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 361,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__12500__stabilized",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 284,
+    "paid": true,
+    "paymentDay": 163,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "7d5961770458e6967dedc07a36cae00b4ea933ecba31b6a0d256d2ef65f0d542",
+    "ledgers": {
+      "sales": 50156,
+      "buys": 36540,
+      "profit": 13682,
+      "feeTotal": 162,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 66,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__12500__stabilized",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 202,
+    "paid": true,
+    "paymentDay": 75,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "8743aa5c0c2babf85f9d24ae728a3acf343175ca2b25041e2638a83b2c5800cb",
+    "ledgers": {
+      "sales": 52978,
+      "buys": 34013,
+      "profit": 19128,
+      "feeTotal": 78,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 163,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__12500__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 148,
+    "paid": true,
+    "paymentDay": 27,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "7b215719d1e9c305d65eb54ab2a562fefb0e451b4206b790e9a4ae7a8613013b",
+    "ledgers": {
+      "sales": 249258,
+      "buys": 207558,
+      "profit": 42047,
+      "feeTotal": 318,
+      "repair": 280,
+      "interest": 36.366331976819744,
+      "borrowed": 1500,
+      "lossCost": 347,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__12500__stabilized",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 148,
+    "paid": true,
+    "paymentDay": 28,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "e72353297ce418e306f6f9bcaa8e3ddc0bb93e50155f9872a85be5ebeca4e95a",
+    "ledgers": {
+      "sales": 196723,
+      "buys": 160299,
+      "profit": 36555,
+      "feeTotal": 296,
+      "repair": 272,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 131,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__12500__stabilized",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 12500,
+    "timing": "stabilized",
+    "days": 148,
+    "paid": true,
+    "paymentDay": 27,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "72185fee298e9ba512a5c6bbc62212f4e683be0a288c1a7b286601130cd5042b",
+    "ledgers": {
+      "sales": 210791,
+      "buys": 177922,
+      "profit": 33226,
+      "feeTotal": 660,
+      "repair": 576,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 357,
+      "hypotheticalFee": 12500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__18000__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 190,
+    "paid": true,
+    "paymentDay": 68,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "19e35e8da0003ab5a3fb5858d5e26fac797c80bbbec42eb7380e372efc8e8df8",
+    "ledgers": {
+      "sales": 45106,
+      "buys": 31858,
+      "profit": 13248,
+      "feeTotal": 204,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__18000__nominal",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 240,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "payment_unreached_censored",
+    "traceHash": "0762ecb5bde177515560a6d1be068bdc1dc8af2c2bf6c902f29cb3f4f402af38",
+    "ledgers": {
+      "sales": 53208,
+      "buys": 40739,
+      "profit": 12723,
+      "feeTotal": 138,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 254,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__18000__nominal",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 270,
+    "paid": true,
+    "paymentDay": 138,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "419dc4a5805526669796613efd4df2f130e5e5f826a067502c520b40b3749be9",
+    "ledgers": {
+      "sales": 78989,
+      "buys": 51171,
+      "profit": 28146,
+      "feeTotal": 102,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 328,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__18000__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 166,
+    "paid": true,
+    "paymentDay": 45,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "29e1cd92d0e497ce1e527bcb0a54ab97df6a035d1ae285d216a5681a8a4bea97",
+    "ledgers": {
+      "sales": 169013,
+      "buys": 130358,
+      "profit": 39092,
+      "feeTotal": 354,
+      "repair": 280,
+      "interest": 40.84897821070899,
+      "borrowed": 1500,
+      "lossCost": 437,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__18000__nominal",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 187,
+    "paid": true,
+    "paymentDay": 62,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "dbd694628a30138aa57a0e97f19654c83669a56f43b521f7c0d36e9c052604cc",
+    "ledgers": {
+      "sales": 67785,
+      "buys": 54483,
+      "profit": 13302,
+      "feeTotal": 192,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__18000__nominal",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 18000,
+    "timing": "nominal",
+    "days": 196,
+    "paid": true,
+    "paymentDay": 51,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "4168a7d42ba1119a98ab46b8c1abfb140f50ce841b44e316349aacdf56f8c4e3",
+    "ledgers": {
+      "sales": 67226,
+      "buys": 56829,
+      "profit": 11000,
+      "feeTotal": 390,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 603,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__18000__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 197,
+    "paid": true,
+    "paymentDay": 77,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "82640d39387607dbdbd5cdccd03e4026cd9c65cc560ebcd115f1a14af395b59c",
+    "ledgers": {
+      "sales": 137726,
+      "buys": 102195,
+      "profit": 36102,
+      "feeTotal": 432,
+      "repair": 536,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 571,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__18000__stabilized",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 240,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "payment_unreached_censored",
+    "traceHash": "bf135974d55b073fc169cf3a878af15c1e368eda37642d998422355e76cc5c36",
+    "ledgers": {
+      "sales": 53208,
+      "buys": 40739,
+      "profit": 12723,
+      "feeTotal": 138,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 254,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__18000__stabilized",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 270,
+    "paid": true,
+    "paymentDay": 138,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "444b6e48ac3d3e3cad5e701f81926cc1bd77a583e778078a1e30f88e738405b6",
+    "ledgers": {
+      "sales": 78989,
+      "buys": 51171,
+      "profit": 28146,
+      "feeTotal": 102,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 328,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__18000__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 178,
+    "paid": true,
+    "paymentDay": 57,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "5519910ecb710b5ab6b7db6474d767cd742864ea160620673cfbf90393934e1e",
+    "ledgers": {
+      "sales": 306932,
+      "buys": 261578,
+      "profit": 46067,
+      "feeTotal": 378,
+      "repair": 280,
+      "interest": 43.844672784607525,
+      "borrowed": 1500,
+      "lossCost": 713,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__18000__stabilized",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 184,
+    "paid": true,
+    "paymentDay": 64,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "efd749c354ca38f189f207fdd3517434a923c2c56edc30a81faee8b804871573",
+    "ledgers": {
+      "sales": 269011,
+      "buys": 219909,
+      "profit": 49477,
+      "feeTotal": 368,
+      "repair": 272,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 375,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__18000__stabilized",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 18000,
+    "timing": "stabilized",
+    "days": 184,
+    "paid": true,
+    "paymentDay": 62,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "4688c2675c0c193775726b0ca73be3269c43a131a8f061da85ee06bd663042bf",
+    "ledgers": {
+      "sales": 300612,
+      "buys": 258267,
+      "profit": 43033,
+      "feeTotal": 840,
+      "repair": 576,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 688,
+      "hypotheticalFee": 18000,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__26500__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 212,
+    "paid": true,
+    "paymentDay": 97,
+    "stopReason": "insufficient_travel_cash",
+    "traceHash": "211e0ce0692d431d9075218941d9e9adffa3e866b5654fc13562c357dcf14388",
+    "ledgers": {
+      "sales": 78912,
+      "buys": 56847,
+      "profit": 22207,
+      "feeTotal": 276,
+      "repair": 288,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 142,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__26500__nominal",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 240,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "payment_unreached_censored",
+    "traceHash": "b9a7f49187765ec74dd9b1d861691be89d73ffdccb4a3880d490a3bf893a51b3",
+    "ledgers": {
+      "sales": 53208,
+      "buys": 40739,
+      "profit": 12723,
+      "feeTotal": 138,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 254,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__26500__nominal",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 355,
+    "paid": true,
+    "paymentDay": 236,
+    "stopReason": "horizon_no_fitting_route",
+    "traceHash": "f1ac83c7f9ad10421854a2b35fe9bb1e994039c1759631358b71a4766c8d16e0",
+    "ledgers": {
+      "sales": 91297,
+      "buys": 62021,
+      "profit": 29481,
+      "feeTotal": 132,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 205,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__26500__nominal",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 198,
+    "paid": true,
+    "paymentDay": 78,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "76dc43a66589d9e526aaa3f20a29071cafbcaf493d0d46f6884699d460ca6244",
+    "ledgers": {
+      "sales": 313214,
+      "buys": 264857,
+      "profit": 48944,
+      "feeTotal": 426,
+      "repair": 576,
+      "interest": 48.85044529352675,
+      "borrowed": 1500,
+      "lossCost": 587,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__26500__nominal",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 223,
+    "paid": true,
+    "paymentDay": 90,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "b3e9fc2d6319c6694cfe7c7851549a0f7cd9b9cc6c27f4f868cdf6be98dfa8c8",
+    "ledgers": {
+      "sales": 115079,
+      "buys": 92922,
+      "profit": 22157,
+      "feeTotal": 252,
+      "repair": 272,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__26500__nominal",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 26500,
+    "timing": "nominal",
+    "days": 211,
+    "paid": true,
+    "paymentDay": 90,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "23f54ffb46f6e08114f9ee0fa9c8771b7aa9440ce0fdb54a16a6e18229485bb7",
+    "ledgers": {
+      "sales": 304554,
+      "buys": 259415,
+      "profit": 45913,
+      "feeTotal": 945,
+      "repair": 576,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 774,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__26500__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 227,
+    "paid": true,
+    "paymentDay": 106,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "96a2ba8eb838f8889339523bc16ffc679715bae8614ae339623a1b34966b49e5",
+    "ledgers": {
+      "sales": 162365,
+      "buys": 113468,
+      "profit": 49211,
+      "feeTotal": 498,
+      "repair": 816,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 314,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__26500__stabilized",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 240,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "payment_unreached_censored",
+    "traceHash": "30efcad9e3be86e4d56a8599400526265eed6b2dc350866105715b69b7f485e7",
+    "ledgers": {
+      "sales": 53208,
+      "buys": 40739,
+      "profit": 12723,
+      "feeTotal": 138,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 254,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__26500__stabilized",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 236,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "payment_unreached_censored",
+    "traceHash": "095885905911cf2a21910a2a7121f1505400baf07cb9ba669d16ada29ae9b0ce",
+    "ledgers": {
+      "sales": 73072,
+      "buys": 50796,
+      "profit": 22439,
+      "feeTotal": 90,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 163,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__26500__stabilized",
+    "spec": {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 210,
+    "paid": true,
+    "paymentDay": 90,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "0695c551640d6bea77a3e39801204b4418acda17d31eab17cae82757e3b1727c",
+    "ledgers": {
+      "sales": 352702,
+      "buys": 301427,
+      "profit": 51856,
+      "feeTotal": 450,
+      "repair": 576,
+      "interest": 51.86169619504867,
+      "borrowed": 1500,
+      "lossCost": 581,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__26500__stabilized",
+    "spec": {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 212,
+    "paid": true,
+    "paymentDay": 92,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "a097ae48502b434aa6f6923295e31e73edc27a8c4535548e5822dcf04f34abe9",
+    "ledgers": {
+      "sales": 300047,
+      "buys": 246302,
+      "profit": 54198,
+      "feeTotal": 424,
+      "repair": 560,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 453,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__26500__stabilized",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    },
+    "fee": 26500,
+    "timing": "stabilized",
+    "days": 214,
+    "paid": true,
+    "paymentDay": 94,
+    "stopReason": "post_payment_horizon",
+    "traceHash": "63bf4ea5c3b114107ef6c95f89fc9138c93a5e5d9fe21077d68a4d6578ace27a",
+    "ledgers": {
+      "sales": 311492,
+      "buys": 261998,
+      "profit": 50182,
+      "feeTotal": 975,
+      "repair": 1144,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 688,
+      "hypotheticalFee": 26500,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    }
+  }
+]
