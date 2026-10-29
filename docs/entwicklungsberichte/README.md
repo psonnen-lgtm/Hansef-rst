@@ -262,3 +262,9 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.05 - Der Patrizier: DOS und Originalmechanik
 
 28.10.2026 - [Emulation und Technik](R1_05/R1_05_emulation_und_technik.md), [Reisezeiten](R1_05/R1_05_reisezeiten.md), [Wirtschaft, Politik und Ereignisse](R1_05/R1_05_wirtschaft_politik_ereignisse.md), [Einordnung für Hansefürst](R1_05/R1_05_erkenntnisse_fuer_hansefuerst.md), [Daten und eigene Skripte](R1_05/README.md). Basis `ffc0bfad0e36e4547f7a5750bb68b169f93f8009`, separater Branch `research/r1-05-original-dos-2026-10-28`. DOSBox 0.74-3: Installer und Originalspiel bis zum Hauptmenü sichtbar, keine bestätigte Spielreise/Markt-/Wahl-/Save-Load-Probe. 16×16-Struktur und 419-Byte-Stadtnamensabstände geprüft; keine Reise-/Preis-/Wahlformel oder Ereignisrate nachgewiesen. Originaldateien, Screenshots und private Evidenz nicht veröffentlicht. Hansefürst-Code und bestehende Ergebnisse unverändert; frühere 1.500er-Simulation nur als Hintergrund übernommen, keine Neuberechnung. Kein Merge, kein Pages-Eingriff, keine Folgephase.
+
+
+## Q1.02 – Handelsanerkennung und politische Ortsbedingung
+
+29.10.2026: [Gesamtbericht](Q1_02/Q1_02_gesamtbericht.md), [Handel](Q1_02/Q1_02_handelsexploit.md), [Ortsbedingung](Q1_02/Q1_02_politische_ortsbedingung.md), [Lösungsvarianten](Q1_02/Q1_02_loesungsvarianten.md), [Testfälle](Q1_02/Q1_02_testfaelle.csv). Acht isolierte Handelsfixtures und eine Ratsvereinbarungsprobe, keine Produktänderung oder Reparatur.
+

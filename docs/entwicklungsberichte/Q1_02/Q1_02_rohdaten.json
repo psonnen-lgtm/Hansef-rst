@@ -1,0 +1,1830 @@
+{
+  "hash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "sourceCommit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "method": "Node VM, unmodified economic/political functions; UI/render and DOM fields stubbed; synthetic valid V13; no browser; no real saves; constant RNG .5",
+  "maxNeutralCycles": 3,
+  "rows": [
+    {
+      "id": "A01-empty-neutral",
+      "before": {
+        "gold": 10000,
+        "quantity": 0,
+        "book": 0,
+        "worth": 14960,
+        "politicalWorth": 14960,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10000,
+        "quantity": 0,
+        "book": 0,
+        "worth": 14960,
+        "politicalWorth": 14960,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 0,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 10,
+          "unitPrice": 30,
+          "total": 300,
+          "averageCost": 30,
+          "profit": 0
+        }
+      ],
+      "repDelta": 0,
+      "bookDelta": 0,
+      "worthDelta": 0,
+      "cashDelta": 0
+    },
+    {
+      "id": "A02-three-mixed-neutral-cycles",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 15200,
+        "politicalWorth": 15200,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 817.5,
+        "worth": 15777.5,
+        "politicalWorth": 15777.5,
+        "rep": 1,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 27.25
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 577.5,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 19,
+          "profit": 330
+        },
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 24.5,
+          "profit": 165
+        },
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 27.25,
+          "profit": 82.5
+        }
+      ],
+      "repDelta": 1,
+      "bookDelta": 577.5,
+      "worthDelta": 577.5,
+      "cashDelta": 0
+    },
+    {
+      "id": "A03-partial-mixed",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 15200,
+        "politicalWorth": 15200,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 9550,
+        "quantity": 45,
+        "book": 855,
+        "worth": 15365,
+        "politicalWorth": 15365,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 45
+            },
+            "costs": {
+              "0": 19
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 165,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 15,
+          "unitPrice": 30,
+          "total": 450,
+          "averageCost": 19,
+          "profit": 165
+        }
+      ],
+      "repDelta": 0,
+      "bookDelta": 615,
+      "worthDelta": 165,
+      "cashDelta": -450
+    },
+    {
+      "id": "A04-warehouse-roundtrip",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 15200,
+        "politicalWorth": 15200,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 15200,
+        "politicalWorth": 15200,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 0,
+      "sells": [],
+      "repDelta": 0,
+      "bookDelta": 0,
+      "worthDelta": 0,
+      "cashDelta": 0
+    },
+    {
+      "id": "A05-two-ships-neutral",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 20160,
+        "politicalWorth": 20160,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          },
+          {
+            "id": 2,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 570,
+        "worth": 20490,
+        "politicalWorth": 20490,
+        "rep": 1,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          },
+          {
+            "id": 2,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 19
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 330,
+      "sells": [
+        {
+          "shipId": 2,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 19,
+          "profit": 330
+        }
+      ],
+      "repDelta": 1,
+      "bookDelta": 330,
+      "worthDelta": 330,
+      "cashDelta": 0
+    },
+    {
+      "id": "A06-real-profit",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 240,
+        "worth": 15200,
+        "politicalWorth": 15200,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10900,
+        "quantity": 0,
+        "book": 0,
+        "worth": 15860,
+        "politicalWorth": 15860,
+        "rep": 2,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 660,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 8,
+          "profit": 660
+        }
+      ],
+      "repDelta": 2,
+      "bookDelta": -240,
+      "worthDelta": 660,
+      "cashDelta": 900
+    },
+    {
+      "id": "A07-real-loss",
+      "before": {
+        "gold": 10000,
+        "quantity": 30,
+        "book": 1200,
+        "worth": 16160,
+        "politicalWorth": 16160,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 40
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 10900,
+        "quantity": 0,
+        "book": 0,
+        "worth": 15860,
+        "politicalWorth": 15860,
+        "rep": 0,
+        "rank": 0,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": -300,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 40,
+          "profit": -300
+        }
+      ],
+      "repDelta": 0,
+      "bookDelta": -1200,
+      "worthDelta": -300,
+      "cashDelta": 900
+    },
+    {
+      "id": "A08-rank-threshold",
+      "before": {
+        "gold": 39720,
+        "quantity": 30,
+        "book": 240,
+        "worth": 44920,
+        "politicalWorth": 44920,
+        "rep": 25,
+        "rank": 1,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 8
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "after": {
+        "gold": 39720,
+        "quantity": 30,
+        "book": 570,
+        "worth": 45250,
+        "politicalWorth": 45250,
+        "rep": 26,
+        "rank": 2,
+        "day": 486001,
+        "records": 0,
+        "ships": [
+          {
+            "id": 1,
+            "city": 0,
+            "cargo": {
+              "0": 30
+            },
+            "costs": {
+              "0": 19
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        }
+      },
+      "realizedProfit": 330,
+      "sells": [
+        {
+          "shipId": 1,
+          "routeId": null,
+          "good": "Getreide",
+          "quantity": 30,
+          "unitPrice": 30,
+          "total": 900,
+          "averageCost": 19,
+          "profit": 330
+        }
+      ],
+      "repDelta": 1,
+      "bookDelta": 330,
+      "worthDelta": 330,
+      "cashDelta": 0
+    }
+  ],
+  "politics": {
+    "before": {
+      "gold": 10000,
+      "quantity": 0,
+      "book": 0,
+      "worth": 19920,
+      "politicalWorth": 19920,
+      "rep": 0,
+      "rank": 0,
+      "day": 486001,
+      "records": 0,
+      "ships": [
+        {
+          "id": 1,
+          "city": 0,
+          "cargo": {},
+          "costs": {}
+        },
+        {
+          "id": 2,
+          "city": 1,
+          "cargo": {},
+          "costs": {}
+        }
+      ],
+      "warehouses": {
+        "0": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "1": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "2": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "3": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "4": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "5": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "6": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "7": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "8": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "9": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "10": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        }
+      }
+    },
+    "after": {
+      "gold": 10000,
+      "quantity": 0,
+      "book": 0,
+      "worth": 19920,
+      "politicalWorth": 19920,
+      "rep": 0,
+      "rank": 0,
+      "day": 486001,
+      "records": 1,
+      "ships": [
+        {
+          "id": 1,
+          "city": 0,
+          "cargo": {},
+          "costs": {}
+        },
+        {
+          "id": 2,
+          "city": 1,
+          "cargo": {},
+          "costs": {}
+        }
+      ],
+      "warehouses": {
+        "0": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "1": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "2": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "3": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "4": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "5": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "6": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "7": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "8": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "9": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "10": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        }
+      }
+    },
+    "remoteViewCity": 1,
+    "normalRoundTripDaysAtHealthyKogge": 4,
+    "record": {
+      "id": "accord:0:0",
+      "city": 0,
+      "kind": "accord",
+      "period": 0,
+      "day": 486001,
+      "partner": 1,
+      "good": -1,
+      "n": 0,
+      "witnesses": []
+    }
+  }
+}

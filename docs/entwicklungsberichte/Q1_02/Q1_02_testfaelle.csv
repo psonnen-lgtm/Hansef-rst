@@ -1,0 +1,10 @@
+ID,Bargeld_vorher,Bargeld_nachher,Ware_vorher,Ware_nachher,Buchwert_vorher,Buchwert_nachher,Realisierter_Gewinn_laut_Code,Nettovermoegen_vorher,Nettovermoegen_nachher,Ruf_Delta,Politisches_Vermoegen_vorher,Politisches_Vermoegen_nachher,Rang_vorher,Rang_nachher
+A01-empty-neutral,10000,10000,0,0,0,0,0,14960,14960,0,14960,14960,0,0
+A02-three-mixed-neutral-cycles,10000,10000,30,30,240,817.5,577.5,15200,15777.5,1,15200,15777.5,0,0
+A03-partial-mixed,10000,9550,30,45,240,855,165,15200,15365,0,15200,15365,0,0
+A04-warehouse-roundtrip,10000,10000,30,30,240,240,0,15200,15200,0,15200,15200,0,0
+A05-two-ships-neutral,10000,10000,30,30,240,570,330,20160,20490,1,20160,20490,0,0
+A06-real-profit,10000,10900,30,0,240,0,660,15200,15860,2,15200,15860,0,0
+A07-real-loss,10000,10900,30,0,1200,0,-300,16160,15860,0,16160,15860,0,0
+A08-rank-threshold,39720,39720,30,30,240,570,330,44920,45250,1,44920,45250,1,2
+B01-remote-accord,10000,10000,0,0,0,0,0,19920,19920,0,19920,19920,0,0
