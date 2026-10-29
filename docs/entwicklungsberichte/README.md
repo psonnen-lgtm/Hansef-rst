@@ -267,3 +267,5 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Q1.06 – Politische Karriere und gesellschaftliche Anerkennung
 
 29.10.2026 – [Gesamtbericht / Prüfplan](Q1_06/Q1_06_gesamtbericht.md). Reiner Konzept- und Prüfauftrag; keine produktive Umsetzung oder Migration.
+
+Q1.06: [Karrieremodell](Q1_06/Q1_06_karrieremodell.md), [Unterstützungsmodelle](Q1_06/Q1_06_unterstuetzungsmodelle.md) und [Entscheidungsmatrix](Q1_06/Q1_06_entscheidungsmatrix.csv). Acht Lieferdateien, reine Konzept-/Quellenprüfung; keine Politikaktivierung oder Migration.

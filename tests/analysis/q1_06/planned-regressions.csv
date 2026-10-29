@@ -1,0 +1,43 @@
+id,bereich,spaeter_zu_pruefen,status
+T01,Gilde atomar,Betrag und Mitgliedschaft gemeinsam oder gar nicht speichern,GEPLANT_NICHT_AUSGEFUEHRT
+T02,Gilde unzureichendes Gold,"Kein Status, keine Abbuchung, kein Rufgewinn",GEPLANT_NICHT_AUSGEFUEHRT
+T03,Gilde doppelte Bestätigung,Einmaliger Zahlbeleg trotz Doppelklick/Reload,GEPLANT_NICHT_AUSGEFUEHRT
+T04,Gildenpflicht/Altzugang,Neue Aufstiege gesperrt ohne Mitgliedschaft; explizite Altberechtigung geschützt,GEPLANT_NICHT_AUSGEFUEHRT
+T05,Politik ohne Geldkauf,Gold/Gewinn/Buchwert/Ankunft/Spende alleine verleihen keine neue politische Qualifikation,GEPLANT_NICHT_AUSGEFUEHRT
+T06,Ratsherr beide örtlichen Arten,"Zwei gültige Arten derselben Antragsstadt reichen, ohne Fernkaufmannzwang",GEPLANT_NICHT_AUSGEFUEHRT
+T07,Falsche Stadt,Belege aus zwei verschiedenen Städten nicht zu örtlichem Paar kombinieren,GEPLANT_NICHT_AUSGEFUEHRT
+T08,Normale Quest,Wirtschaftliche Prämie schafft keinen extra politischen Tatbeleg,GEPLANT_NICHT_AUSGEFUEHRT
+T09,Doppel-ID,Gleiche Tat-ID nicht zweimal zählen oder belohnen,GEPLANT_NICHT_AUSGEFUEHRT
+T10,Mehrfachreferenz,"Gültige Referenz für Titel und Siegel erlaubt, aber keine doppelte Zählung im selben Kriterium",GEPLANT_NICHT_AUSGEFUEHRT
+T11,Amtsbewährung neu,Voramtsurkunden erfüllen keine neuen Amtsleistungen,GEPLANT_NICHT_AUSGEFUEHRT
+T12,Fernansicht,Schiffs-/Hafenansicht verändert keinen Personenort und ermöglicht keine persönliche Vorsprache,GEPLANT_NICHT_AUSGEFUEHRT
+T13,Echte Reise,"Person, Schiffe, Gebühren und Tage nur bei echter bestätigter Mitreise gemeinsam aktualisieren",GEPLANT_NICHT_AUSGEFUEHRT
+T14,Abbruch/Stale-Reise,Kein Ortswechsel oder Teilkosten bei ungültiger/abgebrochener Bestätigung,GEPLANT_NICHT_AUSGEFUEHRT
+T15,Alle Stadtziele,Gewähltes Modell an allen elf Städten und exakten Grenzwerten prüfen,GEPLANT_NICHT_AUSGEFUEHRT
+T16,Rundungsgrenze,Anzeige nicht als gerundete Wahlentscheidung verwenden,GEPLANT_NICHT_AUSGEFUEHRT
+T17,Keine globalen Komponenten,Aktive Unterstützung invariant gegen reine Ruf-/Warenbuchwertänderung ohne Tat,GEPLANT_NICHT_AUSGEFUEHRT
+T18,Altes Wahlergebnis,Historischen Sieg/Supportsnapshot nicht durch neue Formel entwerten,GEPLANT_NICHT_AUSGEFUEHRT
+T19,Nichtgewählte Modelle,B/C bleiben inaktiv nach Freigabe vonA,GEPLANT_NICHT_AUSGEFUEHRT
+T20,Stadtsiegel,Eindeutige Stadt und zwei passende gültige örtliche Referenzen,GEPLANT_NICHT_AUSGEFUEHRT
+T21,Hansevertrag,Zwei verschiedene gültige auswärtige Stationen und zwei Handelsräume plus Heimatabschluss,GEPLANT_NICHT_AUSGEFUEHRT
+T22,Erste Wahl erreichbar,Keine erst nach Amtsgewinn verfügbaren Taten für erste Bürgermeisterwahl verlangen,GEPLANT_NICHT_AUSGEFUEHRT
+T23,Amtsende,"Aktive Rechte enden, Titel und vorhandene Urkunden bleiben",GEPLANT_NICHT_AUSGEFUEHRT
+T24,Alter Ratsherr,Rang2 ohne bezahlte Gilde nicht rückstufen oder zwangsweise nachzahlen lassen,GEPLANT_NICHT_AUSGEFUEHRT
+T25,Alter Bürgermeister,Amt/Stadt/Ende/firstReceipt und Altbewährung schützen,GEPLANT_NICHT_AUSGEFUEHRT
+T26,Alter Eldermann,"Rang4/Siegel/Vertrag geschützt, Weiterhandel möglich",GEPLANT_NICHT_AUSGEFUEHRT
+T27,Alter Fernkaufmann,Rang1/Ehrenname ohne fingierte neue Lieferurkunde bewahren,GEPLANT_NICHT_AUSGEFUEHRT
+T28,Altanker,Einmalige Verankerung erfüllt keine fehlende historische Vertragsstation,GEPLANT_NICHT_AUSGEFUEHRT
+T29,Unbekannte Herkunft,Keine Fremdware oder neue Tat aus unbekannten alten Ursprungslosen,GEPLANT_NICHT_AUSGEFUEHRT
+T30,Altfrist,"Schonung nur einmal für konkrete alte IDs, keine neue Prämie/Quote",GEPLANT_NICHT_AUSGEFUEHRT
+T31,Wiederimport,Kein erneuter Altzugang/Zahlung/Beleg/Anker bei gleicher neuer Revision,GEPLANT_NICHT_AUSGEFUEHRT
+T32,Beschädigte Revision,"Ungültige neue Pflichtfelder abbrechen, nicht als alten Neuanfang initialisieren",GEPLANT_NICHT_AUSGEFUEHRT
+T33,Alter Client,"Neue Revision klar ablehnen, Original und aktiven neuen Stand nicht überschreiben",GEPLANT_NICHT_AUSGEFUEHRT
+T34,Backupfehler,Bei Quota/Backupfehler alle Originalbytes und aktive Partie erhalten,GEPLANT_NICHT_AUSGEFUEHRT
+T35,Zwei Fenster,Konkurrierende bestätigte Aktionen produzieren keine halbe Zahlung oder doppelte Urkunde,GEPLANT_NICHT_AUSGEFUEHRT
+T36,Geräte,"iPhone/iPad/PC: Dialoge ohne Hoverpflicht, lesbare große Tasten und keine verdeckte Bestätigung",GEPLANT_NICHT_AUSGEFUEHRT
+T37,Tastatur,"Fokusreihenfolge und Statusrückmeldung, Abbruch ohne Mutation",GEPLANT_NICHT_AUSGEFUEHRT
+T38,Ratstafel,Angezeigte Voraussetzungen/Gründe stimmen mit zugelassenem Regelmodus überein,GEPLANT_NICHT_AUSGEFUEHRT
+T39,Reservehinweis,"Kassenrat bleibt Information, keine neue formale Gilden-Vermögensschranke",GEPLANT_NICHT_AUSGEFUEHRT
+T40,Spendenschutz,Wiederholte Spenden erzeugen keine unbegrenzt kaufbare politische Anerkennung,GEPLANT_NICHT_AUSGEFUEHRT
+T41,Wirtschaftskern,Migration/Anzeige ändert weder Märkte/Mengen/Kosten/Schuld noch Zufallsfolge,GEPLANT_NICHT_AUSGEFUEHRT
+T42,Amtsauswahl,Reines Auswählen/Öffnen erzeugt keine Tat; nur tatsächlicher einmaliger Abschluss zählt,GEPLANT_NICHT_AUSGEFUEHRT
