@@ -61,3 +61,7 @@ for suffix,label,color in [('', 'Ohne Gebühr','#777777'),('__12500__nominal','1
 ax.set_title('Vorsichtiger Lübecker: Zahlungstermin entscheidet über Fortsetzung\nSeed 10003 · Kogge · jede Linie endet am eigenen Prüfende',loc='left');ax.set_xlabel('Simulierte Tage');ax.set_ylabel('Bargeld (Gold)');ax.yaxis.set_major_formatter(formatter);ax.grid(alpha=.2);ax.legend()
 fig.savefig(O/'vorsichtiger_zahlungszeitpunkt.svg',metadata={'Date':'2026-10-29','Creator':'Q1.05 saved-data export'});plt.close(fig)
 print(json.dumps({'tables':list(T),'figures':2,'noGameExecution':True}))
+
+# Matplotlib SVG path attributes contain unnecessary trailing blanks. Normalize text only.
+for figure in O.glob("*.svg"):
+ figure.write_text("\n".join(line.rstrip() for line in figure.read_text().splitlines())+"\n")

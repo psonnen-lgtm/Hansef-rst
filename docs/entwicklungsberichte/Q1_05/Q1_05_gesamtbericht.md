@@ -25,7 +25,7 @@ E tritt in Lübeck erstmals an Tag10–16, Bergen50–64 und Nowgorod75 auf. **D
 | Lübeck/Kogge+Holk* | 237–240 | 64–70 | 48.575–127.673 | 15 |
 
 
-*Die beiden mit* markierten Profile sind synthetische bestehende Unternehmen, keine regulären Neustarts. Der Konvoi beginnt mit 8.000 Gold und bereits Kogge+Holk; seine bessere Ausstattung wurde nicht im Spiel verdient. Schnigge beginnt mit 5.000. Die45 regulären Fälle beginnen in drei Städten mit 5.000/Kogge, aggressiv zusätzlich1.500 echter Kredit. Je Profil5 Stile ×3 gemeinsame neue Seeds, keine15 unabhängigen Spieler.
+Die mit einem Stern markierten Profile sind synthetische bestehende Unternehmen, keine regulären Neustarts. Der Konvoi beginnt mit 8.000 Gold und bereits Kogge+Holk; seine bessere Ausstattung wurde nicht im Spiel verdient. Schnigge beginnt mit 5.000. Die45 regulären Fälle beginnen in drei Städten mit 5.000/Kogge, aggressiv zusätzlich1.500 echter Kredit. Je Profil5 Stile ×3 gemeinsame neue Seeds, keine15 unabhängigen Spieler.
 
 Vorsichtig hält mehr Kasse zurück und lädt weniger. Normal/Aggressiv bewegen mehr Ware; aggressiv bindet zusätzlich Kredit und darf nicht anhand der Bruttokasse allein gewinnen. Optimierung verwendet ausschließlich selbst beobachtete, datierte Preise. Fehlentscheidungen verursachen in allen15 entsprechenden Baselines reale Anfangsverluste; später wird die normale Strategie fortgesetzt. Keine extremen20-/30-Verlustkrisen neu geprüft.
 
