@@ -306,3 +306,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### R1.11 – Abschluss: Vergleich und Karrierekonzept
 
 [Gesamtbericht](R1_11/R1_11_forschungsbericht.md) · [Codevergleich](R1_11/R1_11_D_vergleich_hansefuerst.md) · [90-Stunden-Entwurf](R1_11/R1_11_90_stunden_karrierekonzept.md) · [Fortgeschriebener Katalog](forschungskatalog/R1_11_politik_gesellschaft.md). Vier Sicherungspunkte; keine Produktänderung oder Folgephase.
+
+
+## Q1.01 – Qualitätsaudit, Sicherungspunkt A
+
+29.10.2026: [Bestandsaufnahme](Q1_01/Q1_01_bestandsaufnahme.md), [Remotezweige](Q1_01/Q1_01_zweige.csv). Aktuelle Entwicklungsbasis erneut geprüft; getrennte Test-/Prototypstände, keine Produktänderung oder neue Simulation.
