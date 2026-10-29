@@ -1,0 +1,11 @@
+{
+  "tests/analysis/q1_04/engine.cjs": "8fdc3efac47b3bea4e5d7977637936250d69e6ebd2cc9dd5e09e2011d2f5d0d2",
+  "tests/analysis/q1_04/run.cjs": "d9caed74089208aa9174fc0c8ce05bd54499defd844967ffd7ccec1e0198f664",
+  "tests/analysis/q1_04/select-fees.cjs": "80ef5062f4c129e1b5e1c0d1d0fdf4f18376d7ad301aed54c8c2897d5f9dc0f3",
+  "tests/analysis/q1_04/policies.cjs": "49d37f72ecc1170dcf5eec015f4a83b33df70e63a9070dc9a321af6318078295",
+  "tests/analysis/q1_04/plan.json": "9e3aa35d52531b96935583c51be9a6a59f729136bdfd0732e3a3dabd186b548e",
+  "tests/analysis/q1_04/README.md": "bf92994dcd937a379126380f490a1dc1071e98db37fcc158334ecc657afdc43a",
+  "Hansefuerst_0_4.html": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "tests/simulation/headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+  "tests/simulation/strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+}

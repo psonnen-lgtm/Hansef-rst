@@ -1,0 +1,661 @@
+{
+  "phase": "Q1.04",
+  "readOnly": true,
+  "currentGameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "sets": [
+    {
+      "id": "old1500",
+      "path": "tests/simulation/results.json.gz",
+      "bytes": 595213,
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199",
+      "rows": 1500,
+      "gameHash": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+      "sameCurrentGame": false,
+      "groups": [
+        {
+          "strategy": "aggressive",
+          "n": 250,
+          "cashMin": 319475,
+          "cashMedian": 788926.5,
+          "cashMax": 2289515,
+          "wealthMedian": 810786.1636340389,
+          "daysMin": 1440,
+          "daysMedian": 1442.0,
+          "daysMax": 1447,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "bad",
+          "n": 250,
+          "cashMin": 304670,
+          "cashMedian": 531535.5,
+          "cashMax": 1319172,
+          "wealthMedian": 536039.8,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1445,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "cautious",
+          "n": 250,
+          "cashMin": 325131,
+          "cashMedian": 551892.0,
+          "cashMax": 1182480,
+          "wealthMedian": 556689.25,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1444,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "normal",
+          "n": 250,
+          "cashMin": 324697,
+          "cashMedian": 538466.5,
+          "cashMax": 1122435,
+          "wealthMedian": 542905.7,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1445,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "optimized",
+          "n": 250,
+          "cashMin": 382667,
+          "cashMedian": 720612.0,
+          "cashMax": 1642210,
+          "wealthMedian": 732025.6499999999,
+          "daysMin": 1440,
+          "daysMedian": 1441.5,
+          "daysMax": 1447,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "ruin",
+          "n": 250,
+          "cashMin": 0,
+          "cashMedian": 3.0,
+          "cashMax": 1043670,
+          "wealthMedian": 2163.7343769767504,
+          "daysMin": 54,
+          "daysMedian": 102.0,
+          "daysMax": 1441,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        }
+      ],
+      "registry": null
+    },
+    {
+      "id": "phase1alias",
+      "path": "tests/simulation/phase1-results.json.gz",
+      "bytes": 595213,
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199",
+      "rows": 1500,
+      "gameHash": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+      "sameCurrentGame": false,
+      "groups": [
+        {
+          "strategy": "aggressive",
+          "n": 250,
+          "cashMin": 319475,
+          "cashMedian": 788926.5,
+          "cashMax": 2289515,
+          "wealthMedian": 810786.1636340389,
+          "daysMin": 1440,
+          "daysMedian": 1442.0,
+          "daysMax": 1447,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "bad",
+          "n": 250,
+          "cashMin": 304670,
+          "cashMedian": 531535.5,
+          "cashMax": 1319172,
+          "wealthMedian": 536039.8,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1445,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "cautious",
+          "n": 250,
+          "cashMin": 325131,
+          "cashMedian": 551892.0,
+          "cashMax": 1182480,
+          "wealthMedian": 556689.25,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1444,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "normal",
+          "n": 250,
+          "cashMin": 324697,
+          "cashMedian": 538466.5,
+          "cashMax": 1122435,
+          "wealthMedian": 542905.7,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1445,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "optimized",
+          "n": 250,
+          "cashMin": 382667,
+          "cashMedian": 720612.0,
+          "cashMax": 1642210,
+          "wealthMedian": 732025.6499999999,
+          "daysMin": 1440,
+          "daysMedian": 1441.5,
+          "daysMax": 1447,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "ruin",
+          "n": 250,
+          "cashMin": 0,
+          "cashMedian": 3.0,
+          "cashMax": 1043670,
+          "wealthMedian": 2163.7343769767504,
+          "daysMin": 54,
+          "daysMedian": 102.0,
+          "daysMax": 1441,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        }
+      ],
+      "registry": null
+    },
+    {
+      "id": "phase15e90",
+      "path": "tests/simulation/phase15e-results.json.gz",
+      "bytes": 1663829,
+      "sha256": "fd9267609cb9af83c75c0310a08af7740c663ffd37423d46e34d34f08e154426",
+      "rows": 90,
+      "gameHash": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+      "sameCurrentGame": false,
+      "groups": [
+        {
+          "strategy": "aggressive",
+          "n": 10,
+          "cashMin": 303624,
+          "cashMedian": 526217.0,
+          "cashMax": 1095497,
+          "wealthMedian": 529658.0,
+          "daysMin": 1440,
+          "daysMedian": 1440.0,
+          "daysMax": 1442,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "cautious",
+          "n": 10,
+          "cashMin": 279719,
+          "cashMedian": 359343.5,
+          "cashMax": 743633,
+          "wealthMedian": 362784.5,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1442,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "delivery",
+          "n": 10,
+          "cashMin": 5345,
+          "cashMedian": 5651.0,
+          "cashMax": 6878,
+          "wealthMedian": 10580.0,
+          "daysMin": 4,
+          "daysMedian": 4.0,
+          "daysMax": 5,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "normal",
+          "n": 10,
+          "cashMin": 347246,
+          "cashMedian": 532300.0,
+          "cashMax": 987543,
+          "wealthMedian": 535741.0,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1442,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "optimized",
+          "n": 10,
+          "cashMin": 374711,
+          "cashMedian": 618326.5,
+          "cashMax": 1000738,
+          "wealthMedian": 621767.5,
+          "daysMin": 1440,
+          "daysMedian": 1441.0,
+          "daysMax": 1444,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "recovery10",
+          "n": 10,
+          "cashMin": 5003,
+          "cashMedian": 7650.5,
+          "cashMax": 11268,
+          "wealthMedian": 10848.565746584934,
+          "daysMin": 45,
+          "daysMedian": 132.0,
+          "daysMax": 278,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "recovery20",
+          "n": 10,
+          "cashMin": 0,
+          "cashMedian": 8692.5,
+          "cashMax": 11572,
+          "wealthMedian": 11109.235524433252,
+          "daysMin": 79,
+          "daysMedian": 100.0,
+          "daysMax": 160,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "recovery30",
+          "n": 10,
+          "cashMin": 0,
+          "cashMedian": 2.5,
+          "cashMax": 5,
+          "wealthMedian": 2193.3793901237073,
+          "daysMin": 90,
+          "daysMedian": 116.0,
+          "daysMax": 150,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        },
+        {
+          "strategy": "recovery5",
+          "n": 10,
+          "cashMin": 5119,
+          "cashMedian": 5747.5,
+          "cashMax": 7180,
+          "wealthMedian": 10409.85,
+          "daysMin": 22,
+          "daysMedian": 31.0,
+          "daysMax": 46,
+          "warning": "different historical engine/horizons; not representative V13 player distribution"
+        }
+      ],
+      "registry": [
+        {
+          "id": "cautious",
+          "family": "trade",
+          "information": "local_and_journal",
+          "horizon": "1440 days / 800 decisions",
+          "validation": "observed trade and reserve policy validated",
+          "invoke": "simulate('cautious')"
+        },
+        {
+          "id": "normal",
+          "family": "trade",
+          "information": "local_and_journal",
+          "horizon": "1440 days / 800 decisions",
+          "validation": "observed trade and reserve policy validated",
+          "invoke": "simulate('normal')"
+        },
+        {
+          "id": "aggressive",
+          "family": "trade",
+          "information": "local_and_journal",
+          "horizon": "1440 days / 800 decisions",
+          "validation": "observed trade and reserve policy validated",
+          "invoke": "simulate('aggressive')"
+        },
+        {
+          "id": "optimized",
+          "family": "trade",
+          "information": "current_all_markets_oracle",
+          "horizon": "1440 days / 800 decisions",
+          "validation": "price access and trade validated; legacy quest policy NOT validated",
+          "invoke": "simulate('optimized')"
+        },
+        {
+          "id": "delivery",
+          "family": "delivery",
+          "information": "local_and_journal",
+          "horizon": "one regular order / fresh single ship",
+          "validation": "single-order delivery and provenance validated; multi-order career NOT validated",
+          "invoke": "simulateDelivery()"
+        },
+        {
+          "id": "recovery5",
+          "family": "recovery",
+          "information": "loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal",
+          "horizon": "up to 160 loss attempts; then 1440 days / 800 recovery decisions",
+          "validation": "loss counting and observed recovery validated; policy-specific, not general insolvency probability",
+          "invoke": "simulateRecovery(5)"
+        },
+        {
+          "id": "recovery10",
+          "family": "recovery",
+          "information": "loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal",
+          "horizon": "up to 160 loss attempts; then 1440 days / 800 recovery decisions",
+          "validation": "loss counting and observed recovery validated; policy-specific, not general insolvency probability",
+          "invoke": "simulateRecovery(10)"
+        },
+        {
+          "id": "recovery20",
+          "family": "recovery",
+          "information": "loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal",
+          "horizon": "up to 160 loss attempts; then 1440 days / 800 recovery decisions",
+          "validation": "loss counting and observed recovery validated; policy-specific, not general insolvency probability",
+          "invoke": "simulateRecovery(20)"
+        },
+        {
+          "id": "recovery30",
+          "family": "recovery",
+          "information": "loss phase: adversarial current_all_markets_oracle; recovery: local_and_journal",
+          "horizon": "up to 160 loss attempts; then 1440 days / 800 recovery decisions",
+          "validation": "loss counting and observed recovery validated; policy-specific, not general insolvency probability",
+          "invoke": "simulateRecovery(30)"
+        }
+      ]
+    },
+    {
+      "id": "phase16c2250",
+      "manifest": {
+        "path": "tests/simulation/phase16c-20261024-01/manifest.json",
+        "bytes": 147522,
+        "sha256": "8cad32cfbedf635477a6062172f73ab349fcbe0b51b838a2568f778f690d3980"
+      },
+      "summary": {
+        "path": "tests/simulation/phase16c-20261024-01/summary.json",
+        "bytes": 5964,
+        "sha256": "629199d11af9786fd269b3564898b4db0cfb1dbb22adb8afd16d1ae5345539b0"
+      },
+      "identity": {
+        "node": "v24.19.0",
+        "hashes": {
+          "large-run.cjs": "eb9a9f27ee941daa243195ee88c46e11f7a093d3657d7de2a54c85c6940273b6",
+          "integrated.cjs": "ef7cc6c075e3c9f8db2849bd8be1d1a5789a1d6009db5307360bb3d38347d7fd",
+          "headless.cjs": "faa5fd78c56f9bde5f2c1e15fd877149465977b66340ea38122e04d4c589b2ce",
+          "strategies.js": "2810659a994d330b9ef569128bc5e1ea0629bc7ae72fed5acfe03143331da966",
+          "delivery-strategy.js": "ddfd4a3a756f56195cfe2b787b38d6dfe18ef34f4995302f16551994a77be93d",
+          "recovery-strategy.js": "25d10136552d2dba2952f9710d763c2fa7c876f85ffdf21c9aec7e2dea1af2cf",
+          "../../Hansefuerst_0_4.html": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af"
+        }
+      },
+      "results": 2250,
+      "identicalReplays": 2250,
+      "failedAttempts": 0,
+      "groups": [
+        {
+          "strategy": "cautious",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 1440,
+          "daysMax": 1443,
+          "wealthMean": 451721.592,
+          "wealthMin": 220660,
+          "wealthMax": 1091584,
+          "cashMean": 448280.592,
+          "tradeProfitMean": 448435.128,
+          "journeys": 117924,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 250,
+          "recovered": 0,
+          "targetLossesReached": 0,
+          "stops": {
+            "day_limit": 250
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "normal",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 1440,
+          "daysMax": 1444,
+          "wealthMean": 520553.852,
+          "wealthMin": 195260,
+          "wealthMax": 1318706,
+          "cashMean": 517112.852,
+          "tradeProfitMean": 517285.624,
+          "journeys": 117833,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 250,
+          "recovered": 0,
+          "targetLossesReached": 0,
+          "stops": {
+            "day_limit": 250
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "aggressive",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 1440,
+          "daysMax": 1445,
+          "wealthMean": 542175.704,
+          "wealthMin": 242567,
+          "wealthMax": 1236314,
+          "cashMean": 538734.704,
+          "tradeProfitMean": 538844.432,
+          "journeys": 117281,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 250,
+          "recovered": 0,
+          "targetLossesReached": 0,
+          "stops": {
+            "day_limit": 250
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "optimized",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 153,
+          "daysMax": 1445,
+          "wealthMean": 690328.3984,
+          "wealthMin": 43321.6,
+          "wealthMax": 1528372,
+          "cashMean": 686882.364,
+          "tradeProfitMean": 680523.168,
+          "journeys": 107312,
+          "deliveries": 1849,
+          "premiums": 1680408,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 249,
+          "recovered": 0,
+          "targetLossesReached": 0,
+          "stops": {
+            "day_limit": 249,
+            "legacy_planner_no_action": 1
+          },
+          "warnings": {
+            "Legacy quest routing is not validated as a delivery policy": 250
+          }
+        },
+        {
+          "strategy": "delivery",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 4,
+          "daysMax": 5,
+          "wealthMean": 10547.2376,
+          "wealthMin": 9723,
+          "wealthMax": 12342,
+          "cashMean": 5623.52,
+          "tradeProfitMean": 1.436,
+          "journeys": 500,
+          "deliveries": 236,
+          "premiums": 159104,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 0,
+          "recovered": 0,
+          "targetLossesReached": 0,
+          "stops": {
+            "completed:regular_delivery": 236,
+            "failed:insufficient_foreign_cargo": 14
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "recovery5",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 18,
+          "daysMax": 51,
+          "wealthMean": 10640.6708,
+          "wealthMin": 9962,
+          "wealthMax": 12925.8,
+          "cashMean": 5869.808,
+          "tradeProfitMean": 997.904,
+          "journeys": 2583,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 0,
+          "travelBlocked": 0,
+          "elders": 0,
+          "recovered": 250,
+          "targetLossesReached": 250,
+          "stops": {
+            "start_wealth_regained": 250
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "recovery10",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 45,
+          "daysMax": 300,
+          "wealthMean": 11214.804052612619,
+          "wealthMin": 9963,
+          "wealthMax": 16643.33351918274,
+          "cashMean": 8407.356,
+          "tradeProfitMean": 2391.984,
+          "journeys": 10510,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 1366.0571473873802,
+          "travelBlocked": 0,
+          "elders": 0,
+          "recovered": 250,
+          "targetLossesReached": 250,
+          "stops": {
+            "start_wealth_regained": 250
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "recovery20",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 61,
+          "daysMax": 315,
+          "wealthMean": 7160.5960683424,
+          "wealthMin": 1167.8596858422216,
+          "wealthMax": 15363.388209753528,
+          "cashMean": 5046.928,
+          "tradeProfitMean": -1685.988,
+          "journeys": 9447,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 2134.6587316576,
+          "travelBlocked": 106,
+          "elders": 0,
+          "recovered": 144,
+          "targetLossesReached": 247,
+          "stops": {
+            "insufficient_travel_cash": 106,
+            "start_wealth_regained": 144
+          },
+          "warnings": {}
+        },
+        {
+          "strategy": "recovery30",
+          "results": 250,
+          "identicalReplays": 250,
+          "daysMin": 65,
+          "daysMax": 272,
+          "wealthMean": 2325.1003580465494,
+          "wealthMin": 1324.1624088160597,
+          "wealthMax": 13858.906896200519,
+          "cashMean": 48.2,
+          "tradeProfitMean": -6726.148,
+          "journeys": 7371,
+          "deliveries": 0,
+          "premiums": 0,
+          "debtMean": 2124.5416419534504,
+          "travelBlocked": 249,
+          "elders": 0,
+          "recovered": 1,
+          "targetLossesReached": 28,
+          "stops": {
+            "insufficient_travel_cash": 249,
+            "start_wealth_regained": 1
+          },
+          "warnings": {}
+        }
+      ],
+      "rawArchiveStatus": [
+        {
+          "path": "tests/simulation/phase16c-20261024-01/aggressive.tar.gz",
+          "bytes": 11232314
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/cautious.tar.gz",
+          "bytes": 10962328
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/delivery.tar.gz",
+          "bytes": 338823
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/normal.tar.gz",
+          "bytes": 11417016
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/optimized.tar.gz",
+          "bytes": 6264918
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/recovery10.tar.gz",
+          "bytes": 1304576
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/recovery20.tar.gz",
+          "bytes": 1706215
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/recovery30.tar.gz",
+          "bytes": 1457946
+        },
+        {
+          "path": "tests/simulation/phase16c-20261024-01/recovery5.tar.gz",
+          "bytes": 672988
+        }
+      ],
+      "archiveSimulationNotRerun": true
+    }
+  ],
+  "resultsAndPhase1AreByteIdenticalAliasesNot3000IndependentRuns": true,
+  "newDynamicRuns": 0
+}

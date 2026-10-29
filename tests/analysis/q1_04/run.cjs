@@ -1,0 +1,9 @@
+'use strict';
+const fs=require('node:fs'),{execFileSync}=require('node:child_process'),E=require('./engine.cjs');
+const stage=process.argv[2],dir=__dirname+'/results',target=dir+'/'+stage+'.json',marker=dir+'/'+stage+'-started.json';if(!['pilot','baseline','fee'].includes(stage)||fs.existsSync(target)||fs.existsSync(marker))throw Error('stage unused output required');
+const commit=execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim();fs.writeFileSync(marker,JSON.stringify({stage,commit})+'\n');const rows=[];let executions=0;
+const save=(extra={})=>fs.writeFileSync(target,JSON.stringify({stage,commit,executions,rows,...extra},null,2)+'\n');
+function one(p,s,f=0){executions++;try{const r=E.run(p,s,f);rows.push(r);save();console.log('PASS '+p+'/'+s+'/fee'+f+' days'+r.days+' cash'+Math.round(r.final.gold));return r}catch(e){save({failed:{strategy:p,seed:s,fee:f,error:e.stack}});throw e;}}
+if(stage==='pilot'){const a=one('normal',10001);executions++;try{const b=E.run('normal',10001);if(E.hash(a)!==E.hash(b))throw Error('pilot repeat mismatch');save({repeatIdentical:true,repeatHash:E.hash(b),passed:true});}catch(e){save({failed:{stage:'repeat',error:e.stack}});throw e;}}
+if(stage==='baseline'){const p=JSON.parse(fs.readFileSync(dir+'/pilot.json','utf8'));if(!p.passed)throw Error('pilot incomplete');for(const strategy of E.plan.strategies)for(const seed of E.plan.seeds)if(strategy!=='normal'||seed!==10001)one(strategy,seed);save({passed:true,includesPilotAsSeparateSource:true});}
+if(stage==='fee'){const f=JSON.parse(fs.readFileSync(dir+'/fees.json','utf8'));if(!f.candidates.length||f.candidates.length>3)throw Error('fee candidate count');for(const strategy of E.plan.strategies)for(const fee of f.candidates)one(strategy,10001,fee);save({passed:true,selectionSource:'fees.json',maximumExecutions:15});}
