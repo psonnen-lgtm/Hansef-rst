@@ -66,5 +66,11 @@
     "schema keys legacy rights presence anchor and home",
     "transition deadlines and remote unaccompanied voyages",
     "future human90-hour validation"
-  ]
+  ],
+  "finalFormattingCorrection": {
+    "file": "docs/entwicklungsberichte/Q1_03/Q1_03_entscheidungsmatrix.csv",
+    "change": "CRLF to LF only",
+    "all37ParsedEntriesUnchanged": true,
+    "newDynamicRuns": 0
+  }
 }
