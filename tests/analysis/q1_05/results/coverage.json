@@ -1,0 +1,4674 @@
+[
+  {
+    "id": "bergen_kogge__cautious__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__normal__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__normal__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__normal__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__optimized_observed__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__optimized_observed__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__optimized_observed__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__poor_then_normal__10003",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__poor_then_normal__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__poor_then_normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10004",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10005",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "bergen_kogge__normal__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__normal__10004",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "bergen_kogge__normal__10005",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "bergen_kogge__aggressive__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__aggressive__10004",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "bergen_kogge__aggressive__10005",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "bergen_kogge__optimized_observed__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__optimized_observed__10004",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "bergen_kogge__optimized_observed__10005",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "bergen_kogge__poor_then_normal__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__poor_then_normal__10004",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "bergen_kogge__poor_then_normal__10005",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__cautious__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__cautious__10004",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hansegras",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__cautious__10005",
+    "cities": [
+      2,
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hansegras",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10005",
+    "cities": [
+      2,
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__aggressive__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__aggressive__10004",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__aggressive__10005",
+    "cities": [
+      2,
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__optimized_observed__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__optimized_observed__10004",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__optimized_observed__10005",
+    "cities": [
+      2,
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__poor_then_normal__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__poor_then_normal__10004",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hansegras",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__poor_then_normal__10005",
+    "cities": [
+      2,
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__cautious__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__cautious__10004",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__cautious__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__normal__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__normal__10004",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__aggressive__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__aggressive__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__aggressive__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003",
+    "cities": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__poor_then_normal__10003",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__poor_then_normal__10004",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__poor_then_normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__cautious__10003",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__cautious__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__cautious__10005",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__normal__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__aggressive__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__aggressive__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__aggressive__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__optimized_observed__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__optimized_observed__10004",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__optimized_observed__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10003",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004",
+    "cities": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10005",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__12500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__12500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        0
+      ],
+      [
+        6,
+        1
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__12500__nominal",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__12500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__12500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__12500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ]
+    ],
+    "goodsBought": [
+      "Hansegras",
+      "Holz",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__12500__stabilized",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__12500__stabilized",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__12500__stabilized",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__12500__stabilized",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__12500__stabilized",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__12500__stabilized",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__18000__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Pelze"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__18000__nominal",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__18000__nominal",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__18000__nominal",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__18000__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__18000__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__18000__stabilized",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__18000__stabilized",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__18000__stabilized",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__18000__stabilized",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__18000__stabilized",
+    "cities": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__18000__stabilized",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__26500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        2
+      ],
+      [
+        7,
+        9
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        8
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Fisch",
+      "Hanf",
+      "Hansegras",
+      "Pelze"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__26500__nominal",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__26500__nominal",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__26500__nominal",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__26500__nominal",
+    "cities": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        5,
+        7
+      ],
+      [
+        6,
+        9
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        8,
+        10
+      ],
+      [
+        9,
+        1
+      ],
+      [
+        10,
+        6
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__26500__nominal",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__cautious__10003__26500__stabilized",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "bergen_kogge__cautious__10003__26500__stabilized",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      [
+        1,
+        6
+      ],
+      [
+        6,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.9827"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.9827"
+    ]
+  },
+  {
+    "id": "nowgorod_kogge__normal__10004__26500__stabilized",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      [
+        7,
+        9
+      ],
+      [
+        9,
+        7
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Hansegras",
+      "Pelze",
+      "Salz"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.3262"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.3262"
+    ]
+  },
+  {
+    "id": "luebeck_kogge__aggressive__10005__26500__stabilized",
+    "cities": [
+      0,
+      1
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "1700000000000.4941"
+    ],
+    "hullsActuallySold": [
+      "1700000000000.4941"
+    ]
+  },
+  {
+    "id": "luebeck_schnigge__optimized_observed__10003__26500__stabilized",
+    "cities": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        2
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100"
+    ],
+    "hullsActuallySold": [
+      "100"
+    ]
+  },
+  {
+    "id": "luebeck_convoy__poor_then_normal__10004__26500__stabilized",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ]
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "hullsActuallyBought": [
+      "100",
+      "101"
+    ],
+    "hullsActuallySold": [
+      "100",
+      "101"
+    ]
+  }
+]

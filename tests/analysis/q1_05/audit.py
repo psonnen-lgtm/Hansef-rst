@@ -66,5 +66,5 @@ def writecsv(name,rows):
   w=csv.DictWriter(f,fieldnames=list(rows[0]),lineterminator='\n');w.writeheader();w.writerows(rows)
 writecsv('baseline-summary.csv',base);writecsv('fee-continuations.csv',trial);writecsv('affordability.csv',aff);writecsv('trajectories.csv',trajectory)
 (O/'coverage.json').write_text(json.dumps(coverage,ensure_ascii=False,indent=2)+'\n')
-summary={'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'baselineInstancesIncludingProbeAndFailure':81,'feeInstances':36,'savedDistinctPaths':111,'baselineCount':75,'feeCount':36,'independentEventLedgers':len(idx),'prepaymentMatches':len(trial),'nativeFunctionHashesUnchanged':True,'allFrozenSourcesVerified':True,'pilotFailureRetained':True,'baseline':base,'fees':trial}
+summary={'sourceCommit':subprocess.check_output(['git','rev-parse','HEAD'],cwd=ROOT,text=True).strip(),'baselineInstancesIncludingProbeAndFailure':81,'feeInstances':36,'savedCases':111,'baselineCount':75,'feeCount':36,'independentEventLedgers':len(idx),'prepaymentMatches':len(trial),'nativeFunctionHashesUnchanged':True,'allFrozenSourcesVerified':True,'pilotFailureRetained':True,'baseline':base,'fees':trial}
 (O/'audit.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in summary.items() if k not in ['baseline','fees']}))
