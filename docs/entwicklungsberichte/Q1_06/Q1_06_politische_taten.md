@@ -9,7 +9,7 @@
 |---|---|---|---|
 |Wirtschaftlicher Erfolg|Kasse/Bank/Schuld, echter realisierter Handel, Vermögensstruktur|Bilanz; optional Fernkaufmann-Ehrenbeleg|Finanziert Zeit und Material; keine politischen Punkte|
 |Gesellschaftliche Anerkennung|Sichtbarer Dank und verlässliche persönliche Geschichte|Gebäudedialog, Chronik, benannte Urkunden|Keine beliebig kaufbare XP-Leiste|
-|Lokales politisches Vertrauen|Konkrete gültige Leistungen dieser Stadt und daraus erklärte Zusagen|Vorhandenes örtliches Leistungsbuch/ModellA|Trägt Ratsherr/Kandidatur; nicht aus fremdem Buchwert|
+|Lokales politisches Vertrauen|Konkrete gültige Leistungen dieser Stadt und daraus erklärte Zusagen|Vorhandenes örtliches Leistungsbuch/Modell A|Trägt Ratsherr/Kandidatur; nicht aus fremdem Buchwert|
 |Überregionaler Verdienst|Bewährtes Amt, örtliche Fürsprecher und tatsächlich gehaltener Vertrag|Vorhandene Siegel/Vertrags-/Amtsreferenzen|Trägt Eldermann, keine anonyme Gesamtsumme|
 
 **Empfehlung zum alten Ruf:** `s.rep` unverändert als historischer allgemeiner Mischruf mit erklärtem Stichtag bewahren, nicht mehr als aktiven politischen Faktor benutzen. Alte Werte sind nicht zuverlässig nach Handel/Spende/Ankunft trennbar. Keine rückwirkende Bereinigung oder Umwandlung in „echte Verdienste“. Ob künftige rein gesellschaftliche Rückmeldungen weiterhin numerisch oder nur als Dank/Briefe erfolgen, separat entscheiden; empfohlen vorerst ohne neue Punktwährung. Keine jetzige Spendenregel verändert.
@@ -54,6 +54,8 @@ Beim künftigen Badekonzept keine zufällige Mehrheitsänderung allein durch Öf
 
 ## Wiederholungen sinnvoll ersetzen
 
-Empfohlen zunächst zwei eng begrenzte **Entscheidungsvarianten**: begründete Versorgungspriorität und Ratsvermittlung mit nachvollziehbarer Auswahl. Beide knüpfen an aktuelle Typen an, liefern aber unterschiedliche Zielkonflikte statt bloß höherer Stückzahlen. Optionaler Krisen-/Hilfsanlass später nur mit Freigabe, klarer Anlass-ID und tatsächlichem Ergebnis. Keine Pflicht zu Festen, wiederholten Spenden, Eskorten oder zwanzig weiterenSiegeln.
+Empfohlen zunächst zwei eng begrenzte **Entscheidungsvarianten**: begründete Versorgungspriorität und Ratsvermittlung mit nachvollziehbarer Auswahl. Beide knüpfen an aktuelle Typen an, liefern aber unterschiedliche Zielkonflikte statt bloß höherer Stückzahlen. Optionaler Krisen-/Hilfsanlass später nur mit Freigabe, klarer Anlass-ID und tatsächlichem Ergebnis. Keine Pflicht zu Festen, wiederholten Spenden, Eskorten oder zwanzig weiteren Siegeln.
 
 Kalender-/Abschnittszähler sind Herkunftsdaten, kein Beweis sinnvoller Abwechslung. Vor einem Entfernen der heutigen Quoten braucht es feste eindeutige Gelegenheiten und Schutz gegen sofortiges Neuangebot. Fehlt diese Freigabe, offen sagen: **Der heutige Inhalt beweist keine abwechslungsreiche 90-Stunden-Karriere.** Nicht mit mehr identischen Pflichtbriefen auffüllen.
+
+[Gesamtbericht](Q1_06_gesamtbericht.md) · [Karrieremodell](Q1_06_karrieremodell.md) · [Entscheidungsmatrix](Q1_06_entscheidungsmatrix.csv)

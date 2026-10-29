@@ -2,7 +2,7 @@
 
 29.10.2026 · **Konzept- und Prüfauftrag, keine produktive Umsetzung.**
 
-**Empfehlung:** Kaufmann → bewusster Gildenbeitritt → Ratsherr aus zwei örtlichen Tatarten → Bürgermeister mit belegter Mehrheit und eigenen Entscheidungen → Eldermann aus Amtsbewährung und hanseweiter Anerkennung. Fernkaufmann als freiwilligen Wirtschaftstitel daneben führen. Unterstützung nach **ModellA normieren**, vorhandene Urkunden-/Amts-/Vertragsstruktur wiederverwenden.
+**Empfehlung:** Kaufmann → bewusster Gildenbeitritt → Ratsherr aus zwei örtlichen Tatarten → Bürgermeister mit belegter Mehrheit und eigenen Entscheidungen → Eldermann aus Amtsbewährung und hanseweiter Anerkennung. Fernkaufmann als freiwilligen Wirtschaftstitel daneben führen. Unterstützung nach **Modell A normieren**, vorhandene Urkunden-/Amts-/Vertragsstruktur wiederverwenden.
 
 Die wichtigsten offenen Entscheidungen betreffen nicht weitere Goldschwellen, sondern tatsächliche Aufgabenvielfalt, Kalender-/Anlassregeln, gesellschaftliche Rückmeldung und sichere V13-Übernahme. **Eine abwechslungsreiche 90-Stunden-Karriere ist mit den heutigen zwei örtlichen Standardtypen nicht belegt.** Keine Wartezeit oder Pflichtwiederholung als Ersatz empfehlen.
 
@@ -21,7 +21,7 @@ Produkt unverändert **0.8d.1b/V13**, letzter HTML-Commit **`c42c25cf5cf372c210b
 |Bestehende Implementierung|Zwei örtliche Typen Versorgung/Vereinbarung, deterministische Wahl, Amtsbelege, Fürsprecher, Siegel, Hansevertrag. Globaler Handels-/Spendenruf und Vermögenshürden noch aktiv. Kein Gildenstatus oder Gildenhaus-Aktionspfad|
 |Verbindlicher Q1.06-Beschluss|Bewusster hanseweiter Eintritt ohne Aufnahmeaufgaben/weitere Vermögensschranke, Gilde Voraussetzung neuer politischer Aufstiege, keine politischen Handels-/Ankunftspunkte, Ämter ohne feste Vermögensschwellen, Ratsherr ohne Finanzbonus, Bestandsschutz|
 |Vorläufiger Parameter|12.500 Gold Aufnahmegebühr ausdrücklich als Balancingwert, **nicht endgültig beschlossen**. Q1.05-Empfehlung jetzt so in die Konzeption übernommen, kein Preis aktiviert|
-|Neue Empfehlung|Fernkaufmann optional, Ratsherr aus zwei örtlichen Arten, ModellA, wenige Amtsentscheidungen, M2/Altzugang. Alles benötigt Nutzerentscheidung|
+|Neue Empfehlung|Fernkaufmann optional, Ratsherr aus zwei örtlichen Arten, Modell A, wenige Amtsentscheidungen, M2/Altzugang. Alles benötigt Nutzerentscheidung|
 |Noch nicht geprüft|Neue Karriere spielbar, neue Regeln wirtschaftlich/spielerisch balanciert, M2 sicher migrierbar, Gerätebedienung, aktive 90 Stunden. Kein entsprechender Test als bestanden ausgegeben|
 
 ## 3. Die zwölf Abschlussfragen
@@ -41,7 +41,7 @@ Produkt unverändert **0.8d.1b/V13**, letzter HTML-Commit **`c42c25cf5cf372c210b
 
 ## 4. Was die Modell- und Zeitrechnung tatsächlich belegt
 
-819 konsistente Beleganzahl-/Abschnittskombinationen ×11 Städte ×3 Modelle = **27.027 kleine Bruchvergleiche**, keine Spielverläufe. Unter unveränderten heutigen Dienstsperren machen drei Versorgungen/drei Vereinbarungen aus drei Abschnitten jede Stadt erreichbar: A86, 67/100, B65/75, C90/100. A/B für alle Kombinationen gleich, A/C in 81 Stadt-/Belegkombinationen verschieden. Das ist kein unabhängiger Reise-/Frist-/Markt-/Wahlnachweis.
+819 konsistente Beleganzahl-/Abschnittskombinationen ×11 Städte ×3 Modelle = **27.027 kleine Bruchvergleiche**, keine Spielverläufe. Unter unveränderten heutigen Dienstsperren machen drei Versorgungen/drei Vereinbarungen aus drei Abschnitten jede Stadt erreichbar: A 86,67/100, B 65/75, C 90/100. A/B für alle Kombinationen gleich, A/C in 81 Stadt-/Belegkombinationen verschieden. Das ist kein unabhängiger Reise-/Frist-/Markt-/Wahlnachweis.
 
 33 statische Routenrechnungen aus vorhandener Distanzmatrix/Partnerrotation, Kogge bei 100 Zustand: erste Ratsrunde Lübeck 4, Bergen 20, Nowgorod 30 Welttage und jeweils 12 Gold Hafengebühr. Keine Stürme, Handel, Zinsen, Warenverfügbarkeit, spätere Verzögerungen oder Menschzeit enthalten. [Routentabelle](../../../tests/analysis/q1_06/results/route-arithmetic.csv).
 
@@ -77,3 +77,9 @@ Historische Tests nur übernommen: Q1.02-Exploitbelege, Q1.04-Gebühren-/Stillst
 - Vollständige acht Lieferdateien, Abschlusskontrolle und GitHub-Rücklesen folgen im letzten Sicherungsabschnitt. Keine selbstreferenzielle Testcommit-ID erfinden.
 
 Die Untersuchung endet nach Veröffentlichung und Rücklesen. Keine Umsetzung, Zusammenführung oder automatische Folgephase.
+
+## Lokale Abschlusskontrolle
+
+Alle3.232 vorbestehenden Dateien gegen die tatsächliche Entwicklungsbasis geprüft: ausschließlich der Berichtsindex wurde ergänzt, alle übrigen Altdateien einschließlich Spielcode/Simulationen/Ergebnisse byteidentisch. Acht Pflichtdateien,48 Entscheidungsposten,42 ausdrücklich geplante Regressionen,33 Routen und Quellhashes geprüft. Die81 A/C-Abweichungen sind reine Zielschwellenentscheide, nicht81 tatsächlich ausgeführte oder notwendig zulässige Wahlen. [Prüfnachweis](../../../tests/analysis/q1_06/results/verification.json).
+
+Vollständiger Berichtstand mit acht Lieferdateien: `bd66a449dfd67fb3ec53a861f18e011b5d08b259`. Die anschließende Endredaktion trennt Dezimalkommas/Begriffsnamen und ergänzt die Verweisnavigation; keine Formel, Quelldatei oder fachliche Empfehlung geändert. Der finale veröffentlichte Umfang wird anschließend unabhängig von GitHub zurückgelesen.

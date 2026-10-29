@@ -15,7 +15,7 @@ Die örtlichen Größen sind **keine zusätzlichen gespeicherten Punkte**: `D=mi
 
 **Stärken:** Wenigste neue Gewichtungsentscheidungen, vorhandene Belege/Zusagen nutzbar, vertraute 100er-Skala und regionale Zielunterschiede bleiben. Ein erklärbarer abgeleiteter Index, kein Stimmenzähler und keine Wahlwahrscheinlichkeit. **Schwächen:** Gleiche Belege tragen teilweise mehrfach bei (Dienst, Zusage, Vereinbarung), Angebots-/Abschnittsmonotonie bleibt; Normierung alleine erzeugt keine neue Tätigkeit.
 
-**Balancewirkung:** Nicht neutral gegenüber altem Globalruf-/Wirtschaftsmix. Bei 65 lokalen Punkten wird neu 86, 67, früher je nach Globalanteil 65–90. Vermögende/hochrufende Spieler verlieren ihre Abkürzung; tatsächliche lokale Leistungen gewinnen relativ. Für die Zukunft vorgeschlagen, nicht rückwirkend auf gewonnene Ämter anwenden.
+**Balancewirkung:** Nicht neutral gegenüber altem Globalruf-/Wirtschaftsmix. Bei 65 lokalen Punkten wird neu 86,67, früher je nach Globalanteil 65–90. Vermögende/hochrufende Spieler verlieren ihre Abkürzung; tatsächliche lokale Leistungen gewinnen relativ. Für die Zukunft vorgeschlagen, nicht rückwirkend auf gewonnene Ämter anwenden.
 
 ## B – Lokalskala und angepasste Stadtziele
 
@@ -29,7 +29,7 @@ Die örtlichen Größen sind **keine zusätzlichen gespeicherten Punkte**: `D=mi
 
 Maximal 40 Dienstpunkte +40 Zusagenpunkte +20 Vereinbarungspunkte=100, alte Stadtziele bleiben. Stärkeres Gewicht auf belegte Gruppenunterstützung statt reine Zahl weiterer Dienste. Kein neuer Geld-/Rufanteil und keine neue Währung.
 
-**Stärken:** Inhaltliche Neuverteilung, breitere Zusagen besser erkennbar. **Schwächen:** Zusagen selbst hängen weiterhin an denselben Dienstanzahlen; neue Gewichtung bevorzugt bestimmte Mischungen und ist deutlich begründungs-/balancingbedürftiger. Beispiel eine Versorgung/sechs Vereinbarungen: A80 gegenC 75, dadurch fallen Lübeck, Hamburg und Brügge aus der Gewinnergruppe. Keine höhere Vielfalt allein durch neue Zahlen.
+**Stärken:** Inhaltliche Neuverteilung, breitere Zusagen besser erkennbar. **Schwächen:** Zusagen selbst hängen weiterhin an denselben Dienstanzahlen; neue Gewichtung bevorzugt bestimmte Mischungen und ist deutlich begründungs-/balancingbedürftiger. Beispiel eine Versorgung/sechs Vereinbarungen: A 80 gegenC 75, dadurch fallen Lübeck, Hamburg und Brügge aus der Gewinnergruppe. Keine höhere Vielfalt allein durch neue Zahlen.
 
 ## Stadtziele und rechnerische Erreichbarkeit
 
@@ -47,7 +47,7 @@ Maximal 40 Dienstpunkte +40 Zusagenpunkte +20 Vereinbarungspunkte=100, alte Stad
 |Nowgorod|64|48|64|ja/ja/ja|
 |Venlo|60|45|60|ja/ja/ja|
 
-Belegbarer Zeuge für jede Stadt unter den **heutigen**6-Dienste-/3-Abschnitte-/2-Arten-Sperren: drei Versorgungen und drei Vereinbarungen aus drei Abschnitten. Lokale 65 → A86, 67, B65, C90; alle Ziele erreicht. Das ist ein rechnerisch konsistenter Belegsatz, **keine gespielte Karriere oder Garantie für Reise-/Markt-/Fristabwicklung**.100 ist in A/C bei vier+vier Diensten erreichbar, 75 in B.
+Belegbarer Zeuge für jede Stadt unter den **heutigen**6-Dienste-/3-Abschnitte-/2-Arten-Sperren: drei Versorgungen und drei Vereinbarungen aus drei Abschnitten. Lokale 65 → A 86,67, B 65, C 90; alle Ziele erreicht. Das ist ein rechnerisch konsistenter Belegsatz, **keine gespielte Karriere oder Garantie für Reise-/Markt-/Fristabwicklung**.100 ist in A/C bei vier+vier Diensten erreichbar, 75 in B.
 
 819 konsistente Kombinationen (0–12 Versorgung/0–12 Vereinbarung, mögliche Zahl verschiedener Abschnitte), elf Städte und drei Modelle: **27.027 reine Modellvergleiche**, keine 27.027 Spielverläufe. A/B immer gleich, A/C in 81 Stadt-/Belegkombinationen unterschiedlich. [33 Stadt-/Modellzeilen](../../../tests/analysis/q1_06/results/city-models.csv), [acht anschauliche Beispiele](../../../tests/analysis/q1_06/results/model-examples.csv), [Quellen und genaue Brüche](../../../tests/analysis/q1_06/results/inspection.json).
 
@@ -58,7 +58,7 @@ Belegbarer Zeuge für jede Stadt unter den **heutigen**6-Dienste-/3-Abschnitte-/
 |Nur reicher Handel/Spenden, keine Taten|0|0|Keine Kandidatur allein aus Geld/Ruf|
 |Nur Versorgung oder nur Vereinbarungen|Teilscore möglich|Teilscore möglich|Beide Arten für örtliche Qualifikation nötig; eine Summe ersetzt das nicht|
 |3+3 ausgewogen|Alle elf Ziele|Alle elf Ziele|Gültige örtliche IDs/Präsenz und sonstige Zulässigkeit|
-|5Versorgungen+1Vereinbarung|66, 67; vier Städte|66, 67; vier Städte|Höhere Ziele brauchen weitere/breitere Leistungen|
+|5Versorgungen+1Vereinbarung|66,67; vier Städte|66,67; vier Städte|Höhere Ziele brauchen weitere/breitere Leistungen|
 |1Versorgung+6Vereinbarungen|80; alle elf|75; acht Städte|C gewichtet die fehlende Versorgungszusage stärker|
 
 Keine Formelumstellung allein verhindert Wiederholungsfarmen. D/Z/V sind begrenzt, IDs müssen eindeutig, Stadtkontext gültig und reale Vorgänge einmal anerkannt sein. Zusagen beruhen heute auf Zahlen, nicht auf einer großen aktiven Rivalen-KI. Selben Beleg nur einmal in einer Summe zählen; vorhandene funktionale Überschneidung der Komponenten erklären statt zusätzliche fünf Punkte auf den Summenwert draufzuschlagen. Eine normale Handelsquest ist keine politische Urkunde.
@@ -70,3 +70,7 @@ Alle Modelle brauchen denselben echten Präsenzschutz und eine revisionsgebunden
 **A als Unterstützung empfehlen, nicht sämtliche heutigen Zulassungssperren automatisch mitbeschließen.** Gilden-/Ratsherr-/Präsenz-/Mietbedingungen, harte 6-/3-Abschnittssperren, Wiederantragsfrist und neue Ereignisgelegenheit sind getrennte Regeln. Der Karrieremodellbericht schlägt für neue Regeln Mehrheit+beide Arten ohne zusätzliche starre Sechs-/Drei-Sperre vor; der aktuelle Angebotskalender würde trotzdem weiter Wiederholungen begrenzen. Änderungen an `issued`, ID-Kontext und der vierten Zusage brauchen eine gemeinsame Definition, bevor Kalenderbindung gelöst werden kann. Keine stillschweigende Aufhebung im Rechenvergleich.
 
 Die drei Modelle wurden **nicht** produktiv aktiviert. Tatsächliche Wahlen, Reisechronik, Gerätebedienung oder M2-Übernahme sind damit noch nicht getestet.
+
+[Gesamtbericht](Q1_06_gesamtbericht.md) · [Karrieremodell](Q1_06_karrieremodell.md) · [Entscheidungsmatrix](Q1_06_entscheidungsmatrix.csv)
+
+Die81 A/C-Abweichungen zählen reine Zielschwellenentscheide über alle konsistenten Belegsätze, einschließlich solcher ohne vollständige Kandidaturzulässigkeit. Sie sind **nicht81 gespielte oder81 zulässige abweichende Wahlen**. Die Beispieltabellen prüfen die heutigen Dienstsperren zusätzlich.

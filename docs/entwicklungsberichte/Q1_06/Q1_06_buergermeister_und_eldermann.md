@@ -31,7 +31,7 @@ Beispiel Lübeck: Die bestehenden strukturellen Mangelrollen enthalten Fisch und
 
 Die Auswahl allein gibt **keine** politische Anerkennung. Erst eine gültige reale Lieferung erzeugt genau einen Beleg. Neuöffnen, Wechseln oder Zurückladen darf kein günstigeres Parallelangebot schaffen. Bestehende aufgegebene/angenommene Briefe nicht ersetzen. Die normale Verkaufswirtschaft bleibt unverändert; ein eigener öffentlicher Warenverbrauch wäre eine gesonderte neue Regel.
 
-Technisch ist das kein bloßes Umbenennen des Buttons: `politicalOffer` wählt heute die Ware über Abschnitt/Bedarfsrotation und `validatePolitics` erwartet genau diese Ware. Ein wählbarer Bedarf braucht eine eindeutig validierte Auswahl unter M2, unveränderteAltbriefprüfung und einmalige Anlasskennung. Vor Implementierung muss entschieden sein, wie Gelegenheiten ohne Kalenderfarmen entstehen. Kein unbegrenzt neu würfelbares Ratsangebot.
+Technisch ist das kein bloßes Umbenennen des Buttons: `politicalOffer` wählt heute die Ware über Abschnitt/Bedarfsrotation und `validatePolitics` erwartet genau diese Ware. Ein wählbarer Bedarf braucht eine eindeutig validierte Auswahl unter M2, unveränderte Altbriefprüfung und einmalige Anlasskennung. Vor Implementierung muss entschieden sein, wie Gelegenheiten ohne Kalenderfarmen entstehen. Kein unbegrenzt neu würfelbares Ratsangebot.
 
 ## Konkreter zweiter Amtsbrief – Vermittlung
 
@@ -43,7 +43,7 @@ Heute ist `politicalPartner` eine Rotation der drei nächsten Städte. Eine echt
 
 Bestehende Trennung von Titel und aktivem Amt behalten. Bewährung auf neuen örtlichen Leistungen nach Amtsbeginn, nicht auf Voramtsurkunden. Vorschlag: mindestens zwei unterschiedliche echte Amtsanlässe, darunter Vermittlung. Das ist ein Zielentwurf, noch keine neue zulässige Belegart. Solange nur zwei alte Standardtypen freigegeben sind, darf man keine bereits abwechslungsreiche Amtsphase behaupten.
 
-Keine neue Wartephase. Heute können bewährte Amtsbelege bereits vor den 360 Tagen vorliegen; beim Eldermannantritt wird das Amt geschlossen. Die 360 Tage sind kein zwingenderTimer bis zum nächsten Rang. Für neue Regeln feste Zwei-Abschnitt-Sperre durch überprüfbar unterschiedliche Anlässe ersetzen, **erst** wenn Angebot/Einmaligkeit vollständig definiert sind. Laufende alte Amtszeit und deren Regeln bleiben geschützt.
+Keine neue Wartephase. Heute können bewährte Amtsbelege bereits vor den 360 Tagen vorliegen; beim Eldermannantritt wird das Amt geschlossen. Die 360 Tage sind kein zwingender Timer bis zum nächsten Rang. Für neue Regeln feste Zwei-Abschnitt-Sperre durch überprüfbar unterschiedliche Anlässe ersetzen, **erst** wenn Angebot/Einmaligkeit vollständig definiert sind. Laufende alte Amtszeit und deren Regeln bleiben geschützt.
 
 Verlorene Wahl oder Amtsende löscht keine Urkunden/erworbenen Titel. Neue Leistungsanforderungen dürfen keinen politischen Softlock schaffen, etwa weil nur Bürgermeister die Belege verdienen könnten, die bereits zur ersten Wahl verlangt werden. M01/M07 sind vor allem Amtsfunktionen nach der Wahl; Ratsherr und erste Kandidatur müssen mit vorhandenen zugänglichen Diensten möglich bleiben.
 
@@ -53,6 +53,8 @@ Empfohlen bleiben bewährtes Bürgermeisteramt, Heimatmandat plus drei auswärti
 
 **Kleine sinnvolle Ergänzung im vorhandenen Vertrag:** eine begründete gemeinsame Versorgungs-/Vermittlungsentscheidung zwischen den Interessen der beteiligten Städte im bestehenden Reiseablauf. Keine zusätzlichen Pflichtsiegel oder dritten vorgeschriebenen Rundreisen. Vertrag hält fest, welche gemeinsame Lösung gewählt und von den Parteien bestätigt wurde. Das setzt Inhalt und eine kleine revisionsgebundene Vertragsauswahl voraus; bisher enthält `league` nur Orte/Frist/`visited`.
 
-**Nach Amtsgewinn, freiwillig:** begrenzte städteübergreifende Hilfe oder Vermittlung mit bestehenden Transport-/Briefmustern. Sichtbarer Nutzen für die Welt, keine weitere Pflicht-Rangtreppe. Handel/Lager/Schiffbau laufen wie bisher weiter. Eigene Eskorte, aktive Piratenbekämpfung, garantierteRoutensicherheit oder hanseweite Steuergewalt sind **nicht vorhanden** und werden für diesen kleinen ersten Umfang nicht empfohlen.
+**Nach Amtsgewinn, freiwillig:** begrenzte städteübergreifende Hilfe oder Vermittlung mit bestehenden Transport-/Briefmustern. Sichtbarer Nutzen für die Welt, keine weitere Pflicht-Rangtreppe. Handel/Lager/Schiffbau laufen wie bisher weiter. Eigene Eskorte, aktive Piratenbekämpfung, garantierte Routensicherheit oder hanseweite Steuergewalt sind **nicht vorhanden** und werden für diesen kleinen ersten Umfang nicht empfohlen.
 
 Mehr Verantwortung bedeutet erklärbare Entscheidungen und echte Nachweise. Es bedeutet keine unbegrenzte Stadtkasse, persönliche Sonderpreise, kostenlose Schiffe oder automatisch steigende Fraktionswerte. Alle Funktionen dieses Abschnitts bleiben Konzeptoptionen, keine freigegebenen neuen Wirtschaftseffekte.
+
+[Gesamtbericht](Q1_06_gesamtbericht.md) · [Karrieremodell](Q1_06_karrieremodell.md) · [Entscheidungsmatrix](Q1_06_entscheidungsmatrix.csv)

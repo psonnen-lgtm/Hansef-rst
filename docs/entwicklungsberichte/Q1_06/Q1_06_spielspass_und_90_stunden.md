@@ -51,3 +51,5 @@ Versorgung verkauft Waren heute zu Marktpreisen; politische Briefe zahlen keine 
 **Vorgeschlagene Qualitätskriterien:** Nächster Schritt ohne Code verständlich; jede Phase bietet echte Alternativen; keine verpflichtenden Leerzeiten; Rückschläge aufholbar; keine neue Softlock-Kette. Bedeutung von Gilde, Ratsherr und Amt ausdrücklich erfragen. Technische Gerätebedienung von Spielspaß und Gesamtdauer trennen.
 
 H1/H2 sind spätere Pläne. Keine Teilnehmer angesprochen, keine Telemetrie implementiert, kein Folgetest begonnen.
+
+[Gesamtbericht](Q1_06_gesamtbericht.md) · [Karrieremodell](Q1_06_karrieremodell.md) · [Entscheidungsmatrix](Q1_06_entscheidungsmatrix.csv)

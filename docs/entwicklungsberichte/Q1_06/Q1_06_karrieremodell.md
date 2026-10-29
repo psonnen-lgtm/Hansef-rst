@@ -52,7 +52,7 @@ Das Diagramm zeigt einen **Vorschlag**, keinen bereits spielbaren neuen Ablauf. 
 
 ## 4. Bürgermeister: belegte Mehrheit und Entscheidungen im Amt
 
-**Empfehlung für neue Regeln:** Ratsherr und Gilde/Altzugang, persönliche Kandidatur in der Stadt mit gültiger örtlicher Versorgung und Vereinbarung, keine offenen Lagermietrückstände wie bisher, passende politische Unterstützung nach ModellA. Kein 45.000-/85.000-Gold- oder 55-Ruf-Test. Bewährte Zulässigkeitsprüfung und transparente deterministische Wahl wiederverwenden.
+**Empfehlung für neue Regeln:** Ratsherr und Gilde/Altzugang, persönliche Kandidatur in der Stadt mit gültiger örtlicher Versorgung und Vereinbarung, keine offenen Lagermietrückstände wie bisher, passende politische Unterstützung nach Modell A. Kein 45.000-/85.000-Gold- oder 55-Ruf-Test. Bewährte Zulässigkeitsprüfung und transparente deterministische Wahl wiederverwenden.
 
 **Kalender und Mindestmengen ausdrücklich offen:** Die heutige harte Vorgabe sechs Dienste/drei Abschnitte ist **keine neue Empfehlung zur Spielzeitstreckung**. Für den Zielentwurf soll die belegte Mehrheit mit beiden Arten zählen; separate Sechs-/Drei-Sperren entfallen als Zulassungsbedingungen, sofern die späteren überprüften Gelegenheiten Wiederholungsfarmen verhindern. Bestehende Formelzusagen und Angebotsquoten hängen aber ebenfalls an Abschnitten. Ohne angepasste Gelegenheiten bleibt diese Wirkung bestehen. Das ist gemeinsam zu entscheiden, nicht bloß ein Textwechsel. Die Modellrechnung hält alte Sperren nur für einen unverfälschten Vergleich fest.
 
@@ -70,7 +70,7 @@ Das Diagramm zeigt einen **Vorschlag**, keinen bereits spielbaren neuen Ablauf. 
 
 **Rechte/Einordnung:** Anspruchsvollster politischer Rang, sichtbarer hanseweiter Abschluss; danach freiwillige Vermittlung und koordinierte Hilfe, keine weitere Pflicht-Rangtreppe. Eine neue Abwägung im bestehenden Vertrag ist sinnvoller als ein fünftes Pflichtsiegel. Keine freie Geldschöpfung, Tribut-/Steuerrechte oder garantierten sicheren Routen.
 
-**Technik/Save:** Bestehende `endorsements`, `league/visited`, `terms`, `elderman` und Urkunden-IDs wiederverwenden; Präsenz und Regelrevision ergänzen. Späterer Verlust einer alten Mehrheit darf den erworbenen Titel nicht zurücknehmen. Heimat-/Siegel-/Vertragsdaten und laufendeFristen geschützt übernehmen. Keine neuen Hansefunktionen implementiert.
+**Technik/Save:** Bestehende `endorsements`, `league/visited`, `terms`, `elderman` und Urkunden-IDs wiederverwenden; Präsenz und Regelrevision ergänzen. Späterer Verlust einer alten Mehrheit darf den erworbenen Titel nicht zurücknehmen. Heimat-/Siegel-/Vertragsdaten und laufende Fristen geschützt übernehmen. Keine neuen Hansefunktionen implementiert.
 
 ## Bestandsmatrix – Ablauf, Nutzen und Schwächen
 
@@ -101,7 +101,7 @@ Das Diagramm zeigt einen **Vorschlag**, keinen bereits spielbaren neuen Ablauf. 
 |K01|`fresh`110, `newMerchantGame`1052|Einstieg erklären, keine Wirtschaftsänderung|Startauswahl, `beginning`, Kasse/Flotte|Keine geänderten Startwerte, später Politikrevision|
 |K02|`promote`988, `rank`799|F2 als getrennten Ehrentitel entscheiden|Titelname, Ehrenverleihung, vorhandener Lieferablauf|Alt-Rang 1 erhalten; neuer eindeutiger Ehrenbeleg nötig|
 |K03|`promote`988, `politicalRecord`433|Gilde + zwei örtliche Arten + Präsenz|Tatbelege, Rathausantrag, Titelcode 2|Neue Verleihungsreferenz, geschützte Alttitel|
-|K04|`mayorQuote`368, `runMayorElection`461|Geld/Ruf entkoppeln, ModellA und Kalenderentscheidung|Gründe, Wahl-/Amtsdaten, deterministische Abstimmung|Revision/Alt-Wahlsnapshot, aktive Ämter bewahren|
+|K04|`mayorQuote`368, `runMayorElection`461|Geld/Ruf entkoppeln, Modell A und Kalenderentscheidung|Gründe, Wahl-/Amtsdaten, deterministische Abstimmung|Revision/Alt-Wahlsnapshot, aktive Ämter bewahren|
 |K05|`hanseQuote`400, `runHanseAssembly`488|Kein Geld/Ruf-Test, reale Belege/Präsenz|Qualitätsnachweise, Hanseversammlung|Altrang 4/`elderman` unverändert erhalten|
 |K06|`show`886, Stadtszenen 1082, Kirche 909/Bad 906/Kontor 986|Gildenhaus als genehmigtes Ziel später in Welt integrieren|Renderer/Hotspots/Dialoge statt neuer Hauptmenüs|Mitgliedschaft/Bezahlbeleg in M2, keine neue Währung|
 |K07|`trade`905, `arrive`1026, `donate`910, `completeQuests`990|Alt-Mischruf anzeigen, nicht politisch verwerten|Gespeicherten Altwert/Chronik bewahren|Keine Herkunft erfinden; Aktivierungszeitpunkt dokumentieren|
@@ -122,3 +122,5 @@ Funktionszeilen beziehen sich ausschließlich auf das oben genannte unverändert
 ## Noch keine zusätzliche Gildenpflicht für jede Tätigkeit beschlossen
 
 Gildenmitgliedschaft ist verbindlich für den **neuen politischen Aufstieg**. Ob politische Briefe bereits vor Eintritt angenommen und als echte Vorleistungen erhalten werden dürfen oder erst Mitgliedern offenstehen, ist noch zu entscheiden. Gewöhnliche wirtschaftliche Lieferaufträge bleiben davon getrennt. Der Ablaufpfeil ist keine stillschweigende Freigabe einer zusätzlichen Annahmesperre; neue Gildenguards müssen diesen Umfang ausdrücklich abbilden.
+
+[Gesamtbericht](Q1_06_gesamtbericht.md) · [Karrieremodell](Q1_06_karrieremodell.md) · [Entscheidungsmatrix](Q1_06_entscheidungsmatrix.csv)
