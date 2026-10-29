@@ -1,0 +1,26 @@
+{
+  "seed": 10111,
+  "before": {
+    "gold": 5000,
+    "debt": 0,
+    "wealth": 9960,
+    "limit": 4482,
+    "day": 486001
+  },
+  "after": {
+    "gold": 9482,
+    "debt": 4482,
+    "wealth": 9960,
+    "limit": 4482,
+    "day": 486001
+  },
+  "additionalOneRejected": true,
+  "events": [
+    {
+      "type": "bank",
+      "operation": "borrow",
+      "amount": 4482,
+      "creditLimit": 4482
+    }
+  ]
+}

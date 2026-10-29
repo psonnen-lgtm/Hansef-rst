@@ -3,16 +3,16 @@ const fs=require('node:fs'),path=require('node:path'),zlib=require('node:zlib'),
 const E=require('./engine.cjs'),{plan}=E,stage=process.argv[2],out=path.join(__dirname,'results');fs.mkdirSync(out+'/runs',{recursive:true});
 const id=s=>s.scenario+'__'+s.strategy+'__'+s.seed;
 const all=plan.scenarios.flatMap(sc=>plan.strategies.flatMap(strategy=>plan.seeds.map(seed=>({scenario:sc.id,strategy,seed}))));
-assert(['pilot','baseline','fees'].includes(stage));
+assert(['pilot','pilot-retry','baseline','fees'].includes(stage));
 const stamp=out+'/'+stage+'-started.json';assert(!fs.existsSync(stamp),'stage already attempted; inspect stored state, do not blindly repeat');
 fs.writeFileSync(stamp,JSON.stringify({stage,sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),node:process.version,started:new Date().toISOString()},null,2)+'\n');
 function save(key,r){const raw=JSON.stringify(r);fs.writeFileSync(out+'/runs/'+key+'.json.gz',zlib.gzipSync(raw,{level:9}));return {id:key,spec:r.spec,fee:r.fee,timing:r.timing,days:r.days,paid:r.paid,paymentDay:r.payment?.day??null,stopReason:r.stopReason,traceHash:E.hash(r),ledgers:r.ledgers};}
 const index=[];
 try{
- if(stage==='pilot'){
-  const credit=E.creditProbe();fs.writeFileSync(out+'/credit-probe.json',JSON.stringify(credit,null,2)+'\n');
-  for(const spec of plan.pilot){const r=E.run(spec),repeat=E.run(spec);assert.equal(E.hash(r),E.hash(repeat),'exact seeded pilot replay');assert(r.voyages.some(v=>v.bought>=10),'meaningful trade');assert(new Set(r.voyages.flatMap(v=>[v.from,v.to])).size>=3,'actual route coverage');if(spec.scenario==='luebeck_convoy'){for(const hull of r.initial.ships)assert(r.events.some(e=>e.type==='buy'&&e.shipId===hull.id),'both convoy hulls actually used');assert(r.events.filter(e=>e.type==='travel').every(e=>e.ships.length===2));}
-   index.push({...save(id(spec),r),exactRepeatHash:E.hash(repeat)});console.log(JSON.stringify(index.at(-1)));fs.writeFileSync(out+'/pilot.json',JSON.stringify(index,null,2)+'\n');
+ if(stage==='pilot'||stage==='pilot-retry'){
+  if(stage==='pilot'){const credit=E.creditProbe();fs.writeFileSync(out+'/credit-probe.json',JSON.stringify(credit,null,2)+'\n');}
+  for(const spec of plan.pilot){const r=E.run(spec),repeat=E.run(spec);assert.equal(E.hash(r),E.hash(repeat),'exact seeded pilot replay');const saved=save(id(spec),r);assert(r.voyages.some(v=>v.bought>=10),'meaningful trade');assert(new Set(r.voyages.flatMap(v=>[v.from,v.to])).size>=2,'actual route coverage: a real route, not forced third-port exploration');if(spec.scenario==='luebeck_convoy'){for(const hull of r.initial.ships)assert(r.events.some(e=>e.type==='buy'&&e.shipId===hull.id),'both convoy hulls actually used');assert(r.events.filter(e=>e.type==='travel').every(e=>e.ships.length===2));}
+   index.push({...saved,exactRepeatHash:E.hash(repeat)});console.log(JSON.stringify(index.at(-1)));fs.writeFileSync(out+'/pilot.json',JSON.stringify(index,null,2)+'\n');
   }
  }else if(stage==='baseline'){
   const pilots=JSON.parse(fs.readFileSync(out+'/pilot.json'));assert.equal(pilots.length,3);

@@ -13,3 +13,11 @@ Analyse unterscheidet: Bargeldschwelle, schuldengepufferte strategiegerechte Liq
 Gebührenauswahl erst nach Baselines anhand aller45 regulären Starts (auch nicht etablierte Fälle enthalten), Kontrollpunkt bis Tag120; Details und Rasterformel vorab im Plan. Zahlung nominal früh oder erst bei E plus verbleibender Reserve. Spätere Fortsetzung120 Tage und mindestens3 Reisen, insgesamt höchstens360 Tage. Unter10 gekaufte Einheiten pro Reise gelten nicht als sinnvoll beladener Handel;3 solche Reisen in Folge oder Abfahrtsblockade werden als Stillstandshinweis berichtet. Leere Erkundung und unumkehrbare Insolvenz sind gesondert zu beurteilen.
 
 Synthetische Schnigge-/Konvoi-Unternehmen ergänzen Typ-/Kapitalsensitivität; kein regulärer Neuspielerstart und kein nachgespielter Flottenkauf. Keine Produktions-, Speicher-, Politik- oder Gildenänderung. Keine Stundenumrechnung. Gebührenwahl ausschließlich Nutzerentscheidung.
+
+## Technischer Pilotabbruch und begrenzte Korrektur
+
+Prüfcode vor erster Ausführung: `e56bd81b` (vollständige ID im Stufenmarker). Kreditprobe bestanden:5.000+4.482 Kredit=9.482 liquide Gold bei unverändertem Nettovermögen und keinem neuen Tag. Bereits damit ist „Gebühr über5.000“ kein Schutz gegen sofortige Kreditfinanzierung.
+
+Erster Bergen-Pilot plus exakte Wiederholung liefen durch native Validierung/Bilanzen und Reproduktionsvergleich, wurden aber anschließend von der zusätzlichen Abdeckungsassertion „mindestens3 Häfen je Fall“ gestoppt. Vorsichtiger Handel darf bei2 Häfen bleiben; ein dritter erzwungener Hafen würde die Strategie ändern. Diese Testannahme war zu eng und wird auf mindestens2 tatsächlich bereiste Häfen geändert. Die breitere Städte-/Routenabdeckung wird anschließend über die gesamte Serie gemessen, nicht behauptet. Keine Wirtschafts-/Strategieänderung. Originalfehler/Marker/Log bleiben erhalten.
+
+Das erste Programm speicherte den vollständigen Rohpfad erst nach dieser Assertion; diese beiden Ausführungen sind deshalb **nicht als auswertbare Baselines gesichert**. Begrenzte Wiederholung der3 Pilotfälle mit vorgezogener Rohdatensicherung ist notwendig. Kreditprobe wird nicht wiederholt. Zusatzkosten2 Ausführungen, geplante Gesamtzahl Baseline-/Pilot-/Mechanikinstanzen81 statt79, weiterhin unter100. Keine anschließende Großserie bei erneuter ungeklärter technischer Störung.
