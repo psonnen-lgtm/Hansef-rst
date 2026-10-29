@@ -25,3 +25,7 @@ Das erste Programm speicherte den vollständigen Rohpfad erst nach dieser Assert
 ## Pilot freigegeben
 
 Begrenzte Korrektur vor Wiederholung veröffentlicht: `ef18beed12f797ab5b7f4c3dd0d5ed29c84967e4`. Drei Piloten mit jeweils exakter Wiederholung bestanden; native Validatoren, Bargeld-/Schulden-/Nettogeldbilanzen, beide tatsächlich genutzten Konvoirümpfe und reale zusätzliche Routen geprüft. [Gemessene Abdeckung](../../../tests/analysis/q1_05/results/pilot-coverage.json). Jetzt erst Freigabe der restlichen72 Baselines. Ergebnisdateien werden nicht vorweggenommen.
+
+## Baselines abgeschlossen, Gebühren erst jetzt ausgewählt
+
+75 verschiedene Baselines vollständig gespeichert. In45 regulären Starts betragen die vorab definierten25/50/75%-Quantile tragfähiger Gebührenkapazität am letzten beobachteten Kontrollpunkt bis Tag120 **12.495 /17.570 /26.437 Gold**. Aufrundung im500er-Testraster und Mindestabstand ergeben **12.500 /18.000 /26.500**. Synthetisch reichere Flotten sind aus dieser Auswahl ausgeschlossen. Alle75 Fälle erreichen das E-Analysekriterium; keine Voraussage für beliebige Spieler. Nun erst36 begrenzte Zahlungsgegenläufe, keine Gebührentscheidung.

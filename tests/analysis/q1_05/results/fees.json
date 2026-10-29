@@ -1,0 +1,435 @@
+{
+  "sourceCommit": "4da818950f73f69e6f8cff5603936c9e36746670",
+  "rule": {
+    "population": "45 native-start baselines only; all cases included, E-false capacity=0",
+    "referenceDay": 120,
+    "quantiles": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "step": 500,
+    "minimumSpacing": 1.25,
+    "lowerFloor": "strictly above native fresh legal cash+credit limit, established by probe",
+    "rounding": "ceil to 500",
+    "formula": "L=ceil500(max(instantCreditLiquidity+1,q25)); M=ceil500(max(q50,1.25*L)); H=ceil500(max(q75,1.25*M))"
+  },
+  "instantCreditLiquidity": 9482,
+  "quantiles": [
+    12495,
+    17570,
+    26437
+  ],
+  "fees": [
+    12500,
+    18000,
+    26500
+  ],
+  "sample": [
+    {
+      "id": "bergen_kogge__cautious__10003",
+      "day": 120,
+      "gold": 12135,
+      "debt": 0,
+      "established": true,
+      "freeCash": 11143,
+      "feeCapacity": 11143
+    },
+    {
+      "id": "nowgorod_kogge__normal__10003",
+      "day": 107,
+      "gold": 9814,
+      "debt": 0,
+      "established": true,
+      "freeCash": 9246,
+      "feeCapacity": 9246
+    },
+    {
+      "id": "luebeck_kogge__cautious__10003",
+      "day": 118,
+      "gold": 30114,
+      "debt": 0,
+      "established": true,
+      "freeCash": 29022,
+      "feeCapacity": 29022
+    },
+    {
+      "id": "luebeck_kogge__cautious__10004",
+      "day": 118,
+      "gold": 20350,
+      "debt": 0,
+      "established": true,
+      "freeCash": 19266,
+      "feeCapacity": 19266
+    },
+    {
+      "id": "luebeck_kogge__cautious__10005",
+      "day": 120,
+      "gold": 25798,
+      "debt": 0,
+      "established": true,
+      "freeCash": 24446,
+      "feeCapacity": 24446
+    },
+    {
+      "id": "luebeck_kogge__normal__10003",
+      "day": 118,
+      "gold": 34510,
+      "debt": 0,
+      "established": true,
+      "freeCash": 33914,
+      "feeCapacity": 33914
+    },
+    {
+      "id": "luebeck_kogge__normal__10004",
+      "day": 118,
+      "gold": 29697,
+      "debt": 0,
+      "established": true,
+      "freeCash": 29103,
+      "feeCapacity": 29103
+    },
+    {
+      "id": "luebeck_kogge__normal__10005",
+      "day": 120,
+      "gold": 29912,
+      "debt": 0,
+      "established": true,
+      "freeCash": 29070,
+      "feeCapacity": 29070
+    },
+    {
+      "id": "luebeck_kogge__aggressive__10003",
+      "day": 119,
+      "gold": 41059,
+      "debt": 1529.1717048083365,
+      "established": true,
+      "freeCash": 39068.83423273185,
+      "feeCapacity": 39068.83423273185
+    },
+    {
+      "id": "luebeck_kogge__aggressive__10004",
+      "day": 118,
+      "gold": 33312,
+      "debt": 1528.9242160446456,
+      "established": true,
+      "freeCash": 31391.568684551614,
+      "feeCapacity": 31391.568684551614
+    },
+    {
+      "id": "luebeck_kogge__aggressive__10005",
+      "day": 120,
+      "gold": 39662,
+      "debt": 1529.4192336333251,
+      "established": true,
+      "freeCash": 37469.46815975397,
+      "feeCapacity": 37469.46815975397
+    },
+    {
+      "id": "luebeck_kogge__optimized_observed__10003",
+      "day": 118,
+      "gold": 40436,
+      "debt": 0,
+      "established": true,
+      "freeCash": 39840,
+      "feeCapacity": 39840
+    },
+    {
+      "id": "luebeck_kogge__optimized_observed__10004",
+      "day": 118,
+      "gold": 31812,
+      "debt": 0,
+      "established": true,
+      "freeCash": 31218,
+      "feeCapacity": 31218
+    },
+    {
+      "id": "luebeck_kogge__optimized_observed__10005",
+      "day": 120,
+      "gold": 34785,
+      "debt": 0,
+      "established": true,
+      "freeCash": 33943,
+      "feeCapacity": 33943
+    },
+    {
+      "id": "luebeck_kogge__poor_then_normal__10003",
+      "day": 118,
+      "gold": 27049,
+      "debt": 0,
+      "established": true,
+      "freeCash": 26437,
+      "feeCapacity": 26437
+    },
+    {
+      "id": "luebeck_kogge__poor_then_normal__10004",
+      "day": 118,
+      "gold": 25737,
+      "debt": 0,
+      "established": true,
+      "freeCash": 25153,
+      "feeCapacity": 25153
+    },
+    {
+      "id": "luebeck_kogge__poor_then_normal__10005",
+      "day": 120,
+      "gold": 30769,
+      "debt": 0,
+      "established": true,
+      "freeCash": 29927,
+      "feeCapacity": 29927
+    },
+    {
+      "id": "bergen_kogge__cautious__10004",
+      "day": 119,
+      "gold": 13936,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12708,
+      "feeCapacity": 12708
+    },
+    {
+      "id": "bergen_kogge__cautious__10005",
+      "day": 114,
+      "gold": 13697,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12495,
+      "feeCapacity": 12495
+    },
+    {
+      "id": "bergen_kogge__normal__10003",
+      "day": 120,
+      "gold": 15484,
+      "debt": 0,
+      "established": true,
+      "freeCash": 14992,
+      "feeCapacity": 14992
+    },
+    {
+      "id": "bergen_kogge__normal__10004",
+      "day": 119,
+      "gold": 18298,
+      "debt": 0,
+      "established": true,
+      "freeCash": 17570,
+      "feeCapacity": 17570
+    },
+    {
+      "id": "bergen_kogge__normal__10005",
+      "day": 114,
+      "gold": 18278,
+      "debt": 0,
+      "established": true,
+      "freeCash": 17576,
+      "feeCapacity": 17576
+    },
+    {
+      "id": "bergen_kogge__aggressive__10003",
+      "day": 120,
+      "gold": 20366,
+      "debt": 1529.4192336333251,
+      "established": true,
+      "freeCash": 18548.759754737013,
+      "feeCapacity": 18548.759754737013
+    },
+    {
+      "id": "bergen_kogge__aggressive__10004",
+      "day": 119,
+      "gold": 22555,
+      "debt": 1529.1717048083365,
+      "established": true,
+      "freeCash": 20493.255285363433,
+      "feeCapacity": 20493.255285363433
+    },
+    {
+      "id": "bergen_kogge__aggressive__10005",
+      "day": 114,
+      "gold": 20588,
+      "debt": 1527.9346614731999,
+      "established": true,
+      "freeCash": 18554.927122491237,
+      "feeCapacity": 18554.927122491237
+    },
+    {
+      "id": "bergen_kogge__optimized_observed__10003",
+      "day": 120,
+      "gold": 18866,
+      "debt": 0,
+      "established": true,
+      "freeCash": 18374,
+      "feeCapacity": 18374
+    },
+    {
+      "id": "bergen_kogge__optimized_observed__10004",
+      "day": 119,
+      "gold": 20875,
+      "debt": 0,
+      "established": true,
+      "freeCash": 20147,
+      "feeCapacity": 20147
+    },
+    {
+      "id": "bergen_kogge__optimized_observed__10005",
+      "day": 114,
+      "gold": 18576,
+      "debt": 0,
+      "established": true,
+      "freeCash": 17874,
+      "feeCapacity": 17874
+    },
+    {
+      "id": "bergen_kogge__poor_then_normal__10003",
+      "day": 120,
+      "gold": 12912,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12420,
+      "feeCapacity": 12420
+    },
+    {
+      "id": "bergen_kogge__poor_then_normal__10004",
+      "day": 119,
+      "gold": 14941,
+      "debt": 0,
+      "established": true,
+      "freeCash": 14213,
+      "feeCapacity": 14213
+    },
+    {
+      "id": "bergen_kogge__poor_then_normal__10005",
+      "day": 114,
+      "gold": 15272,
+      "debt": 0,
+      "established": true,
+      "freeCash": 14570,
+      "feeCapacity": 14570
+    },
+    {
+      "id": "nowgorod_kogge__cautious__10003",
+      "day": 107,
+      "gold": 6895,
+      "debt": 0,
+      "established": true,
+      "freeCash": 5827,
+      "feeCapacity": 5827
+    },
+    {
+      "id": "nowgorod_kogge__cautious__10004",
+      "day": 106,
+      "gold": 11724,
+      "debt": 0,
+      "established": true,
+      "freeCash": 10602,
+      "feeCapacity": 10602
+    },
+    {
+      "id": "nowgorod_kogge__cautious__10005",
+      "day": 120,
+      "gold": 9503,
+      "debt": 0,
+      "established": true,
+      "freeCash": 8359,
+      "feeCapacity": 8359
+    },
+    {
+      "id": "nowgorod_kogge__normal__10004",
+      "day": 106,
+      "gold": 15370,
+      "debt": 0,
+      "established": true,
+      "freeCash": 14748,
+      "feeCapacity": 14748
+    },
+    {
+      "id": "nowgorod_kogge__normal__10005",
+      "day": 120,
+      "gold": 12370,
+      "debt": 0,
+      "established": true,
+      "freeCash": 11726,
+      "feeCapacity": 11726
+    },
+    {
+      "id": "nowgorod_kogge__aggressive__10003",
+      "day": 107,
+      "gold": 14906,
+      "debt": 1526.2044818360982,
+      "established": true,
+      "freeCash": 13014.240310728068,
+      "feeCapacity": 13014.240310728068
+    },
+    {
+      "id": "nowgorod_kogge__aggressive__10004",
+      "day": 106,
+      "gold": 19005,
+      "debt": 1525.9574733025493,
+      "established": true,
+      "freeCash": 17004.027141005638,
+      "feeCapacity": 17004.027141005638
+    },
+    {
+      "id": "nowgorod_kogge__aggressive__10005",
+      "day": 120,
+      "gold": 14336,
+      "debt": 1529.4192336333251,
+      "established": true,
+      "freeCash": 12355.619634471868,
+      "feeCapacity": 12355.619634471868
+    },
+    {
+      "id": "nowgorod_kogge__optimized_observed__10003",
+      "day": 107,
+      "gold": 11440,
+      "debt": 0,
+      "established": true,
+      "freeCash": 10872,
+      "feeCapacity": 10872
+    },
+    {
+      "id": "nowgorod_kogge__optimized_observed__10004",
+      "day": 106,
+      "gold": 15940,
+      "debt": 0,
+      "established": true,
+      "freeCash": 15318,
+      "feeCapacity": 15318
+    },
+    {
+      "id": "nowgorod_kogge__optimized_observed__10005",
+      "day": 120,
+      "gold": 13112,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12468,
+      "feeCapacity": 12468
+    },
+    {
+      "id": "nowgorod_kogge__poor_then_normal__10003",
+      "day": 107,
+      "gold": 8495,
+      "debt": 0,
+      "established": true,
+      "freeCash": 7927,
+      "feeCapacity": 7927
+    },
+    {
+      "id": "nowgorod_kogge__poor_then_normal__10004",
+      "day": 106,
+      "gold": 13290,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12668,
+      "feeCapacity": 12668
+    },
+    {
+      "id": "nowgorod_kogge__poor_then_normal__10005",
+      "day": 120,
+      "gold": 13616,
+      "debt": 0,
+      "established": true,
+      "freeCash": 12972,
+      "feeCapacity": 12972
+    }
+  ]
+}
