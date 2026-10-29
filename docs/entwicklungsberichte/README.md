@@ -311,3 +311,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Q1.01 – Qualitätsaudit, Sicherungspunkt A
 
 29.10.2026: [Bestandsaufnahme](Q1_01/Q1_01_bestandsaufnahme.md), [Remotezweige](Q1_01/Q1_01_zweige.csv). Aktuelle Entwicklungsbasis erneut geprüft; getrennte Test-/Prototypstände, keine Produktänderung oder neue Simulation.
+
+
+### Q1.01 – Sicherungspunkt B
+
+[Wirtschaft und Schifffahrt](Q1_01/Q1_01_wirtschaft_und_schifffahrt.md): Produktionsregeln, historische Ergebnisgrenzen, Anerkennungslücke und pro-Fahrt-Risiko. Keine neuen Spielverläufe oder Parameteränderungen.
