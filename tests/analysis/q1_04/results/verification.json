@@ -1,0 +1,26 @@
+{
+  "phase": "Q1.04",
+  "dateBerlin": "2026-10-29",
+  "method": "read-only full old-file, link, CSV and frozen-source validation",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "oldTrackedFilesChecked": 3232,
+  "oldFilesEqualExceptAppendOnlyIndex": true,
+  "sixRequiredReports": true,
+  "relativeLinksChecked": 49,
+  "baselineRows": 10,
+  "feeCounterfactualRows": 15,
+  "all26TechnicalExecutionsPassed": true,
+  "empiricalContinuationCountsByFee": [
+    5,
+    5,
+    4
+  ],
+  "fees": [
+    1100,
+    2800,
+    5600
+  ],
+  "allFrozenSourcesUnchanged": true,
+  "CSVNewlinesLF": true,
+  "noNewSimulationOrGuildImplementation": true
+}

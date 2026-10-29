@@ -1,0 +1,363 @@
+{
+  "phase": "Q1.04",
+  "readOnly": true,
+  "newDynamicRuns": 0,
+  "postHoc": true,
+  "notUsedForFeeSelectionOrRerunningPaths": true,
+  "reason": "initial basket/fee/repair/debt proxy did not include operational cash retained by chosen policy",
+  "diagnosticOnly": "combined reserve = original proxy plus planned strategy retained cash at after-fee balance; not a proof of profitable continuation",
+  "actualPayments": [
+    {
+      "strategy": "cautious",
+      "fee": 1100,
+      "paymentDay": 0,
+      "cashAfterPayment": 3900,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 2145.0,
+      "combinedReserve": 2387.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "cautious",
+      "fee": 2800,
+      "paymentDay": 0,
+      "cashAfterPayment": 2200,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 1210.0,
+      "combinedReserve": 1452.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "cautious",
+      "fee": 5600,
+      "paymentDay": 4,
+      "cashAfterPayment": 618,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 800,
+      "combinedReserve": 1042,
+      "combinedReserveCovered": false,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "normal",
+      "fee": 1100,
+      "paymentDay": 0,
+      "cashAfterPayment": 3900,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 975.0,
+      "combinedReserve": 1217.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "normal",
+      "fee": 2800,
+      "paymentDay": 0,
+      "cashAfterPayment": 2200,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 550.0,
+      "combinedReserve": 792.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "normal",
+      "fee": 5600,
+      "paymentDay": 4,
+      "cashAfterPayment": 1479,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 369.75,
+      "combinedReserve": 611.75,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "aggressive",
+      "fee": 1100,
+      "paymentDay": 0,
+      "cashAfterPayment": 5400,
+      "originalReserve": 1742.9714629130392,
+      "additionalStrategyBuffer": 270.0,
+      "combinedReserve": 2012.9714629130392,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "aggressive",
+      "fee": 2800,
+      "paymentDay": 0,
+      "cashAfterPayment": 3700,
+      "originalReserve": 1742.9714629130392,
+      "additionalStrategyBuffer": 185.0,
+      "combinedReserve": 1927.9714629130392,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "aggressive",
+      "fee": 5600,
+      "paymentDay": 4,
+      "cashAfterPayment": 4332,
+      "originalReserve": 1743.943554986206,
+      "additionalStrategyBuffer": 216.60000000000002,
+      "combinedReserve": 1960.543554986206,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "optimized_observed",
+      "fee": 1100,
+      "paymentDay": 0,
+      "cashAfterPayment": 3900,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 585.0,
+      "combinedReserve": 827.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "optimized_observed",
+      "fee": 2800,
+      "paymentDay": 0,
+      "cashAfterPayment": 2200,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 330.0,
+      "combinedReserve": 572.0,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "optimized_observed",
+      "fee": 5600,
+      "paymentDay": 4,
+      "cashAfterPayment": 1766,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 300,
+      "combinedReserve": 542,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "poor_then_normal",
+      "fee": 1100,
+      "paymentDay": 0,
+      "cashAfterPayment": 3900,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 100,
+      "combinedReserve": 342,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "poor_then_normal",
+      "fee": 2800,
+      "paymentDay": 0,
+      "cashAfterPayment": 2200,
+      "originalReserve": 242,
+      "additionalStrategyBuffer": 100,
+      "combinedReserve": 342,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    },
+    {
+      "strategy": "poor_then_normal",
+      "fee": 5600,
+      "paymentDay": 15,
+      "cashAfterPayment": 1619,
+      "originalReserve": 342,
+      "additionalStrategyBuffer": 404.75,
+      "combinedReserve": 746.75,
+      "combinedReserveCovered": true,
+      "observedNotPredictiveValidation": true
+    }
+  ],
+  "baselineArithmeticAvailability": [
+    {
+      "strategy": "normal",
+      "seed": 10001,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10001,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10002,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "normal",
+      "seed": 10002,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10001,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10002,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10001,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10002,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10001,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10002,
+      "fee": 1100,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "normal",
+      "seed": 10001,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10001,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10002,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "normal",
+      "seed": 10002,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10001,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10002,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10001,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10002,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10001,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10002,
+      "fee": 2800,
+      "firstCombinedProxyDay": 0
+    },
+    {
+      "strategy": "normal",
+      "seed": 10001,
+      "fee": 5600,
+      "firstCombinedProxyDay": 4
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10001,
+      "fee": 5600,
+      "firstCombinedProxyDay": 9
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10002,
+      "fee": 5600,
+      "firstCombinedProxyDay": 13
+    },
+    {
+      "strategy": "normal",
+      "seed": 10002,
+      "fee": 5600,
+      "firstCombinedProxyDay": 7
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10001,
+      "fee": 5600,
+      "firstCombinedProxyDay": 4
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10002,
+      "fee": 5600,
+      "firstCombinedProxyDay": 4
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10001,
+      "fee": 5600,
+      "firstCombinedProxyDay": 4
+    },
+    {
+      "strategy": "optimized_observed",
+      "seed": 10002,
+      "fee": 5600,
+      "firstCombinedProxyDay": 7
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10001,
+      "fee": 5600,
+      "firstCombinedProxyDay": 15
+    },
+    {
+      "strategy": "poor_then_normal",
+      "seed": 10002,
+      "fee": 5600,
+      "firstCombinedProxyDay": 19
+    }
+  ],
+  "limitations": [
+    "designed after observed cautious5600 failure, no independent predictive validation",
+    "more conservative than original proxy; not a new productive rule",
+    "availability uses unchanged uncharged baseline, not a rerun with delayed charge"
+  ]
+}
