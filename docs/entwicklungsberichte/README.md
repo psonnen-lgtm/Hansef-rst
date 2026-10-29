@@ -306,3 +306,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### R1.11 – Abschluss: Vergleich und Karrierekonzept
 
 [Gesamtbericht](R1_11/R1_11_forschungsbericht.md) · [Codevergleich](R1_11/R1_11_D_vergleich_hansefuerst.md) · [90-Stunden-Entwurf](R1_11/R1_11_90_stunden_karrierekonzept.md) · [Fortgeschriebener Katalog](forschungskatalog/R1_11_politik_gesellschaft.md). Vier Sicherungspunkte; keine Produktänderung oder Folgephase.
+
+
+## R1.12 – Spielzeit bis Gildenaufnahme, begrenzter Abschluss
+
+29.10.2026: [Forschungsbericht](R1_12/R1_12_forschungsbericht.md), [Spielzeit/Ablauf](R1_12/R1_12_spielzeit_und_handelsverlauf.md), [Gilde](R1_12/R1_12_gildenaufnahme.md), [Vergleich](R1_12/R1_12_vergleich_hansefuerst.md). DOSBox-Titel erreicht, danach unlesbare Aufnahme; keine neue Partie/Handelsreihe oder aktive Beitrittszeit gemessen. Quellen Q1.04/Q1.05 ausgewertet, keine Produktänderung.

@@ -1,0 +1,22 @@
+{
+  "phase": "R1.12",
+  "status": "blocked_before_new_game",
+  "emulator": "DOSBox 0.74-3",
+  "cycles": 10000,
+  "title_observed": true,
+  "new_game_verified": false,
+  "save_load_verified": false,
+  "new_completed_voyages": 0,
+  "new_purchases": 0,
+  "new_sales": 0,
+  "active_minutes_until_possible_entry": null,
+  "active_minutes_until_entry": null,
+  "game_days_to_entry": null,
+  "new_fee": null,
+  "historical_R111_fee": 20630,
+  "minimum_reputation": null,
+  "successful_entry_observed": false,
+  "blocker": "Persistent unreadable color raster after title transition; root cause not isolated",
+  "q105_commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+  "q104_commit": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36"
+}
