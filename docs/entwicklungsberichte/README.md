@@ -321,3 +321,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### Q1.01 – Sicherungspunkt C
 
 [Politik und Langzeitmotivation](Q1_01/Q1_01_politik_und_langzeitmotivation.md), [Browserprüfstatus](Q1_01/Q1_01_browserstatus.json). Vollständige Karrierebedingungen und statischer Prüfpunkt Ansicht/persönliche Vorsprache; Browserstart an fehlender Chromium-Datei gescheitert, keine Laufzeitergebnisse behauptet.
+
+
+### Q1.01 – Sicherungspunkt D
+
+[Bedienung und Atmosphäre](Q1_01/Q1_01_bedienung_und_atmosphaere.md), [Originalvergleich](Q1_01/Q1_01_originalvergleich.md). Neue Prüfung statisch; historische bytegleiche Chromium-Nachweise ausdrücklich getrennt, keine aktuelle Safari-/Gerätefreigabe.

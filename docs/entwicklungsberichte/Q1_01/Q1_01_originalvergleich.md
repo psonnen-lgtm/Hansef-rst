@@ -1,0 +1,32 @@
+# Q1.01 – Vergleich mit dem Original anhand bestehender Forschung
+
+29.10.2026. Keine neue DOS-/Originaluntersuchung. Historische Grundlage ist der unveränderte [Katalog R1.11](../forschungskatalog/R1_11_politik_gesellschaft.md), [strukturierter Katalog](../forschungskatalog/mechaniken_R1_11.json), R1.05–R1.11. Hansefürst-Nachweise hier erneut an **`02ee6b8fc1507ad078b6b596c333e50d91eeea64`** gebunden. Empfehlungen sind unverbindliche Designurteile, keine Messung von Spaß oder Umsetzungsfreigabe.
+
+Status: **O** direkt im Original beobachtet; **D** Originaldokumentation; **H** Hansefürst-Code; **Y** Hypothese; **U** ungeprüft. Der R1.11-Katalog bleibt historisch unverändert; dieser Auditvergleich ergänzt ihn versioniert.
+
+| Bereich | Original mit Quellenstatus | Hansefürst aktuell bestätigt (H) | Stärke/Schwäche und unverbindliche Empfehlung | Aufwand / Risiken (Y) |
+|---|---|---|---|---|
+| Handel/Preise | O R1.09:3 Waren/12 Vorgänge, getrennte Kauf-/Verkaufspreise und sichtbare Bestandsänderungen; genaue Formel U | 905 gleicher örtlicher Preis je Kauf/Verkauf, Mengenwirkung auf Preis erst später über regionalMarketDay | Verständlich und reibungsarm, große Sofortmengen wenig differenziert. **Weitere Forschung erforderlich**, Originalspread nicht blind kopieren | mittel–hoch; Margen, Anfängerliquidität, Altware und Aufträge betroffen |
+| Versorgung/Regionalität | O zeitliche Bestands-/Preisänderungen; D Versorgung/Verbrauch; Originalrezept U | 804–872 Profile, saldierte Bestandsflüsse, Knappheitsrückführung | Reale Bestände behalten; nicht mit vollständig simulierten Einwohnern verwechseln. **Beibehalten**, spätere gezielte Strategietests | mittel; Preise und Erholungssystem zusammen betrachten |
+| Schiffe/Besatzung | O R1.08 fünf Matrosen für5 Taler angeworben, Fahrten; D vier Originaltypen/Konvois | 101 Schnigge/Kogge/Holk, keine Besatzungsfelder im Kern; Zustand/Waffen/Konvois | Typunterschiede sinnvoll. Personalpflicht würde Such-/Stillstandsarbeit hinzufügen. **Nicht übernehmen** ohne eigenes Spielziel | hoch bei Personal, Savefelder und Rettungswege |
+| Reise/Zeiten | O Lübeck–Rostock2 bzw3 Tage; R1.10 fünf Fahrten/28 aufsummierte Tage, abhängig und kleine Stichprobe | 795/1019 DIST/Tempo/Zustand/Umschlag; gesunde Kogge gleiche Relation2Tage | Keine Gleichsetzung Originalkraier und Kogge. **Verbessern** nur nach konsistenter Wege-/Fristenplanung, keine Kopie aus Einzelmessung | mittel–hoch; globale Uhr, Handel, Zins, Dienste und Gerüchte |
+| Piraten/Ereignisse | D Piraten/Stürme; O kleine Reisestichproben und Mitteilungen; keine belastbare Originalrate | 1020 feste13/14/13/60%-Zweige je Fahrt, automatische Abwehr, begrenzte Folgen | Hansefürst nachvollziehbar, wenig Entscheidungsvielfalt. **Weitere Forschung erforderlich** zu Risiko je Fahrt/Zeit und Textwiederholung | mittel; Fernhandel/Holk und Konvoi besonders betroffen |
+| Städte/Menüs | O R1.07/R1.11 Gebäude und kleine Trefferzonen, modale Antworten | 878ff/CityLife eigene Stadtbilder, Hotspots, Namenhilfen, Tastaturfokus und Formularpanels | Weltorte tragen Atmosphäre; nicht Original-Klickhürden übernehmen. **Beibehalten/Verbessern** nach echten Touchbeobachtungen | niedrig–mittel; Fokus/Scrolling, keine Saveänderung nötig |
+| Bank/Kosten | O Kreditangebote/Zahlungen, ungeklärte Originalkostenreste; Zinsbasis teils U | 874/911–972 klare2/6%-Spieljahreszinsen,4/6/9-Gebühren,8Gold/Reparaturpunkt | Hansefürst erklärbarer; Gesamtgewinn verteilt. **Verbessern** durch zusammenhängenden Kostenbeleg | mittel; Kredit nicht als Gewinn, keine doppelte Gebührenbuchung |
+| Gesellschaft/Ruf | O R1.11 Almosen25 bezahlt, qualitative Kategorien unverändert sofort/+1Tag; D Feste/Hochzeiten/Schutzverdienste; exakte Punkte U | 906–910 Bad15G/1Tag, Tipps/Politikhinweise, Spenden mit Punkten, keine Pflichtspende | Klare Rückmeldung gut; Rufkauf darf lokale Leistungen nicht ersetzen. **Verbessern**, optionale Gesellschaft später nur mit eigenständigen Entscheidungen | mittel–hoch; globale55/90 und alte Rufwerte schützen |
+| Bürgermeister | O Wahltafel, keine Wahl; D Heimatbürgermeister, alle2 Jahre, Gemeinwohl/Rivalen; Stimmenformel U | 347–380/461–468 transparente deterministische Unterstützung, örtliche Dienste, feste Ziele, erneute Kandidatur | Kein bloßes Vermögensziel bereits erreicht; aktive Gegenkandidaten fehlen. **Beibehalten**, Vielfalt und Konkurrenz als getrennte spätere Konzepte | hoch bei KI; Ämter/Urkunden/Mietschuld/alte Regeln |
+| Eldermann/Langzeit | D überregionaler Ruf und Ältermann als Siegziel; reale Stunden U | 398–493 Bewährung,4Städte/2Räume/Hansevertrag; Weiterspielen möglich | Bestehende Zwischenziele gut, wiederholte Briefe gefährden Abwechslung. **Verbessern**,90Stunden zuerst als Hypothese validieren | hoch; Karrierezeit, Altansprüche, kein künstlicher Zeitstreckungszwang |
+
+## Besonders relevante Lehren
+
+1. Räumliche Stadtfunktionen und gesellschaftlicher Kontext können Handel emotional verbinden. Das gilt als Designurteil, nicht gemessene90-Stunden-Wirkung.
+2. Die Originaldokumentation trennt Reichtum und politische Beliebtheit. Hansefürst erfüllt dies teilweise bereits durch lokale Dienste; ein neues Politiksystem ist deshalb nicht automatisch nötig.
+3. Fehlende quantitative Originalformeln sind keine Lizenz, politische Punkte oder Ereignisraten zu erfinden. Transparente eigene Regeln können verständlicher sein als historische Undurchsichtigkeit.
+4. Historische Routine darf nicht allein aus Vorbildtreue übernommen werden. Neue Entscheidungen, Erholung und erkennbare Folgen sind wichtiger als zusätzliche Klicks oder Wartejahre.
+5. Die kleinen Originalstichproben begründen keine Kalibrierung von Piratenrate, gesellschaftlicher Punktwirkung oder aktiver Spieldauer.
+
+## Quellen und konkrete Codebelege
+
+Original: [R1.08](../R1_08/R1_08_forschungsbericht.md), [R1.09](../R1_09/R1_09_forschungsbericht.md), [R1.10](../R1_10/R1_10_forschungsbericht.md), [R1.11](../R1_11/R1_11_forschungsbericht.md). Keine Originaldateien, Bilder oder Screenshots übernommen.
+
+Hansefürst: [Wirtschaft/Schifffahrt mit Zeilenbelegen](Q1_01_wirtschaft_und_schifffahrt.md), [Politik](Q1_01_politik_und_langzeitmotivation.md), [Bedienung](Q1_01_bedienung_und_atmosphaere.md). Die wiederholt geprüfte Entwicklungsdatei ist aktuell weiterhin derselbe Produkt-Blob wie die historische R1.11-Vergleichsbasis; das wurde am Audittag durch Remoteprüfung festgestellt, nicht vorausgesetzt.
