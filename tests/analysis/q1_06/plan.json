@@ -1,0 +1,98 @@
+{
+  "date": "2026-10-29",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "productHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "references": [
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_gesamtbericht.md"
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_gesamtbericht.md"
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_rohdaten.json"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_gesamtbericht.md"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_karrieresystem.md"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_bestandsschutz_v13.md"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_politische_anwesenheit.md"
+    },
+    {
+      "commit": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36",
+      "path": "docs/entwicklungsberichte/Q1_04/Q1_04_gesamtbericht.md"
+    },
+    {
+      "commit": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36",
+      "path": "docs/entwicklungsberichte/Q1_04/Q1_04_simulationsgrenzen.md"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "docs/entwicklungsberichte/Q1_05/Q1_05_gesamtbericht.md"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "docs/entwicklungsberichte/Q1_05/Q1_05_entscheidungsvorlage.md"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "tests/analysis/q1_05/results/audit.json"
+    },
+    {
+      "commit": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "path": "docs/entwicklungsberichte/R1_11/R1_11_90_stunden_karrierekonzept.md"
+    }
+  ],
+  "functions": [
+    "freshPolitics",
+    "politicalOffer",
+    "politicalSupport",
+    "mayorQuote",
+    "politicalOfficeProof",
+    "politicalRecord",
+    "politicalTrade",
+    "witnessPoliticalJob",
+    "finishPoliticalAccord",
+    "runMayorElection",
+    "requestPoliticalEndorsement",
+    "acceptHanseAgreement",
+    "witnessHanseAgreement",
+    "finishHanseAgreement",
+    "hanseQuote",
+    "runHanseAssembly",
+    "validatePolitics",
+    "migratePolitics",
+    "politicalCareerModel",
+    "politicalRumorPanel",
+    "promote",
+    "donationGain",
+    "donate",
+    "completeQuests",
+    "consumeOrigins",
+    "creditLimit",
+    "selectFleetShip"
+  ],
+  "scope": "Pure conception, fixed-source reading and exact-rational model arithmetic. No game functions called. No implementation, saves, migration, economic simulation or active rules.",
+  "models": {
+    "A": "100*(services+5*pledges+decisions)/75, existing targets",
+    "B": "same local0..75 score, target ceil(3*oldTarget/4)",
+    "C": "services0..40 +10*pledges0..40 +20*min(accord,3)/3; old targets"
+  },
+  "grid": "supply0..12,accord0..12; feasible distinct periods from max(s,a) to s+a. Existing six-service/three-period/two-kind gates retained ONLY for comparison, not implicitly approved for future career.",
+  "fee": "12500 provisional test value from this request, not final",
+  "recommendationsNotApproved": true
+}
