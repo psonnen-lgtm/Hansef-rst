@@ -1,0 +1,1 @@
+{"readOnly":true,"distinctLedgers":25,"totalExecutions":26,"candidates":[1100,2800,5600],"fees":[{"fee":1100,"proxy":10,"empirical":5,"stagnating":0,"n":5},{"fee":2800,"proxy":10,"empirical":5,"stagnating":0,"n":5},{"fee":5600,"proxy":10,"empirical":4,"stagnating":1,"n":5}]}

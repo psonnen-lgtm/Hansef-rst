@@ -1,0 +1,4 @@
+"fee","baselineN","nominalAtNewGame","nominalWithinHorizon","reserveProxyWithinHorizon","counterfactualN","actualPayments","empiricalContinuationSupported","hardBlockedCounterfactual","policyStagnationCounterfactual"
+"1100","10","10","10","10","5","5","5","0","0"
+"2800","10","10","10","10","5","5","5","0","0"
+"5600","10","0","10","10","5","5","4","0","1"
