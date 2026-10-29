@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-29",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "productHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "previous": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36",
+  "maximumDays": 240,
+  "maximumDecisionCycles": 200,
+  "feeSearchDays": 240,
+  "continuationDays": 120,
+  "continuationVoyages": 3,
+  "absoluteFeeDays": 360,
+  "seeds": [
+    10003,
+    10004,
+    10005
+  ],
+  "strategies": [
+    "cautious",
+    "normal",
+    "aggressive",
+    "optimized_observed",
+    "poor_then_normal"
+  ],
+  "scenarios": [
+    {
+      "id": "luebeck_kogge",
+      "city": 0,
+      "gold": 5000,
+      "types": [
+        1
+      ],
+      "nativeStart": true
+    },
+    {
+      "id": "bergen_kogge",
+      "city": 6,
+      "gold": 5000,
+      "types": [
+        1
+      ],
+      "nativeStart": true
+    },
+    {
+      "id": "nowgorod_kogge",
+      "city": 9,
+      "gold": 5000,
+      "types": [
+        1
+      ],
+      "nativeStart": true
+    },
+    {
+      "id": "luebeck_schnigge",
+      "city": 0,
+      "gold": 5000,
+      "types": [
+        0
+      ],
+      "nativeStart": false
+    },
+    {
+      "id": "luebeck_convoy",
+      "city": 0,
+      "gold": 8000,
+      "types": [
+        1,
+        2
+      ],
+      "nativeStart": false
+    }
+  ],
+  "pilot": [
+    {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10003
+    },
+    {
+      "scenario": "luebeck_convoy",
+      "strategy": "normal",
+      "seed": 10003
+    }
+  ],
+  "feeCases": [
+    {
+      "scenario": "luebeck_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10004
+    },
+    {
+      "scenario": "luebeck_kogge",
+      "strategy": "aggressive",
+      "seed": 10005
+    },
+    {
+      "scenario": "luebeck_schnigge",
+      "strategy": "optimized_observed",
+      "seed": 10003
+    },
+    {
+      "scenario": "luebeck_convoy",
+      "strategy": "poor_then_normal",
+      "seed": 10004
+    }
+  ],
+  "budget": {
+    "uniqueBaselines": 75,
+    "pilotExactRepeats": 3,
+    "creditProbe": 1,
+    "baselineEngineCreations": 79,
+    "feeContinuations": 36
+  },
+  "milestone": {
+    "meaningfulLoadedUnits": 10,
+    "loadedVoyages": 4,
+    "lastLoadedVoyages": 3,
+    "positiveInLast3": 2,
+    "earnedNetCashPositive": true,
+    "last3FreeReservesNonnegative": true,
+    "note": "Analysis proxy only, never an admission rule; no minimum date."
+  },
+  "reserve": "R0=10-unit cheapest stocked basket per hull + 2 native convoy fees + 80 future storm repair per hull + current repair + debt principal + shortest roundtrip interest + committed rent/arrears. Required cash=max(R0+policyFloor,R0/(1-policyFraction)).",
+  "feeSelection": {
+    "population": "45 native-start baselines only; all cases included, E-false capacity=0",
+    "referenceDay": 120,
+    "quantiles": [
+      0.25,
+      0.5,
+      0.75
+    ],
+    "step": 500,
+    "minimumSpacing": 1.25,
+    "lowerFloor": "strictly above native fresh legal cash+credit limit, established by probe",
+    "rounding": "ceil to 500",
+    "formula": "L=ceil500(max(instantCreditLiquidity+1,q25)); M=ceil500(max(q50,1.25*L)); H=ceil500(max(q75,1.25*M))"
+  },
+  "paymentTimings": [
+    "nominal: first checkpoint gold>=fee",
+    "stabilized: first checkpoint E true and remaining cash covers strategy-aware reserve"
+  ],
+  "stagnation": "After payment: >=3 consecutive voyages with <10 units bought (includes empty sailing), or travel-cash block; disclose censoring and exploration false positives, not proof of irreversible game bankruptcy.",
+  "stop": "Payment not reached by 240 => censored; after payment >=120 days and >=3 voyages, max360days/200cycles. No emergency rescue loan; aggressive initial1500 only.",
+  "forbidden": [
+    "production edits",
+    "guild/politics/save implementation",
+    "W1/W2",
+    "historical overwrite",
+    "large simulation",
+    "merge",
+    "human-hours inference"
+  ]
+}
