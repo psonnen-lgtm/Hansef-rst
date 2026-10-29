@@ -53,7 +53,6 @@ assert different>0,'C must genuinely differ'
 # Idempotence requirement illustrated mathematically, not dynamic proof of future guards.
 ids=[('supply:0:0','supply',0),('accord:0:0','accord',0)]
 unique=lambda rs:list({r[0]:r for r in rs}.values());assert unique(ids+ids)==ids
-for delta in ['gold','reputation','bookWealth']:assert calc(3,3,3)==calc(3,3,3) # intentionally no such inputs in proposals
 output={'sourceCommit':git('rev-parse','HEAD').decode().strip(),'base':plan['base'],'productHash':plan['productHash'],'references':refs,'functions':functions,'cities':cities,'formulaStateCount':len(states),'modelCityChecks':len(states)*11*3,'AandBExactEquivalent':True,'AandCDifferentStateCityPairs':different,'unreachableWithLocal75AndOldTargets':[c['name'] for c in cities if c['rivalTarget']>75],'modelsAreArithmeticOnly':True,'noGameExecution':True,'reachability':rows,'examples':examples}
 (O/'inspection.json').write_text(json.dumps(output,ensure_ascii=False,indent=2)+'\n')
 for filename,rs in [('city-models.csv',rows),('model-examples.csv',[{**{k:v for k,v in x.items() if k!='citiesWonUnderExistingGates'},**{k+'Cities':'; '.join(x['citiesWonUnderExistingGates'][k]) for k in ['A','B','C']}} for x in examples])]:

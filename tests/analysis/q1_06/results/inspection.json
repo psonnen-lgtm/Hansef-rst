@@ -1,0 +1,1243 @@
+{
+  "sourceCommit": "d5015f25810df653edac5b29a2bdfa07a478e819",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "productHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "references": [
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_gesamtbericht.md",
+      "blob": "b718919dbb30d46ce0ba626db45e40b0f0d73318",
+      "bytes": 10612,
+      "sha256": "87bd33f6b82b949bb9d18658180e47fe42747c289f5fc0d22ef1595cdcf8e887"
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_gesamtbericht.md",
+      "blob": "ae3ab2fc883e08f5b3bd6f1d455befe35dc3050a",
+      "bytes": 3222,
+      "sha256": "d884acc3178437558dbe332f9b593d8886d628f5f8e0aeb33e226e56c1f5d342"
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_rohdaten.json",
+      "blob": "082c6b3321d1ef5557c34dd6bfb714f448c869c0",
+      "bytes": 39385,
+      "sha256": "f83a0c51a710dd2d1019a52462680bb8e0b419cdd529d7a9e58c2a5e6a4566b0"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_gesamtbericht.md",
+      "blob": "a65b876595984bc67b0c4e4c971e3149d61d5eac",
+      "bytes": 13627,
+      "sha256": "8af430e22771c7eaacf0e84a5094deee3fb86a689ef06283566d0ab0c9eceeec"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_karrieresystem.md",
+      "blob": "5e60ec0288a3d34005474548cecd60cea17f7639",
+      "bytes": 12977,
+      "sha256": "d00d5d3bfd3c957a035fa71425423de625d20211721a203d2d7edcf5a9f22636"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_bestandsschutz_v13.md",
+      "blob": "e81475c088b65092d5d98fe09b8e8c24df4371ea",
+      "bytes": 11786,
+      "sha256": "5588650d6843f139a22250005b52a5b1180d633d2004a1b8a391f5397f41ae63"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_politische_anwesenheit.md",
+      "blob": "c4a465f22f51f6611b114b1a6f49ead0899df9d5",
+      "bytes": 8616,
+      "sha256": "78133cbd619998e3ced89573564887484aab10776468f890f8af77f6174c2919"
+    },
+    {
+      "commit": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36",
+      "path": "docs/entwicklungsberichte/Q1_04/Q1_04_gesamtbericht.md",
+      "blob": "f96d2b0a23f4788754ef4e097684e38b87a10b5f",
+      "bytes": 12896,
+      "sha256": "9be82ff09a49a43c087c7270244d5a0827005dcfa81348261c17f0b521c718ea"
+    },
+    {
+      "commit": "e403e43e1488cd9930b5ff2ae8b7fe0184ff4d36",
+      "path": "docs/entwicklungsberichte/Q1_04/Q1_04_simulationsgrenzen.md",
+      "blob": "4f6b05efc95f88155fdf39b70557d69f150b5c40",
+      "bytes": 7178,
+      "sha256": "db68045a58fc8b7eca2af88f8449313afa1431d436e160979107e103d9548636"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "docs/entwicklungsberichte/Q1_05/Q1_05_gesamtbericht.md",
+      "blob": "83bc156020bfe9da2f588872002216be57990442",
+      "bytes": 14551,
+      "sha256": "2ee9b6755f437cdc817d2dfc45f99d3f7828a7015916853165878d769fa4717b"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "docs/entwicklungsberichte/Q1_05/Q1_05_entscheidungsvorlage.md",
+      "blob": "ba370c8bf01c979f5ed516c8b25f5fcc90dc7795",
+      "bytes": 6189,
+      "sha256": "6442ce362c845dc757d46ef3fb7c90b7cd13dd6b5a6317c51be1829e6b6f6695"
+    },
+    {
+      "commit": "de4ae6b04268edc4292dfa07d37ca7680ebef4f8",
+      "path": "tests/analysis/q1_05/results/audit.json",
+      "blob": "6a1457363ab53f3e6bc4b1da35636b7ebfe2975e",
+      "bytes": 177039,
+      "sha256": "5bd540f2ab669e7218f6f84af86bcc2810e7e7b1545b68bae24d5ed5c9bd84da"
+    },
+    {
+      "commit": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "path": "docs/entwicklungsberichte/R1_11/R1_11_90_stunden_karrierekonzept.md",
+      "blob": "532a2228326ca3a05f7375b49adbfe75ffdaf1b8",
+      "bytes": 6867,
+      "sha256": "ae4c971b3935a3b167aadc903d347a482e4c9a7599247238262966adbc014d78"
+    }
+  ],
+  "functions": [
+    {
+      "function": "freshPolitics",
+      "line": 349,
+      "sha256": "3d97eb784eb9fee4b03aa33b3646cce0aceb52f5312cb1054c64ec418b99f789",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "politicalOffer",
+      "line": 356,
+      "sha256": "730f881493b008f601a604ba88a0c19272af24b0daf7f640d159218042b82f11",
+      "sourceExcerpt": "function politicalOffer(kind,city=s.city){\n if(!['supply','accord'].includes(kind)||!isCityIndex(city))return null;\n const period=politicalPeriod(),needs=REGIONAL_PROFILES[city].map((role,j)=>({role,j})).filter(q=>q.role===-1).map(q=>q.j),partner=kind==='accord'?politicalPartner(city,period):-1,good=kind==='supply'?needs[period%needs.length]:-1;\n return {id:politicalId(kind,city,period),city,kind,period,started:totalDay(),until:Math.min(360000000,totalDay()+Math.max(3*s.politics.rules.sectionDays,2*routeTravelDays(city,partner<0?politicalPartner(city,period):partner,.755)+10)),partner,good,n:kind==='supply'?6+city%3:0,witnessed:false};\n}"
+    },
+    {
+      "function": "politicalSupport",
+      "line": 362,
+      "sha256": "6f44b5fe664018f165bd240dda35efaf31189d6973890e7d4987cbac47edac0f",
+      "sourceExcerpt": "function politicalSupport(city=s.city){\n const records=politicalRecords(city),supply=records.filter(r=>r.kind==='supply').length,accord=records.filter(r=>r.kind==='accord').length,periods=new Set(records.map(r=>r.period)).size,kinds=new Set(records.map(r=>r.kind)).size;\n const pledges=[{name:'Bürgerschaft',ok:supply>=2,need:'zwei Versorgungsdienste'},{name:POLITICAL_CITIES[city].rivals[0],ok:supply>=3,need:'drei Versorgungsdienste'},{name:POLITICAL_CITIES[city].rivals[1],ok:accord>=2,need:'zwei gehaltene Ratsvereinbarungen'},{name:'Rat der Stadt',ok:records.length>=6&&periods>=3&&kinds>=2,need:'sechs Dienste über drei Abschnitte und zwei Arten'}];\n const components={economic:Math.min(10,Math.max(0,politicalWorth())/18000),reputation:Math.min(15,s.rep/6),services:Math.min(40,records.length*5),endorsements:pledges.filter(p=>p.ok).length*5,decisions:Math.min(15,accord*5)};\n return {records:records.length,supply,accord,periods,kinds,pledges,components,score:Object.values(components).reduce((a,b)=>a+b,0),target:POLITICAL_CITIES[city].rivalTarget};\n}"
+    },
+    {
+      "function": "mayorQuote",
+      "line": 368,
+      "sha256": "e0d0c30025598f794d4177e899f92a1b372525cd00dc5eacb7072d9723b443ac",
+      "sourceExcerpt": "function mayorQuote(city=s.city){\n const q=politicalSupport(city),reasons=[];\n if(s.rank<2)reasons.push('Zuerst den Rang Ratsherr erwerben.');\n if(politicalWorth()<s.politics.rules.mayorWealth)reasons.push(fmt(s.politics.rules.mayorWealth)+' G politisches Vermögen nötig.');\n if(s.rep<POLITICAL_RULES.rep)reasons.push('55 globales Ansehen nötig.');\n if(warehouseArrears()>0)reasons.push('Zuerst alle offenen Lagermieten begleichen.');\n if(q.records<POLITICAL_RULES.services)reasons.push((POLITICAL_RULES.services-q.records)+' weitere örtliche Dienste nötig.');\n if(q.periods<POLITICAL_RULES.periods)reasons.push('Dienste aus drei Ratsabschnitten nötig.');\n if(q.kinds<POLITICAL_RULES.kinds)reasons.push('Versorgung und Ratsvereinbarung nötig.');\n if(totalDay()+360>360000000)reasons.push('Amtszeit überschreitet den gültigen Spielkalender.');\n if(s.politics.office)reasons.push('Zuerst das aktive Bürgermeisteramt beenden oder seine Amtsprüfung abschließen.');\n if(totalDay()<s.politics.nextElection[city])reasons.push('Nächste Wahl in '+(s.politics.nextElection[city]-totalDay())+' Spieltagen.');\n return {...q,reasons,eligible:!reasons.length,willWin:!reasons.length&&q.score>=q.target};\n}"
+    },
+    {
+      "function": "politicalOfficeProof",
+      "line": 382,
+      "sha256": "bb411ae0c6260d1dd7738eaa62f8b1fde77164613705700d3380f3cc2cd0f092",
+      "sourceExcerpt": "function politicalOfficeProof(office=s.politics.office){\n if(!office)return false;const a=s.politics.records.slice(office.firstReceipt).filter(r=>r.city===office.city&&r.kind!=='league'&&r.day>=office.start);\n return a.length>=POLITICAL_RULES.officeServices&&new Set(a.map(r=>r.period)).size>=POLITICAL_RULES.officePeriods&&a.some(r=>r.kind==='accord');\n}"
+    },
+    {
+      "function": "politicalRecord",
+      "line": 433,
+      "sha256": "85b9f75890f8b12f7eb39b4dc834bb52301af2d4386b0790a8507697b3b0c38c",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "politicalTrade",
+      "line": 443,
+      "sha256": "b9595ccc3ce26a0bac5c7d8b4e59e4d55758818b127bbb179e2a3250149c9547",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "witnessPoliticalJob",
+      "line": 453,
+      "sha256": "6f246a795594d009bbe655185b1e7306dbed7fb1c5479a2651d541f833c97027",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "finishPoliticalAccord",
+      "line": 457,
+      "sha256": "29c43c298cf176e3e9992d9cd21d29a817e6d91e708bb56af1c8b6a79c13d8a0",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "runMayorElection",
+      "line": 461,
+      "sha256": "958eebebd6354736780b1324f2523bfcd9fb2867635eddc344d73ca52a999201",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "requestPoliticalEndorsement",
+      "line": 472,
+      "sha256": "d4e08561ee41ba792d18654890b056881da52a7e801dffe3d66c559c2fecff1f",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "acceptHanseAgreement",
+      "line": 476,
+      "sha256": "59e5b84c00a99c5c24fa9f6de4e5262dc9a846f36f7245cc5afe5c324ed4cb80",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "witnessHanseAgreement",
+      "line": 480,
+      "sha256": "c5a08d654ccef1454e26f2030b29ad8aa9b1778bdf94e8049ff0998210e93aab",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "finishHanseAgreement",
+      "line": 484,
+      "sha256": "502fba36cff37e13207fadd3e65b47efa136a9be4060be5d2e82070b6118f5ef",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "hanseQuote",
+      "line": 400,
+      "sha256": "f7d4c58d7f7d5c17907fcd0f8ff861a1663c2f7701a0b5db133a0b36c5e87757",
+      "sourceExcerpt": "function hanseQuote(){\n const home=politicalHome(),external=s.politics.endorsements.filter(e=>e&&e.city!==home),cities=home===null?[]:[home,...external.map(e=>e.city)],regions=new Set(cities.map(c=>POLITICAL_CITIES[c].region)),reasons=[];\n if(s.rank>=4)return {eligible:false,reasons:['Der Eldermann-Titel ist bereits erworben. Der Handel geht weiter.'],home,external,cities,regions:regions.size};\n if(home===null||!(s.politics.office?.city===home&&politicalOfficeProof()||s.politics.terms[home]))reasons.push('Bewährtes Bürgermeisteramt nötig: zwei neue Dienste in zwei Abschnitten, darunter eine Ratsvereinbarung.');\n if(politicalWorth()<POLITICAL_RULES.hanseWealth)reasons.push('180.000 G politisches Vermögen nötig.');\n if(s.rep<POLITICAL_RULES.hanseRep)reasons.push('90 Ansehen nötig.');\n if(warehouseArrears()>0)reasons.push('Zuerst alle Mietrückstände begleichen.');\n if(cities.length<POLITICAL_RULES.seals||external.length<POLITICAL_RULES.foreignSeals)reasons.push('Vier Stadtsiegel einschließlich drei auswärtiger Fürsprecher nötig.');\n if(regions.size<POLITICAL_RULES.regions)reasons.push('Siegel aus mindestens zwei Handelsräumen nötig.');\n if(!s.politics.records.some(r=>r.kind==='league'&&r.city===home))reasons.push('Einen überregionalen Hansevertrag mit zwei auswärtigen Vorsprachen halten.');\n return {eligible:!reasons.length,reasons,home,external,cities,regions:regions.size};\n}"
+    },
+    {
+      "function": "runHanseAssembly",
+      "line": 488,
+      "sha256": "c7425d2443f2682df193fb9850c1304749e1afa1bd350a039e6bd800ee468dd9",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "validatePolitics",
+      "line": 495,
+      "sha256": "543cf73067a4bbb977ce384226888eeedb3f77fe88dd266199c5b8983fa76b9e",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "migratePolitics",
+      "line": 535,
+      "sha256": "89e2f0971a579fba4e02ea1d0a07b49ffe6b4a2d1c9a8aeb88cc6c9890b79807",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "politicalCareerModel",
+      "line": 555,
+      "sha256": "208ffc03effeb3b85de72ebea05334b5fd659acc0a4e7e589f71a437a0e96113",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "politicalRumorPanel",
+      "line": 553,
+      "sha256": "75c8c8f1568bf542d9e444c87ed705b5c6537637633bad3a4d22016c157c48e9",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "promote",
+      "line": 988,
+      "sha256": "d3484547ff5eb62b55de7a0cf7380e3ad6e1f3a7fc7a5614822db5391b45bc1a",
+      "sourceExcerpt": "function promote(){if(s.rank>=2)return runMayorElection();const i=s.rank+1;if(netWorth()<[0,18000,45000][i]||s.rep<[0,0,25][i])return false;return politicalAction(null,()=>{s.rank=i;politicalNote(s.name+' steigt auf: '+rank()+'!');Testlog.event('promotion',{rank:i});return true})}"
+    },
+    {
+      "function": "donationGain",
+      "line": 908,
+      "sha256": "8ed95ce0f96af8cf3fca3b9f20ba0b0715a5803fa60d5584f708219cc397730e",
+      "sourceExcerpt": "function donationGain(rep){return Math.max(1,rep-Math.floor(s.rep/55))}"
+    },
+    {
+      "function": "donate",
+      "line": 910,
+      "sha256": "458f7e0b91d50c735bad7197bc719109fd170c0a68b5d98273d599d346fd16f6",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "completeQuests",
+      "line": 990,
+      "sha256": "20b479a6037b51afb5060c8df1fdcf6d1a05b07489317b586115f58702c02448",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "consumeOrigins",
+      "line": 790,
+      "sha256": "20e4ed091e7a6863c112554e40744d2e3af500935e6f88e6bc3fabcc9baef206",
+      "sourceExcerpt": null
+    },
+    {
+      "function": "creditLimit",
+      "line": 912,
+      "sha256": "2c6af14f8bc1dfb99befabccdb703b9fd33e79b6b56071332f77c290b681a3f1",
+      "sourceExcerpt": "function creditLimit(){return Math.max(1000,Math.round(netWorth()*.45))}"
+    },
+    {
+      "function": "selectFleetShip",
+      "line": 975,
+      "sha256": "609dceb8d1593c22afaa2e70a05815d6983f666b3e7c76ae31d5b03cd3b03eb0",
+      "sourceExcerpt": null
+    }
+  ],
+  "cities": [
+    {
+      "city": 0,
+      "id": "luebeck",
+      "name": "Lübeck",
+      "rivalTarget": 80,
+      "rivals": [
+        "alte Ratsfamilien",
+        "Fernhandelsbund"
+      ],
+      "civicFocus": [
+        "Fischversorgung",
+        "vermittelnde Hanseaufträge"
+      ],
+      "region": 1
+    },
+    {
+      "city": 1,
+      "id": "hamburg",
+      "name": "Hamburg",
+      "rivalTarget": 76,
+      "rivals": [
+        "Tuchhändlerkreis",
+        "Hafengilde"
+      ],
+      "civicFocus": [
+        "Holz- und Pechversorgung",
+        "verlässliche Hafenzusagen"
+      ],
+      "region": 1
+    },
+    {
+      "city": 2,
+      "id": "rostock",
+      "name": "Rostock",
+      "rivalTarget": 68,
+      "rivals": [
+        "Brauergilde",
+        "Speicherkaufleute"
+      ],
+      "civicFocus": [
+        "Tuch und Eisenwaren",
+        "faire Versorgung der Handwerker"
+      ],
+      "region": 1
+    },
+    {
+      "city": 3,
+      "id": "stralsund",
+      "name": "Stralsund",
+      "rivalTarget": 65,
+      "rivals": [
+        "Fischhändlerbund",
+        "alter Hafenrat"
+      ],
+      "civicFocus": [
+        "Salz und Tuch",
+        "wiederholte verlässliche Lieferungen"
+      ],
+      "region": 1
+    },
+    {
+      "city": 4,
+      "id": "stettin",
+      "name": "Stettin",
+      "rivalTarget": 67,
+      "rivals": [
+        "Holzhändlerkreis",
+        "Werftzunft"
+      ],
+      "civicFocus": [
+        "Salz und Tuch",
+        "Ausgleich von Ausfuhr- und Bürgerinteressen"
+      ],
+      "region": 1
+    },
+    {
+      "city": 5,
+      "id": "danzig",
+      "name": "Danzig",
+      "rivalTarget": 74,
+      "rivals": [
+        "Getreidespeicherfamilien",
+        "Fernhändlerkreis"
+      ],
+      "civicFocus": [
+        "Tuch und Eisenwaren",
+        "Versorgung vor kurzfristiger Ausfuhr"
+      ],
+      "region": 1
+    },
+    {
+      "city": 6,
+      "id": "bergen",
+      "name": "Bergen",
+      "rivalTarget": 62,
+      "rivals": [
+        "Fischhändler",
+        "Versorgungsrat"
+      ],
+      "civicFocus": [
+        "Getreide, Bier und Hanf",
+        "witterungsfeste Versorgungszusagen"
+      ],
+      "region": 2
+    },
+    {
+      "city": 7,
+      "id": "visby",
+      "name": "Visby",
+      "rivalTarget": 70,
+      "rivals": [
+        "Inselkaufleute",
+        "Umschlaghändler"
+      ],
+      "civicFocus": [
+        "Getreide und Eisenwaren",
+        "Vermittlung zwischen Handelspartnern"
+      ],
+      "region": 2
+    },
+    {
+      "city": 8,
+      "id": "bruegge",
+      "name": "Brügge",
+      "rivalTarget": 78,
+      "rivals": [
+        "Tuchgilden",
+        "Zwinhandelshaus"
+      ],
+      "civicFocus": [
+        "Holz und Pelze",
+        "Ausgleich zwischen Handwerk und Fernhandel"
+      ],
+      "region": 0
+    },
+    {
+      "city": 9,
+      "id": "nowgorod",
+      "name": "Nowgorod",
+      "rivalTarget": 64,
+      "rivals": [
+        "Waldwarenhändler",
+        "örtliche Handelsvermittler"
+      ],
+      "civicFocus": [
+        "Bier, Salz und Tuch",
+        "verlässliche Binnenhandelsabsprachen"
+      ],
+      "region": 3
+    },
+    {
+      "city": 10,
+      "id": "venlo",
+      "name": "Venlo",
+      "rivalTarget": 60,
+      "rivals": [
+        "Maaskaufleute",
+        "kleiner Stadtrat"
+      ],
+      "civicFocus": [
+        "Fisch und Pelze",
+        "verlässlicher Fluss- und Fernhandel"
+      ],
+      "region": 0
+    }
+  ],
+  "formulaStateCount": 819,
+  "modelCityChecks": 27027,
+  "AandBExactEquivalent": true,
+  "AandCDifferentStateCityPairs": 81,
+  "unreachableWithLocal75AndOldTargets": [
+    "Lübeck",
+    "Hamburg",
+    "Brügge"
+  ],
+  "modelsAreArithmeticOnly": true,
+  "noGameExecution": true,
+  "reachability": [
+    {
+      "city": 0,
+      "name": "Lübeck",
+      "region": 1,
+      "model": "A",
+      "target": 80,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 0,
+      "name": "Lübeck",
+      "region": 1,
+      "model": "B",
+      "target": 60,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 0,
+      "name": "Lübeck",
+      "region": 1,
+      "model": "C",
+      "target": 80,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 1,
+      "name": "Hamburg",
+      "region": 1,
+      "model": "A",
+      "target": 76,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 1,
+      "name": "Hamburg",
+      "region": 1,
+      "model": "B",
+      "target": 57,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 1,
+      "name": "Hamburg",
+      "region": 1,
+      "model": "C",
+      "target": 76,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 2,
+      "name": "Rostock",
+      "region": 1,
+      "model": "A",
+      "target": 68,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 2,
+      "name": "Rostock",
+      "region": 1,
+      "model": "B",
+      "target": 51,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 2,
+      "name": "Rostock",
+      "region": 1,
+      "model": "C",
+      "target": 68,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 3,
+      "name": "Stralsund",
+      "region": 1,
+      "model": "A",
+      "target": 65,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 3,
+      "name": "Stralsund",
+      "region": 1,
+      "model": "B",
+      "target": 49,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 3,
+      "name": "Stralsund",
+      "region": 1,
+      "model": "C",
+      "target": 65,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 4,
+      "name": "Stettin",
+      "region": 1,
+      "model": "A",
+      "target": 67,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 4,
+      "name": "Stettin",
+      "region": 1,
+      "model": "B",
+      "target": 51,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 4,
+      "name": "Stettin",
+      "region": 1,
+      "model": "C",
+      "target": 67,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 5,
+      "name": "Danzig",
+      "region": 1,
+      "model": "A",
+      "target": 74,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 5,
+      "name": "Danzig",
+      "region": 1,
+      "model": "B",
+      "target": 56,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 5,
+      "name": "Danzig",
+      "region": 1,
+      "model": "C",
+      "target": 74,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 6,
+      "name": "Bergen",
+      "region": 2,
+      "model": "A",
+      "target": 62,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 6,
+      "name": "Bergen",
+      "region": 2,
+      "model": "B",
+      "target": 47,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 6,
+      "name": "Bergen",
+      "region": 2,
+      "model": "C",
+      "target": 62,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 7,
+      "name": "Visby",
+      "region": 2,
+      "model": "A",
+      "target": 70,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 7,
+      "name": "Visby",
+      "region": 2,
+      "model": "B",
+      "target": 53,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 7,
+      "name": "Visby",
+      "region": 2,
+      "model": "C",
+      "target": 70,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 8,
+      "name": "Brügge",
+      "region": 0,
+      "model": "A",
+      "target": 78,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 8,
+      "name": "Brügge",
+      "region": 0,
+      "model": "B",
+      "target": 59,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 8,
+      "name": "Brügge",
+      "region": 0,
+      "model": "C",
+      "target": 78,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 9,
+      "name": "Nowgorod",
+      "region": 3,
+      "model": "A",
+      "target": 64,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 9,
+      "name": "Nowgorod",
+      "region": 3,
+      "model": "B",
+      "target": 48,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 9,
+      "name": "Nowgorod",
+      "region": 3,
+      "model": "C",
+      "target": 64,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    },
+    {
+      "city": 10,
+      "name": "Venlo",
+      "region": 0,
+      "model": "A",
+      "target": 60,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "260/3",
+      "witnessScore": 86.66666666666667
+    },
+    {
+      "city": 10,
+      "name": "Venlo",
+      "region": 0,
+      "model": "B",
+      "target": 45,
+      "maximum": 75,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "65",
+      "witnessScore": 65.0
+    },
+    {
+      "city": 10,
+      "name": "Venlo",
+      "region": 0,
+      "model": "C",
+      "target": 60,
+      "maximum": 100,
+      "reachableUnderExistingDeedGates": true,
+      "minimumRecordsInGrid": 6,
+      "witnessSupply": 3,
+      "witnessAccord": 3,
+      "witnessPeriods": 3,
+      "witnessScoreExact": "90",
+      "witnessScore": 90.0
+    }
+  ],
+  "examples": [
+    {
+      "label": "Handel/Spenden ohne Tatbeleg",
+      "supply": 0,
+      "accord": 0,
+      "periods": 0,
+      "local": 0,
+      "services": 0,
+      "pledges": 0,
+      "decisions": 0,
+      "A": "0",
+      "B": "0",
+      "C": "0",
+      "legacyGate": false,
+      "deedKinds": 0,
+      "citiesWonUnderExistingGates": {
+        "A": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "label": "Nur Versorgung",
+      "supply": 6,
+      "accord": 0,
+      "periods": 6,
+      "local": 40,
+      "services": 30,
+      "pledges": 2,
+      "decisions": 0,
+      "A": "160/3",
+      "B": "40",
+      "C": "50",
+      "legacyGate": false,
+      "deedKinds": 1,
+      "citiesWonUnderExistingGates": {
+        "A": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "label": "Nur Vereinbarungen",
+      "supply": 0,
+      "accord": 6,
+      "periods": 6,
+      "local": 50,
+      "services": 30,
+      "pledges": 1,
+      "decisions": 15,
+      "A": "200/3",
+      "B": "50",
+      "C": "60",
+      "legacyGate": false,
+      "deedKinds": 1,
+      "citiesWonUnderExistingGates": {
+        "A": [],
+        "B": [],
+        "C": []
+      }
+    },
+    {
+      "label": "Ausgewogen, sechs Dienste",
+      "supply": 3,
+      "accord": 3,
+      "periods": 3,
+      "local": 65,
+      "services": 30,
+      "pledges": 4,
+      "decisions": 15,
+      "A": "260/3",
+      "B": "65",
+      "C": "90",
+      "legacyGate": true,
+      "deedKinds": 2,
+      "citiesWonUnderExistingGates": {
+        "A": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "B": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "C": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ]
+      }
+    },
+    {
+      "label": "Versorgungslastig, sechs Dienste",
+      "supply": 5,
+      "accord": 1,
+      "periods": 5,
+      "local": 50,
+      "services": 30,
+      "pledges": 3,
+      "decisions": 5,
+      "A": "200/3",
+      "B": "50",
+      "C": "200/3",
+      "legacyGate": true,
+      "deedKinds": 2,
+      "citiesWonUnderExistingGates": {
+        "A": [
+          "Stralsund",
+          "Bergen",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "B": [
+          "Stralsund",
+          "Bergen",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "C": [
+          "Stralsund",
+          "Bergen",
+          "Nowgorod",
+          "Venlo"
+        ]
+      }
+    },
+    {
+      "label": "Vermittlungslastig, sechs Dienste",
+      "supply": 1,
+      "accord": 5,
+      "periods": 5,
+      "local": 55,
+      "services": 30,
+      "pledges": 2,
+      "decisions": 15,
+      "A": "220/3",
+      "B": "55",
+      "C": "70",
+      "legacyGate": true,
+      "deedKinds": 2,
+      "citiesWonUnderExistingGates": {
+        "A": [
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Bergen",
+          "Visby",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "B": [
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Bergen",
+          "Visby",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "C": [
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Bergen",
+          "Visby",
+          "Nowgorod",
+          "Venlo"
+        ]
+      }
+    },
+    {
+      "label": "Vermittlungslastig, sieben Dienste",
+      "supply": 1,
+      "accord": 6,
+      "periods": 6,
+      "local": 60,
+      "services": 35,
+      "pledges": 2,
+      "decisions": 15,
+      "A": "80",
+      "B": "60",
+      "C": "75",
+      "legacyGate": true,
+      "deedKinds": 2,
+      "citiesWonUnderExistingGates": {
+        "A": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "B": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "C": [
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Nowgorod",
+          "Venlo"
+        ]
+      }
+    },
+    {
+      "label": "Alle Komponenten voll",
+      "supply": 4,
+      "accord": 4,
+      "periods": 4,
+      "local": 75,
+      "services": 40,
+      "pledges": 4,
+      "decisions": 15,
+      "A": "100",
+      "B": "75",
+      "C": "100",
+      "legacyGate": true,
+      "deedKinds": 2,
+      "citiesWonUnderExistingGates": {
+        "A": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "B": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ],
+        "C": [
+          "Lübeck",
+          "Hamburg",
+          "Rostock",
+          "Stralsund",
+          "Stettin",
+          "Danzig",
+          "Bergen",
+          "Visby",
+          "Brügge",
+          "Nowgorod",
+          "Venlo"
+        ]
+      }
+    }
+  ]
+}
