@@ -262,3 +262,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.05 - Der Patrizier: DOS und Originalmechanik
 
 28.10.2026 - [Emulation und Technik](R1_05/R1_05_emulation_und_technik.md), [Reisezeiten](R1_05/R1_05_reisezeiten.md), [Wirtschaft, Politik und Ereignisse](R1_05/R1_05_wirtschaft_politik_ereignisse.md), [Einordnung für Hansefürst](R1_05/R1_05_erkenntnisse_fuer_hansefuerst.md), [Daten und eigene Skripte](R1_05/README.md). Basis `ffc0bfad0e36e4547f7a5750bb68b169f93f8009`, separater Branch `research/r1-05-original-dos-2026-10-28`. DOSBox 0.74-3: Installer und Originalspiel bis zum Hauptmenü sichtbar, keine bestätigte Spielreise/Markt-/Wahl-/Save-Load-Probe. 16×16-Struktur und 419-Byte-Stadtnamensabstände geprüft; keine Reise-/Preis-/Wahlformel oder Ereignisrate nachgewiesen. Originaldateien, Screenshots und private Evidenz nicht veröffentlicht. Hansefürst-Code und bestehende Ergebnisse unverändert; frühere 1.500er-Simulation nur als Hintergrund übernommen, keine Neuberechnung. Kein Merge, kein Pages-Eingriff, keine Folgephase.
+
+
+## Q1.08 – Politischer Ausschnitt zur Entscheidung vorbereitet
+
+30.10.2026: [Gesamtbericht](Q1_08/Q1_08_gesamtbericht.md), [Ratsherr](Q1_08/Q1_08_ratsherr_spielablauf.md), [Bürgermeister](Q1_08/Q1_08_buergermeister_spielablauf.md), [Modell C](Q1_08/Q1_08_modell_c_anerkennung.md), [Anlässe](Q1_08/Q1_08_politische_anlaesse.md), [Dialoge/Bedienung](Q1_08/Q1_08_dialoge_und_bedienung.md), [Voraussetzungen](Q1_08/Q1_08_technische_voraussetzungen.md), [acht offene Detailentscheidungen](Q1_08/Q1_08_entscheidungsvorlage.md). Keine Implementierung, Simulation, Migration oder Reparatur; neue Details bleiben Vorschläge. Tatsächliche Anwesenheit für persönliche Vorsprache nun verbindlich.
