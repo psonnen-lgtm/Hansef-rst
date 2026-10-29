@@ -1,0 +1,27 @@
+{
+  "audit": "Q1.01",
+  "status": "blocked_before_game_start",
+  "attempts": 1,
+  "browser_engine": "Playwright Chromium",
+  "error": "Executable missing: chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell; full Chromium executable also absent",
+  "actual_game_contexts": 0,
+  "actual_viewports_exercised": [],
+  "planned_viewports_not_observed": [
+    [
+      375,
+      667
+    ],
+    [
+      834,
+      1194
+    ],
+    [
+      1280,
+      800
+    ]
+  ],
+  "game_actions_executed": 0,
+  "new_game_measurements": 0,
+  "real_saves_touched": false,
+  "claim_limit": "No runtime UI, personal-presence, export or save assertions passed in Q1.01"
+}

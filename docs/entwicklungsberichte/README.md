@@ -316,3 +316,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### Q1.01 – Sicherungspunkt B
 
 [Wirtschaft und Schifffahrt](Q1_01/Q1_01_wirtschaft_und_schifffahrt.md): Produktionsregeln, historische Ergebnisgrenzen, Anerkennungslücke und pro-Fahrt-Risiko. Keine neuen Spielverläufe oder Parameteränderungen.
+
+
+### Q1.01 – Sicherungspunkt C
+
+[Politik und Langzeitmotivation](Q1_01/Q1_01_politik_und_langzeitmotivation.md), [Browserprüfstatus](Q1_01/Q1_01_browserstatus.json). Vollständige Karrierebedingungen und statischer Prüfpunkt Ansicht/persönliche Vorsprache; Browserstart an fehlender Chromium-Datei gescheitert, keine Laufzeitergebnisse behauptet.
