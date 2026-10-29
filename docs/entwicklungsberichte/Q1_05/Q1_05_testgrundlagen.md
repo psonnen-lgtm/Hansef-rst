@@ -71,3 +71,7 @@ Die spezielle Auftragsgrenze überstimmt die generische AGENTS-1.500er-Vorgabe. 
 ## Formatkorrektur vor Abschlusskontrolle
 
 Der vollständige Git-Diff meldete nachgestellte Leerzeichen in von Matplotlib erzeugten SVG-Pfadzeilen. Ausschließlich diese Leerzeichen entfernt und Gleichheit sämtlicher XML-Elemente, Attribute und Textinhalte bei normalisierter Whitespace geprüft; keine Diagrammkoordinate oder Wirtschaftszahl geändert. Exportskript führt die Formatnormalisierung künftig ebenfalls aus. Historische Rohdaten bleiben unverändert. `git diff --check` wird vor Abschluss erneut ausgeführt; keine Spielpartie dafür gestartet.
+
+## Letzte Veröffentlichungsprüfung
+
+Ein rein lesender Abschlusscheck meldete den neu ergänzten Link auf`SHA256SUMS`, bevor die Prüfsummendatei erzeugt war. Reihenfolge korrigiert: Datei anlegen, Verweise/Altdateien prüfen, danach Prüfsummen über den vollständigen fertigen Inhalt schreiben. [Fehlerprotokoll](../../../tests/analysis/q1_05/results/publication-check-failure.log) erhalten; keine Spielpartie oder Wirtschaftsauswertung wiederholt.

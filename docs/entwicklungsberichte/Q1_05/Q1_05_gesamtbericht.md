@@ -99,3 +99,11 @@ Q-001/Buchwertmanipulation und Q-003/Fernvorsprache bleiben offen. Keine W1/W2-I
 ## Abschließende lokale Kontrolle
 
 Alle3.232 vorbestehenden Dateien gegen die Entwicklungsbasis geprüft: ausschließlich Index angehängt, übrige Dateien byteidentisch. Sechs Pflichtberichte,56 relative Verweise,111 Rohakten,CSV-Zeilenzahlen und eingefrorene Quellen geprüft; vollständiger Git-Diff ohne Formatbefund. [Prüfnachweis](../../../tests/analysis/q1_05/results/verification.json). GitHub-Rücklesen folgt nach Veröffentlichung des vollständigen Pakets.
+
+## GitHub-Sicherung tatsächlich zurückgelesen
+
+Vollständiger Berichtstand **`a884de50def8a1f2d89fb8bfcfef9e6c388b575b`** veröffentlicht und danach aus einem frischen, unabhängigen Git-Objektverzeichnis per GitHub-HTTPS geladen. **Alle160 damaligen Dateien** (sechs Berichte, Index, Skripte, Rohdaten, Tabellen und Abbildungen) vollständig gelesen, Dateimenge und Bytes mit der Arbeitskopie verglichen: identisch. [Rücklesebeleg](../../../tests/analysis/q1_05/results/github-readback.json). Abschließende Übergabe und Prüfsummen werden nach ihrem Push ebenfalls frisch zurückgelesen; kein selbstreferenzieller Commitbeleg behauptet.
+
+Weitere Sicherungsstände: Ereignisaudit/Exportquellen `9b9fce46ce4111307af429fd14156d23a9a6ced1`, sechs Berichte/Abbildungen `05236494004ce6966caae003c30610510f54d7fb`, SVG-Formatkorrektur `70dfcb8f0789639fdcf850049249c8d47b00fae3`. Frühere Pilot-/Baseline-/Gegenlauf-Commits vollständig in den Testgrundlagen aufgeführt. Lokale Schlusskontrolle:3.232 Altdateien geschützt, nur Index ergänzt;6 Pflichtberichte,111 Rohakten,Quellhashes und CSVs geprüft. [Übergabe](../../../tests/analysis/q1_05/results/handoff.json), [Prüfsummen](../../../tests/analysis/q1_05/SHA256SUMS).
+
+GitHub-Basis unverändert `02ee6b8fc1507ad078b6b596c333e50d91eeea64`, main unverändert `c1280228951d581c7b3131279b8ff164a8e36dfa`. Keine Gebühr festgelegt, keine Produkt-/Wirtschafts-/Gilden-/Politik-/Speicher-/Pages-Änderung. Kein Merge. Keine neue Aufgabe begonnen; Q1.05 endet nach abschließendem Rücklesen.

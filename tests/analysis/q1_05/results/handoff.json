@@ -1,0 +1,45 @@
+{
+  "date": "2026-10-29",
+  "branch": "audit/q1-05-guild-milestone",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "main": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "commits": {
+    "e56bd81": "e56bd8166ba2a32a45bd683b74605524a224edf3",
+    "ef18bee": "ef18beed12f797ab5b7f4c3dd0d5ed29c84967e4",
+    "4da8189": "4da818950f73f69e6f8cff5603936c9e36746670",
+    "a3636b5": "a3636b5b09f88f1a5c0165dd683d50445fe30049",
+    "cbb1d27": "cbb1d2766227379e31e039c3891068f8fe59da98",
+    "9b9fce4": "9b9fce46ce4111307af429fd14156d23a9a6ced1",
+    "0523649": "05236494004ce6966caae003c30610510f54d7fb",
+    "70dfcb8": "70dfcb8f0789639fdcf850049249c8d47b00fae3",
+    "a884de5": "a884de50def8a1f2d89fb8bfcfef9e6c388b575b"
+  },
+  "baselineSavedCases": 75,
+  "feeSavedCases": 36,
+  "baselinePilotProbeInstances": 81,
+  "feeInstances": 36,
+  "totalInstances": 117,
+  "initialUnstoredPilotExecutions": 2,
+  "creditProbeInstances": 1,
+  "successfulExactPilotReplays": 3,
+  "uniqueSeedsInTradingMatrix": [
+    10003,
+    10004,
+    10005
+  ],
+  "feesCompared": [
+    12500,
+    18000,
+    26500
+  ],
+  "feeDecision": null,
+  "productionChanged": false,
+  "historicalFilesChanged": false,
+  "mergePerformed": false,
+  "nextTaskStarted": false,
+  "githubReadbackCommit": "a884de50def8a1f2d89fb8bfcfef9e6c388b575b",
+  "githubReadbackFiles": 160,
+  "allFilesByteEqual": true,
+  "note": "Final handoff/readback metadata and checksums are published after this first readback, then the final full package is freshly fetched and read again. No self-referential commit proof is claimed."
+}

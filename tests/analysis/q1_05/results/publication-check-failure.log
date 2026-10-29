@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/workspace/Hansef-rst/tests/analysis/q1_05/verify.py", line 21, in <module>
+    target=target.split('#')[0];assert (file.parent/target).resolve().exists(),(file.name,target);links+=1
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('Q1_05_gesamtbericht.md', '../../../tests/analysis/q1_05/SHA256SUMS')
