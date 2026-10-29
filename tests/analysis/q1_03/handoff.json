@@ -1,0 +1,70 @@
+{
+  "phase": "Q1.03",
+  "dateBerlin": "2026-10-29",
+  "branch": "audit/q1-03-guild-politics-design",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "mainUnchanged": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+  "foundations": {
+    "Q1.01": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+    "Q1.02": "8b20432506940ef1d33bf7af7f162884eec63c01",
+    "R1.11": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7"
+  },
+  "publishedStages": [
+    "520903f0d979c0b146e8f4ca44421cb11c01cff8",
+    "a6abed3ae4ec187ba005dbb634cbaf7c8a4a8e7c",
+    "a16b54331ad0f7600ced5b19d7dd881f4662da9b",
+    "de730939dc2f7c44c4de838ad7853f258fea4497"
+  ],
+  "executedReadOnlyInspectorCommit": "520903f0d979c0b146e8f4ca44421cb11c01cff8",
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "productSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "productVersion": "0.8d.1b/V13",
+  "productChanged": false,
+  "historicalTradeCasesReadNotRerun": 8,
+  "historicalPresenceCaseReadNotRerun": 1,
+  "newDynamicRuns": 0,
+  "guildImplemented": false,
+  "politicsImplemented": false,
+  "migrationsExecuted": 0,
+  "decisionRows": 37,
+  "decisionStatuses": {
+    "Bereits beschlossen": 9,
+    "Technisch empfohlen": 14,
+    "Noch offen": 9,
+    "Nicht zur Implementierung freigegeben": 5
+  },
+  "plannedFeatureRegressionsNotExecuted": 55,
+  "githubReadback": {
+    "commit": "de730939dc2f7c44c4de838ad7853f258fea4497",
+    "files": 14,
+    "requestedEightFilesIncluded": true,
+    "allByteEqual": true,
+    "manifest": "github-readback.json",
+    "method": "fresh independent partial bare repository, HTTPS fetch GitHub, archive and read each blob"
+  },
+  "githubReport": "https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-03-guild-politics-design/docs/entwicklungsberichte/Q1_03/Q1_03_gesamtbericht.md",
+  "githubMatrix": "https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-03-guild-politics-design/docs/entwicklungsberichte/Q1_03/Q1_03_entscheidungsmatrix.csv",
+  "merged": false,
+  "pagesChanged": false,
+  "nextTaskStarted": false,
+  "issueStatus": {
+    "Q-001": "open, concept only",
+    "Q-003": "open, concept only"
+  },
+  "recommendations": [
+    "guild modelA,500 gold only proposed test value",
+    "political recognition from existing local deed records, no direct trade/arrival reputation",
+    "W1 common-quote owner/city/good valuation preferred; W2 no inventory collateral as conservative alternative",
+    "personal location distinct from view, no delegation",
+    "V13 core plus explicitly versioned politics2 migration concept, protected legacy access"
+  ],
+  "unapprovedDecisions": [
+    "fee and guild scope",
+    "Fernkaufmann role",
+    "rank merit requirements and75/80 support recalibration",
+    "political wealth thresholds and W1/W2 collateral/quote policy",
+    "schema keys legacy rights presence anchor and home",
+    "transition deadlines and remote unaccompanied voyages",
+    "future human90-hour validation"
+  ]
+}

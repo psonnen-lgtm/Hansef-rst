@@ -1,0 +1,82 @@
+{
+  "phase": "Q1.03",
+  "dateBerlin": "2026-10-29",
+  "method": "fresh independent partial bare Git object database; HTTPS fetch from GitHub then archive remote FETCH_HEAD; byte comparison of every published Q1.03 file and report index",
+  "origin": "https://github.com/psonnen-lgtm/Hansef-rst.git",
+  "commitReadBack": "de730939dc2f7c44c4de838ad7853f258fea4497",
+  "filesReadBack": [
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_bestandsschutz_v13.md",
+      "bytes": 11786,
+      "sha256": "5588650d6843f139a22250005b52a5b1180d633d2004a1b8a391f5397f41ae63"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_entscheidungsmatrix.csv",
+      "bytes": 9709,
+      "sha256": "9858472613e67c41d7ad623887adea92bf5d690f09395813ef511bf748bd676a"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_gesamtbericht.md",
+      "bytes": 11734,
+      "sha256": "516f025b246e6b7034461728622dfeca83257eb9d9a189c1175923d7232ce355"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_gildenmodelle.md",
+      "bytes": 7434,
+      "sha256": "1050e8477ab6aed8bf0f7d6469b814b8e60203b79b61831d91a31640e51847ac"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_handels_und_buchwertschutz.md",
+      "bytes": 11353,
+      "sha256": "b869582aa181e0317cb31d9e571110e1e8fb57ec601270aa64b4e229c6e0f0a7"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_karrieresystem.md",
+      "bytes": 12977,
+      "sha256": "d00d5d3bfd3c957a035fa71425423de625d20211721a203d2d7edcf5a9f22636"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_politische_anwesenheit.md",
+      "bytes": 8616,
+      "sha256": "78133cbd619998e3ced89573564887484aab10776468f890f8af77f6174c2919"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_testkonzept.md",
+      "bytes": 13073,
+      "sha256": "d689231e155bceefe8bed15d84edb6e03d202d006162fb8138fac3ab9916c966"
+    },
+    {
+      "path": "docs/entwicklungsberichte/README.md",
+      "bytes": 69706,
+      "sha256": "d1c9086aa481a0b470d87009cf88af0b0f7f49494ec56900cf5336872751e32b"
+    },
+    {
+      "path": "tests/analysis/q1_03/inspect.py",
+      "bytes": 4898,
+      "sha256": "c4d6287713275de209ccb1cda74762c92c9b92e5adf23fcd5ddb66795bd161c8"
+    },
+    {
+      "path": "tests/analysis/q1_03/inspection.json",
+      "bytes": 41360,
+      "sha256": "e344089cf8d5769bbcf61e12fe94a53bae32b30bb320d37530c5ff655f3a96c4"
+    },
+    {
+      "path": "tests/analysis/q1_03/inspection.log",
+      "bytes": 156,
+      "sha256": "1a1330ba74b8381e25cd40a91bea52667dcdc5a5caa2431c5ac8f029d493c66e"
+    },
+    {
+      "path": "tests/analysis/q1_03/plan.json",
+      "bytes": 2800,
+      "sha256": "634b48407e01307bac098c6a487dfa34051d0aeb0e543ced993c8c5bcc940fea"
+    },
+    {
+      "path": "tests/analysis/q1_03/verification.json",
+      "bytes": 618,
+      "sha256": "34e13a6969ca3805e90bb126108dd9220eaa54324df7d0d9bf6ae614c1f7a053"
+    }
+  ],
+  "allEqual": true,
+  "requestedEightDocumentsIncluded": true,
+  "newDynamicRuns": 0
+}
