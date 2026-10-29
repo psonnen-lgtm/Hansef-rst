@@ -262,3 +262,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Forschung R1.05 - Der Patrizier: DOS und Originalmechanik
 
 28.10.2026 - [Emulation und Technik](R1_05/R1_05_emulation_und_technik.md), [Reisezeiten](R1_05/R1_05_reisezeiten.md), [Wirtschaft, Politik und Ereignisse](R1_05/R1_05_wirtschaft_politik_ereignisse.md), [Einordnung für Hansefürst](R1_05/R1_05_erkenntnisse_fuer_hansefuerst.md), [Daten und eigene Skripte](R1_05/README.md). Basis `ffc0bfad0e36e4547f7a5750bb68b169f93f8009`, separater Branch `research/r1-05-original-dos-2026-10-28`. DOSBox 0.74-3: Installer und Originalspiel bis zum Hauptmenü sichtbar, keine bestätigte Spielreise/Markt-/Wahl-/Save-Load-Probe. 16×16-Struktur und 419-Byte-Stadtnamensabstände geprüft; keine Reise-/Preis-/Wahlformel oder Ereignisrate nachgewiesen. Originaldateien, Screenshots und private Evidenz nicht veröffentlicht. Hansefürst-Code und bestehende Ergebnisse unverändert; frühere 1.500er-Simulation nur als Hintergrund übernommen, keine Neuberechnung. Kein Merge, kein Pages-Eingriff, keine Folgephase.
+
+
+## Q1.07 – Politische Spielszenen und gesellschaftliches Leben
+
+29.10.2026: [Gesamtbericht](Q1_07/Q1_07_gesamtbericht.md), [Ratsherr](Q1_07/Q1_07_ratsherr_szene.md), [Bürgermeister](Q1_07/Q1_07_buergermeister_szenen.md), [Eldermann](Q1_07/Q1_07_eldermann_szene.md), [Gesellschaft](Q1_07/Q1_07_gesellschaftliche_ereignisse.md), [Gelegenheiten/Modell C](Q1_07/Q1_07_politische_gelegenheiten.md), [Spielspaß](Q1_07/Q1_07_spielspassbewertung.md), [Entscheidungsvorlage](Q1_07/Q1_07_entscheidungsvorlage.md). Acht Konzeptdateien, keine Umsetzung/Simulation/Migration. Spätere Nutzerwahl Modell C hat Vorrang vor der Q1.06-Empfehlung A. Alle neuen Szenen und Anlassregeln bleiben Vorschläge.
