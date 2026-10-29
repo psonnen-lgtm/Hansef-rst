@@ -267,3 +267,5 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Q1.05 – Kaufmannsgilde als wirtschaftlicher Meilenstein
 
 29.10.2026 – [Testgrundlagen und Prüfplan](Q1_05/Q1_05_testgrundlagen.md). Begrenzte Analyse auf unverändertem Produkt; keine Gebührentscheidung oder Implementierung.
+
+Q1.05 abgeschlossen: [Gesamtbericht](Q1_05/Q1_05_gesamtbericht.md) · [Entscheidungsvorlage](Q1_05/Q1_05_entscheidungsvorlage.md).75 Baselines/36 gezielte Gebührenakten; keine Gebührentscheidung, keine Produktänderung.
