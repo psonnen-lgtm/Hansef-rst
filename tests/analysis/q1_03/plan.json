@@ -1,0 +1,88 @@
+{
+  "phase": "Q1.03",
+  "dateBerlin": "2026-10-29",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "branch": "audit/q1-03-guild-politics-design",
+  "remoteHeadsBeforeChanges": [
+    [
+      "cb00e705deadcc5486920c45c3a4aa2b4860dfce",
+      "refs/heads/analysis/p1-election-concept"
+    ],
+    [
+      "e9988fd7268dcb0888d3d7dcc751ea97d5aca565",
+      "refs/heads/analysis/p11-year-round-support"
+    ],
+    [
+      "28a0fb8e2a743f21400e5939fafd36988c33c0ab",
+      "refs/heads/analysis/p12-public-grain"
+    ],
+    [
+      "43c2b2c19be64ab96d537e5676523ad8574448a6",
+      "refs/heads/analysis/p13-supply-market-balance"
+    ],
+    [
+      "175c09f828084f9989888a2bccd01dadaa4dbadc",
+      "refs/heads/analysis/p14-voyage-times"
+    ],
+    [
+      "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "refs/heads/audit/q1-01-quality"
+    ],
+    [
+      "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "refs/heads/audit/q1-02-exploit-validation"
+    ],
+    [
+      "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+      "refs/heads/development/v04-foundation"
+    ],
+    [
+      "c1280228951d581c7b3131279b8ff164a8e36dfa",
+      "refs/heads/main"
+    ],
+    [
+      "6aeb0241c0cb8e6e4ae882b27fed3c0a18a24a7e",
+      "refs/heads/research/r1-05-original-dos-2026-10-28"
+    ],
+    [
+      "4b4722f32657c53408cf4f1e3e19963e678d66c4",
+      "refs/heads/research/r1-06-first-trade"
+    ],
+    [
+      "21440703255dd7df3a7360d8c63cf7f51ce31492",
+      "refs/heads/research/r1-07-trade-map"
+    ],
+    [
+      "b462fb226ff8857d3b03bdb3696bfc1ac1a96b40",
+      "refs/heads/research/r1-08-crew-voyages-catalog"
+    ],
+    [
+      "7abf2eac15724d35839ca832fec6c0da9b7e1535",
+      "refs/heads/research/r1-09-prices-economy"
+    ],
+    [
+      "b71d467fd5437565fea8fa43ac2ea8c5b25d470b",
+      "refs/heads/research/r1-10-events-shipping"
+    ],
+    [
+      "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "refs/heads/research/r1-11-politics-society"
+    ]
+  ],
+  "foundations": {
+    "Q1.01": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+    "Q1.02": "8b20432506940ef1d33bf7af7f162884eec63c01",
+    "R1.11": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7"
+  },
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "productSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "scope": "concept and read-only source/historical data analysis; no VM, no migrations, no feature prototype",
+  "plannedWork": [
+    "seven reports and one decision CSV",
+    "read existing audits on their own fixed commits without merge",
+    "two independent economic eligibility concepts",
+    "separate person from view; strict versioned politics sub-schema design",
+    "future regression plan, no claimed new feature tests",
+    "fresh GitHub readback of all new files after publication"
+  ]
+}
