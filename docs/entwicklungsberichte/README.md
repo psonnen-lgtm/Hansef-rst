@@ -326,3 +326,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ### Q1.01 – Sicherungspunkt D
 
 [Bedienung und Atmosphäre](Q1_01/Q1_01_bedienung_und_atmosphaere.md), [Originalvergleich](Q1_01/Q1_01_originalvergleich.md). Neue Prüfung statisch; historische bytegleiche Chromium-Nachweise ausdrücklich getrennt, keine aktuelle Safari-/Gerätefreigabe.
+
+
+### Q1.01 – Qualitätsaudit abgeschlossen
+
+29.10.2026: [Gesamtbericht](Q1_01/Q1_01_gesamtbericht.md), [zehn Entwicklungsempfehlungen](Q1_01/Q1_01_entwicklungsempfehlungen.md), [Prioritäten-CSV](Q1_01/Q1_01_prioritaeten.csv), [Nachweise](Q1_01/Q1_01_nachweise.json). Ein P0-Anerkennungsbefund, statische Risiken und ungeprüfte Spielspaßannahmen getrennt. Keine Produkt-/Pages-/Spielstandänderung, keine neue Wirtschaftsserie oder Umsetzung.

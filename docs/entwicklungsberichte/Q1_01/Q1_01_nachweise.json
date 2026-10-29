@@ -1,0 +1,59 @@
+{
+  "audit": "Q1.01",
+  "date": "2026-10-29",
+  "productCommit": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "productBlob": "7cf4c90244e4afef6d762a5e73ebf9d6bd9bfaa8",
+  "productSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "baseCommit": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+  "newSimulationRuns": 0,
+  "newGameRuntimeActions": 0,
+  "newBrowserAttempt": {
+    "status": "failed_before_game_start",
+    "reason": "missing Chromium binary"
+  },
+  "historicalEvidence": [
+    {
+      "path": "tests/simulation/phase08d1b-20261027-01/technical-final.json",
+      "readAtRef": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "testedGameCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+      "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+      "scope": "bounded clock/transactions/archived save fixtures and two actual long routes, no full economic or career simulations",
+      "groups": 18,
+      "passed": 18,
+      "browser": null,
+      "viewports": [],
+      "errors": null,
+      "rerunInAudit": false
+    },
+    {
+      "path": "tests/simulation/phase08d1b-20261027-01/browser-attempt1.json",
+      "readAtRef": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "testedGameCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+      "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+      "scope": "four Chromium/touch viewports, synthetic V12/V13 imports and bounded real journey/bath/purchase workflows; no physical Apple hardware or full careers",
+      "groups": 4,
+      "passed": 4,
+      "browser": "154.0.8037.57",
+      "viewports": [
+        {
+          "width": 375,
+          "height": 667
+        },
+        {
+          "width": 390,
+          "height": 844
+        },
+        {
+          "width": 820,
+          "height": 1180
+        },
+        {
+          "width": 1280,
+          "height": 900
+        }
+      ],
+      "errors": [],
+      "rerunInAudit": false
+    }
+  ]
+}
