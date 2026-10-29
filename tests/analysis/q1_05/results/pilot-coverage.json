@@ -1,0 +1,91 @@
+[
+  {
+    "id": "bergen_kogge__cautious__10003",
+    "cities": [
+      1,
+      6
+    ],
+    "routes": [
+      "1->6",
+      "6->1"
+    ],
+    "trips": 23,
+    "meaningfulTrips": 22,
+    "hullsBought": [
+      "1700000000000.9827"
+    ],
+    "goodsBought": [
+      "Eisenwaren",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Tuch"
+    ],
+    "exactReplay": true
+  },
+  {
+    "id": "nowgorod_kogge__normal__10003",
+    "cities": [
+      7,
+      9
+    ],
+    "routes": [
+      "7->9",
+      "9->7"
+    ],
+    "trips": 15,
+    "meaningfulTrips": 14,
+    "hullsBought": [
+      "1700000000000.9827"
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Hanf",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "exactReplay": true
+  },
+  {
+    "id": "luebeck_convoy__normal__10003",
+    "cities": [
+      0,
+      1,
+      2
+    ],
+    "routes": [
+      "0->1",
+      "0->2",
+      "1->0",
+      "1->2",
+      "2->0",
+      "2->1"
+    ],
+    "trips": 66,
+    "meaningfulTrips": 64,
+    "hullsBought": [
+      "100",
+      "101"
+    ],
+    "goodsBought": [
+      "Bier",
+      "Eisenwaren",
+      "Fisch",
+      "Getreide",
+      "Hanf",
+      "Hansegras",
+      "Holz",
+      "Pech",
+      "Pelze",
+      "Salz",
+      "Tuch"
+    ],
+    "exactReplay": true
+  }
+]

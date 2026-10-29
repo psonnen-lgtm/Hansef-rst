@@ -1,0 +1,92 @@
+[
+  {
+    "id": "bergen_kogge__cautious__10003",
+    "spec": {
+      "scenario": "bergen_kogge",
+      "strategy": "cautious",
+      "seed": 10003
+    },
+    "fee": 0,
+    "timing": null,
+    "days": 240,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "day_limit",
+    "traceHash": "59c9a6b356c5210e85e993f23f21b0420159102b8c34da72b9a2f0602f618906",
+    "ledgers": {
+      "sales": 53208,
+      "buys": 40739,
+      "profit": 12723,
+      "feeTotal": 138,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 254,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    },
+    "exactRepeatHash": "59c9a6b356c5210e85e993f23f21b0420159102b8c34da72b9a2f0602f618906"
+  },
+  {
+    "id": "nowgorod_kogge__normal__10003",
+    "spec": {
+      "scenario": "nowgorod_kogge",
+      "strategy": "normal",
+      "seed": 10003
+    },
+    "fee": 0,
+    "timing": null,
+    "days": 235,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "horizon_no_fitting_route",
+    "traceHash": "bb0ae2c3c0f190a1a7b4b268dac02d300e0678a6047210135bbe15555aa60ebb",
+    "ledgers": {
+      "sales": 61440,
+      "buys": 42200,
+      "profit": 19240,
+      "feeTotal": 90,
+      "repair": 0,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 0,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    },
+    "exactRepeatHash": "bb0ae2c3c0f190a1a7b4b268dac02d300e0678a6047210135bbe15555aa60ebb"
+  },
+  {
+    "id": "luebeck_convoy__normal__10003",
+    "spec": {
+      "scenario": "luebeck_convoy",
+      "strategy": "normal",
+      "seed": 10003
+    },
+    "fee": 0,
+    "timing": null,
+    "days": 237,
+    "paid": false,
+    "paymentDay": null,
+    "stopReason": "horizon_no_fitting_route",
+    "traceHash": "6d1505eb32b32a2f67ed8b6a110c520aca365c91db898e142caa4a50e6f88eee",
+    "ledgers": {
+      "sales": 555447,
+      "buys": 454854,
+      "profit": 100633,
+      "feeTotal": 990,
+      "repair": 592,
+      "interest": 0,
+      "borrowed": 0,
+      "lossCost": 40,
+      "hypotheticalFee": 0,
+      "cashValid": true,
+      "debtValid": true,
+      "netCashValid": true
+    },
+    "exactRepeatHash": "6d1505eb32b32a2f67ed8b6a110c520aca365c91db898e142caa4a50e6f88eee"
+  }
+]

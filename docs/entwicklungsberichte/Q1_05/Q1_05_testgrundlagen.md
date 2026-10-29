@@ -16,8 +16,12 @@ Synthetische Schnigge-/Konvoi-Unternehmen ergänzen Typ-/Kapitalsensitivität; k
 
 ## Technischer Pilotabbruch und begrenzte Korrektur
 
-Prüfcode vor erster Ausführung: `e56bd81b` (vollständige ID im Stufenmarker). Kreditprobe bestanden:5.000+4.482 Kredit=9.482 liquide Gold bei unverändertem Nettovermögen und keinem neuen Tag. Bereits damit ist „Gebühr über5.000“ kein Schutz gegen sofortige Kreditfinanzierung.
+Prüfcode vor erster Ausführung: `e56bd8166ba2a32a45bd683b74605524a224edf3` (vollständige ID im Stufenmarker). Kreditprobe bestanden:5.000+4.482 Kredit=9.482 liquide Gold bei unverändertem Nettovermögen und keinem neuen Tag. Bereits damit ist „Gebühr über5.000“ kein Schutz gegen sofortige Kreditfinanzierung.
 
 Erster Bergen-Pilot plus exakte Wiederholung liefen durch native Validierung/Bilanzen und Reproduktionsvergleich, wurden aber anschließend von der zusätzlichen Abdeckungsassertion „mindestens3 Häfen je Fall“ gestoppt. Vorsichtiger Handel darf bei2 Häfen bleiben; ein dritter erzwungener Hafen würde die Strategie ändern. Diese Testannahme war zu eng und wird auf mindestens2 tatsächlich bereiste Häfen geändert. Die breitere Städte-/Routenabdeckung wird anschließend über die gesamte Serie gemessen, nicht behauptet. Keine Wirtschafts-/Strategieänderung. Originalfehler/Marker/Log bleiben erhalten.
 
 Das erste Programm speicherte den vollständigen Rohpfad erst nach dieser Assertion; diese beiden Ausführungen sind deshalb **nicht als auswertbare Baselines gesichert**. Begrenzte Wiederholung der3 Pilotfälle mit vorgezogener Rohdatensicherung ist notwendig. Kreditprobe wird nicht wiederholt. Zusatzkosten2 Ausführungen, geplante Gesamtzahl Baseline-/Pilot-/Mechanikinstanzen81 statt79, weiterhin unter100. Keine anschließende Großserie bei erneuter ungeklärter technischer Störung.
+
+## Pilot freigegeben
+
+Begrenzte Korrektur vor Wiederholung veröffentlicht: `ef18beed12f797ab5b7f4c3dd0d5ed29c84967e4`. Drei Piloten mit jeweils exakter Wiederholung bestanden; native Validatoren, Bargeld-/Schulden-/Nettogeldbilanzen, beide tatsächlich genutzten Konvoirümpfe und reale zusätzliche Routen geprüft. [Gemessene Abdeckung](../../../tests/analysis/q1_05/results/pilot-coverage.json). Jetzt erst Freigabe der restlichen72 Baselines. Ergebnisdateien werden nicht vorweggenommen.
