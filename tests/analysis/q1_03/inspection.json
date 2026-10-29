@@ -1,0 +1,913 @@
+{
+  "phase": "Q1.03",
+  "inspectedCommit": "520903f0d979c0b146e8f4ca44421cb11c01cff8",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "productHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "newDynamicRuns": 0,
+  "newMigrations": 0,
+  "newGuildOrPoliticsImplementation": false,
+  "foundationArtifacts": [
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_gesamtbericht.md",
+      "blob": "b718919dbb30d46ce0ba626db45e40b0f0d73318",
+      "sha256": "87bd33f6b82b949bb9d18658180e47fe42747c289f5fc0d22ef1595cdcf8e887",
+      "bytes": 10612
+    },
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_politik_und_langzeitmotivation.md",
+      "blob": "a715d7d9e9eb4f81f8acd6a11abea1bfad4c8a9b",
+      "sha256": "ee2d36f41ed5b4282121afceb3d9f6f9c4e791f026b4cdb2a1862321cf4074b2",
+      "bytes": 11137
+    },
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_prioritaeten.csv",
+      "blob": "784402ac6674a971436c837faf12c8911a7191fc",
+      "sha256": "d68ec0091051dc14e9d5ea3a90337ae39630c1e0dfe9189d06e91b318bd252c9",
+      "bytes": 8509
+    },
+    {
+      "commit": "d4cf42868a5347ec6e660f52faafb8132df5b209",
+      "path": "docs/entwicklungsberichte/Q1_01/Q1_01_entwicklungsempfehlungen.md",
+      "blob": "ad3ef83c50cb31accc2d6f41a6c450774b1e02eb",
+      "sha256": "1197c33ba446ffd08a29eda5d33ef1c888093e8b7a60fe1522eeeb1ea31cf58e",
+      "bytes": 13147
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_gesamtbericht.md",
+      "blob": "ae3ab2fc883e08f5b3bd6f1d455befe35dc3050a",
+      "sha256": "d884acc3178437558dbe332f9b593d8886d628f5f8e0aeb33e226e56c1f5d342",
+      "bytes": 3222
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_handelsexploit.md",
+      "blob": "748aa16af5f30c3bddf51ee5d611b1d274b7b1d5",
+      "sha256": "ab6af43c85a3128dfef32c9e465c3e4ff82e02dbe48df85e5a62471ba820f4d8",
+      "bytes": 5450
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_politische_ortsbedingung.md",
+      "blob": "2a7271d064f695b86b92e6d013ddcf4a3d09dd76",
+      "sha256": "5fcf9341a7fc2bd4a52afb88892976ce3924f50255ad036ae743aed4d08f9261",
+      "bytes": 3801
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_loesungsvarianten.md",
+      "blob": "f88283e007978a5ad3e748b9eca8ffdb22e0246f",
+      "sha256": "b5cb7814bcebd9c5b7f31d2233ec270b9ec3c1c9ce0b9309d3bb6fa0f108bafa",
+      "bytes": 5659
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_rohdaten.json",
+      "blob": "082c6b3321d1ef5557c34dd6bfb714f448c869c0",
+      "sha256": "f83a0c51a710dd2d1019a52462680bb8e0b419cdd529d7a9e58c2a5e6a4566b0",
+      "bytes": 39385
+    },
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_testfaelle.csv",
+      "blob": "0c9742317030efc56f08f47f95d6ab91db041cfb",
+      "sha256": "199762ac596a5b36ba5aaf16ef4ed319552318236bb1a6c17a6a71e3b6d64d57",
+      "bytes": 966
+    },
+    {
+      "commit": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "path": "docs/entwicklungsberichte/R1_11/R1_11_90_stunden_karrierekonzept.md",
+      "blob": "532a2228326ca3a05f7375b49adbfe75ffdaf1b8",
+      "sha256": "ae4c971b3935a3b167aadc903d347a482e4c9a7599247238262966adbc014d78",
+      "bytes": 6867
+    },
+    {
+      "commit": "ad5bfd97c42433ac5e3023b2e6ee8ed07c9ff6c7",
+      "path": "docs/entwicklungsberichte/R1_11/R1_11_D_vergleich_hansefuerst.md",
+      "blob": "c3f656e00c0b343906c5b17bb6e0879a8f49140d",
+      "sha256": "49b25bb73813e60e3278fba42f9ec2395ac70c766956629c8c8108ab1fec75fa",
+      "bytes": 12947
+    }
+  ],
+  "functionLines": {
+    "migrateToCitiesV6": 88,
+    "backupCityMigration": 89,
+    "makeShip": 104,
+    "initialMarkets": 108,
+    "backupGoodsMigration": 109,
+    "fresh": 110,
+    "freshStorage": 113,
+    "warehouseRequired": 114,
+    "warehouseArrears": 115,
+    "warehouseUsed": 116,
+    "warehouseCapacityLimit": 117,
+    "warehouseCapacity": 118,
+    "validateStorageV8": 119,
+    "validateStorage": 124,
+    "migrateStorage": 129,
+    "backupStorageMigration": 137,
+    "changeWarehouseRent": 144,
+    "warehouseRentDay": 158,
+    "payWarehouseArrears": 169,
+    "warehouseCapacityPanel": 180,
+    "freshShipyard": 189,
+    "shipyardWorth": 190,
+    "validateShipyard": 191,
+    "migrateShipyard": 196,
+    "backupShipyardMigration": 197,
+    "shipbuildingSources": 203,
+    "shipbuildingQuote": 204,
+    "startShipbuilding": 216,
+    "completeShipbuilding": 228,
+    "waitShipbuilding": 235,
+    "shipyardPanel": 244,
+    "emptyWarehouse": 251,
+    "emptyWarehouses": 252,
+    "completeWarehouses": 253,
+    "warehouseMigrationNeeded": 254,
+    "validateWarehouses": 255,
+    "backupWarehouseMigration": 270,
+    "warehouseWorth": 271,
+    "warehouseTransfer": 272,
+    "warehouseSelect": 300,
+    "warehouseView": 301,
+    "validate": 308,
+    "migrateFiveCitySave": 336,
+    "freshPolitics": 349,
+    "politicalPeriod": 350,
+    "politicalWorth": 351,
+    "politicalId": 352,
+    "politicalNote": 353,
+    "politicalRecords": 354,
+    "politicalPartner": 355,
+    "politicalOffer": 356,
+    "politicalRoom": 361,
+    "politicalSupport": 362,
+    "mayorQuote": 368,
+    "politicalOfficeProof": 382,
+    "politicalCloseOffice": 386,
+    "politicsClock": 392,
+    "politicalLeagueAccess": 398,
+    "politicalHome": 399,
+    "hanseQuote": 400,
+    "politicalAction": 412,
+    "acceptPoliticalJob": 425,
+    "politicalRecord": 433,
+    "politicalSupplyPending": 438,
+    "completePoliticalSupply": 439,
+    "politicalTrade": 443,
+    "witnessPoliticalJob": 453,
+    "finishPoliticalAccord": 457,
+    "runMayorElection": 461,
+    "resignMayor": 470,
+    "reviewMayor": 471,
+    "requestPoliticalEndorsement": 472,
+    "acceptHanseAgreement": 476,
+    "witnessHanseAgreement": 480,
+    "finishHanseAgreement": 484,
+    "runHanseAssembly": 488,
+    "validatePolitics": 495,
+    "migratePolitics": 535,
+    "backupPoliticsMigration": 546,
+    "politicalDate": 551,
+    "politicalSupportLabel": 552,
+    "politicalRumorPanel": 553,
+    "politicalCareerModel": 555,
+    "politicalCareerBoard": 573,
+    "politicsHallView": 581,
+    "freshInformation": 612,
+    "informationId": 613,
+    "informationCorridor": 614,
+    "validateInformationV12": 618,
+    "migrateInformationV12": 634,
+    "backupInformationMigration": 641,
+    "harborGossip": 646,
+    "informationTransaction": 650,
+    "buyInformation": 666,
+    "buyInformationArchive": 679,
+    "fileExistingInformation": 686,
+    "informationSelect": 691,
+    "informationMore": 692,
+    "informationReportCards": 693,
+    "informationPanel": 697,
+    "informationArchivePanel": 701,
+    "informationBookPanel": 705,
+    "tradeLetterNumber": 713,
+    "tradeLetterGap": 714,
+    "tradeLetterNext": 715,
+    "tradeLetterSpec": 716,
+    "freshTradeLetters": 717,
+    "tradeLetterClock": 718,
+    "validateTradeLetters": 723,
+    "validateInformation": 744,
+    "migrateInformation": 749,
+    "backupTradeLetterMigration": 752,
+    "buyTradeLetter": 757,
+    "tradeLetterMore": 768,
+    "tradeLetterCards": 769,
+    "tradeLetterPanel": 773,
+    "migrate": 781,
+    "save": 782,
+    "backupCurrent": 783,
+    "log": 784,
+    "ship": 785,
+    "load": 786,
+    "capacity": 787,
+    "cargoBookPrice": 788,
+    "ensureCargoRecords": 789,
+    "consumeOrigins": 790,
+    "cargoWorth": 791,
+    "netWorth": 792,
+    "routeHandlingDays": 794,
+    "routeTravelDays": 795,
+    "routeDescription": 796,
+    "questWindow": 797,
+    "rank": 799,
+    "observe": 800,
+    "dailyMarketPrice": 802,
+    "validateRegionalEconomy": 817,
+    "migrateRegionalEconomy": 825,
+    "backupRegionalMigration": 832,
+    "regionalReport": 842,
+    "regionalInformationPanel": 849,
+    "regionalPrice": 856,
+    "regionalStock": 863,
+    "regionalMarketDay": 868,
+    "advance": 874,
+    "totalDay": 875,
+    "render": 876,
+    "openSheet": 878,
+    "closeSheet": 879,
+    "sheetKeyboard": 880,
+    "harborLetter": 881,
+    "storageWarningMarkup": 882,
+    "renderStorageStatus": 883,
+    "marketReceipt": 884,
+    "show": 886,
+    "notice": 887,
+    "marketTradeLimits": 890,
+    "marketQuantityChanged": 891,
+    "marketChooseGood": 892,
+    "marketSetMax": 893,
+    "marketSelect": 894,
+    "marketView": 895,
+    "trade": 905,
+    "bathView": 906,
+    "takeBath": 907,
+    "donationGain": 908,
+    "churchView": 909,
+    "donate": 910,
+    "bankView": 911,
+    "creditLimit": 912,
+    "bankOp": 913,
+    "shipSaleValue": 915,
+    "shipSaleQuote": 916,
+    "shipSalePanel": 922,
+    "sellShip": 923,
+    "harborWorkEligibility": 932,
+    "harborWorkPanel": 947,
+    "performHarborWork": 948,
+    "harborView": 970,
+    "repairShip": 971,
+    "armShip": 972,
+    "buyShip": 973,
+    "selectFleetShip": 975,
+    "fleetNames": 980,
+    "shipsView": 982,
+    "contorView": 986,
+    "hallView": 987,
+    "promote": 988,
+    "questsView": 989,
+    "completeQuests": 990,
+    "bookView": 991,
+    "rumorView": 992,
+    "chronicleView": 993,
+    "mapVoyageQuote": 996,
+    "mapPanTo": 1002,
+    "mapChooseDestination": 1003,
+    "chartRouteSegments": 1004,
+    "cancelVoyagePreparation": 1010,
+    "mapView": 1012,
+    "planTravel": 1019,
+    "rollTravel": 1020,
+    "travelView": 1021,
+    "arrive": 1026,
+    "arrivalView": 1027,
+    "saveView": 1028,
+    "exportGame": 1029,
+    "importGame": 1030,
+    "validateBeginning": 1051,
+    "newMerchantGame": 1052,
+    "startOriginal": 1056,
+    "startUnchanged": 1057,
+    "resetGame": 1058,
+    "welcome": 1059,
+    "chooseMerchant": 1065,
+    "chooseStartCity": 1066,
+    "updateStartCity": 1067,
+    "cancelStartGame": 1068,
+    "startGame": 1069,
+    "rect": 1187,
+    "drawCity": 1188,
+    "drawTradeCity": 1200,
+    "drawMap": 1217,
+    "showNews": 1234,
+    "dismissNews": 1235,
+    "checkNews": 1236
+  },
+  "cityUsesTextualNotCompleteAST": [
+    {
+      "line": 104,
+      "text": "function makeShip(type=1,fixed=null){let t=SHIPTYPES[type];return {id:fixed?fixed.id:Date.now()+Math.random(),name:t.name,type,city:fixed?fixed.city:s?s.city:0,capacity:t.cap,speed:t.speed,condition:100,arms:0,cargo:{},costs:{}}}"
+    },
+    {
+      "line": 114,
+      "text": "function warehouseRequired(city=s.city,x=s){const used=Object.values(x.warehouses[city].cargo).reduce((n,q)=>n+q,0);return used>WAREHOUSE_RULES.base+WAREHOUSE_RULES.maxBlocks*WAREHOUSE_RULES.step?0:Math.max(0,Math.ceil((used-WAREHOUSE_RULES"
+    },
+    {
+      "line": 116,
+      "text": "function warehouseUsed(city=s.city){return Object.values(s.warehouses[city].cargo).reduce((sum,n)=>sum+n,0)}"
+    },
+    {
+      "line": 118,
+      "text": "function warehouseCapacity(city=s.city){return WAREHOUSE_RULES.base+s.storage.rentals[city].blocks*WAREHOUSE_RULES.step}"
+    },
+    {
+      "line": 145,
+      "text": " if(warehouseRentBusy||!s||!isCityIndex(s.city)||!Number.isInteger(blocks)||blocks<0||blocks>WAREHOUSE_RULES.maxBlocks)return false;"
+    },
+    {
+      "line": 146,
+      "text": " const r=s.storage.rentals[s.city];if(blocks===r.blocks)return true;"
+    },
+    {
+      "line": 153,
+      "text": " const previous=s,candidate=JSON.parse(JSON.stringify(s)),next=candidate.storage.rentals[s.city];"
+    },
+    {
+      "line": 156,
+      "text": " s=candidate;Testlog.event('warehouse_rent_change',{city:s.city,from:previous.storage.rentals[s.city].blocks,blocks,cost});render();warehouseView();return true;"
+    },
+    {
+      "line": 170,
+      "text": " if(warehouseRentBusy||!s||!isCityIndex(s.city))return false;"
+    },
+    {
+      "line": 171,
+      "text": " const cost=s.storage.rentals[s.city].arrears;if(!cost)return false;"
+    },
+    {
+      "line": 174,
+      "text": " try{accepted=confirm('Alle '+fmt(cost)+' G Mietrückstände in '+CITIES[s.city]+' jetzt aus Bargeld begleichen? Laufende Tagesmiete bleibt bestehen.')}finally{warehouseRentBusy=false}"
+    },
+    {
+      "line": 176,
+      "text": " const candidate=JSON.parse(JSON.stringify(s));candidate.gold-=cost;candidate.storage.rentals[s.city].arrears=0;"
+    },
+    {
+      "line": 178,
+      "text": " s=candidate;Testlog.event('warehouse_arrears_paid',{city:s.city,cost});render();warehouseView();return true;"
+    },
+    {
+      "line": 181,
+      "text": " const used=warehouseUsed(),r=s.storage.rentals[s.city],required=warehouseRequired(),total=warehouseCapacity(),free=Math.max(0,total-used),overflow=Math.max(0,used-total),arrears=warehouseArrears(),rate=s.storage.rentals.reduce((sum,r,city)"
+    },
+    {
+      "line": 219,
+      "text": " try{if(!confirm(SHIPTYPES[type].name+' in '+CITIES[s.city]+' bauen? '+quote.rows.map(m=>m.n+' Fass '+GOODS[m.j][0]).join(', ')+'. Dazu '+quote.wage+' G Werftlohn, '+quote.days+' Spieltage Bauzeit. Alles wird jetzt einmalig bezahlt/verbrauc"
+    },
+    {
+      "line": 224,
+      "text": "  const order={id:candidate.shipyard.nextId++,type,city:s.city,started:totalDay(),ready:totalDay()+quote.days,shipId:Math.ceil(Math.max(s.shipyard.lastShipId||0,...s.ships.map(q=>q.id)))+1,materialsBook,wage:quote.wage};candidate.shipyard.l"
+    },
+    {
+      "line": 273,
+      "text": " if(!s||!isCityIndex(s.city)||!WAREHOUSE_CITIES.includes(s.city)||!isGoodIndex(j)||![1,-1].includes(dir)||ship().city!==s.city)return false;"
+    },
+    {
+      "line": 275,
+      "text": " const n=Number(input),w=s.warehouses?.[s.city],q=ship();"
+    },
+    {
+      "line": 295,
+      "text": " if(dir===-1){const rental=s.storage.rentals[s.city];if(rental.arrears>0)rental.blocks=Math.min(rental.blocks,warehouseRequired());if(warehouseRequired()>0&&!rental.until)rental.until=totalDay()+1;}"
+    },
+    {
+      "line": 297,
+      "text": " Testlog.event('warehouse_transfer',{city:s.city,shipId:q.id,good:GOODS[j][0],quantity:n,direction:dir===1?'store':'load'});"
+    },
+    {
+      "line": 300,
+      "text": "function warehouseSelect(index){if(Number.isInteger(index)&&isCityIndex(s.city)&&s.ships[index]?.city===s.city){s.active=index;save();warehouseView()}}"
+    },
+    {
+      "line": 302,
+      "text": " if(!isCityIndex(s.city))return;"
+    },
+    {
+      "line": 303,
+      "text": " const local=s.ships.map((q,index)=>({q,index})).filter(x=>x.q.city===s.city),selected=ship().city===s.city,w=s.warehouses[s.city];"
+    },
+    {
+      "line": 306,
+      "text": " openSheet('📦 Lagerhaus '+CITIES[s.city],`<div class=\"warehouse-panel\"><p>Hier bleiben deine Waren an Land, bis du sie wieder brauchst. Das Umladen ist kostenlos; Einkaufskosten und Warenherkunft bleiben erhalten.</p>${warehouseCapacityPane"
+    },
+    {
+      "line": 354,
+      "text": "function politicalRecords(city=s.city){return s.politics.records.filter(r=>r.city===city&&r.kind!=='league')}"
+    },
+    {
+      "line": 356,
+      "text": "function politicalOffer(kind,city=s.city){"
+    },
+    {
+      "line": 362,
+      "text": "function politicalSupport(city=s.city){"
+    },
+    {
+      "line": 368,
+      "text": "function mayorQuote(city=s.city){"
+    },
+    {
+      "line": 427,
+      "text": " if(!politicalRoom()||s.politics.issued[s.city][kind]>=offer.period||s.politics.jobs.some(q=>q.city===s.city&&q.kind===kind&&q.until>=totalDay()))return false;"
+    },
+    {
+      "line": 428,
+      "text": " return politicalAction('Ratsbrief aus '+CITIES[s.city]+' annehmen? '+(kind==='supply'?offer.n+' Fass '+GOODS[offer.good][0]+' nachweislich aus anderer Stadt hier verkaufen.':'Persönlich im Rathaus von '+CITIES[offer.partner]+' vorsprechen "
+    },
+    {
+      "line": 429,
+      "text": "  if(!politicalRoom()||s.politics.issued[s.city][kind]>=offer.period)return false;"
+    },
+    {
+      "line": 430,
+      "text": "  s.politics.issued[s.city][kind]=offer.period;s.politics.jobs=s.politics.jobs.filter(q=>!(q.city===s.city&&q.kind===kind));s.politics.jobs.push(offer);politicalNote('Versiegelten '+(kind==='supply'?'Versorgungsbrief':'Ratsvertrag')+' in '+"
+    },
+    {
+      "line": 438,
+      "text": "function politicalSupplyPending(j){return !!s?.politics?.jobs.some(q=>q.kind==='supply'&&q.city===s.city&&q.good===j&&q.until>=totalDay())}"
+    },
+    {
+      "line": 440,
+      "text": " if(!politicalTradeStaging)return false;const q=s.politics.jobs.find(q=>q.kind==='supply'&&q.city===s.city&&q.good===j&&q.until>=totalDay()&&eligible>=q.n);"
+    },
+    {
+      "line": 454,
+      "text": " const q=s.politics.jobs.find(q=>q.id===id&&q.kind==='accord'&&q.partner===s.city&&!q.witnessed&&q.until>=totalDay());if(!q)return false;"
+    },
+    {
+      "line": 455,
+      "text": " return politicalAction('Dem Rat von '+CITIES[s.city]+' den versiegelten Brief vorlegen? Danach persönlich in '+CITIES[q.city]+' Bericht erstatten.',()=>{const x=s.politics.jobs.find(x=>x.id===id);if(!x||x.witnessed||x.partner!==s.city)retu"
+    },
+    {
+      "line": 458,
+      "text": " const q=s.politics.jobs.find(q=>q.id===id&&q.kind==='accord'&&q.city===s.city&&q.witnessed&&q.until>=totalDay());if(!q)return false;"
+    },
+    {
+      "line": 459,
+      "text": " return politicalAction('Die gehaltene Ratsvereinbarung in '+CITIES[s.city]+' beurkunden lassen?',()=>{const x=s.politics.jobs.find(x=>x.id===id);if(!x||!x.witnessed||x.city!==s.city||!politicalRecord(x))return false;s.politics.jobs=s.polit"
+    },
+    {
+      "line": 463,
+      "text": " return politicalAction('Bürgermeisterwahl in '+CITIES[s.city]+': '+politicalSupportLabel(q.score)+' von '+q.target+' nötiger Ratsunterstützung. '+(q.willWin?'Die zugesagte Mehrheit reicht.':'Die Mehrheit reicht noch nicht; die Niederlage l"
+    },
+    {
+      "line": 464,
+      "text": "  const quote=mayorQuote();if(!quote.eligible)return false;const p=s.politics;p.nextElection[s.city]=totalDay()+p.rules.sectionDays;"
+    },
+    {
+      "line": 465,
+      "text": "  if(quote.score>=quote.target){p.office={city:s.city,start:totalDay(),until:Math.min(360000000,totalDay()+360),firstReceipt:p.records.length};p.appointments[s.city]={city:s.city,day:totalDay(),support:quote.score};s.rank=Math.max(s.rank,3)"
+    },
+    {
+      "line": 466,
+      "text": "  else politicalNote('Bürgermeisterwahl in '+CITIES[s.city]+' verloren: '+politicalSupportLabel(quote.score)+' von '+quote.target+' Unterstützung. Weitere gehaltene Dienste und Zusagen gewinnen; alle Verdienste bleiben.');"
+    },
+    {
+      "line": 467,
+      "text": "  Testlog.event('political_election',{city:s.city,won:quote.score>=quote.target,support:quote.score,target:quote.target});return true;"
+    },
+    {
+      "line": 473,
+      "text": " const a=politicalRecords(),ids=['supply','accord'].map(kind=>a.find(r=>r.kind===kind)?.id);if(!politicalLeagueAccess()||s.politics.endorsements[s.city]||ids.some(id=>!id))return false;"
+    },
+    {
+      "line": 474,
+      "text": " return politicalAction('Die beiden belegten örtlichen Leistungsarten dem Rat von '+CITIES[s.city]+' vorlegen und um ein Stadtsiegel als Fürsprecher bitten?',()=>{if(s.politics.endorsements[s.city])return false;s.politics.endorsements[s.cit"
+    },
+    {
+      "line": 477,
+      "text": " const home=politicalHome()??s.city,period=politicalPeriod();if(!politicalLeagueAccess()||s.politics.league||s.politics.leagueIssued[home]>=period||!politicalRoom())return false;"
+    },
+    {
+      "line": 481,
+      "text": " const q=s.politics.league;if(!q||q.until<totalDay()||s.city===q.home||!s.politics.endorsements[s.city]||q.visited.includes(s.city))return false;"
+    },
+    {
+      "line": 482,
+      "text": " return politicalAction('Mit dem Fürsprecher von '+CITIES[s.city]+' persönlich über den Hansevertrag verhandeln?',()=>{s.politics.league.visited.push(s.city);politicalNote('Hansevertrag in '+CITIES[s.city]+' persönlich bestätigt.');return t"
+    },
+    {
+      "line": 485,
+      "text": " const q=s.politics.league;if(!q||s.city!==q.home||q.until<totalDay()||q.visited.length<2||new Set([q.home,...q.visited].map(c=>POLITICAL_CITIES[c].region)).size<2)return false;"
+    },
+    {
+      "line": 486,
+      "text": " return politicalAction('Den gehaltenen überregionalen Vertrag in '+CITIES[s.city]+' versiegeln lassen?',()=>{const q=s.politics.league;if(!politicalRecord({id:q.id,city:q.home,kind:'league',period:q.period},q.visited))return false;s.politi"
+    },
+    {
+      "line": 553,
+      "text": "function politicalRumorPanel(){const q=politicalSupport();return '<section class=\"item political-letter\"><h3>🗣️ Stimmen aus dem Rat</h3><p>'+esc(POLITICAL_CITIES[s.city].rivals[0])+': „'+(q.supply>=3?'Deine Lieferzusagen sind belegt.':'Wir "
+    },
+    {
+      "line": 556,
+      "text": " const p=s.politics,c=s.city,q=mayorQuote(),h=hanseQuote(),r=POLITICAL_RULES,worth=politicalWorth(),arrears=warehouseArrears(),now=totalDay(),wait=Math.max(0,p.nextElection[c]-now),office=p.office;"
+    },
+    {
+      "line": 574,
+      "text": " const m=politicalCareerModel(),p=s.politics,c=s.city,number=n=>Number.isInteger(n)?fmt(n):politicalSupportLabel(n);"
+    },
+    {
+      "line": 582,
+      "text": " const p=s.politics,c=s.city,q=mayorQuote(),h=hanseQuote(),period=politicalPeriod(),next=p.since+(period+1)*p.rules.sectionDays,local=politicalRecords(),o=p.office,until=o?Math.max(0,o.until-totalDay()):0;"
+    },
+    {
+      "line": 601,
+      "text": " if(league)html+='<div class=\"notice\"><p>Hansevertrag: zwei auswärtige Fürsprecher besuchen, persönlich bestätigen, anschließend nach '+esc(CITIES[league.home])+' zurück. Mindestens zwei Handelsräume einschließlich Heimat. Bestätigt: '+leag"
+    },
+    {
+      "line": 698,
+      "text": " const a=s.information,city=informationCity??(s.city+1)%CITY_COUNT,good=informationGood,gossip=harborGossip(),existing=a.reports.find(r=>r.id===informationId(totalDay(),city,good)),reports=a.reports.filter(r=>r.city===city&&r.good===good);"
+    },
+    {
+      "line": 699,
+      "text": " return '<section class=\"political-letter information-panel\" id=\"informationPanel\"><h3>🗣 Hafengespräche und erfahrene Informanten</h3><section class=\"notice\" id=\"harborGossip\" data-gossip-id=\"'+gossip.id+'\"><h4>Ein kostenloses Hafengerücht<"
+    },
+    {
+      "line": 788,
+      "text": "function cargoBookPrice(q,j){return q.costs[j]??q.bookCosts?.[j]??Math.min(GOODS[j][2],s.markets[q.city??s.city][j].price)}"
+    },
+    {
+      "line": 789,
+      "text": "function ensureCargoRecords(q){q.origins??={};q.bookCosts??={};for(const [j,n] of Object.entries(q.cargo)){if(!q.origins[j])q.origins[j]=[{city:null,n}];if(q.costs[j]==null&&q.bookCosts[j]==null)q.bookCosts[j]=Math.min(GOODS[j][2],s.markets"
+    },
+    {
+      "line": 797,
+      "text": "function questWindow(){const random=r(8,15);if(s.city<5)return random;const speed=ship().speed*(.65+.35*.30),round=Math.min(...CITIES.map((_,city)=>city).filter(city=>city!==s.city).map(city=>routeTravelDays(s.city,city,speed)+routeTravelDa"
+    },
+    {
+      "line": 800,
+      "text": "function observe(){s.journal[s.city]={day:s.day,year:s.year,prices:s.markets[s.city].map(m=>m.price)}}"
+    },
+    {
+      "line": 843,
+      "text": " const now=totalDay(),existing=s.economy.reports.find(q=>q.day===now&&q.publishedAt===s.city);if(existing)return existing;"
+    },
+    {
+      "line": 844,
+      "text": " const choices=CITIES.map((_,city)=>city).filter(city=>city!==s.city),city=choices[(now+s.city)%choices.length],goods=REGIONAL_PROFILES[city].map((role,j)=>({role,j})).filter(x=>x.role!==0),j=goods[(now+city)%goods.length].j;"
+    },
+    {
+      "line": 845,
+      "text": " const stock=s.markets[city][j].stock,report={city,j,day:now,band:stock>=140?'abundant':stock<=60?'scarce':'ordinary',publishedAt:s.city};"
+    },
+    {
+      "line": 852,
+      "text": " return `<section class=\"item regional-information\"><h3>🗣️ Warenkunde und Hafennachrichten</h3><p><b>${esc(CITIES[s.city])}:</b> häufiges Angebot: ${esc(roles(s.city,1))}. Typischer Bedarf: ${esc(roles(s.city,-1))}.</p><p class=\"muted\">Die "
+    },
+    {
+      "line": 876,
+      "text": "function render(){if(!s)return;const warehouseSpot=$('warehouseSpot');if(warehouseSpot)warehouseSpot.hidden=!isCityIndex(s.city); $('stats').innerHTML=`<div class=\"stat\"><small>Goldstücke</small><b>${fmt(s.gold)} 🪙</b></div><div class=\"stat"
+    },
+    {
+      "line": 881,
+      "text": "function harborLetter(){return `<section class=\"political-letter harbor-letter\" id=\"harborLetter\"><h3>✉️ Ein Brief des Hafenmeisters: dein erster Törn</h3><p>„Willkommen in ${esc(CITIES[s.city])}, Kaufmann. Goldene Türmarken öffnen die Häus"
+    },
+    {
+      "line": 890,
+      "text": "function marketTradeLimits(j){if(!isGoodIndex(j)||!s)return {buy:0,sell:0,free:0};const q=ship();if(q.city!==s.city)return {buy:0,sell:0,free:0};const m=s.markets[s.city][j],free=Math.max(0,capacity(q)-load(q));return {buy:Math.max(0,Math.f"
+    },
+    {
+      "line": 894,
+      "text": "function marketSelect(index){if(!Number.isInteger(index)||!s.ships[index]||s.ships[index].city!==s.city)return false;s.active=index;render();marketView();return true}"
+    },
+    {
+      "line": 897,
+      "text": " const q=ship(),local=q.city===s.city,ships=s.ships.map((q,index)=>({q,index})).filter(x=>x.q.city===s.city),free=local?Math.max(0,capacity(q)-load(q)):0;"
+    },
+    {
+      "line": 900,
+      "text": "  const m=s.markets[s.city][j],own=local?q.cargo[j]||0:0,paid=local?q.costs[j]??null:null;"
+    },
+    {
+      "line": 903,
+      "text": " openSheet('📖 Das Handelsbuch',`<section class=\"market-panel\"><p>Markt zu <b>${esc(CITIES[s.city])}</b> · <b>${fmt(s.gold)} Gold</b></p><label class=\"market-ship\" for=\"marketShip\">Handelsschiff im Hafen<select id=\"marketShip\" onchange=\"mark"
+    },
+    {
+      "line": 905,
+      "text": "function trade(j,dir){if(!politicalTradeStaging&&dir===-1&&politicalSupplyPending(j))return politicalTrade(j,dir);if(!isGoodIndex(j))return;if(ship().city!==s.city)return notice('Dieses Schiff liegt in einem anderen Hafen.');let n=Math.floo"
+    },
+    {
+      "line": 907,
+      "text": "function takeBath(){if(s.gold<15)return;s.gold-=15;advance(1);let dest=r(0,CITY_COUNT-1);if(dest===s.city)dest=(dest+1)%CITY_COUNT;let j=r(0,GOODS.length-1),special=Math.random()<.13,falseTip=!special&&Math.random()<.10;let m=s.markets[dest"
+    },
+    {
+      "line": 918,
+      "text": " const price=shipSaleValue(q),remainingLocal=s.ships.filter(other=>other.id!==id&&other.city===s.city).length,bookValue=SHIPTYPES[q.type]?.cost*(.45+.35*q.condition/100);"
+    },
+    {
+      "line": 919,
+      "text": " let reason='';if(price===null)reason='Für dieses Schiff ist kein gültiges Werftangebot möglich.';else if(q.city!==s.city)reason='Verkaufen kannst du nur ein eigenes Schiff im aktuellen Hafen.';else if(!q.cargo||Object.values(q.cargo).some("
+    },
+    {
+      "line": 922,
+      "text": "function shipSalePanel(q){const offer=shipSaleQuote(q.id);return `<div class=\"item ship-sale-panel\"><h3>Schiff an die Werft verkaufen</h3><p>Die Werft bietet für <b>${esc(q.name)}</b>: <b>${offer.price===null?'kein Angebot':fmt(offer.price)"
+    },
+    {
+      "line": 925,
+      "text": " if(!confirm(`„${q.name}“ für ${fmt(offer.price)} Gold an die Werft verkaufen?\\nDie Werft übernimmt das unbeladene Schiff endgültig, ohne zusätzliche Vergütung für Bewaffnung.\\nEigene Schiffe in ${CITIES[s.city]} nach dem Verkauf: ${offer.r"
+    },
+    {
+      "line": 927,
+      "text": " const activeId=ship().id,index=s.ships.findIndex(other=>other.id===id);s.ships.splice(index,1);s.active=activeId===id?s.ships.findIndex(other=>other.city===s.city):s.ships.findIndex(other=>other.id===activeId);pending=null;s.gold+=offer.pr"
+    },
+    {
+      "line": 928,
+      "text": " Testlog.event('ship_sale',{shipId:id,shipType:q.type,condition:q.condition,revenue:offer.price,bookValue:offer.bookValue,city:CITIES[s.city]});log(`${q.name} an die Werft verkauft: +${fmt(offer.price)} G. Reise bei Bedarf neu planen.`);ren"
+    },
+    {
+      "line": 935,
+      "text": " const local=s.ships.filter(q=>q.city===s.city),choices=[];"
+    },
+    {
+      "line": 936,
+      "text": " for(const q of local)for(let city=0;city<CITY_COUNT;city++)if(city!==s.city){const days=routeTravelDays(s.city,city,q.speed*(.65+.35*q.condition/100));if(Number.isFinite(days)&&days>0)choices.push({shipId:q.id,shipName:q.name,destination:c"
+    },
+    {
+      "line": 939,
+      "text": " let reason='';const credit=Math.max(0,Math.floor(creditLimit()-s.debt)),goods=local.some(q=>Object.entries(q.cargo).some(([j,n])=>n>0&&s.markets[s.city][j].price>0))||Object.entries(s.warehouses[s.city].cargo).some(([j,n])=>n>0&&s.markets["
+    },
+    {
+      "line": 963,
+      "text": "  Testlog.event('harbor_work',{days:3,payment:20,fromDay:from,toDay:totalDay(),city:CITIES[s.city]});render();Testlog.snapshot('harbor_work');harborView();return true;"
+    },
+    {
+      "line": 970,
+      "text": "function harborView(){completeShipbuilding();if(ship().city!==s.city)return notice('Bitte zuerst ein Schiff in diesem Hafen auswählen.');let q=ship(),repair=Math.ceil((100-q.condition)*8);openSheet('⚓ Hafen & Schiffswerft',`<p>Der Hafenmeis"
+    },
+    {
+      "line": 971,
+      "text": "function repairShip(){if(ship().city!==s.city)return;let q=ship(),n=Math.ceil((100-q.condition)*8);if(n>s.gold)return;s.gold-=n;q.condition=100;Testlog.event('repair',{shipId:q.id,cost:n});log(`${q.name} für ${n} G repariert.`);render();har"
+    },
+    {
+      "line": 972,
+      "text": "function armShip(){if(ship().city!==s.city)return;let q=ship(),n=(q.arms+1)*550;if(q.arms>=3||s.gold<n||capacity(q)-10<load(q))return notice('Nicht genug Gold oder zu viel Ladung für die Bewaffnung.');s.gold-=n;q.arms++;Testlog.event('ship_"
+    },
+    {
+      "line": 977,
+      "text": " if(pending&&!pending.arrived&&(index!==s.active||q.city!==s.city)){notice('Eine Reise ist bereits vorbereitet. Die Schiffsauswahl bleibt erhalten; führe sie aus oder verwirf sie ausdrücklich auf der Seekarte. Es wurde nichts geändert.');re"
+    },
+    {
+      "line": 978,
+      "text": " s.active=index;s.city=q.city;mapDestination=null;closeSheet();notice(q.name+' liegt vor '+CITIES[q.city]+'. Du betrachtest diesen Hafen. Nur die Ansicht und Auswahl wurden geändert – keine Reise, keine Kosten, keine Spieltage.');return tru"
+    },
+    {
+      "line": 984,
+      "text": " openSheet('⛵ Mein Schiffsbuch',`<p>Betrachteter Hafen: <b>${esc(CITIES[s.city])}</b>. Die Auswahl eines Schiffs öffnet seinen tatsächlichen Hafen – ohne Reise oder Warenbewegung.</p>${planned?'<p class=\"notice\">Eine Reise ist vorbereitet. "
+    },
+    {
+      "line": 986,
+      "text": "function contorView(){let level=s.rank>=3?3:s.rank>=2?2:s.rank>=1?1:0;let text=['Ein einfacher Schreibtisch, eine Seekarte und ein paar Kisten.','Ein ordentliches Kontor mit besseren Möbeln und gefüllten Regalen.','Ein gepflegtes Kaufmannsh"
+    },
+    {
+      "line": 989,
+      "text": "function questsView(){if(s.quests.length===0&&totalDay()>=(s.questAvailableAt||0)){let j=QUEST_GOOD_INDICES[r(0,QUEST_GOOD_INDICES.length-1)],n=r(6,18),reward=n*GOODS[j][2]*2;s.quests.push({j,n,reward,until:totalDay()+questWindow(),city:s.c"
+    },
+    {
+      "line": 990,
+      "text": "function completeQuests(j,n){let found=s.quests.findIndex(q=>q.j===j&&q.city===s.city&&q.until>=totalDay()&&n>=q.n);if(found>=0){let q=s.quests.splice(found,1)[0];s.questAvailableAt=totalDay()+5;s.gold+=q.reward;s.rep+=4;s.completed++;Testl"
+    },
+    {
+      "line": 997,
+      "text": " if(!s||!isCityIndex(dest)||dest===s.city||ship().city!==s.city)return null;"
+    },
+    {
+      "line": 998,
+      "text": " const qs=convoy?s.ships.filter(q=>q.city===s.city):[ship()];if(!qs.length)return null;"
+    },
+    {
+      "line": 999,
+      "text": " const speed=Math.min(...qs.map(q=>q.speed*(.65+.35*q.condition/100))),days=routeTravelDays(s.city,dest,speed),fee=qs.reduce((n,q)=>n+[4,6,9][q.type],0);"
+    },
+    {
+      "line": 1013,
+      "text": " const local=s.ships.filter(q=>q.city===s.city),active=ship(),planned=pending&&!pending.arrived,target=isCityIndex(mapDestination)?mapDestination:planned?pending.dest:null,single=mapVoyageQuote(target),convoy=mapVoyageQuote(target,true);"
+    },
+    {
+      "line": 1014,
+      "text": " const topLabels=new Set([0,3,5,8]),markers=CITIES.map((name,i)=>{const here=s.city===i,chosen=target===i,count=s.ships.filter(q=>q.city===i).length;return `<button id=\"chartPort${i}\" class=\"chart-port ${here?'chart-here':''} ${chosen?'char"
+    },
+    {
+      "line": 1015,
+      "text": " const quote=single?`<section class=\"item chart-quote\"><h3>${esc(CITIES[s.city])} → ${esc(CITIES[target])}</h3><p>${esc(CITY_DESCRIPTIONS[target])}</p><p><b>Einzelfahrt:</b> ${fleetNames(single.qs)}<br>${single.days} Spieltage · ${single.fe"
+    },
+    {
+      "line": 1016,
+      "text": " openSheet('🗺️ Die Seekarte',`<section class=\"hanse-chart\"><p><b>Betrachteter Hafen: ${esc(CITIES[s.city])}</b><br>Aktives Schiff: <b>${esc(active.name)}</b> · ${isCityIndex(active.city)?'liegt vor '+esc(CITIES[active.city]):'kein eindeutig"
+    },
+    {
+      "line": 1017,
+      "text": " drawMap('mapCanvas',s.city,target);mapPanTo(target??s.city);"
+    },
+    {
+      "line": 1019,
+      "text": "function planTravel(dest,convoyChoice=null){if(!isCityIndex(dest)||dest===s.city)return;let local=s.ships.filter(q=>q.city===s.city);if(!local.length)return notice('Kein Schiff in diesem Hafen.');if(ship().city!==s.city)return notice('Wähle"
+    },
+    {
+      "line": 1022,
+      "text": " if(!pending||pending.arrived||pending.from!==s.city)return notice('Keine offene Reisevorbereitung in diesem Hafen. Öffne die Seekarte.');"
+    },
+    {
+      "line": 1026,
+      "text": "function arrive(){if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nic"
+    },
+    {
+      "line": 1027,
+      "text": "function arrivalView(){openSheet('⚓ Land in Sicht!',`<p style=\"font-size:23px\"><b>Du bist in ${CITIES[s.city]} angekommen!</b></p><div class=\"notice\">${esc(pending.story||'Die Überfahrt ist beendet.')}</div><p>${esc(CITY_DESCRIPTIONS[s.city"
+    },
+    {
+      "line": 1188,
+      "text": "function drawCity(){if(CityLife.mount(s.city,show,drawCity))return;if(s.city>=5)return drawTradeCity(s.city);let art=$('cityArt'),key=CITYART[s.city];if(art){art.alt='Hafenansicht von '+CITIES[s.city];art.hidden=false;art.onerror=()=>{art.h"
+    },
+    {
+      "line": 1244,
+      "text": " const stamp=()=>({timestamp:new Date().toISOString(),day:s?.day??null,year:s?.year??null,city:s?CITIES[s.city]:null,runId:run,activeMs:Math.round(data.activeMs)});"
+    }
+  ],
+  "repWritesTextual": [
+    {
+      "line": 905,
+      "text": "function trade(j,dir){if(!politicalTradeStaging&&dir===-1&&politicalSupplyPending(j))return politicalTrade(j,dir);if(!isGoodIndex(j))return;if(ship().city!==s.city)return notice('Dieses Schiff liegt in einem anderen Hafen.');let n=Math.floo"
+    },
+    {
+      "line": 910,
+      "text": "function donate(g,rep){if(s.gold<g)return notice('Dafür reicht dein Gold nicht.');s.gold-=g;let gain=donationGain(rep);s.rep+=gain;Testlog.event('donation',{cost:g,reputation:gain});log(`${g} G für die Stadt gespendet (+${gain} Ansehen).`);"
+    },
+    {
+      "line": 990,
+      "text": "function completeQuests(j,n){let found=s.quests.findIndex(q=>q.j===j&&q.city===s.city&&q.until>=totalDay()&&n>=q.n);if(found>=0){let q=s.quests.splice(found,1)[0];s.questAvailableAt=totalDay()+5;s.gold+=q.reward;s.rep+=4;s.completed++;Testl"
+    },
+    {
+      "line": 1026,
+      "text": "function arrive(){if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nic"
+    }
+  ],
+  "historicalEightCasesReadNotRerun": [
+    {
+      "historicalCase": "A01-empty-neutral",
+      "oldWorthBefore": 14960,
+      "oldWorthAfter": 14960,
+      "historicalRepDelta": 0,
+      "quantityBefore": 0,
+      "quantityAfter": 0,
+      "W1commonQuote30Before": 14960,
+      "W1commonQuote30After": 14960,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 14960,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A02-three-mixed-neutral-cycles",
+      "oldWorthBefore": 15200,
+      "oldWorthAfter": 15777.5,
+      "historicalRepDelta": 1,
+      "quantityBefore": 30,
+      "quantityAfter": 30,
+      "W1commonQuote30Before": 15860,
+      "W1commonQuote30After": 15860,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 14960,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A03-partial-mixed",
+      "oldWorthBefore": 15200,
+      "oldWorthAfter": 15365,
+      "historicalRepDelta": 0,
+      "quantityBefore": 30,
+      "quantityAfter": 45,
+      "W1commonQuote30Before": 15860,
+      "W1commonQuote30After": 15860,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 14510,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A04-warehouse-roundtrip",
+      "oldWorthBefore": 15200,
+      "oldWorthAfter": 15200,
+      "historicalRepDelta": 0,
+      "quantityBefore": 30,
+      "quantityAfter": 30,
+      "W1commonQuote30Before": 15860,
+      "W1commonQuote30After": 15860,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 14960,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A05-two-ships-neutral",
+      "oldWorthBefore": 20160,
+      "oldWorthAfter": 20490,
+      "historicalRepDelta": 1,
+      "quantityBefore": 30,
+      "quantityAfter": 30,
+      "W1commonQuote30Before": 20820,
+      "W1commonQuote30After": 20820,
+      "W2inventoryExcludedBefore": 19920,
+      "W2inventoryExcludedAfter": 19920,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A06-real-profit",
+      "oldWorthBefore": 15200,
+      "oldWorthAfter": 15860,
+      "historicalRepDelta": 2,
+      "quantityBefore": 30,
+      "quantityAfter": 0,
+      "W1commonQuote30Before": 15860,
+      "W1commonQuote30After": 15860,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 15860,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A07-real-loss",
+      "oldWorthBefore": 16160,
+      "oldWorthAfter": 15860,
+      "historicalRepDelta": 0,
+      "quantityBefore": 30,
+      "quantityAfter": 0,
+      "W1commonQuote30Before": 15860,
+      "W1commonQuote30After": 15860,
+      "W2inventoryExcludedBefore": 14960,
+      "W2inventoryExcludedAfter": 15860,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    },
+    {
+      "historicalCase": "A08-rank-threshold",
+      "oldWorthBefore": 44920,
+      "oldWorthAfter": 45250,
+      "historicalRepDelta": 1,
+      "quantityBefore": 30,
+      "quantityAfter": 30,
+      "W1commonQuote30Before": 45580,
+      "W1commonQuote30After": 45580,
+      "W2inventoryExcludedBefore": 44680,
+      "W2inventoryExcludedAfter": 44680,
+      "method": "pure reading of saved synthetic Q1.02 fixture; other assets constant; no bank/debt/arrears in original fixture"
+    }
+  ],
+  "historicalQ003ReadNotRerun": {
+    "dayBefore": 486001,
+    "dayAfter": 486001,
+    "newRecords": 1
+  },
+  "pureArithmetic": {
+    "remainingLocalScoreMaximum": 75,
+    "existingLuebeckTarget": 80,
+    "proposalNormalization": 1.3333333333333333,
+    "exampleLocal65Normalized": 86.66666666666667,
+    "membershipFeesIllustrativeOnly": [
+      {
+        "fee": 250,
+        "startGold": 5000,
+        "remaining": 4750,
+        "share": 0.05
+      },
+      {
+        "fee": 500,
+        "startGold": 5000,
+        "remaining": 4500,
+        "share": 0.1
+      },
+      {
+        "fee": 1000,
+        "startGold": 5000,
+        "remaining": 4000,
+        "share": 0.2
+      }
+    ]
+  },
+  "limits": [
+    "no fresh Q001 or Q003 execution",
+    "no tested guild/person/save implementation",
+    "W1 simplified quote30 no caps unknown prices or elapsed time",
+    "W2 discards inventory collateral intentionally, not financial book values",
+    "no old-client migration run; strict schema source read only"
+  ]
+}
