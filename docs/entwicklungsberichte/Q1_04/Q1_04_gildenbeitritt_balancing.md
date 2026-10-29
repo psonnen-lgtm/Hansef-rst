@@ -78,7 +78,7 @@ Vorsichtig/5.600: nach einem Warentörn Kasse6.218, Zahlung anTag4, Rest **618**
 
 Schlussbuchvermögen5.034,60, davon4.482,60 Koggenbuchwert. Diesen positiven Betrag als gesundes Handelskapital zu interpretieren wäre irreführend. Das letzte Schiff ist nicht verkäuflich. Dennoch keine bewiesene allgemeine Sackgasse:552 reicht noch für eine Fahrt/kleine Ware, und ein Spieler könnte Strategie oder Finanzierung ändern. Der getestete vorsichtige Bot tut das nicht. Keine zusätzliche Rettungssimulation begonnen.
 
-Die5.600-G-Variante erfüllt daher das wirtschaftliche Ziel für diesen Stil **nicht**, obwohl Rechnung/Speicherzustand korrekt sind. Das Ergebnis bleibt erhalten, keine nachträgliche Gebührenverschiebung oder angepasste Strategie als Ersatzlauf.
+Die5.600-G-Variante erfüllt bei diesem frühen Zahlungszeitpunkt das wirtschaftliche Ziel für diesen Stil **nicht**, obwohl Rechnung/Speicherzustand korrekt sind. Ein späterer Beitritt mit größerem Puffer könnte anders ausfallen; er wurde nicht als zusätzlicher Gegenlauf getestet. Der Befund widerlegt die frühe R0-Freigabe, nicht die grundsätzliche Finanzierbarkeit jeder5.600-G-Gebühr. Das Ergebnis bleibt erhalten, keine nachträgliche Gebührenverschiebung oder angepasste Strategie als Ersatzlauf.
 
 ## Verbesserter wirtschaftlicher Maßstab – nachträgliche Diagnose, noch kein neuer Nachweis
 

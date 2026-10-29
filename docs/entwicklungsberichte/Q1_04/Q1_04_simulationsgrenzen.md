@@ -46,3 +46,5 @@ Vorsichtig/normal/aggressiv nutzen vorhandene reine beobachtungsbasierte Funktio
 ## Technische Plausibilität ist keine Balancefreigabe
 
 Alle26 Engineausführungen waren technisch konsistent. Von15 Gebührpfaden erfüllt einer mit5.600 das wirtschaftliche Fortsetzungskriterium nicht. Damit sind die Messdaten belastbar für **diesen Gegenfall**, aber kein umfassender Balancenachweis für1.100 oder2.800. Die Aufnahmegebühr entscheidet allein der Nutzer. Keine automatische Folgephase.
+
+Konkretes Zeit-/Aktionsbeispiel des normalen Piloten: 118 simulierte Tage, 44 Entscheidungszyklen, 44 tatsächliche Fahrten, 42 Käufe und 42 Verkäufe. Das sind unterschiedliche Größen; aktive menschliche Zeit wurde nicht gemessen.

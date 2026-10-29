@@ -1,0 +1,77 @@
+{
+  "phase": "Q1.04",
+  "dateBerlin": "2026-10-29",
+  "branch": "audit/q1-04-guild-economy",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "mainUnchanged": "c1280228951d581c7b3131279b8ff164a8e36dfa",
+  "reportCommit": "fba9c1ff087b98cb908b0864582a5f818af9ad30",
+  "historicalReaderCommit": "a8f949de15c0acd7d889e0eefcff0420c04d8069",
+  "pilotCodeCommit": "637f74d514d80a89d064d9d230e569ddcf45726f",
+  "baselineCodeCommit": "4688f7f5f3d00e5ed5f7302ab2fd1135916a9f70",
+  "feeCodeCommit": "a7a88317ec7fd8f1e506f6f415021363580552ff",
+  "readOnlyAuditCommit": "f5d5dec0a3bb30a4005435f8c57982a1f1093ba0",
+  "postHocDiagnosticCodeCommit": "1220b696caab56002706d7b7cfe05a67f7a13f71",
+  "productHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "productCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "productVersion": "0.8d.1b/V13",
+  "productChanged": false,
+  "historicalRunsNotRerun": true,
+  "1500ResultFilesAreIdenticalAlias": true,
+  "distinctBaselines": 10,
+  "pilotRepeatExecutions": 1,
+  "feeContinuationExecutions": 15,
+  "totalExecutions": 26,
+  "allTechnicalAssertionsPassed": true,
+  "newUnexpectedRuntimeFailures": 0,
+  "candidateFees": [
+    1100,
+    2800,
+    5600
+  ],
+  "selectionReferenceQ25": 11221,
+  "nominalWithinBaselineHorizon": [
+    10,
+    10,
+    10
+  ],
+  "reserveProxyWithinBaselineHorizon": [
+    10,
+    10,
+    10
+  ],
+  "empiricalContinuedTradingByCandidateOutOf5": [
+    5,
+    5,
+    4
+  ],
+  "hardDepartureBlocks": 0,
+  "observedHighFeePolicyStagnation": {
+    "strategy": "cautious",
+    "seed": 10001,
+    "fee": 5600,
+    "paidAtDay": 4,
+    "cashAfterFee": 618,
+    "finalDay": 119,
+    "finalCash": 552,
+    "lastPurchaseDay": 2,
+    "lastSaleDay": 4,
+    "notProvenGeneralGameDeadlock": true,
+    "laterPaymentNotTested": true
+  },
+  "tentativeBalancePreference": 1100,
+  "feeFixedByUser": false,
+  "postHocReserveDiagnosticNotIndependentValidation": true,
+  "newGuildOrPoliticsImplementation": false,
+  "migration": false,
+  "pagesChanged": false,
+  "merged": false,
+  "nextTaskStarted": false,
+  "githubReadback": {
+    "commit": "fba9c1ff087b98cb908b0864582a5f818af9ad30",
+    "files": 39,
+    "allEqual": true,
+    "independentHTTPSFetch": true
+  },
+  "reportLink": "https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-04-guild-economy/docs/entwicklungsberichte/Q1_04/Q1_04_gesamtbericht.md",
+  "decisionLink": "https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-04-guild-economy/docs/entwicklungsberichte/Q1_04/Q1_04_entscheidungsvorlage.md"
+}

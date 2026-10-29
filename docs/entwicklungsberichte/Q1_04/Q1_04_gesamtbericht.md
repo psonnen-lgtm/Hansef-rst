@@ -92,3 +92,11 @@ Abschlussberichte/Übergabe werden separat im letzten Sicherungsstand dokumentie
 [GitHub-Gesamtbericht](https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-04-guild-economy/docs/entwicklungsberichte/Q1_04/Q1_04_gesamtbericht.md) · [Entscheidungsvorlage](https://github.com/psonnen-lgtm/Hansef-rst/blob/audit/q1-04-guild-economy/docs/entwicklungsberichte/Q1_04/Q1_04_entscheidungsvorlage.md) · [Branch](https://github.com/psonnen-lgtm/Hansef-rst/tree/audit/q1-04-guild-economy) · [Vergleich](https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...audit/q1-04-guild-economy?expand=1).
 
 Kein Merge, keine Änderung an main/Pages/echten Spielständen, keine Gilden-/Politikimplementierung. Entscheidung über die Aufnahmegebühr ausschließlich durch den Nutzer; keine automatische Folgephase.
+
+## Abschließende Veröffentlichung und Kontrolle
+
+Sechs Berichte/Index und strukturierte Nachweise veröffentlicht in **`fba9c1ff087b98cb908b0864582a5f818af9ad30`**. Danach alle39 damaligen Q1.04-Dateien einschließlich aller Berichte/Index aus einem **frischen unabhängigen GitHub-HTTPS-Fetch** vollständig gelesen und bytegleich bestätigt: [Rücklesebeleg](../../../tests/analysis/q1_04/results/github-readback.json). Abschließende Metadaten und die präzisierte Einschränkung zum frühen Zahlungszeitpunkt werden nach dem letzten Push ebenso geprüft.
+
+3.232 vorbestehende Dateien geprüft, ausschließlich Berichtsindex angehängt. Eingefrorene Quellen,6 Pflichtberichte,49 damalige relative Links,CSV-Zeilen und genau26 Ausführungen/25 unterschiedliche Bilanzen überprüft. Technische Prüfungen bestanden; hoher vorsichtiger Gebührenfall bleibt wirtschaftlich negativer Befund. [Übergabedaten](../../../tests/analysis/q1_04/results/handoff.json), [Prüfsummen](../../../tests/analysis/q1_04/SHA256SUMS).
+
+GitHub-Basis weiterhin `02ee6b8fc1507ad078b6b596c333e50d91eeea64`, main weiterhin `c1280228951d581c7b3131279b8ff164a8e36dfa`. Keine Zusammenführung, keine Produktivänderung, keine Gebührentscheidung. Auftrag beendet; keine Folgephase.

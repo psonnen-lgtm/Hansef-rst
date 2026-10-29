@@ -12,7 +12,7 @@ Bewusster einmaliger hanseweiter Eintritt, keine Aufnahmeaufgaben, keine festen 
 |---|---|---|
 |**1.100 Gold** |22% von5.000 Startgold, gewöhnlich3.900 Bargeld danach;5/5 getestete Stile handeln anschließend weiter |**Vorläufig bevorzugter unterer geprüfter Kandidat**; kein Beweis eines optimalen oder allgemein sicheren Preises |
 |2.800 Gold |56% Startgold,2.200 danach;5/5 getestete Stile setzen Handel fort |Möglich, wenn deutlich spürbare frühe Ausgabe gewünscht. Mehr Belastung ohne belegten zusätzlichen Spielspaß |
-|5.600 Gold |Erst nach frühem Geldzuwachs;4/5 fortgesetzter Handel, vorsichtiger Fall zahlt sich unter seine Arbeitsreserve |Derzeit nicht empfehlen; positive Kasse/Buchvermögen genügt nicht als Sicherheitsnachweis |
+|5.600 Gold |Erst nach frühem Geldzuwachs;4/5 fortgesetzter Handel, vorsichtiger Fall zahlt sich unter seine Arbeitsreserve |Für frühen Beitritt nach R0 derzeit nicht empfehlen; spätere Zahlung mit größerem Puffer nicht dynamisch geprüft |
 
 Alle wurden erst aus zehn aktuellen Baselines abgeleitet: unteres Quartil freier Cashwerte nachTag30/31=11.221; Raster10/25/50%, auf100 abgerundet. Nicht die alte500-G-Idee vorausgesetzt. Niedrigere Kandidaten oder feineres Raster könnten ebenso sinnvoll sein, wurden aber nicht einzeln geprüft.
 
