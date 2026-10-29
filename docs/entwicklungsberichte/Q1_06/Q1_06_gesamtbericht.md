@@ -83,3 +83,20 @@ Die Untersuchung endet nach Veröffentlichung und Rücklesen. Keine Umsetzung, Z
 Alle3.232 vorbestehenden Dateien gegen die tatsächliche Entwicklungsbasis geprüft: ausschließlich der Berichtsindex wurde ergänzt, alle übrigen Altdateien einschließlich Spielcode/Simulationen/Ergebnisse byteidentisch. Acht Pflichtdateien,48 Entscheidungsposten,42 ausdrücklich geplante Regressionen,33 Routen und Quellhashes geprüft. Die81 A/C-Abweichungen sind reine Zielschwellenentscheide, nicht81 tatsächlich ausgeführte oder notwendig zulässige Wahlen. [Prüfnachweis](../../../tests/analysis/q1_06/results/verification.json).
 
 Vollständiger Berichtstand mit acht Lieferdateien: `bd66a449dfd67fb3ec53a861f18e011b5d08b259`. Die anschließende Endredaktion trennt Dezimalkommas/Begriffsnamen und ergänzt die Verweisnavigation; keine Formel, Quelldatei oder fachliche Empfehlung geändert. Der finale veröffentlichte Umfang wird anschließend unabhängig von GitHub zurückgelesen.
+
+## Abschließende Veröffentlichung und Rücklesen von GitHub
+
+Das vollständige Paket wurde in **`440c7a0c8ec6588173df7a5b80b27bd553af4eb1`** veröffentlicht. Anschließend aus einem frischen unabhängigen Git-Objektverzeichnis ausschließlich per GitHub-HTTPS gefetcht: **alle24 damaligen Dateien**, einschließlich aller acht Lieferdokumente, Index, Quellenplan, Modell-/Routendaten und Prüfprogramme, vollständig gelesen und byteweise mit der Arbeitskopie verglichen. Dateimenge vollständig, alle Bytes identisch. [Rücklesebeleg](../../../tests/analysis/q1_06/results/github-readback.json).
+
+Sicherungsfolge:
+
+|Commit|Gesicherter Inhalt|
+|---|---|
+|[`d5015f25810df653edac5b29a2bdfa07a478e819`](https://github.com/psonnen-lgtm/Hansef-rst/commit/d5015f25810df653edac5b29a2bdfa07a478e819)|Quellen-/Prüfplan vor Ausführung|
+|[`50e48c7dfc8b491e6a66a9a474533e55e1981572`](https://github.com/psonnen-lgtm/Hansef-rst/commit/50e48c7dfc8b491e6a66a9a474533e55e1981572)|Karrieremodell/Taten/Unterstützungsmodelle, erste Prüfdaten und Routenprüfer vor Ausführung|
+|[`bd66a449dfd67fb3ec53a861f18e011b5d08b259`](https://github.com/psonnen-lgtm/Hansef-rst/commit/bd66a449dfd67fb3ec53a861f18e011b5d08b259)|Alle acht Lieferdateien,48 Entscheidungen,42 geplante Regressionen, reine Routenrechnung und Abschlussprüfer|
+|[`440c7a0c8ec6588173df7a5b80b27bd553af4eb1`](https://github.com/psonnen-lgtm/Hansef-rst/commit/440c7a0c8ec6588173df7a5b80b27bd553af4eb1)|Abschlusskontrolle/Verweise/Beleggrenzen präzisiert; vollständig von GitHub zurückgelesen|
+
+[Übergabedaten](../../../tests/analysis/q1_06/results/handoff.json) und [Prüfsummen](../../../tests/analysis/q1_06/SHA256SUMS) sichern den abschließenden Umfang. Diese letzten Metadaten werden nach ihrem Push ebenfalls frisch zurückgelesen; kein selbstreferenzieller Commitbeleg behauptet.
+
+GitHub-Basis weiterhin **`02ee6b8fc1507ad078b6b596c333e50d91eeea64`**, main weiterhin **`c1280228951d581c7b3131279b8ff164a8e36dfa`**. Keine Spielprogrammierung, Wirtschaftsregel, Gilden-/Politikfunktion, Exploitkorrektur, Migration, echte Spielstandänderung oder Pages-Änderung. Keine neue Simulation, keine Zusammenführung. Alle neuen Empfehlungen bleiben bis zur ausdrücklichen Zustimmung Konzept. Q1.06 endet nach dem letzten Rücklesen; keine automatische Folgeaufgabe.

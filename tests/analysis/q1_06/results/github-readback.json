@@ -1,0 +1,129 @@
+{
+  "fetchedCommit": "440c7a0c8ec6588173df7a5b80b27bd553af4eb1",
+  "independentGitObjectStore": "/tmp/q106-github-readback.git",
+  "source": "Fresh GitHub HTTPS fetch, no local alternates",
+  "allFilesReadAndByteIdentical": true,
+  "count": 24,
+  "files": [
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_bestandsschutz_und_exploits.md",
+      "bytes": 10024,
+      "sha256": "2dd77db58faa7ecc8200b2796a72ac3adf15b5aaf68ccc2f672d188a75e42adc"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_buergermeister_und_eldermann.md",
+      "bytes": 10916,
+      "sha256": "3efcb43db45da760091087f56f1cc5018b69b2af19e2be33d4c2640f3b7f0ed0"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_entscheidungsmatrix.csv",
+      "bytes": 12526,
+      "sha256": "6886e9a5fde9d8a5f696cd6b93f6a663935d20ad44a9bb403048a8ecbc6a2caa"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_gesamtbericht.md",
+      "bytes": 13725,
+      "sha256": "4c00201abf4f7f8575902f49fce23483e2e2f02086c874d1adc191ba66d97266"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_karrieremodell.md",
+      "bytes": 18620,
+      "sha256": "4287f3d93442493ac7666bda3e1253e5fe913188e6891f10982cd46ef6d94e29"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_politische_taten.md",
+      "bytes": 8384,
+      "sha256": "6b01d8ff4058d48b610573836466e4ba8799ab5e6e7a35501b6475ed25bfad44"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_spielspass_und_90_stunden.md",
+      "bytes": 6545,
+      "sha256": "044f519f6202dab1074e72a496ced1a63f21a20018f166c9c9093a12e4817a8a"
+    },
+    {
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_unterstuetzungsmodelle.md",
+      "bytes": 8099,
+      "sha256": "523c8ce3f9bd6153186216e1c22a1a038234828fa7c40d446379a43d6d2e0419"
+    },
+    {
+      "path": "docs/entwicklungsberichte/README.md",
+      "bytes": 68497,
+      "sha256": "250c18a60a0248bbcf8a74bfbf5b06967ed03b0040ea39081a08819d7ea79bb7"
+    },
+    {
+      "path": "tests/analysis/q1_06/README.md",
+      "bytes": 1562,
+      "sha256": "b3513379145ed2f6c4901542ac179a43fa2d94e7fa52bf0fd32e733257a2524b"
+    },
+    {
+      "path": "tests/analysis/q1_06/frozen-sources.json",
+      "bytes": 839,
+      "sha256": "2e78c79755c10b6b9ac90a9da30127857dd5ce554c4dc7f78dbab0659eb90b81"
+    },
+    {
+      "path": "tests/analysis/q1_06/inspect.py",
+      "bytes": 5956,
+      "sha256": "8ca204c70e722fac9bb9d934d0e5d5582fd8d7bd3c1960ff69d0abe76919b46a"
+    },
+    {
+      "path": "tests/analysis/q1_06/plan.json",
+      "bytes": 3532,
+      "sha256": "131f9021eec284b5e7aad5da6f184306bf347265b3ba7b9a7777b8bbe508cfdc"
+    },
+    {
+      "path": "tests/analysis/q1_06/planned-regressions.csv",
+      "bytes": 5059,
+      "sha256": "78df8657c616c1dde7539ee5b91b0ed9bbd5e86bfc89964de192d366819d9a06"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/city-models.csv",
+      "bytes": 1710,
+      "sha256": "4ef65ae9d572052dd088c164940224d8dc83d6296847c630d33ed6d0bb286147"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/inspection.json",
+      "bytes": 35880,
+      "sha256": "f6cf5b3f1680b936ffc226debc251bc1ec1bbc8e59a14b3d041aff9ce217d5dd"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/inspection.log",
+      "bytes": 286,
+      "sha256": "9d7f563ce418f824a5f5c566a713271692ed8400882bdaca528addb40b88631f"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/model-examples.csv",
+      "bytes": 1734,
+      "sha256": "9ba7093c48b57a4cf81ce6a300c9f8e7e92d2269fcf0aa9280043fa9bc988ab4"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/route-arithmetic.csv",
+      "bytes": 4487,
+      "sha256": "9b9cb77cbd7de975e1a8c0b71de17f0c47eacab611bb20b1b5e24185adfa878b"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/routes.log",
+      "bytes": 136,
+      "sha256": "43d222972a8ec58f537f1c1da509241bb02b0b9c9825d4e832ad6caae8a6aec1"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/verification.json",
+      "bytes": 441,
+      "sha256": "79b11d517c3cfaadd9d61e5eb8ed59baa4df67f702533abbc94cb02b8ccf4a09"
+    },
+    {
+      "path": "tests/analysis/q1_06/results/verification.log",
+      "bytes": 411,
+      "sha256": "d7c9608dbc6752c49f79f969c5d8cdef369baa58e16415ba56b94256e51c4299"
+    },
+    {
+      "path": "tests/analysis/q1_06/routes.py",
+      "bytes": 1549,
+      "sha256": "df88b5aedc5637269eeb7e82974d1365f8b17f0ef1ddfa8576437eb777dd1783"
+    },
+    {
+      "path": "tests/analysis/q1_06/verify.py",
+      "bytes": 3552,
+      "sha256": "bb8ee353adbfc4d1cdc0f69a3b9b979092952683abbc9e8010589d9a7002bd00"
+    }
+  ]
+}
