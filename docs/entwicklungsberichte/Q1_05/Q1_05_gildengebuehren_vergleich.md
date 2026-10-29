@@ -1,14 +1,14 @@
 # Q1.05 – Drei datenbasierte Gebühren und ihre Folgen
 
 29.10.2026 · Analysebranch `audit/q1-05-guild-milestone` · Basis `02ee6b8fc1507ad078b6b596c333e50d91eeea64`.
-Produkt **0.8d.1b/V13**, letzter Produkt-Commit **`c42c25cf5cf372c210b47f25b00b9f0106044ed3`**, SHA256 **`c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924`**. Spielcode und Wirtschaftsregeln unverändert. Keine Gebühr beschlossen.
+Produkt **0.8d.1b/V13**, letzter Produkt-Commit **`c42c25cf5cf372c210b47f25b00b9f0106044ed3`**, SHA 256 **`c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924`**. Spielcode und Wirtschaftsregeln unverändert. Keine Gebühr beschlossen.
 
 
 ## Auswahl nach den Baselines
 
-Keine Wunschgebühr vorgegeben. Auswahl vor Gegenläufen in [fees.json](../../../tests/analysis/q1_05/results/fees.json) gesichert: alle 45 regulären Starts, letzter tatsächlich beobachteter Punkt bis Tag 120; E vorhanden → freie Reserve als Gebührenkapazität, sonst 0. Quantile12.495/17.570/26.437,500er-Aufrundung plus Mindestabstand25% → **12.500 /18.000 /26.500 Gold**. Median und Quantile beziehen sich auf diese Versuchsgruppen, nicht auf die Spielerschaft. Alle45 waren beim Referenzpunkt bereits E; kein Auslassen langsamer Fälle, keine synthetische Konvoikasse in Auswahl.
+Keine Wunschgebühr vorgegeben. Auswahl vor Gegenläufen in [fees.json](../../../tests/analysis/q1_05/results/fees.json) gesichert: alle 45 regulären Starts, letzter tatsächlich beobachteter Punkt bis Tag 120; E vorhanden → freie Reserve als Gebührenkapazität, sonst 0. Quantile 12.495/17.570/26.437,500er-Aufrundung plus Mindestabstand 25% → **12.500 /18.000 /26.500 Gold**. Median und Quantile beziehen sich auf diese Versuchsgruppen, nicht auf die Spielerschaft. Alle 45 waren beim Referenzpunkt bereits E; kein Auslassen langsamer Fälle, keine synthetische Konvoikasse in Auswahl.
 
-Drei Testpunkte vertreten unteren, mittleren und oberen Bereich. Andere Werte innerhalb eines „Bereichs“ wurden nicht geprüft. Alle liegen über 5.000 und über der geprüften sofortigen Kreditliquidität9.482. 10.000/15.000/20.000 wurden weder beschlossen noch als Wunschpunkte benutzt. Auch1.100 bleibt verworfenes Q1.04-Ergebnis für die neue Meilensteinzielsetzung.
+Drei Testpunkte vertreten unteren, mittleren und oberen Bereich. Andere Werte innerhalb eines „Bereichs“ wurden nicht geprüft. Alle liegen über 5.000 und über der geprüften sofortigen Kreditliquidität 9.482. 10.000/15.000/20.000 wurden weder beschlossen noch als Wunschpunkte benutzt. Auch 1.100 bleibt verworfenes Q1.04-Ergebnis für die neue Meilensteinzielsetzung.
 
 ## Erstes Bargeld gegenüber tragfähigem Zeitpunkt
 
@@ -25,9 +25,9 @@ Drei Testpunkte vertreten unteren, mittleren und oberen Bereich. Andere Werte in
 | Nowgorod/Kogge | 26.500 | 6/15; Tag 154–236 | 4/15; Tag 170–235 | 10–14 |
 
 
-Je Stadt15 Fälle=5 Stile ×3 gemeinsame Seeds. „Nicht erreicht“ heißt bis zum letzten erreichbaren Kontrollpunkt vor 240 Tagen, kein dauerhafter Ausschluss. Keine Interpolation oder menschliche Stundenumrechnung. Nominale/stabilisierte Spannweiten enthalten unterschiedliche erreichte Fälle; Differenzen ihrer Grenzen sind keine individuellen Wartezeiten. Synthetische Schiffsprofile separat im [vollständigen CSV](../../../tests/analysis/q1_05/results/affordability.csv).
+Je Stadt 15 Fälle=5 Stile ×3 gemeinsame Seeds. „Nicht erreicht“ heißt bis zum letzten erreichbaren Kontrollpunkt vor 240 Tagen, kein dauerhafter Ausschluss. Keine Interpolation oder menschliche Stundenumrechnung. Nominale/stabilisierte Spannweiten enthalten unterschiedliche erreichte Fälle; Differenzen ihrer Grenzen sind keine individuellen Wartezeiten. Synthetische Schiffsprofile separat im [vollständigen CSV](../../../tests/analysis/q1_05/results/affordability.csv).
 
-Regulär insgesamt:12.500 tragbar45/45;18.000: 41/45;26.500: 31/45. Der obere Kandidat scheitert im Zeitraum besonders häufig am Nowgorod-Profil (nur 4/15 tragbar), nicht an fehlender grundsätzlicher Handelsfähigkeit.
+Regulär insgesamt: 12.500 tragbar 45/45; 18.000: 41/45; 26.500: 31/45. Der obere Kandidat scheitert im Zeitraum besonders häufig am Nowgorod-Profil (nur 4/15 tragbar), nicht an fehlender grundsätzlicher Handelsfähigkeit.
 
 ## Echte Testzahlung und Fortsetzung
 
@@ -43,7 +43,7 @@ Nicht nur errechnete Bezahlbarkeit: einmalig aus der Testkasse abgezogen, dann u
 | 26.500 | E + Restreserve | 4/6 | 0 | 0 | 0 | 4 |
 
 
-Nominale anhaltende Stillstände5/6,3/5 und2/5 **zahlender Fälle**, nicht allgemeine Ruinwahrscheinlichkeiten. Alle10 haben nach Zahlung null Käufe; oft reichen Restmünzen nur für leere Fahrten. Vier enden tatsächlich ohne Geld zur Abfahrt. Bei18.000 kommt ein vorübergehender Stillstandshinweis im aggressiven Fall hinzu; später wieder33 beladene Reisen. Der obere nominale Nowgorod-Fall hat7 beladene Folgefahrten, endet aber nach 119 statt 120 Folgetagen am letzten passenden Kurs; deshalb unvollständige Nachbeobachtung.
+Nominale anhaltende Stillstände 5/6,3/5 und 2/5 **zahlender Fälle**, nicht allgemeine Ruinwahrscheinlichkeiten. Alle 10 haben nach Zahlung null Käufe; oft reichen Restmünzen nur für leere Fahrten. Vier enden tatsächlich ohne Geld zur Abfahrt. Bei 18.000 kommt ein vorübergehender Stillstandshinweis im aggressiven Fall hinzu; später wieder 33 beladene Reisen. Der obere nominale Nowgorod-Fall hat 7 beladene Folgefahrten, endet aber nach 119 statt 120 Folgetagen am letzten passenden Kurs; deshalb unvollständige Nachbeobachtung.
 
 Alle stabilisierten Zahlungen ohne Stillstandshinweis im Prüfzeitraum, aber fünf Akten ohne erreichte Zahlung sind nicht bestandenes Beitrittsverhalten.15 zahlende Fälle≥120 weitere Tage und≥3 Fahrten. Reihen sind gepaart/gezielt, kein statistischer Beweis für die gesamte Spielerschaft.
 
@@ -87,19 +87,19 @@ In stabilisierten Fällen verbraucht die Gebühr ungefähr 82–98% der tatsäch
 | 26.500 | stabilized | 106 | 37 | 1.313 | 231 | 44 | 26.083 | 227 |
 
 
-12.500 nominal:12.646 vorhanden,146 bleiben. R0=170 Waren+12 Gebühren+80 weiterer Sturm+208 aktuelle Reparatur=470. R*=max(470+800,470/0,45)=1.270. Freie Reserve **−1.124**; der800-Gold-Stilpuffer verhindert sämtliche Käufe. Es folgen11 leere Reisen und66 Gold Gebühren, Ende80. Keine unbegrenzte Unrettbarkeit behauptet.
+12.500 nominal: 12.646 vorhanden,146 bleiben. R0=170 Waren+12 Gebühren+80 weiterer Sturm+208 aktuelle Reparatur=470. R*=max(470+800,470/0,45)=1.270. Freie Reserve **−1.124**; der 800-Gold-Stilpuffer verhindert sämtliche Käufe. Es folgen 11 leere Reisen und 66 Gold Gebühren, Ende 80. Keine unbegrenzte Unrettbarkeit behauptet.
 
-12.500 stabilisiert:14.339 vorhanden,1.839 bleiben. R0=480 und R*=1.280, freie Reserve559. Zahlung nach 14 statt 12 beladenen Reisen;45 beladene Folgefahrten, positiver Nettoüberschuss22.923, Endkasse24.762. Andere Käufe/Routen/Ereignisse nach Zahlung sind Teil der Gegenrechnung.
+12.500 stabilisiert: 14.339 vorhanden,1.839 bleiben. R0=480 und R*=1.280, freie Reserve 559. Zahlung nach 14 statt 12 beladenen Reisen; 45 beladene Folgefahrten, positiver Nettoüberschuss 22.923, Endkasse 24.762. Andere Käufe/Routen/Ereignisse nach Zahlung sind Teil der Gegenrechnung.
 
-Bergen besonders relevant:12.500 nominal Tag 141 mit 615 Restgold →12 leere Folgefahrten/543 Endgold; stabilisiert Tag 163 mit 1.564 →11 beladene Folgefahrten/4.390 Nettoüberschuss/5.954 Endgold. Beide sind über 120 weitere Tage beobachtet.18.000 und26.500 innerhalb240 Tagen weder nominal noch stabilisiert erreicht.
+Bergen besonders relevant: 12.500 nominal Tag 141 mit 615 Restgold →12 leere Folgefahrten/543 Endgold; stabilisiert Tag 163 mit 1.564 →11 beladene Folgefahrten/4.390 Nettoüberschuss/5.954 Endgold. Beide sind über 120 weitere Tage beobachtet.18.000 und 26.500 innerhalb 240 Tagen weder nominal noch stabilisiert erreicht.
 
 ## Bewertung der drei Bereiche
 
 | Geprüfter Anker | Wirtschaftlicher Aufbau | Bei gedeckter Reserve | Begrenzung / Empfehlung |
 |---|---|---|---|
-|12.500|Nicht am Start finanzierbar; regulär4–21 beladene Reisen bis tragbar|6/6 gezielte Fälle bezahlt und weiter gehandelt;45/45 Baselineprofile tragbar|Stärkster derzeitiger Kandidat; vorsichtiges Fernprofil braucht dennoch lange|
-|18.000|Regulär8–36 beladene Reisen bis tragbar|5/6 gezielt bezahlt;41/45 regulär tragbar|Bedingte obere Diskussionsmarke, langsame Fälle benachteiligt|
-|26.500|Regulär10–58 beladene Reisen bis tragbar|4/6 gezielt bezahlt;31/45 regulär tragbar|Derzeit kein allgemeiner Standard; hohe regionale Zensierung und knappe Restreserve|
+|12.500|Nicht am Start finanzierbar; regulär 4–21 beladene Reisen bis tragbar|6/6 gezielte Fälle bezahlt und weiter gehandelt; 45/45 Baselineprofile tragbar|Stärkster derzeitiger Kandidat; vorsichtiges Fernprofil braucht dennoch lange|
+|18.000|Regulär 8–36 beladene Reisen bis tragbar|5/6 gezielt bezahlt; 41/45 regulär tragbar|Bedingte obere Diskussionsmarke, langsame Fälle benachteiligt|
+|26.500|Regulär 10–58 beladene Reisen bis tragbar|4/6 gezielt bezahlt; 31/45 regulär tragbar|Derzeit kein allgemeiner Standard; hohe regionale Zensierung und knappe Restreserve|
 
 Keine künstlichen Wartezeiten oder zusätzlichen Aufnahmeaufgaben. **Ein Preis allein verhindert frühe Selbstentkapitalisierung nicht**; die Kriterien beschreiben wirtschaftliche Vorsicht und sind keine neue Gildenprüfung. Menschliche Risikoentscheidung/Bedienhinweise sind hier nicht implementiert.
 
