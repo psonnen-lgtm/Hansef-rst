@@ -1,0 +1,22 @@
+{
+  "phase": "Q1.03",
+  "dateBerlin": "2026-10-29",
+  "kind": "read-only document/source validation",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "requestedFiles": 8,
+  "matrixPositions": 37,
+  "matrixStatuses": [
+    "Bereits beschlossen",
+    "Nicht zur Implementierung freigegeben",
+    "Noch offen",
+    "Technisch empfohlen"
+  ],
+  "allImplementationsNotApproved": true,
+  "plannedTestsNotExecuted": 55,
+  "oldTrackedFilesChecked": 3232,
+  "oldFilesEqualExceptAppendOnlyIndex": true,
+  "relativeLinksChecked": 31,
+  "sourceInspectorUnchanged": true,
+  "newDynamicRuns": 0,
+  "migrationsExecuted": 0
+}
