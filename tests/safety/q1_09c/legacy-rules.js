@@ -15,8 +15,9 @@ function legacyShortest(from,to,speed,arrival=false){
  for(let i=0;i<CITY_COUNT;i++){let a=-1;for(let c=0;c<CITY_COUNT;c++)if(!used.has(c)&&(a<0||dist[c]<dist[a]))a=c;if(a===to)break;used.add(a);for(let b=0;b<CITY_COUNT;b++)if(b!==a){const next=dist[a]+routeTravelDays(a,b,speed);if(next<dist[b]){dist[b]=next;previous[b]=a}}}
  const legs=[];for(let at=to;at!==from;at=previous[at]){const start=previous[at];legs.unshift({from:start,to:at,days:routeTravelDays(start,at,speed)})}return legs;
 }
+function legacyShipSpeed(q){return q.speed*(.65+.35*q.condition/100)}
 function legacyItinerary(q,city,ship,endorsements){
- const speed=ship.speed*(.65+.35*ship.condition/100),journey=(stops,firstArrival=false)=>{let at=city,legs=[];for(const [i,dest]of stops.entries()){legs.push(...legacyShortest(at,dest,speed,i===0&&firstArrival));at=dest}return legs},score=legs=>legs.reduce((n,l)=>n+l.days,0),sort=(a,b)=>score(a)-score(b)||a.length-b.length;
+ const speed=legacyShipSpeed(ship),journey=(stops,firstArrival=false)=>{let at=city,legs=[];for(const [i,dest]of stops.entries()){legs.push(...legacyShortest(at,dest,speed,i===0&&firstArrival));at=dest}return legs},score=legs=>legs.reduce((n,l)=>n+l.days,0),sort=(a,b)=>score(a)-score(b)||a.length-b.length;
  if(q.kind==='accord')return q.witnessed?journey([q.city]):journey([q.partner,q.city],true);
  const candidates=endorsements.filter(c=>c!==q.home&&!q.visited.includes(c)),paths=[[],...candidates.map(c=>[c]),...candidates.flatMap(a=>candidates.filter(b=>b!==a).map(b=>[a,b]))],plans=[];
  for(const missing of paths){const visited=[...q.visited,...missing];if(visited.length>=2&&new Set([q.home,...visited].map(c=>POLITICAL_CITIES[c].region)).size>=2)plans.push(journey([...missing,q.home],missing.length>0))}return plans.sort(sort)[0]??null;
@@ -25,8 +26,8 @@ function applyLegacyGrace(){
  const a=s.politics.safety,t=a.legacyTransfer;if(!SafetySession.active||SafetySession.active.readOnly)throw Error('Keine geschützte Fristübernahme');
  if(!t||a.person.source!=='unknown'||t.day!==totalDay()||legacyStateDigest(s)!==t.stateHash)return 0;
  const endorsements=s.politics.endorsements.map((e,c)=>e?c:null).filter(c=>c!==null),ships=s.ships.filter(q=>q.city===s.city),jobs=[...s.politics.jobs.filter(q=>q.kind==='accord'),...(s.politics.league?[s.politics.league]:[])];let count=0;
- for(const q of jobs){if(q.until<totalDay()||a.grace.some(g=>g.contract.id===q.id))continue;const choices=ships.map(ship=>({ship,legs:legacyItinerary(q,s.city,ship,endorsements)})).filter(p=>p.legs&&p.legs.length&&p.legs.length*[4,6,9][p.ship.type]<=s.gold).sort((x,y)=>x.legs.reduce((n,l)=>n+l.days,0)-y.legs.reduce((n,l)=>n+l.days,0)||x.legs.length*[4,6,9][x.ship.type]-y.legs.length*[4,6,9][y.ship.type]);if(!choices.length)continue;
-  const {ship,legs}=choices[0],until=t.day+legs.reduce((n,l)=>n+l.days,0);if(until<=q.until||until>360000000)continue;
+ for(const q of jobs){if(q.until<totalDay()||a.grace.some(g=>g.contract.id===q.id))continue;const choices=ships.map(ship=>({ship,legs:legacyItinerary(q,s.city,ship,endorsements)})).filter(p=>p.legs&&p.legs.length).sort((x,y)=>x.legs.reduce((n,l)=>n+l.days,0)-y.legs.reduce((n,l)=>n+l.days,0)||legacyShipSpeed(y.ship)-legacyShipSpeed(x.ship)||x.legs.length*[4,6,9][x.ship.type]-y.legs.length*[4,6,9][y.ship.type]);if(!choices.length)continue;
+  const {ship,legs}=choices[0];if(legs.length*[4,6,9][ship.type]>s.gold||s.ships.some(q=>legacyShipSpeed(q)>legacyShipSpeed(ship)))continue;const until=t.day+legs.reduce((n,l)=>n+l.days,0);if(until<=q.until||until>360000000)continue;
   a.grace.push({contract:safetyCopy(q),until,day:t.day,sourceHash:t.sourceHash,anchorCity:s.city,ship:{id:ship.id,type:ship.type,speed:ship.speed,condition:ship.condition},endorsements,legs});count++;
  }return count;
 }

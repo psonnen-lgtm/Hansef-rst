@@ -1,7 +1,7 @@
 'use strict';
 const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),crypto=require('node:crypto'),{environment:E,originalState:S,clean,hash}=require('./harness.cjs');
 const KEY='hansefuerst-v04-safety3',OLD='hansefuerst-v04',checks=[];
-async function check(name,fn){try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});throw e}}
+async function check(name,fn){if(process.env.Q109C_CASE&&!new RegExp(process.env.Q109C_CASE).test(name))return;try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});throw e}}
 const short=(extra='')=>S('acceptPoliticalJob("accord");s.politics.jobs[0].until=totalDay()+1;ship().condition=50;'+extra);
 async function boot(x=short(),options={}){const raw=JSON.stringify(x,null,2),g=E({stored:{[OLD]:raw},...options});assert(await g.ready(),g.eval('SafetySession.error'));return {g,raw,old:x}}
 async function sail(g,to){await g.eval(`planTravel(${to},false)`);assert(g.eval('pending'));g.eval('pending.resolved=true;pending.event=null');await g.eval('arrive()');assert.equal(g.state().city,to)}
@@ -24,6 +24,9 @@ await check('canonical export import reload and restored original cannot stack g
 });
 await check('old anchor at missing partner station is not a personal visit and needs real departure and return',async()=>{
  const {g,old}=await boot(short('s.city=s.politics.jobs[0].partner;ship().city=s.city'));await g.eval('confirmLegacyPresence()');const r=g.state().politics.safety.grace[0];assert(r.legs.length>=3);assert.equal(await g.eval(`witnessPoliticalJob(${JSON.stringify(old.politics.jobs[0].id)})`),false);await sail(g,0);await sail(g,1);assert(await g.eval(`witnessPoliticalJob(${JSON.stringify(old.politics.jobs[0].id)})`));return {noAnchorWitness:true,realReturnRequired:true,routeDays:r.legs.reduce((n,l)=>n+l.days,0)};
+});
+await check('faster remote hull makes a single-hull rest route ambiguous and prevents excessive automatic grace',async()=>{
+ const {g}=await boot(short('s.ships.push(makeShip(0,{id:2,city:1}))'));await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0,'cannot prove six days when a faster return hull already exists at partner harbor');return {originalDeadlineUnchanged:true,ambiguousFleetSwitchRequiresManualReview:true,noExcessiveGrace:true};
 });
 await check('fastest available payable local hull prevents unnecessary extension for selected slower ship',async()=>{
  const x=short('s.politics.jobs[0].until=totalDay()+4;s.ships.push(makeShip(0,{id:2,city:0}))'),{g}=await boot(x);await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0);return {slowSelectedKoggeWouldNeed6:true,availableSchniggeNeeds4:true,noUnnecessaryGrace:true};

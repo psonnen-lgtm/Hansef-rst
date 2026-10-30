@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "chromium": "Chromium 154.0.8037.57 built on Debian GNU/Linux 13 (trixie)",
+  "webKitExecutable": "/home/agent/.cache/ms-playwright/webkit-2336/pw_run.sh",
+  "webKitPresent": false,
+  "webKitGameTests": 0,
+  "physicalAppleDevicesTested": 0,
+  "browserDownloadsAttempted": 0,
+  "node": "v24.19.0",
+  "canonicalStorage": "one IndexedDB row, exclusive Web Lock plus native readwrite transaction compare and put",
+  "legacyLocalStorageSourceUntouched": true
+}

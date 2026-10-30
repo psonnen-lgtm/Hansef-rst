@@ -1,0 +1,13 @@
+{
+  "sourceCommit": "906a2358f6165d2302ee8c4d04d8f796f2e00016",
+  "gameHash": "30b2688858ff0fd021106e3d3fcc71acba1d2178ce29e918cc0847b49a743799",
+  "checks": [
+    {
+      "name": "faster remote hull makes a single-hull rest route ambiguous and prevents excessive automatic grace",
+      "passed": false,
+      "error": "AssertionError [ERR_ASSERTION]: cannot prove six days when a faster return hull already exists at partner harbor\n\n1 !== 0\n\n    at /workspace/Hansef-rst/tests/safety/q1_09c/grace-checks.cjs:29:120\n    at async check (/workspace/Hansef-rst/tests/safety/q1_09c/grace-checks.cjs:4:131)\n    at async /workspace/Hansef-rst/tests/safety/q1_09c/grace-checks.cjs:28:1"
+    }
+  ],
+  "passed": false,
+  "kind": "bounded native migration action deadline and file roundtrip checks, copies only"
+}
