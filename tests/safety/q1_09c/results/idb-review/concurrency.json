@@ -1,0 +1,39 @@
+{
+  "sourceCommit": "814467f4ba8a966b759b29f860238d79fd008c9a",
+  "testedGameCommit": "814467f4ba8a966b759b29f860238d79fd008c9a",
+  "gameHash": "60b5edcc198b7f56e92ce500bb21a3b0dc393e36a7fc9f84ddb2660639bdaaf5",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium, IndexedDB canonical transactions, Web Locks and file APIs; controlled faults explicit",
+  "selection": "two native tabs queue|real import queued",
+  "checks": [
+    {
+      "name": "two native tabs queue competing actions under one real Web Lock",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "tabs": 2,
+        "queuedRequests": 2,
+        "canonicalWrites": 1,
+        "oneCharge": true,
+        "staleRejected": true,
+        "reloadRecovered": true
+      }
+    },
+    {
+      "name": "real import queued behind another tab cannot overwrite that newer action",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "selectionTimeStateRespected": true,
+        "staleFileCallbackRejected": true
+      }
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [],
+  "passed": true,
+  "fullBrowserAcceptance": false,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}

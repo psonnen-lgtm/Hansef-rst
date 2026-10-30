@@ -9,18 +9,19 @@ const bytes=fs.readFileSync(path.join(root,'Hansefuerst_0_4.html')),checks=[],pa
 let server,browser,origin;
 const state=async p=>{await p.waitForFunction(()=>!SafetySession.committing);return p.evaluate(()=>JSON.parse(JSON.stringify(s)))},disk=p=>p.evaluate(()=>safetyReadCanonical());
 async function download(p,original=false){const promise=p.waitForEvent('download');await p.evaluate(x=>exportGame(x),original);const d=await promise,stream=await d.createReadStream(),chunks=[];for await(const b of stream)chunks.push(b);return Buffer.concat(chunks).toString('utf8');}
-async function boot({fixture=defaultFixture,viewport={width:1280,height:900},mobile=false,noLocks=false,readDenied=false,file=false}={}){
+async function boot({fixture=defaultFixture,viewport={width:1280,height:900},mobile=false,noLocks=false,readDenied=false,noIDB=false,legacyKey=OLD,file=false}={}){
  const context=await browser.newContext({viewport,hasTouch:mobile,isMobile:mobile,acceptDownloads:true});
- await context.addInitScript(({fixture,OLD,KEY,noLocks,readDenied})=>{
+ await context.addInitScript(({fixture,OLD,KEY,noLocks,readDenied,noIDB})=>{
   if(!['http:','https:','file:'].includes(location.protocol))return;
   if(localStorage.getItem(OLD)===null&&fixture!==null)localStorage.setItem(OLD,JSON.stringify(fixture));
-  window.qaFailWrite=false;window.qaWrites=[];
+  window.qaFailWrite=false;window.qaAbortAfterPut=false;window.qaWrites=[];
   const nativeSet=Storage.prototype.setItem,nativePut=IDBObjectStore.prototype.put,nativeGet=IDBObjectStore.prototype.get;
   Storage.prototype.setItem=function(k,v){window.qaWrites.push({key:k,value:String(v),storage:'legacy LocalStorage backup'});return nativeSet.call(this,k,v)};
-  IDBObjectStore.prototype.put=function(v,k){if(this.name==='game'&&this.transaction.db.name==='hansefuerst-local-safety3'){if(window.qaFailWrite)throw new DOMException('controlled database write failure','QuotaExceededError');window.qaWrites.push({key:KEY,value:String(v),storage:'IndexedDB canonical put'})}return nativePut.call(this,v,k)};
+  IDBObjectStore.prototype.put=function(v,k){if(this.name==='game'&&this.transaction.db.name==='hansefuerst-local-safety3'){if(window.qaFailWrite)throw new DOMException('controlled database write failure','QuotaExceededError');window.qaWrites.push({key:KEY,value:String(v),storage:'IndexedDB canonical put'})}const request=nativePut.call(this,v,k);if(window.qaAbortAfterPut&&this.name==='game'){const tx=this.transaction;request.addEventListener('success',()=>tx.abort(),{once:true})}return request};
   IDBObjectStore.prototype.get=function(k){if(readDenied&&this.name==='game'&&this.transaction.db.name==='hansefuerst-local-safety3')throw new DOMException('controlled database read denial','SecurityError');return nativeGet.call(this,k)};
+  if(noIDB)Object.defineProperty(window,'indexedDB',{configurable:true,get:()=>undefined});
   if(noLocks)Object.defineProperty(Navigator.prototype,'locks',{configurable:true,get:()=>undefined});
- },{fixture,OLD,KEY,noLocks,readDenied});
+ },{fixture,OLD:legacyKey,KEY,noLocks,readDenied,noIDB});
  try{const page=await tab(context,file);return {context,page}}catch(e){await context.close();throw e}
 }
 async function tab(context,file=false){const page=await context.newPage();page.on('dialog',d=>d.accept());page.on('pageerror',e=>pageErrors.push(e.message));await page.goto(file?'file://'+path.join(root,'Hansefuerst_0_4.html'):origin+'/Hansefuerst_0_4.html');await page.waitForFunction(()=>SafetySession.loaded||SafetySession.error);if(await page.evaluate(()=>!!s))await page.waitForFunction(()=>CityLife.diagnostics().visualReady);return page;}
@@ -74,6 +75,16 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
  await check('missing Web Locks remains read-only with visible warning and exact export',()=>isolated({noLocks:true},async({page:p})=>{
   const x=await state(p);assert.equal(await p.evaluate(()=>donate(50,2)),false);assert.deepEqual(await state(p),x);assert.equal(await disk(p),null);assert.match(await p.locator('#storageStatus').innerText(),/Web Locks/);assert.equal(await download(p),JSON.stringify(defaultFixture));await p.evaluate(()=>show('save'));assert.deepEqual(await state(p),x);return {injectedUnavailableCapability:true,noLocalStorageLockFallback:true,readAndNativeExport:true};
  }));
+ await check('missing IndexedDB refuses writes and keeps exact original export available',()=>isolated({noIDB:true},async({page:p})=>{
+  assert.equal(await p.evaluate(()=>s),null);assert.match(await p.locator('#storageStatus').innerText(),/IndexedDB/);assert.equal(await p.evaluate(()=>donate(50,2)),false);assert.equal(await download(p,true),JSON.stringify(defaultFixture));assert.equal(await p.evaluate(k=>localStorage.getItem(k),OLD),JSON.stringify(defaultFixture));return {noUnsafeStorageFallback:true,originalDownloadExact:true,gameWrites:0};
+ }));
+ await check('native transaction abort after put rolls back entire game and allows one retry',()=>isolated({},async({page:p})=>{
+  const before=await state(p),raw=await disk(p);await p.evaluate(()=>{qaAbortAfterPut=true});assert.equal(await p.evaluate(()=>donate(200,5)),false);assert.deepEqual(await state(p),before);assert.equal(await disk(p),raw);await p.evaluate(()=>{qaAbortAfterPut=false});await p.evaluate(()=>donate(200,5));assert.equal((await state(p)).gold,before.gold-200);assert.equal((await state(p)).rep,before.rep+5);return {actualIndexedDBTransactionAbort:true,notMerelyPreflightThrow:true,fullRollback:true,oneRetryCharge:true};
+ }));
+ await check('old safety1 LocalStorage party migrates to sole IndexedDB canonical without changing source',async()=>{
+  const x=S('s.gold=12345;s.debt=222;ship().cargo={0:5};ship().costs={0:8};ship().bookCosts={0:8};ship().origins={0:[{city:1,n:5}]}');x.politics.version=2;x.politics.safety={version:1,revision:5,person:{city:0,source:'arrival',at:x.year*360+x.day},legacyPersonalJobs:[]};const raw=JSON.stringify(x);
+  return isolated({fixture:x,legacyKey:'hansefuerst-v04-safety1'},async({page:p})=>{assert.equal(await p.evaluate(()=>localStorage.getItem('hansefuerst-v04-safety1')),raw);assert.equal(await p.evaluate(k=>localStorage.getItem(k),KEY),null);const actual=await state(p);assert.equal(actual.gold,x.gold);assert.equal(actual.debt,x.debt);assert.deepEqual(actual.ships,x.ships);assert.deepEqual(actual.politics.safety.person,x.politics.safety.person);assert.equal(actual.politics.safety.legacyTransfer,null);assert.equal(actual.politics.safety.version,3);const saved=await disk(p);await p.reload();await p.waitForFunction(()=>SafetySession.loaded);assert.equal(await disk(p),saved);return {oldLocalStorageByteIdentical:true,noNewLocalStorageCanonical:true,personalAndEconomicDataPreserved:true,newSafetyRevision:3};});
+ });
  await check('denied canonical storage read aborts startup without rewriting original',()=>isolated({readDenied:true},async({page:p})=>{
   assert.equal(await p.evaluate(()=>s),null);assert.match(await p.locator('#storageStatus').innerText(),/Speicherzugriff verweigert/);assert.equal(await p.evaluate(k=>localStorage.getItem(k),OLD),JSON.stringify(defaultFixture));assert.equal(await p.evaluate(k=>qaWrites.filter(q=>q.key===k).length,KEY),0);return {controlledSecurityError:true,oldBytesPreserved:true};
  }));
