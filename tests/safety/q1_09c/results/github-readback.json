@@ -1,0 +1,18 @@
+{
+  "publishedCommit": "02d24e12b2d5cedf224ca0a4fe484f336093f664",
+  "method": "fresh GitHub HTTPS fetch of published ref into independent Git object store without local alternates; archive exact package; read complete files and compare all bytes and file set",
+  "allFilesRead": 229,
+  "manifestHashesChecked": 228,
+  "fullHTMLBytesRead": 46389124,
+  "allFilesByteIdentical": true,
+  "exactFileSetMatch": true,
+  "allManifestHashesMatch": true,
+  "workingTreeWasClean": true,
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "caseCount": 106,
+  "nativeChromiumGroups": 31,
+  "financialQ001CriteriaPassed": true,
+  "unqualifiedQ001Closed": false,
+  "fullIntegrationAcceptance": false
+}

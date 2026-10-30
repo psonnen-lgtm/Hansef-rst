@@ -1,5 +1,5 @@
 {
-  "headAtVerification": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "headAtVerification": "02d24e12b2d5cedf224ca0a4fe484f336093f664",
   "verificationScriptSHA256": "628948c558779c7b752a002e50c3e70ed9e03b68ed97ea2196169b3d455ab13f",
   "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
   "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
@@ -22,7 +22,7 @@
   "fullAcceptance": false,
   "scriptSyntaxChecked": 17,
   "reports": 7,
-  "relativeLinks": 23,
+  "relativeLinks": 26,
   "scopeValid": true,
   "diffCheck": true
 }
