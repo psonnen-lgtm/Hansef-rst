@@ -1,0 +1,69 @@
+{
+  "sourceCommit": "cef6ba0cca923893c63064dd4f973feba17121f9",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium isolated synthetic saves; controlled faults explicitly identified",
+  "selection": "native title|native corrupt",
+  "checks": [
+    {
+      "name": "native title office and Eldermann copies survive import export and reload",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "derivedHistoricalCopiesOnly": true,
+        "rows": [
+          {
+            "kind": "candidate",
+            "rank": 2,
+            "office": false,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "office",
+            "rank": 3,
+            "office": true,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "elder",
+            "rank": 4,
+            "office": false,
+            "elder": true,
+            "allOriginalFieldsPreserved": true
+          }
+        ],
+        "noNewCareerSimulation": true
+      }
+    },
+    {
+      "name": "native corrupt or newer active state requires confirmed raw-backed recovery",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "rows": [
+          {
+            "kind": "corrupt",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          },
+          {
+            "kind": "future",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          }
+        ]
+      }
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [],
+  "passed": true,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}

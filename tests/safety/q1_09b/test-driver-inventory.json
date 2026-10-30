@@ -1,0 +1,916 @@
+{
+  "method": "bounded static scan of top-level and simulation .cjs; archive-only tests and phase-specific assertions must be judged before running",
+  "legacyHeadlessDefault": "prefers dist/index.html when HANSE_GAME unset; synthetic synchronous localStorage; no native lock API",
+  "newAdapters": [
+    "tests/test-v04.cjs",
+    "tests/phase1.cjs"
+  ],
+  "unmodifiedHistoricalDrivers": "not claimed compatible, not run; broad simulator/strategy async conversion is outside this bounded task",
+  "files": [
+    {
+      "path": "tests/phase1.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "advance",
+        "promote"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": true,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/catalog-foundation-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/church-donation-browser.cjs",
+      "actionNames": [
+        "donate"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/church-donation-checks.cjs",
+      "actionNames": [
+        "donate"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/city-catalog-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/city-life-browser.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/city-life-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/city-preparation-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/delivery-phase15c.cjs",
+      "actionNames": [
+        "trade",
+        "arrive"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/edges.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/eleven-cities-browser-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/eleven-cities-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/eleven-cities-compat-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/four-goods-browser-checks.cjs",
+      "actionNames": [
+        "trade"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/four-goods-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/harbor-work-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "advance",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/harbor-work-historical-checks.cjs",
+      "actionNames": [
+        "planTravel",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/information-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/letter-fixtures.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/market-controls-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/optimized-delivery-checks.cjs",
+      "actionNames": [
+        "trade",
+        "arrive"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05e-mechanism-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05h3-choice-probes.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05h3-history-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05h3-market-probes.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05i-history-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase05i-liquidity-checks.cjs",
+      "actionNames": [
+        "bankOp",
+        "planTravel",
+        "arrive"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase06a-mechanic-probes.cjs",
+      "actionNames": [
+        "trade",
+        "donate",
+        "planTravel",
+        "arrive",
+        "promote",
+        "startShipbuilding"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/phase08a-faults-browser.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/political-progress-browser.cjs",
+      "actionNames": [
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/political-progress-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "promote",
+        "acceptPoliticalJob",
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/politics-browser-checks.cjs",
+      "actionNames": [
+        "planTravel",
+        "arrive",
+        "advance",
+        "startShipbuilding",
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/politics-browser-post-title.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/politics-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance",
+        "promote",
+        "startShipbuilding",
+        "acceptPoliticalJob",
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/politics-concurrency-check.cjs",
+      "actionNames": [
+        "trade",
+        "advance",
+        "startShipbuilding",
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/politics-post-title-check.cjs",
+      "actionNames": [
+        "advance",
+        "runMayorElection"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/price-rounding-checks.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-activation-browser-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "advance"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-activation-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "advance",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-economy-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-flow-checks.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-flow-market-probes.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-flow-migration-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-flow-route-probes.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-market-trajectories.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-route-probes.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/regional-safety-checks.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/ship-map-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "startShipbuilding"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/ship-sale-browser-checks.cjs",
+      "actionNames": [
+        "planTravel"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/ship-sale-checks.cjs",
+      "actionNames": [
+        "trade",
+        "bankOp",
+        "planTravel",
+        "arrive",
+        "promote"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/shipbuilding-browser-checks.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/shipbuilding-checks.cjs",
+      "actionNames": [
+        "arrive",
+        "advance",
+        "startShipbuilding"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/shipbuilding-variant-fixtures.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance",
+        "startShipbuilding"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/shipbuilding-variants.cjs",
+      "actionNames": [
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/start-selection-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/trade-letter-checks.cjs",
+      "actionNames": [
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-arrears-browser-checks.cjs",
+      "actionNames": [
+        "planTravel",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-arrears-checks.cjs",
+      "actionNames": [
+        "trade",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-browser-checks.cjs",
+      "actionNames": [
+        "trade"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-capacity-browser-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-capacity-checks.cjs",
+      "actionNames": [
+        "trade",
+        "advance"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": true,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-checks.cjs",
+      "actionNames": [
+        "trade"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-cities-browser-checks.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": true,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/simulation/warehouse-cities-checks.cjs",
+      "actionNames": [
+        "trade",
+        "arrive"
+      ],
+      "importsLegacyHeadless": true,
+      "hasAwaitToken": false,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": false,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    },
+    {
+      "path": "tests/test-v04.cjs",
+      "actionNames": [
+        "trade",
+        "planTravel",
+        "arrive",
+        "advance"
+      ],
+      "importsLegacyHeadless": false,
+      "hasAwaitToken": true,
+      "loaderSentinelOld": false,
+      "usesArchivedHTML": false,
+      "adaptedThisRound": true,
+      "classification": "static candidate list, not proof every named test is incompatible or executed"
+    }
+  ]
+}

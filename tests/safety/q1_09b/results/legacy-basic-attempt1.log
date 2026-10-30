@@ -1,0 +1,11 @@
+PASS fresh save validates
+PASS invalid v3 rejected
+PASS negative gold rejected
+TypeError: Cannot read properties of null (reading 'ships')
+    at evalmachine.<anonymous>:1:279
+    at evalmachine.<anonymous>:1:299
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:22:62)
+    at test (/workspace/Hansef-rst/tests/safety/q1_09b/async-driver.cjs:13:28)
+    at async /workspace/Hansef-rst/tests/test-v04.cjs:8:1

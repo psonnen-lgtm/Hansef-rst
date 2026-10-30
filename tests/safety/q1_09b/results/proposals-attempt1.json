@@ -1,0 +1,283 @@
+{
+  "sourceCommit": "cef6ba0cca923893c63064dd4f973feba17121f9",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "kind": "isolated read-only proposal arithmetic and native route quotation, not activated game rules",
+  "checks": [
+    {
+      "name": "all 121 city/good references use actual harbor quote and preserve input",
+      "passed": true,
+      "evidence": {
+        "references": 121,
+        "sharedByShipAndWarehouse": true,
+        "source": "current actual harbor price; not base price, book cost or quote at viewed city"
+      }
+    },
+    {
+      "name": "neutral mixed costs cannot change W1-S or W2-S but active failure remains open",
+      "passed": true,
+      "evidence": {
+        "candidateInvariant": true,
+        "nativeQ001StillOpen": true,
+        "historicalEightCasesReusedNotRerun": true
+      }
+    },
+    {
+      "name": "multiple ships and warehouses in different harbors receive one common local reference",
+      "passed": true,
+      "evidence": {
+        "inventoryReference": 3700,
+        "viewIndependent": true,
+        "perActualHarbor": true
+      }
+    },
+    {
+      "name": "unknown costs and provenance remain unknown without fallback invention",
+      "passed": true,
+      "evidence": {
+        "unknownRecordsUnchanged": true
+      }
+    },
+    {
+      "name": "stored WIP counterexample loses all artificial material security in both candidates",
+      "passed": true,
+      "evidence": {
+        "nativeBuildPairReusedNotRerun": true,
+        "rows": [
+          {
+            "dirty": false,
+            "oldCredit": 6890,
+            "W1S": 6732,
+            "W2S": 6732,
+            "materialCollateral": 0,
+            "paidWageCollateral": 2500
+          },
+          {
+            "dirty": true,
+            "oldCredit": 6975,
+            "W1S": 6732,
+            "W2S": 6732,
+            "materialCollateral": 0,
+            "paidWageCollateral": 2500
+          }
+        ],
+        "paidWageRuleStillRequiresApproval": true
+      }
+    },
+    {
+      "name": "construction does not create candidate security while completion remains separately visible",
+      "passed": true,
+      "evidence": {
+        "before": 16272,
+        "during": 14960,
+        "afterCompletion": 15500,
+        "completionChangeIsRealHullNotDailyProgress": true,
+        "noFabricatedOldMaterialQuantities": true
+      }
+    },
+    {
+      "name": "paid wage cap and no invented proportional progress, W2 excludes only inventory",
+      "passed": true,
+      "evidence": {
+        "wageCapped": true,
+        "noTimeProgressValue": true,
+        "notNativeValidationAcceptance": true
+      }
+    },
+    {
+      "name": "borrowing repayment deposits and existing floor preserve candidate credit identities",
+      "passed": true,
+      "evidence": {
+        "same45PercentAnd1000FloorOnlyIllustrative": true,
+        "noRetroactiveDebtRewrite": true
+      }
+    },
+    {
+      "name": "legitimate profit loss and partial-sale accounting remain historical native results",
+      "passed": true,
+      "evidence": {
+        "profit660": true,
+        "lossMinus300": true,
+        "partial165": true,
+        "valuationsAreNotRealizedProfitMeasures": true,
+        "W1UsesAlreadyCurrentMarketValue": true
+      }
+    },
+    {
+      "name": "reference price changes are explicitly economic changes, invalid inputs fail",
+      "passed": true,
+      "evidence": {
+        "notBalanceNeutral": true,
+        "perDayMarketRisk": true,
+        "noInvalidSilentlyZeroReference": true
+      }
+    },
+    {
+      "name": "unaccompanied single convoy quotes keep native route time fees and person untouched",
+      "passed": true,
+      "evidence": {
+        "rows": [
+          {
+            "mode": "unaccompanied-proposal",
+            "from": 1,
+            "destination": 8,
+            "ids": [
+              1793354289313.5
+            ],
+            "days": 8,
+            "fee": 6,
+            "personUnchanged": {
+              "city": 0,
+              "source": "arrival",
+              "at": 486001
+            },
+            "expectedRevision": 4,
+            "activated": false
+          },
+          {
+            "mode": "unaccompanied-proposal",
+            "from": 1,
+            "destination": 8,
+            "ids": [
+              1793354289313.5,
+              2
+            ],
+            "days": 8,
+            "fee": 10,
+            "personUnchanged": {
+              "city": 0,
+              "source": "arrival",
+              "at": 486001
+            },
+            "expectedRevision": 4,
+            "activated": false
+          }
+        ],
+        "onlyQuoteTestedNotTripResolver": true
+      }
+    },
+    {
+      "name": "remote quote cannot invent unknown person free trip or other-harbor convoy",
+      "passed": true,
+      "evidence": {
+        "unknownPersonRejected": true,
+        "unpaidFeeRejected": true,
+        "remoteHullNotAdded": true
+      }
+    },
+    {
+      "name": "short original accord receives only demonstrated route deficit in dry-run dossier",
+      "passed": true,
+      "evidence": {
+        "dossier": {
+          "id": "accord:0:0",
+          "kind": "accord",
+          "originalHash": "a6fdf6515efe6798bae237206a821528df5d5efb8aa16c72123179e12cc74cc7",
+          "originalUntil": 486002,
+          "anchor": {
+            "city": 0,
+            "shipId": 1793354289341.5,
+            "day": 486001
+          },
+          "route": {
+            "days": 6,
+            "fee": 12,
+            "legs": [
+              {
+                "from": 0,
+                "to": 1,
+                "days": 3
+              },
+              {
+                "from": 1,
+                "to": 0,
+                "days": 3
+              }
+            ]
+          },
+          "proposedUntil": 486007,
+          "extension": 5,
+          "eligible": true,
+          "reason": "only exact demonstrated route deficit",
+          "oneTimeOnly": true,
+          "activated": false
+        },
+        "originalAndRewardsUntouched": true
+      }
+    },
+    {
+      "name": "anchor at missing station requires actual detour and return evidence",
+      "passed": true,
+      "evidence": {
+        "legs": [
+          {
+            "from": 1,
+            "to": 0,
+            "days": 3
+          },
+          {
+            "from": 0,
+            "to": 1,
+            "days": 3
+          },
+          {
+            "from": 1,
+            "to": 0,
+            "days": 3
+          }
+        ],
+        "noAnchorAsWitness": true
+      }
+    },
+    {
+      "name": "sufficient expired witnessed and nonpersonal contracts do not receive blanket grace",
+      "passed": true,
+      "evidence": {
+        "fourExclusions": true,
+        "noCompletedContractReplay": true
+      }
+    },
+    {
+      "name": "old Hanse visited stations and region condition survive conservative remaining itinerary",
+      "passed": true,
+      "evidence": {
+        "existingVisited": [
+          7
+        ],
+        "route": {
+          "days": 6,
+          "fee": 12,
+          "legs": [
+            {
+              "from": 0,
+              "to": 1,
+              "days": 3
+            },
+            {
+              "from": 1,
+              "to": 0,
+              "days": 3
+            }
+          ]
+        },
+        "extension": 5,
+        "noAutomaticVisitOrReceipt": true
+      }
+    },
+    {
+      "name": "grace binds exact original hash contract and first zero-day explicit local anchor",
+      "passed": true,
+      "evidence": {
+        "stableHash": "16fb307a3ef7ddca335f9a1c2b08cca517dd661d04db4f0937c50148c68d86cb",
+        "oneTimeLedgerDesignNotActivated": true,
+        "arbitraryReanchorExcluded": true
+      }
+    }
+  ],
+  "passed": true,
+  "Q001Fixed": false,
+  "valuationActivated": false,
+  "unaccompaniedTravelActivated": false,
+  "graceActivated": false,
+  "largeSimulations": 0
+}

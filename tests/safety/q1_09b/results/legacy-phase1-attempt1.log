@@ -1,0 +1,19 @@
+PASS preview and reopening use no random draw
+PASS arrival rolls once and repeated arrival is inert
+PASS same-place wash sale cannot fulfil quest
+PASS foreign delivery fulfils quest
+PASS mixed FIFO cargo cannot multiply eligible goods
+PASS legacy cargo is retained but not invented as foreign
+PASS piracy consumes proven origin too
+PASS origins and book values survive save and reload
+PASS same duration has equal interest across year boundary
+PASS full year effective rates remain two and six percent
+PASS no time means no interest
+TypeError: Cannot read properties of null (reading 'bank')
+    at evalmachine.<anonymous>:1:117
+    at evalmachine.<anonymous>:1:157
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:22:62)
+    at test (/workspace/Hansef-rst/tests/safety/q1_09b/async-driver.cjs:13:28)
+    at async /workspace/Hansef-rst/tests/phase1.cjs:16:1

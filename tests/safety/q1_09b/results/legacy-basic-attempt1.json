@@ -1,0 +1,26 @@
+{
+  "sourceCommit": "cef6ba0cca923893c63064dd4f973feba17121f9",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "kind": "bounded legacy assertions with awaited native root actions; VM, not browser",
+  "checks": [
+    {
+      "name": "fresh save validates",
+      "passed": true
+    },
+    {
+      "name": "invalid v3 rejected",
+      "passed": true
+    },
+    {
+      "name": "negative gold rejected",
+      "passed": true
+    },
+    {
+      "name": "v3 assigns all ship locations",
+      "passed": false,
+      "error": "TypeError: Cannot read properties of null (reading 'ships')\n    at evalmachine.<anonymous>:1:279\n    at evalmachine.<anonymous>:1:299\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at Object.eval (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:22:62)\n    at test (/workspace/Hansef-rst/tests/safety/q1_09b/async-driver.cjs:13:28)\n    at async /workspace/Hansef-rst/tests/test-v04.cjs:8:1"
+    }
+  ],
+  "passed": false
+}

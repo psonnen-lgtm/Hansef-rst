@@ -1,0 +1,17 @@
+PASS all 121 city/good references use actual harbor quote and preserve input
+PASS neutral mixed costs cannot change W1-S or W2-S but active failure remains open
+PASS multiple ships and warehouses in different harbors receive one common local reference
+PASS unknown costs and provenance remain unknown without fallback invention
+PASS stored WIP counterexample loses all artificial material security in both candidates
+PASS construction does not create candidate security while completion remains separately visible
+PASS paid wage cap and no invented proportional progress, W2 excludes only inventory
+PASS borrowing repayment deposits and existing floor preserve candidate credit identities
+PASS legitimate profit loss and partial-sale accounting remain historical native results
+PASS reference price changes are explicitly economic changes, invalid inputs fail
+PASS unaccompanied single convoy quotes keep native route time fees and person untouched
+PASS remote quote cannot invent unknown person free trip or other-harbor convoy
+PASS short original accord receives only demonstrated route deficit in dry-run dossier
+PASS anchor at missing station requires actual detour and return evidence
+PASS sufficient expired witnessed and nonpersonal contracts do not receive blanket grace
+PASS old Hanse visited stations and region condition survive conservative remaining itinerary
+PASS grace binds exact original hash contract and first zero-day explicit local anchor
