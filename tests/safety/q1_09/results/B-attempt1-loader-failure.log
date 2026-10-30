@@ -1,0 +1,59 @@
+node:child_process:981
+    throw err;
+    ^
+
+<ref *1> Error: spawnSync git ENOBUFS
+    at Object.spawnSync (node:internal/child_process:1160:20)
+    at spawnSync (node:child_process:928:24)
+    at Object.execFileSync (node:child_process:971:15)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:5:19)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.require (node:internal/modules/cjs/loader:1617:12) {
+  errno: -105,
+  code: 'ENOBUFS',
+  syscall: 'spawnSync git',
+  path: 'git',
+  spawnargs: [
+    'show',
+    '02ee6b8fc1507ad078b6b596c333e50d91eeea64:Hansefuerst_0_4.html'
+  ],
+  error: [Circular *1],
+  status: null,
+  signal: 'SIGTERM',
+  output: [
+    null,
+    Buffer(33570816) [Uint8Array] [
+       60,  33, 100, 111,  99, 116, 121, 112, 101,  32, 104, 116,
+      109, 108,  62,  60, 104, 116, 109, 108,  32, 108,  97, 110,
+      103,  61,  34, 100, 101,  34,  62,  60, 104, 101,  97, 100,
+       62,  60, 109, 101, 116,  97,  32,  99, 104,  97, 114, 115,
+      101, 116,  61,  34, 117, 116, 102,  45,  56,  34,  62,  60,
+      109, 101, 116,  97,  32, 110,  97, 109, 101,  61,  34, 118,
+      105, 101, 119, 112, 111, 114, 116,  34,  32,  99, 111, 110,
+      116, 101, 110, 116,  61,  34, 119, 105, 100, 116, 104,  61,
+      100, 101, 118, 105,
+      ... 33570716 more items
+    ],
+    Buffer(0) [Uint8Array] []
+  ],
+  pid: 133775,
+  stdout: Buffer(33570816) [Uint8Array] [
+     60,  33, 100, 111,  99, 116, 121, 112, 101,  32, 104, 116,
+    109, 108,  62,  60, 104, 116, 109, 108,  32, 108,  97, 110,
+    103,  61,  34, 100, 101,  34,  62,  60, 104, 101,  97, 100,
+     62,  60, 109, 101, 116,  97,  32,  99, 104,  97, 114, 115,
+    101, 116,  61,  34, 117, 116, 102,  45,  56,  34,  62,  60,
+    109, 101, 116,  97,  32, 110,  97, 109, 101,  61,  34, 118,
+    105, 101, 119, 112, 111, 114, 116,  34,  32,  99, 111, 110,
+    116, 101, 110, 116,  61,  34, 119, 105, 100, 116, 104,  61,
+    100, 101, 118, 105,
+    ... 33570716 more items
+  ],
+  stderr: Buffer(0) [Uint8Array] []
+}
+
+Node.js v24.19.0

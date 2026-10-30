@@ -2,7 +2,7 @@
 const fs=require('node:fs'),vm=require('node:vm'),cp=require('node:child_process'),crypto=require('node:crypto');
 const path=require('node:path'),root=path.resolve(__dirname,'../../..');
 const base='02ee6b8fc1507ad078b6b596c333e50d91eeea64';
-const original=cp.execFileSync('git',['show',base+':Hansefuerst_0_4.html'],{cwd:root,maxBuffer:32*1024*1024}).toString();
+const original=cp.execFileSync('git',['show',base+':Hansefuerst_0_4.html'],{cwd:root,maxBuffer:128*1024*1024}).toString();
 const html=fs.readFileSync(root+'/Hansefuerst_0_4.html','utf8');
 const clean=x=>JSON.parse(JSON.stringify(x));
 function source(h){return h.match(/<script>([\s\S]*?)<\/script>/)[1].split('// Opt-in local test analysis.')[0].replace(/^const ART=.*;$/m,'const ART={};');}
