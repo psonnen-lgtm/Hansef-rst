@@ -1273,27 +1273,27 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
  try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{
   const disk=localStorage.getItem(KEY);
   if(disk!==expected){if(viewOnly){const result=safetyReadView(fn);safetyMessage('Ein anderes Fenster hat die Partie geändert. Nur Ansicht; bitte den aktuellen Stand laden.',false);return result;}return safetyMessage('Veralteter Stand: Ein anderes Fenster hat gespeichert. Der Vorgang wurde nicht ausgeführt. Bitte den aktuellen Stand laden.');}
-  const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,events=[],snapshots=[],routes=[];
+  const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,oldRun=Testlog.newRun,events=[],snapshots=[],routes=[],runs=[];
   const oldText=JSON.stringify(s);let committed=false;
   SafetySession.active={dirty:false,readOnly:false};s=safetyCopy(s);
-  Testlog.event=(type,details={})=>events.push([type,safetyCopy(details)]);Testlog.snapshot=reason=>snapshots.push(reason);Testlog.setRoute=(...args)=>routes.push(args);
+  Testlog.event=(type,details={})=>events.push([type,safetyCopy(details)]);Testlog.snapshot=reason=>snapshots.push(reason);Testlog.setRoute=(...args)=>routes.push(args);Testlog.newRun=(...args)=>runs.push(args);
   let result;
   try{
    result=fn();if(result&&typeof result.then==='function')throw Error('Asynchroner Untervorgang innerhalb der Schreibgrenze');
    if(result===false){s=before;pending=oldPending;startDraft=oldDraft;return false;}
-   if(s){validate(s);const changed=JSON.stringify(s)!==oldText;
+   if(s){validate(s);const changed=JSON.stringify(s)!==disk;
     if(changed){const previous=disk?JSON.parse(disk).politics?.safety?.revision??0:0;if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);localStorage.setItem(KEY,bytes);committed=true;SafetySession.expected=bytes;}
    }
    storageWarning=false;SafetySession.error='';
   }catch(e){if(!committed){s=before;pending=oldPending;startDraft=oldDraft;}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
-  finally{Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;SafetySession.active=null;}
+  finally{Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;Testlog.newRun=oldRun;SafetySession.active=null;}
   // Observations are published only after the canonical game write succeeds.
-  try{for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const reason of snapshots)oldSnapshot(reason);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
+  try{for(const args of runs)oldRun?.(...args);for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const reason of snapshots)oldSnapshot(reason);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
   return result;
  });}catch(e){return safetyMessage('Kein sicherer Schreibzugriff möglich. Die Aktion wurde abgebrochen. '+(e.message||''));}
 }
 function safetyExportText(){
- const raw=localStorage.getItem(KEY)??SafetySession.expected;
+ let raw;try{raw=localStorage.getItem(KEY)??SafetySession.expected}catch(e){raw=SafetySession.expected;}
  if(raw!==null){const x=migrate(JSON.parse(raw));if(!x)throw Error('Gespeicherte Revision nicht unterstützt');return raw;}
  const old=startOriginal();if(old.raw!==null){if(!migrate(JSON.parse(old.raw)))throw Error('Originalstand nicht lesbar');return old.raw;}
  throw Error('Noch keine gespeicherte Partie vorhanden');
