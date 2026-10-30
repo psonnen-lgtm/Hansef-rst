@@ -1,0 +1,611 @@
+{
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "method": "textual line/function classification, not complete AST proof",
+  "entries": [
+    {
+      "line": 104,
+      "function": "makeShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 114,
+      "function": "warehouseRequired",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 116,
+      "function": "warehouseUsed",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 118,
+      "function": "warehouseCapacity",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 145,
+      "function": "changeWarehouseRent",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 146,
+      "function": "changeWarehouseRent",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 153,
+      "function": "changeWarehouseRent",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 156,
+      "function": "changeWarehouseRent",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 170,
+      "function": "payWarehouseArrears",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 171,
+      "function": "payWarehouseArrears",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 174,
+      "function": "payWarehouseArrears",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 176,
+      "function": "payWarehouseArrears",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 178,
+      "function": "payWarehouseArrears",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 181,
+      "function": "warehouseCapacityPanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 219,
+      "function": "startShipbuilding",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 224,
+      "function": "startShipbuilding",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 273,
+      "function": "warehouseTransfer",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 275,
+      "function": "warehouseTransfer",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 295,
+      "function": "warehouseTransfer",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 297,
+      "function": "warehouseTransfer",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 300,
+      "function": "warehouseSelect",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 302,
+      "function": "warehouseView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 303,
+      "function": "warehouseView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 306,
+      "function": "warehouseView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 354,
+      "function": "politicalRecords",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 356,
+      "function": "politicalOffer",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 362,
+      "function": "politicalSupport",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 368,
+      "function": "mayorQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 403,
+      "function": "hanseQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 428,
+      "function": "acceptPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 429,
+      "function": "acceptPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 430,
+      "function": "acceptPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 431,
+      "function": "acceptPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 439,
+      "function": "politicalSupplyPending",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 441,
+      "function": "completePoliticalSupply",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 454,
+      "function": "witnessPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 455,
+      "function": "witnessPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 456,
+      "function": "witnessPoliticalJob",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 459,
+      "function": "finishPoliticalAccord",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 460,
+      "function": "finishPoliticalAccord",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 464,
+      "function": "runMayorElection",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 465,
+      "function": "runMayorElection",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 466,
+      "function": "runMayorElection",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 467,
+      "function": "runMayorElection",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 468,
+      "function": "runMayorElection",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 471,
+      "function": "resignMayor",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 474,
+      "function": "requestPoliticalEndorsement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 475,
+      "function": "requestPoliticalEndorsement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 477,
+      "function": "acceptHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 478,
+      "function": "acceptHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 481,
+      "function": "witnessHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 482,
+      "function": "witnessHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 483,
+      "function": "witnessHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 486,
+      "function": "finishHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 487,
+      "function": "finishHanseAgreement",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 489,
+      "function": "runHanseAssembly",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 555,
+      "function": "politicalRumorPanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 558,
+      "function": "politicalCareerModel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 576,
+      "function": "politicalCareerBoard",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 584,
+      "function": "politicsHallView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 603,
+      "function": "politicsHallView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 700,
+      "function": "informationPanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 701,
+      "function": "informationPanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 790,
+      "function": "cargoBookPrice",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 791,
+      "function": "ensureCargoRecords",
+      "category": "internal candidate/clock/provenance, not independent personal proof"
+    },
+    {
+      "line": 799,
+      "function": "questWindow",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 802,
+      "function": "observe",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 845,
+      "function": "regionalReport",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 846,
+      "function": "regionalReport",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 847,
+      "function": "regionalReport",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 854,
+      "function": "regionalInformationPanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 878,
+      "function": "render",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 883,
+      "function": "harborLetter",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 892,
+      "function": "marketTradeLimits",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 896,
+      "function": "marketSelect",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 899,
+      "function": "marketView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 902,
+      "function": "marketView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 905,
+      "function": "marketView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 907,
+      "function": "trade",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 909,
+      "function": "takeBath",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 920,
+      "function": "shipSaleQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 921,
+      "function": "shipSaleQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 924,
+      "function": "shipSalePanel",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 927,
+      "function": "sellShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 929,
+      "function": "sellShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 930,
+      "function": "sellShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 937,
+      "function": "harborWorkEligibility",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 938,
+      "function": "harborWorkEligibility",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 941,
+      "function": "harborWorkEligibility",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 965,
+      "function": "performHarborWork",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 972,
+      "function": "harborView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 973,
+      "function": "repairShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 974,
+      "function": "armShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 979,
+      "function": "selectFleetShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 980,
+      "function": "selectFleetShip",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 986,
+      "function": "shipsView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 988,
+      "function": "contorView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 991,
+      "function": "questsView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 992,
+      "function": "completeQuests",
+      "category": "internal candidate/clock/provenance, not independent personal proof"
+    },
+    {
+      "line": 999,
+      "function": "mapVoyageQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1000,
+      "function": "mapVoyageQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1001,
+      "function": "mapVoyageQuote",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1015,
+      "function": "mapView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1016,
+      "function": "mapView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1017,
+      "function": "mapView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1018,
+      "function": "mapView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1019,
+      "function": "mapView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1021,
+      "function": "planTravel",
+      "category": "travel: person and real participants"
+    },
+    {
+      "line": 1024,
+      "function": "travelView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1028,
+      "function": "arrive",
+      "category": "travel: person and real participants"
+    },
+    {
+      "line": 1029,
+      "function": "arrivalView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1030,
+      "function": "saveView",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1195,
+      "function": "drawCity",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1259,
+      "function": "safetyObservation",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1330,
+      "function": "safetyAt",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1332,
+      "function": "safetyPersonalRequired",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1333,
+      "function": "safetyPersonalRequired",
+      "category": "economic context/view/derived rule; not personal proof"
+    },
+    {
+      "line": 1338,
+      "function": "confirmLegacyPresence",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 1339,
+      "function": "confirmLegacyPresence",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 1340,
+      "function": "confirmLegacyPresence",
+      "category": "personal action: canonical guard"
+    },
+    {
+      "line": 1355,
+      "function": "checkNews",
+      "category": "economic context/view/derived rule; not personal proof"
+    }
+  ]
+}

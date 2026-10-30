@@ -1,0 +1,16 @@
+{
+  "Hansefuerst_0_4.html": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "tests/safety/q1_09/browser-attempt.cjs": "b87158ee1260ee367e9a432dee6723b9a06d0c09e21ccc73660aaf8119d415ab",
+  "tests/safety/q1_09/cross-arrival-check.cjs": "9f30b8bfdd1bc4fcfa7f2819053b4c85acd724dc320e36d86fd6a15ba082bc3f",
+  "tests/safety/q1_09/edge-checks.cjs": "21564e552f5b45e43f739626df51d182b9bf901a146c2ad50c5029718c9f4e1c",
+  "tests/safety/q1_09/harness.cjs": "1b4b2c5a776f3ef4b1683fe332478e5449a58937f6ac307ff2ed22dafbcdc78f",
+  "tests/safety/q1_09/historical-probe.cjs": "91134e56edc79423614332e1872c3208dd0b4182c0739e8da7d77c85cbe47999",
+  "tests/safety/q1_09/plan.json": "266857aaf0855489b0b75b83809dbb405b60ff1f460b949f60c86d597d85315e",
+  "tests/safety/q1_09/presence-checks.cjs": "2a8fa403b55581e129dc6463d233e82243b273e364395c20fcc36eca0bde7c6f",
+  "tests/safety/q1_09/qualified-audiences.cjs": "5381df2ff63c5ff1a4134a24bf96cc3ac276bb8c129dc4dc0865fced344b50b3",
+  "tests/safety/q1_09/safety-foundation.js": "2557056a8a9f6c7baf9ce25ecf50a08f0a58e0b9b9a8f8346e30bf67acabf1c5",
+  "tests/safety/q1_09/storage-checks.cjs": "ba48b8f72e254ad0fe69daec42a670c02dd12bd907814bd71495af2bfe907460",
+  "tests/safety/q1_09/valuation-checks.cjs": "3a394fb27e071ac0226d5a46f437de5a3519d3422693ba3c478d09b9b2eec4f7",
+  "tests/safety/q1_09/work-in-progress-check.cjs": "8ae8abeb1528f05f58ef8de8992052a0afd4254fa1c67b87ca0e65e57a839e17",
+  "tests/safety/q1_09/verify.py": "aa32f0d656224b94a45460799c5e75fe25c665e1ecbc2bb436238c20a8490798"
+}

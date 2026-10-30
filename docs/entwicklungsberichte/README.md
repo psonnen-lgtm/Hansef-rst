@@ -267,3 +267,5 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 ## Q1.09 – Technische Sicherheit und V13-Bestandsschutz
 
 30.10.2026 – [Gesamtbericht](Q1_09/Q1_09_gesamtbericht.md). Separater Sicherheitsbranch, kleine gezielte Prüfungen; keine neue politische Karriere oder wirtschaftliche Regel ohne Entscheidung.
+
+Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Personenort](Q1_09/Q1_09_persoenliche_anwesenheit.md), [V13](Q1_09/Q1_09_v13_bestandsschutz.md), [Regressionen](Q1_09/Q1_09_regressionstests.md), [offene Entscheidungen](Q1_09/Q1_09_offene_entscheidungen.md). B/C implementiert und VM-geprüft; Q-001 und native Browserabnahme offen. Keine vollständige Freigabe oder Zusammenführung.

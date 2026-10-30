@@ -1,0 +1,18 @@
+{
+  "testedCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "VMGroupsPassed": 44,
+  "tradeMechanicsCases": 8,
+  "constructionFixtures": 2,
+  "Q001Fixed": false,
+  "browserGameTestsExecuted": 0,
+  "physicalDevicesTested": 0,
+  "fullQ109Acceptance": false,
+  "userDecisionsStillOpen": [
+    "W1/W2 including WIP basis",
+    "unaccompanied remote voyage policy",
+    "short legacy deadline protection"
+  ],
+  "noLargeSimulation": true,
+  "noGuildCareerModelCActivated": true
+}
