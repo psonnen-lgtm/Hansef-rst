@@ -1,0 +1,29 @@
+{
+  "sourceCommit": "6b344e00a2765b98467232723c72b66948081385",
+  "testedGameCommit": "d06f7865620317fa0c64b1e5aad8bd2dcd1f3ee0",
+  "gameHash": "7bb624d610199fefecdc40ab70e67b3b7f763c5d258a24ae1cd96adf7c574e47",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium isolated synthetic saves; controlled faults explicitly identified",
+  "selection": "native grace original",
+  "checks": [
+    {
+      "name": "native grace original deadline ledger and export survive real file reimport and restart",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "realAnchorButton": true,
+        "extension": 5,
+        "originalUntilUnchanged": true,
+        "realDownloadFileReaderImportReload": true,
+        "noSecondGrace": true
+      }
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [],
+  "passed": true,
+  "fullBrowserAcceptance": false,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}
