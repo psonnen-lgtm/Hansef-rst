@@ -1,0 +1,31 @@
+PASS native boot copies V13 byte-exact original and reload does not rewrite
+PASS two native tabs first-open one canonical party and both load current data
+PASS two native tabs queue competing actions under one real Web Lock
+PASS same-tab queued double confirmation credits exactly once
+PASS closing a queued tab cancels its write before lock acquisition
+PASS closing lock holder releases native exclusion for surviving tab
+PASS injected quota failure rolls back actual RAM disk and revision, then retry succeeds
+PASS real FileReader import and canonical/original downloads restore complete copies
+PASS invalid and failed imports leave the active saved game intact
+PASS real import queued behind another tab cannot overwrite that newer action
+PASS missing Web Locks remains read-only with visible warning and exact export
+PASS missing IndexedDB refuses writes and keeps exact original export available
+PASS native transaction abort after put rolls back entire game and allows one retry
+PASS old safety1 LocalStorage party migrates to sole IndexedDB canonical without changing source
+PASS denied canonical storage read aborts startup without rewriting original
+PASS native personal accord uses actual trips, remote view grants no witness
+PASS interrupted arrival write preserves person ships money days and allows one retry
+BLOCKED local file works offline with native storage lock reload and file transfer
+PASS loaded page offline keeps local saving and native download available
+PASS native title office and Eldermann copies survive import export and reload
+PASS native corrupt or newer active state requires confirmed raw-backed recovery
+PASS native approved W1-S neutral trade cannot add security or credit
+PASS native unaccompanied arrival keeps person and refuses otherwise matching council visit
+PASS two native tabs confirm one unaccompanied voyage exactly once
+PASS native failed arrival reuses one hidden risk on retry
+PASS native departure dialog lets merchant stay ashore without a new menu
+PASS native grace original deadline ledger and export survive real file reimport and restart
+PASS two native tabs cannot grant the same legacy deadline twice
+PASS Chromium viewport and native input 375x812
+PASS Chromium viewport and native input 820x1180
+PASS Chromium viewport and native input 1280x900

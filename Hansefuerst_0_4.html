@@ -1326,7 +1326,7 @@ function safetyUpgrade(x,source='unknown',originalRaw=null){
  const y=safetyCopy(x);validate(y);
  if(y.politics.version===1){y.politics.version=2;y.politics.safety={version:1,revision:0,person:source==='new_start'?{city:y.city,source,at:y.year*360+y.day}:{city:null,source:'unknown',at:null}};}
  const a=y.politics.safety;
- if(!Object.hasOwn(a,'legacyPersonalJobs')){a.legacyPersonalJobs=[...y.politics.jobs.filter(q=>q.kind==='accord'&&!q.witnessed).map(q=>q.id),...(y.politics.league?[y.politics.league.id]:[])];if(x.politics.version===2)a.person={city:null,source:'unknown',at:null};}
+ if(!Object.hasOwn(a,'legacyPersonalJobs')){a.legacyPersonalJobs=[...y.politics.jobs.filter(q=>q.kind==='accord'&&!q.witnessed).map(q=>q.id),...(y.politics.league?[y.politics.league.id]:[])];}
  if(a.version===1){a.version=2;a.legacyTransfer=null;a.grace=[];if(x.politics.version===1&&source==='unknown'&&originalRaw!==null){const raw=JSON.parse(originalRaw);if(raw.v===13&&raw.politics?.version===1)a.legacyTransfer={day:y.year*360+y.day,sourceHash:safetyDigest(originalRaw),stateHash:legacyStateDigest(x)};}}
  if(a.version===2)a.version=3;
  const previous=s?.politics?.safety;

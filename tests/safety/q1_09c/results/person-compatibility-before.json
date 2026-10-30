@@ -1,0 +1,6 @@
+{
+  "sourceCommit": "66991fcef7dcc8d44e4bc5fff7f89bb48868d8ac",
+  "gameHash": "dc356ecdc9d30911a7af7c6733d60aca9f724f6d2931feeb9d94c5628af26841",
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: valid old personal arrival must survive missing optional legacy tracking\n+ actual - expected\n\n  {\n+   at: null,\n+   city: null,\n+   source: 'unknown'\n-   at: 486001,\n-   city: 0,\n-   source: 'arrival'\n  }\n\n    at /workspace/Hansef-rst/tests/safety/q1_09c/person-compatibility-check.cjs:3:244"
+}

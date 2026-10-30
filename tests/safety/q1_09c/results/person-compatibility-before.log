@@ -1,0 +1,20 @@
+AssertionError [ERR_ASSERTION]: valid old personal arrival must survive missing optional legacy tracking
++ actual - expected
+
+  {
++   at: null,
++   city: null,
++   source: 'unknown'
+-   at: 486001,
+-   city: 0,
+-   source: 'arrival'
+  }
+
+    at /workspace/Hansef-rst/tests/safety/q1_09c/person-compatibility-check.cjs:3:244 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: [Object],
+  expected: [Object],
+  operator: 'deepStrictEqual',
+  diff: 'simple'
+}
