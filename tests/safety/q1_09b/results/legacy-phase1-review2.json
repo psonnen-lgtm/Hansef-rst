@@ -1,0 +1,81 @@
+{
+  "sourceCommit": "0ec09b829b7230fb470a77ed4386c79db1a7a15f",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "kind": "bounded legacy assertions with awaited native root actions; VM, not browser",
+  "checks": [
+    {
+      "name": "preview and reopening use no random draw",
+      "passed": true
+    },
+    {
+      "name": "arrival rolls once and repeated arrival is inert",
+      "passed": true
+    },
+    {
+      "name": "same-place wash sale cannot fulfil quest",
+      "passed": true
+    },
+    {
+      "name": "foreign delivery fulfils quest",
+      "passed": true
+    },
+    {
+      "name": "mixed FIFO cargo cannot multiply eligible goods",
+      "passed": true
+    },
+    {
+      "name": "legacy cargo is retained but not invented as foreign",
+      "passed": true
+    },
+    {
+      "name": "piracy consumes proven origin too",
+      "passed": true
+    },
+    {
+      "name": "origins and book values survive save and reload",
+      "passed": true
+    },
+    {
+      "name": "same duration has equal interest across year boundary",
+      "passed": true
+    },
+    {
+      "name": "full year effective rates remain two and six percent",
+      "passed": true
+    },
+    {
+      "name": "no time means no interest",
+      "passed": true
+    },
+    {
+      "name": "migration does not backcharge interest or demote",
+      "passed": true
+    },
+    {
+      "name": "unrealised gain cannot increase worth or credit",
+      "passed": true
+    },
+    {
+      "name": "unrealised gain cannot cross promotion threshold",
+      "passed": true
+    },
+    {
+      "name": "realised gain does increase rank and worth",
+      "passed": true
+    },
+    {
+      "name": "legacy unknown book value is fixed after migration",
+      "passed": true
+    },
+    {
+      "name": "weighted cost handles partial sales",
+      "passed": true
+    },
+    {
+      "name": "fractional balances can be fully withdrawn or repaid",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

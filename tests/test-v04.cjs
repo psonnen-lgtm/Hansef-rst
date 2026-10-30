@@ -10,7 +10,7 @@ await test('legacy cargo has unknown cost','let x=migrate({version:1,ship:{cargo
 await test('malformed cargo rejected','let x=fresh("Ulf","Ulf");x.ships[0].cargo={0:-1};return migrate(x)===null');
 await test('credit does not grow with borrowing','s=fresh("Ulf","Ulf");let a=creditLimit();s.gold+=a;s.debt+=a;return creditLimit()===a&&creditLimit()-s.debt===0');
 await test('single arrival moves only chosen ship and cannot repeat','s=fresh("Ulf","Ulf");s.ships.push(makeShip(0));pending={from:0,dest:1,days:2,qs:[s.ships[0].id],event:null};arrive();arrive();return s.day===3&&s.rep===1&&s.ships[0].city===1&&s.ships[1].city===0');
-await test('remote cargo cannot be traded','s.active=1;let gold=s.gold;document.getElementById("qty0").value=1;trade(0,1);return s.gold===gold');
+await test('remote cargo cannot be traded','s.city=1;s.ships.push(makeShip(0,{id:2,city:0}));s.active=1;let gold=s.gold;document.getElementById("qty0").value=1;trade(0,1);return s.gold===gold');
 await test('quest completion waits five days for new offer','s=fresh("Ulf","Ulf");questsView();let q=s.quests[0];completeQuests(q.j,q.n);questsView();let empty=s.quests.length===0;advance(5);questsView();return empty&&s.quests.length===1');
 await test('expired quest gives no reward','s=fresh("Ulf","Ulf");s.quests=[{city:0,j:0,n:1,reward:100,until:totalDay()-1}];let gold=s.gold;completeQuests(0,1);return s.gold===gold');
 await test('unknown cost survives mixed purchase','s=fresh("Ulf","Ulf");ship().cargo[0]=1;ship().costs[0]=null;document.getElementById("qty0").value=1;trade(0,1);return ship().costs[0]===null');

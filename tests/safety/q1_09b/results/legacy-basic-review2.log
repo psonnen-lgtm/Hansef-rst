@@ -1,0 +1,30 @@
+PASS fresh save validates
+PASS invalid v3 rejected
+PASS negative gold rejected
+PASS v3 assigns all ship locations
+PASS legacy cargo has unknown cost
+PASS malformed cargo rejected
+PASS credit does not grow with borrowing
+PASS single arrival moves only chosen ship and cannot repeat
+PASS remote cargo cannot be traded
+PASS quest completion waits five days for new offer
+PASS expired quest gives no reward
+PASS unknown cost survives mixed purchase
+PASS known weighted purchase and partial sale
+PASS arrival fee is charged exactly once
+PASS fee by ship type
+PASS convoy fee excludes remote ship
+PASS insufficient gold blocks departure
+AssertionError [ERR_ASSERTION]: exact fee allows departure
+
+false !== true
+
+    at test (/workspace/Hansef-rst/tests/safety/q1_09b/async-driver.cjs:13:14)
+    at async /workspace/Hansef-rst/tests/test-v04.cjs:22:1 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: false,
+  expected: true,
+  operator: 'strictEqual',
+  diff: 'simple'
+}
