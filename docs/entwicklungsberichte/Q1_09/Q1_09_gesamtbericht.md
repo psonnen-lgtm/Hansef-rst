@@ -55,3 +55,10 @@ Keine Pages-/Dist-Aktualisierung, kein Merge, keine echte Nutzerdatei gelesen od
 
 
 [Gesamtbericht](Q1_09_gesamtbericht.md) · [Regressionen](Q1_09_regressionstests.md) · [Offene Entscheidungen](Q1_09_offene_entscheidungen.md)
+
+
+## Abschließende lokale Kontrolle
+
+3.231 bestehende Dateien abseits der Hauptspieldatei gegen die Ausgangsbasis geprüft: Berichtsindex ausschließlich ergänzt, alle übrigen Altdateien bytegleich. Produktive Änderungen ausschließlich in `Hansefuerst_0_4.html`. Alte Testskripte/Ergebnisse, Pages/Dist und eingebettete Grafikdaten unverändert. Sieben Berichte, Quellenhashes,54 Matrixzeilen mit44 VM-Erfolgen und4 ausdrücklich offenen Q-001-Gegenfällen geprüft. [Kontrollnachweis](../../../tests/safety/q1_09/results/verification.json).
+
+Vollständiges Dokumentationspaket zunächst in `d8d3238ea56caaed33b04931356ff746bfba8973` veröffentlicht. Das abschließende Paket einschließlich unverändert getesteten Codes wird nun aus einem unabhängigen GitHub-Fetch zurückgelesen. Prüfcode und Spielstand haben getrennte Commitangaben; keine angeblich selbstreferenzielle Abschluss-Test-ID.
