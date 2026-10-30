@@ -23,7 +23,7 @@ async function boot({fixture=defaultFixture,viewport={width:1280,height:900},mob
  try{const page=await tab(context,file);return {context,page}}catch(e){await context.close();throw e}
 }
 async function tab(context,file=false){const page=await context.newPage();page.on('dialog',d=>d.accept());page.on('pageerror',e=>pageErrors.push(e.message));await page.goto(file?'file://'+path.join(root,'Hansefuerst_0_4.html'):origin+'/Hansefuerst_0_4.html');await page.waitForFunction(()=>SafetySession.loaded||SafetySession.error);if(await page.evaluate(()=>!!s))await page.waitForFunction(()=>CityLife.diagnostics().visualReady);return page;}
-async function check(name,fn){if(process.env.Q109B_ONLY&&!new RegExp(process.env.Q109B_ONLY).test(name))return;try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});console.error('FAIL '+name+': '+e.message)}}
+async function check(name,fn){if(process.env.Q109B_ONLY&&!new RegExp(process.env.Q109B_ONLY).test(name))return;try{const evidence=await fn(),blocked=evidence?.status==='BLOCKED_NOT_TESTED';checks.push({name,passed:blocked?null:true,status:blocked?'BLOCKED_NOT_TESTED':'PASS',evidence});console.log((blocked?'BLOCKED ':'PASS ')+name)}catch(e){checks.push({name,passed:false,status:'FAIL',error:e.stack});console.error('FAIL '+name+': '+e.message)}}
 async function isolated(options,fn){const x=await boot(options);try{return await fn(x)}finally{await x.context.close()}}
 async function hold(p){await p.evaluate(()=>{window.qaHeld=false;window.qaHold=navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{window.qaHeld=true;return new Promise(r=>window.qaRelease=r)})});await p.waitForFunction(()=>window.qaHeld)}
 async function release(p){await p.evaluate(()=>window.qaRelease());await p.evaluate(()=>window.qaHold)}
@@ -90,6 +90,22 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
   await p.evaluate(()=>donate(50,2));const saved=await disk(p);assert.equal(JSON.parse(saved).gold,JSON.parse(raw).gold-50);await p.reload();await p.waitForFunction(()=>SafetySession.loaded&&!!s);assert.equal(await disk(p),saved);assert.equal(await download(p),saved);return {fileURL:true,nativeWebLocks:true,networkOffline:true,localSaveReloadAndDownload:true,doesNotProveSafariFileSupport:true};
  })}catch(e){if(/ERR_BLOCKED_BY_ADMINISTRATOR/.test(e.message))return {status:'BLOCKED_NOT_TESTED',reason:'environment Chromium policy refuses file:// navigation',writableOfflineAcceptance:false};throw e}});
  await check('loaded page offline keeps local saving and native download available',()=>isolated({},async({context,page:p})=>{const before=await state(p);await context.setOffline(true);await p.evaluate(()=>donate(50,2));const saved=await disk(p);assert.equal(JSON.parse(saved).gold,before.gold-50);assert.equal(await download(p),saved);let reloadError=null;try{await p.reload()}catch(e){reloadError=e.message}return {networkOffline:true,loadedPageLocalActionAndDownload:true,offlineColdStartTested:false,reloadError,scope:'already loaded HTTP page only; no claim of offline cold start'}}));
+ await check('native title office and Eldermann copies survive import export and reload',()=>isolated({},async({page:p})=>{
+  const F=require('../../simulation/political-progress-fixtures.cjs'),rows=[];
+  for(const kind of ['candidate','office','elder']){
+   const old=S('s=migrate('+JSON.stringify(F.state(kind))+')'),previous=await disk(p);
+   await p.locator('#file').setInputFiles({name:kind+'-v13.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(old))});await p.waitForFunction(raw=>SafetySession.expected!==raw,previous);
+   assert.deepEqual(withoutSafety(await state(p)),old);assert.equal(await download(p),await disk(p));const saved=await disk(p);await p.reload();await p.waitForFunction(()=>SafetySession.loaded&&!!s);assert.equal(await disk(p),saved);assert.deepEqual(withoutSafety(await state(p)),old);
+   rows.push({kind,rank:old.rank,office:!!old.politics.office,elder:!!old.politics.elderman,allOriginalFieldsPreserved:true});
+  }return {derivedHistoricalCopiesOnly:true,rows,noNewCareerSimulation:true};
+ }));
+ await check('native corrupt or newer active state requires confirmed raw-backed recovery',async()=>{
+  const rows=[];for(const kind of ['corrupt','future'])rows.push(await isolated({},async({page:p})=>{
+   const raw=kind==='corrupt'?'{unreadable original':await p.evaluate(()=>{const x=JSON.parse(localStorage.getItem(KEY));x.politics.safety.version=999;return JSON.stringify(x)});
+   await p.evaluate(({KEY,raw})=>localStorage.setItem(KEY,raw),{KEY,raw});await p.reload();await p.waitForFunction(()=>!!SafetySession.error);assert.equal(await p.evaluate(()=>s),null);assert.equal(await disk(p),raw);
+   let confirms=0;p.on('dialog',d=>{if(d.type()==='confirm')confirms++});await p.locator('#file').setInputFiles({name:'recovery-v13.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(S('s.gold=22000')))});await p.waitForFunction(()=>s?.gold===22000);assert.equal(confirms,1);assert(await p.evaluate(raw=>Object.values(localStorage).includes(raw),raw));return {kind,noSilentFallback:true,confirmation:true,rawPreserved:true};
+  }));return {rows};
+ });
  for(const [width,height,mobile] of [[375,812,true],[820,1180,true],[1280,900,false]])await check('Chromium viewport and native input '+width+'x'+height,()=>isolated({viewport:{width,height},mobile},async({page:p})=>{
   const press=async locator=>{await locator.scrollIntoViewIfNeeded();if(mobile)await locator.tap();else await locator.click()};
   await p.evaluate(()=>show('church'));const before=await state(p),preview=Number((await p.locator('#donationSmallGain').innerText()).match(/\d+/)[0]);await press(p.locator('button[onclick="donate(50,2)"]'));await p.waitForFunction(()=>!!document.querySelector('#donationReceipt'));const x=await state(p);assert.equal(x.gold,before.gold-50);assert.equal(x.rep,before.rep+preview);assert.equal(x.day,before.day);

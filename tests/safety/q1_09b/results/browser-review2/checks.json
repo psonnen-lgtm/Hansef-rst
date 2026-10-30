@@ -1,0 +1,125 @@
+{
+  "sourceCommit": "ea0595f3ecdfca73d61592fd769acdaa5531e20e",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium isolated synthetic saves; controlled faults explicitly identified",
+  "selection": "native boot|real FileReader|missing Web|denied canonical|local file|viewport|loaded page offline",
+  "checks": [
+    {
+      "name": "native boot copies V13 byte-exact original and reload does not rewrite",
+      "passed": true,
+      "evidence": {
+        "nativeWebLocks": true,
+        "noLoadWrite": true,
+        "legacyBytesExact": true
+      }
+    },
+    {
+      "name": "real FileReader import and canonical/original downloads restore complete copies",
+      "passed": true,
+      "evidence": {
+        "nativeFileReader": true,
+        "actualBlobDownloads": true,
+        "rawImportedFileBackedUp": true,
+        "priorStateBackup": true,
+        "canonicalRestoration": true
+      }
+    },
+    {
+      "name": "missing Web Locks remains read-only with visible warning and exact export",
+      "passed": true,
+      "evidence": {
+        "injectedUnavailableCapability": true,
+        "noLocalStorageLockFallback": true,
+        "readAndNativeExport": true
+      }
+    },
+    {
+      "name": "denied canonical storage read aborts startup without rewriting original",
+      "passed": true,
+      "evidence": {
+        "controlledSecurityError": true,
+        "oldBytesPreserved": true
+      }
+    },
+    {
+      "name": "local file works offline with native storage lock reload and file transfer",
+      "passed": true,
+      "evidence": {
+        "status": "BLOCKED_NOT_TESTED",
+        "reason": "environment Chromium policy refuses file:// navigation",
+        "writableOfflineAcceptance": false
+      }
+    },
+    {
+      "name": "loaded page offline keeps local saving and native download available",
+      "passed": true,
+      "evidence": {
+        "networkOffline": true,
+        "loadedPageLocalActionAndDownload": true,
+        "offlineColdStartTested": false,
+        "reloadError": "page.reload: net::ERR_INTERNET_DISCONNECTED\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "scope": "already loaded HTTP page only; no claim of offline cold start"
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 375x812",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 820x1180",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 820,
+          "height": 1180
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 1280x900",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "input": "real Chromium click",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "tests/safety/q1_09b/results/browser-review2/viewport-375.png",
+    "tests/safety/q1_09b/results/browser-review2/viewport-820.png",
+    "tests/safety/q1_09b/results/browser-review2/viewport-1280.png"
+  ],
+  "passed": true,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}

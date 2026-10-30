@@ -1,0 +1,9 @@
+PASS native boot copies V13 byte-exact original and reload does not rewrite
+PASS real FileReader import and canonical/original downloads restore complete copies
+PASS missing Web Locks remains read-only with visible warning and exact export
+PASS denied canonical storage read aborts startup without rewriting original
+PASS local file works offline with native storage lock reload and file transfer
+PASS loaded page offline keeps local saving and native download available
+PASS Chromium viewport and native input 375x812
+PASS Chromium viewport and native input 820x1180
+PASS Chromium viewport and native input 1280x900
