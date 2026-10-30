@@ -1,0 +1,38 @@
+{
+  "sourceCommit": "e3498f8522ec456287fb4328dd6e895b96a1d07a",
+  "reusedNotRerun": true,
+  "files": [
+    {
+      "path": "tests/safety/q1_09/acceptance-summary.json",
+      "sha256": "2ce2d7441ac26099d3030a4b46df4f7fb00904033e78aa32729e29d0d11d0e2a"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/cross-arrival.json",
+      "sha256": "dd616c014b7d8759fd8012f260872cad3980111f2ff1765b06e7351cb19aab24"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/edge.json",
+      "sha256": "80f4a3028dc51a87aedc5e111d3729262050f33090c1499f834049050f7fe546"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/presence.json",
+      "sha256": "30b5bce71e5d837f233650843276ee8f8228b6f780a8882032c57cb7e5d36f78"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/qualified.json",
+      "sha256": "8b6587e463f451c1bd5f6d41ef8825c983d67f8981099241586a0d416c4ae164"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/storage.json",
+      "sha256": "f6c4d187e782877699779970d480867567c6f369f5f726ad60a22afcca34b78d"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/valuation.json",
+      "sha256": "1c5b8b70a5113805bf6c9f2970f522328637ca539e41cf82990a6119a0fe956e"
+    },
+    {
+      "path": "tests/safety/q1_09/results/acceptance/work-in-progress.json",
+      "sha256": "910f3ace6995ca4aa6cfa6d7af01966b4c1dc93fcc96a83984b99ccf1c413221"
+    }
+  ]
+}
