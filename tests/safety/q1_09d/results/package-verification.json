@@ -24,5 +24,5 @@
   "codeSyntaxChecks": 2,
   "diffCheck": true,
   "scopeValid": true,
-  "initialStaticCheckCorrection": "First run stopped at its own not-yet-created result link; checker now permits only its specific upcoming output path, all other links must already exist."
+  "initialStaticCheckCorrection": "First run stopped at its own not-yet-created result link; checker now permits only its specific upcoming output path. Later staged diff check flagged CRLF CSV endings; normalized to LF, unchanged 42 rows and BOM. Final working and staged diff checks pass."
 }

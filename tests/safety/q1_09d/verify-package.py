@@ -94,6 +94,7 @@ assert all(name in landing for name in ['Hansefuerst_0_4.html', 'Q1_09d_NUR_SYNT
 for script in ['prepare-fixtures.cjs', 'check-fixtures.cjs']:
     subprocess.run(['node', '--check', str(FOLDER / script)], check=True)
 subprocess.run(['git', 'diff', '--check', BASE], cwd=ROOT, check=True)
+subprocess.run(['git', 'diff', '--cached', '--check'], cwd=ROOT, check=True)
 proof = {
     'date': '2026-10-30 Europe/Berlin', 'baseCommit': BASE,
     'testedGameCommit': CODE, 'gameSHA256': HASH, 'gameBytes': len(html),
@@ -106,7 +107,7 @@ proof = {
     'nativeBrowserTestsRerun': 0, 'realAppleDevicesTested': 0,
     'codeSyntaxChecks': 2, 'diffCheck': True,
     'scopeValid': True,
-    'initialStaticCheckCorrection': 'First run stopped at its own not-yet-created result link; checker now permits only its specific upcoming output path, all other links must already exist.',
+    'initialStaticCheckCorrection': 'First run stopped at its own not-yet-created result link; checker now permits only its specific upcoming output path. Later staged diff check flagged CRLF CSV endings; normalized to LF, unchanged 42 rows and BOM. Final working and staged diff checks pass.',
 }
 OUTPUT.write_text(json.dumps(proof, indent=2) + '\n')
 print(json.dumps(proof, indent=2))
