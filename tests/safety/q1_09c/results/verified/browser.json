@@ -1,0 +1,412 @@
+{
+  "sourceCommit": "da22e16d450cd51a9c4ab2bb3c1d0587cd359d13",
+  "testedGameCommit": "da22e16d450cd51a9c4ab2bb3c1d0587cd359d13",
+  "gameHash": "8ef291ede6f10f048604a9a5de1b1afd638f7d4a617ad6d598eaf4048cd946f0",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium, IndexedDB canonical transactions, Web Locks and file APIs; controlled faults explicit",
+  "selection": "all",
+  "checks": [
+    {
+      "name": "native boot copies V13 byte-exact original and reload does not rewrite",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "nativeWebLocks": true,
+        "noLoadWrite": true,
+        "legacyBytesExact": true
+      }
+    },
+    {
+      "name": "two native tabs first-open one canonical party and both load current data",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "simultaneousStartup": true,
+        "oneInitialCanonicalWrite": true,
+        "bothLoadFreshCanonical": true
+      }
+    },
+    {
+      "name": "two native tabs queue competing actions under one real Web Lock",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "tabs": 2,
+        "queuedRequests": 2,
+        "canonicalWrites": 1,
+        "oneCharge": true,
+        "staleRejected": true,
+        "reloadRecovered": true
+      }
+    },
+    {
+      "name": "same-tab queued double confirmation credits exactly once",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "oneCharge": true,
+        "oneReputationCredit": true
+      }
+    },
+    {
+      "name": "closing a queued tab cancels its write before lock acquisition",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "closedQueuedWriterNoCharge": true,
+        "lockRemainsUsable": true,
+        "notAnOSPowerFailureTest": true
+      }
+    },
+    {
+      "name": "closing lock holder releases native exclusion for surviving tab",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "browserReleasesAbandonedLock": true,
+        "oneAtomicAction": true
+      }
+    },
+    {
+      "name": "injected quota failure rolls back actual RAM disk and revision, then retry succeeds",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "fault": "controlled IDBObjectStore.put QuotaExceededError, not disk physically filled",
+        "rollbackComplete": true,
+        "noGhostEvent": true,
+        "retry": true
+      }
+    },
+    {
+      "name": "real FileReader import and canonical/original downloads restore complete copies",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "nativeFileReader": true,
+        "actualBlobDownloads": true,
+        "rawImportedFileBackedUp": true,
+        "priorStateBackup": true,
+        "canonicalRestoration": true
+      }
+    },
+    {
+      "name": "invalid and failed imports leave the active saved game intact",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "parseFailureSafe": true,
+        "commitFailureSafe": true
+      }
+    },
+    {
+      "name": "real import queued behind another tab cannot overwrite that newer action",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "selectionTimeStateRespected": true,
+        "staleFileCallbackRejected": true
+      }
+    },
+    {
+      "name": "missing Web Locks remains read-only with visible warning and exact export",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "injectedUnavailableCapability": true,
+        "noLocalStorageLockFallback": true,
+        "readAndNativeExport": true
+      }
+    },
+    {
+      "name": "missing IndexedDB refuses writes and keeps exact original export available",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "noUnsafeStorageFallback": true,
+        "originalDownloadExact": true,
+        "gameWrites": 0
+      }
+    },
+    {
+      "name": "native transaction abort after put rolls back entire game and allows one retry",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "actualIndexedDBTransactionAbort": true,
+        "notMerelyPreflightThrow": true,
+        "fullRollback": true,
+        "oneRetryCharge": true
+      }
+    },
+    {
+      "name": "old safety1 LocalStorage party migrates to sole IndexedDB canonical without changing source",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "oldLocalStorageByteIdentical": true,
+        "noNewLocalStorageCanonical": true,
+        "personalAndEconomicDataPreserved": true,
+        "newSafetyRevision": 3
+      }
+    },
+    {
+      "name": "denied canonical storage read aborts startup without rewriting original",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "controlledSecurityError": true,
+        "oldBytesPreserved": true
+      }
+    },
+    {
+      "name": "native personal accord uses actual trips, remote view grants no witness",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "freeRemoteView": true,
+        "noRemoteWitness": true,
+        "approvedRemotePreparationCostsNothing": true,
+        "realRoundtrip": true,
+        "oneReceipt": true
+      }
+    },
+    {
+      "name": "interrupted arrival write preserves person ships money days and allows one retry",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "controlledWriteInterruption": true,
+        "atomicRollback": true,
+        "arrivalOnce": true
+      }
+    },
+    {
+      "name": "local file works offline with native storage lock reload and file transfer",
+      "passed": null,
+      "status": "BLOCKED_NOT_TESTED",
+      "evidence": {
+        "status": "BLOCKED_NOT_TESTED",
+        "reason": "environment Chromium policy refuses file:// navigation",
+        "writableOfflineAcceptance": false
+      }
+    },
+    {
+      "name": "loaded page offline keeps local saving and native download available",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "networkOffline": true,
+        "loadedPageLocalActionAndDownload": true,
+        "offlineColdStartTested": false,
+        "reloadError": "page.reload: net::ERR_INTERNET_DISCONNECTED\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "scope": "already loaded HTTP page only; no claim of offline cold start"
+      }
+    },
+    {
+      "name": "native title office and Eldermann copies survive import export and reload",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "derivedHistoricalCopiesOnly": true,
+        "rows": [
+          {
+            "kind": "candidate",
+            "rank": 2,
+            "office": false,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "office",
+            "rank": 3,
+            "office": true,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "elder",
+            "rank": 4,
+            "office": false,
+            "elder": true,
+            "allOriginalFieldsPreserved": true
+          }
+        ],
+        "noNewCareerSimulation": true
+      }
+    },
+    {
+      "name": "native corrupt or newer active state requires confirmed raw-backed recovery",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "rows": [
+          {
+            "kind": "corrupt",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          },
+          {
+            "kind": "future",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          }
+        ]
+      }
+    },
+    {
+      "name": "native approved W1-S neutral trade cannot add security or credit",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "before": {
+          "security": 15860,
+          "credit": 7137,
+          "gold": 10000,
+          "book": 15200
+        },
+        "after": {
+          "security": 15860,
+          "credit": 7137,
+          "gold": 10000,
+          "book": 15777.5
+        },
+        "historicalBookKeptSeparate": true
+      }
+    },
+    {
+      "name": "native unaccompanied arrival keeps person and refuses otherwise matching council visit",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "actualButtonArrival": true,
+        "fee": 6,
+        "days": 3,
+        "personStayed": true,
+        "noRepVisitOrReceipt": true,
+        "otherwiseCorrectPartnerRefused": true,
+        "reloadExact": true
+      }
+    },
+    {
+      "name": "two native tabs confirm one unaccompanied voyage exactly once",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "realTabs": 2,
+        "oneTripOneFeeOneClockAdvance": true,
+        "staleArrivalRefused": true,
+        "personStayed": true
+      }
+    },
+    {
+      "name": "native failed arrival reuses one hidden risk on retry",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "actualNativeBrowser": true,
+        "controlledQuota": true,
+        "noRiskReroll": true,
+        "unpublishedOutcomeNotShown": true,
+        "oneCommittedVoyage": true
+      }
+    },
+    {
+      "name": "native departure dialog lets merchant stay ashore without a new menu",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "actualExistingDialogButton": true,
+        "merchantStayedAtDeparture": true,
+        "shipArrived": true,
+        "noPersonalCredit": true
+      }
+    },
+    {
+      "name": "native grace original deadline ledger and export survive real file reimport and restart",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "realAnchorButton": true,
+        "extension": 5,
+        "originalUntilUnchanged": true,
+        "realDownloadFileReaderImportReload": true,
+        "noSecondGrace": true
+      }
+    },
+    {
+      "name": "two native tabs cannot grant the same legacy deadline twice",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "realTabs": 2,
+        "oneAnchorOneGrant": true,
+        "noRewardOrExtraTime": true
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 375x812",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 820x1180",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "viewport": {
+          "width": 820,
+          "height": 1180
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    },
+    {
+      "name": "Chromium viewport and native input 1280x900",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "input": "real Chromium click",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      }
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [
+    "tests/safety/q1_09c/results/verified/viewport-375.png",
+    "tests/safety/q1_09c/results/verified/viewport-820.png",
+    "tests/safety/q1_09c/results/verified/viewport-1280.png"
+  ],
+  "passed": true,
+  "fullBrowserAcceptance": false,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}
