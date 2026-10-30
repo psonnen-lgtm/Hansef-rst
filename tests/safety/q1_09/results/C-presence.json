@@ -1,0 +1,158 @@
+{
+  "sourceCommit": "6502490e44c5588920fb259d2b5e1ef484e045b9",
+  "gameHash": "acc9ad4b6f1b1deb344e2f684f403e05bf5aa98069d8908fd7d808a760a4518d",
+  "kind": "controlled_VM_native_actions_and_derived_historical_fixtures_not_browser_or_real_saves",
+  "checks": [
+    {
+      "name": "old unknown person remains unknown until one explicit controlled anchor without invented deed",
+      "passed": true,
+      "evidence": {
+        "explicitAnchorOnce": true,
+        "noArrivalOrReceiptInvented": true
+      }
+    },
+    {
+      "name": "new game gets its chosen real start city without legacy anchoring",
+      "passed": true,
+      "evidence": {
+        "chosenStart": 6,
+        "nativeCashAndShip": true
+      }
+    },
+    {
+      "name": "Q1.02 remote audience reproduction is now refused with free fleet view preserved",
+      "passed": true,
+      "evidence": {
+        "freeView": true,
+        "noPoliticalTeleport": true
+      }
+    },
+    {
+      "name": "new accord succeeds only with actual outward and return personal travel",
+      "passed": true,
+      "evidence": {
+        "actualRoundtrip": true,
+        "fee": 12,
+        "oneReceipt": true
+      }
+    },
+    {
+      "name": "an anchored missing legacy station is not silently treated as travelled; existing deadline stays",
+      "passed": true,
+      "evidence": {
+        "noFakeOldVisit": true,
+        "untilPreserved": true,
+        "afterRealArrival": true
+      }
+    },
+    {
+      "name": "already witnessed legacy agreement and its return-right survive import",
+      "passed": true,
+      "evidence": {
+        "oldWitnessKept": true,
+        "returnAllowedAtRealAnchor": true
+      }
+    },
+    {
+      "name": "remote unaccompanied departure is fail-closed, no ship or person movement invented",
+      "passed": true,
+      "evidence": {
+        "unresolvedPolicySafelyRefused": true
+      }
+    },
+    {
+      "name": "arrival write fault rolls back money days ships person and pending completion",
+      "passed": true,
+      "evidence": {
+        "wholeArrivalAtomic": true
+      }
+    },
+    {
+      "name": "stale planned trip cannot reuse an earlier revision after another action",
+      "passed": true,
+      "evidence": {
+        "replanRequired": true
+      }
+    },
+    {
+      "name": "actual selected convoy moves every participating hull and the person once",
+      "passed": true,
+      "evidence": {
+        "twoHullConvoy": true,
+        "nativeFee": 10
+      }
+    },
+    {
+      "name": "old titles candidate offices elder evidence and contracts survive complete V13 copy loading",
+      "passed": true,
+      "evidence": {
+        "fixtureKinds": [
+          {
+            "kind": "candidate",
+            "rank": 2,
+            "office": false,
+            "records": 6,
+            "elder": false
+          },
+          {
+            "kind": "office",
+            "rank": 3,
+            "office": true,
+            "records": 6,
+            "elder": false
+          },
+          {
+            "kind": "proved",
+            "rank": 3,
+            "office": true,
+            "records": 10,
+            "elder": false
+          },
+          {
+            "kind": "elder",
+            "rank": 4,
+            "office": false,
+            "records": 17,
+            "elder": true
+          }
+        ],
+        "fernkaufmannPreserved": true,
+        "syntheticDerivedHistoricalEndpointsNotNewCareers": true
+      }
+    },
+    {
+      "name": "wrong-place political functions refuse without affecting an existing title",
+      "passed": true,
+      "evidence": {
+        "sixEntryPointsNoTeleport": true
+      }
+    },
+    {
+      "name": "manual import failure original backup export restoration and import-time stale guard",
+      "passed": true,
+      "evidence": {
+        "invalidFileSafe": true,
+        "rawOriginalPreserved": true,
+        "previousBackup": true,
+        "selectionTimeRevisionChecked": true
+      }
+    },
+    {
+      "name": "import commit fault restores everything and buffers the new-run observation",
+      "passed": true,
+      "evidence": {
+        "noPartialImport": true,
+        "noGhostNewRun": true
+      }
+    },
+    {
+      "name": "M2 export is rejected by the actual unchanged old V13 reader",
+      "passed": true,
+      "evidence": {
+        "actualOldValidatorRejectsNewPolitics": true,
+        "noOldClientWrite": true
+      }
+    }
+  ],
+  "passed": true
+}

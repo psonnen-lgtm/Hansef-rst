@@ -468,7 +468,7 @@ function runMayorElection(){if(!safetyPersonalRequired())return false;
   Testlog.event('political_election',{city:s.city,won:quote.score>=quote.target,support:quote.score,target:quote.target});return true;
  });
 }
-function resignMayor(){if(!safetyPersonalRequired())return false;if(!s.politics.office)return false;return politicalAction('Bürgermeisteramt in '+CITIES[s.politics.office.city]+' beenden? Örtliche Amtsrechte enden, Titel und erworbene Verdienste bleiben.',()=>{politicalCloseOffice('freiwillig niedergelegt');return true})}
+function resignMayor(){if(!safetyPersonalRequired(s.politics.office?.city??s.city))return false;if(!s.politics.office)return false;return politicalAction('Bürgermeisteramt in '+CITIES[s.politics.office.city]+' beenden? Örtliche Amtsrechte enden, Titel und erworbene Verdienste bleiben.',()=>{politicalCloseOffice('freiwillig niedergelegt');return true})}
 function reviewMayor(){if(!s.politics.office||s.politics.office.until>totalDay())return false;return politicalAction(null,()=>{politicalCloseOffice('Amtsprüfung');return true})}
 function requestPoliticalEndorsement(){if(!safetyPersonalRequired())return false;
  const a=politicalRecords(),ids=['supply','accord'].map(kind=>a.find(r=>r.kind===kind)?.id);if(!politicalLeagueAccess()||s.politics.endorsements[s.city]||ids.some(id=>!id))return false;

@@ -1,0 +1,3 @@
+'use strict';
+const fs=require('node:fs'),cp=require('node:child_process'),{chromium,webkit}=require('playwright');
+(async()=>{const attempts=[];for(const [name,type]of [['Chromium',chromium],['WebKit',webkit]]){try{const b=await type.launch({headless:true});attempts.push({engine:name,launched:true});await b.close();}catch(e){attempts.push({engine:name,launched:false,reason:e.message});}}fs.writeFileSync(process.argv[2],JSON.stringify({sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),attempts,gameBrowserChecks:[],browserGameAbnahme:false,physicalDevicesTested:false,note:'This is only capability discovery. Missing binaries/download403 mean no game UI, true tabs, mobile viewport or native Web Locks test was run.'},null,2)+'\n');})();
