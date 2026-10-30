@@ -16,6 +16,10 @@ function safetyUpgrade(x,source='unknown'){
  if(!Object.hasOwn(y.politics.safety,'legacyPersonalJobs')){y.politics.safety.legacyPersonalJobs=[...y.politics.jobs.filter(q=>q.kind==='accord'&&!q.witnessed).map(q=>q.id),...(y.politics.league?[y.politics.league.id]:[])];if(x.politics.version===2)y.politics.safety.person={city:null,source:'unknown',at:null};}
  validate(y);return y;
 }
+function safetyObservation(snapshot=false){
+ try{Testlog.tick?.();const financial={netWorth:netWorth(),gold:s.gold,bank:s.bank,debt:s.debt,rank:s.rank,rep:s.rep},stamp={timestamp:new Date().toISOString(),day:s.day,year:s.year,city:CITIES[s.city],activeMs:Math.round(Testlog.data?.activeMs??0)};
+ return {stamp,financial,state:snapshot?{...financial,completed:s.completed,markets:safetyCopy(s.markets),ships:s.ships.map(q=>({id:q.id,type:q.type,city:q.city,condition:q.condition,arms:q.arms,cargo:{...q.cargo},costs:{...q.costs}}))}:null};}catch(e){return null;}
+}
 function safetyStageWrite(){if(!SafetySession.active)throw Error('Schreibversuch außerhalb der gemeinsamen Grenze');SafetySession.active.dirty=true;}
 function safetyBackupRaw(raw,label='original'){
  if(!SafetySession.active||SafetySession.active.readOnly)throw Error('Keine geschützte Schreibgrenze');
@@ -40,7 +44,7 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
   const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,oldRun=Testlog.newRun,events=[],snapshots=[],routes=[],runs=[];
   let committed=false;
   SafetySession.active={dirty:false,readOnly:false};s=safetyCopy(s);
-  Testlog.event=(type,details={})=>events.push([type,safetyCopy(details)]);Testlog.snapshot=reason=>snapshots.push(reason);Testlog.setRoute=(...args)=>routes.push(args);Testlog.newRun=(...args)=>runs.push(args);
+  Testlog.event=(type,details={})=>{if(Testlog.enabled!==false)events.push([type,safetyCopy(details),safetyObservation()]);};Testlog.snapshot=reason=>{if(Testlog.enabled!==false)snapshots.push([reason,safetyObservation(true)]);};Testlog.setRoute=(...args)=>routes.push(args);Testlog.newRun=(...args)=>runs.push(args);
   let result;
   try{
    result=fn();if(result&&typeof result.then==='function')throw Error('Asynchroner Untervorgang innerhalb der Schreibgrenze');
@@ -52,7 +56,7 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
   }catch(e){if(!committed){s=before;pending=oldPending;startDraft=oldDraft;}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
   finally{Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;Testlog.newRun=oldRun;SafetySession.active=null;}
   // Observations are published only after the canonical game write succeeds.
-  try{for(const args of runs)oldRun?.(...args);for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const reason of snapshots)oldSnapshot(reason);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
+  try{for(const args of runs)oldRun?.(...args);for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const args of snapshots)oldSnapshot(...args);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
   return result;
  });}catch(e){return safetyMessage('Kein sicherer Schreibzugriff möglich. Die Aktion wurde abgebrochen. '+(e.message||''));}
 }
