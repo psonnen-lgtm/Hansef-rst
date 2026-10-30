@@ -4,7 +4,8 @@ const SafetySession={expected:null,loaded:false,error:'',active:null};
 const safetyCopy=x=>x==null?x:JSON.parse(JSON.stringify(x));
 function validateSafety(x){
  const a=x.politics.safety,keys=(o,k)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).length===k.length&&k.every(n=>Object.hasOwn(o,n));
- if(!keys(a,['version','revision','person'])||a.version!==1||!Number.isSafeInteger(a.revision)||a.revision<0||!keys(a.person,['city','source','at']))throw Error('Ungültige Sicherheitsrevision');
+ if(!keys(a,['version','revision','person',...(Object.hasOwn(a,'legacyPersonalJobs')?['legacyPersonalJobs']:[])])||a.version!==1||!Number.isSafeInteger(a.revision)||a.revision<0||!keys(a.person,['city','source','at']))throw Error('Ungültige Sicherheitsrevision');
+ if(Object.hasOwn(a,'legacyPersonalJobs')&&(!Array.isArray(a.legacyPersonalJobs)||a.legacyPersonalJobs.length>23||new Set(a.legacyPersonalJobs).size!==a.legacyPersonalJobs.length||a.legacyPersonalJobs.some(id=>typeof id!=='string'||!id.match(/^(accord|league):(?:[0-9]|10):[0-9]+$/))))throw Error('Ungültige Altvertragsreferenzen');
  const p=a.person,now=x.year*360+x.day;
  if(p.source==='unknown'){if(p.city!==null||p.at!==null)throw Error('Unbekannter Personenort enthält erfundene Daten')}
  else if(!['new_start','legacy_anchor','arrival'].includes(p.source)||!isCityIndex(p.city)||!Number.isSafeInteger(p.at)||p.at<0||p.at>now)throw Error('Ungültiger persönlicher Aufenthaltsort');
@@ -12,6 +13,7 @@ function validateSafety(x){
 function safetyUpgrade(x,source='unknown'){
  const y=safetyCopy(x);validate(y);
  if(y.politics.version===1){y.politics.version=2;y.politics.safety={version:1,revision:0,person:source==='new_start'?{city:y.city,source,at:y.year*360+y.day}:{city:null,source:'unknown',at:null}};}
+ if(!Object.hasOwn(y.politics.safety,'legacyPersonalJobs')){y.politics.safety.legacyPersonalJobs=[...y.politics.jobs.filter(q=>q.kind==='accord'&&!q.witnessed).map(q=>q.id),...(y.politics.league?[y.politics.league.id]:[])];if(x.politics.version===2)y.politics.safety.person={city:null,source:'unknown',at:null};}
  validate(y);return y;
 }
 function safetyStageWrite(){if(!SafetySession.active)throw Error('Schreibversuch außerhalb der gemeinsamen Grenze');SafetySession.active.dirty=true;}
@@ -70,13 +72,27 @@ async function safetyBoot(){
   const original=startOriginal();if(original.raw===null){s=null;return;}
   const parsed=JSON.parse(original.raw),x=migrate(parsed);if(!x)throw Error('Spielstand oder neuere Revision nicht unterstützt');
   if(original.key===KEY&&x.politics.version!==2)throw Error('Aktiver Sicherheitsstand hat keine gültige Sicherheitsrevision');
-  if(original.key!==KEY){safetyBackupRaw(original.raw,'v13-original');s=safetyUpgrade(x);}else s=x;
+  if(original.key!==KEY){safetyBackupRaw(original.raw,'v13-original');s=safetyUpgrade(x);}else if(!Object.hasOwn(x.politics.safety,'legacyPersonalJobs')){safetyBackupRaw(original.raw,'safety-original');s=safetyUpgrade(x);}else s=x;
  };
  if(typeof navigator==='undefined'||!navigator.locks?.request){try{const original=startOriginal();s=original.raw===null?null:migrate(JSON.parse(original.raw));SafetySession.loaded=true;if(s)render();else welcome();safetyMessage('Nur lesbar: Web Locks fehlen. Originale bleiben erhalten; Export ist möglich.',false);}catch(e){safetyMessage('Original konnte nicht gelesen werden; keine Änderung vorgenommen. '+e.message);}return false;}
  const ok=await safetyRun(load);SafetySession.loaded=true;if(s)render();else welcome();checkNews();return ok!==false;
 }
-const SAFETY_ACTIONS=['changeWarehouseRent','payWarehouseArrears','warehouseTransfer','warehouseSelect','startShipbuilding','completeShipbuilding','waitShipbuilding','acceptPoliticalJob','witnessPoliticalJob','finishPoliticalAccord','runMayorElection','resignMayor','reviewMayor','requestPoliticalEndorsement','acceptHanseAgreement','witnessHanseAgreement','finishHanseAgreement','runHanseAssembly','buyInformation','buyInformationArchive','fileExistingInformation','buyTradeLetter','trade','takeBath','donate','bankOp','sellShip','performHarborWork','repairShip','armShip','buyShip','selectFleetShip','marketSelect','promote','advance','planTravel','arrive','cancelVoyagePreparation','startGame'];
+const SAFETY_ACTIONS=['changeWarehouseRent','payWarehouseArrears','warehouseTransfer','warehouseSelect','startShipbuilding','completeShipbuilding','waitShipbuilding','acceptPoliticalJob','witnessPoliticalJob','finishPoliticalAccord','runMayorElection','resignMayor','reviewMayor','requestPoliticalEndorsement','acceptHanseAgreement','witnessHanseAgreement','finishHanseAgreement','runHanseAssembly','buyInformation','buyInformationArchive','fileExistingInformation','buyTradeLetter','trade','takeBath','donate','bankOp','sellShip','performHarborWork','repairShip','armShip','buyShip','selectFleetShip','marketSelect','promote','advance','planTravel','arrive','cancelVoyagePreparation','startGame','confirmLegacyPresence'];
 const SAFETY_VIEWS=['show','closeSheet','marketView','warehouseView','harborView','bookView','questsView','regionalReport'];
 function safetyInstall(){for(const name of [...SAFETY_ACTIONS,...SAFETY_VIEWS]){const fn=globalThis[name];if(typeof fn!=='function')throw Error('Sicherheitsgrenze fehlt: '+name);globalThis[name]=function(...args){if(SafetySession.active)return fn.apply(this,args);return safetyRun(()=>fn.apply(this,args),{viewOnly:SAFETY_VIEWS.includes(name)});};}}
 safetyInstall();
 // END Q109 SAFETY FOUNDATION
+// BEGIN Q109 PERSONAL PRESENCE — no remote delegation or new travel automation.
+function safetyAt(city=s.city){return !!s&&isCityIndex(city)&&s.politics?.safety?.person?.city===city;}
+function safetyPersonText(){const p=s?.politics?.safety?.person;return p&&isCityIndex(p.city)?CITIES[p.city]+(p.source==='legacy_anchor'?' (bestätigter Altanker)':''):'historisch unbekannt';}
+function safetyPersonalRequired(city=s.city,legacyId=null){
+ if(!safetyAt(city)||s.city!==city){notice('Diese persönliche Handlung erfordert deinen Kaufmann in '+CITIES[city]+'. Betrachteter Hafen: '+CITIES[s.city]+'. Persönlicher Ort: '+safetyPersonText()+'. Alte unbekannte Orte können unter Spielstand & Sicherung einmalig bestätigt werden.');return false;}
+ if(legacyId&&s.politics.safety.legacyPersonalJobs?.includes(legacyId)&&s.politics.safety.person.source==='legacy_anchor'){notice('Diese alte noch fehlende Vertragsstation braucht eine echte persönliche Ankunft. Die einmalige Altverankerung ist kein nachträglicher Reisebeleg. Vorhandene Bestätigungen und Fristen bleiben erhalten.');return false;}
+ return true;
+}
+function confirmLegacyPresence(){
+ if(!s||s.politics.safety.person.source!=='unknown'||ship().city!==s.city)return false;
+ if(!confirm('Der persönliche Ort wurde in dieser alten Partie nicht gespeichert. Deinen Kaufmann einmalig in '+CITIES[s.city]+' am Hafen deines ausgewählten Schiffs verankern? Das ist eine erklärte Übernahmeentscheidung, keine historische Reise und keine neue Urkunde. Fehlende alte Vertragsstationen werden dadurch nicht erfüllt.'))return false;
+ s.politics.safety.person={city:s.city,source:'legacy_anchor',at:totalDay()};save();notice('Persönlicher Altanker bestätigt: '+CITIES[s.city]+'. Ansicht und Personenort werden künftig getrennt geführt.');return true;
+}
+// END Q109 PERSONAL PRESENCE

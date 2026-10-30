@@ -9,3 +9,7 @@ Aktiver Schlüssel `hansefuerst-v04-safety1`, bisheriger `hansefuerst-v04` bleib
 Ohne Web Locks oder bei verweigertem Zugriff werden Änderungen sicher abgebrochen. Lesende Ansichten und Export bleiben möglich; kein unsicherer LocalStorage-Lock als Fallback. HTTPS/localhost und Browserfähigkeit erforderlich; Offline-Nutzung bei verfügbarem API ohne Serverkontakt möglich. file-URLs/ältere Safari-Versionen können nur lesbar bleiben. Keine Cloud oder Synchronisierung.
 
 Top-Level-Aktionen sind nun asynchron; verschachtelte bestehende Spielschritte innerhalb einer Transaktion bleiben synchron. Historische Tests mit synchronen Bool-Erwartungen müssen über den gezielten neuen Harness awaiten; alte Ergebnisdateien werden nicht überschrieben. Browserabnahme derzeit durch fehlende Browser und geblockten Download eingeschränkt.
+
+## Tatsächliche Teil-B-Prüfung
+
+Zwölf gezielte native VM-Regressionen bestanden, Quellcommit im Resultat. Zwei erste Testanläufe scheiterten vor sachlicher Prüfung am zu kleinen Git-Quellpuffer bzw. einer unvollständigen synthetischen Lagerstruktur; ausschließlich Harness/Fixture korrigiert, Protokolle erhalten. Erfolgreich: vollständige alte V13-Kopie, keine Schreibänderung beim erneuten Laden, ein finaler Write, Quota-Rollback ohne Geisterereignisse, zwei VM-Kontexte mit gemeinsamer exklusiver Lock-API-Modellierung/stale-Abbruch, doppelte Bestätigung, Fail-closed ohne API, Backupfehler, vollständiger Export/Reload, neuere Revision abgewiesen sowie echte kleine Handels-/Bank-/Zins- und Briefaktionen. Dies sind keine echten Browser-Tabs.
