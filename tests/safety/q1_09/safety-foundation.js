@@ -46,7 +46,7 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
    result=fn();if(result&&typeof result.then==='function')throw Error('Asynchroner Untervorgang innerhalb der Schreibgrenze');
    if(result===false){s=before;pending=oldPending;startDraft=oldDraft;return false;}
    if(s){validate(s);const changed=JSON.stringify(s)!==disk;
-    if(changed){const previous=disk?JSON.parse(disk).politics?.safety?.revision??0:0;if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);localStorage.setItem(KEY,bytes);committed=true;SafetySession.expected=bytes;}
+    if(changed){let previous=0;try{const r=disk?JSON.parse(disk).politics?.safety?.revision:0;if(Number.isSafeInteger(r)&&r>=0)previous=r;}catch(e){/* Explicit replacement can recover corrupt bytes after exact backup. */}if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);localStorage.setItem(KEY,bytes);committed=true;SafetySession.expected=bytes;}
    }
    storageWarning=false;SafetySession.error='';
   }catch(e){if(!committed){s=before;pending=oldPending;startDraft=oldDraft;}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
@@ -68,7 +68,7 @@ async function safetyReload(){
  try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{const raw=localStorage.getItem(KEY);if(raw===null)throw Error('Kein aktiver Sicherheitsstand');const x=migrate(JSON.parse(raw));if(!x||x.politics.version!==2)throw Error('Nicht unterstützte aktive Revision');s=x;SafetySession.expected=raw;pending=null;startDraft=null;SafetySession.error='';storageWarning=false;render();return true;});}catch(e){return safetyMessage('Laden abgebrochen; Originaldaten bleiben erhalten. '+e.message);}
 }
 async function safetyBoot(){
- SafetySession.expected=localStorage.getItem(KEY);
+ try{SafetySession.expected=localStorage.getItem(KEY)}catch(e){return safetyMessage('Lokaler Speicherzugriff verweigert. Keine Daten verändert; bitte Browser-Speicherfreigabe prüfen.');}
  const load=()=>{
   const original=startOriginal();if(original.raw===null){s=null;return;}
   const parsed=JSON.parse(original.raw),x=migrate(parsed);if(!x)throw Error('Spielstand oder neuere Revision nicht unterstützt');

@@ -1,0 +1,94 @@
+{
+  "sourceCommit": "4aaea691f3ba4d087acc1e55926c4a7437f98f1b",
+  "gameHash": "53c995449700338bf7ea1a86310c0783e3c7093bfee56d4ec8ac0324077f4c11",
+  "checks": [
+    {
+      "name": "native economic formulas prices goods distances interest and fees remain byte-identical",
+      "passed": true,
+      "evidence": {
+        "functions": [
+          "dailyMarketPrice",
+          "regionalPrice",
+          "regionalStock",
+          "regionalMarketDay",
+          "creditLimit",
+          "cargoBookPrice",
+          "cargoWorth",
+          "warehouseWorth",
+          "shipyardWorth",
+          "netWorth",
+          "bankOp",
+          "shipbuildingQuote",
+          "routeTravelDays",
+          "routeHandlingDays",
+          "donationGain",
+          "completeQuests",
+          "politicalSupport"
+        ],
+        "constants": [
+          "GOODS",
+          "SHIPTYPES",
+          "DIST",
+          "SHIPBUILD_RECIPES",
+          "WAREHOUSE_RULES"
+        ]
+      }
+    },
+    {
+      "name": "old V11 actual historical endpoint imports without loss before technical upgrade",
+      "passed": true,
+      "evidence": {
+        "sourceVersion": 11,
+        "outputVersion": 13,
+        "elderKept": true
+      }
+    },
+    {
+      "name": "unknown historical cost and source remain unknown in copied V13",
+      "passed": true,
+      "evidence": {
+        "noHistoryInvented": true
+      }
+    },
+    {
+      "name": "post-commit observer fault does not roll back a successfully stored action",
+      "passed": true,
+      "evidence": {
+        "afterCommitFailureRecoverable": true
+      }
+    },
+    {
+      "name": "current M2 export re-import preserves confirmed person and completed political receipts",
+      "passed": true,
+      "evidence": {
+        "noSecondAnchorOrJob": true
+      }
+    },
+    {
+      "name": "no random draw during old V13 copy activation or repeated safety reload",
+      "passed": true,
+      "evidence": {
+        "draws": 0
+      }
+    },
+    {
+      "name": "original-overflow backup slots fail closed without overwriting any original",
+      "passed": true,
+      "evidence": {
+        "numberedSlots": 100,
+        "noOriginalOverwritten": true
+      }
+    },
+    {
+      "name": "download helper preserves complete canonical and original bytes for manual restoration",
+      "passed": true,
+      "evidence": {
+        "exactCanonicalExport": true,
+        "exactLegacyDownload": true,
+        "oldReaderRestoresOriginal": true,
+        "downloadDOM": "stub, not actual browser transfer"
+      }
+    }
+  ],
+  "passed": true
+}

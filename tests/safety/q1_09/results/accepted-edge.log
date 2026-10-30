@@ -1,0 +1,8 @@
+PASS native economic formulas prices goods distances interest and fees remain byte-identical
+PASS old V11 actual historical endpoint imports without loss before technical upgrade
+PASS unknown historical cost and source remain unknown in copied V13
+PASS post-commit observer fault does not roll back a successfully stored action
+PASS current M2 export re-import preserves confirmed person and completed political receipts
+PASS no random draw during old V13 copy activation or repeated safety reload
+PASS original-overflow backup slots fail closed without overwriting any original
+PASS download helper preserves complete canonical and original bytes for manual restoration
