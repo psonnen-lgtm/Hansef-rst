@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "branch": "fix/q1-09c-safety-finalization",
+  "parent": "afb2bc9ce5496ecfcd8a5a17da1301825262f438",
+  "originalGame": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "approvedRules": [
+    "W1-S across credit and economic qualification including wage-only WIP",
+    "unaccompanied ships, global time/risks/fees, no personal credit",
+    "one-time proven legacy deadline grace, no auto advanced M2"
+  ],
+  "phases": [
+    "A frozen evidence and verified refs",
+    "B active W1-S and actual historical counterexamples",
+    "C unaccompanied travel native targeted tests",
+    "D validated first-import and effective deadline ledger",
+    "E combined VM and reachable native Chromium acceptance, seven reports and GitHub readback"
+  ],
+  "noLargeSimulation": true,
+  "baselineEvidence": [
+    {
+      "path": "tests/safety/q1_09/acceptance-summary.json",
+      "sha256": "2ce2d7441ac26099d3030a4b46df4f7fb00904033e78aa32729e29d0d11d0e2a"
+    },
+    {
+      "path": "tests/safety/q1_09b/acceptance-summary.json",
+      "sha256": "88ae543e611254c690b12939ee7ebc0a5177de834543ea6951844ebaa01c025b"
+    },
+    {
+      "path": "tests/safety/q1_09b/results/browser-acceptance.json",
+      "sha256": "4ffc0d841195f215610cd5b858bb5db0bcc5f967b7882d028a97a3019a294ede"
+    }
+  ]
+}
