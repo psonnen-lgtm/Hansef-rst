@@ -17,5 +17,5 @@ async function safetyCanonical(expected=undefined,bytes=undefined){
 }
 function safetyReadCanonical(){return safetyCanonical()}
 function safetyWriteCanonical(expected,bytes){return safetyCanonical(expected,bytes)}
-function safetyBusy(value){SafetySession.committing=value;try{if(document.body)document.body.inert=value;if(value){const box=$('storageStatus');if(box){box.hidden=false;box.textContent='Spielzug wird lokal gespeichert …'}}}catch(e){}}
+function safetyBusy(value){try{if(value&&!SafetySession.committing)SafetySession.commitFocus=document.activeElement;SafetySession.committing=value;if(document.body)document.body.inert=value;if(value){const box=$('storageStatus');if(box){box.hidden=false;box.textContent='Spielzug wird lokal gespeichert …'}}else{if(SafetySession.commitFocus?.isConnected)SafetySession.commitFocus.focus?.({preventScroll:true});SafetySession.commitFocus=null}}catch(e){}}
 // END Q109c ATOMIC LOCAL STORE

@@ -1,5 +1,5 @@
 'use strict';
-const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,hash}=require('../q1_09/harness.cjs');
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,hash}=require('./harness.cjs');
 (async()=>{
  const old=S('s.gold=10000;ship().cargo={};ship().costs={};ship().origins={};ship().bookCosts={};for(let k=0;k<4;k++){const j=SHIPBUILD_GOODS[k],n=SHIPBUILD_RECIPES[0].materials[k];ship().cargo[j]=n;ship().costs[j]=8;ship().bookCosts[j]=8;ship().origins[j]=[{city:1,n}]}s.markets[0][2]={price:30,stock:110}');const cases=[];
  for(const dirty of [false,true]){const g=E({stored:{'hansefuerst-v04':JSON.stringify(old)}});await g.ready();const initialCash=g.state().gold;

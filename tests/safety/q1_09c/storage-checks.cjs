@@ -1,6 +1,6 @@
 'use strict';
-const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,LockQueue,hash}=require('../q1_09/harness.cjs');
-const KEY='hansefuerst-v04-safety1',OLD='hansefuerst-v04',checks=[];const json=x=>JSON.stringify(x);
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,LockQueue,hash}=require('./harness.cjs');
+const KEY='hansefuerst-v04-safety3',OLD='hansefuerst-v04',checks=[];const json=x=>JSON.stringify(x);
 async function check(name,fn){try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name);}catch(e){checks.push({name,passed:false,error:e.stack});throw e;}}
 async function fixture(code='',opts={}){const old=S(code),raw=json(old),g=E({stored:{[OLD]:raw},...opts});await g.ready();return {g,old,raw};}
 function unchanged(before,after){const x=clean(after);x.politics.version=1;delete x.politics.safety;assert.deepEqual(x,before);}

@@ -1,6 +1,6 @@
 'use strict';
-const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,hash}=require('../q1_09/harness.cjs');
-const KEY='hansefuerst-v04-safety1',checks=[];
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,hash}=require('./harness.cjs');
+const KEY='hansefuerst-v04-safety3',checks=[];
 async function check(name,fn){try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});throw e}}
 async function fixture(personal=false,opts={}){const x=S('s.gold=10000;s.bank=1000;s.debt=1000;s.ships.push(makeShip(1,{id:2,city:1}),makeShip(0,{id:3,city:1}));s.ships[1].cargo={0:10};s.ships[1].costs={0:8};s.ships[1].bookCosts={0:8};s.ships[1].origins={0:[{city:0,n:10}]}');const g=E({stored:{'hansefuerst-v04':JSON.stringify(x)},...opts});await g.ready();if(personal)await g.eval('selectFleetShip(1)');await g.eval('confirmLegacyPresence()');if(!personal)await g.eval('selectFleetShip(1)');return g}
 async function trip(g,convoy=false,draws=[.9]){g.ctx.qaDraws=[...draws];g.eval('globalThis.riskDraws=0;Math.random=()=>{riskDraws++;return qaDraws.length?qaDraws.shift():.5}');const before=g.state();await g.eval(`planTravel(2,${convoy})`);const plan=clean(g.eval('pending'));assert(plan);assert.equal(g.eval('riskDraws'),0);await g.eval('show("map");show("travel")');assert.equal(g.eval('riskDraws'),0);await g.eval('arrive()');const after=g.state(),count=g.eval('riskDraws');assert.equal(await g.eval('arrive()'),false);assert.equal(g.eval('riskDraws'),count);return {before,after,plan,event:g.eval('pending.event'),draws:count}}

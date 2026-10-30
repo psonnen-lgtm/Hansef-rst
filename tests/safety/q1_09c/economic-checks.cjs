@@ -1,5 +1,5 @@
 'use strict';
-const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,html,hash}=require('../q1_09/harness.cjs');
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,clean,html,hash}=require('./harness.cjs');
 const {valuation}=require('../q1_09b/valuation-proposal.cjs'),checks=[];
 async function check(name,fn){try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});throw e}}
 async function boot(code=''){const g=E({stored:{'hansefuerst-v04':JSON.stringify(S(code))}});assert(await g.ready());return g}

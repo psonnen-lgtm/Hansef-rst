@@ -97,7 +97,7 @@ const isCityIndex=i=>Number.isInteger(i)&&i>=0&&i<CITY_COUNT;
 const isGoodIndex=i=>Number.isInteger(i)&&i>=0&&i<GOOD_COUNT;
 const isIndexKey=(key,count)=>/^(0|[1-9]\d*)$/.test(key)&&key===String(Number(key))&&Number(key)<count;
 const DIST=[[0,2,2,3,4,8,12,7,10,19,11],[2,0,3,4,5,9,10,8,8,20,9],[2,3,0,2,3,7,13,5,11,17,12],[3,4,2,0,2,6,14,7,12,19,13],[4,5,3,2,0,4,15,8,13,20,14],[8,9,7,6,4,0,19,5,17,17,18],[12,10,13,14,15,19,0,18,18,30,19],[7,8,5,7,8,5,18,0,16,12,17],[10,8,11,12,13,17,18,16,0,28,4],[19,20,17,19,20,17,30,12,28,0,29],[11,9,12,13,14,18,19,17,4,29,0]];
-const LEGACYKEY='hansefuerst-v04',KEY='hansefuerst-v04-safety1',PREVIOUS='hansefuerst-v03',OLD='hansefuerst-v01';
+const LEGACYKEY='hansefuerst-v04',PRIORSAFETYKEY='hansefuerst-v04-safety1',KEY='hansefuerst-v04-safety3',PREVIOUS='hansefuerst-v03',OLD='hansefuerst-v01';
 const SHIPTYPES=[{name:'Schnigge',cap:55,speed:1.5,cost:3800},{name:'Kogge',cap:90,speed:1,cost:6200},{name:'Holk',cap:140,speed:.72,cost:10500}];
 const $=id=>document.getElementById(id),r=(a,b)=>Math.floor(Math.random()*(b-a+1))+a,fmt=n=>Math.round(n).toLocaleString('de-DE'),esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let storageWarning=false;let s=null,view='',pending=null;let startDraft=null,newGameBusy=false;
@@ -782,7 +782,7 @@ function tradeLetterPanel(){
 // END PHASE 08D1B LETTERS
 function migrate(raw){return migrateInformation(raw)}
 function save(){if(s&&SafetySession.active&&!SafetySession.active.readOnly)safetyStageWrite(s)}
-function backupCurrent(){try{const raw=localStorage.getItem(KEY)??startOriginal().raw??(s?JSON.stringify(s):null);if(raw===null)return true;safetyBackupRaw(raw,'before-replacement');return true}catch(e){alert('Sicherung nicht möglich. Der bisherige Stand bleibt erhalten. Bitte zuerst exportieren.');return false}}
+function backupCurrent(){try{const raw=SafetySession.expected??startOriginal().raw??(s?JSON.stringify(s):null);if(raw===null)return true;safetyBackupRaw(raw,'before-replacement');return true}catch(e){alert('Sicherung nicht möglich. Der bisherige Stand bleibt erhalten. Bitte zuerst exportieren.');return false}}
 function log(t){s.messages.unshift(`Tag ${s.day}: ${t}`);s.messages=s.messages.slice(0,40);save()}
 function ship(){return s.ships[s.active]||s.ships[0]}
 function load(q=ship()){return Object.values(q.cargo).reduce((a,b)=>a+(+b||0),0)}
@@ -1031,8 +1031,8 @@ function travelView(){
 }
 function arrive(){if(!pending||pending.arrived)return false;const personal=(pending.mode??'personal')==='personal';if(!['personal','unaccompanied'].includes(pending.mode??'personal')||!isCityIndex(s.politics.safety.person.city)||personal&&!safetyPersonalRequired(pending.from))return false;if(pending.person&&JSON.stringify(pending.person)!==JSON.stringify(s.politics.safety.person))return false;if(pending.safetyRevision!==s.politics.safety.revision)return notice('Die Reisevorbereitung ist veraltet. Bitte die Fahrt neu planen.');if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nicht mehr möglich. Bitte neu planen.');pending.arrived=true;if(p.retryRisk){Object.assign(p,p.retryRisk);delete p.retryRisk}if(!p.resolved)rollTravel(p,qs);s.gold-=p.fee||0;advance(p.days);if(p.fee)log('Hafengebühr: '+p.fee+' G für '+qs.length+' Schiff(e).');if(p.event==='storm'){p.stormDamage??=qs.map(q=>({id:q.id,loss:r(3,10)}));for(const q of qs)q.condition=Math.max(30,q.condition-p.stormDamage.find(d=>d.id===q.id).loss);log('Sturm auf See: Einige Schiffe wurden beschädigt.')}if(p.event==='pirates'){let q=qs.find(q=>load(q)>0);if(q){let j=Object.keys(q.cargo)[0],lost=Math.min(q.cargo[j],p.loss);consumeOrigins(q,j,lost,null);q.cargo[j]-=lost;Testlog.event('pirate_loss',{shipId:q.id,good:GOODS[j][0],quantity:lost,averageCost:q.costs[j]??null});if(!q.cargo[j]){delete q.cargo[j];delete q.costs[j];if(q.bookCosts)delete q.bookCosts[j]}log(`Piraten raubten ${lost} Fass ${GOODS[j][0]}.`)}}if(p.event==='defended')log('Piraten erfolgreich zurückgeschlagen oder abgeschüttelt.');let routeId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);Testlog.event('travel',{routeId,mode:personal?'personal':'unaccompanied',personalArrival:personal,personCity:s.politics.safety.person.city,from:CITIES[p.from],to:CITIES[p.dest],days:p.days,fee:p.fee||0,event:p.event,ships:qs.map(q=>({id:q.id,cargo:{...q.cargo},costs:{...q.costs},condition:q.condition})),activeMs:Testlog.data.activeMs});if(p.event==='pirates'||p.event==='defended')Testlog.event('pirates',{routeId,result:p.event,ships:p.qs});for(const q of qs){q.city=p.dest;Testlog.setRoute(q.id,routeId);}s.city=p.dest;if(personal){s.politics.safety.person={city:p.dest,source:'arrival',at:totalDay()};s.visits++;s.rep+=1;}observe();log(personal?`In ${CITIES[s.city]} angekommen (+1 Ansehen).`:`Schiffe in ${CITIES[s.city]} angekommen. Dein Kaufmann bleibt in ${CITIES[s.politics.safety.person.city]}; keine persönliche Ankunft.`);pending={...p};render();Testlog.snapshot('arrival');show('arrival')}
 function arrivalView(){openSheet('⚓ Land in Sicht!',`<p style="font-size:23px"><b>${pending.mode==='unaccompanied'?'Deine Schiffe sind':'Du bist'} in ${CITIES[s.city]} angekommen!${pending.mode==='unaccompanied'?' Dein Kaufmann bleibt in '+esc(safetyPersonText())+'.':''}</b></p><div class="notice">${esc(pending.story||'Die Überfahrt ist beendet.')}</div><p>${esc(CITY_DESCRIPTIONS[s.city])}</p><section class="item" id="arrivalManifest"><h3>Aus dem Schiffsbuch</h3><p>${CITIES[pending.from]} → ${CITIES[pending.dest]}</p>${s.ships.filter(q=>pending.qs.includes(q.id)).map(q=>`<p>${esc(q.name)}: Zustand ${q.condition} % · ${load(q)} / ${capacity(q)} Fass an Bord.</p>`).join('')}</section><button class="ghost" onclick="show('chronicle')">Ereignisse im Logbuch lesen</button><p class="muted">Hafengebühr bezahlt: ${pending.fee||0} G · Reisedauer: ${pending.days} Spieltage · Datum: Tag ${s.day}, ${s.year}</p><button onclick="closeSheet()">Stadt erkunden</button><button class="ghost" onclick="show('market')">Direkt zum Handel</button>`)}
-function saveView(){openSheet('💾 Spielstand & Sicherung',`${s?'<section class="notice"><p>Persönlicher Ort: '+esc(safetyPersonText())+'. Betrachteter Hafen: '+esc(CITIES[s.city])+'.</p>'+(s.politics.safety?.person.source==='unknown'?'<button onclick="confirmLegacyPresence()">Persönlichen Altort einmalig bestätigen</button>':'')+'</section>':''}${storageWarning?'<section class="notice bad">'+storageWarningMarkup()+'</section>':''}<p>Speicherformat <b>V13 · Politikrevision2/Sicherheit2</b>: V11-/V12-/V13-Originale werden auf Kopie übernommen. Alte Clients können neue Exporte nicht öffnen. Die alte Speicheradresse bleibt unangetastet. Ältere Spielversionen können neue V13-Exporte nicht öffnen. Bewahre das Originalbackup auf.</p><p>Hansefürst speichert lokal auf diesem Gerät, in diesem Browser und unter dieser Adresse. <b>Es gibt keine Cloud-Synchronisierung.</b> Eine andere Datei oder Webadresse kann einen eigenen Speicherbereich haben.</p><div class="actions"><button onclick="exportGame()">⬇️ Spielstand exportieren</button><button class="ghost" onclick="exportGame(true)">Original der Erstübernahme exportieren</button><button class="ghost" onclick="$('file').click()">⬆️ Spielstand importieren</button></div><ol id="saveTransferSteps"><li>Vor Geräte-, Browser-, Datei- oder Adresswechsel hier <b>exportieren</b> und die JSON-Datei aufbewahren.</li><li>Die Datei selbst auf das andere Gerät übertragen; dort im Spiel <b>importieren</b> und den Ersatz der dortigen Partie bestätigen.</li><li>Nach der Übernahme Hafen, Gold und Schiffe prüfen. Es wird die ganze Partie übernommen, nichts zusammengeführt.</li></ol><p class="muted">Lokale Originalkopien sind keine externe Sicherung. Wenn automatisches Speichern fehlschlägt, vor dem Neuladen oder Schließen unbedingt exportieren. Vor der Übernahme einer älteren Partie bleibt eine Originalkopie erhalten. Gold, Waren und bisherige Preise werden übernommen; die regionalen Regeln wirken erst auf folgende Spieltage. Exporte dieser Version benötigen diese oder eine neuere Spielversion. Bitte sichere wichtige Partien zusätzlich als Datei.</p><hr><button class="danger" onclick="resetGame()">Neues Spiel beginnen</button>`)}
-function exportGame(original=false){try{const text=original?safetyOriginalText():safetyExportText(),blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=original?'hansefuerst-original-erstuebernahme.json':'hansefuerst-spielstand.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}catch(e){alert('Export nicht möglich. Vorhandene Daten bleiben unverändert. '+e.message)}}
+function saveView(){openSheet('💾 Spielstand & Sicherung',`${s?'<section class="notice"><p>Persönlicher Ort: '+esc(safetyPersonText())+'. Betrachteter Hafen: '+esc(CITIES[s.city])+'.</p>'+(s.politics.safety?.person.source==='unknown'?'<button onclick="confirmLegacyPresence()">Persönlichen Altort einmalig bestätigen</button>':'')+'</section>':''}${storageWarning?'<section class="notice bad">'+storageWarningMarkup()+'</section>':''}<p>Speicherformat <b>V13 · Politikrevision2/Sicherheit3</b>: V11-/V12-/V13-Originale werden auf Kopie übernommen. Alte Clients können neue Exporte nicht öffnen. Die alte Speicheradresse bleibt unangetastet. Ältere Spielversionen können neue V13-Exporte nicht öffnen. Bewahre das Originalbackup auf.</p><p>Hansefürst speichert die aktive Partie atomar in der lokalen Browserdatenbank auf diesem Gerät und unter dieser Adresse. Frühere LocalStorage-Partien bleiben unveränderte Quellen und Sicherungen. <b>Es gibt keine Cloud-Synchronisierung.</b> Eine andere Datei oder Webadresse kann einen eigenen Speicherbereich haben.</p><div class="actions"><button onclick="exportGame()">⬇️ Spielstand exportieren</button><button class="ghost" onclick="exportGame(true)">Original der Erstübernahme exportieren</button><button class="ghost" onclick="$('file').click()">⬆️ Spielstand importieren</button></div><ol id="saveTransferSteps"><li>Vor Geräte-, Browser-, Datei- oder Adresswechsel hier <b>exportieren</b> und die JSON-Datei aufbewahren.</li><li>Die Datei selbst auf das andere Gerät übertragen; dort im Spiel <b>importieren</b> und den Ersatz der dortigen Partie bestätigen.</li><li>Nach der Übernahme Hafen, Gold und Schiffe prüfen. Es wird die ganze Partie übernommen, nichts zusammengeführt.</li></ol><p class="muted">Lokale Originalkopien sind keine externe Sicherung. Wenn automatisches Speichern fehlschlägt, vor dem Neuladen oder Schließen unbedingt exportieren. Vor der Übernahme einer älteren Partie bleibt eine Originalkopie erhalten. Gold, Waren und bisherige Preise werden übernommen; die regionalen Regeln wirken erst auf folgende Spieltage. Exporte dieser Version benötigen diese oder eine neuere Spielversion. Bitte sichere wichtige Partien zusätzlich als Datei.</p><hr><button class="danger" onclick="resetGame()">Neues Spiel beginnen</button>`)}
+async function exportGame(original=false){try{const canonical=original?null:await safetyReadCanonical(),text=original?safetyOriginalText():canonical??safetyExportText();if(!original&&!migrate(JSON.parse(text)))throw Error('Gespeicherte Revision nicht unterstützt');const blob=new Blob([text],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=original?'hansefuerst-original-erstuebernahme.json':'hansefuerst-spielstand.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}catch(e){alert('Export nicht möglich. Vorhandene Daten bleiben unverändert. '+e.message)}}
 function importGame(e){const f=e.target.files[0];if(!f)return;const expected=SafetySession.expected,rd=new FileReader();rd.onload=()=>safetyRun(()=>{try{
  const raw=String(rd.result),parsed=JSON.parse(raw),old=migrate(parsed);if(!old)throw Error('Ungültige oder neuere nicht unterstützte Revision');
  if((s||startOriginal().raw!==null)&&!confirm('Die aktuelle Partie durch diese Datei ersetzen? Die bisherige Partie und die importierte Originaldatei werden unverändert gesichert.'))return false;
@@ -1064,7 +1064,7 @@ function newMerchantGame(player,name,city){
  if(!MERCHANTS.some(m=>m.id===player)||!isCityIndex(city)||typeof name!=='string'||!name.trim()||name.length>40)throw Error('Ungültige Startauswahl');
  const x=fresh(player,name.trim());x.city=city;x.ships[0].city=city;x.beginning={version:1,city,merchant:player};x.messages=['Willkommen in '+CITIES[city]+'! Die Hanse erwartet einen neuen Kaufmann.'];x.journal[city]={day:x.day,year:x.year,prices:x.markets[city].map(m=>m.price)};validate(x);return safetyUpgrade(x,'new_start');
 }
-function startOriginal(){for(const key of [KEY,LEGACYKEY,PREVIOUS,OLD]){const raw=localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}
+function startOriginal(){if(SafetySession.expected!==null)return {key:KEY,raw:SafetySession.expected};for(const key of [PRIORSAFETYKEY,LEGACYKEY,PREVIOUS,OLD]){const raw=localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}
 function startUnchanged(draft){const original=startOriginal();return JSON.stringify(s)===draft.state&&original.key===draft.original.key&&original.raw===draft.original.raw}
 function resetGame(){return welcome()}
 function welcome(){
@@ -1241,6 +1241,28 @@ function drawMap(id='mapCanvas',selected=s?.city,target=null){
 }
 
 const oldShow=show;show=function(v){if(v==='rumors')return rumorView();return oldShow(v)};
+// BEGIN Q109c ATOMIC LOCAL STORE — sole canonical state, old LocalStorage is backup/source only.
+const SAFETY_DATABASE='hansefuerst-local-safety3';
+function safetyOpenDatabase(){return new Promise((resolve,reject)=>{
+ if(typeof indexedDB==='undefined')return reject(Error('IndexedDB ist hier nicht verfügbar'));
+ let blocked=false;const request=indexedDB.open(SAFETY_DATABASE,1);
+ request.onupgradeneeded=()=>{if(!request.result.objectStoreNames.contains('game'))request.result.createObjectStore('game')};
+ request.onblocked=()=>{blocked=true;reject(Error('Spielstandspeicher durch ein anderes Fenster blockiert'))};
+ request.onerror=()=>reject(request.error||Error('Spielstandspeicher nicht erreichbar'));
+ request.onsuccess=()=>{const db=request.result;if(blocked){db.close();return}db.onversionchange=()=>db.close();resolve(db)};
+})}
+async function safetyCanonical(expected=undefined,bytes=undefined){
+ const db=await safetyOpenDatabase();return new Promise((resolve,reject)=>{
+  const write=bytes!==undefined,tx=db.transaction('game',write?'readwrite':'readonly'),store=tx.objectStore('game');let value=null,error=null;
+  tx.oncomplete=()=>{db.close();resolve(value)};tx.onabort=tx.onerror=()=>{db.close();reject(error||tx.error||Error('Spielstandtransaktion abgebrochen'))};
+  const request=store.get('active');request.onsuccess=()=>{try{value=request.result??null;if(value!==null&&typeof value!=='string')throw Error('Ungültiger aktiver Spielstand');if(write){if(value!==expected)throw Error('Veralteter Stand: Ein anderes Fenster hat gespeichert');store.put(bytes,'active');value=bytes}}catch(e){error=e;tx.abort()}};
+ })
+}
+function safetyReadCanonical(){return safetyCanonical()}
+function safetyWriteCanonical(expected,bytes){return safetyCanonical(expected,bytes)}
+function safetyBusy(value){try{if(value&&!SafetySession.committing)SafetySession.commitFocus=document.activeElement;SafetySession.committing=value;if(document.body)document.body.inert=value;if(value){const box=$('storageStatus');if(box){box.hidden=false;box.textContent='Spielzug wird lokal gespeichert …'}}else{if(SafetySession.commitFocus?.isConnected)SafetySession.commitFocus.focus?.({preventScroll:true});SafetySession.commitFocus=null}}catch(e){}}
+// END Q109c ATOMIC LOCAL STORE
+
 // BEGIN Q109c LEGACY GRACE — copied verbatim into the playable HTML.
 // Synchronous digest: no asynchronous operation inside the exclusive writer.
 function safetyDigest(text){
@@ -1288,17 +1310,17 @@ function validateLegacySafety(x){
 function politicalGraceText(q){const until=politicalDeadline(q);return until>q.until?' Einmalige Altfristschonung: +'+(until-q.until)+' Tage; Originalfrist '+politicalDate(q.until)+', wirksam bis '+politicalDate(until)+'. Keine Station automatisch erfüllt.':''}
 // BEGIN Q109 SAFETY FOUNDATION — verbatim audited block, no new career/economic rules.
 const SAFETY_LOCK='hansefuerst-safety1-writer';
-const SafetySession={expected:null,loaded:false,error:'',active:null};
+const SafetySession={expected:null,loaded:false,error:'',active:null,committing:false,storageReadable:false};
 const safetyCopy=x=>x==null?x:JSON.parse(JSON.stringify(x));
 function validateSafety(x){
  const a=x.politics.safety,keys=(o,k)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).length===k.length&&k.every(n=>Object.hasOwn(o,n));
- if(!a||![1,2].includes(a.version)||!keys(a,['version','revision','person',...(Object.hasOwn(a,'legacyPersonalJobs')?['legacyPersonalJobs']:[]),...(a.version===2?['legacyTransfer','grace']:[])])||!Number.isSafeInteger(a.revision)||a.revision<0||!keys(a.person,['city','source','at']))throw Error('Ungültige Sicherheitsrevision');
- if(a.version===2&&!Object.hasOwn(a,'legacyPersonalJobs'))throw Error('Fehlende Altvertragsreferenzen');
+ if(!a||![1,2,3].includes(a.version)||!keys(a,['version','revision','person',...(Object.hasOwn(a,'legacyPersonalJobs')?['legacyPersonalJobs']:[]),...(a.version>=2?['legacyTransfer','grace']:[])])||!Number.isSafeInteger(a.revision)||a.revision<0||!keys(a.person,['city','source','at']))throw Error('Ungültige Sicherheitsrevision');
+ if(a.version>=2&&!Object.hasOwn(a,'legacyPersonalJobs'))throw Error('Fehlende Altvertragsreferenzen');
  if(Object.hasOwn(a,'legacyPersonalJobs')&&(!Array.isArray(a.legacyPersonalJobs)||a.legacyPersonalJobs.length>23||new Set(a.legacyPersonalJobs).size!==a.legacyPersonalJobs.length||a.legacyPersonalJobs.some(id=>typeof id!=='string'||!id.match(/^(accord|league):(?:[0-9]|10):[0-9]+$/))))throw Error('Ungültige Altvertragsreferenzen');
  const p=a.person,now=x.year*360+x.day;
  if(p.source==='unknown'){if(p.city!==null||p.at!==null)throw Error('Unbekannter Personenort enthält erfundene Daten')}
  else if(!['new_start','legacy_anchor','arrival'].includes(p.source)||!isCityIndex(p.city)||!Number.isSafeInteger(p.at)||p.at<0||p.at>now)throw Error('Ungültiger persönlicher Aufenthaltsort');
- if(a.version===2)validateLegacySafety(x);
+ if(a.version>=2)validateLegacySafety(x);
 }
 function safetyUpgrade(x,source='unknown',originalRaw=null){
  const y=safetyCopy(x);validate(y);
@@ -1306,8 +1328,9 @@ function safetyUpgrade(x,source='unknown',originalRaw=null){
  const a=y.politics.safety;
  if(!Object.hasOwn(a,'legacyPersonalJobs')){a.legacyPersonalJobs=[...y.politics.jobs.filter(q=>q.kind==='accord'&&!q.witnessed).map(q=>q.id),...(y.politics.league?[y.politics.league.id]:[])];if(x.politics.version===2)a.person={city:null,source:'unknown',at:null};}
  if(a.version===1){a.version=2;a.legacyTransfer=null;a.grace=[];if(x.politics.version===1&&source==='unknown'&&originalRaw!==null){const raw=JSON.parse(originalRaw);if(raw.v===13&&raw.politics?.version===1)a.legacyTransfer={day:y.year*360+y.day,sourceHash:safetyDigest(originalRaw),stateHash:legacyStateDigest(x)};}}
+ if(a.version===2)a.version=3;
  const previous=s?.politics?.safety;
- if(a.legacyTransfer&&previous?.version===2&&previous.legacyTransfer?.stateHash===a.legacyTransfer.stateHash&&previous.legacyTransfer.day===a.legacyTransfer.day){a.legacyTransfer=safetyCopy(previous.legacyTransfer);const merged=new Map(a.grace.map(g=>[g.contract.id,g]));for(const g of previous.grace)merged.set(g.contract.id,safetyCopy(g));a.grace=[...merged.values()];}
+ if(a.legacyTransfer&&previous?.version===3&&previous.legacyTransfer?.stateHash===a.legacyTransfer.stateHash&&previous.legacyTransfer.day===a.legacyTransfer.day){a.legacyTransfer=safetyCopy(previous.legacyTransfer);const merged=new Map(a.grace.map(g=>[g.contract.id,g]));for(const g of previous.grace)merged.set(g.contract.id,safetyCopy(g));a.grace=[...merged.values()];}
  validate(y);return y;
 }
 function safetyObservation(snapshot=false){
@@ -1338,8 +1361,8 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
   if(viewOnly){const result=safetyReadView(fn);safetyMessage('Dieser Browser bietet hier keine verlässliche Schreibsperre. Die Partie ist nur lesbar; Export bleibt möglich.',false);return result;}
   return safetyMessage('Änderung abgebrochen: Web Locks sind unter dieser Adresse nicht verfügbar. Bitte einen unterstützten Browser unter HTTPS/localhost verwenden. Die gespeicherte Partie bleibt erhalten.');
  }
- try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{
-  const disk=localStorage.getItem(KEY);
+ try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},async()=>{
+  const disk=await safetyReadCanonical();
   if(disk!==expected){if(viewOnly){const result=safetyReadView(fn);safetyMessage('Ein anderes Fenster hat die Partie geändert. Nur Ansicht; bitte den aktuellen Stand laden.',false);return result;}return safetyMessage('Veralteter Stand: Ein anderes Fenster hat gespeichert. Der Vorgang wurde nicht ausgeführt. Bitte den aktuellen Stand laden.');}
   const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,oldRun=Testlog.newRun,events=[],snapshots=[],routes=[],runs=[];
   let committed=false;
@@ -1350,34 +1373,34 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
    result=fn();if(result&&typeof result.then==='function')throw Error('Asynchroner Untervorgang innerhalb der Schreibgrenze');
    if(result===false){s=before;pending=oldPending;startDraft=oldDraft;return false;}
    if(s){validate(s);const changed=JSON.stringify(s)!==disk;
-    if(changed){let previous=0;try{const r=disk?JSON.parse(disk).politics?.safety?.revision:0;if(Number.isSafeInteger(r)&&r>=0)previous=r;}catch(e){/* Explicit replacement can recover corrupt bytes after exact backup. */}if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);localStorage.setItem(KEY,bytes);committed=true;SafetySession.expected=bytes;}
+    if(changed){let previous=0;try{const r=disk?JSON.parse(disk).politics?.safety?.revision:0;if(Number.isSafeInteger(r)&&r>=0)previous=r;}catch(e){/* Explicit replacement can recover corrupt bytes after exact backup. */}if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);SafetySession.active=null;safetyBusy(true);await safetyWriteCanonical(disk,bytes);committed=true;SafetySession.expected=bytes;}
    }
    storageWarning=false;SafetySession.error='';
-  }catch(e){if(!committed){s=before;pending=safetyRetryPlan(oldPending,pending);startDraft=oldDraft;}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
-  finally{Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;Testlog.newRun=oldRun;SafetySession.active=null;}
+  }catch(e){if(!committed){s=before;pending=safetyRetryPlan(oldPending,pending);startDraft=oldDraft;try{render()}catch(ignored){}}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
+  finally{safetyBusy(false);Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;Testlog.newRun=oldRun;SafetySession.active=null;}
   // Observations are published only after the canonical game write succeeds.
   try{for(const args of runs)oldRun?.(...args);for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const args of snapshots)oldSnapshot(...args);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
   return result;
  });}catch(e){return safetyMessage('Kein sicherer Schreibzugriff möglich. Die Aktion wurde abgebrochen. '+(e.message||''));}
 }
-function safetyOriginalText(){const raw=localStorage.getItem(KEY+'-v13-original')??localStorage.getItem(KEY+'-import-original')??localStorage.getItem(LEGACYKEY);if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}
+function safetyOriginalText(){const raw=localStorage.getItem(KEY+'-v13-original')??localStorage.getItem(KEY+'-import-original')??localStorage.getItem(PRIORSAFETYKEY+'-v13-original')??localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}
 function safetyExportText(){
- let raw;try{raw=localStorage.getItem(KEY)??SafetySession.expected}catch(e){raw=SafetySession.expected;}
+ if(!SafetySession.storageReadable)throw Error('Aktiver Spielstandspeicher nicht lesbar; Originalexport bleibt möglich');const raw=SafetySession.expected;
  if(raw!==null){const x=migrate(JSON.parse(raw));if(!x)throw Error('Gespeicherte Revision nicht unterstützt');return raw;}
  const old=startOriginal();if(old.raw!==null){if(!migrate(JSON.parse(old.raw)))throw Error('Originalstand nicht lesbar');return old.raw;}
  throw Error('Noch keine gespeicherte Partie vorhanden');
 }
 async function safetyReload(){
  if(typeof navigator==='undefined'||!navigator.locks?.request)return safetyMessage('Kein sicherer Schreibzugriff unter dieser Adresse. Export des vorhandenen Stands bleibt möglich.');
- try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{const raw=localStorage.getItem(KEY);if(raw===null)throw Error('Kein aktiver Sicherheitsstand');const x=migrate(JSON.parse(raw));if(!x||x.politics.version!==2)throw Error('Nicht unterstützte aktive Revision');if(x.politics.safety.version!==2)throw Error('Bitte Seite neu laden, um die Sicherheitsrevision an Kopie zu übernehmen');s=x;SafetySession.expected=raw;pending=null;startDraft=null;SafetySession.error='';storageWarning=false;render();return true;});}catch(e){return safetyMessage('Laden abgebrochen; Originaldaten bleiben erhalten. '+e.message);}
+ try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},async()=>{const raw=await safetyReadCanonical();if(raw===null)throw Error('Kein aktiver Sicherheitsstand');const x=migrate(JSON.parse(raw));if(!x||x.politics.version!==2)throw Error('Nicht unterstützte aktive Revision');if(x.politics.safety.version!==3)throw Error('Bitte Seite neu laden, um die Sicherheitsrevision an Kopie zu übernehmen');s=x;SafetySession.expected=raw;SafetySession.storageReadable=true;pending=null;startDraft=null;SafetySession.error='';storageWarning=false;render();return true;});}catch(e){return safetyMessage('Laden abgebrochen; Originaldaten bleiben erhalten. '+e.message);}
 }
 async function safetyBoot(){
- try{SafetySession.expected=localStorage.getItem(KEY)}catch(e){return safetyMessage('Lokaler Speicherzugriff verweigert. Keine Daten verändert; bitte Browser-Speicherfreigabe prüfen.');}
+ try{SafetySession.expected=await safetyReadCanonical();SafetySession.storageReadable=true}catch(e){SafetySession.storageReadable=false;return safetyMessage('Lokaler Speicherzugriff verweigert. Keine Daten verändert; bitte Browser-Speicherfreigabe prüfen. '+e.message);}
  const load=()=>{
   const original=startOriginal();if(original.raw===null){s=null;return;}
   const parsed=JSON.parse(original.raw),x=migrate(parsed);if(!x)throw Error('Spielstand oder neuere Revision nicht unterstützt');
   if(original.key===KEY&&x.politics.version!==2)throw Error('Aktiver Sicherheitsstand hat keine gültige Sicherheitsrevision');
-  if(original.key!==KEY){safetyBackupRaw(original.raw,'v13-original');s=safetyUpgrade(x,'unknown',original.raw);}else if(x.politics.safety.version===1||!Object.hasOwn(x.politics.safety,'legacyPersonalJobs')){safetyBackupRaw(original.raw,'safety-original');s=safetyUpgrade(x,'unknown',original.raw);}else s=x;
+  if(original.key!==KEY){safetyBackupRaw(original.raw,original.key===PRIORSAFETYKEY?'safety-original':'v13-original');s=safetyUpgrade(x,'unknown',original.raw);}else if(x.politics.safety.version<3||!Object.hasOwn(x.politics.safety,'legacyPersonalJobs')){safetyBackupRaw(original.raw,'safety-original');s=safetyUpgrade(x,'unknown',original.raw);}else s=x;
  };
  if(typeof navigator==='undefined'||!navigator.locks?.request){try{const original=startOriginal();s=original.raw===null?null:migrate(JSON.parse(original.raw));SafetySession.loaded=true;if(s)render();else welcome();safetyMessage('Nur lesbar: Web Locks fehlen. Originale bleiben erhalten; Export ist möglich.',false);}catch(e){safetyMessage('Original konnte nicht gelesen werden; keine Änderung vorgenommen. '+e.message);}return false;}
  const ok=await safetyRun(load);SafetySession.loaded=true;if(s)render();else welcome();checkNews();return ok!==false;

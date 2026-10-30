@@ -1,13 +1,13 @@
 'use strict';
-// Real Chromium, real LocalStorage/FileReader/Web Locks. Synthetic QA saves only.
+// Real Chromium, real IndexedDB/FileReader/Web Locks; old LocalStorage stays a source/backup. Synthetic QA saves only.
 const fs=require('node:fs'),path=require('node:path'),http=require('node:http'),assert=require('node:assert/strict'),cp=require('node:child_process');
-const {chromium}=require('playwright'),{originalState:S,hash}=require('../q1_09/harness.cjs');
-const root=path.resolve(__dirname,'../../..'),KEY='hansefuerst-v04-safety1',OLD='hansefuerst-v04';
+const {chromium}=require('playwright'),{originalState:S,hash}=require('./harness.cjs');
+const root=path.resolve(__dirname,'../../..'),KEY='hansefuerst-v04-safety3',OLD='hansefuerst-v04';
 const defaultFixture=S();
 const out=path.resolve(process.argv[2]||'');assert(process.argv[2]&&!fs.existsSync(out),'new result path required');
 const bytes=fs.readFileSync(path.join(root,'Hansefuerst_0_4.html')),checks=[],pageErrors=[],screenshots=[];
 let server,browser,origin;
-const state=p=>p.evaluate(()=>JSON.parse(JSON.stringify(s))),disk=p=>p.evaluate(k=>localStorage.getItem(k),KEY);
+const state=async p=>{await p.waitForFunction(()=>!SafetySession.committing);return p.evaluate(()=>JSON.parse(JSON.stringify(s)))},disk=p=>p.evaluate(()=>safetyReadCanonical());
 async function download(p,original=false){const promise=p.waitForEvent('download');await p.evaluate(x=>exportGame(x),original);const d=await promise,stream=await d.createReadStream(),chunks=[];for await(const b of stream)chunks.push(b);return Buffer.concat(chunks).toString('utf8');}
 async function boot({fixture=defaultFixture,viewport={width:1280,height:900},mobile=false,noLocks=false,readDenied=false,file=false}={}){
  const context=await browser.newContext({viewport,hasTouch:mobile,isMobile:mobile,acceptDownloads:true});
@@ -15,10 +15,11 @@ async function boot({fixture=defaultFixture,viewport={width:1280,height:900},mob
   if(!['http:','https:','file:'].includes(location.protocol))return;
   if(localStorage.getItem(OLD)===null&&fixture!==null)localStorage.setItem(OLD,JSON.stringify(fixture));
   window.qaFailWrite=false;window.qaWrites=[];
-  const nativeSet=Storage.prototype.setItem;
-  Storage.prototype.setItem=function(k,v){if(k===KEY&&window.qaFailWrite)throw new DOMException('controlled write failure','QuotaExceededError');window.qaWrites.push({key:k,value:String(v)});return nativeSet.call(this,k,v)};
+  const nativeSet=Storage.prototype.setItem,nativePut=IDBObjectStore.prototype.put,nativeGet=IDBObjectStore.prototype.get;
+  Storage.prototype.setItem=function(k,v){window.qaWrites.push({key:k,value:String(v),storage:'legacy LocalStorage backup'});return nativeSet.call(this,k,v)};
+  IDBObjectStore.prototype.put=function(v,k){if(this.name==='game'&&this.transaction.db.name==='hansefuerst-local-safety3'){if(window.qaFailWrite)throw new DOMException('controlled database write failure','QuotaExceededError');window.qaWrites.push({key:KEY,value:String(v),storage:'IndexedDB canonical put'})}return nativePut.call(this,v,k)};
+  IDBObjectStore.prototype.get=function(k){if(readDenied&&this.name==='game'&&this.transaction.db.name==='hansefuerst-local-safety3')throw new DOMException('controlled database read denial','SecurityError');return nativeGet.call(this,k)};
   if(noLocks)Object.defineProperty(Navigator.prototype,'locks',{configurable:true,get:()=>undefined});
-  if(readDenied){const read=Storage.prototype.getItem;Storage.prototype.getItem=function(k){if(k===KEY)throw new DOMException('controlled read denial','SecurityError');return read.call(this,k)}}
  },{fixture,OLD,KEY,noLocks,readDenied});
  try{const page=await tab(context,file);return {context,page}}catch(e){await context.close();throw e}
 }
@@ -53,7 +54,7 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
   const b=await tab(context),gold=(await state(a)).gold;await hold(a);await b.evaluate(()=>{window.qaOp=donate(50,2)});await a.close();await b.evaluate(()=>qaOp);assert.equal((await state(b)).gold,gold-50);return {browserReleasesAbandonedLock:true,oneAtomicAction:true};
  }));
  await check('injected quota failure rolls back actual RAM disk and revision, then retry succeeds',()=>isolated({},async({page:p})=>{
-  const x=await state(p),raw=await disk(p);await p.evaluate(()=>{qaFailWrite=true;Testlog.toggle()});const events=await p.evaluate(()=>Testlog.data.events.length);assert.equal(await p.evaluate(()=>donate(200,5)),false);assert.deepEqual(await state(p),x);assert.equal(await disk(p),raw);assert.equal(await p.evaluate(()=>Testlog.data.events.length),events);assert.match(await p.locator('#storageStatus').innerText(),/abgebrochen/);await p.evaluate(()=>{qaFailWrite=false});await p.evaluate(()=>donate(200,5));assert.equal((await state(p)).gold,x.gold-200);return {fault:'controlled Storage.setItem QuotaExceededError, not disk physically filled',rollbackComplete:true,noGhostEvent:true,retry:true};
+  const x=await state(p),raw=await disk(p);await p.evaluate(()=>{qaFailWrite=true;Testlog.toggle()});const events=await p.evaluate(()=>Testlog.data.events.length);assert.equal(await p.evaluate(()=>donate(200,5)),false);assert.deepEqual(await state(p),x);assert.equal(await disk(p),raw);assert.equal(await p.evaluate(()=>Testlog.data.events.length),events);assert.match(await p.locator('#storageStatus').innerText(),/abgebrochen/);await p.evaluate(()=>{qaFailWrite=false});await p.evaluate(()=>donate(200,5));assert.equal((await state(p)).gold,x.gold-200);return {fault:'controlled IDBObjectStore.put QuotaExceededError, not disk physically filled',rollbackComplete:true,noGhostEvent:true,retry:true};
  }));
  await check('real FileReader import and canonical/original downloads restore complete copies',()=>isolated({},async({page:p})=>{
   const before=await disk(p),imported=S('s.gold=12345;s.debt=777;s.bank=123;ship().cargo={0:7};ship().costs={0:null};ship().bookCosts={0:8};ship().origins={0:[{city:null,n:7}]}'),raw=JSON.stringify(imported,null,2);
@@ -68,7 +69,7 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
  }));
  await check('real import queued behind another tab cannot overwrite that newer action',()=>isolated({},async({context,page:a})=>{
   const b=await tab(context),gold=(await state(a)).gold;await hold(a);await a.evaluate(()=>{window.qaOp=donate(50,2)});await b.locator('#file').setInputFiles({name:'stale.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(S('s.gold=25000')))});
-  await a.waitForFunction(async()=>{const q=await navigator.locks.query();return q.pending.filter(x=>x.name===SAFETY_LOCK).length===2});await release(a);await a.evaluate(()=>qaOp);try{await b.waitForFunction(()=>SafetySession.error.includes('Veralteter Stand'),{},{timeout:5000})}catch(e){console.log('STALE_IMPORT_DIAGNOSTIC',JSON.stringify(await b.evaluate(()=>({error:SafetySession.error,gold:s.gold,revision:s.politics.safety.revision,expectedEqualsDisk:SafetySession.expected===localStorage.getItem(KEY),writes:qaWrites.filter(w=>w.key===KEY).map(w=>({gold:JSON.parse(w.value).gold,revision:JSON.parse(w.value).politics.safety.revision}))}))));throw e}assert.equal(JSON.parse(await disk(a)).gold,gold-50);return {selectionTimeStateRespected:true,staleFileCallbackRejected:true};
+  await a.waitForFunction(async()=>{const q=await navigator.locks.query();return q.pending.filter(x=>x.name===SAFETY_LOCK).length===2});await release(a);await a.evaluate(()=>qaOp);try{await b.waitForFunction(()=>SafetySession.error.includes('Veralteter Stand'),{},{timeout:5000})}catch(e){console.log('STALE_IMPORT_DIAGNOSTIC',JSON.stringify(await b.evaluate(()=>({error:SafetySession.error,gold:s.gold,revision:s.politics.safety.revision,expectedBytes:SafetySession.expected?.length,writes:qaWrites.filter(w=>w.key===KEY).map(w=>({gold:JSON.parse(w.value).gold,revision:JSON.parse(w.value).politics.safety.revision}))}))));throw e}assert.equal(JSON.parse(await disk(a)).gold,gold-50);return {selectionTimeStateRespected:true,staleFileCallbackRejected:true};
  }));
  await check('missing Web Locks remains read-only with visible warning and exact export',()=>isolated({noLocks:true},async({page:p})=>{
   const x=await state(p);assert.equal(await p.evaluate(()=>donate(50,2)),false);assert.deepEqual(await state(p),x);assert.equal(await disk(p),null);assert.match(await p.locator('#storageStatus').innerText(),/Web Locks/);assert.equal(await download(p),JSON.stringify(defaultFixture));await p.evaluate(()=>show('save'));assert.deepEqual(await state(p),x);return {injectedUnavailableCapability:true,noLocalStorageLockFallback:true,readAndNativeExport:true};
@@ -101,8 +102,8 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
  }));
  await check('native corrupt or newer active state requires confirmed raw-backed recovery',async()=>{
   const rows=[];for(const kind of ['corrupt','future'])rows.push(await isolated({},async({page:p})=>{
-   const raw=kind==='corrupt'?'{unreadable original':await p.evaluate(()=>{const x=JSON.parse(localStorage.getItem(KEY));x.politics.safety.version=999;return JSON.stringify(x)});
-   await p.evaluate(({KEY,raw})=>localStorage.setItem(KEY,raw),{KEY,raw});await p.reload();await p.waitForFunction(()=>!!SafetySession.error);assert.equal(await p.evaluate(()=>s),null);assert.equal(await disk(p),raw);
+   const raw=kind==='corrupt'?'{unreadable original':await p.evaluate(async()=>{const x=JSON.parse(await safetyReadCanonical());x.politics.safety.version=999;return JSON.stringify(x)});
+   await p.evaluate(async raw=>safetyWriteCanonical(await safetyReadCanonical(),raw),raw);await p.reload();await p.waitForFunction(()=>!!SafetySession.error);assert.equal(await p.evaluate(()=>s),null);assert.equal(await disk(p),raw);
    let confirms=0;p.on('dialog',d=>{if(d.type()==='confirm')confirms++});await p.locator('#file').setInputFiles({name:'recovery-v13.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(S('s.gold=22000')))});await p.waitForFunction(()=>s?.gold===22000);assert.equal(confirms,1);assert(await p.evaluate(raw=>Object.values(localStorage).includes(raw),raw));return {kind,noSilentFallback:true,confirmation:true,rawPreserved:true};
   }));return {rows};
  });
@@ -145,6 +146,6 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
  }));
  assert.deepEqual(pageErrors,[],'uncaught native browser page errors');
 })().catch(e=>{checks.push({name:'browser harness completion',passed:false,error:e.stack});console.error(e.stack)}).finally(async()=>{
- const result={sourceCommit:cp.execSync('git rev-parse HEAD',{cwd:root}).toString().trim(),testedGameCommit:cp.execSync('git log -1 --format=%H -- Hansefuerst_0_4.html',{cwd:root}).toString().trim(),gameHash:hash,engine:browser?.version()??null,kind:'real native Chromium isolated synthetic saves; controlled faults explicitly identified',selection:process.env.Q109C_ONLY??'all',checks,pageErrors,screenshots,passed:checks.length>0&&checks.every(x=>x.passed===true||x.status==='BLOCKED_NOT_TESTED')&&pageErrors.length===0,fullBrowserAcceptance:false,realAppleDevices:0,webKitTests:0,largeSimulations:0};
+ const result={sourceCommit:cp.execSync('git rev-parse HEAD',{cwd:root}).toString().trim(),testedGameCommit:cp.execSync('git log -1 --format=%H -- Hansefuerst_0_4.html',{cwd:root}).toString().trim(),gameHash:hash,engine:browser?.version()??null,kind:'real native Chromium, IndexedDB canonical transactions, Web Locks and file APIs; controlled faults explicit',selection:process.env.Q109C_ONLY??'all',checks,pageErrors,screenshots,passed:checks.length>0&&checks.every(x=>x.passed===true||x.status==='BLOCKED_NOT_TESTED')&&pageErrors.length===0,fullBrowserAcceptance:false,realAppleDevices:0,webKitTests:0,largeSimulations:0};
  fs.writeFileSync(out,JSON.stringify(result,null,2)+'\n',{flag:'wx'});if(browser)await browser.close();if(server)await new Promise(r=>server.close(r));if(!result.passed)process.exitCode=1;
 });
