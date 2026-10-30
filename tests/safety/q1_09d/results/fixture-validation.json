@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameSHA256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "kind": "five new synthetic fixtures: actual root game code with modeled DOM/IndexedDB/Web Locks in Node VM; NOT Safari, NOT native browser or Apple hardware",
+  "cases": [
+    {
+      "file": "TEST_01_neustart_v13_safety3.json",
+      "status": "PASS",
+      "rawSHA256": "fbeea769e2fe058d8c225ce3baaf5febc37c10dc743b7eb47ce7a68b4b3ab688",
+      "productionValidator": true,
+      "importMigration": true,
+      "allNonSafetyFieldsPreserved": true,
+      "rawOriginalBackup": true,
+      "exportReimportReload": true,
+      "sourceFileUnchanged": true
+    },
+    {
+      "file": "TEST_02_altstand_v13.json",
+      "status": "PASS",
+      "rawSHA256": "5411da2dab44bc0eb0b78ee45c30dcf208a930c0a18dc72bfffe3afe797d1685",
+      "productionValidator": true,
+      "importMigration": true,
+      "allNonSafetyFieldsPreserved": true,
+      "rawOriginalBackup": true,
+      "exportReimportReload": true,
+      "sourceFileUnchanged": true
+    },
+    {
+      "file": "TEST_03_mehrere_schiffe_v13.json",
+      "status": "PASS",
+      "rawSHA256": "1218186aeac172a0982bc062c328fe83f38c1a0d42dda59b7836041391d88072",
+      "productionValidator": true,
+      "importMigration": true,
+      "allNonSafetyFieldsPreserved": true,
+      "rawOriginalBackup": true,
+      "exportReimportReload": true,
+      "sourceFileUnchanged": true
+    },
+    {
+      "file": "TEST_04_kredit_waren_v13.json",
+      "status": "PASS",
+      "rawSHA256": "eaa3c0e6b58e581b21c8d7e8ad38f134cc859d79c42bc7a05e37b60e3dabc0fb",
+      "productionValidator": true,
+      "importMigration": true,
+      "allNonSafetyFieldsPreserved": true,
+      "rawOriginalBackup": true,
+      "exportReimportReload": true,
+      "sourceFileUnchanged": true
+    },
+    {
+      "file": "TEST_05_politik_vertrag_v13.json",
+      "status": "PASS",
+      "rawSHA256": "f97ad07b48ddcb3bd7405034e8e842cc9d23fb1353d0b350c0723d683b91f9d5",
+      "productionValidator": true,
+      "importMigration": true,
+      "allNonSafetyFieldsPreserved": true,
+      "rawOriginalBackup": true,
+      "exportReimportReload": true,
+      "sourceFileUnchanged": true
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "url": "https://docs.netlify.com/deploy/create-deploys/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://docs.netlify.com/manage/accounts-and-billing/billing/billing-for-credit-based-plans/credit-based-pricing-plans/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://developers.cloudflare.com/pages/platform/limits/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/Web_Locks_API",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

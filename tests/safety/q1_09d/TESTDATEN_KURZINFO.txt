@@ -1,0 +1,29 @@
+HANSEFÜRST Q1.09d – NUR SYNTHETISCHE TESTDATEN
+30.10.2026 Europe/Berlin
+
+Diese Dateien sind künstlich. Niemals in die produktive Partie importieren.
+Nur an der separat bestätigten HTTPS-Testadresse verwenden.
+Originale in der Dateien-App unverändert aufbewahren.
+Vor Ersetzen einer Testpartie deren Export außerhalb des Browsers sichern.
+Keine echten Spielstände senden; keine Browserdaten löschen.
+
+TEST_01: 5000 Gold, eine Kogge Lübeck, persönlicher Startort bekannt.
+TEST_02: Altstand, 5200 Gold, 4 Ansehen.
+TEST_03: 20000 Gold; Kogge Lübeck, Schnigge Hamburg, Holk Rostock.
+TEST_04: 12000 Gold, Bank2500, Kredit700; Getreide7 an Bord, Salz12 im Lager.
+TEST_05: 50000 Gold, 80 Ansehen; künstlicher Bürgermeistertitel und Ratsvertrag.
+Alle starten Tag1/1350 in Lübeck. TEST02–05 haben keinen belegten persönlichen
+Ort: nur für diese synthetischen Daten Altort Lübeck ausdrücklich bestätigen.
+Keine automatisch bestätigten politischen Besuche erwarten.
+Manifest enthält vollständige Sollwerte und SHA256-Prüfsummen.
+
+Spielstandformat V13; aktuelles Spiel Politik2/Sicherheit3.
+Geprüfter Spielcode: c7201c089dbb8079c0b5a5e3e1728b5b0888f49e.
+Das ZIP enthält KEINE ausführbare Spiel-HTML.
+ZIP in Dateien antippen zum Entpacken, einzelne TEST-JSON im Spiel importieren.
+
+Anleitung:
+https://github.com/psonnen-lgtm/Hansef-rst/blob/test/q1-09d-ios-acceptance-preparation/docs/entwicklungsberichte/Q1_09d/Q1_09d_geraeteanleitung.md
+Ergebnismatrix:
+https://github.com/psonnen-lgtm/Hansef-rst/blob/test/q1-09d-ios-acceptance-preparation/docs/entwicklungsberichte/Q1_09d/Q1_09d_testmatrix.md
+Noch KEINE echte Safari-/iPhone-/iPad-Abnahme. Kein Offline-Kaltstart zugesichert.

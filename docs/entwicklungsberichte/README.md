@@ -279,3 +279,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.09c – Freigegebene Sicherheits- und Reiseregeln
 
 30.10.2026 – [Gesamtbericht](Q1_09c/Q1_09c_gesamtbericht.md), [W1-S](Q1_09c/Q1_09c_w1s_bewertung.md), [unbegleitete Reisen](Q1_09c/Q1_09c_unbegleitete_reisen.md), [Altvertragsfristen](Q1_09c/Q1_09c_altvertragsfristen.md), [Regressionen](Q1_09c/Q1_09c_regressionstests.md), [Browserabnahme](Q1_09c/Q1_09c_browserabnahme.md), [offene Probleme](Q1_09c/Q1_09c_offene_probleme.md). W1-S, Reisemodi und belegte einmalige Schonung aktiv; alleiniger atomarer IndexedDB-Spielstand mit Web-Lock-Grenze.106 gezielte Fälle/Prüfgruppen einschließlich31 nativer Chromium-Gruppen bestanden. Finanzpfade abgesichert, alter politischer Ansehenspfad weiterhin offen; keine uneingeschränkte Q001-/Integrationsfreigabe. Safari/echte Geräte/Offline-Kaltstart offen. Kein Merge/Pages-Deployment.
+
+
+## Q1.09d – Geschützte iPhone-/iPad-Abnahme vorbereiten
+
+30.10.2026 – [Gesamtbericht](Q1_09d/Q1_09d_gesamtbericht.md), [isolierter Testzugang](Q1_09d/Q1_09d_testzugang.md), [Geräteanleitung](Q1_09d/Q1_09d_geraeteanleitung.md), [Ergebnismatrix](Q1_09d/Q1_09d_testmatrix.md). Unveränderter Q1.09c-Spielcode; fünf ausschließlich synthetische V13-Teststände, fünf bestandene VM-Datenprüfungen. Keine echte Safari-/Apple-Geräteabnahme, keine Testwebsite veröffentlicht, keine Änderungen an Spiel/Pages oder produktiven Daten. Separate HTTPS-Origin und öffentliche Bereitstellung erst nach gesonderter Freigabe. Offline-Kaltstart bleibt offen.

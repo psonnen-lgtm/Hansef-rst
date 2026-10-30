@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "baseCommit": "be3f367ac1374cf6ca3525e34be44d51f0eaf24b",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameSHA256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "gameBytes": 46389124,
+  "oldTrackedEntriesChecked": 3610,
+  "oldFilesChangedOnly": [
+    "docs/entwicklungsberichte/README.md"
+  ],
+  "indexAppendOnly": true,
+  "gameAndOldTestsResultsPagesUnchanged": true,
+  "syntheticFixtures": 5,
+  "generatorOutputFilesReproducible": true,
+  "newVMFixtureCasesPassed": 5,
+  "zipMembersChecked": 7,
+  "deviceRowsAllNotTested": 42,
+  "relativeLinksChecked": 26,
+  "reports": 4,
+  "websiteDeployed": false,
+  "serverStarted": false,
+  "nativeBrowserTestsRerun": 0,
+  "realAppleDevicesTested": 0,
+  "codeSyntaxChecks": 2,
+  "diffCheck": true,
+  "scopeValid": true,
+  "initialStaticCheckCorrection": "First run stopped at its own not-yet-created result link; checker now permits only its specific upcoming output path, all other links must already exist."
+}

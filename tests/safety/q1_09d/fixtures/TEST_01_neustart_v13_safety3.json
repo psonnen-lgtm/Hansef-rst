@@ -1,0 +1,863 @@
+{
+  "v": 13,
+  "information": {
+    "version": 2,
+    "archive": null,
+    "reports": [],
+    "filed": [],
+    "letters": {
+      "version": 1,
+      "since": 486001,
+      "index": 0,
+      "lastDay": 486001,
+      "nextDay": 486011,
+      "offer": null,
+      "receipts": [],
+      "filed": [],
+      "archiveFirstReceipt": null
+    }
+  },
+  "politics": {
+    "version": 2,
+    "since": 486001,
+    "rules": {
+      "sectionDays": 60,
+      "mayorWealth": 45000
+    },
+    "legacyRank": 0,
+    "records": [],
+    "issued": [
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      },
+      {
+        "supply": -1,
+        "accord": -1
+      }
+    ],
+    "jobs": [],
+    "office": null,
+    "terms": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "appointments": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "nextElection": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "endorsements": [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "league": null,
+    "leagueIssued": [
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1,
+      -1
+    ],
+    "elderman": null,
+    "safety": {
+      "version": 3,
+      "revision": 0,
+      "person": {
+        "city": 0,
+        "source": "new_start",
+        "at": 486001
+      },
+      "legacyPersonalJobs": [],
+      "legacyTransfer": null,
+      "grace": []
+    }
+  },
+  "shipyard": {
+    "version": 1,
+    "nextId": 1,
+    "lastShipId": 1,
+    "orders": []
+  },
+  "economy": {
+    "version": 1,
+    "reports": []
+  },
+  "storage": {
+    "version": 2,
+    "since": 486001,
+    "rentals": [
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      },
+      {
+        "blocks": 0,
+        "until": 0,
+        "arrears": 0
+      }
+    ]
+  },
+  "player": "Ulf",
+  "name": "TEST Q109d Neustart",
+  "day": 1,
+  "year": 1350,
+  "city": 0,
+  "gold": 5000,
+  "rep": 0,
+  "rank": 0,
+  "ships": [
+    {
+      "id": 1,
+      "name": "TEST Kogge Luebeck",
+      "type": 1,
+      "city": 0,
+      "capacity": 90,
+      "speed": 1,
+      "condition": 100,
+      "arms": 0,
+      "cargo": {},
+      "costs": {}
+    }
+  ],
+  "active": 0,
+  "bank": 0,
+  "debt": 0,
+  "markets": [
+    [
+      {
+        "price": 12,
+        "stock": 90
+      },
+      {
+        "price": 21,
+        "stock": 71
+      },
+      {
+        "price": 14,
+        "stock": 77
+      },
+      {
+        "price": 24,
+        "stock": 118
+      },
+      {
+        "price": 29,
+        "stock": 116
+      },
+      {
+        "price": 56,
+        "stock": 96
+      },
+      {
+        "price": 102,
+        "stock": 92
+      },
+      {
+        "price": 32,
+        "stock": 48
+      },
+      {
+        "price": 24,
+        "stock": 58
+      },
+      {
+        "price": 81,
+        "stock": 60
+      },
+      {
+        "price": 91,
+        "stock": 10
+      }
+    ],
+    [
+      {
+        "price": 12,
+        "stock": 48
+      },
+      {
+        "price": 32,
+        "stock": 123
+      },
+      {
+        "price": 23,
+        "stock": 87
+      },
+      {
+        "price": 25,
+        "stock": 87
+      },
+      {
+        "price": 19,
+        "stock": 125
+      },
+      {
+        "price": 67,
+        "stock": 49
+      },
+      {
+        "price": 101,
+        "stock": 79
+      },
+      {
+        "price": 36,
+        "stock": 62
+      },
+      {
+        "price": 33,
+        "stock": 51
+      },
+      {
+        "price": 87,
+        "stock": 66
+      },
+      {
+        "price": 87,
+        "stock": 7
+      }
+    ],
+    [
+      {
+        "price": 12,
+        "stock": 37
+      },
+      {
+        "price": 26,
+        "stock": 114
+      },
+      {
+        "price": 23,
+        "stock": 100
+      },
+      {
+        "price": 29,
+        "stock": 91
+      },
+      {
+        "price": 25,
+        "stock": 103
+      },
+      {
+        "price": 63,
+        "stock": 130
+      },
+      {
+        "price": 81,
+        "stock": 44
+      },
+      {
+        "price": 33,
+        "stock": 85
+      },
+      {
+        "price": 36,
+        "stock": 73
+      },
+      {
+        "price": 83,
+        "stock": 52
+      },
+      {
+        "price": 80,
+        "stock": 11
+      }
+    ],
+    [
+      {
+        "price": 13,
+        "stock": 77
+      },
+      {
+        "price": 19,
+        "stock": 108
+      },
+      {
+        "price": 20,
+        "stock": 112
+      },
+      {
+        "price": 29,
+        "stock": 55
+      },
+      {
+        "price": 19,
+        "stock": 36
+      },
+      {
+        "price": 49,
+        "stock": 67
+      },
+      {
+        "price": 103,
+        "stock": 126
+      },
+      {
+        "price": 38,
+        "stock": 100
+      },
+      {
+        "price": 33,
+        "stock": 70
+      },
+      {
+        "price": 67,
+        "stock": 41
+      },
+      {
+        "price": 109,
+        "stock": 24
+      }
+    ],
+    [
+      {
+        "price": 13,
+        "stock": 118
+      },
+      {
+        "price": 26,
+        "stock": 67
+      },
+      {
+        "price": 17,
+        "stock": 47
+      },
+      {
+        "price": 40,
+        "stock": 44
+      },
+      {
+        "price": 28,
+        "stock": 112
+      },
+      {
+        "price": 54,
+        "stock": 103
+      },
+      {
+        "price": 74,
+        "stock": 46
+      },
+      {
+        "price": 40,
+        "stock": 86
+      },
+      {
+        "price": 25,
+        "stock": 91
+      },
+      {
+        "price": 62,
+        "stock": 51
+      },
+      {
+        "price": 78,
+        "stock": 23
+      }
+    ],
+    [
+      {
+        "price": 15,
+        "stock": 109
+      },
+      {
+        "price": 21,
+        "stock": 67
+      },
+      {
+        "price": 21,
+        "stock": 108
+      },
+      {
+        "price": 33,
+        "stock": 45
+      },
+      {
+        "price": 20,
+        "stock": 66
+      },
+      {
+        "price": 71,
+        "stock": 39
+      },
+      {
+        "price": 105,
+        "stock": 78
+      },
+      {
+        "price": 33,
+        "stock": 118
+      },
+      {
+        "price": 20,
+        "stock": 89
+      },
+      {
+        "price": 74,
+        "stock": 55
+      },
+      {
+        "price": 140,
+        "stock": 32
+      }
+    ],
+    [
+      {
+        "price": 18,
+        "stock": 58
+      },
+      {
+        "price": 22,
+        "stock": 48
+      },
+      {
+        "price": 21,
+        "stock": 52
+      },
+      {
+        "price": 28,
+        "stock": 53
+      },
+      {
+        "price": 26,
+        "stock": 149
+      },
+      {
+        "price": 40,
+        "stock": 48
+      },
+      {
+        "price": 74,
+        "stock": 48
+      },
+      {
+        "price": 35,
+        "stock": 41
+      },
+      {
+        "price": 24,
+        "stock": 64
+      },
+      {
+        "price": 72,
+        "stock": 36
+      },
+      {
+        "price": 133,
+        "stock": 18
+      }
+    ],
+    [
+      {
+        "price": 20,
+        "stock": 78
+      },
+      {
+        "price": 26,
+        "stock": 85
+      },
+      {
+        "price": 25,
+        "stock": 73
+      },
+      {
+        "price": 36,
+        "stock": 42
+      },
+      {
+        "price": 23,
+        "stock": 76
+      },
+      {
+        "price": 48,
+        "stock": 83
+      },
+      {
+        "price": 60,
+        "stock": 78
+      },
+      {
+        "price": 31,
+        "stock": 59
+      },
+      {
+        "price": 29,
+        "stock": 63
+      },
+      {
+        "price": 52,
+        "stock": 61
+      },
+      {
+        "price": 116,
+        "stock": 15
+      }
+    ],
+    [
+      {
+        "price": 13,
+        "stock": 39
+      },
+      {
+        "price": 21,
+        "stock": 57
+      },
+      {
+        "price": 20,
+        "stock": 42
+      },
+      {
+        "price": 40,
+        "stock": 62
+      },
+      {
+        "price": 23,
+        "stock": 49
+      },
+      {
+        "price": 63,
+        "stock": 104
+      },
+      {
+        "price": 105,
+        "stock": 75
+      },
+      {
+        "price": 33,
+        "stock": 53
+      },
+      {
+        "price": 32,
+        "stock": 46
+      },
+      {
+        "price": 62,
+        "stock": 71
+      },
+      {
+        "price": 92,
+        "stock": 13
+      }
+    ],
+    [
+      {
+        "price": 14,
+        "stock": 60
+      },
+      {
+        "price": 29,
+        "stock": 56
+      },
+      {
+        "price": 23,
+        "stock": 93
+      },
+      {
+        "price": 35,
+        "stock": 52
+      },
+      {
+        "price": 20,
+        "stock": 78
+      },
+      {
+        "price": 57,
+        "stock": 55
+      },
+      {
+        "price": 93,
+        "stock": 36
+      },
+      {
+        "price": 38,
+        "stock": 104
+      },
+      {
+        "price": 33,
+        "stock": 106
+      },
+      {
+        "price": 57,
+        "stock": 51
+      },
+      {
+        "price": 111,
+        "stock": 66
+      }
+    ],
+    [
+      {
+        "price": 11,
+        "stock": 75
+      },
+      {
+        "price": 18,
+        "stock": 88
+      },
+      {
+        "price": 16,
+        "stock": 60
+      },
+      {
+        "price": 40,
+        "stock": 67
+      },
+      {
+        "price": 23,
+        "stock": 34
+      },
+      {
+        "price": 56,
+        "stock": 76
+      },
+      {
+        "price": 106,
+        "stock": 70
+      },
+      {
+        "price": 25,
+        "stock": 68
+      },
+      {
+        "price": 36,
+        "stock": 61
+      },
+      {
+        "price": 56,
+        "stock": 60
+      },
+      {
+        "price": 129,
+        "stock": 21
+      }
+    ]
+  ],
+  "journal": {
+    "0": {
+      "day": 1,
+      "year": 1350,
+      "prices": [
+        12,
+        21,
+        14,
+        24,
+        29,
+        56,
+        102,
+        32,
+        24,
+        81,
+        91
+      ]
+    }
+  },
+  "messages": [
+    "AUSSCHLIESSLICH SYNTHETISCHE TESTDATEN Q1.09d – keine echte Partie.",
+    "Willkommen in Lübeck! Die Hanse erwartet einen neuen Kaufmann."
+  ],
+  "rumors": [],
+  "quests": [],
+  "completed": 0,
+  "birthdaySeen": {},
+  "flags": {},
+  "visits": 1,
+  "warehouses": {
+    "0": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "1": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "2": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "3": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "4": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "5": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "6": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "7": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "8": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "9": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    },
+    "10": {
+      "cargo": {},
+      "costs": {},
+      "bookCosts": {},
+      "origins": {}
+    }
+  },
+  "beginning": {
+    "version": 1,
+    "city": 0,
+    "merchant": "Ulf"
+  }
+}

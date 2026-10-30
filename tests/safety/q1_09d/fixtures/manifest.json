@@ -1,0 +1,574 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "baseCommit": "be3f367ac1374cf6ca3525e34be44d51f0eaf24b",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameSHA256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "syntheticOnly": true,
+  "source": "Deterministic fresh game factories; no user save or archived simulation endpoint. Four legacy V13 fixtures use the preserved historical fresh-state factory; one current new_start factory.",
+  "files": [
+    {
+      "file": "TEST_01_neustart_v13_safety3.json",
+      "sha256": "fbeea769e2fe058d8c225ce3baaf5febc37c10dc743b7eb47ce7a68b4b3ab688",
+      "purpose": "Neustart-Referenz, persönlicher Ort Lübeck bekannt; ersetzt nicht den separaten UI-Neustarttest.",
+      "expected": {
+        "v": 13,
+        "name": "TEST Q109d Neustart",
+        "city": 0,
+        "day": 1,
+        "year": 1350,
+        "gold": 5000,
+        "bank": 0,
+        "debt": 0,
+        "rep": 0,
+        "rank": 0,
+        "ships": [
+          {
+            "id": 1,
+            "name": "TEST Kogge Luebeck",
+            "type": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        },
+        "office": null,
+        "jobs": [],
+        "originalSafetyVersion": 3
+      }
+    },
+    {
+      "file": "TEST_02_altstand_v13.json",
+      "sha256": "5411da2dab44bc0eb0b78ee45c30dcf208a930c0a18dc72bfffe3afe797d1685",
+      "purpose": "Regulärer künstlicher V13-Altstand ohne Sicherheitsrevision, persönlicher Ort zunächst unbekannt.",
+      "expected": {
+        "v": 13,
+        "name": "TEST Q109d Altstand",
+        "city": 0,
+        "day": 1,
+        "year": 1350,
+        "gold": 5200,
+        "bank": 0,
+        "debt": 0,
+        "rep": 4,
+        "rank": 0,
+        "ships": [
+          {
+            "id": 1,
+            "name": "TEST Kogge Luebeck",
+            "type": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        },
+        "office": null,
+        "jobs": [],
+        "originalSafetyVersion": null
+      }
+    },
+    {
+      "file": "TEST_03_mehrere_schiffe_v13.json",
+      "sha256": "1218186aeac172a0982bc062c328fe83f38c1a0d42dda59b7836041391d88072",
+      "purpose": "Drei Schiffe in Lübeck, Hamburg und Rostock; ohne Waren oder Schulden.",
+      "expected": {
+        "v": 13,
+        "name": "TEST Q109d Flotte",
+        "city": 0,
+        "day": 1,
+        "year": 1350,
+        "gold": 20000,
+        "bank": 0,
+        "debt": 0,
+        "rep": 0,
+        "rank": 0,
+        "ships": [
+          {
+            "id": 1,
+            "name": "TEST Kogge Luebeck",
+            "type": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          {
+            "id": 2,
+            "name": "TEST Schnigge Hamburg",
+            "type": 0,
+            "city": 1,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          {
+            "id": 3,
+            "name": "TEST Holk Rostock",
+            "type": 2,
+            "city": 2,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        },
+        "office": null,
+        "jobs": [],
+        "originalSafetyVersion": null
+      }
+    },
+    {
+      "file": "TEST_04_kredit_waren_v13.json",
+      "sha256": "eaa3c0e6b58e581b21c8d7e8ad38f134cc859d79c42bc7a05e37b60e3dabc0fb",
+      "purpose": "Bargeld 12000, Bank 2500, Kredit 700; 7 Fass Getreide an Bord, 12 Fass Salz im Lübecker Lager.",
+      "expected": {
+        "v": 13,
+        "name": "TEST Q109d Kredit Waren",
+        "city": 0,
+        "day": 1,
+        "year": 1350,
+        "gold": 12000,
+        "bank": 2500,
+        "debt": 700,
+        "rep": 0,
+        "rank": 0,
+        "ships": [
+          {
+            "id": 1,
+            "name": "TEST Kogge Luebeck",
+            "type": 1,
+            "city": 0,
+            "cargo": {
+              "0": 7
+            },
+            "costs": {
+              "0": 8
+            },
+            "bookCosts": {
+              "0": 8
+            },
+            "origins": {
+              "0": [
+                {
+                  "city": 1,
+                  "n": 7
+                }
+              ]
+            }
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {
+              "3": 12
+            },
+            "costs": {
+              "3": 10
+            },
+            "bookCosts": {
+              "3": 10
+            },
+            "origins": {
+              "3": [
+                {
+                  "city": 4,
+                  "n": 12
+                }
+              ]
+            }
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        },
+        "office": null,
+        "jobs": [],
+        "originalSafetyVersion": null
+      }
+    },
+    {
+      "file": "TEST_05_politik_vertrag_v13.json",
+      "sha256": "f97ad07b48ddcb3bd7405034e8e842cc9d23fb1353d0b350c0723d683b91f9d5",
+      "purpose": "Künstlich gesetzter historischer Bürgermeistertitel, Amt Lübeck und laufender Ratsvertrag; kein Beleg einer erspielten Karriere.",
+      "expected": {
+        "v": 13,
+        "name": "TEST Q109d Politik",
+        "city": 0,
+        "day": 1,
+        "year": 1350,
+        "gold": 50000,
+        "bank": 0,
+        "debt": 0,
+        "rep": 80,
+        "rank": 3,
+        "ships": [
+          {
+            "id": 1,
+            "name": "TEST Kogge Luebeck",
+            "type": 1,
+            "city": 0,
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        ],
+        "warehouses": {
+          "0": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "1": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "2": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "3": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "4": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "5": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "6": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "7": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "8": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "9": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          },
+          "10": {
+            "cargo": {},
+            "costs": {},
+            "bookCosts": {},
+            "origins": {}
+          }
+        },
+        "office": {
+          "city": 0,
+          "start": 486001,
+          "until": 486361,
+          "firstReceipt": 0
+        },
+        "jobs": [
+          {
+            "id": "accord:0:0",
+            "city": 0,
+            "kind": "accord",
+            "period": 0,
+            "started": 486001,
+            "until": 486181,
+            "partner": 1,
+            "good": -1,
+            "n": 0,
+            "witnessed": false
+          }
+        ],
+        "originalSafetyVersion": null
+      }
+    }
+  ]
+}
