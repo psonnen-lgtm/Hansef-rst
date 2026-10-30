@@ -24,4 +24,10 @@ function sourceFunction(h,name){const s=h.match(/<script>([\s\S]*?)<\/script>/)[
  await check('no random draw during old V13 copy activation or repeated safety reload',async()=>{
  const g=E({stored:{[OLD]:JSON.stringify(S())}});g.eval('globalThis.safetyDraws=0;const savedRandom=Math.random;Math.random=()=>{safetyDraws++;return savedRandom()}');await g.ready();await g.eval('safetyReload()');assert.equal(g.eval('safetyDraws'),0);return {draws:0};
  });
+ await check('original-overflow backup slots fail closed without overwriting any original',async()=>{
+ const raw=JSON.stringify(S()),disk=new Map([[OLD,raw]]);for(let i=0;i<100;i++)disk.set(KEY+'-v13-original'+(i?'-'+i:''),'occupied-'+i);const before=[...disk.entries()],g=E({stored:disk});assert.equal(await g.ready(),false);assert.deepEqual([...disk.entries()],before);return {numberedSlots:100,noOriginalOverwritten:true};
+ });
+ await check('download helper preserves complete canonical and original bytes for manual restoration',async()=>{
+ const old=S('s.gold=22222'),raw=JSON.stringify(old),g=await boot(old),files=[];g.ctx.Blob=class{constructor(parts){files.push(parts.join(''))}};g.ctx.URL={createObjectURL:()=>"blob:test",revokeObjectURL(){}};g.ctx.document.createElement=()=>({click(){},remove(){}});g.ctx.document.body={append(){}};g.ctx.setTimeout=()=>{};g.eval('exportGame();exportGame(true)');assert.equal(files[0],g.disk.get(KEY));assert.equal(files[1],raw);const restored=S('s=migrate('+files[1]+')');assert.deepEqual(restored,old);return {exactCanonicalExport:true,exactLegacyDownload:true,oldReaderRestoresOriginal:true,downloadDOM:'stub, not actual browser transfer'};
+ });
 })().then(()=>{fs.writeFileSync(process.argv[2],JSON.stringify({sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),gameHash:hash,checks,passed:true},null,2)+'\n');}).catch(e=>{fs.writeFileSync(process.argv[2],JSON.stringify({gameHash:hash,checks,passed:false,error:e.stack},null,2)+'\n');console.error(e);process.exitCode=1;});

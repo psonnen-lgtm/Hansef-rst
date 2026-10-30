@@ -1,0 +1,76 @@
+{
+  "sourceCommit": "a712517c25c74d0215c6a1077668bd2aeeb67aa3",
+  "gameHash": "0fe6f51cd152a439fcf271ea028c1f2a7f6232fc50532ce9917c9125a30f2583",
+  "checks": [
+    {
+      "name": "native economic formulas prices goods distances interest and fees remain byte-identical",
+      "passed": true,
+      "evidence": {
+        "functions": [
+          "dailyMarketPrice",
+          "regionalPrice",
+          "regionalStock",
+          "regionalMarketDay",
+          "creditLimit",
+          "cargoBookPrice",
+          "cargoWorth",
+          "warehouseWorth",
+          "shipyardWorth",
+          "netWorth",
+          "bankOp",
+          "shipbuildingQuote",
+          "routeTravelDays",
+          "routeHandlingDays",
+          "donationGain",
+          "completeQuests",
+          "politicalSupport"
+        ],
+        "constants": [
+          "GOODS",
+          "SHIPTYPES",
+          "DIST",
+          "SHIPBUILD_RECIPES",
+          "WAREHOUSE_RULES"
+        ]
+      }
+    },
+    {
+      "name": "old V11 actual historical endpoint imports without loss before technical upgrade",
+      "passed": true,
+      "evidence": {
+        "sourceVersion": 11,
+        "outputVersion": 13,
+        "elderKept": true
+      }
+    },
+    {
+      "name": "unknown historical cost and source remain unknown in copied V13",
+      "passed": true,
+      "evidence": {
+        "noHistoryInvented": true
+      }
+    },
+    {
+      "name": "post-commit observer fault does not roll back a successfully stored action",
+      "passed": true,
+      "evidence": {
+        "afterCommitFailureRecoverable": true
+      }
+    },
+    {
+      "name": "current M2 export re-import preserves confirmed person and completed political receipts",
+      "passed": true,
+      "evidence": {
+        "noSecondAnchorOrJob": true
+      }
+    },
+    {
+      "name": "no random draw during old V13 copy activation or repeated safety reload",
+      "passed": true,
+      "evidence": {
+        "draws": 0
+      }
+    }
+  ],
+  "passed": true
+}

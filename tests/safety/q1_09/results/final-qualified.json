@@ -1,0 +1,28 @@
+{
+  "sourceCommit": "a712517c25c74d0215c6a1077668bd2aeeb67aa3",
+  "gameHash": "0fe6f51cd152a439fcf271ea028c1f2a7f6232fc50532ce9917c9125a30f2583",
+  "checks": [
+    {
+      "kind": "candidate",
+      "action": "runMayorElection()",
+      "otherwiseQualified": true,
+      "remotePersonalActionRejected": true,
+      "afterActualPersonalArrivalAllowed": true
+    },
+    {
+      "kind": "proved",
+      "action": "requestPoliticalEndorsement()",
+      "otherwiseQualified": true,
+      "remotePersonalActionRejected": true,
+      "afterActualPersonalArrivalAllowed": true
+    },
+    {
+      "kind": "ready",
+      "action": "runHanseAssembly()",
+      "otherwiseQualified": true,
+      "remotePersonalActionRejected": true,
+      "afterActualPersonalArrivalAllowed": true
+    }
+  ],
+  "passed": true
+}

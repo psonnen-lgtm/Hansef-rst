@@ -56,6 +56,7 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
   return result;
  });}catch(e){return safetyMessage('Kein sicherer Schreibzugriff möglich. Die Aktion wurde abgebrochen. '+(e.message||''));}
 }
+function safetyOriginalText(){const raw=localStorage.getItem(KEY+'-v13-original')??localStorage.getItem(LEGACYKEY);if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}
 function safetyExportText(){
  let raw;try{raw=localStorage.getItem(KEY)??SafetySession.expected}catch(e){raw=SafetySession.expected;}
  if(raw!==null){const x=migrate(JSON.parse(raw));if(!x)throw Error('Gespeicherte Revision nicht unterstützt');return raw;}

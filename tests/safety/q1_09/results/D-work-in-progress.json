@@ -1,0 +1,34 @@
+{
+  "sourceCommit": "a712517c25c74d0215c6a1077668bd2aeeb67aa3",
+  "gameHash": "0fe6f51cd152a439fcf271ea028c1f2a7f6232fc50532ce9917c9125a30f2583",
+  "kind": "two_controlled_native_construction_actions_no_build_completion_or_large_simulation",
+  "cases": [
+    {
+      "dirty": false,
+      "initialCash": 10000,
+      "gold": 7500,
+      "materialsBook": 352,
+      "shipyardWorth": 2852,
+      "netWorth": 15312,
+      "creditLimit": 6890,
+      "beforeBuild": 15312,
+      "remainingGoods": 0
+    },
+    {
+      "dirty": true,
+      "initialCash": 10000,
+      "gold": 7500,
+      "materialsBook": 616,
+      "shipyardWorth": 3040,
+      "netWorth": 15500,
+      "creditLimit": 6975,
+      "beforeBuild": 15576,
+      "remainingGoods": 0
+    }
+  ],
+  "neutralMoneyInvariant": true,
+  "activeCollateralInvariant": false,
+  "wipWorthInflation": 188,
+  "inventoryOnlyW1W2WouldStillInheritWIP": true,
+  "status": "OPEN_WIP_REFERENCE_OR_COLLATERAL_RULE_ALSO_NEEDS_DECISION"
+}
