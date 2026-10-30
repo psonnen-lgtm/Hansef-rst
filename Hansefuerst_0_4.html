@@ -1260,7 +1260,20 @@ async function safetyCanonical(expected=undefined,bytes=undefined){
 }
 function safetyReadCanonical(){return safetyCanonical()}
 function safetyWriteCanonical(expected,bytes){return safetyCanonical(expected,bytes)}
-function safetyBusy(value){try{if(value&&!SafetySession.committing)SafetySession.commitFocus=document.activeElement;SafetySession.committing=value;if(document.body)document.body.inert=value;if(value){const box=$('storageStatus');if(box){box.hidden=false;box.textContent='Spielzug wird lokal gespeichert …'}}else{if(SafetySession.commitFocus?.isConnected)SafetySession.commitFocus.focus?.({preventScroll:true});SafetySession.commitFocus=null}}catch(e){}}
+// The saving cover is installed before the first await after native actions render.
+// No uncommitted arrival/risk can be observed through a painted candidate sheet.
+function safetyBusy(value){try{
+ if(value&&!SafetySession.committing)SafetySession.commitFocus=document.activeElement;
+ SafetySession.committing=value;
+ if(value){
+  if(document.body){document.body.inert=true;SafetySession.commitAria=document.body.getAttribute?.('aria-hidden')??null;document.body.setAttribute?.('aria-hidden','true')}
+  if(document.createElement&&document.documentElement){const mask=document.createElement('div');mask.id='safetyCommitMask';mask.setAttribute('role','status');mask.setAttribute('aria-live','polite');mask.tabIndex=-1;mask.textContent='Spielzug wird lokal gespeichert …';mask.style.cssText='position:fixed;inset:0;z-index:2147483647;display:grid;place-items:center;background:#101b1a;color:#f0e0b8;font:20px Georgia,serif';mask.addEventListener('keydown',e=>{e.preventDefault();e.stopPropagation()});document.documentElement.append(mask);SafetySession.commitMask=mask;mask.focus({preventScroll:true})}
+ }else{
+  SafetySession.commitMask?.remove();SafetySession.commitMask=null;
+  if(document.body){document.body.inert=false;if(SafetySession.commitAria===null)document.body.removeAttribute?.('aria-hidden');else if(SafetySession.commitAria!==undefined)document.body.setAttribute?.('aria-hidden',SafetySession.commitAria)}
+  if(SafetySession.commitFocus?.isConnected)SafetySession.commitFocus.focus?.({preventScroll:true});SafetySession.commitFocus=null;SafetySession.commitAria=undefined;
+ }
+}catch(e){}}
 // END Q109c ATOMIC LOCAL STORE
 
 // BEGIN Q109c LEGACY GRACE — copied verbatim into the playable HTML.
