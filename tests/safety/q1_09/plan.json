@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-30",
+  "base": "02ee6b8fc1507ad078b6b596c333e50d91eeea64",
+  "originalProductCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "originalProductHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "references": [
+    {
+      "commit": "8b20432506940ef1d33bf7af7f162884eec63c01",
+      "path": "docs/entwicklungsberichte/Q1_02/Q1_02_gesamtbericht.md",
+      "sha256": "d884acc3178437558dbe332f9b593d8886d628f5f8e0aeb33e226e56c1f5d342"
+    },
+    {
+      "commit": "15df03c02d6c3af3fdb9c8f24052f038885c2bb1",
+      "path": "docs/entwicklungsberichte/Q1_03/Q1_03_bestandsschutz_v13.md",
+      "sha256": "5588650d6843f139a22250005b52a5b1180d633d2004a1b8a391f5397f41ae63"
+    },
+    {
+      "commit": "193e1d205181c608f40979902e5e9016fe12dd74",
+      "path": "docs/entwicklungsberichte/Q1_06/Q1_06_bestandsschutz_und_exploits.md",
+      "sha256": "2dd77db58faa7ecc8200b2796a72ac3adf15b5aaf68ccc2f672d188a75e42adc"
+    },
+    {
+      "commit": "354361e51360c7d57a9b619813114c15380f06ee",
+      "path": "docs/entwicklungsberichte/Q1_07/Q1_07_entscheidungsvorlage.md",
+      "sha256": "acb8f4d889920c21d14f6e1ae5d33c8b11ed647943e8e1a12f181e2830118780"
+    },
+    {
+      "commit": "d6f0dbd118c9706b3a665e7ad29f5823741ef111",
+      "path": "docs/entwicklungsberichte/Q1_08/Q1_08_technische_voraussetzungen.md",
+      "sha256": "6647ae54621aa808f8398d7d6fe915a8a7a8e641ab7a555a450614c5c850a8e5"
+    },
+    {
+      "commit": "d6f0dbd118c9706b3a665e7ad29f5823741ef111",
+      "path": "docs/entwicklungsberichte/Q1_08/Q1_08_entscheidungsvorlage.md",
+      "sha256": "354f37225f17ff2ec3296c0db9ad690fa1cf6b1ca059a1575ce707d9a0554cdb"
+    }
+  ],
+  "parts": [
+    "A inventory and fixed historical reproduction",
+    "B common exclusive writer boundary, atomic candidate commit, originals and V13 copy import",
+    "C separate personal presence and political guards, no invented unaccompanied travel policy",
+    "D compare W1/W2, do not activate unapproved collateral rules"
+  ],
+  "forbidden": [
+    "guild implementation",
+    "new political career/scenes",
+    "model C activation",
+    "price/goods/fees/balance parameters",
+    "Pages",
+    "merge",
+    "real save mutation",
+    "large simulations"
+  ],
+  "baselineProbeCopiedExactlyFrom": "8b20432506940ef1d33bf7af7f162884eec63c01:docs/entwicklungsberichte/Q1_02/Q1_02_probe.cjs",
+  "testing": "Small controlled synthetic fixtures, fault injection, real browser contexts; no physical-device claims."
+}
