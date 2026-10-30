@@ -1,0 +1,36 @@
+{
+  "sourceCommit": "debff601f06633536f5d1fa52b0800f1e8ff4e0e",
+  "testedGameCommit": "debff601f06633536f5d1fa52b0800f1e8ff4e0e",
+  "gameHash": "5c82ca78ea3c75b0159a955df25224239897d16271ecbacec010f6e4a16e15e2",
+  "engine": "154.0.8037.57",
+  "kind": "real native Chromium isolated synthetic saves; controlled faults explicitly identified",
+  "selection": "two native tabs queue|real import queued",
+  "checks": [
+    {
+      "name": "two native tabs queue competing actions under one real Web Lock",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "tabs": 2,
+        "queuedRequests": 2,
+        "canonicalWrites": 1,
+        "oneCharge": true,
+        "staleRejected": true,
+        "reloadRecovered": true
+      }
+    },
+    {
+      "name": "real import queued behind another tab cannot overwrite that newer action",
+      "passed": false,
+      "status": "FAIL",
+      "error": "page.waitForFunction: Timeout 5000ms exceeded.\n    at /workspace/Hansef-rst/tests/safety/q1_09c/browser-checks.cjs:71:193\n    at async isolated (/workspace/Hansef-rst/tests/safety/q1_09c/browser-checks.cjs:27:76)\n    at async check (/workspace/Hansef-rst/tests/safety/q1_09c/browser-checks.cjs:26:131)\n    at async /workspace/Hansef-rst/tests/safety/q1_09c/browser-checks.cjs:69:2"
+    }
+  ],
+  "pageErrors": [],
+  "screenshots": [],
+  "passed": false,
+  "fullBrowserAcceptance": false,
+  "realAppleDevices": 0,
+  "webKitTests": 0,
+  "largeSimulations": 0
+}

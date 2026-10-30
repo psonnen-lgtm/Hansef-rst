@@ -1,0 +1,9 @@
+{
+  "sourceCommit": "debff601f06633536f5d1fa52b0800f1e8ff4e0e",
+  "gameHash": "5c82ca78ea3c75b0159a955df25224239897d16271ecbacec010f6e4a16e15e2",
+  "passed": true,
+  "riskRollCalls": 1,
+  "oneCommittedTravel": true,
+  "unpublishedRiskNotShown": true,
+  "personStayed": true
+}

@@ -1,0 +1,123 @@
+{
+  "sourceCommit": "debff601f06633536f5d1fa52b0800f1e8ff4e0e",
+  "gameHash": "5c82ca78ea3c75b0159a955df25224239897d16271ecbacec010f6e4a16e15e2",
+  "checks": [
+    {
+      "name": "SHA256 matches native crypto on raw UTF8 sources and migrated proof is exact",
+      "passed": true,
+      "evidence": {
+        "exactHash": true,
+        "allOldFieldsPreserved": true
+      }
+    },
+    {
+      "name": "one day remaining six actual route days produces exactly five grace days, no reward",
+      "passed": true,
+      "evidence": {
+        "originalUntil": 486002,
+        "effectiveUntil": 486007,
+        "routeDays": 6,
+        "extension": 5,
+        "noMoneyReputationReceipt": true
+      }
+    },
+    {
+      "name": "actual travel and visits remain required; effective clock permits completion after original date",
+      "passed": true,
+      "evidence": {
+        "actualRoundtrip": true,
+        "oneService": true,
+        "originalDatePreservedInLedger": true
+      }
+    },
+    {
+      "name": "effective deadline expires normally and does not auto-complete a missed contract",
+      "passed": true,
+      "evidence": {
+        "noAutomaticFulfillment": true,
+        "ledgerSurvivesExpiry": true
+      }
+    },
+    {
+      "name": "canonical export import reload and restored original cannot stack grace",
+      "passed": true,
+      "evidence": {
+        "restart": true,
+        "canonicalReimport": true,
+        "localOriginalRestoreCarriesEarlierLedger": true,
+        "offlineExternalFullResetNotClaimedPrevented": true
+      }
+    },
+    {
+      "name": "old anchor at missing partner station is not a personal visit and needs real departure and return",
+      "passed": true,
+      "evidence": {
+        "noAnchorWitness": true,
+        "realReturnRequired": true,
+        "routeDays": 9
+      }
+    },
+    {
+      "name": "fastest available payable local hull prevents unnecessary extension for selected slower ship",
+      "passed": true,
+      "evidence": {
+        "slowSelectedKoggeWouldNeed6": true,
+        "availableSchniggeNeeds4": true,
+        "noUnnecessaryGrace": true
+      }
+    },
+    {
+      "name": "unaffected supply contracts and sufficient witnessed or expired obligations receive no grace",
+      "passed": true,
+      "evidence": {
+        "cases": 5,
+        "noBlanketExtension": true
+      }
+    },
+    {
+      "name": "advanced old M2 keeps personal info and contracts but never invents first-import proof",
+      "passed": true,
+      "evidence": {
+        "knownPersonPreserved": true,
+        "unknownNotInvented": true,
+        "noAutomaticM2Grace": true,
+        "originalBackedUp": true
+      }
+    },
+    {
+      "name": "elapsed day or changed first-import state cannot become new first-import evidence",
+      "passed": true,
+      "evidence": {
+        "noLateAnchorGrace": true,
+        "noRewrittenEconomicProof": true
+      }
+    },
+    {
+      "name": "write failure rolls back anchor and grace together, retry grants once",
+      "passed": true,
+      "evidence": {
+        "atomicPersonAndLedger": true,
+        "retryOnce": true
+      }
+    },
+    {
+      "name": "malformed duplicate or inflated grant and unsupported revision are rejected on copy",
+      "passed": true,
+      "evidence": {
+        "invalidCases": 5,
+        "noOriginalDestroyed": true
+      }
+    },
+    {
+      "name": "legacy Hanse visits regions and old awards survive with only missing route grace",
+      "passed": true,
+      "evidence": {
+        "oldVisitRetained": true,
+        "originalHanseDeadlineRetained": true,
+        "noNewSealOrReceipt": true
+      }
+    }
+  ],
+  "passed": true,
+  "kind": "bounded native migration action deadline and file roundtrip checks, copies only"
+}

@@ -1,0 +1,3 @@
+PASS two native tabs queue competing actions under one real Web Lock
+STALE_IMPORT_DIAGNOSTIC {"error":"","gold":25000,"revision":2,"expectedEqualsDisk":true,"writes":[{"gold":25000,"revision":2}]}
+FAIL real import queued behind another tab cannot overwrite that newer action: page.waitForFunction: Timeout 5000ms exceeded.
