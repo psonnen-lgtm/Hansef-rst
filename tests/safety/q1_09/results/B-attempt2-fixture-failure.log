@@ -1,0 +1,15 @@
+evalmachine.<anonymous>:192
+  if(!isIndexKey(city,cityCount)||!object(w)||!['cargo','costs','bookCosts','origins'].every(k=>object(w[k])))throw Error('Ungültiges Lager');
+                                                                                                              ^
+
+Error: Ungültiges Lager
+    at validateWarehouses (evalmachine.<anonymous>:192:117)
+    at validate (evalmachine.<anonymous>:263:2)
+    at evalmachine.<anonymous>:1:330
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at originalState (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:12:5)
+    at fixture (/workspace/Hansef-rst/tests/safety/q1_09/storage-checks.cjs:5:51)
+    at /workspace/Hansef-rst/tests/safety/q1_09/storage-checks.cjs:9:26
+    at check (/workspace/Hansef-rst/tests/safety/q1_09/storage-checks.cjs:4:56)
+    at /workspace/Hansef-rst/tests/safety/q1_09/storage-checks.cjs:8:7
