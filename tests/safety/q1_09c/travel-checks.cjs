@@ -21,6 +21,10 @@ await check('prepare reload replan and completed reload cannot duplicate movemen
 await check('failed remote arrival has no money day ship person or event partial commit',async()=>{
  let fail=false;const g=await fixture(false,{fault:k=>fail&&k===KEY});await g.eval('planTravel(2,false)');const x=g.state(),raw=g.disk.get(KEY),events=g.events.length;fail=true;assert.equal(await g.eval('arrive()'),false);assert.deepEqual(g.state(),x);assert.equal(g.disk.get(KEY),raw);assert.equal(g.events.length,events);fail=false;await g.eval('arrive()');assert.equal(g.state().politics.safety.person.city,0);assert.equal(g.events.filter(e=>e.type==='travel').length,1);return {allOrNothing:true,oneCommittedTravelAfterRetry:true};
 });
+await check('merchant at departure harbor can explicitly stay ashore, never join from a remote harbor',async()=>{
+ const g=await fixture(true);const person=clean(g.state().politics.safety.person),before=g.state();await g.eval('planTravel(2,false,false)');assert.equal(g.eval('pending.mode'),'unaccompanied');await g.eval('arrive()');assert.deepEqual(g.state().politics.safety.person,person);assert.equal(g.state().rep,before.rep);assert.equal(g.state().ships[1].city,2);
+ const h=await fixture();assert.equal(await h.eval('planTravel(2,false,true)'),false);assert.equal(h.eval('pending'),null);return {explicitStayAshore:true,noRemotePersonalEmbarkation:true};
+});
 await check('stale remote plan and unknown old person cannot start new movement',async()=>{
  const g=await fixture();await g.eval('planTravel(2,false)');await g.eval('donate(50,2)');const x=g.state();await g.eval('arrive()');assert.deepEqual(g.state(),x);const h=E({stored:{'hansefuerst-v04':JSON.stringify(S())}});await h.ready();assert.equal(await h.eval('planTravel(1,false)'),false);return {staleGuardRetained:true,unknownPersonNotInvented:true};
 });
