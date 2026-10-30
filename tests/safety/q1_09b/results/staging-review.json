@@ -1,0 +1,6 @@
+{
+  "firstStagedDiffCheck": "failed: new CSV default CRLF reported as trailing whitespace",
+  "fix": "normalize only new CSV to LF; add staged diff to verifier",
+  "initialStaticProofLimit": "untracked new CSV not included in tracked diff; corrected final scope check includes staged files",
+  "gameTestsRepeated": false
+}

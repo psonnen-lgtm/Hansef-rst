@@ -1,0 +1,29 @@
+{
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "commits": [
+    {
+      "commit": "503b0ea33ed5b11e3a4d651465cf0681fff1d3cd",
+      "subject": "Q1.09b A: freeze inherited safety evidence and bounded completion plan"
+    },
+    {
+      "commit": "7e53fb9fed00685cd01142e6faa36d5a8a9a3e78",
+      "subject": "Q1.09b B: add bounded native Chromium storage and presence acceptance"
+    },
+    {
+      "commit": "ea0595f3ecdfca73d61592fd769acdaa5531e20e",
+      "subject": "Q1.09b B: retain native evidence and correct asynchronous browser fixture checks"
+    },
+    {
+      "commit": "cef6ba0cca923893c63064dd4f973feba17121f9",
+      "subject": "Q1.09b C: prepare isolated credit travel and deadline proposals; await two legacy drivers"
+    },
+    {
+      "commit": "0ec09b829b7230fb470a77ed4386c79db1a7a15f",
+      "subject": "Q1.09b D: preserve era-correct legacy fixtures and reject unsafe synchronous test use"
+    },
+    {
+      "commit": "8f18c854bf21409826cd384a2b2694088acb1eab",
+      "subject": "Q1.09b E: commit fixture changes before planning without weakening revision guards"
+    }
+  ]
+}

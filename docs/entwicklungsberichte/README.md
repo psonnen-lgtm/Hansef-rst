@@ -269,3 +269,8 @@ GitHub-Übergabe P1.3: Berichte/Index in `55af5ea` veröffentlicht. PR tatsächl
 30.10.2026 – [Gesamtbericht](Q1_09/Q1_09_gesamtbericht.md). Separater Sicherheitsbranch, kleine gezielte Prüfungen; keine neue politische Karriere oder wirtschaftliche Regel ohne Entscheidung.
 
 Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Personenort](Q1_09/Q1_09_persoenliche_anwesenheit.md), [V13](Q1_09/Q1_09_v13_bestandsschutz.md), [Regressionen](Q1_09/Q1_09_regressionstests.md), [offene Entscheidungen](Q1_09/Q1_09_offene_entscheidungen.md). B/C implementiert und VM-geprüft; Q-001 und native Browserabnahme offen. Keine vollständige Freigabe oder Zusammenführung.
+
+
+## Q1.09b – Sicherheitsnachprüfung und offene Entscheidungen
+
+30.10.2026 – [Gesamtbericht](Q1_09b/Q1_09b_gesamtbericht.md), [Bewertung/Kredit](Q1_09b/Q1_09b_bewertung_und_kredit.md), [Browserabnahme und manueller Geräteplan](Q1_09b/Q1_09b_browserabnahme.md), [Schiffsreisen](Q1_09b/Q1_09b_schiffsreisen.md), [Altverträge](Q1_09b/Q1_09b_altvertraege.md), [Regressionen](Q1_09b/Q1_09b_regressionstests.md), [Entscheidungsvorlage](Q1_09b/Q1_09b_entscheidungsvorlage.md).19 native Chromium-Gruppen,37 alte Basisaussagen,17 isolierte Vorschlagsgruppen und eine Treibersperre bestanden;44 Q1.09-VM-Gruppen übernommen. Produktcode unverändert; Q001/Regelfreigaben, Safari/Geräte und Offline-Kaltstart offen. Kein Merge und keine Pages-Änderung.

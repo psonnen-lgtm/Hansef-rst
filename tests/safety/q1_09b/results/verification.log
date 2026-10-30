@@ -1,0 +1,24 @@
+{
+  "headAtVerification": "8f18c854bf21409826cd384a2b2694088acb1eab",
+  "verificationScriptSHA256": "975b09dfe6f4ea420c040b1e2ef0d91a3fd165457fdeeae0397bb3fd74fff538",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "existingFilesChecked": 3330,
+  "existingChangedOnly": [
+    "docs/entwicklungsberichte/README.md",
+    "tests/phase1.cjs",
+    "tests/simulation/headless.cjs",
+    "tests/test-v04.cjs"
+  ],
+  "indexAppendOnly": true,
+  "productionQ109HistoricalResultsAndPagesUnchanged": true,
+  "oldAssertionsPreserved": 37,
+  "scriptSyntaxChecked": 9,
+  "reports": 7,
+  "validRelativeLinks": 35,
+  "newPassedGroups": 74,
+  "Q001Fixed": false,
+  "fullAcceptance": false,
+  "scopeValid": true,
+  "diffCheck": true
+}

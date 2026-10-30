@@ -1,0 +1,83 @@
+category,name,status,source
+native Chromium,native boot copies V13 byte-exact original and reload does not rewrite,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,two native tabs queue competing actions under one real Web Lock,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,same-tab queued double confirmation credits exactly once,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,closing a queued tab cancels its write before lock acquisition,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,closing lock holder releases native exclusion for surviving tab,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,"injected quota failure rolls back actual RAM disk and revision, then retry succeeds",PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,real FileReader import and canonical/original downloads restore complete copies,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,invalid and failed imports leave the active saved game intact,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,real import queued behind another tab cannot overwrite that newer action,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,missing Web Locks remains read-only with visible warning and exact export,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,denied canonical storage read aborts startup without rewriting original,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,"native personal accord uses actual trips, remote view grants no witness",PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,interrupted arrival write preserves person ships money days and allows one retry,PASS,tests/safety/q1_09b/results/browser-attempt1.json
+native Chromium,local file works offline with native storage lock reload and file transfer,BLOCKED_NOT_TESTED,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,Chromium viewport and native input 375x812,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,Chromium viewport and native input 820x1180,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,Chromium viewport and native input 1280x900,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,loaded page offline keeps local saving and native download available,PASS,tests/safety/q1_09b/results/browser-review2/checks.json
+native Chromium,native title office and Eldermann copies survive import export and reload,PASS,tests/safety/q1_09b/results/browser-extra.json
+native Chromium,native corrupt or newer active state requires confirmed raw-backed recovery,PASS,tests/safety/q1_09b/results/browser-extra.json
+legacy baseline VM,fresh save validates,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,invalid v3 rejected,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,negative gold rejected,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,v3 assigns all ship locations,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,legacy cargo has unknown cost,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,malformed cargo rejected,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,credit does not grow with borrowing,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,single arrival moves only chosen ship and cannot repeat,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,remote cargo cannot be traded,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,quest completion waits five days for new offer,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,expired quest gives no reward,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,unknown cost survives mixed purchase,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,known weighted purchase and partial sale,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,arrival fee is charged exactly once,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,fee by ship type,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,convoy fee excludes remote ship,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,insufficient gold blocks departure,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,exact fee allows departure,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy baseline VM,planning does not charge fee,PASS,tests/safety/q1_09b/results/legacy-basic-review3.json
+legacy phase1 VM,preview and reopening use no random draw,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,arrival rolls once and repeated arrival is inert,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,same-place wash sale cannot fulfil quest,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,foreign delivery fulfils quest,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,mixed FIFO cargo cannot multiply eligible goods,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,legacy cargo is retained but not invented as foreign,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,piracy consumes proven origin too,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,origins and book values survive save and reload,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,same duration has equal interest across year boundary,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,full year effective rates remain two and six percent,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,no time means no interest,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,migration does not backcharge interest or demote,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,unrealised gain cannot increase worth or credit,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,unrealised gain cannot cross promotion threshold,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,realised gain does increase rank and worth,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,legacy unknown book value is fixed after migration,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,weighted cost handles partial sales,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+legacy phase1 VM,fractional balances can be fully withdrawn or repaid,PASS,tests/safety/q1_09b/results/legacy-phase1-review2.json
+"isolated proposal, not activated",all 121 city/good references use actual harbor quote and preserve input,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",neutral mixed costs cannot change W1-S or W2-S but active failure remains open,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",multiple ships and warehouses in different harbors receive one common local reference,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",unknown costs and provenance remain unknown without fallback invention,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",stored WIP counterexample loses all artificial material security in both candidates,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",construction does not create candidate security while completion remains separately visible,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated","paid wage cap and no invented proportional progress, W2 excludes only inventory",PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",borrowing repayment deposits and existing floor preserve candidate credit identities,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",legitimate profit loss and partial-sale accounting remain historical native results,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated","reference price changes are explicitly economic changes, invalid inputs fail",PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",unaccompanied single convoy quotes keep native route time fees and person untouched,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",remote quote cannot invent unknown person free trip or other-harbor convoy,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",short original accord receives only demonstrated route deficit in dry-run dossier,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",anchor at missing station requires actual detour and return evidence,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",sufficient expired witnessed and nonpersonal contracts do not receive blanket grace,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",old Hanse visited stations and region condition survive conservative remaining itinerary,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+"isolated proposal, not activated",grace binds exact original hash contract and first zero-day explicit local anchor,PASS,tests/safety/q1_09b/results/proposals-attempt1.json
+driver safeguard,"historical sync driver rejects current async source, permits old override",PASS,tests/safety/q1_09b/results/driver-fail-closed.json
+open production rule,Q001 W1-S/W2-S including WIP credit and economic qualification,OPEN_NOT_ACTIVATED,docs/entwicklungsberichte/Q1_09b/Q1_09b_entscheidungsvorlage.md
+open production rule,unaccompanied voyage event and reputation policy,OPEN_NOT_ACTIVATED,docs/entwicklungsberichte/Q1_09b/Q1_09b_entscheidungsvorlage.md
+open production rule,one-time evidenced old-contract deadline grace,OPEN_NOT_ACTIVATED,docs/entwicklungsberichte/Q1_09b/Q1_09b_entscheidungsvorlage.md
+browser/device,WebKit/Safari,NOT_TESTED,docs/entwicklungsberichte/Q1_09b/Q1_09b_browserabnahme.md
+browser/device,physical iPhone/iPad,NOT_TESTED,docs/entwicklungsberichte/Q1_09b/Q1_09b_browserabnahme.md
+browser/device,offline cold start,NOT_TESTED,docs/entwicklungsberichte/Q1_09b/Q1_09b_browserabnahme.md
+browser/device,physical quota/power loss,NOT_TESTED,docs/entwicklungsberichte/Q1_09b/Q1_09b_browserabnahme.md

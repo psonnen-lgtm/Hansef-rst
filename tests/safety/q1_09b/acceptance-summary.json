@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "branch": "fix/q1-09b-safety-completion",
+  "parentQ109": "e3498f8522ec456287fb4328dd6e895b96a1d07a",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "productionGameChanged": false,
+  "historicalVMGroupsReusedNotRerun": 44,
+  "newNativeChromiumGroupsPassed": 19,
+  "newLegacyAssertionsPassed": 37,
+  "newIsolatedProposalGroupsPassed": 17,
+  "newSyncDriverSafeguardPassed": 1,
+  "newTotalGroupsPassed": 74,
+  "fileURLBlockedNotPassed": 1,
+  "Q001Fixed": false,
+  "W1SActivated": false,
+  "unaccompaniedVoyageActivated": false,
+  "contractGraceActivated": false,
+  "fullQ109bAcceptance": false,
+  "webKitGameTests": 0,
+  "physicalAppleDevices": 0,
+  "largeSimulations": 0,
+  "realUserSavesUsed": 0,
+  "sourceResults": [
+    "tests/safety/q1_09b/results/browser-acceptance.json",
+    "tests/safety/q1_09b/results/legacy-basic-review3.json",
+    "tests/safety/q1_09b/results/legacy-phase1-review2.json",
+    "tests/safety/q1_09b/results/proposals-attempt1.json",
+    "tests/safety/q1_09b/results/driver-fail-closed.json"
+  ],
+  "historicalResultsUnchanged": true
+}

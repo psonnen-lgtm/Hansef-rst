@@ -1,0 +1,298 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "kind": "reviewed union of real native Chromium checks, never count blocked file URL as passed",
+  "engine": "Chromium 154.0.8037.57",
+  "sourceCommitOfThisAggregation": "8f18c854bf21409826cd384a2b2694088acb1eab",
+  "testedGameCommit": "15c2e3792d855afcddf26ba0572d6317504d8b46",
+  "gameHash": "dd17d5fb6bbf2126652f93ede24add5528a0f2829c67ed20cd7a0a25e9aaaa95",
+  "checks": [
+    {
+      "name": "native boot copies V13 byte-exact original and reload does not rewrite",
+      "passed": true,
+      "evidence": {
+        "nativeWebLocks": true,
+        "noLoadWrite": true,
+        "legacyBytesExact": true
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "two native tabs queue competing actions under one real Web Lock",
+      "passed": true,
+      "evidence": {
+        "tabs": 2,
+        "queuedRequests": 2,
+        "canonicalWrites": 1,
+        "oneCharge": true,
+        "staleRejected": true,
+        "reloadRecovered": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "same-tab queued double confirmation credits exactly once",
+      "passed": true,
+      "evidence": {
+        "oneCharge": true,
+        "oneReputationCredit": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "closing a queued tab cancels its write before lock acquisition",
+      "passed": true,
+      "evidence": {
+        "closedQueuedWriterNoCharge": true,
+        "lockRemainsUsable": true,
+        "notAnOSPowerFailureTest": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "closing lock holder releases native exclusion for surviving tab",
+      "passed": true,
+      "evidence": {
+        "browserReleasesAbandonedLock": true,
+        "oneAtomicAction": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "injected quota failure rolls back actual RAM disk and revision, then retry succeeds",
+      "passed": true,
+      "evidence": {
+        "fault": "controlled Storage.setItem QuotaExceededError, not disk physically filled",
+        "rollbackComplete": true,
+        "noGhostEvent": true,
+        "retry": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "real FileReader import and canonical/original downloads restore complete copies",
+      "passed": true,
+      "evidence": {
+        "nativeFileReader": true,
+        "actualBlobDownloads": true,
+        "rawImportedFileBackedUp": true,
+        "priorStateBackup": true,
+        "canonicalRestoration": true
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "invalid and failed imports leave the active saved game intact",
+      "passed": true,
+      "evidence": {
+        "parseFailureSafe": true,
+        "commitFailureSafe": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "real import queued behind another tab cannot overwrite that newer action",
+      "passed": true,
+      "evidence": {
+        "selectionTimeStateRespected": true,
+        "staleFileCallbackRejected": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "missing Web Locks remains read-only with visible warning and exact export",
+      "passed": true,
+      "evidence": {
+        "injectedUnavailableCapability": true,
+        "noLocalStorageLockFallback": true,
+        "readAndNativeExport": true
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "denied canonical storage read aborts startup without rewriting original",
+      "passed": true,
+      "evidence": {
+        "controlledSecurityError": true,
+        "oldBytesPreserved": true
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "native personal accord uses actual trips, remote view grants no witness",
+      "passed": true,
+      "evidence": {
+        "freeRemoteView": true,
+        "noRemoteWitness": true,
+        "unapprovedRemoteVoyageRefused": true,
+        "realRoundtrip": true,
+        "oneReceipt": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "interrupted arrival write preserves person ships money days and allows one retry",
+      "passed": true,
+      "evidence": {
+        "controlledWriteInterruption": true,
+        "atomicRollback": true,
+        "arrivalOnce": true
+      },
+      "source": "results/browser-attempt1.json",
+      "status": "PASS"
+    },
+    {
+      "name": "local file works offline with native storage lock reload and file transfer",
+      "passed": null,
+      "evidence": {
+        "status": "BLOCKED_NOT_TESTED",
+        "reason": "environment Chromium policy refuses file:// navigation",
+        "writableOfflineAcceptance": false
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "BLOCKED_NOT_TESTED"
+    },
+    {
+      "name": "Chromium viewport and native input 375x812",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 375,
+          "height": 812
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "Chromium viewport and native input 820x1180",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 820,
+          "height": 1180
+        },
+        "input": "real Chromium tap with touch emulation",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "Chromium viewport and native input 1280x900",
+      "passed": true,
+      "evidence": {
+        "viewport": {
+          "width": 1280,
+          "height": 900
+        },
+        "input": "real Chromium click",
+        "donationOfferMatchesCredit": true,
+        "dayUnchanged": true,
+        "saveDialogNoHorizontalOverflow": true,
+        "physicalDevice": false,
+        "engine": "Chromium, not Safari"
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "loaded page offline keeps local saving and native download available",
+      "passed": true,
+      "evidence": {
+        "networkOffline": true,
+        "loadedPageLocalActionAndDownload": true,
+        "offlineColdStartTested": false,
+        "reloadError": "page.reload: net::ERR_INTERNET_DISCONNECTED\nCall log:\n\u001b[2m  - waiting for navigation until \"load\"\u001b[22m\n",
+        "scope": "already loaded HTTP page only; no claim of offline cold start"
+      },
+      "source": "results/browser-review2/checks.json",
+      "status": "PASS"
+    },
+    {
+      "name": "native title office and Eldermann copies survive import export and reload",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "derivedHistoricalCopiesOnly": true,
+        "rows": [
+          {
+            "kind": "candidate",
+            "rank": 2,
+            "office": false,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "office",
+            "rank": 3,
+            "office": true,
+            "elder": false,
+            "allOriginalFieldsPreserved": true
+          },
+          {
+            "kind": "elder",
+            "rank": 4,
+            "office": false,
+            "elder": true,
+            "allOriginalFieldsPreserved": true
+          }
+        ],
+        "noNewCareerSimulation": true
+      },
+      "source": "results/browser-extra.json"
+    },
+    {
+      "name": "native corrupt or newer active state requires confirmed raw-backed recovery",
+      "passed": true,
+      "status": "PASS",
+      "evidence": {
+        "rows": [
+          {
+            "kind": "corrupt",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          },
+          {
+            "kind": "future",
+            "noSilentFallback": true,
+            "confirmation": true,
+            "rawPreserved": true
+          }
+        ]
+      },
+      "source": "results/browser-extra.json"
+    }
+  ],
+  "nativeBrowserGroupsPassed": 19,
+  "blockedGroups": 1,
+  "failedAuthoritativeGroups": 0,
+  "webKitGameTests": 0,
+  "physicalAppleDevices": 0,
+  "fullBrowserAcceptance": false,
+  "offline": "loaded page local actions/export passed; HTTP cold reload failed offline; file:// blocked by administrator; cold-start offline not accepted",
+  "earlierFailuresPreserved": "attempt1 deterministic fixture timestamp mismatches, missing await on close; no game code changed; no weaker assertions",
+  "earlierOpaqueErrorPage": "First blocked file navigation also caused init-script storage access error on the browser error document. Init now skips non-http/https/file contexts; no product error hidden."
+}
