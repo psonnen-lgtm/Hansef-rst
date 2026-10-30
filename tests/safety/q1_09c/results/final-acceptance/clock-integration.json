@@ -1,0 +1,16 @@
+{
+  "sourceCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "passed": true,
+  "kind": "one controlled 21-day fixture, no career/economic simulation",
+  "remoteVoyageDays": 3,
+  "fee": 6,
+  "personStayed": true,
+  "nativeInterestAdvanced": true,
+  "newHullAtOriginalShipyard": true,
+  "remoteParticipantAtDestination": true,
+  "contractExpiredWithoutService": true,
+  "oneCanonicalCommit": true,
+  "reloadExact": true
+}

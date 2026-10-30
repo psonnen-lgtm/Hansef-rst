@@ -1,0 +1,28 @@
+{
+  "headAtVerification": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "verificationScriptSHA256": "628948c558779c7b752a002e50c3e70ed9e03b68ed97ea2196169b3d455ab13f",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "existingFilesChecked": 3382,
+  "existingChangedOnly": [
+    "Hansefuerst_0_4.html",
+    "docs/entwicklungsberichte/README.md"
+  ],
+  "indexAppendOnly": true,
+  "embeddedGraphicsAndOuterHTMLCSSUnchanged": true,
+  "historicTestsResultsPagesDistUnchanged": true,
+  "canonicalAuthority": "one IndexedDB row with native readwrite compare-and-put; mandatory Web Lock",
+  "localStorageCanonicalWrites": 0,
+  "baselineStatementsPreserved": 19,
+  "caseCount": 106,
+  "nativeChromiumGroups": 31,
+  "extraCriticalRepeatCases": 6,
+  "financialCriteriaPassed": true,
+  "unqualifiedQ001Closed": false,
+  "fullAcceptance": false,
+  "scriptSyntaxChecked": 17,
+  "reports": 7,
+  "relativeLinks": 23,
+  "scopeValid": true,
+  "diffCheck": true
+}

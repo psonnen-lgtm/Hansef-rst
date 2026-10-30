@@ -274,3 +274,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.09b – Sicherheitsnachprüfung und offene Entscheidungen
 
 30.10.2026 – [Gesamtbericht](Q1_09b/Q1_09b_gesamtbericht.md), [Bewertung/Kredit](Q1_09b/Q1_09b_bewertung_und_kredit.md), [Browserabnahme und manueller Geräteplan](Q1_09b/Q1_09b_browserabnahme.md), [Schiffsreisen](Q1_09b/Q1_09b_schiffsreisen.md), [Altverträge](Q1_09b/Q1_09b_altvertraege.md), [Regressionen](Q1_09b/Q1_09b_regressionstests.md), [Entscheidungsvorlage](Q1_09b/Q1_09b_entscheidungsvorlage.md).19 native Chromium-Gruppen,37 alte Basisaussagen,17 isolierte Vorschlagsgruppen und eine Treibersperre bestanden;44 Q1.09-VM-Gruppen übernommen. Produktcode unverändert; Q001/Regelfreigaben, Safari/Geräte und Offline-Kaltstart offen. Kein Merge und keine Pages-Änderung.
+
+
+## Q1.09c – Freigegebene Sicherheits- und Reiseregeln
+
+30.10.2026 – [Gesamtbericht](Q1_09c/Q1_09c_gesamtbericht.md), [W1-S](Q1_09c/Q1_09c_w1s_bewertung.md), [unbegleitete Reisen](Q1_09c/Q1_09c_unbegleitete_reisen.md), [Altvertragsfristen](Q1_09c/Q1_09c_altvertragsfristen.md), [Regressionen](Q1_09c/Q1_09c_regressionstests.md), [Browserabnahme](Q1_09c/Q1_09c_browserabnahme.md), [offene Probleme](Q1_09c/Q1_09c_offene_probleme.md). W1-S, Reisemodi und belegte einmalige Schonung aktiv; alleiniger atomarer IndexedDB-Spielstand mit Web-Lock-Grenze.106 gezielte Fälle/Prüfgruppen einschließlich31 nativer Chromium-Gruppen bestanden. Finanzpfade abgesichert, alter politischer Ansehenspfad weiterhin offen; keine uneingeschränkte Q001-/Integrationsfreigabe. Safari/echte Geräte/Offline-Kaltstart offen. Kein Merge/Pages-Deployment.

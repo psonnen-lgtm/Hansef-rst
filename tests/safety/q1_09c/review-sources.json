@@ -1,0 +1,17 @@
+{
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "mirrors": [
+    {
+      "path": "tests/safety/q1_09c/storage-engine.js",
+      "sha256": "02b4e721fffed73131df7579cc13ac3f9f30afdc875d824b21ba406620f7166f"
+    },
+    {
+      "path": "tests/safety/q1_09c/legacy-rules.js",
+      "sha256": "f8b5072ced8e4784c2c7938c218999523ff8ade6585bf2f870b33032f5194a74"
+    },
+    {
+      "path": "tests/safety/q1_09c/safety-boundary.js",
+      "sha256": "71d018b46b4156ea2908d5f0fa76528dd922c87877e7de509fb3639f8b3997cf"
+    }
+  ]
+}

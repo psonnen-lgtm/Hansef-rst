@@ -1,0 +1,87 @@
+{
+  "sourceCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "checks": [
+    {
+      "name": "all existing prices interest actual profit fees and historical book formulas remain source-identical",
+      "passed": true,
+      "evidence": {
+        "functions": [
+          "trade",
+          "bankOp",
+          "advance",
+          "donationGain",
+          "shipyardWorth",
+          "warehouseWorth",
+          "cargoBookPrice",
+          "cargoWorth",
+          "routeTravelDays",
+          "routeHandlingDays",
+          "rollTravel",
+          "regionalPrice",
+          "regionalStock",
+          "regionalMarketDay"
+        ],
+        "constants": 5,
+        "realizedProfitComputationUnchanged": true
+      }
+    },
+    {
+      "name": "active W1-S covers all 121 actual city-good reference pairs and keeps unknown history",
+      "passed": true,
+      "evidence": {
+        "pairs": 121,
+        "reference": 7744,
+        "approvedModelExact": true,
+        "historyUnchanged": true
+      }
+    },
+    {
+      "name": "bank credit ceiling borrow repay deposits and altschuld obey approved reference only",
+      "passed": true,
+      "evidence": {
+        "borrowAtLimit": true,
+        "overLimitRefused": true,
+        "noForcedOldDebtReduction": true,
+        "repayStillWorks": true
+      }
+    },
+    {
+      "name": "economic rank button and action reject inflated book wealth below W1-S threshold",
+      "passed": true,
+      "evidence": {
+        "bookWealthAboveThresholdIgnored": true,
+        "reference44999RemainsBelow45000": true,
+        "neutralCircleCannotQualify": true
+      }
+    },
+    {
+      "name": "political wealth support and harbor aid credit consumer share reference valuation",
+      "passed": true,
+      "evidence": {
+        "economicSupportStable": true,
+        "aidReferencesSameCredit": true,
+        "legacyTradeReputationNotRedesigned": true
+      }
+    },
+    {
+      "name": "real local price changes alter security but never rewrite historical cost or provenance",
+      "passed": true,
+      "evidence": {
+        "actualQuoteChange30": true,
+        "noCostRewrite": true
+      }
+    },
+    {
+      "name": "paid wage and completed hull replace one another without material-book inheritance",
+      "passed": true,
+      "evidence": {
+        "nativeConstructionAndCompletion": true,
+        "wage2500ThenRealHull": true,
+        "oldMaterialsBookStillHistorical": true
+      }
+    }
+  ],
+  "passed": true,
+  "kind": "bounded actual native W1-S consumers and formula preservation, no full simulation"
+}

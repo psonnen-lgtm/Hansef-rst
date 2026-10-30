@@ -1,0 +1,85 @@
+{
+  "sourceCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "kind": "bounded legacy assertions with awaited native root actions; VM, not browser",
+  "checks": [
+    {
+      "name": "fresh save validates",
+      "passed": true
+    },
+    {
+      "name": "invalid v3 rejected",
+      "passed": true
+    },
+    {
+      "name": "negative gold rejected",
+      "passed": true
+    },
+    {
+      "name": "v3 assigns all ship locations",
+      "passed": true
+    },
+    {
+      "name": "legacy cargo has unknown cost",
+      "passed": true
+    },
+    {
+      "name": "malformed cargo rejected",
+      "passed": true
+    },
+    {
+      "name": "credit does not grow with borrowing",
+      "passed": true
+    },
+    {
+      "name": "single arrival moves only chosen ship and cannot repeat",
+      "passed": true
+    },
+    {
+      "name": "remote cargo cannot be traded",
+      "passed": true
+    },
+    {
+      "name": "quest completion waits five days for new offer",
+      "passed": true
+    },
+    {
+      "name": "expired quest gives no reward",
+      "passed": true
+    },
+    {
+      "name": "unknown cost survives mixed purchase",
+      "passed": true
+    },
+    {
+      "name": "known weighted purchase and partial sale",
+      "passed": true
+    },
+    {
+      "name": "arrival fee is charged exactly once",
+      "passed": true
+    },
+    {
+      "name": "fee by ship type",
+      "passed": true
+    },
+    {
+      "name": "convoy fee excludes remote ship",
+      "passed": true
+    },
+    {
+      "name": "insufficient gold blocks departure",
+      "passed": true
+    },
+    {
+      "name": "exact fee allows departure",
+      "passed": true
+    },
+    {
+      "name": "planning does not charge fee",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

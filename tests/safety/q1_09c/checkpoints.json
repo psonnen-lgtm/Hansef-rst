@@ -1,0 +1,78 @@
+{
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "commits": [
+    {
+      "commit": "8dae6d22ce68e0480ebcc967fe9dd74ca1138d74",
+      "subject": "Q1.09c A: freeze approved scope and verified Q1.09b starting point"
+    },
+    {
+      "commit": "31d16ca475762d8281174e3b15328af42435ff37",
+      "subject": "Q1.09c B: activate common W1-S eligibility and wage-only construction security"
+    },
+    {
+      "commit": "135cf94d83d6cd8f2fd2e44b3e41360101dadb1c",
+      "subject": "Q1.09c C: allow explicit unaccompanied voyages without personal arrival credit"
+    },
+    {
+      "commit": "d06f7865620317fa0c64b1e5aad8bd2dcd1f3ee0",
+      "subject": "Q1.09c D: implement proven first-import deadline grace with validated one-time ledger"
+    },
+    {
+      "commit": "2f7ebe23ac81fa6489668feab22de764b3b236dc",
+      "subject": "Q1.09c D: add native legacy proof expiry one-time and rollback regressions"
+    },
+    {
+      "commit": "23fba3abae0039d1996d43334386d774c8b9dda3",
+      "subject": "Q1.09c E: add native integrated credit remote voyage and one-time grace acceptance"
+    },
+    {
+      "commit": "6b344e00a2765b98467232723c72b66948081385",
+      "subject": "Q1.09c E: preserve integration results and diagnose remaining legacy reputation path"
+    },
+    {
+      "commit": "1f9235da18808bfe82fa82c8dcf0d13ba3f197d6",
+      "subject": "Q1.09c E: retain browser reimport proof and test risk reuse after failed writes"
+    },
+    {
+      "commit": "fbcb3abbaf57dc89bea7cb8c0def541839add13d",
+      "subject": "Q1.09c E: retain hidden voyage risk across atomic write failure and retry"
+    },
+    {
+      "commit": "debff601f06633536f5d1fa52b0800f1e8ff4e0e",
+      "subject": "Q1.09c E: expose approved stay-ashore choice in existing voyage preparation"
+    },
+    {
+      "commit": "049d0ec09a81a8ee17a095cc07f38a4f1324c457",
+      "subject": "Q1.09c E: preserve reproducible native stale-LocalStorage failure before storage correction"
+    },
+    {
+      "commit": "814467f4ba8a966b759b29f860238d79fd008c9a",
+      "subject": "Q1.09c E: use one atomic IndexedDB canonical state while preserving legacy originals"
+    },
+    {
+      "commit": "754b002e2543c631f3cfbd4701f94d5a66d00296",
+      "subject": "Q1.09c E: verify native transaction abort capability failure and old safety-store migration"
+    },
+    {
+      "commit": "66991fcef7dcc8d44e4bc5fff7f89bb48868d8ac",
+      "subject": "Q1.09c E: reload current canonical data after simultaneous first-open conflict"
+    },
+    {
+      "commit": "906a2358f6165d2302ee8c4d04d8f796f2e00016",
+      "subject": "Q1.09c E: preserve valid legacy personal arrival when optional tracking is absent"
+    },
+    {
+      "commit": "da22e16d450cd51a9c4ab2bb3c1d0587cd359d13",
+      "subject": "Q1.09c D: refuse unproved grace when faster fleet changes could shorten the route"
+    },
+    {
+      "commit": "60b9ed4112fbd8e87ed7d5ee77bd1b8dc3214ba9",
+      "subject": "Q1.09c E: secure verified final cases and bounded shared-clock integration check"
+    },
+    {
+      "commit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+      "subject": "Q1.09c E: hide uncommitted voyage outcomes behind the atomic save boundary"
+    }
+  ],
+  "note": "future report/proof commits are separate; no self-referential tested commit"
+}

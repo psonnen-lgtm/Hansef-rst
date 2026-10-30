@@ -1,0 +1,109 @@
+{
+  "sourceCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "checks": [
+    {
+      "name": "native calm risks equal for personal and unaccompanied ship",
+      "passed": true,
+      "evidence": {
+        "event": "calm",
+        "days": 3,
+        "fee": 6,
+        "draws": 728,
+        "remotePersonStayed": true,
+        "noRemoteRepOrVisits": true,
+        "oneCommittedTravel": true
+      }
+    },
+    {
+      "name": "native storm risks equal for personal and unaccompanied ship",
+      "passed": true,
+      "evidence": {
+        "event": "storm",
+        "days": 3,
+        "fee": 6,
+        "draws": 729,
+        "remotePersonStayed": true,
+        "noRemoteRepOrVisits": true,
+        "oneCommittedTravel": true
+      }
+    },
+    {
+      "name": "native defended risks equal for personal and unaccompanied ship",
+      "passed": true,
+      "evidence": {
+        "event": "defended",
+        "days": 3,
+        "fee": 6,
+        "draws": 729,
+        "remotePersonStayed": true,
+        "noRemoteRepOrVisits": true,
+        "oneCommittedTravel": true
+      }
+    },
+    {
+      "name": "native pirates risks equal for personal and unaccompanied ship",
+      "passed": true,
+      "evidence": {
+        "event": "pirates",
+        "days": 3,
+        "fee": 6,
+        "draws": 730,
+        "remotePersonStayed": true,
+        "noRemoteRepOrVisits": true,
+        "oneCommittedTravel": true
+      }
+    },
+    {
+      "name": "remote convoy moves local participants only and keeps person and origins",
+      "passed": true,
+      "evidence": {
+        "localShips": 2,
+        "remoteHullStayed": true,
+        "fee": 10
+      }
+    },
+    {
+      "name": "remote arrival never witnesses old or new personal contracts",
+      "passed": true,
+      "evidence": {
+        "noPersonalService": true
+      }
+    },
+    {
+      "name": "prepare reload replan and completed reload cannot duplicate movement",
+      "passed": true,
+      "evidence": {
+        "preparationDoesNotMove": true,
+        "completedStateSaved": true,
+        "noSecondArrivalAfterReload": true
+      }
+    },
+    {
+      "name": "failed remote arrival has no money day ship person or event partial commit",
+      "passed": true,
+      "evidence": {
+        "allOrNothing": true,
+        "oneCommittedTravelAfterRetry": true
+      }
+    },
+    {
+      "name": "merchant at departure harbor can explicitly stay ashore, never join from a remote harbor",
+      "passed": true,
+      "evidence": {
+        "explicitStayAshore": true,
+        "noRemotePersonalEmbarkation": true
+      }
+    },
+    {
+      "name": "stale remote plan and unknown old person cannot start new movement",
+      "passed": true,
+      "evidence": {
+        "staleGuardRetained": true,
+        "unknownPersonNotInvented": true
+      }
+    }
+  ],
+  "passed": true,
+  "kind": "bounded actual native VM trips, deterministic risks, not full simulation"
+}

@@ -1,0 +1,14 @@
+PASS SHA256 matches native crypto on raw UTF8 sources and migrated proof is exact
+PASS one day remaining six actual route days produces exactly five grace days, no reward
+PASS actual travel and visits remain required; effective clock permits completion after original date
+PASS effective deadline expires normally and does not auto-complete a missed contract
+PASS canonical export import reload and restored original cannot stack grace
+PASS old anchor at missing partner station is not a personal visit and needs real departure and return
+PASS faster remote hull makes a single-hull rest route ambiguous and prevents excessive automatic grace
+PASS fastest available payable local hull prevents unnecessary extension for selected slower ship
+PASS unaffected supply contracts and sufficient witnessed or expired obligations receive no grace
+PASS advanced old M2 keeps personal info and contracts but never invents first-import proof
+PASS elapsed day or changed first-import state cannot become new first-import evidence
+PASS write failure rolls back anchor and grace together, retry grants once
+PASS malformed duplicate or inflated grant and unsupported revision are rejected on copy
+PASS legacy Hanse visits regions and old awards survive with only missing route grace

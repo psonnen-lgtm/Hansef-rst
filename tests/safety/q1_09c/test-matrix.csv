@@ -1,0 +1,114 @@
+category,name,status,source
+VM Basisaussagen,fresh save validates,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,invalid v3 rejected,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,negative gold rejected,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,v3 assigns all ship locations,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,legacy cargo has unknown cost,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,malformed cargo rejected,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,credit does not grow with borrowing,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,single arrival moves only chosen ship and cannot repeat,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,remote cargo cannot be traded,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,quest completion waits five days for new offer,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,expired quest gives no reward,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,unknown cost survives mixed purchase,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,known weighted purchase and partial sale,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,arrival fee is charged exactly once,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,fee by ship type,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,convoy fee excludes remote ship,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,insufficient gold blocks departure,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,exact fee allows departure,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Basisaussagen,planning does not charge fee,PASS,tests/safety/q1_09c/results/final-acceptance/basic.json
+VM Speicher,old V13 copy-import preserves all economic political and provenance fields and exact original,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,opening an active safety state twice neither rewrites it nor changes revision,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,successful donation commits once and preserves price reputation formula and game day,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,quota failure rolls back money reputation pending preparation and game observations,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,two VM contexts share an exclusive lock and reject the stale queued writer,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,same-tab queued double confirmation cannot charge twice from one displayed revision,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,missing Web Locks is fail-closed but read-only views and original export remain usable,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,blocked original backup prevents activation without touching old bytes,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,export returns committed complete state and reload retains the same values,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,future active safety revision cannot destroy current or fall back to stale V13,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,ordinary buy sell bank and warehouse actions remain valid under the shared boundary,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM Speicher,political receipt failure and double execution remain atomic,PASS,tests/safety/q1_09c/results/final-acceptance/storage.json
+VM W1-S-Verbraucher,all existing prices interest actual profit fees and historical book formulas remain source-identical,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,active W1-S covers all 121 actual city-good reference pairs and keeps unknown history,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,bank credit ceiling borrow repay deposits and altschuld obey approved reference only,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,economic rank button and action reject inflated book wealth below W1-S threshold,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,political wealth support and harbor aid credit consumer share reference valuation,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,real local price changes alter security but never rewrite historical cost or provenance,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM W1-S-Verbraucher,paid wage and completed hull replace one another without material-book inheritance,PASS,tests/safety/q1_09c/results/final-acceptance/economic.json
+VM Altfristen,SHA256 matches native crypto on raw UTF8 sources and migrated proof is exact,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,"one day remaining six actual route days produces exactly five grace days, no reward",PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,actual travel and visits remain required; effective clock permits completion after original date,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,effective deadline expires normally and does not auto-complete a missed contract,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,canonical export import reload and restored original cannot stack grace,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,old anchor at missing partner station is not a personal visit and needs real departure and return,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,faster remote hull makes a single-hull rest route ambiguous and prevents excessive automatic grace,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,fastest available payable local hull prevents unnecessary extension for selected slower ship,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,unaffected supply contracts and sufficient witnessed or expired obligations receive no grace,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,advanced old M2 keeps personal info and contracts but never invents first-import proof,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,elapsed day or changed first-import state cannot become new first-import evidence,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,"write failure rolls back anchor and grace together, retry grants once",PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,malformed duplicate or inflated grant and unsupported revision are rejected on copy,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Altfristen,legacy Hanse visits regions and old awards survive with only missing route grace,PASS,tests/safety/q1_09c/results/final-acceptance/grace.json
+VM Reisen,native calm risks equal for personal and unaccompanied ship,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,native storm risks equal for personal and unaccompanied ship,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,native defended risks equal for personal and unaccompanied ship,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,native pirates risks equal for personal and unaccompanied ship,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,remote convoy moves local participants only and keeps person and origins,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,remote arrival never witnesses old or new personal contracts,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,prepare reload replan and completed reload cannot duplicate movement,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,failed remote arrival has no money day ship person or event partial commit,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,"merchant at departure harbor can explicitly stay ashore, never join from a remote harbor",PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+VM Reisen,stale remote plan and unknown old person cannot start new movement,PASS,tests/safety/q1_09c/results/final-acceptance/travel.json
+native VM historische Handelsfälle,A01-empty-neutral,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A02-mixed-three-cycles,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A03-partial,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A04-warehouse-roundtrip,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A05-two-ships,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A06-real-profit,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A07-real-loss,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM historische Handelsfälle,A08-old-rank-threshold,PASS,tests/safety/q1_09c/results/final-acceptance/valuation.json
+native VM Bau-Fixture,unvermischte Materialien,PASS,tests/safety/q1_09c/results/final-acceptance/construction.json
+native VM Bau-Fixture,neutraler Holzhandel,PASS,tests/safety/q1_09c/results/final-acceptance/construction.json
+gezielte VM Integration,risk,PASS,tests/safety/q1_09c/results/final-acceptance/risk.json
+gezielte VM Integration,person,PASS,tests/safety/q1_09c/results/final-acceptance/person.json
+gezielte VM Integration,clock-integration,PASS,tests/safety/q1_09c/results/final-acceptance/clock-integration.json
+echter Chromium,native boot copies V13 byte-exact original and reload does not rewrite,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,two native tabs first-open one canonical party and both load current data,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,two native tabs queue competing actions under one real Web Lock,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,same-tab queued double confirmation credits exactly once,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,closing a queued tab cancels its write before lock acquisition,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,closing lock holder releases native exclusion for surviving tab,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,"injected quota failure rolls back actual RAM disk and revision, then retry succeeds",PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,real FileReader import and canonical/original downloads restore complete copies,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,invalid and failed imports leave the active saved game intact,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,real import queued behind another tab cannot overwrite that newer action,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,missing Web Locks remains read-only with visible warning and exact export,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,missing IndexedDB refuses writes and keeps exact original export available,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native transaction abort after put rolls back entire game and allows one retry,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,old safety1 LocalStorage party migrates to sole IndexedDB canonical without changing source,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,denied canonical storage read aborts startup without rewriting original,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,"native personal accord uses actual trips, remote view grants no witness",PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,interrupted arrival write preserves person ships money days and allows one retry,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,local file works offline with native storage lock reload and file transfer,BLOCKED_NOT_TESTED,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,loaded page offline keeps local saving and native download available,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native title office and Eldermann copies survive import export and reload,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native corrupt or newer active state requires confirmed raw-backed recovery,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native approved W1-S neutral trade cannot add security or credit,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native unaccompanied arrival keeps person and refuses otherwise matching council visit,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,two native tabs confirm one unaccompanied voyage exactly once,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native failed arrival reuses one hidden risk on retry,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native pending commit hides uncommitted risk and exposes arrival only after transaction success,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native departure dialog lets merchant stay ashore without a new menu,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,native grace original deadline ledger and export survive real file reimport and restart,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,two native tabs cannot grant the same legacy deadline twice,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,Chromium viewport and native input 375x812,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,Chromium viewport and native input 820x1180,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+echter Chromium,Chromium viewport and native input 1280x900,PASS,tests/safety/q1_09c/results/final-acceptance/browser.json
+offener Anerkennungspfad,neutrales Geschäft +1 globales Ansehen / politische Unterstützung +1/6,KNOWN_OPEN,tests/safety/q1_09c/results/final-acceptance/reputation-open.json
+noch nicht abgenommen,Safari/WebKit,NOT_ACCEPTED,docs/entwicklungsberichte/Q1_09c/Q1_09c_browserabnahme.md
+noch nicht abgenommen,echtes iPhone/iPad,NOT_ACCEPTED,docs/entwicklungsberichte/Q1_09c/Q1_09c_browserabnahme.md
+noch nicht abgenommen,Offline-Kaltstart,NOT_ACCEPTED,docs/entwicklungsberichte/Q1_09c/Q1_09c_browserabnahme.md
+noch nicht abgenommen,physischer Speicher-/OS-Abbruch,NOT_ACCEPTED,docs/entwicklungsberichte/Q1_09c/Q1_09c_browserabnahme.md
+konservativer Ausschluss,unklarer Flottenwechsel / fortgeschrittene M2 ohne Erstnachweis,MANUAL_REVIEW_NO_AUTO_GRACE,docs/entwicklungsberichte/Q1_09c/Q1_09c_altvertragsfristen.md

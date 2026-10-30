@@ -1,0 +1,51 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "branch": "fix/q1-09c-safety-finalization",
+  "parent": "afb2bc9ce5496ecfcd8a5a17da1301825262f438",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "rootVersion": 13,
+  "politicsVersion": 2,
+  "safetyVersion": 3,
+  "canonicalStorage": {
+    "backend": "IndexedDB",
+    "database": "hansefuerst-local-safety3",
+    "objectStore": "game",
+    "key": "active",
+    "value": "one complete JSON string",
+    "WebLocksMandatoryForWrites": true,
+    "readwriteCompareAndPutIsNativeTransaction": true,
+    "localStorageCanonicalWrites": false,
+    "legacyLocalStorageUntouched": true
+  },
+  "approvedRulesImplemented": [
+    "W1-S",
+    "unaccompanied voyages",
+    "one-time evidenced legacy grace"
+  ],
+  "newCasesPassed": 106,
+  "nativeChromiumGroupsPassed": 31,
+  "VMGroupsAndCasesPassed": 75,
+  "stabilityRepetitions": {
+    "rounds": 3,
+    "casesEach": 2,
+    "allPassed": true
+  },
+  "fileURLBlockedNotPassed": 1,
+  "financialQ001CriteriaPassed": true,
+  "Q001UnqualifiedClosed": false,
+  "legacyGlobalReputationPathOpen": true,
+  "Q002NativeScopedAcceptance": true,
+  "Q003NativeScopedAcceptance": true,
+  "fullIntegrationAcceptance": false,
+  "webKitTests": 0,
+  "realAppleDeviceTests": 0,
+  "offlineColdStartAccepted": false,
+  "largeSimulations": 0,
+  "realUserSavesUsed": 0,
+  "merged": false,
+  "PagesDistChanged": false,
+  "historicalResultsChanged": false,
+  "old44And74": "historical references only, not falsely rerun as complete suites",
+  "authoritativeResultsDirectory": "tests/safety/q1_09c/results/final-acceptance"
+}

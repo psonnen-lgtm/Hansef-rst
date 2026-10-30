@@ -1,0 +1,15 @@
+{
+  "sourceCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameHash": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "kind": "read-only reuse of actual E-valuation action result plus native support formula, no rerun trades",
+  "source": "tests/safety/q1_09c/results/final-acceptance/valuation.json",
+  "financialSecurityDelta": 0,
+  "creditDelta": 0,
+  "legacyReputationDelta": 1,
+  "politicalSupportDelta": 0.16666666666666663,
+  "legacyPoliticalRecognitionStillPresent": true,
+  "status": "KNOWN_OPEN_POLITICAL_REPUTATION_PATH_NOT_SILENTLY_REDESIGNED",
+  "Q001FinancialValueConsumersProtected": true,
+  "Q001UnqualifiedClosure": false,
+  "passedDiagnostic": true
+}
