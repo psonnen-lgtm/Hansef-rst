@@ -1,0 +1,131 @@
+{
+  "sourceCommit": "6808edd7de70041023767d35c72c64f68ffc41b4",
+  "gameHash": "649977a7153ce39fc0b66bc103a0f1eba48b00d7a4fe081e32aaccfa6e2e71cf",
+  "checks": [
+    {
+      "name": "native economic formulas prices goods distances interest and fees remain byte-identical",
+      "passed": true,
+      "evidence": {
+        "functions": [
+          "dailyMarketPrice",
+          "regionalPrice",
+          "regionalStock",
+          "regionalMarketDay",
+          "creditLimit",
+          "cargoBookPrice",
+          "cargoWorth",
+          "warehouseWorth",
+          "shipyardWorth",
+          "netWorth",
+          "bankOp",
+          "shipbuildingQuote",
+          "routeTravelDays",
+          "routeHandlingDays",
+          "donationGain",
+          "completeQuests",
+          "politicalSupport"
+        ],
+        "constants": [
+          "GOODS",
+          "SHIPTYPES",
+          "DIST",
+          "SHIPBUILD_RECIPES",
+          "WAREHOUSE_RULES"
+        ]
+      }
+    },
+    {
+      "name": "old V11 actual historical endpoint imports without loss before technical upgrade",
+      "passed": true,
+      "evidence": {
+        "sourceVersion": 11,
+        "outputVersion": 13,
+        "elderKept": true
+      }
+    },
+    {
+      "name": "unknown historical cost and source remain unknown in copied V13",
+      "passed": true,
+      "evidence": {
+        "noHistoryInvented": true
+      }
+    },
+    {
+      "name": "post-commit observer fault does not roll back a successfully stored action",
+      "passed": true,
+      "evidence": {
+        "afterCommitFailureRecoverable": true
+      }
+    },
+    {
+      "name": "current M2 export re-import preserves confirmed person and completed political receipts",
+      "passed": true,
+      "evidence": {
+        "noSecondAnchorOrJob": true
+      }
+    },
+    {
+      "name": "no random draw during old V13 copy activation or repeated safety reload",
+      "passed": true,
+      "evidence": {
+        "draws": 0
+      }
+    },
+    {
+      "name": "original-overflow backup slots fail closed without overwriting any original",
+      "passed": true,
+      "evidence": {
+        "numberedSlots": 100,
+        "noOriginalOverwritten": true
+      }
+    },
+    {
+      "name": "download helper preserves complete canonical and original bytes for manual restoration",
+      "passed": true,
+      "evidence": {
+        "exactCanonicalExport": true,
+        "exactLegacyDownload": true,
+        "oldReaderRestoresOriginal": true,
+        "downloadDOM": "stub, not actual browser transfer"
+      }
+    },
+    {
+      "name": "unsupported active bytes can only be replaced after confirmation with exact original preserved",
+      "passed": true,
+      "evidence": {
+        "unsupportedOriginalKept": true,
+        "confirmationRequired": true
+      }
+    },
+    {
+      "name": "corrupt active text is backed up byte-exactly before explicit manual recovery",
+      "passed": true,
+      "evidence": {
+        "badOriginalNeverDiscarded": true,
+        "explicitRecoveryWorks": true
+      }
+    },
+    {
+      "name": "denied localStorage read at startup fails closed without an unhandled activation",
+      "passed": true,
+      "evidence": {
+        "noActivation": true,
+        "originalKept": true
+      }
+    },
+    {
+      "name": "actual opt-in logger retains original interest days when observations are deferred until commit",
+      "passed": true,
+      "evidence": {
+        "actualNativeLogger": true,
+        "capturedDays": [
+          1,
+          2
+        ],
+        "commitDay": 3,
+        "API": "controlled DOM/performance stubs, not browser"
+      }
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,27 @@
+{
+  "sourceCommit": "6808edd7de70041023767d35c72c64f68ffc41b4",
+  "gameHash": "649977a7153ce39fc0b66bc103a0f1eba48b00d7a4fe081e32aaccfa6e2e71cf",
+  "passed": true,
+  "evidence": {
+    "ships": [
+      {
+        "id": 1,
+        "city": 1
+      },
+      {
+        "id": 2,
+        "city": 0
+      }
+    ],
+    "person": {
+      "city": 1,
+      "source": "arrival",
+      "at": 486003
+    },
+    "orders": 0,
+    "view": 1,
+    "gold": 9994,
+    "day": 3
+  },
+  "kind": "one controlled travel/newbuild completion integration fixture"
+}

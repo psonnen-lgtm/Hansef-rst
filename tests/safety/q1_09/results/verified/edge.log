@@ -1,0 +1,12 @@
+PASS native economic formulas prices goods distances interest and fees remain byte-identical
+PASS old V11 actual historical endpoint imports without loss before technical upgrade
+PASS unknown historical cost and source remain unknown in copied V13
+PASS post-commit observer fault does not roll back a successfully stored action
+PASS current M2 export re-import preserves confirmed person and completed political receipts
+PASS no random draw during old V13 copy activation or repeated safety reload
+PASS original-overflow backup slots fail closed without overwriting any original
+PASS download helper preserves complete canonical and original bytes for manual restoration
+PASS unsupported active bytes can only be replaced after confirmation with exact original preserved
+PASS corrupt active text is backed up byte-exactly before explicit manual recovery
+PASS denied localStorage read at startup fails closed without an unhandled activation
+PASS actual opt-in logger retains original interest days when observations are deferred until commit
