@@ -1,0 +1,8 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),{environment:E,originalState:S,hash}=require('./harness.cjs');
+let evidence;
+(async()=>{
+ const old=S('s.day=100;s.gold=10000;s.ships[0].id=1;s.shipyard.nextId=2;s.shipyard.lastShipId=2;s.shipyard.orders=[{id:1,type:0,city:0,started:totalDay()-19,ready:totalDay()+1,shipId:2,materialsBook:352,wage:2500}]'),g=E({stored:{'hansefuerst-v04':JSON.stringify(old)}});await g.ready();await g.eval('confirmLegacyPresence()');await g.eval('planTravel(1,false)');g.eval('pending.resolved=true;pending.event=null');await g.eval('arrive()');g.eval('validate(s)');
+ const x=g.state();evidence={ships:x.ships.map(q=>({id:q.id,city:q.city})),person:x.politics.safety.person,orders:x.shipyard.orders.length,view:x.city,gold:x.gold,day:x.day};assert.equal(x.ships.find(q=>q.id===1).city,1,'actual participant must arrive even if shipbuilding replaces the state mid-trip');assert.equal(x.ships.find(q=>q.id===2).city,0,'newbuild stays at its own yard');assert.equal(x.politics.safety.person.city,1);assert.equal(x.shipyard.orders.length,0);assert.equal(x.gold,9994);assert.equal(x.day,102);
+ fs.writeFileSync(process.argv[2],JSON.stringify({sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),gameHash:hash,passed:true,evidence,kind:'one controlled travel/newbuild completion integration fixture'},null,2)+'\n');console.log('PASS participant, person and newbuild locations remain consistent');
+})().catch(e=>{fs.writeFileSync(process.argv[2],JSON.stringify({gameHash:hash,passed:false,evidence,error:e.stack},null,2)+'\n');console.error(e);process.exitCode=1;});

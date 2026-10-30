@@ -36,4 +36,7 @@ function sourceFunction(h,name){const s=h.match(/<script>([\s\S]*?)<\/script>/)[
  await check('corrupt active text is backed up byte-exactly before explicit manual recovery',async()=>{
  const raw='{broken active original',g=E({stored:{[KEY]:raw}});assert.equal(await g.ready(),false);g.selectImport(JSON.stringify(S('s.gold=14000')));await g.finishImport();assert.equal(g.state().gold,14000);assert([...g.disk.values()].includes(raw));return {badOriginalNeverDiscarded:true,explicitRecoveryWorks:true};
  });
+ await check('denied localStorage read at startup fails closed without an unhandled activation',async()=>{
+ const old=S(),g=E({stored:{[OLD]:JSON.stringify(old)}});g.ctx.localStorage.getItem=()=>{throw Error('synthetic storage access denied')};assert.equal(await g.ready(),false);assert.equal(g.state(),null);assert.equal(g.disk.get(OLD),JSON.stringify(old));assert(!g.disk.has(KEY));return {noActivation:true,originalKept:true};
+ });
 })().then(()=>{fs.writeFileSync(process.argv[2],JSON.stringify({sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),gameHash:hash,checks,passed:true},null,2)+'\n');}).catch(e=>{fs.writeFileSync(process.argv[2],JSON.stringify({gameHash:hash,checks,passed:false,error:e.stack},null,2)+'\n');console.error(e);process.exitCode=1;});
