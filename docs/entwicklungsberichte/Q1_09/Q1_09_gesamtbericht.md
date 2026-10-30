@@ -62,3 +62,28 @@ Keine Pages-/Dist-Aktualisierung, kein Merge, keine echte Nutzerdatei gelesen od
 3.231 bestehende Dateien abseits der Hauptspieldatei gegen die Ausgangsbasis geprüft: Berichtsindex ausschließlich ergänzt, alle übrigen Altdateien bytegleich. Produktive Änderungen ausschließlich in `Hansefuerst_0_4.html`. Alte Testskripte/Ergebnisse, Pages/Dist und eingebettete Grafikdaten unverändert. Sieben Berichte, Quellenhashes,54 Matrixzeilen mit44 VM-Erfolgen und4 ausdrücklich offenen Q-001-Gegenfällen geprüft. [Kontrollnachweis](../../../tests/safety/q1_09/results/verification.json).
 
 Vollständiges Dokumentationspaket zunächst in `d8d3238ea56caaed33b04931356ff746bfba8973` veröffentlicht. Das abschließende Paket einschließlich unverändert getesteten Codes wird nun aus einem unabhängigen GitHub-Fetch zurückgelesen. Prüfcode und Spielstand haben getrennte Commitangaben; keine angeblich selbstreferenzielle Abschluss-Test-ID.
+
+
+## Tatsächlich von GitHub zurückgelesen
+
+Veröffentlichter Prüf-/Berichtstand **`fc4c908b3e7305140a0d23d0497fa9c0ac58239b`**: aus einem frischen unabhängigen Git-Objektverzeichnis per GitHub-HTTPS geladen. **Alle97 damaligen Dateien** einschließlich der vollständigen Haupt-HTML, aller sieben Berichte, Testquellen, Rohdaten und Logs vollständig gelesen und byteweise mit der Arbeitskopie verglichen. Dateimenge vollständig, alle Bytes identisch. [Rücklesebeleg](../../../tests/safety/q1_09/results/github-readback.json).
+
+Wichtige Sicherungsstände:
+
+|Commit|Inhalt|
+|---|---|
+|`e24d68106822f8fc41095416b99773fcb72b91ef`|TeilA: Inventar und feste historische Reproduktion vor Ausführung|
+|`a0da21e022b53764b79a1eed43b0c671ba3b74db`|TeilB: gemeinsame Web-Lock-/Kandidatengrenze und Originalübernahme|
+|`f3dbce6e3557a3b727c4338dedeafb94e9fbd351`|TeilB: kontrollierte vollständige Fixtures vor erfolgreicher Speicherprüfung|
+|`4336d04821b4a660e450fe787fba7ed8d0f28cbd`|TeilC: Personenort und persönliche Guards|
+|`6502490e44c5588920fb259d2b5e1ef484e045b9`|TeilC: Anwesenheits-/Import-/Titelregressionen vor Ausführung|
+|`a712517c25c74d0215c6a1077668bd2aeeb67aa3`|TeilD: Vergleich und indirekter Bauwertpfad, keine Aktivierung|
+|`162d8162aaad8ff265ee03f31c0cbe39df6f9ad4`|Wiederherstellung auch bei unlesbarem aktivem Stand, immer mit Originalbackup|
+|`6808edd7de70041023767d35c72c64f68ffc41b4`|Zeit-/Finanzkontext gepufferter Beobachtungen erhalten|
+|`15c2e3792d855afcddf26ba0572d6317504d8b46`|Tatsächlich getesteter Endcode: Erstimportoriginal auf leerem Gerät wiederherstellbar|
+|`d8d3238ea56caaed33b04931356ff746bfba8973`|Alle sieben Berichte, offene Abnahmefehler und Endergebnisse veröffentlicht|
+|`fc4c908b3e7305140a0d23d0497fa9c0ac58239b`|Lokale Umfangsprüfung gesichert; vollständig von GitHub zurückgelesen|
+
+[Übergabe](../../../tests/safety/q1_09/results/handoff.json), [Prüfsummen](../../../tests/safety/q1_09/SHA256SUMS). Die abschließenden Metadaten und konkretisierten **nicht aktivierten** Sicherheitenvorschläge werden nach ihrem Push ebenfalls vollständig zurückgelesen; kein selbstreferenzieller Commitbeleg behauptet.
+
+Entwicklungsbranch/main unverändert. Kein Merge, keine Pages-/Dist-Änderung, keine echte Nutzerdatei verändert. **Q-001 und reale Browser-/Geräteabnahme bleiben offene Freigabevoraussetzungen.** Nach letzter Veröffentlichung endet dieser begrenzte Auftrag; keine automatische Q1.10 oder weitere Umsetzung.

@@ -41,3 +41,5 @@ Speicher-/Personenschutz: implementiert und gezielt VM getestet; Browserabnahme 
 
 
 [Gesamtbericht](Q1_09_gesamtbericht.md) · [Regressionen](Q1_09_regressionstests.md) · [Offene Entscheidungen](Q1_09_offene_entscheidungen.md)
+
+Konkrete auswählbare Kandidaten einschließlich gemeinsamer konservativer Bauwertbehandlung stehen am Ende des [Buchwertberichts](Q1_09_buchwert_und_kreditschutz.md): W1-S bzw. W2-S. Auch diese Bauwertregel und die davon betroffenen Verbraucher benötigen ausdrückliche Zustimmung; nichts wurde aktiviert.

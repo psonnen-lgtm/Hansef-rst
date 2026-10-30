@@ -57,3 +57,17 @@ Technisch unstrittig sind nun konsistente Speicherung und erhaltene Originaldate
 
 
 [Gesamtbericht](Q1_09_gesamtbericht.md) · [Regressionen](Q1_09_regressionstests.md) · [Offene Entscheidungen](Q1_09_offene_entscheidungen.md)
+
+
+## Konkret entscheidbarer Sicherheitenvorschlag – nicht aktiviert
+
+Als gemeinsamer, ausdrücklich genehmigungspflichtiger technischer Nenner wäre möglich:
+
+`S0 = Gold + Bank − Schuld + bisheriger Schiffswert + Summe(min(bezahlter Werftlohn, 0,8 × Typkosten))`.
+
+- **W1-S:** S0 plus alle vorhandenen Warenmengen zum aktuellen Kurs ihres tatsächlichen Hafens, einheitlich für jedes eigene Schiff/Lager dieser Stadt.
+- **W2-S:** nur S0, also keine Waren als Sicherheit.
+- Beide Varianten würden laufende **Materialbuchwerte nicht** besichern. Das benötigt keine erfundenen historischen Materialmengen; vorhandene Kosten/Bestände bleiben als Geschichte erhalten. Besicherung des bezahlten Lohns ist ebenfalls Teil der zu bestätigenden Regel, keine bereits genehmigte Annahme.
+- Der bestehende45%-Kreditfaktor und1000er-Unterwert würden lediglich auf die genehmigte neue Basis angewendet; auch die Verwendung derselben Basis in heutigen anderen Zulassungsverbrauchern ist mitzuentscheiden. Historische Buchwertanzeige und echte Einstandskosten getrennt bewahren.
+
+Im oben gezeigten Baupaar ergäbe S0 vor/nach der neutralen Holzrunde jeweils14.960 und ein rechnerischer Kreditrahmen6.732. Heute sind es6.890 bzw.6.975. Das macht den Eingriff sichtbar: weniger Sicherheit während des Baus, nicht nur ein unsichtbarer Bugfix. **Nur Rechenvorschlag, keine neue native Regel und keine dynamisch abgenommene Variante.** Alternativ eine konkrete W1-Bau-Referenz bewerten, dann deren Quellen-/Altfallregeln ausdrücklich bestimmen. Ohne Entscheidung bleibt die aktuelle Bewertung unverändert.
