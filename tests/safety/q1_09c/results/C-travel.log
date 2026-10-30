@@ -1,0 +1,9 @@
+PASS native calm risks equal for personal and unaccompanied ship
+PASS native storm risks equal for personal and unaccompanied ship
+PASS native defended risks equal for personal and unaccompanied ship
+PASS native pirates risks equal for personal and unaccompanied ship
+PASS remote convoy moves local participants only and keeps person and origins
+PASS remote arrival never witnesses old or new personal contracts
+PASS prepare reload replan and completed reload cannot duplicate movement
+PASS failed remote arrival has no money day ship person or event partial commit
+PASS stale remote plan and unknown old person cannot start new movement
