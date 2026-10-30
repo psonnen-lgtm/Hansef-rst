@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "preparedFromCommit": "ebad74f02307d596cdaa4f05b02142626d9041d9",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "gameByteIdentical": true,
+  "files": [
+    {
+      "file": "Hansefuerst_0_4.html",
+      "bytes": 46389124,
+      "sha256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048"
+    },
+    {
+      "file": "Q1_09d_NUR_SYNTHETISCHE_TESTDATEN.zip",
+      "bytes": 11019,
+      "sha256": "9568fc76954bd5decbc2b26a95180b509da72fd0a85d1856ee6292f4a959f8fb"
+    },
+    {
+      "file": "geraete-ergebnisse.csv",
+      "bytes": 6769,
+      "sha256": "8022155d0e72ee6d7507f7c45ffdda9ddafbecc57ec652c27c950c12aa4951fa"
+    },
+    {
+      "file": "geraeteabnahme.html",
+      "bytes": 4721,
+      "sha256": "1d83db8405b58169c7cc2cb5c308aeb160db9f24cb3a99a4232dbaec67dcba69"
+    },
+    {
+      "file": "index.html",
+      "bytes": 2349,
+      "sha256": "79765ba24ecdc94b96e0de9698c132d398022223616cfb2dcdb015ddd537ee28"
+    }
+  ],
+  "publishedFilesIfDeployed": 5,
+  "staticLocalLinksChecked": 8,
+  "deviceRowsNotTested": 42,
+  "uploadZIP": {
+    "file": "HANSEFUERST_Q1_09e_NETLIFY_UPLOAD.zip",
+    "bytes": 35006557,
+    "sha256": "4a8c89e9fc29201ba11189c8a41219cd84aa16d30d88283396487d4a0e9dd476",
+    "allFiveFilesByteIdentical": true
+  },
+  "websiteDeployed": false,
+  "onlineGameTestsPerformed": 0,
+  "netlifyFreePlanVerified": false,
+  "automaticTopUpVerifiedDisabled": false,
+  "buildRequiresNetwork": false,
+  "buildDeploysAnything": false
+}

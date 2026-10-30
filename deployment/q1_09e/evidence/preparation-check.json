@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-30 Europe/Berlin",
+  "baseCommit": "ebad74f02307d596cdaa4f05b02142626d9041d9",
+  "testedGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "changedPathsWithinScope": true,
+  "oldFileChangedOnly": "docs/entwicklungsberichte/README.md (append-only)",
+  "gameByteIdentical": true,
+  "gameBytes": 46389124,
+  "publishedPackageFilesLocallyVerified": 5,
+  "uploadZIPMembersReadAndMatched": 5,
+  "relativeMarkdownLinksChecked": 14,
+  "reports": 3,
+  "matrixRowsNotTested": 42,
+  "pythonSyntax": "PASS",
+  "workingAndStagedDiffCheck": "PASS",
+  "websiteDeployed": false,
+  "onlineChromiumTests": 0,
+  "appleDeviceTests": 0,
+  "status": "Bereitstellung vorbereitet – Anmeldung erforderlich",
+  "additionalBlocker": "Netlify app/API/docs: proxy tunnel HTTP403; Free plan, file limit and paid automatic top-up setting not verified"
+}

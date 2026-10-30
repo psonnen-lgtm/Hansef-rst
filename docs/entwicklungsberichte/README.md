@@ -284,3 +284,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.09d – Geschützte iPhone-/iPad-Abnahme vorbereiten
 
 30.10.2026 – [Gesamtbericht](Q1_09d/Q1_09d_gesamtbericht.md), [isolierter Testzugang](Q1_09d/Q1_09d_testzugang.md), [Geräteanleitung](Q1_09d/Q1_09d_geraeteanleitung.md), [Ergebnismatrix](Q1_09d/Q1_09d_testmatrix.md). Unveränderter Q1.09c-Spielcode; fünf ausschließlich synthetische V13-Teststände, fünf bestandene VM-Datenprüfungen. Keine echte Safari-/Apple-Geräteabnahme, keine Testwebsite veröffentlicht, keine Änderungen an Spiel/Pages oder produktiven Daten. Separate HTTPS-Origin und öffentliche Bereitstellung erst nach gesonderter Freigabe. Offline-Kaltstart bleibt offen.
+
+
+## Q1.09e – Separate Netlify-Testseite vorbereiten
+
+30.10.2026 – [Gesamtbericht](Q1_09e/Q1_09e_gesamtbericht.md), [Deploymentstatus und Anmeldung](Q1_09e/Q1_09e_deployment.md), [Apple-Kurzabnahme](Q1_09e/Q1_09e_geraeteabnahme.md). Status: **Bereitstellung vorbereitet – Anmeldung erforderlich**. Veröffentlichung ausdrücklich freigegeben, aber Netlify-Verbindung/CLI-Anmeldung fehlt und App/API sind mit HTTP403 blockiert. Minimales Fünf-Dateien-Paket lokal mit bytegleichem Q1.09c-Spielcode geprüft; keine echte URL, kein Deployment, keine neuen Online-/Apple-Tests. Produktive Version, Spielstände, bestehende Ergebnisse/Pages unverändert. Kein Merge und keine Folgephase.

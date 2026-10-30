@@ -1,0 +1,19 @@
+{
+  "netlifyCLI": null,
+  "netlifyAuthTokenPresent": false,
+  "netlifyAccessTokenPresent": false,
+  "knownConfigFiles": [
+    {
+      "path": "/home/agent/.config/netlify/config.json",
+      "exists": false
+    },
+    {
+      "path": "/home/agent/.netlify/config.json",
+      "exists": false
+    },
+    {
+      "path": ".netlify/state.json",
+      "exists": false
+    }
+  ]
+}

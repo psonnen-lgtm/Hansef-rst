@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://api.netlify.com/api/v1/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://app.netlify.com/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://docs.netlify.com/deploy/create-deploys/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]
