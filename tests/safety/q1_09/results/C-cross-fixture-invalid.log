@@ -1,0 +1,15 @@
+evalmachine.<anonymous>:655
+ const l=x.information.letters,now=x.year*360+x.day,keys=(o,k)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).length===k.length&&k.every(v=>Object.hasOwn(o,v)),int=(n,min=0,max=now)=>Number.isSafeInteger(n)&&n>=min&&n<=max,bad=()=>{throw Error('Ungültige Handelsbriefdaten')};
+                                                                                                                                                                                                                                                    ^
+
+Error: Ungültige Handelsbriefdaten
+    at bad (evalmachine.<anonymous>:655:251)
+    at validateTradeLetters (evalmachine.<anonymous>:656:501)
+    at validateInformation (evalmachine.<anonymous>:678:107)
+    at validate (evalmachine.<anonymous>:262:173)
+    at evalmachine.<anonymous>:1:349
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at originalState (/workspace/Hansef-rst/tests/safety/q1_09/harness.cjs:12:5)
+    at /workspace/Hansef-rst/tests/safety/q1_09/cross-arrival-check.cjs:5:12
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/safety/q1_09/cross-arrival-check.cjs:8:3)
