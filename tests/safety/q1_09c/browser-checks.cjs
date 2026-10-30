@@ -38,6 +38,9 @@ const withoutSafety=x=>{x=JSON.parse(JSON.stringify(x));x.politics.version=1;del
   const x=await state(p),raw=await disk(p);assert.deepEqual(withoutSafety(x),defaultFixture);assert.equal(await download(p,true),JSON.stringify(defaultFixture));assert.equal(await p.evaluate(()=>navigator.locks!==undefined),true);
   await p.reload();await p.waitForFunction(()=>SafetySession.loaded&&!!s);assert.equal(await disk(p),raw);assert.equal(await p.evaluate(k=>qaWrites.filter(w=>w.key===k).length,KEY),0);return {nativeWebLocks:true,noLoadWrite:true,legacyBytesExact:true};
  }));
+ await check('two native tabs first-open one canonical party and both load current data',()=>isolated({},async({context,page:p})=>{
+  await p.evaluate(async()=>{const db=await safetyOpenDatabase();await new Promise((resolve,reject)=>{const tx=db.transaction('game','readwrite');tx.objectStore('game').delete('active');tx.oncomplete=resolve;tx.onabort=()=>reject(tx.error)});db.close()});await p.close();const [a,b]=await Promise.all([tab(context),tab(context)]);assert.deepEqual(await state(a),await state(b));assert.equal((await state(a)).gold,defaultFixture.gold);const count=await a.evaluate(k=>qaWrites.filter(w=>w.key===k).length,KEY)+await b.evaluate(k=>qaWrites.filter(w=>w.key===k).length,KEY);assert.equal(count,1);return {simultaneousStartup:true,oneInitialCanonicalWrite:true,bothLoadFreshCanonical:true};
+ }));
  await check('two native tabs queue competing actions under one real Web Lock',()=>isolated({},async({context,page:a})=>{
   const b=await tab(context),before=await state(a);await hold(a);
   await Promise.all([a.evaluate(()=>{window.qaOp=donate(50,2)}),b.evaluate(()=>{window.qaOp=donate(50,2)})]);
