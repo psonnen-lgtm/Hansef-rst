@@ -1,0 +1,50 @@
+'use strict';
+const fs=require('node:fs'),assert=require('node:assert/strict'),cp=require('node:child_process'),crypto=require('node:crypto'),{environment:E,originalState:S,clean,hash}=require('../q1_09/harness.cjs');
+const KEY='hansefuerst-v04-safety1',OLD='hansefuerst-v04',checks=[];
+async function check(name,fn){try{const evidence=await fn();checks.push({name,passed:true,evidence});console.log('PASS '+name)}catch(e){checks.push({name,passed:false,error:e.stack});throw e}}
+const short=(extra='')=>S('acceptPoliticalJob("accord");s.politics.jobs[0].until=totalDay()+1;ship().condition=50;'+extra);
+async function boot(x=short(),options={}){const raw=JSON.stringify(x,null,2),g=E({stored:{[OLD]:raw},...options});assert(await g.ready(),g.eval('SafetySession.error'));return {g,raw,old:x}}
+async function sail(g,to){await g.eval(`planTravel(${to},false)`);assert(g.eval('pending'));g.eval('pending.resolved=true;pending.event=null');await g.eval('arrive()');assert.equal(g.state().city,to)}
+function oldFields(x){x=clean(x);x.politics.version=1;delete x.politics.safety;return x}
+(async()=>{
+await check('SHA256 matches native crypto on raw UTF8 sources and migrated proof is exact',async()=>{
+ const {g,raw,old}=await boot();for(const text of ['', 'abc','Lübeck ⚓🌿','a'.repeat(1000)]){g.ctx.qaText=text;assert.equal(g.eval('safetyDigest(qaText)'),crypto.createHash('sha256').update(text).digest('hex'))}const t=g.state().politics.safety.legacyTransfer;assert.equal(t.sourceHash,crypto.createHash('sha256').update(raw).digest('hex'));assert.deepEqual(oldFields(g.state()),old);assert.equal(g.disk.get(OLD),raw);return {exactHash:true,allOldFieldsPreserved:true};
+});
+await check('one day remaining six actual route days produces exactly five grace days, no reward',async()=>{
+ const {g,old}=await boot(),before=g.state();assert(await g.eval('confirmLegacyPresence()'));const x=g.state(),receipt=x.politics.safety.grace[0];assert(receipt);assert.equal(receipt.until-old.politics.jobs[0].until,5);assert.equal(x.politics.jobs[0].until,old.politics.jobs[0].until);assert.equal(x.gold,before.gold);assert.equal(x.rep,before.rep);assert.equal(x.day,before.day);assert.deepEqual(x.politics.records,before.politics.records);assert(!x.politics.jobs[0].witnessed);assert.equal(await g.eval('confirmLegacyPresence()'),false);assert.equal(x.politics.safety.grace.length,1);return {originalUntil:receipt.contract.until,effectiveUntil:receipt.until,routeDays:6,extension:5,noMoneyReputationReceipt:true};
+});
+await check('actual travel and visits remain required; effective clock permits completion after original date',async()=>{
+ const {g,old}=await boot();await g.eval('confirmLegacyPresence()');const q=old.politics.jobs[0];assert.equal(await g.eval(`witnessPoliticalJob(${JSON.stringify(q.id)})`),false);await sail(g,q.partner);assert(g.eval('totalDay()>s.politics.jobs[0].until'));assert(await g.eval(`witnessPoliticalJob(${JSON.stringify(q.id)})`));await sail(g,q.city);assert(await g.eval(`finishPoliticalAccord(${JSON.stringify(q.id)})`));assert.equal(await g.eval(`finishPoliticalAccord(${JSON.stringify(q.id)})`),false);assert.equal(g.state().politics.records.length,1);assert.equal(g.state().politics.safety.grace.length,1);return {actualRoundtrip:true,oneService:true,originalDatePreservedInLedger:true};
+});
+await check('effective deadline expires normally and does not auto-complete a missed contract',async()=>{
+ const {g}=await boot();await g.eval('confirmLegacyPresence()');const until=g.state().politics.safety.grace[0].until;await g.eval(`advance(${until-g.eval('totalDay()')+1})`);assert.equal(g.state().politics.jobs.length,0);assert.equal(g.state().politics.records.length,0);assert.equal(g.state().politics.safety.grace.length,1);return {noAutomaticFulfillment:true,ledgerSurvivesExpiry:true};
+});
+await check('canonical export import reload and restored original cannot stack grace',async()=>{
+ const {g,raw}=await boot();await g.eval('confirmLegacyPresence()');const first=clean(g.state().politics.safety.grace),canonical=g.eval('safetyExportText()');const h=E({stored:{[KEY]:canonical}});await h.ready();assert.deepEqual(h.state().politics.safety.grace,first);h.selectImport(canonical);assert(await h.finishImport());assert.deepEqual(h.state().politics.safety.grace,first);h.selectImport(raw);assert(await h.finishImport());assert.deepEqual(h.state().politics.safety.grace,first);assert(await h.eval('confirmLegacyPresence()'));assert.deepEqual(h.state().politics.safety.grace,first);return {restart:true,canonicalReimport:true,localOriginalRestoreCarriesEarlierLedger:true,offlineExternalFullResetNotClaimedPrevented:true};
+});
+await check('old anchor at missing partner station is not a personal visit and needs real departure and return',async()=>{
+ const {g,old}=await boot(short('s.city=s.politics.jobs[0].partner;ship().city=s.city'));await g.eval('confirmLegacyPresence()');const r=g.state().politics.safety.grace[0];assert(r.legs.length>=3);assert.equal(await g.eval(`witnessPoliticalJob(${JSON.stringify(old.politics.jobs[0].id)})`),false);await sail(g,0);await sail(g,1);assert(await g.eval(`witnessPoliticalJob(${JSON.stringify(old.politics.jobs[0].id)})`));return {noAnchorWitness:true,realReturnRequired:true,routeDays:r.legs.reduce((n,l)=>n+l.days,0)};
+});
+await check('fastest available payable local hull prevents unnecessary extension for selected slower ship',async()=>{
+ const x=short('s.politics.jobs[0].until=totalDay()+4;s.ships.push(makeShip(0,{id:2,city:0}))'),{g}=await boot(x);await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0);return {slowSelectedKoggeWouldNeed6:true,availableSchniggeNeeds4:true,noUnnecessaryGrace:true};
+});
+await check('unaffected supply contracts and sufficient witnessed or expired obligations receive no grace',async()=>{
+ const cases=[S(),S('acceptPoliticalJob("supply")'),S('acceptPoliticalJob("accord")'),short('s.politics.jobs[0].witnessed=true'),S('acceptPoliticalJob("accord");advance(2);s.politics.jobs[0].until=totalDay()-1')];
+ for(const x of cases){const {g}=await boot(x);const jobs=clean(g.state().politics.jobs);await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0);assert.deepEqual(g.state().politics.jobs,jobs)}return {cases:5,noBlanketExtension:true};
+});
+await check('advanced old M2 keeps personal info and contracts but never invents first-import proof',async()=>{
+ for(const known of [false,true]){const x=short();x.day+=2;x.politics.version=2;x.politics.safety={version:1,revision:7,person:known?{city:0,source:'arrival',at:x.year*360+1}:{city:null,source:'unknown',at:null},legacyPersonalJobs:[x.politics.jobs[0].id]};const raw=JSON.stringify(x),g=E({stored:{[KEY]:raw}});assert(await g.ready());assert.equal(g.state().politics.safety.version,2);assert.equal(g.state().politics.safety.legacyTransfer,null);assert.deepEqual(g.state().politics.safety.person,x.politics.safety.person);if(!known)await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0);assert.deepEqual(g.state().politics.jobs,x.politics.jobs);assert([...g.disk.values()].includes(raw))}return {knownPersonPreserved:true,unknownNotInvented:true,noAutomaticM2Grace:true,originalBackedUp:true};
+});
+await check('elapsed day or changed first-import state cannot become new first-import evidence',async()=>{
+ for(const action of ['advance(1)','donate(50,2)']){const {g}=await boot();await g.eval(action);await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,0)}return {noLateAnchorGrace:true,noRewrittenEconomicProof:true};
+});
+await check('write failure rolls back anchor and grace together, retry grants once',async()=>{
+ let fail=false;const {g}=await boot(short(),{fault:k=>fail&&k===KEY}),before=g.state(),raw=g.disk.get(KEY);fail=true;assert.equal(await g.eval('confirmLegacyPresence()'),false);assert.deepEqual(g.state(),before);assert.equal(g.disk.get(KEY),raw);fail=false;assert(await g.eval('confirmLegacyPresence()'));assert.equal(g.state().politics.safety.grace.length,1);assert.equal(await g.eval('confirmLegacyPresence()'),false);return {atomicPersonAndLedger:true,retryOnce:true};
+});
+await check('malformed duplicate or inflated grant and unsupported revision are rejected on copy',async()=>{
+ const {g}=await boot();await g.eval('confirmLegacyPresence()');const valid=g.state();for(const mutate of [x=>x.politics.safety.grace.push(clean(x.politics.safety.grace[0])),x=>x.politics.safety.grace[0].until++,x=>x.politics.safety.legacyTransfer.sourceHash='bad',x=>x.politics.safety.grace[0].legs[0].days++,x=>x.politics.safety.version=999]){const x=clean(valid);mutate(x);g.ctx.qaMalformed=x;assert.equal(g.eval('migrate(qaMalformed)'),null)}return {invalidCases:5,noOriginalDestroyed:true};
+});
+await check('legacy Hanse visits regions and old awards survive with only missing route grace',async()=>{
+ const F=require('../../simulation/political-progress-fixtures.cjs'),x=S('s=migrate('+JSON.stringify(F.state('ready'))+');const q=s.politics.records.find(r=>r.kind==="league");s.politics.records=s.politics.records.filter(r=>r.id!==q.id);s.politics.league={id:q.id,home:q.city,period:q.period,started:totalDay(),until:totalDay()+1,visited:[q.witnesses[0]]};s.city=q.city;ship().city=s.city'),{g,old}=await boot(x);await g.eval('confirmLegacyPresence()');assert.equal(g.state().politics.safety.grace.length,1);assert.deepEqual(g.state().politics.league,old.politics.league);assert.deepEqual(g.state().politics.records,old.politics.records);assert.deepEqual(g.state().politics.endorsements,old.politics.endorsements);return {oldVisitRetained:true,originalHanseDeadlineRetained:true,noNewSealOrReceipt:true};
+});
+})().catch(e=>{console.error(e);process.exitCode=1}).finally(()=>fs.writeFileSync(process.argv[2],JSON.stringify({sourceCommit:cp.execSync('git rev-parse HEAD').toString().trim(),gameHash:hash,checks,passed:checks.every(x=>x.passed),kind:'bounded native migration action deadline and file roundtrip checks, copies only'},null,2)+'\n',{flag:'wx'}));
