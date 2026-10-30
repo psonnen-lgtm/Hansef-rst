@@ -1,0 +1,13 @@
+{
+  "publishedCommit": "b938c188fc380e3ddf08c5c7accc0410545c339c",
+  "method": "fresh GitHub HTTPS fetch of published ref into independent Git object store, no local alternates; archive all package files; read complete bytes and compare exact file set with local clean tree",
+  "allFilesRead": 56,
+  "manifestHashesChecked": 55,
+  "fullHTMLBytesRead": 46371370,
+  "allFilesByteIdentical": true,
+  "allManifestHashesMatch": true,
+  "exactFileSetMatch": true,
+  "workingTreeWasClean": true,
+  "fullQ109bAcceptance": false,
+  "Q001Fixed": false
+}
