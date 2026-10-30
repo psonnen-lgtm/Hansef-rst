@@ -1,0 +1,12 @@
+AssertionError [ERR_ASSERTION]: retry of same failed voyage must not roll risk again
+
+2 !== 1
+
+    at /workspace/Hansef-rst/tests/safety/q1_09c/risk-retry-check.cjs:3:884 {
+  generatedMessage: false,
+  code: 'ERR_ASSERTION',
+  actual: 2,
+  expected: 1,
+  operator: 'strictEqual',
+  diff: 'simple'
+}

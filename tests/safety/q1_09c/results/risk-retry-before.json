@@ -1,0 +1,6 @@
+{
+  "sourceCommit": "1f9235da18808bfe82fa82c8dcf0d13ba3f197d6",
+  "gameHash": "7bb624d610199fefecdc40ab70e67b3b7f763c5d258a24ae1cd96adf7c574e47",
+  "passed": false,
+  "error": "AssertionError [ERR_ASSERTION]: retry of same failed voyage must not roll risk again\n\n2 !== 1\n\n    at /workspace/Hansef-rst/tests/safety/q1_09c/risk-retry-check.cjs:3:884"
+}
