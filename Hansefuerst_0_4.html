@@ -97,7 +97,7 @@ const isCityIndex=i=>Number.isInteger(i)&&i>=0&&i<CITY_COUNT;
 const isGoodIndex=i=>Number.isInteger(i)&&i>=0&&i<GOOD_COUNT;
 const isIndexKey=(key,count)=>/^(0|[1-9]\d*)$/.test(key)&&key===String(Number(key))&&Number(key)<count;
 const DIST=[[0,2,2,3,4,8,12,7,10,19,11],[2,0,3,4,5,9,10,8,8,20,9],[2,3,0,2,3,7,13,5,11,17,12],[3,4,2,0,2,6,14,7,12,19,13],[4,5,3,2,0,4,15,8,13,20,14],[8,9,7,6,4,0,19,5,17,17,18],[12,10,13,14,15,19,0,18,18,30,19],[7,8,5,7,8,5,18,0,16,12,17],[10,8,11,12,13,17,18,16,0,28,4],[19,20,17,19,20,17,30,12,28,0,29],[11,9,12,13,14,18,19,17,4,29,0]];
-const KEY='hansefuerst-v04',PREVIOUS='hansefuerst-v03',OLD='hansefuerst-v01';
+const LEGACYKEY='hansefuerst-v04',KEY='hansefuerst-v04-safety1',PREVIOUS='hansefuerst-v03',OLD='hansefuerst-v01';
 const SHIPTYPES=[{name:'Schnigge',cap:55,speed:1.5,cost:3800},{name:'Kogge',cap:90,speed:1,cost:6200},{name:'Holk',cap:140,speed:.72,cost:10500}];
 const $=id=>document.getElementById(id),r=(a,b)=>Math.floor(Math.random()*(b-a+1))+a,fmt=n=>Math.round(n).toLocaleString('de-DE'),esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 let storageWarning=false;let s=null,view='',pending=null;let startDraft=null,newGameBusy=false;
@@ -152,7 +152,7 @@ function changeWarehouseRent(blocks){
  if(blocks>r.blocks){let accepted=false;warehouseRentBusy=true;try{accepted=confirm('Zusatzfläche: '+(blocks*WAREHOUSE_RULES.step)+' Fass. Tagesmiete: '+(blocks*WAREHOUSE_RULES.fee)+' G, davon jetzt '+cost+' G für den restlichen Miettag. Automatische tägliche Verlängerung nur bei genügend Bargeld. Bei Geldmangel endet unnötige Zusatzfläche; benötigte Fläche verursacht Mietrückstände ohne Zinsen. Waren bleiben erhalten. Rückstände sperren Einlagerung und Erweiterung in allen Städten. Anmieten?')}finally{warehouseRentBusy=false}if(!accepted)return false;if(JSON.stringify(s)!==expected){notice('Die Partie hat sich geändert. Bitte die Lagerfläche erneut prüfen.');return false}}
  const previous=s,candidate=JSON.parse(JSON.stringify(s)),next=candidate.storage.rentals[s.city];
  candidate.gold-=cost;next.blocks=blocks;next.until=blocks?(r.blocks?r.until:totalDay()+1):(r.arrears?r.until:0);
- try{validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate))}catch(e){notice('Lageränderung nicht gespeichert. Gold und Mietfläche bleiben unverändert. Bitte Speicher prüfen.');return false}
+ try{validate(candidate);safetyStageWrite(candidate)}catch(e){notice('Lageränderung nicht gespeichert. Gold und Mietfläche bleiben unverändert. Bitte Speicher prüfen.');return false}
  s=candidate;Testlog.event('warehouse_rent_change',{city:s.city,from:previous.storage.rentals[s.city].blocks,blocks,cost});render();warehouseView();return true;
 }
 function warehouseRentDay(){
@@ -174,7 +174,7 @@ function payWarehouseArrears(){
  try{accepted=confirm('Alle '+fmt(cost)+' G Mietrückstände in '+CITIES[s.city]+' jetzt aus Bargeld begleichen? Laufende Tagesmiete bleibt bestehen.')}finally{warehouseRentBusy=false}
  if(!accepted||JSON.stringify(s)!==expected)return false;
  const candidate=JSON.parse(JSON.stringify(s));candidate.gold-=cost;candidate.storage.rentals[s.city].arrears=0;
- try{validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate))}catch(e){notice('Tilgung nicht gespeichert. Gold und Mietschuld bleiben unverändert. Bitte Speicher prüfen.');return false}
+ try{validate(candidate);safetyStageWrite(candidate)}catch(e){notice('Tilgung nicht gespeichert. Gold und Mietschuld bleiben unverändert. Bitte Speicher prüfen.');return false}
  s=candidate;Testlog.event('warehouse_arrears_paid',{city:s.city,cost});render();warehouseView();return true;
 }
 function warehouseCapacityPanel(){
@@ -221,13 +221,13 @@ function startShipbuilding(type){
   const candidate=JSON.parse(JSON.stringify(s)),consumed=[];let materialsBook=0;
   for(const m of quote.rows){let left=m.n;for(const source of shipbuildingSources(candidate)){if(!left)break;const q=source.q,n=Math.min(left,q.cargo[m.j]||0);if(!n)continue;ensureCargoRecords(q);const book=cargoBookPrice(q,m.j),cost=q.costs[m.j]??null,origins=[];let need=n;for(const lot of q.origins[m.j]){const count=Math.min(need,lot.n);if(count)origins.push({city:lot.city,n:count});need-=count;if(!need)break}if(need)throw Error('Fehlende Herkunft');consumeOrigins(q,m.j,n,null);q.cargo[m.j]-=n;if(!q.cargo[m.j])for(const key of ['cargo','costs','bookCosts','origins'])delete q[key]?.[m.j];materialsBook+=n*book;consumed.push({source:source.source,shipId:source.shipId??null,j:m.j,n,bookCost:book,knownCost:cost,origins});left-=n}if(left)throw Error('Fehlendes Material')}
   const rental=candidate.storage.rentals[candidate.city];if(warehouseRequired(candidate.city,candidate)>0&&!rental.until)rental.until=totalDay()+1;
-  const order={id:candidate.shipyard.nextId++,type,city:s.city,started:totalDay(),ready:totalDay()+quote.days,shipId:Math.ceil(Math.max(s.shipyard.lastShipId||0,...s.ships.map(q=>q.id)))+1,materialsBook,wage:quote.wage};candidate.shipyard.lastShipId=order.shipId;candidate.gold-=quote.wage;candidate.shipyard.orders.push(order);candidate.messages.unshift('Tag '+candidate.day+': '+SHIPTYPES[type].name+' in '+CITIES[order.city]+' beauftragt: '+quote.days+' Spieltage Bauzeit.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate;committed=true;
+  const order={id:candidate.shipyard.nextId++,type,city:s.city,started:totalDay(),ready:totalDay()+quote.days,shipId:Math.ceil(Math.max(s.shipyard.lastShipId||0,...s.ships.map(q=>q.id)))+1,materialsBook,wage:quote.wage};candidate.shipyard.lastShipId=order.shipId;candidate.gold-=quote.wage;candidate.shipyard.orders.push(order);candidate.messages.unshift('Tag '+candidate.day+': '+SHIPTYPES[type].name+' in '+CITIES[order.city]+' beauftragt: '+quote.days+' Spieltage Bauzeit.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);safetyStageWrite(candidate);s=candidate;committed=true;
   const {type:shipType,...eventOrder}=order;Testlog.event('shipbuilding_started',{...eventOrder,shipType,materials:consumed});render();harborView();return true;
  }catch(e){if(!committed)notice('Bauauftrag nicht gespeichert. Gold, Waren und Flotte bleiben unverändert. Bitte Speicher und Materialdaten prüfen.');return committed}finally{shipyardBusy=false}
 }
 function completeShipbuilding(){
  const order=s?.shipyard?.orders[0];if(!order||order.ready>totalDay())return false;
- try{const candidate=JSON.parse(JSON.stringify(s)),q=makeShip(order.type,{id:order.shipId,city:order.city});q.name=SHIPTYPES[order.type].name+' · Werft '+order.id;candidate.ships.push(q);candidate.shipyard.orders=[];candidate.messages.unshift('Tag '+candidate.day+': Die '+q.name+' ist fertig und liegt in '+CITIES[order.city]+'.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);if(!shipyardStaging)localStorage.setItem(KEY,JSON.stringify(candidate));
+ try{const candidate=JSON.parse(JSON.stringify(s)),q=makeShip(order.type,{id:order.shipId,city:order.city});q.name=SHIPTYPES[order.type].name+' · Werft '+order.id;candidate.ships.push(q);candidate.shipyard.orders=[];candidate.messages.unshift('Tag '+candidate.day+': Die '+q.name+' ist fertig und liegt in '+CITIES[order.city]+'.');candidate.messages=candidate.messages.slice(0,40);validate(candidate);if(!shipyardStaging)safetyStageWrite(candidate);
   // Preserve existing ship objects referenced by an in-progress arrival/convoy.
   s.ships.push(q);s.shipyard=candidate.shipyard;s.messages=candidate.messages;Testlog.event('shipbuilding_completed',{orderId:order.id,shipId:q.id,shipType:q.type,city:q.city,ready:order.ready,day:totalDay()});return true;
  }catch(e){return false}
@@ -238,7 +238,7 @@ function waitShipbuilding(){
  try{if(!confirm(days+' Spieltage bei der Werft warten? Märkte, Zinsen, Mieten und Fristen laufen weiter. Eine Reise muss anschließend neu geplant werden.'))return false;if(JSON.stringify(s)!==expected)return false;
   const candidate=JSON.parse(JSON.stringify(s)),oldSave=save,oldEvent=Testlog.event,oldSnapshot=Testlog.snapshot,oldStaging=shipyardStaging,events=[];s=candidate;
   try{save=()=>{};Testlog.event=(type,details={})=>events.push({type,details});Testlog.snapshot=()=>{};shipyardStaging=true;advance(days);validate(s)}finally{save=oldSave;Testlog.event=oldEvent;Testlog.snapshot=oldSnapshot;shipyardStaging=oldStaging}
-  localStorage.setItem(KEY,JSON.stringify(candidate));committed=true;pending=null;for(const e of events)oldEvent(e.type,e.details);Testlog.event('shipyard_wait',{days});render();harborView();return true;
+  safetyStageWrite(candidate);committed=true;pending=null;for(const e of events)oldEvent(e.type,e.details);Testlog.event('shipyard_wait',{days});render();harborView();return true;
  }catch(e){if(!committed){s=original;pending=oldPending;notice('Warten nicht gespeichert. Tage, Gold und Bauauftrag bleiben unverändert.')}return committed}finally{shipyardBusy=false}
 }
 function shipyardPanel(){
@@ -293,7 +293,7 @@ function warehouseTransfer(j,dir){
  if(!from.cargo[j])for(const key of ['cargo','costs','bookCosts','origins'])delete from[key][j];
  to.cargo[j]=old+n;to.costs[j]=mergedCost;to.bookCosts[j]=mergedBook;to.origins[j]=(to.origins[j]||[]).concat(moved);
  if(dir===-1){const rental=s.storage.rentals[s.city];if(rental.arrears>0)rental.blocks=Math.min(rental.blocks,warehouseRequired());if(warehouseRequired()>0&&!rental.until)rental.until=totalDay()+1;}
- try{validate(s);localStorage.setItem(KEY,JSON.stringify(s))}catch(e){s=before;notice('Umladen nicht gespeichert. Waren und Gold bleiben unverändert. Bitte Speicher prüfen.');return false}
+ try{validate(s);safetyStageWrite(s)}catch(e){s=before;notice('Umladen nicht gespeichert. Waren und Gold bleiben unverändert. Bitte Speicher prüfen.');return false}
  Testlog.event('warehouse_transfer',{city:s.city,shipId:q.id,good:GOODS[j][0],quantity:n,direction:dir===1?'store':'load'});
  render();warehouseView();return true;
 }
@@ -417,7 +417,7 @@ function politicalAction(message,change){
   if(JSON.stringify(s)!==expected)return false;
   s=JSON.parse(expected);Testlog.event=(type,details={})=>events.push({type,details});Testlog.snapshot=reason=>snapshots.push(reason);
   if(change()===false){s=original;return false}
-  validate(s);localStorage.setItem(KEY,JSON.stringify(s));committed=true;
+  validate(s);safetyStageWrite(s);committed=true;
  }catch(e){if(!committed)s=original;notice('Politische Entscheidung nicht gespeichert. Deine Partie bleibt unverändert.');return false}
  finally{Testlog.event=oldEvent;Testlog.snapshot=oldSnapshot;politicsBusy=false}
  for(const event of events)oldEvent(event.type,event.details);for(const reason of snapshots)oldSnapshot(reason);render();hallView();return true;
@@ -445,7 +445,7 @@ function politicalTrade(j,dir){
  try{
   s=JSON.parse(JSON.stringify(original));save=()=>{};render=()=>{};marketView=()=>{};Testlog.snapshot=()=>{};Testlog.event=(type,details={})=>events.push({type,details});politicalTradeStaging=true;
   trade(j,dir);if(!events.some(e=>e.type==='sell')){s=original;return false}
-  validate(s);localStorage.setItem(KEY,JSON.stringify(s));committed=true;
+  validate(s);safetyStageWrite(s);committed=true;
  }catch(e){if(!committed)s=original;notice('Verkauf und politischer Verdienst nicht gespeichert. Waren, Gold und Leistungsbuch bleiben unverändert.');return false}
  finally{save=oldSave;render=oldRender;marketView=oldMarket;Testlog.event=oldEvent;Testlog.snapshot=oldSnapshot;politicalTradeStaging=false;politicsBusy=false}
  for(const e of events)oldEvent(e.type,e.details);render();marketView();return true;
@@ -493,8 +493,9 @@ function runHanseAssembly(){
  });
 }
 function validatePolitics(x){
+ if(x.politics?.version===2)validateSafety(x);
  const p=x.politics,now=x.year*360+x.day,object=o=>o&&typeof o==='object'&&!Array.isArray(o),keys=(o,names)=>object(o)&&Object.keys(o).length===names.length&&names.every(k=>Object.hasOwn(o,k)),int=(n,a=0,b=360000000)=>Number.isSafeInteger(n)&&n>=a&&n<=b,day=n=>int(n,p?.since,now),bad=()=>{throw Error('Ungültige politische Daten')};
- if(!keys(p,['version','since','rules','legacyRank','records','issued','jobs','office','terms','appointments','nextElection','endorsements','league','leagueIssued','elderman'])||p.version!==1||!int(p.since,0,now)||!keys(p.rules,['sectionDays','mayorWealth'])||![30,60].includes(p.rules.sectionDays)||![45000,85000].includes(p.rules.mayorWealth)||!int(p.legacyRank,0,x.rank))bad();
+ if(!keys(p,['version','since','rules','legacyRank','records','issued','jobs','office','terms','appointments','nextElection','endorsements','league','leagueIssued','elderman',...(p?.version===2?['safety']:[])])||![1,2].includes(p.version)||!int(p.since,0,now)||!keys(p.rules,['sectionDays','mayorWealth'])||![30,60].includes(p.rules.sectionDays)||![45000,85000].includes(p.rules.mayorWealth)||!int(p.legacyRank,0,x.rank))bad();
  const period=Math.floor((now-p.since)/p.rules.sectionDays);
  for(const field of ['issued','terms','appointments','nextElection','endorsements','leagueIssued'])if(!Array.isArray(p[field])||p[field].length!==CITY_COUNT)bad();
  if(!Array.isArray(p.records)||p.records.length>8192||!Array.isArray(p.jobs)||p.jobs.length>22||p.records.length+p.jobs.length+Number(!!p.league)>8192)bad();
@@ -656,7 +657,7 @@ function informationTransaction(message,change,destination){
   if(JSON.stringify(s)!==expected||localStorage.getItem(KEY)!==disk)throw Error('Die Partie hat sich während der Bestätigung geändert. Bitte das Angebot neu öffnen.');
   const candidate=JSON.parse(expected),result=change(candidate);if(!result)return false;
   if(result.note){candidate.messages.unshift('Tag '+candidate.day+': '+result.note);candidate.messages=candidate.messages.slice(0,40)}
-  validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate;storageWarning=false;committed=true;
+  validate(candidate);safetyStageWrite(candidate);s=candidate;storageWarning=false;committed=true;
   Testlog.event(result.type,result.details);render();show(destination);return true;
  }catch(e){
   if(committed){alert('Die Information ist gespeichert. Bitte lade die Ansicht neu.');return true}
@@ -779,8 +780,8 @@ function tradeLetterPanel(){
 }
 // END PHASE 08D1B LETTERS
 function migrate(raw){return migrateInformation(raw)}
-function save(){if(s)try{localStorage.setItem(KEY,JSON.stringify(s));storageWarning=false}catch(e){if(!storageWarning){storageWarning=true;alert('Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren.')}}}
-function backupCurrent(){if(!s)return true;try{localStorage.setItem(KEY+'-backup',JSON.stringify(s));return true}catch(e){alert('Sicherung nicht möglich. Bitte zuerst exportieren.');return false}}
+function save(){if(s&&SafetySession.active&&!SafetySession.active.readOnly)safetyStageWrite(s)}
+function backupCurrent(){if(!s)return true;try{safetyBackupRaw(JSON.stringify(s),'before-replacement');return true}catch(e){alert('Sicherung nicht möglich. Der bisherige Stand bleibt erhalten. Bitte zuerst exportieren.');return false}}
 function log(t){s.messages.unshift(`Tag ${s.day}: ${t}`);s.messages=s.messages.slice(0,40);save()}
 function ship(){return s.ships[s.active]||s.ships[0]}
 function load(q=ship()){return Object.values(q.cargo).reduce((a,b)=>a+(+b||0),0)}
@@ -844,7 +845,7 @@ function regionalReport(){
  const choices=CITIES.map((_,city)=>city).filter(city=>city!==s.city),city=choices[(now+s.city)%choices.length],goods=REGIONAL_PROFILES[city].map((role,j)=>({role,j})).filter(x=>x.role!==0),j=goods[(now+city)%goods.length].j;
  const stock=s.markets[city][j].stock,report={city,j,day:now,band:stock>=140?'abundant':stock<=60?'scarce':'ordinary',publishedAt:s.city};
  const economy={version:1,reports:[...s.economy.reports,report].filter(q=>q.day>=now-360).slice(-36)};
- try{const candidate={...s,economy};validate(candidate);localStorage.setItem(KEY,JSON.stringify(candidate));s.economy=economy;storageWarning=false;return report}catch(e){return null}
+ try{const candidate={...s,economy};validate(candidate);safetyStageWrite(candidate);s.economy=economy;storageWarning=false;return report}catch(e){return null}
 }
 function regionalInformationPanel(){
  const report=regionalReport(),now=totalDay(),words={abundant:'reichlich',ordinary:'gewöhnlich versorgt',scarce:'knapp'},roles=(city,role)=>GOODS.filter((g,j)=>REGIONAL_PROFILES[city][j]===role).map(g=>g[0]).join(', ')||'keine ausgeprägte Besonderheit';
@@ -880,7 +881,7 @@ function closeSheet(){if(startDraft)return cancelStartGame();$('overlay').classL
 function sheetKeyboard(e){if(e.key==='Escape'){e.preventDefault();closeSheet();return}if(e.key!=='Tab')return;const list=[...$('sheet').querySelectorAll('button:not(:disabled),input:not(:disabled),select:not(:disabled),a[href],summary,[tabindex="0"]')].filter(el=>el.getClientRects().length);if(!list.length)return;const first=list[0],last=list[list.length-1];if(e.shiftKey&&(document.activeElement===first||document.activeElement===$('sheet'))){e.preventDefault();last.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus()}}
 function harborLetter(){return `<section class="political-letter harbor-letter" id="harborLetter"><h3>✉️ Ein Brief des Hafenmeisters: dein erster Törn</h3><p>„Willkommen in ${esc(CITIES[s.city])}, Kaufmann. Goldene Türmarken öffnen die Häuser; mit <b>Orte zeigen</b> findest du ihre Namen.“</p><ol><li><b>Am Markt:</b> Wähle eine kleine Ladung, prüfe Preis je Fass und freien Laderaum. Lass Bargeld für Hafengebühren, laufende Mieten und Kreditzinsen übrig.</li><li><b>Auf der Seekarte:</b> Wähle selbst einen Hafen. Reisezeit, Schiffe und Gebühren stehen vor der Abfahrt fest. Ortskunde und eigene Preisnotizen helfen; unbekannte Fernpreise bleiben unbekannt.</li><li><b>Nach der Ankunft:</b> Vergleiche den örtlichen Preis mit deinem Einkauf. Verkaufe bewusst auch bei Verlust. Der Handelsbeleg zeigt Erlös und Warengewinn; Reisekosten kommen gesondert dazu.</li></ol><p>Lieferaufträge brauchen fremd gekaufte Ware am Zielmarkt. Politische Briefe im Rathaus sind eigene Dienste ohne zusätzliche Goldprämie. Du musst nicht alles auf der ersten Reise erledigen.</p><div class="actions"><button onclick="show('market')">Zum Markt</button><button class="ghost" onclick="show('map')">Reise planen</button><button class="ghost" onclick="show('quests')">Lieferaufträge lesen</button><button class="ghost" onclick="show('hall')">Rathaus besuchen</button></div></section>`}
 function storageWarningMarkup(){return '<strong>⚠️ Neueste Handlungen noch nicht dauerhaft gesichert</strong><p>Der lokale Speicher ist nicht verfügbar oder voll. Die bisher gespeicherte Partie bleibt erhalten; neueste Handlungen liegen gerade nur im Arbeitsspeicher. Vor dem Neuladen oder Schließen unbedingt als Datei exportieren. Browserdaten nicht ungesichert löschen.</p><button onclick="exportGame()">Jetzt Sicherungsdatei exportieren</button>'}
-function renderStorageStatus(){const box=$('storageStatus');if(!box)return;box.hidden=!storageWarning;if(storageWarning)box.innerHTML=storageWarningMarkup()}
+function renderStorageStatus(){const box=$('storageStatus');if(!box)return;box.hidden=!storageWarning;if(storageWarning)box.innerHTML='<strong>Speicher- und Konflikthinweis</strong><p>'+esc(SafetySession.error||'Die letzte Aktion wurde nicht gespeichert und zurückgenommen. Der vorhandene Stand bleibt erhalten.')+'</p><button onclick="safetyReload()">Aktuellen Stand laden</button><button class="ghost" onclick="exportGame()">Gespeicherten Stand exportieren</button>'}
 function marketReceipt(){const receipt=s.messages.find(t=>/Fass.*(?:gekauft\.|verkauft:)/.test(t));return receipt?'<section class="notice market-receipt" id="marketReceipt" aria-live="polite"><b>Letzter Handelsbeleg aus deiner Chronik</b><p>'+esc(receipt)+'</p><p class="muted">Warengewinn ist Verkaufserlös abzüglich Einkaufskosten. Hafengebühren, Mieten, Zinsen und andere Ausgaben sind darin nicht abgezogen.</p></section>':''}
 
 function show(v){view=v;let f=({market:marketView,bath:bathView,church:churchView,hall:hallView,bank:bankView,contor:contorView,warehouse:warehouseView,harbor:harborView,map:mapView,book:bookView,quests:questsView,ships:shipsView,save:saveView,chronicle:chronicleView,travel:travelView,arrival:arrivalView})[v];if(f)f()}
@@ -958,7 +959,7 @@ function performHarborWork(){
    shipyardStaging=true;advance(3);s.gold+=20;log('Drei Tage am Kai gearbeitet: +20 G. Deine einmalige Hafenarbeit ist nun verbraucht.');validate(s);
   }finally{save=oldSave;Testlog.event=oldEvent;Testlog.snapshot=oldSnapshot;shipyardStaging=oldShipyardStaging}
   // One complete Web Storage value is committed; no intermediate day or marker was saved.
-  localStorage.setItem(KEY,JSON.stringify(candidate));committed=true;storageWarning=false;pending=null;
+  safetyStageWrite(candidate);committed=true;storageWarning=false;pending=null;
   for(const event of events)oldEvent(event.type,event.details);
   Testlog.event('harbor_work',{days:3,payment:20,fromDay:from,toDay:totalDay(),city:CITIES[s.city]});render();Testlog.snapshot('harbor_work');harborView();return true;
  }catch(e){
@@ -1025,9 +1026,14 @@ function travelView(){
 }
 function arrive(){if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nicht mehr möglich. Bitte neu planen.');pending.arrived=true;if(!p.resolved)rollTravel(p,qs);s.gold-=p.fee||0;advance(p.days);if(p.fee)log('Hafengebühr: '+p.fee+' G für '+qs.length+' Schiff(e).');if(p.event==='storm'){for(let q of qs)q.condition=Math.max(30,q.condition-r(3,10));log('Sturm auf See: Einige Schiffe wurden beschädigt.')}if(p.event==='pirates'){let q=qs.find(q=>load(q)>0);if(q){let j=Object.keys(q.cargo)[0],lost=Math.min(q.cargo[j],p.loss);consumeOrigins(q,j,lost,null);q.cargo[j]-=lost;Testlog.event('pirate_loss',{shipId:q.id,good:GOODS[j][0],quantity:lost,averageCost:q.costs[j]??null});if(!q.cargo[j]){delete q.cargo[j];delete q.costs[j];if(q.bookCosts)delete q.bookCosts[j]}log(`Piraten raubten ${lost} Fass ${GOODS[j][0]}.`)}}if(p.event==='defended')log('Piraten erfolgreich zurückgeschlagen oder abgeschüttelt.');let routeId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);Testlog.event('travel',{routeId,from:CITIES[p.from],to:CITIES[p.dest],days:p.days,fee:p.fee||0,event:p.event,ships:qs.map(q=>({id:q.id,cargo:{...q.cargo},costs:{...q.costs},condition:q.condition})),activeMs:Testlog.data.activeMs});if(p.event==='pirates'||p.event==='defended')Testlog.event('pirates',{routeId,result:p.event,ships:p.qs});for(const q of qs){q.city=p.dest;Testlog.setRoute(q.id,routeId);}s.city=p.dest;s.visits++;s.rep+=1;observe();log(`In ${CITIES[s.city]} angekommen (+1 Ansehen).`);pending={...p};render();Testlog.snapshot('arrival');show('arrival')}
 function arrivalView(){openSheet('⚓ Land in Sicht!',`<p style="font-size:23px"><b>Du bist in ${CITIES[s.city]} angekommen!</b></p><div class="notice">${esc(pending.story||'Die Überfahrt ist beendet.')}</div><p>${esc(CITY_DESCRIPTIONS[s.city])}</p><section class="item" id="arrivalManifest"><h3>Aus dem Schiffsbuch</h3><p>${CITIES[pending.from]} → ${CITIES[pending.dest]}</p>${s.ships.filter(q=>pending.qs.includes(q.id)).map(q=>`<p>${esc(q.name)}: Zustand ${q.condition} % · ${load(q)} / ${capacity(q)} Fass an Bord.</p>`).join('')}</section><button class="ghost" onclick="show('chronicle')">Ereignisse im Logbuch lesen</button><p class="muted">Hafengebühr bezahlt: ${pending.fee||0} G · Reisedauer: ${pending.days} Spieltage · Datum: Tag ${s.day}, ${s.year}</p><button onclick="closeSheet()">Stadt erkunden</button><button class="ghost" onclick="show('market')">Direkt zum Handel</button>`)}
-function saveView(){openSheet('💾 Spielstand & Sicherung',`${storageWarning?'<section class="notice bad">'+storageWarningMarkup()+'</section>':''}<p>Speicherformat <b>V13</b>: V11-/V12-Partien können übernommen werden. Ältere Spielversionen können neue V13-Exporte nicht öffnen. Bewahre das Originalbackup auf.</p><p>Hansefürst speichert lokal auf diesem Gerät, in diesem Browser und unter dieser Adresse. <b>Es gibt keine Cloud-Synchronisierung.</b> Eine andere Datei oder Webadresse kann einen eigenen Speicherbereich haben.</p><div class="actions"><button onclick="exportGame()">⬇️ Spielstand exportieren</button><button class="ghost" onclick="$('file').click()">⬆️ Spielstand importieren</button></div><ol id="saveTransferSteps"><li>Vor Geräte-, Browser-, Datei- oder Adresswechsel hier <b>exportieren</b> und die JSON-Datei aufbewahren.</li><li>Die Datei selbst auf das andere Gerät übertragen; dort im Spiel <b>importieren</b> und den Ersatz der dortigen Partie bestätigen.</li><li>Nach der Übernahme Hafen, Gold und Schiffe prüfen. Es wird die ganze Partie übernommen, nichts zusammengeführt.</li></ol><p class="muted">Lokale Originalkopien sind keine externe Sicherung. Wenn automatisches Speichern fehlschlägt, vor dem Neuladen oder Schließen unbedingt exportieren. Vor der Übernahme einer älteren Partie bleibt eine Originalkopie erhalten. Gold, Waren und bisherige Preise werden übernommen; die regionalen Regeln wirken erst auf folgende Spieltage. Exporte dieser Version benötigen diese oder eine neuere Spielversion. Bitte sichere wichtige Partien zusätzlich als Datei.</p><hr><button class="danger" onclick="resetGame()">Neues Spiel beginnen</button>`)}
-function exportGame(){let blob=new Blob([JSON.stringify(s,null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='hansefuerst-spielstand.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
-function importGame(e){let f=e.target.files[0];if(!f)return;let rd=new FileReader();rd.onload=()=>{let committed=false;try{const raw=String(rd.result),parsed=JSON.parse(raw),x=migrate(parsed);if(!x)throw Error();if(s&&!confirm('Den aktuellen Spielstand überschreiben?'))return;if(!s){const original=startOriginal();if(original.raw!==null)backupPoliticsMigration(original.raw,true,true)}if(!backupCurrent())return;backupTradeLetterMigration(raw,true);backupInformationMigration(raw,true);backupPoliticsMigration(raw,true);backupShipyardMigration(raw,true);backupStorageMigration(raw,true);backupRegionalMigration(raw,true);backupCityMigration(raw,true);backupGoodsMigration(raw,true);if(warehouseMigrationNeeded(parsed)){const key=KEY+(!Object.hasOwn(parsed,'warehouses')?'-warehouse-import-backup':'-warehouse-cities-import-backup');if(localStorage.getItem(key)===null)localStorage.setItem(key,raw)}localStorage.setItem(KEY,JSON.stringify(x));s=x;startDraft=null;pending=null;committed=true;storageWarning=false;Testlog.newRun('import');closeSheet();render();notice('Spielstand erfolgreich übernommen. Alle alten Werte bleiben erhalten. Grundlager: 150 Fass je Stadt; übervolle Altbestände bleiben erhalten und können ausgelagert werden.')}catch(err){alert(committed?'Der Spielstand wurde gespeichert. Bitte lade die Ansicht neu.':'Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten.')}finally{e.target.value=''}};rd.readAsText(f)}
+function saveView(){openSheet('💾 Spielstand & Sicherung',`${storageWarning?'<section class="notice bad">'+storageWarningMarkup()+'</section>':''}<p>Speicherformat <b>V13 · Politikrevision2/Sicherheit1</b>: V11-/V12-/V13-Originale werden auf Kopie übernommen. Alte Clients können neue Exporte nicht öffnen. Die alte Speicheradresse bleibt unangetastet. Ältere Spielversionen können neue V13-Exporte nicht öffnen. Bewahre das Originalbackup auf.</p><p>Hansefürst speichert lokal auf diesem Gerät, in diesem Browser und unter dieser Adresse. <b>Es gibt keine Cloud-Synchronisierung.</b> Eine andere Datei oder Webadresse kann einen eigenen Speicherbereich haben.</p><div class="actions"><button onclick="exportGame()">⬇️ Spielstand exportieren</button><button class="ghost" onclick="$('file').click()">⬆️ Spielstand importieren</button></div><ol id="saveTransferSteps"><li>Vor Geräte-, Browser-, Datei- oder Adresswechsel hier <b>exportieren</b> und die JSON-Datei aufbewahren.</li><li>Die Datei selbst auf das andere Gerät übertragen; dort im Spiel <b>importieren</b> und den Ersatz der dortigen Partie bestätigen.</li><li>Nach der Übernahme Hafen, Gold und Schiffe prüfen. Es wird die ganze Partie übernommen, nichts zusammengeführt.</li></ol><p class="muted">Lokale Originalkopien sind keine externe Sicherung. Wenn automatisches Speichern fehlschlägt, vor dem Neuladen oder Schließen unbedingt exportieren. Vor der Übernahme einer älteren Partie bleibt eine Originalkopie erhalten. Gold, Waren und bisherige Preise werden übernommen; die regionalen Regeln wirken erst auf folgende Spieltage. Exporte dieser Version benötigen diese oder eine neuere Spielversion. Bitte sichere wichtige Partien zusätzlich als Datei.</p><hr><button class="danger" onclick="resetGame()">Neues Spiel beginnen</button>`)}
+function exportGame(){let blob=new Blob([safetyExportText()],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='hansefuerst-spielstand.json';document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),1000)}
+function importGame(e){const f=e.target.files[0];if(!f)return;const expected=SafetySession.expected,rd=new FileReader();rd.onload=()=>safetyRun(()=>{try{
+ const raw=String(rd.result),parsed=JSON.parse(raw),old=migrate(parsed);if(!old)throw Error('Ungültige oder neuere nicht unterstützte Revision');
+ if(s&&!confirm('Die aktuelle Partie durch diese Datei ersetzen? Die bisherige Partie und die importierte Originaldatei werden unverändert gesichert.'))return false;
+ safetyBackupRaw(raw,'import-original');if(!backupCurrent())return false;
+ s=safetyUpgrade(old);startDraft=null;pending=null;save();Testlog.newRun?.('import');render();notice('Die vollständige Partie wurde übernommen. Originaldatei und vorheriger Stand sind gesichert.');return true;
+ }catch(err){notice('Übernahme abgebrochen. Der bisherige Stand bleibt erhalten. '+err.message);return false}finally{e.target.value=''}},{expected});rd.onerror=()=>safetyMessage('Datei konnte nicht gelesen werden; der bisherige Stand bleibt erhalten.');rd.readAsText(f)}
 // New-start provenance is optional in V11. Missing means historically unknown.
 const MERCHANTS=Object.freeze([
  {id:'Ulf',name:'Ulf',epithet:'der Grüne Eldermann'},
@@ -1051,9 +1057,9 @@ const START_CITY_NOTES=Object.freeze([
 function validateBeginning(x){const b=x.beginning;if(![11,12,13].includes(x.v)||!b||typeof b!=='object'||Array.isArray(b)||Object.keys(b).length!==3||b.version!==1||!isCityIndex(b.city)||!MERCHANTS.some(m=>m.id===b.merchant)||b.merchant!==x.player)throw Error('Ungültige Startangabe')}
 function newMerchantGame(player,name,city){
  if(!MERCHANTS.some(m=>m.id===player)||!isCityIndex(city)||typeof name!=='string'||!name.trim()||name.length>40)throw Error('Ungültige Startauswahl');
- const x=fresh(player,name.trim());x.city=city;x.ships[0].city=city;x.beginning={version:1,city,merchant:player};x.messages=['Willkommen in '+CITIES[city]+'! Die Hanse erwartet einen neuen Kaufmann.'];x.journal[city]={day:x.day,year:x.year,prices:x.markets[city].map(m=>m.price)};validate(x);return x;
+ const x=fresh(player,name.trim());x.city=city;x.ships[0].city=city;x.beginning={version:1,city,merchant:player};x.messages=['Willkommen in '+CITIES[city]+'! Die Hanse erwartet einen neuen Kaufmann.'];x.journal[city]={day:x.day,year:x.year,prices:x.markets[city].map(m=>m.price)};validate(x);return safetyUpgrade(x,'new_start');
 }
-function startOriginal(){for(const key of [KEY,PREVIOUS,OLD]){const raw=localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}
+function startOriginal(){for(const key of [KEY,LEGACYKEY,PREVIOUS,OLD]){const raw=localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}
 function startUnchanged(draft){const original=startOriginal();return JSON.stringify(s)===draft.state&&original.key===draft.original.key&&original.raw===draft.original.raw}
 function resetGame(){return welcome()}
 function welcome(){
@@ -1075,7 +1081,7 @@ function startGame(){
   if(!startUnchanged(draft))throw Error('Die bisherige Partie wurde inzwischen geändert');
   const original=draft.original.raw??(s?JSON.stringify(s):null);if(original!==null)backupPoliticsMigration(original,false,true);
   if(!startUnchanged(draft))throw Error('Die bisherige Partie wurde inzwischen geändert');
-  const candidate=newMerchantGame(player,name,city);localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate;committed=true;startDraft=null;pending=null;storageWarning=false;Testlog.newRun('new_game');closeSheet();render();return true;
+  const candidate=newMerchantGame(player,name,city);safetyStageWrite(candidate);s=candidate;committed=true;startDraft=null;pending=null;storageWarning=false;Testlog.newRun('new_game');closeSheet();render();return true;
  }catch(e){alert(committed?'Die neue Partie ist gespeichert. Bitte lade die Ansicht neu.':'Neustart nicht möglich. Die vorhandene Partie bleibt erhalten; bitte lade bei zwischenzeitlichen Änderungen neu oder prüfe deinen Speicher.');return false}finally{newGameBusy=false}
 }
 // BEGIN CITY LIFE LAYOUTS
@@ -1230,6 +1236,89 @@ function drawMap(id='mapCanvas',selected=s?.city,target=null){
 }
 
 const oldShow=show;show=function(v){if(v==='rumors')return rumorView();return oldShow(v)};
+// BEGIN Q109 SAFETY FOUNDATION — verbatim audited block, no new career/economic rules.
+const SAFETY_LOCK='hansefuerst-safety1-writer';
+const SafetySession={expected:null,loaded:false,error:'',active:null};
+const safetyCopy=x=>x==null?x:JSON.parse(JSON.stringify(x));
+function validateSafety(x){
+ const a=x.politics.safety,keys=(o,k)=>o&&typeof o==='object'&&!Array.isArray(o)&&Object.keys(o).length===k.length&&k.every(n=>Object.hasOwn(o,n));
+ if(!keys(a,['version','revision','person'])||a.version!==1||!Number.isSafeInteger(a.revision)||a.revision<0||!keys(a.person,['city','source','at']))throw Error('Ungültige Sicherheitsrevision');
+ const p=a.person,now=x.year*360+x.day;
+ if(p.source==='unknown'){if(p.city!==null||p.at!==null)throw Error('Unbekannter Personenort enthält erfundene Daten')}
+ else if(!['new_start','legacy_anchor','arrival'].includes(p.source)||!isCityIndex(p.city)||!Number.isSafeInteger(p.at)||p.at<0||p.at>now)throw Error('Ungültiger persönlicher Aufenthaltsort');
+}
+function safetyUpgrade(x,source='unknown'){
+ const y=safetyCopy(x);validate(y);
+ if(y.politics.version===1){y.politics.version=2;y.politics.safety={version:1,revision:0,person:source==='new_start'?{city:y.city,source,at:y.year*360+y.day}:{city:null,source:'unknown',at:null}};}
+ validate(y);return y;
+}
+function safetyStageWrite(){if(!SafetySession.active)throw Error('Schreibversuch außerhalb der gemeinsamen Grenze');SafetySession.active.dirty=true;}
+function safetyBackupRaw(raw,label='original'){
+ if(!SafetySession.active||SafetySession.active.readOnly)throw Error('Keine geschützte Schreibgrenze');
+ const base=KEY+'-'+label;
+ for(let i=0;i<100;i++){const key=base+(i?'-'+i:''),old=localStorage.getItem(key);if(old===raw)return key;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung nicht bestätigt');return key;}}
+ throw Error('Kein freier Originalsicherungsplatz; bitte exportieren');
+}
+function safetyMessage(text,modal=true){SafetySession.error=text;storageWarning=true;try{renderStorageStatus();if(modal)notice(text)}catch(e){}return false;}
+function safetyReadView(fn){
+ const before=s,oldPending=safetyCopy(pending),oldTx=SafetySession.active;SafetySession.active={readOnly:true,dirty:false};s=safetyCopy(s);
+ try{return fn()}finally{s=before;pending=oldPending;SafetySession.active=oldTx;try{renderStorageStatus()}catch(e){}}
+}
+async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={}){
+ if(SafetySession.active)return fn();
+ if(typeof navigator==='undefined'||!navigator.locks?.request){
+  if(viewOnly){const result=safetyReadView(fn);safetyMessage('Dieser Browser bietet hier keine verlässliche Schreibsperre. Die Partie ist nur lesbar; Export bleibt möglich.',false);return result;}
+  return safetyMessage('Änderung abgebrochen: Web Locks sind unter dieser Adresse nicht verfügbar. Bitte einen unterstützten Browser unter HTTPS/localhost verwenden. Die gespeicherte Partie bleibt erhalten.');
+ }
+ try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{
+  const disk=localStorage.getItem(KEY);
+  if(disk!==expected){if(viewOnly){const result=safetyReadView(fn);safetyMessage('Ein anderes Fenster hat die Partie geändert. Nur Ansicht; bitte den aktuellen Stand laden.',false);return result;}return safetyMessage('Veralteter Stand: Ein anderes Fenster hat gespeichert. Der Vorgang wurde nicht ausgeführt. Bitte den aktuellen Stand laden.');}
+  const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,events=[],snapshots=[],routes=[];
+  const oldText=JSON.stringify(s);let committed=false;
+  SafetySession.active={dirty:false,readOnly:false};s=safetyCopy(s);
+  Testlog.event=(type,details={})=>events.push([type,safetyCopy(details)]);Testlog.snapshot=reason=>snapshots.push(reason);Testlog.setRoute=(...args)=>routes.push(args);
+  let result;
+  try{
+   result=fn();if(result&&typeof result.then==='function')throw Error('Asynchroner Untervorgang innerhalb der Schreibgrenze');
+   if(result===false){s=before;pending=oldPending;startDraft=oldDraft;return false;}
+   if(s){validate(s);const changed=JSON.stringify(s)!==oldText;
+    if(changed){const previous=disk?JSON.parse(disk).politics?.safety?.revision??0:0;if(previous>=Number.MAX_SAFE_INTEGER)throw Error('Sicherheitsrevision ausgeschöpft');s.politics.safety.revision=previous+1;validate(s);const bytes=JSON.stringify(s);localStorage.setItem(KEY,bytes);committed=true;SafetySession.expected=bytes;}
+   }
+   storageWarning=false;SafetySession.error='';
+  }catch(e){if(!committed){s=before;pending=oldPending;startDraft=oldDraft;}return safetyMessage(committed?'Die Aktion ist gespeichert, aber die Ansicht konnte nicht abgeschlossen werden. Bitte den aktuellen Stand laden.':'Vorgang vollständig abgebrochen. Die bisher gespeicherte Partie bleibt unverändert. '+(e.message||'Bitte Speicher prüfen.'));}
+  finally{Testlog.event=oldEvents;Testlog.snapshot=oldSnapshot;Testlog.setRoute=oldRoute;SafetySession.active=null;}
+  // Observations are published only after the canonical game write succeeds.
+  try{for(const args of routes)oldRoute?.(...args);for(const args of events)oldEvents(...args);for(const reason of snapshots)oldSnapshot(reason);renderStorageStatus();}catch(e){safetyMessage('Die Aktion ist gespeichert; die Testaufzeichnung oder Ansicht konnte nicht aktualisiert werden.',false);}
+  return result;
+ });}catch(e){return safetyMessage('Kein sicherer Schreibzugriff möglich. Die Aktion wurde abgebrochen. '+(e.message||''));}
+}
+function safetyExportText(){
+ const raw=localStorage.getItem(KEY)??SafetySession.expected;
+ if(raw!==null){const x=migrate(JSON.parse(raw));if(!x)throw Error('Gespeicherte Revision nicht unterstützt');return raw;}
+ const old=startOriginal();if(old.raw!==null){if(!migrate(JSON.parse(old.raw)))throw Error('Originalstand nicht lesbar');return old.raw;}
+ throw Error('Noch keine gespeicherte Partie vorhanden');
+}
+async function safetyReload(){
+ if(typeof navigator==='undefined'||!navigator.locks?.request)return safetyMessage('Kein sicherer Schreibzugriff unter dieser Adresse. Export des vorhandenen Stands bleibt möglich.');
+ try{return await navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},()=>{const raw=localStorage.getItem(KEY);if(raw===null)throw Error('Kein aktiver Sicherheitsstand');const x=migrate(JSON.parse(raw));if(!x||x.politics.version!==2)throw Error('Nicht unterstützte aktive Revision');s=x;SafetySession.expected=raw;pending=null;startDraft=null;SafetySession.error='';storageWarning=false;render();return true;});}catch(e){return safetyMessage('Laden abgebrochen; Originaldaten bleiben erhalten. '+e.message);}
+}
+async function safetyBoot(){
+ SafetySession.expected=localStorage.getItem(KEY);
+ const load=()=>{
+  const original=startOriginal();if(original.raw===null){s=null;return;}
+  const parsed=JSON.parse(original.raw),x=migrate(parsed);if(!x)throw Error('Spielstand oder neuere Revision nicht unterstützt');
+  if(original.key===KEY&&x.politics.version!==2)throw Error('Aktiver Sicherheitsstand hat keine gültige Sicherheitsrevision');
+  if(original.key!==KEY){safetyBackupRaw(original.raw,'v13-original');s=safetyUpgrade(x);}else s=x;
+ };
+ if(typeof navigator==='undefined'||!navigator.locks?.request){try{const original=startOriginal();s=original.raw===null?null:migrate(JSON.parse(original.raw));SafetySession.loaded=true;if(s)render();else welcome();safetyMessage('Nur lesbar: Web Locks fehlen. Originale bleiben erhalten; Export ist möglich.',false);}catch(e){safetyMessage('Original konnte nicht gelesen werden; keine Änderung vorgenommen. '+e.message);}return false;}
+ const ok=await safetyRun(load);SafetySession.loaded=true;if(s)render();else welcome();checkNews();return ok!==false;
+}
+const SAFETY_ACTIONS=['changeWarehouseRent','payWarehouseArrears','warehouseTransfer','warehouseSelect','startShipbuilding','completeShipbuilding','waitShipbuilding','acceptPoliticalJob','witnessPoliticalJob','finishPoliticalAccord','runMayorElection','resignMayor','reviewMayor','requestPoliticalEndorsement','acceptHanseAgreement','witnessHanseAgreement','finishHanseAgreement','runHanseAssembly','buyInformation','buyInformationArchive','fileExistingInformation','buyTradeLetter','trade','takeBath','donate','bankOp','sellShip','performHarborWork','repairShip','armShip','buyShip','selectFleetShip','marketSelect','promote','advance','planTravel','arrive','cancelVoyagePreparation','startGame'];
+const SAFETY_VIEWS=['show','closeSheet','marketView','warehouseView','harborView','bookView','questsView','regionalReport'];
+function safetyInstall(){for(const name of [...SAFETY_ACTIONS,...SAFETY_VIEWS]){const fn=globalThis[name];if(typeof fn!=='function')throw Error('Sicherheitsgrenze fehlt: '+name);globalThis[name]=function(...args){if(SafetySession.active)return fn.apply(this,args);return safetyRun(()=>fn.apply(this,args),{viewOnly:SAFETY_VIEWS.includes(name)});};}}
+safetyInstall();
+// END Q109 SAFETY FOUNDATION
+
 const RELEASE='0.8d.1b',NEWSKEY='hansefuerst-news-seen';
 function showNews(){view='news';openSheet('📜 Was ist neu?',`<p><b>Aktueller Stand: ${RELEASE}</b> · 27. Oktober 2026</p><div class="notice"><b>0.8d.1b – Besiegelte Handelsbriefe</b><p>Seltene Boten bieten einen datierten Brief für 60 Gold an. Die tatsächlichen damaligen Stückpreise stehen schon bei Erzeugung fest; keine Gewinnzusage bei Ankunft. Erworbene Briefe bleiben erhalten und können ins freiwillige Kontorarchiv übernommen werden. V11-/V12-Partien werden im Original gesichert und nach V13 übernommen.</p></div><div class="notice"><b>0.8d.1a – Gerüchte, Informanten und Schreiber</b><p>Im Badehaus gibt es zusätzlich kostenlose unbestätigte Hafengespräche und datierte Informantenberichte für 20 Gold. Das freiwillige Handelsarchiv im Kontor kostet einmalig 300 Gold. Eigene Beobachtungen und alte Badehaustipps bleiben erhalten. Neue Informationen kosten keine Spieltage und verändern keine Märkte. V11-Partien werden im Original gesichert und nach V12 übernommen; ältere Spielversionen können V12-Dateien nicht öffnen.</p></div><div class="notice"><b>0.8a – Dein erster Törn</b><p>Ein kurzer Hafenmeisterbrief im Kontor, sichtbare Handelsbelege, klare Reise- und Badezeitkosten sowie verständliche Sicherungsschritte helfen beim Einstieg. Dialoge beginnen wieder oben; der große Schließenknopf bleibt beim Lesen erreichbar. Spielstände und Wirtschaftsregeln bleiben erhalten.</p></div><div class="notice"><b>0.7b – elf Hansestädte</b><p>Elf eigenständige Stadtbilder führen von den Elbkais über Bergen und Visby bis zum Peterhof und zur Maas. Eigene Gebäude, Wege, Warenlasten und Boote verwenden dieselbe pausierbare Stadtbühne. Goldene Türmarken öffnen die bekannten Funktionen; „Orte zeigen“ hilft bei der Orientierung. Auf kleinen Displays lässt sich die Stadt verschieben. Spielstände, Handel und politische Regeln bleiben erhalten.</p></div><div class="notice"><b>0.7a – Lübeck lebt</b><p>Eine zusammenhängende Backsteinstadt mit Marktplatz, Gassen, Kai und Werft. Goldene Türmarken öffnen die bekannten Funktionen. Arbeiter, Kaufleute, Wasser und Boote bringen Bewegung ins Bild. Verschiebe die Stadt auf kleinen Displays; Ortsnamen und Bewegung kannst du direkt unter dem Stadtbild steuern. Bei reduzierter Bewegung ruht die Szene. Handel, Politik und Spielstände bleiben unverändert.</p></div><div class="notice"><b>0.6c – Dein Kaufmannsbuch</b><p>Ulf, Anders, Franziskus und Micha beginnen mit gleicher Ausstattung in einem von elf frei gewählten Häfen. Karte und Hafenbriefe helfen bei der Wahl. Ein neuer Anfang ersetzt deine laufende Partie erst nach Bestätigung und Originalsicherung; Startstadt und politisches Amt bleiben getrennt.</p></div><div class="notice"><b>0.6b – Stimmen im Rat</b><p>Versiegelte Bürgerbriefe und gehaltene Ratsvereinbarungen schaffen politische Verdienste. Elf Städte, erkennbare Rivalen und öffentliche Mehrheiten statt Wahlzufall. Ein örtliches Bürgermeisteramt und auswärtige Fürsprecher führen zur Hanseversammlung. Alte Titel bleiben; neue Amtsstädte werden nicht erfunden. Keine wirtschaftlichen Rabatte.</p></div><div class="notice"><b>0.5j – Schiffe von der Helling</b><p>Neue Schiffe benötigen Holz, Hanf, Pech, Eisenwaren, Werftlohn und Bauzeit. Im Hafen steht der Bauauftrag mit örtlich vorhandenen Materialien. Ein Auftrag gleichzeitig, keine Nachforderungen. Du kannst weiter handeln und reisen; das Schiff wird in der Werftstadt fertig. Alte Schiffe und Spielstände bleiben erhalten.</p></div><div class="notice"><b>0.5i.1 – Das Mietbuch</b><p>Bleiben mehr als 150 Fass liegen, wird benötigte Zusatzfläche auch bei fehlendem Bargeld abgerechnet: ohne Mietzinsen, als örtlicher Rückstand. Auslagern und Verkaufen bleiben möglich. Offene Mieten sperren neue Einlagerungen und Erweiterungen in allen Städten; im örtlichen Lagerhaus vollständig begleichen. Alte Waren bleiben geschützt, Sicherungen erhalten.</p></div><div class="notice"><b>0.5i – Lagerraum und Miete</b><p>Jede Stadt bietet 150 Fass kostenlos. Im Lagerhaus kannst du zweimal 100 Fass für je 1 Gold pro Spieltag zusätzlich mieten. Die erste Tagesmiete wird sofort bezahlt, weitere Tage automatisch aus Bargeld, auch auf See. Die Zahlungsregel wurde in 0.5i.1 durch Mietrückstände für weiterhin benötigte Fläche ergänzt. Übervolle Lager bleiben entnahmefähig und alle Waren erhalten. Alte Partien werden zuvor im Original gesichert.</p></div><div class="notice"><b>0.5h.3 – Regionale Warenflüsse</b><p>Jede Stadt hat typische Angebots- und Bedarfswaren. Handel verändert Bestände und künftige Preise. Der Hafenmeister, das Badehaus und das Handelsbuch zeigen datierte Versorgungshinweise ohne Fernpreise. Alte Partien behalten ihre Werte und erhalten vor der Übernahme eine Originalkopie; neue Regeln wirken erst ab dem nächsten Spieltag.</p></div><div class="notice"><b>0.5g – Einmalige Hafenarbeit</b><p>Bei fehlendem Reisegeld ohne örtlich nutzbare Reserven bietet der Hafenmeister einmalig drei Spieltage Arbeit für 20 Gold. Märkte, Zinsen und Fristen laufen weiter; die Gelegenheit bleibt nach Speichern und Import verbraucht.</p></div><div class="notice"><b>0.5f – Schiffe an die Werft verkaufen</b><p>Leere eigene Zusatzschiffe können im aktuellen Hafen nach Bestätigung verkauft werden. Das letzte Schiff und die letzte örtliche Abreisemöglichkeit bleiben geschützt. Die Werft zeigt Preis und Folgen vorab; keine automatische Rettung oder neuen Kredite.</p></div><div class="notice"><b>0.5d – Elf Handelsstädte</b><p>Danzig, Bergen, Visby, Brügge, Nowgorod und Venlo erweitern die Hanse. Binnenziele nutzen erklärte Umschlagrouten; alte Spielstände werden gesichert übernommen.</p></div><div class="notice"><b>0.5c – Vier neue Handelswaren</b><p>Hanf, Pech, Eisenwaren und Pelze sind jetzt handelbar und in allen fünf Städten lagerbar. Alte Spielstände werden gesichert um die neuen Waren ergänzt. Hanf bleibt von Hansegras getrennt.</p></div><div class="notice"><b>0.4.2 – Fehlerbehebung und Exploit-Schutz</b><ul><li>Reiseereignisse werden erst nach verbindlicher Abfahrt ausgewürfelt.</li><li>Aufträge erfordern Ware aus einer anderen Stadt; alte Ladung ohne Herkunftsnachweis bleibt handelbar.</li><li>Taggenaue Verzinsung statt vollem Jahreszins am Jahreswechsel.</li><li>Waren werden für Kredit und Karriere zum Einstand bewertet. Für alte Bestände ohne Einkaufspreis wird bei Übernahme einmalig ein konservativer Wert festgelegt. Bereits erreichte Ränge bleiben erhalten.</li></ul></div><div class="notice"><b>0.4.1 – Änderungen auf einen Blick</b><ul><li>Neue Übersicht „Was ist neu?“ jederzeit über die Hauptansicht erreichbar.</li><li>Ein kurzer Hinweis erscheint nach einem Update, bis du ihn schließt oder die Übersicht öffnest.</li></ul></div><div class="item"><h3>0.4 – Testauswertung und Teilen</h3><ul><li>Freiwillige lokale Testaufzeichnung im Kontor: Ereignisse, Vermögen, Momentaufnahmen und aktive Spielzeit.</li><li>JSON-/CSV-Export und Löschen, getrennt vom Spielstand.</li><li>„Testdaten teilen“ öffnet nach deinem Tippen nach Möglichkeit das native Teilen-Menü, sonst einen Download. Keine automatische Übertragung.</li><li>Automatisierte Wirtschaftstests mit 1.500 simulierten Verläufen. Die Ergebnisse haben noch keine weiteren Balanceänderungen ausgelöst.</li></ul></div><div class="item"><h3>0.4 – Häfen, Schiffe und Absicherung</h3><ul><li>Fünf illustrierte Stadtansichten und sieben Gebäudeansichten.</li><li>Größere Gebäudeschaltflächen unter dem Hafenbild.</li><li>Eigener Hafen pro Schiff: Zurückgelassene Schiffe handeln nicht mehr am Ziel einer Einzelreise.</li><li>Hafengebühren je Ankunft und Schiff: Schnigge 4, Kogge 6, Holk 9 Gold; Vorschau vor Abfahrt.</li><li>Kreditrahmen wächst nicht mehr durch neue Schulden. Nach Aufträgen fünf Tage Wartefrist; nach Wahlen zehn Tage bis zur Wiederholung.</li><li>Spielstände aus 0.2 und 0.3 werden geprüft und übernommen. Fehlende historische Einkaufskosten werden als unbekannt angezeigt.</li><li>Ankünfte werden nur einmal verbucht; Sicherungen vor dem Ersetzen eines Spielstands.</li></ul></div><div class="item"><h3>0.3 – Lebendige Hanse</h3><p>Fünf Städte, Badehaus-Gerüchte, Kirche, Bank, Kontor, Handelsaufträge, mehrere Schiffstypen, Bewaffnung, Konvois und politischer Aufstieg.</p></div><div class="item"><h3>0.2 – Pixelhafen</h3><p>Pixelhafen und Seekarte ergänzten Handel, Reisen, Karriere und lokalen Spielstandexport.</p></div><p class="muted">Dein gespeicherter Fortschritt bleibt erhalten. Spielstände und Testdaten bleiben lokal im jeweiligen Browser. Die neueren Funktionen sind automatisiert geprüft; echte Safari-/Gerätetests stehen noch aus.</p><button onclick="closeSheet()">Zurück zum Spiel</button>`);dismissNews()}
 function dismissNews(){const el=$('releaseBanner');if(el)el.hidden=true;try{localStorage.setItem(NEWSKEY,RELEASE)}catch(e){}}
@@ -1263,7 +1352,5 @@ const Testlog=(()=>{
  return {route:id=>routes.get(id)??null,setRoute:(id,route)=>routes.set(id,route),event,snapshot,toggle,erase,download,share,panel,newRun,tick,get enabled(){return enabled},get data(){return data}};
 })();
 
-let migratedRegionalOnLoad=false;
-try{let raw=localStorage.getItem(KEY),oldKey=null;if(!raw){oldKey=localStorage.getItem(PREVIOUS)?PREVIOUS:OLD;raw=localStorage.getItem(oldKey)}if(raw){const parsed=JSON.parse(raw),candidate=migrate(parsed);if(!candidate)alert('Spielstand konnte nicht geladen werden. Die gespeicherten Daten bleiben erhalten. Bitte eine Sicherung importieren.');else{backupTradeLetterMigration(raw);backupInformationMigration(raw);backupPoliticsMigration(raw);backupShipyardMigration(raw);backupStorageMigration(raw);backupRegionalMigration(raw);backupCityMigration(raw);backupGoodsMigration(raw);backupWarehouseMigration(raw);if(oldKey&&localStorage.getItem(KEY+'-migration-backup')===null)localStorage.setItem(KEY+'-migration-backup',raw);migratedRegionalOnLoad=parsed.v!==13;if(migratedRegionalOnLoad)localStorage.setItem(KEY,JSON.stringify(candidate));s=candidate}}}catch(e){s=null;alert('Spielstand konnte nicht sicher übernommen werden. Originaldaten bleiben erhalten. Bitte prüfe freien Speicher oder importiere eine Sicherung.')}if(s){render();Testlog.event('session_started',{partialRun:true});Testlog.snapshot('session_start');if(migratedRegionalOnLoad)notice('Deine Partie wurde mit unveränderten Werten übernommen und im Original gesichert. Grundlager: 150 Fass je Stadt, Zusatzfläche nur auf Wunsch. Altbestände bleiben erhalten; künftig benötigte Zusatzfläche ist zahlungspflichtig, gegebenenfalls als Mietrückstand.')}else welcome();
-checkNews();
+safetyBoot();
 </script></body></html>
