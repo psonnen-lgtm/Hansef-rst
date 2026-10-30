@@ -38,7 +38,7 @@ async function safetyRun(fn,{expected=SafetySession.expected,viewOnly=false}={})
   const disk=localStorage.getItem(KEY);
   if(disk!==expected){if(viewOnly){const result=safetyReadView(fn);safetyMessage('Ein anderes Fenster hat die Partie geändert. Nur Ansicht; bitte den aktuellen Stand laden.',false);return result;}return safetyMessage('Veralteter Stand: Ein anderes Fenster hat gespeichert. Der Vorgang wurde nicht ausgeführt. Bitte den aktuellen Stand laden.');}
   const before=s,oldPending=safetyCopy(pending),oldDraft=safetyCopy(startDraft),oldEvents=Testlog.event,oldSnapshot=Testlog.snapshot,oldRoute=Testlog.setRoute,oldRun=Testlog.newRun,events=[],snapshots=[],routes=[],runs=[];
-  const oldText=JSON.stringify(s);let committed=false;
+  let committed=false;
   SafetySession.active={dirty:false,readOnly:false};s=safetyCopy(s);
   Testlog.event=(type,details={})=>events.push([type,safetyCopy(details)]);Testlog.snapshot=reason=>snapshots.push(reason);Testlog.setRoute=(...args)=>routes.push(args);Testlog.newRun=(...args)=>runs.push(args);
   let result;

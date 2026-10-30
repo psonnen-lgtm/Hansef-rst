@@ -1,0 +1,722 @@
+[
+  {
+    "line": 104,
+    "function": "makeShip",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 114,
+    "function": "warehouseRequired",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 116,
+    "function": "warehouseUsed",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 118,
+    "function": "warehouseCapacity",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 145,
+    "function": "changeWarehouseRent",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 146,
+    "function": "changeWarehouseRent",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 153,
+    "function": "changeWarehouseRent",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 156,
+    "function": "changeWarehouseRent",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 170,
+    "function": "payWarehouseArrears",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 171,
+    "function": "payWarehouseArrears",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 174,
+    "function": "payWarehouseArrears",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 176,
+    "function": "payWarehouseArrears",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 178,
+    "function": "payWarehouseArrears",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 181,
+    "function": "warehouseCapacityPanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 219,
+    "function": "startShipbuilding",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 224,
+    "function": "startShipbuilding",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 273,
+    "function": "warehouseTransfer",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 275,
+    "function": "warehouseTransfer",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 295,
+    "function": "warehouseTransfer",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 297,
+    "function": "warehouseTransfer",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 300,
+    "function": "warehouseSelect",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 302,
+    "function": "warehouseView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 303,
+    "function": "warehouseView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 306,
+    "function": "warehouseView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 354,
+    "function": "politicalRecords",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 356,
+    "function": "politicalOffer",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 362,
+    "function": "politicalSupport",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 368,
+    "function": "mayorQuote",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 403,
+    "function": "hanseQuote",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 428,
+    "function": "acceptPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 429,
+    "function": "acceptPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 430,
+    "function": "acceptPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 431,
+    "function": "acceptPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 439,
+    "function": "politicalSupplyPending",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 441,
+    "function": "completePoliticalSupply",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 454,
+    "function": "witnessPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 455,
+    "function": "witnessPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 456,
+    "function": "witnessPoliticalJob",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 459,
+    "function": "finishPoliticalAccord",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 460,
+    "function": "finishPoliticalAccord",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 464,
+    "function": "runMayorElection",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 465,
+    "function": "runMayorElection",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 466,
+    "function": "runMayorElection",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 467,
+    "function": "runMayorElection",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 468,
+    "function": "runMayorElection",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 471,
+    "function": "resignMayor",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 474,
+    "function": "requestPoliticalEndorsement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 475,
+    "function": "requestPoliticalEndorsement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 477,
+    "function": "acceptHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 478,
+    "function": "acceptHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 481,
+    "function": "witnessHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 482,
+    "function": "witnessHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 483,
+    "function": "witnessHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 486,
+    "function": "finishHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 487,
+    "function": "finishHanseAgreement",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 489,
+    "function": "runHanseAssembly",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 555,
+    "function": "politicalRumorPanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 558,
+    "function": "politicalCareerModel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 576,
+    "function": "politicalCareerBoard",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 584,
+    "function": "politicsHallView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 603,
+    "function": "politicsHallView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 700,
+    "function": "informationPanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 701,
+    "function": "informationPanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 790,
+    "function": "cargoBookPrice",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 791,
+    "function": "ensureCargoRecords",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 799,
+    "function": "questWindow",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 802,
+    "function": "observe",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 845,
+    "function": "regionalReport",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 846,
+    "function": "regionalReport",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 847,
+    "function": "regionalReport",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 854,
+    "function": "regionalInformationPanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 878,
+    "function": "render",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 883,
+    "function": "harborLetter",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 892,
+    "function": "marketTradeLimits",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 896,
+    "function": "marketSelect",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 899,
+    "function": "marketView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 902,
+    "function": "marketView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 905,
+    "function": "marketView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 907,
+    "function": "trade",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 909,
+    "function": "takeBath",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 920,
+    "function": "shipSaleQuote",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 921,
+    "function": "shipSaleQuote",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 924,
+    "function": "shipSalePanel",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 927,
+    "function": "sellShip",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 929,
+    "function": "sellShip",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 930,
+    "function": "sellShip",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 937,
+    "function": "harborWorkEligibility",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 938,
+    "function": "harborWorkEligibility",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 941,
+    "function": "harborWorkEligibility",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 965,
+    "function": "performHarborWork",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 972,
+    "function": "harborView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 973,
+    "function": "repairShip",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 974,
+    "function": "armShip",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 979,
+    "function": "selectFleetShip",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 980,
+    "function": "selectFleetShip",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 986,
+    "function": "shipsView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 988,
+    "function": "contorView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 991,
+    "function": "questsView",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 992,
+    "function": "completeQuests",
+    "category": "economic cargo/context, not person proof",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 999,
+    "function": "mapVoyageQuote",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1000,
+    "function": "mapVoyageQuote",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1001,
+    "function": "mapVoyageQuote",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1015,
+    "function": "mapView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1016,
+    "function": "mapView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1017,
+    "function": "mapView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1018,
+    "function": "mapView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1019,
+    "function": "mapView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1021,
+    "function": "planTravel",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1024,
+    "function": "travelView",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1028,
+    "function": "arrive",
+    "category": "travel/personal projection",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1029,
+    "function": "arrivalView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1030,
+    "function": "saveView",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1195,
+    "function": "drawCity",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1325,
+    "function": "safetyAt",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1327,
+    "function": "safetyPersonalRequired",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1328,
+    "function": "safetyPersonalRequired",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1333,
+    "function": "confirmLegacyPresence",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1334,
+    "function": "confirmLegacyPresence",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1335,
+    "function": "confirmLegacyPresence",
+    "category": "personal action guarded",
+    "scope": "textual line inventory, not complete AST or security proof"
+  },
+  {
+    "line": 1350,
+    "function": "checkNews",
+    "category": "view/derived rule/helper; no personal proof inferred",
+    "scope": "textual line inventory, not complete AST or security proof"
+  }
+]

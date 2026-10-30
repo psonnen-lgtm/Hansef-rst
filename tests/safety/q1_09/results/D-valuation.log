@@ -1,0 +1,8 @@
+A01-empty-neutral {"cash":0,"current":0,"W1":0,"W2":0}
+A02-mixed-three-cycles {"cash":0,"current":577.5,"W1":0,"W2":0}
+A03-partial {"cash":-450,"current":165,"W1":0,"W2":-450}
+A04-warehouse-roundtrip {"cash":0,"current":0,"W1":0,"W2":0}
+A05-two-ships {"cash":0,"current":330,"W1":0,"W2":0}
+A06-real-profit {"cash":900,"current":660,"W1":0,"W2":900}
+A07-real-loss {"cash":900,"current":-300,"W1":0,"W2":900}
+A08-old-rank-threshold {"cash":0,"current":330,"W1":0,"W2":0}

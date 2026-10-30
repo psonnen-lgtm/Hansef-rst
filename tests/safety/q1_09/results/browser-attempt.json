@@ -1,0 +1,19 @@
+{
+  "sourceCommit": "82c03db3f0d3113205a06352bdfb2968f91a729a",
+  "attempts": [
+    {
+      "engine": "Chromium",
+      "launched": false,
+      "reason": "browserType.launch: Executable doesn't exist at /tmp/q109-browsers/chromium_headless_shell-1234/chrome-headless-shell-linux64/chrome-headless-shell\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+    },
+    {
+      "engine": "WebKit",
+      "launched": false,
+      "reason": "browserType.launch: Executable doesn't exist at /tmp/q109-browsers/webkit-2336/pw_run.sh\n╔════════════════════════════════════════════════════════════╗\n║ Looks like Playwright was just installed or updated.       ║\n║ Please run the following command to download new browsers: ║\n║                                                            ║\n║     npx playwright install                                 ║\n║                                                            ║\n║ <3 Playwright Team                                         ║\n╚════════════════════════════════════════════════════════════╝"
+    }
+  ],
+  "gameBrowserChecks": [],
+  "browserGameAbnahme": false,
+  "physicalDevicesTested": false,
+  "note": "This is only capability discovery. Missing binaries/download403 mean no game UI, true tabs, mobile viewport or native Web Locks test was run."
+}
