@@ -1,0 +1,323 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "sourceSHA256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "scriptCount": 1,
+  "inventory": [
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 20,
+      "nearestNamedFunction": "backupCityMigration",
+      "excerpt": "localStorage.getItem(key)===null)localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 40,
+      "nearestNamedFunction": "backupGoodsMigration",
+      "excerpt": "localStorage.getItem(key)===null)localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 71,
+      "nearestNamedFunction": "backupStorageMigration",
+      "excerpt": "localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 71,
+      "nearestNamedFunction": "backupStorageMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 131,
+      "nearestNamedFunction": "backupShipyardMigration",
+      "excerpt": "localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 131,
+      "nearestNamedFunction": "backupShipyardMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 201,
+      "nearestNamedFunction": "backupWarehouseMigration",
+      "excerpt": "localStorage.getItem(key)===null)localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 481,
+      "nearestNamedFunction": "backupPoliticsMigration",
+      "excerpt": "localStorage.getItem(key);if(old===raw)return;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 481,
+      "nearestNamedFunction": "backupPoliticsMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 576,
+      "nearestNamedFunction": "backupInformationMigration",
+      "excerpt": "localStorage.getItem(key);if(old===raw)return;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 576,
+      "nearestNamedFunction": "backupInformationMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 586,
+      "nearestNamedFunction": "informationTransaction",
+      "excerpt": "localStorage.getItem(KEY);"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 589,
+      "nearestNamedFunction": "informationTransaction",
+      "excerpt": "localStorage.getItem(KEY)!==disk)throw Error('Die Partie hat sich während der Bestätigung geändert. Bitte das Angebot neu öffnen.');"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 687,
+      "nearestNamedFunction": "backupTradeLetterMigration",
+      "excerpt": "localStorage.getItem(key);if(old===raw)return;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 687,
+      "nearestNamedFunction": "backupTradeLetterMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 773,
+      "nearestNamedFunction": "backupRegionalMigration",
+      "excerpt": "localStorage.getItem(key);"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 775,
+      "nearestNamedFunction": "backupRegionalMigration",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 998,
+      "nearestNamedFunction": "startOriginal",
+      "excerpt": "localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1289,
+      "nearestNamedFunction": "safetyBackupRaw",
+      "excerpt": "localStorage.getItem(key);if(old===raw)return key;if(old===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung nicht bestätigt');return key;}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1289,
+      "nearestNamedFunction": "safetyBackupRaw",
+      "excerpt": "localStorage.getItem(key)!==raw)throw Error('Originalsicherung nicht bestätigt');return key;}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(KEY+'-v13-original')??localStorage.getItem(KEY+'-import-original')??localStorage.getItem(PRIORSAFETYKEY+'-v13-original')??localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localSt"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(KEY+'-import-original')??localStorage.getItem(PRIORSAFETYKEY+'-v13-original')??localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(ra"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(PRIORSAFETYKEY+'-v13-original')??localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Über"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1331,
+      "nearestNamedFunction": "safetyOriginalText",
+      "excerpt": "localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1376,
+      "nearestNamedFunction": "checkNews",
+      "excerpt": "localStorage.getItem(NEWSKEY)===RELEASE}catch(e){/* Storage failure must never obstruct play. */}}"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1392,
+      "nearestNamedFunction": "exportFile",
+      "excerpt": "localStorage.getItem(k)))}catch(e){}}if(!sessions.some(x=>x.sessionId===ID)&&(data.events.length||data.snapshots.length))sessions.push(data);const report={schema:1,exportedAt:new Date().toISOString(),notes:{activeTime:'Visible focused page,"
+    },
+    {
+      "api": "localStorage.getItem",
+      "reviewScriptLine": 1399,
+      "nearestNamedFunction": "newRun",
+      "excerpt": "localStorage.getItem(CONSENT)==='yes'});"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 20,
+      "nearestNamedFunction": "backupCityMigration",
+      "excerpt": "localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 40,
+      "nearestNamedFunction": "backupGoodsMigration",
+      "excerpt": "localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 71,
+      "nearestNamedFunction": "backupStorageMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 131,
+      "nearestNamedFunction": "backupShipyardMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 201,
+      "nearestNamedFunction": "backupWarehouseMigration",
+      "excerpt": "localStorage.setItem(key,raw)}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 481,
+      "nearestNamedFunction": "backupPoliticsMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 576,
+      "nearestNamedFunction": "backupInformationMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 687,
+      "nearestNamedFunction": "backupTradeLetterMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 775,
+      "nearestNamedFunction": "backupRegionalMigration",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 1289,
+      "nearestNamedFunction": "safetyBackupRaw",
+      "excerpt": "localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung nicht bestätigt');return key;}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 1375,
+      "nearestNamedFunction": "dismissNews",
+      "excerpt": "localStorage.setItem(NEWSKEY,RELEASE)}catch(e){}}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 1386,
+      "nearestNamedFunction": "flush",
+      "excerpt": "localStorage.setItem(KEYLOG,JSON.stringify(data));dirty=false}lastFlush=performance.now();return true})}"
+    },
+    {
+      "api": "localStorage.setItem",
+      "reviewScriptLine": 1390,
+      "nearestNamedFunction": "toggle",
+      "excerpt": "localStorage.setItem(CONSENT,'yes');enabled=true;error='';active();event('recording_enabled',{partialRun:true});snapshot('enabled');flush()} });contorView()}"
+    },
+    {
+      "api": "localStorage.removeItem",
+      "reviewScriptLine": 1390,
+      "nearestNamedFunction": "toggle",
+      "excerpt": "localStorage.removeItem(CONSENT)}else{localStorage.setItem(CONSENT,'yes');enabled=true;error='';active();event('recording_enabled',{partialRun:true});snapshot('enabled');flush()} });contorView()}"
+    },
+    {
+      "api": "localStorage.removeItem",
+      "reviewScriptLine": 1391,
+      "nearestNamedFunction": "erase",
+      "excerpt": "localStorage.removeItem(k)});data.events=[];data.snapshots=[];data.activeMs=0;dirty=false;contorView()}"
+    },
+    {
+      "api": "Object.keys(localStorage)",
+      "reviewScriptLine": 1391,
+      "nearestNamedFunction": "erase",
+      "excerpt": "Object.keys(localStorage))if(k.startsWith(PREFIX))localStorage.removeItem(k)});data.events=[];data.snapshots=[];data.activeMs=0;dirty=false;contorView()}"
+    },
+    {
+      "api": "Object.keys(localStorage)",
+      "reviewScriptLine": 1392,
+      "nearestNamedFunction": "exportFile",
+      "excerpt": "Object.keys(localStorage))if(k.startsWith(PREFIX+'session-')){try{sessions.push(JSON.parse(localStorage.getItem(k)))}catch(e){}}if(!sessions.some(x=>x.sessionId===ID)&&(data.events.length||data.snapshots.length))sessions.push(data);const re"
+    },
+    {
+      "api": "indexedDB.open",
+      "reviewScriptLine": 1179,
+      "nearestNamedFunction": "safetyOpenDatabase",
+      "excerpt": "indexedDB.open(SAFETY_DATABASE,1);"
+    },
+    {
+      "api": ".objectStore('game')",
+      "reviewScriptLine": 1187,
+      "nearestNamedFunction": "safetyCanonical",
+      "excerpt": ".objectStore('game');let value=null,error=null;"
+    },
+    {
+      "api": ".get('active')",
+      "reviewScriptLine": 1189,
+      "nearestNamedFunction": "safetyCanonical",
+      "excerpt": ".get('active');request.onsuccess=()=>{try{value=request.result??null;if(value!==null&&typeof value!=='string')throw Error('Ungültiger aktiver Spielstand');if(write){if(value!==expected)throw Error('Veralteter Stand: Ein anderes Fenster hat "
+    },
+    {
+      "api": ".put(bytes,'active')",
+      "reviewScriptLine": 1189,
+      "nearestNamedFunction": "safetyCanonical",
+      "excerpt": ".put(bytes,'active');value=bytes}}catch(e){error=e;tx.abort()}};"
+    },
+    {
+      "api": "navigator.locks.request",
+      "reviewScriptLine": 1309,
+      "nearestNamedFunction": "safetyRun",
+      "excerpt": "navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},async()=>{"
+    },
+    {
+      "api": "navigator.locks.request",
+      "reviewScriptLine": 1340,
+      "nearestNamedFunction": "safetyReload",
+      "excerpt": "navigator.locks.request(SAFETY_LOCK,{mode:'exclusive'},async()=>{const raw=await safetyReadCanonical();if(raw===null)throw Error('Kein aktiver Sicherheitsstand');const x=migrate(JSON.parse(raw));if(!x||x.politics.version!==2)throw Error('Ni"
+    }
+  ],
+  "noSessionStorage": true,
+  "noCacheStorageOrServiceWorker": true,
+  "note": "Line numbers refer to first script with one-line ART replaced by empty object. Full sources unchanged; nearest function is a navigation hint, arrow closures may follow it. Every listed callsite reviewed; runtime namespace gate covers every unqualified LocalStorage call."
+}

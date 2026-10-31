@@ -1,0 +1,240 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "testCopyCommit": "393006ff89f5945a501e3df79c891907721682cb",
+  "testCopySHA256": "8287b7e266de64906063ee9b0b5f5ceb9a7e1fbd78bce62ca08356e671797682",
+  "sourceGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "browserVersion": "154.0.8037.57",
+  "passedGroups": 17,
+  "checks": [
+    {
+      "name": "01 no product legacy source or consent imported on first boot",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 12,
+      "details": {
+        "blankTestStart": true,
+        "productionConsentIgnored": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "02 native UI new TEST game, repeated saves and reload",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 56,
+      "details": {
+        "newGameUI": true,
+        "repeatedActions": 3,
+        "reload": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "03 local guard rejects productive and unknown storage keys before native read",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 9,
+      "details": {
+        "allThreeMethodsFailClosed": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "04 all five whitelisted synthetic V13 imports preserve economic and political fields",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 92,
+      "details": {
+        "fixtures": 5,
+        "legacyImportOnlyAfterFileSelection": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "05 exports have test-only names and own original backup, reimport restores state",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 47,
+      "details": {
+        "separateFileNames": true,
+        "ownBackup": true,
+        "exportReimport": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "06 corrupt, genuine-shaped and forged-name-only imports cannot replace test state",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 44,
+      "details": {
+        "rejectedInputs": 3,
+        "knownFixtureHashRequiredWithoutMarker": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "07 test telemetry uses own consent, export and erasure never scan origin",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 40,
+      "details": {
+        "currentTestSessionOnly": true,
+        "noStorageEnumeration": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "08 parallel stale test tab cannot overwrite newer test commit",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 48,
+      "details": {
+        "staleActionRejected": true,
+        "oneCharge": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "09 real parallel test actions have one writer and one stale rejection",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 45,
+      "details": {
+        "twoQueuedTabs": true,
+        "oneCanonicalCharge": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "10 failed test write rolls back, retry changes only own data",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 42,
+      "details": {
+        "controlledQuotaFailure": true,
+        "fullRollback": true,
+        "retryOnce": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "11 restore original and before-replacement backup exclusively from test namespace",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 61,
+      "details": {
+        "testBackupRestored": true,
+        "productionBackupIgnored": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "12 personal and unaccompanied travel keep merchant and ship distinct",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 63,
+      "details": {
+        "bothVoyages": true,
+        "remotePersonalActionBlocked": true,
+        "reload": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "13 legacy-looking test LocalStorage is not automatically loaded",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 21,
+      "details": {
+        "evenOwnLegacySourceIgnored": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "14 closing test mode preserves test state and productive version remains startable",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 43,
+      "details": {
+        "closeWithoutReset": true,
+        "testReloadExact": true,
+        "actualMainVersionsStarted": 3
+      },
+      "source": "native-legacy-control.json"
+    },
+    {
+      "name": "15 missing Web Locks refuses test writes without product fallback",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 7,
+      "details": {
+        "readOnlyFailure": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "16 missing IndexedDB fails closed without LocalStorage fallback",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 1,
+      "details": {
+        "noUnsafeFallback": true
+      },
+      "source": "native-attempt-1.json"
+    },
+    {
+      "name": "17 simultaneous productive Q1.09c and test actions use disjoint databases and locks",
+      "status": "PASS",
+      "productiveActionExplicitlyAllowed": true,
+      "productLocalStorageUnchanged": true,
+      "onlyExpectedProductDonation": true,
+      "testDonationSeparate": true,
+      "source": "native-attempt-1.json"
+    }
+  ],
+  "auditTotals": {
+    "localStorage": 148,
+    "idb": 453,
+    "locks": 64
+  },
+  "uncaughtPageErrors": [],
+  "historicalFailedControlRetained": "native-attempt-1.json group14",
+  "controlResolution": "Synthetic old03 fixture incorrectly retained 11-price V13 journal against seven-good v3 markets. Corrected fixture journal to seven entries, no test-copy change and no weakening of byte-equality assertion. Only group14 repeated; remaining16 earlier passing groups retained against same code hash.",
+  "automaticMigrationOfProductiveData": false,
+  "websitePublished": false,
+  "realAppleDevicesTested": 0,
+  "securityBoundary": "Programmatic separation only; same origin shares native authority and browser quota/eviction."
+}

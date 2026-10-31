@@ -1,0 +1,35 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "kind": "Native Chromium same-origin local HTTP test, isolated synthetic profile only; no publication, no Safari or Apple hardware",
+  "sourceGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedCopyCommit": "393006ff89f5945a501e3df79c891907721682cb",
+  "driverCommit": "b64bd1d304162e9c30b232b64d8025aea5bd0dbb",
+  "selectedGroupFilter": "^14 ",
+  "fullSuiteExecuted": false,
+  "testCopySHA256": "8287b7e266de64906063ee9b0b5f5ceb9a7e1fbd78bce62ca08356e671797682",
+  "browserVersion": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "14 closing test mode preserves test state and productive version remains startable",
+      "status": "PASS",
+      "productionLocalStorageByteIdentical": true,
+      "productionIndexedDBByteIdentical": true,
+      "noProductionAccessFromTest": true,
+      "auditCalls": 43,
+      "details": {
+        "closeWithoutReset": true,
+        "testReloadExact": true,
+        "actualMainVersionsStarted": 3
+      }
+    }
+  ],
+  "auditTotals": {
+    "localStorage": 7,
+    "idb": 32,
+    "locks": 4
+  },
+  "pageErrors": [],
+  "passed": true,
+  "realAppleDevices": 0,
+  "websiteDeployed": false
+}

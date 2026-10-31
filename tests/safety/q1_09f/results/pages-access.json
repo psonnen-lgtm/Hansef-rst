@@ -10,5 +10,10 @@
   {
     "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
     "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "tool": "gh api repos/psonnen-lgtm/Hansef-rst/pages --jq allowlisted fields",
+    "status": "blocked",
+    "error": "Get https://api.github.com/repos/psonnen-lgtm/Hansef-rst/pages: Forbidden"
   }
 ]
