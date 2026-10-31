@@ -1,0 +1,283 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceBase": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "a02415a21a708e399e839eee1c932eadf50e5199",
+  "gameSHA256": "76dd27c20b9a26bcf011fb5e705b6304970ca503fffdb3680339860f4e3ed0ce",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": null,
+  "fullSuite": true,
+  "checks": [
+    {
+      "name": "01 first launch offers three start functions; native new-game UI",
+      "status": "PASS",
+      "details": {
+        "startMenu": true,
+        "newGameUI": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "02 five independent slots, duplicate names, unique IDs, sixth rejected",
+      "status": "PASS",
+      "details": {
+        "fiveSlots": true,
+        "duplicateNamesAllowed": true,
+        "capacityFailurePreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "03 switching and autosave affect only active party",
+      "status": "PASS",
+      "details": {
+        "autosaveAOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "04 rename preserves ID, gameplay bytes and other party",
+      "status": "PASS",
+      "details": {
+        "renameMetadataOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "05 deletion requires confirmation and preserves other data/backups",
+      "status": "PASS",
+      "details": {
+        "cancelAndExplicitDelete": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "06 deleting active party invalidates old tab and prevents resurrection",
+      "status": "PASS",
+      "details": {
+        "deletedPartyCannotWrite": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "07 reload shows home, continue loads last selected party",
+      "status": "PASS",
+      "details": {
+        "explicitContinueAfterReload": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "08 export non-active party has unique filename and metadata, no mutation",
+      "status": "PASS",
+      "details": {
+        "individualExport": true,
+        "filename": "hansefuerst-Nordhandel-354278ae-0745-468c-8e68-d0e2a13fed76.json"
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "09 V13 import creates new ID and explicit replacement is cancelable",
+      "status": "PASS",
+      "details": {
+        "newImportAndConfirmedReplacement": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "10 corrupt, future and TEST imports do not alter library",
+      "status": "PASS",
+      "details": {
+        "invalidInputs": 4
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "11 export and reimport preserve name and all game fields",
+      "status": "PASS",
+      "details": {
+        "V13AndDisplayNameRoundtrip": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "12 canonical Q109c migration preserves raw original and all state fields",
+      "status": "PASS",
+      "details": {
+        "legacyCanonicalReadOnly": true,
+        "exactOriginalBackup": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "13 regular LocalStorage V13 migrates once and source stays byte-identical",
+      "status": "PASS",
+      "details": {
+        "migrationIdempotent": true,
+        "financialCargoShipsPreserved": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "14 simultaneous first imports do not duplicate migrated party",
+      "status": "PASS",
+      "details": {
+        "twoTabsOneMigration": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "15 political titles offices and running contracts survive migration and roundtrip",
+      "status": "PASS",
+      "details": {
+        "historicalTitlesAndObligationsRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "16 early M2 personal information retained without invented grace proof",
+      "status": "PASS",
+      "details": {
+        "knownPersonRetained": true,
+        "noNewProof": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "17 invalid legacy original can be exported and preserved before blank start",
+      "status": "PASS",
+      "details": {
+        "rawInvalidOriginalRecoverable": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "18 migration transaction failure preserves source and retries exactly once",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n0 !== 1\n\n    at /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:67:400\n    at async check (/workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:67:2"
+    },
+    {
+      "name": "19 true abort after put rolls back payload catalog and backup together",
+      "status": "PASS",
+      "details": {
+        "nativeTransactionAbortAfterPut": true,
+        "atomicAcrossThreeStores": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "20 failed creation does not select or leak a half-created party",
+      "status": "PASS",
+      "details": {
+        "createAbortDoesNotSwitch": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "21 two same-party tabs reject stale write with one charge",
+      "status": "PASS",
+      "details": {
+        "samePartyCAS": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "22 two different-party tabs can both save independently",
+      "status": "PASS",
+      "details": {
+        "perPartyRevisionIndependentOfGlobalLastPlayed": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "23 queued old action cannot write after party switch",
+      "status": "PASS",
+      "details": {
+        "selectionGenerationGuardsQueuedWork": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "24 delayed FileReader cannot import into a newly selected party",
+      "status": "PASS",
+      "details": {
+        "delayedNativeFileReaderBoundToOriginalSelection": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "25 concurrent newer target defeats explicit stale replacement import",
+      "status": "PASS",
+      "details": {
+        "targetRevisionCheckedInsideAtomicImport": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "26 backup export and restore create independent new party after deletion",
+      "status": "PASS",
+      "details": {
+        "backupSurvivesDeletionAndRestoresAsNewIdentity": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "27 W1-S neutral circles do not increase credit; known reputation path remains open",
+      "status": "FAIL",
+      "error": "page.evaluate: TypeError: Cannot set properties of null (setting 'value')\n    at eval (eval at evaluate (:311:30), <anonymous>:1:34)\n    at UtilityScript.evaluate (<anonymous>:313:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)\n    at /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:76:316\n    at async check (/workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:76:2"
+    },
+    {
+      "name": "28 personal and unaccompanied voyages preserve costs person and political guard",
+      "status": "PASS",
+      "details": {
+        "feesDaysSameNativeRules": true,
+        "remotePersonalActionBlocked": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "29 exact legacy grace remains once across single-party export replacement",
+      "status": "PASS",
+      "details": {
+        "originalDeadlinePreserved": true,
+        "noStackedGrace": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "30 failed voyage write retains same hidden risk outcome on retry",
+      "status": "PASS",
+      "details": {
+        "oneRiskRollAcrossFailedWriteAndRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "31 missing storage primitives fail closed without legacy source alteration",
+      "status": "PASS",
+      "details": {
+        "missingWebLocksNoUnsafeFallback": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "32 touch-sized management screens and new-game cancel preserve all parties",
+      "status": "PASS",
+      "details": {
+        "threeViewportSizes": true,
+        "noHorizontalOverflow": true,
+        "cancelPreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [
+    "tests/features/q1_10a/results/save-manager-375.png",
+    "tests/features/q1_10a/results/save-manager-820.png",
+    "tests/features/q1_10a/results/save-manager-1280.png"
+  ],
+  "passed": false,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
