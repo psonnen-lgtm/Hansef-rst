@@ -1,17 +1,17 @@
 {
   "date": "2026-10-31 Europe/Berlin",
   "baseCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
-  "testedGameCommit": "9aa7b7f6365af5711924f847842360f82e329082",
-  "gameSHA256": "dcbca27ada9b832ec2240bd7f92bfd61d71f441ddae52d6f1899c0ffdfcd167a",
-  "gameBytes": 46402451,
+  "testedGameCommit": "46d28dc04901dde0d137fa3dd8869ae11b17a982",
+  "gameSHA256": "35187fa97fab81740dfad2f6fca580261e512f8309eb94e2b6a4912f014a29bb",
+  "gameBytes": 46402592,
   "regularDB": "hansefuerst-local-safety3",
   "databaseVersion": 2,
   "libraryVersion": 1,
   "gameFormat": "V13 / politics2 / safety3",
   "partyLimit": 5,
-  "uniquePassedGroups": 39,
-  "fullFinalRunGroups": 38,
-  "additionalPhoneLandscapeGroups": 1,
+  "uniquePassedGroups": 40,
+  "fullFinalRunGroups": 40,
+  "authoritativeRawResult": "native-release.json",
   "browserVersion": "154.0.8037.57",
   "uncaughtPageErrors": [],
   "checks": [
@@ -23,7 +23,7 @@
         "newGameUI": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "02 five independent slots, duplicate names, unique IDs, sixth rejected",
@@ -34,7 +34,7 @@
         "capacityFailurePreservesAll": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "03 switching and autosave affect only active party",
@@ -43,7 +43,7 @@
         "autosaveAOnly": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "04 rename preserves ID, gameplay bytes and other party",
@@ -52,7 +52,7 @@
         "renameMetadataOnly": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "05 deletion requires confirmation and preserves other data/backups",
@@ -61,7 +61,7 @@
         "cancelAndExplicitDelete": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "06 deleting active party invalidates old tab and prevents resurrection",
@@ -70,7 +70,7 @@
         "deletedPartyCannotWrite": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "07 reload shows home, continue loads last selected party",
@@ -79,17 +79,17 @@
         "explicitContinueAfterReload": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "08 export non-active party has unique filename and metadata, no mutation",
       "status": "PASS",
       "details": {
         "individualExport": true,
-        "filename": "hansefuerst-Nordhandel-f5f63e63-b4ae-446a-ac43-fc9b12d86fc9.json"
+        "filename": "hansefuerst-Nordhandel-419a896d-3c47-4549-a6be-1c3a2122e92e.json"
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "09 V13 import creates new ID and explicit replacement is cancelable",
@@ -98,7 +98,7 @@
         "newImportAndConfirmedReplacement": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "10 corrupt, future and TEST imports do not alter library",
@@ -107,7 +107,7 @@
         "invalidInputs": 4
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "11 export and reimport preserve name and all game fields",
@@ -116,7 +116,7 @@
         "V13AndDisplayNameRoundtrip": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "12 canonical Q109c migration preserves raw original and all state fields",
@@ -126,7 +126,7 @@
         "exactOriginalBackup": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "13 regular LocalStorage V13 migrates once and source stays byte-identical",
@@ -136,7 +136,7 @@
         "financialCargoShipsPreserved": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "14 simultaneous first imports do not duplicate migrated party",
@@ -146,7 +146,7 @@
         "oneMigration": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "15 political titles offices and running contracts survive migration and roundtrip",
@@ -155,7 +155,7 @@
         "historicalTitlesAndObligationsRetained": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "16 early M2 personal information retained without invented grace proof",
@@ -165,7 +165,7 @@
         "noNewProof": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "17 invalid legacy original can be exported and preserved before blank start",
@@ -174,7 +174,7 @@
         "rawInvalidOriginalRecoverable": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "18 migration transaction failure preserves source and retries exactly once",
@@ -184,7 +184,7 @@
         "rawExportBeforeRetry": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "19 true abort after put rolls back payload catalog and backup together",
@@ -194,7 +194,7 @@
         "atomicAcrossThreeStores": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "20 failed creation does not select or leak a half-created party",
@@ -203,7 +203,7 @@
         "createAbortDoesNotSwitch": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "21 two same-party tabs reject stale write with one charge",
@@ -212,7 +212,7 @@
         "samePartyCAS": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "22 two different-party tabs can both save independently",
@@ -221,7 +221,7 @@
         "perPartyRevisionIndependentOfGlobalLastPlayed": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "23 queued old action cannot write after party switch",
@@ -230,7 +230,7 @@
         "selectionGenerationGuardsQueuedWork": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "24 delayed FileReader cannot import into a newly selected party",
@@ -239,7 +239,7 @@
         "delayedNativeFileReaderBoundToOriginalSelection": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "25 concurrent newer target defeats explicit stale replacement import",
@@ -248,7 +248,7 @@
         "targetRevisionCheckedInsideAtomicImport": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "26 backup export and restore create independent new party after deletion",
@@ -257,7 +257,7 @@
         "backupSurvivesDeletionAndRestoresAsNewIdentity": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "27 W1-S neutral circles do not increase credit; known reputation path remains open",
@@ -269,7 +269,7 @@
         "supportDelta": 0.16666666666666666
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "28 personal and unaccompanied voyages preserve costs person and political guard",
@@ -279,7 +279,7 @@
         "remotePersonalActionBlocked": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "29 exact legacy grace remains once across single-party export replacement",
@@ -289,7 +289,7 @@
         "noStackedGrace": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "30 failed voyage write retains same hidden risk outcome on retry",
@@ -298,7 +298,7 @@
         "oneRiskRollAcrossFailedWriteAndRetry": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "31 missing storage primitives fail closed without legacy source alteration",
@@ -307,7 +307,7 @@
         "missingWebLocksNoUnsafeFallback": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "32 touch-sized management screens and new-game cancel preserve all parties",
@@ -318,7 +318,7 @@
         "cancelPreservesAll": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "33 shipyard material book values remain outside W1-S collateral",
@@ -330,7 +330,7 @@
         "paidWageRetained": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "34 newer file choice wins over delayed older FileReader in same party",
@@ -339,7 +339,7 @@
         "olderFileCannotReplaceNewerPreview": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "35 valid legacy names are retained even when default slot label needs truncation",
@@ -349,7 +349,7 @@
         "onlyDisplayMetadataNormalized": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "36 missing IndexedDB leaves the old canonical source readable and unmodified",
@@ -358,7 +358,7 @@
         "noSchemaUpgradeWithoutPrerequisites": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "37 duplicate generated IDs cannot overwrite an existing party",
@@ -367,7 +367,7 @@
         "forcedCollisionRejectedWithoutOverwrite": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "38 catalog revision overflow aborts all writes without corrupting state",
@@ -377,7 +377,7 @@
         "noPartialPayloadOrBackup": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-final.json"
+      "source": "native-release.json"
     },
     {
       "name": "39 phone landscape start and management controls remain touch-accessible",
@@ -389,7 +389,18 @@
         "closeReachable": true
       },
       "testNamespaceUntouched": true,
-      "source": "native-landscape.json"
+      "source": "native-release.json"
+    },
+    {
+      "name": "40 legitimate TEST-named regular merchant remains playable while isolated files stay rejected",
+      "status": "PASS",
+      "details": {
+        "legitimateNamesNotMistakenForIsolatedProvenance": true,
+        "ownExportRoundtrip": true,
+        "isolatedMarkerAlwaysRejected": true
+      },
+      "testNamespaceUntouched": true,
+      "source": "native-release.json"
     }
   ],
   "knownOpenIssue": {
@@ -401,11 +412,13 @@
     "Q001UnqualifiedClosed": false
   },
   "realAppleDeviceTestsForThisFeature": 0,
-  "reportedEarlierQ109fUserTests": "iPhone start/save/load/export/import; iPad start/save/load. User supplied, not repeated or counted as new feature acceptance.",
+  "earlierUserReportsAreNotFeatureAcceptance": true,
   "websiteDeployed": false,
-  "historicalFailuresRetained": [
-    "native-attempt-1.json (30/32 passed; two driver errors)",
-    "native-focused.json (6/7 passed; name length assertion corrected)",
-    "native-name-limit.json (corrected name-label assertion passed)"
+  "earlierResultsPreserved": [
+    "native-attempt-1.json",
+    "native-focused.json",
+    "native-name-limit.json",
+    "native-final.json",
+    "native-landscape.json"
   ]
 }

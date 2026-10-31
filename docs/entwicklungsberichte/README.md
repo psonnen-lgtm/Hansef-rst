@@ -274,3 +274,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.09b – Sicherheitsnachprüfung und offene Entscheidungen
 
 30.10.2026 – [Gesamtbericht](Q1_09b/Q1_09b_gesamtbericht.md), [Bewertung/Kredit](Q1_09b/Q1_09b_bewertung_und_kredit.md), [Browserabnahme und manueller Geräteplan](Q1_09b/Q1_09b_browserabnahme.md), [Schiffsreisen](Q1_09b/Q1_09b_schiffsreisen.md), [Altverträge](Q1_09b/Q1_09b_altvertraege.md), [Regressionen](Q1_09b/Q1_09b_regressionstests.md), [Entscheidungsvorlage](Q1_09b/Q1_09b_entscheidungsvorlage.md).19 native Chromium-Gruppen,37 alte Basisaussagen,17 isolierte Vorschlagsgruppen und eine Treibersperre bestanden;44 Q1.09-VM-Gruppen übernommen. Produktcode unverändert; Q001/Regelfreigaben, Safari/Geräte und Offline-Kaltstart offen. Kein Merge und keine Pages-Änderung.
+
+
+## Q1.10a – Mehrspielstand-Verwaltung und neuer Start
+
+31.10.2026 – [Gesamtbericht](Q1_10a/Q1_10a_gesamtbericht.md), [Speicherarchitektur](Q1_10a/Q1_10a_speicherarchitektur.md), [V13-Bestandsschutz](Q1_10a/Q1_10a_bestandsschutz.md), [Tests](Q1_10a/Q1_10a_tests.md), [offene Probleme](Q1_10a/Q1_10a_offene_probleme.md). Eigener Feature-Branch direkt von geprüftem Q1.09c-Code. Fünf unabhängige Partien, Start/Fortsetzen/Verwaltung, atomare IndexedDB-Bibliothek und exakte Originalbackups.40 native Chromium-Gruppen bestanden; echte neue Apple-Abnahme offen. Bekannter Ansehenspfad unverändert offen. Keine Pages-Veröffentlichung, keine Änderung der isolierten Q1.09f-Testversion, kein Merge oder Folgeauftrag.

@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "baseCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "46d28dc04901dde0d137fa3dd8869ae11b17a982",
+  "gameSHA256": "35187fa97fab81740dfad2f6fca580261e512f8309eb94e2b6a4912f014a29bb",
+  "gameBytes": 46402592,
+  "oldTrackedFilesCompared": 3557,
+  "oldFilesChangedOnly": [
+    "Hansefuerst_0_4.html",
+    "docs/entwicklungsberichte/README.md"
+  ],
+  "indexAppendOnly": true,
+  "allHistoricalTestsResultsAssetsUntouched": true,
+  "entireOriginalHTMLRecoveredByReversing11ScopedChanges": true,
+  "nativeChromiumGroupsPassed": 40,
+  "uncaughtPageErrors": 0,
+  "reports": 5,
+  "relativeReportLinksChecked": 16,
+  "initialScreenshotsPreservedByteExact": true,
+  "preFixScreenshotsPreservedByteExact": true,
+  "jsSyntaxChecks": 3,
+  "diffChecksPassed": true,
+  "Q001UnqualifiedClosed": false,
+  "realAppleDeviceTestsForThisFeature": 0,
+  "pagesDeployment": false,
+  "mergePerformed": false
+}
