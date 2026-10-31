@@ -294,3 +294,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.09f – GitHub-Testmodus mit getrenntem Speicher
 
 31.10.2026 – [Gesamtbericht](Q1_09f/Q1_09f_gesamtbericht.md), [Speicherisolation](Q1_09f/Q1_09f_speicherisolation.md), [Pages-Testzugang](Q1_09f/Q1_09f_github_pages_testzugang.md), [Testnachweise](Q1_09f/Q1_09f_testnachweise.md). Separate angepasste Testkopie, Hauptdatei unverändert. Eigene Datenbank/Stores/Schlüssel/Backups/Locks/Exporte, keine produktive Alt-Suche und nur synthetische Importe.17 native Chromium-Gruppen belegt, Kontrollfixturefehler dokumentiert und nur betroffenen Fall wiederholt. Gleiche Origin bleibt programmatische Trennung mit geteilten Rechten/Quota; keine harte Sicherheitsgrenze. Pages-Konfiguration durch HTTP403 nicht bestätigt. Keine Veröffentlichung, keine neue Registrierung/Plattform, kein Merge oder Folgeauftrag.
+
+
+## Q1.09g – Pages-Veröffentlichung: Vorprüfung blockiert
+
+31.10.2026 – [Gesamtbericht](Q1_09g/Q1_09g_gesamtbericht.md), [Pages-Konfiguration und Blockade](Q1_09g/Q1_09g_pages_veroeffentlichung.md), [Online-Abnahmestatus](Q1_09g/Q1_09g_online_abnahme.md), [Apple-Testanleitung](Q1_09g/Q1_09g_apple_testanleitung.md). Veröffentlichung ausdrücklich beauftragt, aber aktive Pages-Quelle/Live-Dateien wegen Forbidden/HTTP403 nicht zuverlässig feststellbar. Deshalb vor jeder Änderung gestoppt. Vier vorhandene Q1.09f-Dateien hashgleich geprüft, keine Testdateien übernommen und keine echte Testadresse bestätigt. Nur Dokumentation/Index ergänzt; kein Deployment, keine Browser-/Apple-Abnahme, kein Merge oder Folgeauftrag.
