@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceBase": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "a02415a21a708e399e839eee1c932eadf50e5199",
+  "gameSHA256": "76dd27c20b9a26bcf011fb5e705b6304970ca503fffdb3680339860f4e3ed0ce",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": "^35 ",
+  "fullSuite": false,
+  "checks": [
+    {
+      "name": "35 valid legacy names are retained even when default slot label needs truncation",
+      "status": "PASS",
+      "details": {
+        "gameNamesUnchanged": true,
+        "onlyDisplayMetadataNormalized": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [],
+  "passed": true,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
