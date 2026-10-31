@@ -1,0 +1,14 @@
+[
+  {
+    "url": "https://api.github.com/repos/psonnen-lgtm/Hansef-rst/pages",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://psonnen-lgtm.github.io/Hansef-rst/",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  },
+  {
+    "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits",
+    "error": "<urlopen error Tunnel connection failed: 403 Forbidden>"
+  }
+]

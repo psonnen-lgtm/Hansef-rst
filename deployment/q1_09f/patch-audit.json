@@ -1,0 +1,216 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "baseCommit": "8a278d90b989d14ec1520b2184ee169385919818",
+  "originalGameCommit": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "sourceSHA256": "50ea83dcb034613ab3c89410cddf0d6328c19fd1218c33130f31798aea4e3048",
+  "testCopySHA256": "8287b7e266de64906063ee9b0b5f5ceb9a7e1fbd78bce62ca08356e671797682",
+  "testCopyBytes": 46390644,
+  "sourceUnchanged": true,
+  "inversePatchesRecoverEntireOriginal": true,
+  "patches": [
+    {
+      "reason": "Closed lexical LocalStorage gate; no origin-wide enumeration; synthetic input gate",
+      "count": 1,
+      "before": "'use strict';",
+      "after": "'use strict';\n\n// Q1.09f: lexical adapter only. Never replace the origin's global Storage APIs.\nconst TEST_STORAGE_PREFIX='hansefuerst-q109f-v1-';\nconst localStorage=(()=>{\n const check=key=>{if(typeof key!=='string'||!key.startsWith(TEST_STORAGE_PREFIX))throw Error('TEST-Speichergrenze: fremder Schlüssel verweigert');return key};\n return Object.freeze({\n  getItem:key=>window.localStorage.getItem(check(key)),\n  setItem:(key,value)=>window.localStorage.setItem(check(key),value),\n  removeItem:key=>window.localStorage.removeItem(check(key))\n });\n})();\nconst TEST_SYNTHETIC_FIXTURES=[\"58febdc511dbd33d113636b7eba1a83d1b2c39d4e6010f9238570322c71ed153\", \"d11d14b934955e790f73e50d4e88a5fa3fd34fc9afa88e81ae38c5b8da435fe2\", \"6236324a7b7f452229420da681f55b67cf04f7976b87e970762f4dd59e29f7dd\", \"991dedd1120f90da203170b966fd00f2cf7cd155485e2079499bc13ea49b3ce4\", \"93602a4399d5bcd78e8c78b6fa131ac1359487bfc6aecc7614f4ee533d76cdc9\"];\nfunction testSyntheticState(x){return !!x&&typeof x.name==='string'&&x.name.startsWith('TEST ')&&(x.flags?.q109fSynthetic===true||TEST_SYNTHETIC_FIXTURES.includes(safetyDigest(JSON.stringify(x))))}\n"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-v04",
+      "count": 1,
+      "before": "'hansefuerst-v04'",
+      "after": "'hansefuerst-q109f-v1-legacy-v04'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-v04-safety1",
+      "count": 1,
+      "before": "'hansefuerst-v04-safety1'",
+      "after": "'hansefuerst-q109f-v1-legacy-safety1'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-v04-safety3",
+      "count": 1,
+      "before": "'hansefuerst-v04-safety3'",
+      "after": "'hansefuerst-q109f-v1-save'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-v03",
+      "count": 1,
+      "before": "'hansefuerst-v03'",
+      "after": "'hansefuerst-q109f-v1-legacy-v03'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-v01",
+      "count": 1,
+      "before": "'hansefuerst-v01'",
+      "after": "'hansefuerst-q109f-v1-legacy-v01'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-local-safety3",
+      "count": 1,
+      "before": "'hansefuerst-local-safety3'",
+      "after": "'hansefuerst-q109f-v1-database'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-safety1-writer",
+      "count": 1,
+      "before": "'hansefuerst-safety1-writer'",
+      "after": "'hansefuerst-q109f-v1-writer'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-news-seen",
+      "count": 1,
+      "before": "'hansefuerst-news-seen'",
+      "after": "'hansefuerst-q109f-v1-news'"
+    },
+    {
+      "reason": "Separate identifier hansefuerst-test-v1-",
+      "count": 1,
+      "before": "'hansefuerst-test-v1-'",
+      "after": "'hansefuerst-q109f-v1-log-'"
+    },
+    {
+      "reason": "Separate object store existence check",
+      "count": 1,
+      "before": "contains('game')",
+      "after": "contains('q109f-game')"
+    },
+    {
+      "reason": "Separate object store creation",
+      "count": 1,
+      "before": "createObjectStore('game')",
+      "after": "createObjectStore('q109f-game')"
+    },
+    {
+      "reason": "Separate object store transaction",
+      "count": 1,
+      "before": "db.transaction('game',",
+      "after": "db.transaction('q109f-game',"
+    },
+    {
+      "reason": "Separate object store reference",
+      "count": 1,
+      "before": "tx.objectStore('game')",
+      "after": "tx.objectStore('q109f-game')"
+    },
+    {
+      "reason": "Separate canonical key read",
+      "count": 1,
+      "before": "store.get('active')",
+      "after": "store.get('q109f-active')"
+    },
+    {
+      "reason": "Separate canonical key write",
+      "count": 1,
+      "before": "store.put(bytes,'active')",
+      "after": "store.put(bytes,'q109f-active')"
+    },
+    {
+      "reason": "No legacy LocalStorage lookup or automatic first import",
+      "count": 1,
+      "before": "function startOriginal(){if(SafetySession.expected!==null)return {key:KEY,raw:SafetySession.expected};for(const key of [PRIORSAFETYKEY,LEGACYKEY,PREVIOUS,OLD]){const raw=localStorage.getItem(key);if(raw!==null)return {key,raw}}return {key:KEY,raw:null}}",
+      "after": "function startOriginal(){return {key:KEY,raw:SafetySession.expected}}"
+    },
+    {
+      "reason": "No automatic startup migration, only current marked canonical test state",
+      "count": 1,
+      "before": "if(original.key!==KEY){safetyBackupRaw(original.raw,original.key===PRIORSAFETYKEY?'safety-original':'v13-original');s=safetyUpgrade(x,'unknown',original.raw);}else if(x.politics.safety.version<3||!Object.hasOwn(x.politics.safety,'legacyPersonalJobs')){safetyBackupRaw(original.raw,'safety-original');s=safetyUpgrade(x,'unknown',original.raw);}else s=x;",
+      "after": "if(parsed.flags?.q109fSynthetic!==true||x.politics.version!==2||x.politics.safety.version!==3||!Object.hasOwn(x.politics.safety,'legacyPersonalJobs'))throw Error('Nur eigene aktuelle TEST-Partie laden; synthetische Altdatei ausdrücklich importieren');s=x;"
+    },
+    {
+      "reason": "Original export restricted to own explicit test-import backups",
+      "count": 1,
+      "before": "function safetyOriginalText(){const raw=localStorage.getItem(KEY+'-v13-original')??localStorage.getItem(KEY+'-import-original')??localStorage.getItem(PRIORSAFETYKEY+'-v13-original')??localStorage.getItem(PRIORSAFETYKEY+'-import-original')??localStorage.getItem(LEGACYKEY)??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche Übernahme vorhanden');return raw;}",
+      "after": "function safetyOriginalText(){const raw=localStorage.getItem(KEY+'-import-original')??localStorage.getItem(KEY+'-safety-original');if(raw===null)throw Error('Keine ursprüngliche TEST-Übernahme vorhanden');return raw;}"
+    },
+    {
+      "reason": "Only five pinned synthetic fixtures or marked own test exports; marker is not a security signature",
+      "count": 1,
+      "before": "function migrate(raw){return migrateInformation(raw)}",
+      "after": "function migrate(raw){if(!testSyntheticState(raw))return null;const x=migrateInformation(raw);if(x){x.flags??={};x.flags.q109fSynthetic=true}return x}"
+    },
+    {
+      "reason": "Mark synthetic new games without changing economy/RNG",
+      "count": 1,
+      "before": "const x=fresh(player,name.trim());",
+      "after": "const x=fresh(player,name.trim().startsWith('TEST ')?name.trim():'TEST '+name.trim());x.flags.q109fSynthetic=true;"
+    },
+    {
+      "reason": "Delete current test-log session only; never enumerate origin storage",
+      "count": 1,
+      "before": "for(const k of Object.keys(localStorage))if(k.startsWith(PREFIX))",
+      "after": "for(const k of [CONSENT,KEYLOG])if(k.startsWith(PREFIX))"
+    },
+    {
+      "reason": "Export current test-log session only; no origin storage enumeration",
+      "count": 1,
+      "before": "for(const k of Object.keys(localStorage))if(k.startsWith(PREFIX+'session-'))",
+      "after": "for(const k of [KEYLOG])if(k.startsWith(PREFIX+'session-'))"
+    },
+    {
+      "reason": "Accurate current-session log deletion text",
+      "count": 1,
+      "before": "Alle lokalen Testaufzeichnungen löschen und Aufzeichnung ausschalten?",
+      "after": "Aktuelle TEST-Aufzeichnung löschen und Aufzeichnung ausschalten?"
+    },
+    {
+      "reason": "Accurate current-session log deletion button",
+      "count": 1,
+      "before": "Testdaten löschen</button>",
+      "after": "Aktuelle TEST-Aufzeichnung löschen</button>"
+    },
+    {
+      "reason": "Separate download name hansefuerst-original-erstuebernahme.json",
+      "count": 1,
+      "before": "hansefuerst-original-erstuebernahme.json",
+      "after": "hansefuerst-TEST-Q1_09f-original.json"
+    },
+    {
+      "reason": "Separate download name hansefuerst-spielstand.json",
+      "count": 1,
+      "before": "hansefuerst-spielstand.json",
+      "after": "hansefuerst-TEST-Q1_09f-spielstand.json"
+    },
+    {
+      "reason": "Separate download name hansefuerst-testauswertung-",
+      "count": 1,
+      "before": "hansefuerst-testauswertung-",
+      "after": "hansefuerst-TEST-Q1_09f-auswertung-"
+    },
+    {
+      "reason": "Visible test title",
+      "count": 1,
+      "before": "<title>",
+      "after": "<title>HANSEFÜRST – TESTVERSION Q1.09f · "
+    },
+    {
+      "reason": "Visible test header",
+      "count": 1,
+      "before": "<h1>⚓ Hansefürst <small",
+      "after": "<h1>⚓ HANSEFÜRST – TESTVERSION <small"
+    },
+    {
+      "reason": "Permanent test notice",
+      "count": 1,
+      "before": "<main class=\"wrap\">",
+      "after": "<main class=\"wrap\"><aside id=\"q109fTestNotice\" class=\"card\"><strong>HANSEFÜRST – TESTVERSION Q1.09f</strong><p>Nur synthetische Testpartien. Eigener Speicher-Namensraum, keine automatische Übernahme. Produktive Partien bleiben unangetastet. Dieselbe Origin ist keine Sicherheitsgrenze. Testexporte extern sichern; zum Beenden einfach diesen Testtab schließen.</p></aside>"
+    },
+    {
+      "reason": "Accurate test-only import description",
+      "count": 1,
+      "before": "V11-/V12-/V13-Originale werden auf Kopie übernommen.",
+      "after": "Nur die fünf freigegebenen synthetischen V13-Dateien oder eigene markierte TEST-Exporte ausdrücklich importieren."
+    },
+    {
+      "reason": "Accurate test storage description",
+      "count": 1,
+      "before": "Die alte Speicheradresse bleibt unangetastet.",
+      "after": "Produktive Speicheradressen werden nicht gelesen oder verändert."
+    },
+    {
+      "reason": "No misleading legacy auto-migration or log-history claim",
+      "count": 1,
+      "before": "Frühere LocalStorage-Partien bleiben unveränderte Quellen und Sicherungen.",
+      "after": "Keine Suche nach früheren Partien. Sicherungen entstehen ausschließlich im TEST-Namensraum; die freiwillige Aufzeichnung umfasst nur die aktuelle Testsitzung."
+    }
+  ]
+}
