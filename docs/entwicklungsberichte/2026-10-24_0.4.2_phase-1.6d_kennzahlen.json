@@ -1,0 +1,4348 @@
+{
+  "source": "phase16c-20261024-01/results-manifest.json",
+  "sourceSHA256": "b81ccbbf629a559a4cb4a2513989c75fd4b367e4b983459ad5c7389840d83748",
+  "rowsVerified": 2250,
+  "archiveAndCheckpointHashesVerified": true,
+  "pairedHigherEndWealth": {
+    "normal>cautious": 183,
+    "aggressive>normal": 154,
+    "optimized>aggressive": 191
+  },
+  "groups": {
+    "cautious": {
+      "n": 250,
+      "wealth": {
+        "mean": 451721.592,
+        "median": 422459.5,
+        "min": 220660,
+        "max": 1091584
+      },
+      "profit": {
+        "mean": 448435.128,
+        "median": 418892.0,
+        "min": 216420,
+        "max": 1089391
+      },
+      "cash": {
+        "mean": 448280.592,
+        "median": 419018.5,
+        "min": 217219,
+        "max": 1088143
+      },
+      "days": {
+        "mean": 1441,
+        "median": 1441.0,
+        "min": 1440,
+        "max": 1443
+      },
+      "fees": {
+        "mean": 2830.176,
+        "median": 2886.0,
+        "min": 2130,
+        "max": 2958
+      },
+      "lossCost": {
+        "mean": 2324.36,
+        "median": 2233.5,
+        "min": 893,
+        "max": 5012
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 707544,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 117548,
+        "sales": 117512,
+        "journeys": 117924,
+        "boughtUnits": 2853278,
+        "soldUnits": 2834524,
+        "purchaseCost": 86322268,
+        "salesRevenue": 197849960,
+        "realisedTradeProfit": 112108782,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 581090
+      },
+      "profitByPhaseTotals": {
+        "first360": 16958044,
+        "middle": 57798744,
+        "last360": 37351994
+      },
+      "transactionsAtPrice8": 22921,
+      "pirateEvents": {
+        "pirates": 9400,
+        "defended": 6023
+      },
+      "travelEvents": {
+        "null": 86010,
+        "storm": 16491,
+        "pirates": 9400,
+        "defended": 6023
+      },
+      "lostUnits": 18754,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          46360
+        ],
+        [
+          "Hamburg → Lübeck",
+          46030
+        ],
+        [
+          "Rostock → Lübeck",
+          8097
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Hamburg → Lübeck",
+          41709320
+        ],
+        [
+          "Lübeck → Hamburg",
+          40409926
+        ],
+        [
+          "Lübeck → Rostock",
+          8740930
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 83,
+            "min": 18,
+            "max": 295,
+            "n": 15859
+          },
+          "middle": {
+            "median": 80,
+            "min": 8,
+            "max": 524,
+            "n": 30087
+          },
+          "last360": {
+            "median": 77.0,
+            "min": 8,
+            "max": 515,
+            "n": 14658
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 22,
+            "min": 8,
+            "max": 78,
+            "n": 6441
+          },
+          "middle": {
+            "median": 22.0,
+            "min": 8,
+            "max": 203,
+            "n": 13970
+          },
+          "last360": {
+            "median": 22,
+            "min": 8,
+            "max": 400,
+            "n": 7263
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 25.0,
+            "min": 8,
+            "max": 89,
+            "n": 6434
+          },
+          "middle": {
+            "median": 25.0,
+            "min": 8,
+            "max": 218,
+            "n": 14340
+          },
+          "last360": {
+            "median": 23,
+            "min": 8,
+            "max": 212,
+            "n": 7401
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 16,
+            "min": 8,
+            "max": 54,
+            "n": 4735
+          },
+          "middle": {
+            "median": 18,
+            "min": 8,
+            "max": 106,
+            "n": 8897
+          },
+          "last360": {
+            "median": 18.0,
+            "min": 8,
+            "max": 107,
+            "n": 4578
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 31.0,
+            "min": 8,
+            "max": 105,
+            "n": 8316
+          },
+          "middle": {
+            "median": 31.0,
+            "min": 8,
+            "max": 237,
+            "n": 16758
+          },
+          "last360": {
+            "median": 32.0,
+            "min": 8,
+            "max": 352,
+            "n": 8396
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 54,
+            "min": 10,
+            "max": 191,
+            "n": 12609
+          },
+          "middle": {
+            "median": 53,
+            "min": 8,
+            "max": 654,
+            "n": 22963
+          },
+          "last360": {
+            "median": 50,
+            "min": 8,
+            "max": 621,
+            "n": 11635
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 19.0,
+            "min": 8,
+            "max": 52,
+            "n": 5024
+          },
+          "middle": {
+            "median": 21.0,
+            "min": 8,
+            "max": 118,
+            "n": 10014
+          },
+          "last360": {
+            "median": 23.0,
+            "min": 8,
+            "max": 140,
+            "n": 4682
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10104,
+          "days": 1442,
+          "final": {
+            "day": 487443,
+            "gold": 217219,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 220660,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 99297
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10017,
+          "days": 1440,
+          "final": {
+            "day": 487441,
+            "gold": 1088143,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 1091584,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 491213
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": {
+        "mean": 772.092,
+        "median": 766.5,
+        "min": 402,
+        "max": 1278
+      },
+      "elderTrips": {
+        "mean": 254.504,
+        "median": 252.5,
+        "min": 135,
+        "max": 417
+      },
+      "elders": 250,
+      "recovered": 0,
+      "targetReached": 0,
+      "blocked": 0,
+      "recoveryDays": null,
+      "lossCounts": null,
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "normal": {
+      "n": 250,
+      "wealth": {
+        "mean": 520553.852,
+        "median": 485686.5,
+        "min": 195260,
+        "max": 1318706
+      },
+      "profit": {
+        "mean": 517285.624,
+        "median": 482643.5,
+        "min": 191249,
+        "max": 1315993
+      },
+      "cash": {
+        "mean": 517112.852,
+        "median": 482245.5,
+        "min": 191819,
+        "max": 1315265
+      },
+      "days": {
+        "mean": 1441.084,
+        "median": 1441.0,
+        "min": 1440,
+        "max": 1444
+      },
+      "fees": {
+        "mean": 2827.992,
+        "median": 2892.0,
+        "min": 2166,
+        "max": 2958
+      },
+      "lossCost": {
+        "mean": 2344.78,
+        "median": 2178.0,
+        "min": 917,
+        "max": 5561
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 706998,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 117483,
+        "sales": 117453,
+        "journeys": 117833,
+        "boughtUnits": 4044467,
+        "soldUnits": 4025677,
+        "purchaseCost": 118687663,
+        "salesRevenue": 247422874,
+        "realisedTradeProfit": 129321406,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 586195
+      },
+      "profitByPhaseTotals": {
+        "first360": 19526738,
+        "middle": 65928576,
+        "last360": 43866092
+      },
+      "transactionsAtPrice8": 22070,
+      "pirateEvents": {
+        "pirates": 9379,
+        "defended": 6012
+      },
+      "travelEvents": {
+        "null": 85899,
+        "storm": 16543,
+        "pirates": 9379,
+        "defended": 6012
+      },
+      "lostUnits": 18790,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          49426
+        ],
+        [
+          "Hamburg → Lübeck",
+          49289
+        ],
+        [
+          "Lübeck → Rostock",
+          5358
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Hamburg → Lübeck",
+          48385997
+        ],
+        [
+          "Lübeck → Hamburg",
+          48187126
+        ],
+        [
+          "Lübeck → Rostock",
+          8892117
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 83,
+            "min": 18,
+            "max": 295,
+            "n": 14841
+          },
+          "middle": {
+            "median": 80.0,
+            "min": 8,
+            "max": 471,
+            "n": 27936
+          },
+          "last360": {
+            "median": 74.0,
+            "min": 8,
+            "max": 593,
+            "n": 14130
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 22.0,
+            "min": 8,
+            "max": 71,
+            "n": 6776
+          },
+          "middle": {
+            "median": 22,
+            "min": 8,
+            "max": 162,
+            "n": 14497
+          },
+          "last360": {
+            "median": 23,
+            "min": 8,
+            "max": 248,
+            "n": 7157
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 25.0,
+            "min": 8,
+            "max": 92,
+            "n": 7026
+          },
+          "middle": {
+            "median": 25,
+            "min": 8,
+            "max": 193,
+            "n": 14203
+          },
+          "last360": {
+            "median": 26,
+            "min": 8,
+            "max": 266,
+            "n": 7341
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 16,
+            "min": 8,
+            "max": 51,
+            "n": 5321
+          },
+          "middle": {
+            "median": 17,
+            "min": 8,
+            "max": 172,
+            "n": 10201
+          },
+          "last360": {
+            "median": 17,
+            "min": 8,
+            "max": 218,
+            "n": 4641
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 31.0,
+            "min": 8,
+            "max": 106,
+            "n": 8326
+          },
+          "middle": {
+            "median": 29,
+            "min": 8,
+            "max": 376,
+            "n": 16629
+          },
+          "last360": {
+            "median": 28.0,
+            "min": 8,
+            "max": 352,
+            "n": 8954
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 54,
+            "min": 9,
+            "max": 191,
+            "n": 11561
+          },
+          "middle": {
+            "median": 51.0,
+            "min": 8,
+            "max": 299,
+            "n": 22808
+          },
+          "last360": {
+            "median": 49,
+            "min": 8,
+            "max": 311,
+            "n": 11189
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 19,
+            "min": 8,
+            "max": 56,
+            "n": 5725
+          },
+          "middle": {
+            "median": 20,
+            "min": 8,
+            "max": 125,
+            "n": 10613
+          },
+          "last360": {
+            "median": 21,
+            "min": 8,
+            "max": 161,
+            "n": 5061
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10115,
+          "days": 1440,
+          "final": {
+            "day": 487441,
+            "gold": 191819,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 195260,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 87867
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10184,
+          "days": 1442,
+          "final": {
+            "day": 487443,
+            "gold": 1315265,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 1318706,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 593418
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": {
+        "mean": 703.62,
+        "median": 696.5,
+        "min": 363,
+        "max": 1308
+      },
+      "elderTrips": {
+        "mean": 233.048,
+        "median": 231.0,
+        "min": 111,
+        "max": 438
+      },
+      "elders": 250,
+      "recovered": 0,
+      "targetReached": 0,
+      "blocked": 0,
+      "recoveryDays": null,
+      "lossCounts": null,
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "aggressive": {
+      "n": 250,
+      "wealth": {
+        "mean": 542175.704,
+        "median": 511929.5,
+        "min": 242567,
+        "max": 1236314
+      },
+      "profit": {
+        "mean": 538844.432,
+        "median": 508750.0,
+        "min": 238486,
+        "max": 1232126
+      },
+      "cash": {
+        "mean": 538734.704,
+        "median": 508488.5,
+        "min": 239126,
+        "max": 1232873
+      },
+      "days": {
+        "mean": 1441.092,
+        "median": 1441.0,
+        "min": 1440,
+        "max": 1445
+      },
+      "fees": {
+        "mean": 2814.744,
+        "median": 2886.0,
+        "min": 1722,
+        "max": 2958
+      },
+      "lossCost": {
+        "mean": 2294.984,
+        "median": 2133.0,
+        "min": 983,
+        "max": 5543
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 703686,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 116939,
+        "sales": 116922,
+        "journeys": 117281,
+        "boughtUnits": 4660532,
+        "soldUnits": 4641937,
+        "purchaseCost": 137440286,
+        "salesRevenue": 271577648,
+        "realisedTradeProfit": 134711108,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 573746
+      },
+      "profitByPhaseTotals": {
+        "first360": 20897411,
+        "middle": 69395607,
+        "last360": 44418090
+      },
+      "transactionsAtPrice8": 21788,
+      "pirateEvents": {
+        "pirates": 9310,
+        "defended": 6080
+      },
+      "travelEvents": {
+        "null": 85346,
+        "storm": 16545,
+        "pirates": 9310,
+        "defended": 6080
+      },
+      "lostUnits": 18595,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          49248
+        ],
+        [
+          "Hamburg → Lübeck",
+          49145
+        ],
+        [
+          "Lübeck → Rostock",
+          4839
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Hamburg → Lübeck",
+          50082343
+        ],
+        [
+          "Lübeck → Hamburg",
+          49022203
+        ],
+        [
+          "Rostock → Lübeck",
+          8478165
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 83.0,
+            "min": 18,
+            "max": 294,
+            "n": 14558
+          },
+          "middle": {
+            "median": 79,
+            "min": 8,
+            "max": 460,
+            "n": 27789
+          },
+          "last360": {
+            "median": 73,
+            "min": 8,
+            "max": 528,
+            "n": 13803
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 22,
+            "min": 8,
+            "max": 81,
+            "n": 6849
+          },
+          "middle": {
+            "median": 22,
+            "min": 8,
+            "max": 153,
+            "n": 14897
+          },
+          "last360": {
+            "median": 23,
+            "min": 8,
+            "max": 248,
+            "n": 7437
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 25,
+            "min": 8,
+            "max": 92,
+            "n": 7031
+          },
+          "middle": {
+            "median": 24.0,
+            "min": 8,
+            "max": 220,
+            "n": 14096
+          },
+          "last360": {
+            "median": 25.0,
+            "min": 8,
+            "max": 198,
+            "n": 7380
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 31.0,
+            "min": 8,
+            "max": 106,
+            "n": 8336
+          },
+          "middle": {
+            "median": 31.0,
+            "min": 8,
+            "max": 345,
+            "n": 16396
+          },
+          "last360": {
+            "median": 31.0,
+            "min": 8,
+            "max": 352,
+            "n": 8674
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 16,
+            "min": 8,
+            "max": 51,
+            "n": 5459
+          },
+          "middle": {
+            "median": 17.0,
+            "min": 8,
+            "max": 128,
+            "n": 10410
+          },
+          "last360": {
+            "median": 18,
+            "min": 8,
+            "max": 174,
+            "n": 4951
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 19.0,
+            "min": 8,
+            "max": 52,
+            "n": 5716
+          },
+          "middle": {
+            "median": 20,
+            "min": 8,
+            "max": 128,
+            "n": 10971
+          },
+          "last360": {
+            "median": 21.0,
+            "min": 8,
+            "max": 174,
+            "n": 5006
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 54.0,
+            "min": 9,
+            "max": 191,
+            "n": 11552
+          },
+          "middle": {
+            "median": 50.0,
+            "min": 8,
+            "max": 381,
+            "n": 21784
+          },
+          "last360": {
+            "median": 46.0,
+            "min": 8,
+            "max": 349,
+            "n": 10766
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10104,
+          "days": 1442,
+          "final": {
+            "day": 487443,
+            "gold": 239126,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 242567,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 109155
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10039,
+          "days": 1442,
+          "final": {
+            "day": 487443,
+            "gold": 1232873,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 1236314,
+            "rank": 4,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 556341
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": {
+        "mean": 673.228,
+        "median": 671.5,
+        "min": 340,
+        "max": 1125
+      },
+      "elderTrips": {
+        "mean": 223.316,
+        "median": 226.0,
+        "min": 106,
+        "max": 376
+      },
+      "elders": 250,
+      "recovered": 0,
+      "targetReached": 0,
+      "blocked": 0,
+      "recoveryDays": null,
+      "lossCounts": null,
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "optimized": {
+      "n": 250,
+      "wealth": {
+        "mean": 690328.3984,
+        "median": 651982.0,
+        "min": 43321.6,
+        "max": 1528372
+      },
+      "profit": {
+        "mean": 680523.168,
+        "median": 643050.0,
+        "min": 33729,
+        "max": 1521492
+      },
+      "cash": {
+        "mean": 686882.364,
+        "median": 648541.0,
+        "min": 38622,
+        "max": 1524931
+      },
+      "days": {
+        "mean": 1436.092,
+        "median": 1441.0,
+        "min": 153,
+        "max": 1445
+      },
+      "fees": {
+        "mean": 2575.488,
+        "median": 2625.0,
+        "min": 318,
+        "max": 2898
+      },
+      "lossCost": {
+        "mean": 2786.948,
+        "median": 2623.0,
+        "min": 333,
+        "max": 5915
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 643872,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 107312,
+        "sales": 107119,
+        "journeys": 107312,
+        "boughtUnits": 2610388,
+        "soldUnits": 2593248,
+        "purchaseCost": 106742631,
+        "salesRevenue": 276176686,
+        "realisedTradeProfit": 170130792,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 696737
+      },
+      "profitByPhaseTotals": {
+        "first360": 26741442,
+        "middle": 88040194,
+        "last360": 55349156
+      },
+      "transactionsAtPrice8": 11817,
+      "pirateEvents": {
+        "pirates": 8556,
+        "defended": 5293
+      },
+      "travelEvents": {
+        "pirates": 8556,
+        "null": 78393,
+        "storm": 15070,
+        "defended": 5293
+      },
+      "lostUnits": 17140,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          11364
+        ],
+        [
+          "Hamburg → Lübeck",
+          11230
+        ],
+        [
+          "Stralsund → Stettin",
+          10589
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Lübeck → Hamburg",
+          16554902
+        ],
+        [
+          "Hamburg → Lübeck",
+          16516870
+        ],
+        [
+          "Stralsund → Stettin",
+          15049188
+        ]
+      ],
+      "priceSamples": {
+        "Tuch": {
+          "first360": {
+            "median": 61,
+            "min": 15,
+            "max": 193,
+            "n": 16573
+          },
+          "middle": {
+            "median": 69,
+            "min": 8,
+            "max": 386,
+            "n": 30501
+          },
+          "last360": {
+            "median": 73,
+            "min": 8,
+            "max": 486,
+            "n": 15253
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 35.0,
+            "min": 8,
+            "max": 137,
+            "n": 6882
+          },
+          "middle": {
+            "median": 39.0,
+            "min": 8,
+            "max": 260,
+            "n": 12832
+          },
+          "last360": {
+            "median": 41.0,
+            "min": 8,
+            "max": 366,
+            "n": 7082
+          }
+        },
+        "Hansegras": {
+          "first360": {
+            "median": 93.0,
+            "min": 18,
+            "max": 314,
+            "n": 20966
+          },
+          "middle": {
+            "median": 101,
+            "min": 8,
+            "max": 747,
+            "n": 38669
+          },
+          "last360": {
+            "median": 104,
+            "min": 8,
+            "max": 797,
+            "n": 18733
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 29,
+            "min": 8,
+            "max": 100,
+            "n": 3855
+          },
+          "middle": {
+            "median": 32.0,
+            "min": 8,
+            "max": 204,
+            "n": 8668
+          },
+          "last360": {
+            "median": 34.0,
+            "min": 8,
+            "max": 213,
+            "n": 4276
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 25.0,
+            "min": 8,
+            "max": 77,
+            "n": 3034
+          },
+          "middle": {
+            "median": 31,
+            "min": 8,
+            "max": 180,
+            "n": 6481
+          },
+          "last360": {
+            "median": 33.0,
+            "min": 8,
+            "max": 238,
+            "n": 3564
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 22,
+            "min": 8,
+            "max": 67,
+            "n": 2305
+          },
+          "middle": {
+            "median": 27,
+            "min": 8,
+            "max": 154,
+            "n": 5579
+          },
+          "last360": {
+            "median": 35.0,
+            "min": 8,
+            "max": 220,
+            "n": 2920
+          }
+        },
+        "Getreide": {
+          "last360": {
+            "median": 27,
+            "min": 8,
+            "max": 127,
+            "n": 1541
+          },
+          "first360": {
+            "median": 18.0,
+            "min": 8,
+            "max": 63,
+            "n": 1536
+          },
+          "middle": {
+            "median": 22,
+            "min": 8,
+            "max": 143,
+            "n": 3181
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10080,
+          "days": 153,
+          "final": {
+            "day": 486154,
+            "gold": 38622,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 43321.6,
+            "rank": 1,
+            "completed": 1,
+            "shipValue": 4699.6,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 19495
+          },
+          "stopping": {
+            "reason": "legacy_planner_no_action",
+            "driverReportedBlock": true,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10029,
+          "days": 1442,
+          "final": {
+            "day": 487443,
+            "gold": 1524931,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 1528372,
+            "rank": 4,
+            "completed": 7,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 687767
+          },
+          "stopping": {
+            "reason": "day_limit",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": {
+        "mean": 530.5461847389558,
+        "median": 525,
+        "min": 295,
+        "max": 834
+      },
+      "elderTrips": {
+        "mean": 161.31726907630522,
+        "median": 160,
+        "min": 88,
+        "max": 244
+      },
+      "elders": 249,
+      "recovered": 0,
+      "targetReached": 0,
+      "blocked": 0,
+      "recoveryDays": null,
+      "lossCounts": null,
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "delivery": {
+      "n": 250,
+      "wealth": {
+        "mean": 10547.2376,
+        "median": 10469.25,
+        "min": 9723,
+        "max": 12342
+      },
+      "profit": {
+        "mean": 1.436,
+        "median": 0.0,
+        "min": -323,
+        "max": 540
+      },
+      "cash": {
+        "mean": 5623.52,
+        "median": 5563.0,
+        "min": 4763,
+        "max": 7544
+      },
+      "days": {
+        "mean": 4.156,
+        "median": 4.0,
+        "min": 4,
+        "max": 5
+      },
+      "fees": {
+        "mean": 12,
+        "median": 12.0,
+        "min": 12,
+        "max": 12
+      },
+      "lossCost": {
+        "mean": 2.332,
+        "median": 0.0,
+        "min": 0,
+        "max": 76
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 3000,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 250,
+        "sales": 250,
+        "journeys": 500,
+        "boughtUnits": 2949,
+        "soldUnits": 2924,
+        "purchaseCost": 84601,
+        "salesRevenue": 84377,
+        "realisedTradeProfit": 359,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 583
+      },
+      "profitByPhaseTotals": {
+        "first360": 359
+      },
+      "transactionsAtPrice8": 0,
+      "pirateEvents": {
+        "pirates": 35,
+        "defended": 29
+      },
+      "travelEvents": {
+        "pirates": 35,
+        "null": 368,
+        "storm": 68,
+        "defended": 29
+      },
+      "lostUnits": 25,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          250
+        ],
+        [
+          "Hamburg → Lübeck",
+          250
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Hamburg → Lübeck",
+          359
+        ]
+      ],
+      "priceSamples": {
+        "Tuch": {
+          "first360": {
+            "median": 56.0,
+            "min": 39,
+            "max": 74,
+            "n": 88
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 17.0,
+            "min": 11,
+            "max": 22,
+            "n": 74
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 21.5,
+            "min": 15,
+            "max": 30,
+            "n": 84
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 25.0,
+            "min": 17,
+            "max": 35,
+            "n": 70
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 32.5,
+            "min": 21,
+            "max": 44,
+            "n": 100
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 19.0,
+            "min": 13,
+            "max": 26,
+            "n": 84
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10039,
+          "days": 4,
+          "final": {
+            "day": 486005,
+            "gold": 4763,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 9723,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4960,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 4375
+          },
+          "stopping": {
+            "reason": "failed:insufficient_foreign_cargo",
+            "driverReportedBlock": true,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10196,
+          "days": 4,
+          "final": {
+            "day": 486005,
+            "gold": 7382,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 12342,
+            "rank": 0,
+            "completed": 1,
+            "shipValue": 4960,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 5554
+          },
+          "stopping": {
+            "reason": "completed:regular_delivery",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": null,
+      "elderTrips": null,
+      "elders": 0,
+      "recovered": 0,
+      "targetReached": 0,
+      "blocked": 0,
+      "recoveryDays": null,
+      "lossCounts": null,
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      },
+      "failures": [
+        {
+          "seed": 10011,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 0,
+              "n": 16,
+              "reward": 512,
+              "until": 486013,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 224,
+            "realisedTradeProfit": 0,
+            "premium": 0,
+            "cargoLossCost": 42,
+            "retainedCargoCost": 0,
+            "cashDelta": -54,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 0,
+                "n": 16,
+                "reward": 512,
+                "until": 486013,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 224,
+                "expectedTradeProfit": 0,
+                "expectedNet": 500,
+                "sourcePrice": 14,
+                "knownSalePrice": 14,
+                "requiredQuantity": 16,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 0,
+                "quantity": 16,
+                "unitPrice": 14,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 16
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 0,
+                "quantity": 13,
+                "eligible": 13,
+                "unitPrice": 14,
+                "realisedTradeProfit": 0,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.1404,
+              "good": "Getreide",
+              "quantity": 3,
+              "averageCost": 14,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10039,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 3,
+              "n": 18,
+              "reward": 1116,
+              "until": 486013,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 684,
+            "realisedTradeProfit": -187,
+            "premium": 0,
+            "cargoLossCost": 38,
+            "retainedCargoCost": 0,
+            "cashDelta": -237,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 3,
+                "n": 18,
+                "reward": 1116,
+                "until": 486013,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 684,
+                "expectedTradeProfit": -198,
+                "expectedNet": 906,
+                "sourcePrice": 38,
+                "knownSalePrice": 27,
+                "requiredQuantity": 18,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 3,
+                "quantity": 18,
+                "unitPrice": 38,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 18
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 3,
+                "quantity": 17,
+                "eligible": 17,
+                "unitPrice": 27,
+                "realisedTradeProfit": -187,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.4102,
+              "good": "Salz",
+              "quantity": 1,
+              "averageCost": 38,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10047,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 3,
+              "n": 17,
+              "reward": 1054,
+              "until": 486011,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 510,
+            "realisedTradeProfit": 16,
+            "premium": 0,
+            "cargoLossCost": 30,
+            "retainedCargoCost": 0,
+            "cashDelta": -26,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 3,
+                "n": 17,
+                "reward": 1054,
+                "until": 486011,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 510,
+                "expectedTradeProfit": 17,
+                "expectedNet": 1059,
+                "sourcePrice": 30,
+                "knownSalePrice": 31,
+                "requiredQuantity": 17,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 3,
+                "quantity": 17,
+                "unitPrice": 30,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 17
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 3,
+                "quantity": 16,
+                "eligible": 16,
+                "unitPrice": 31,
+                "realisedTradeProfit": 16,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.7954,
+              "good": "Salz",
+              "quantity": 1,
+              "averageCost": 30,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10049,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 1,
+              "n": 9,
+              "reward": 450,
+              "until": 486013,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 243,
+            "realisedTradeProfit": -64,
+            "premium": 0,
+            "cargoLossCost": 27,
+            "retainedCargoCost": 0,
+            "cashDelta": -103,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 1,
+                "n": 9,
+                "reward": 450,
+                "until": 486013,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 243,
+                "expectedTradeProfit": -72,
+                "expectedNet": 366,
+                "sourcePrice": 27,
+                "knownSalePrice": 19,
+                "requiredQuantity": 9,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 1,
+                "quantity": 9,
+                "unitPrice": 27,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 9
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 1,
+                "quantity": 8,
+                "eligible": 8,
+                "unitPrice": 19,
+                "realisedTradeProfit": -64,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.3604,
+              "good": "Bier",
+              "quantity": 1,
+              "averageCost": 27,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10062,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 1,
+              "n": 18,
+              "reward": 900,
+              "until": 486014,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 306,
+            "realisedTradeProfit": 210,
+            "premium": 0,
+            "cargoLossCost": 51,
+            "retainedCargoCost": 0,
+            "cashDelta": 147,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 1,
+                "n": 18,
+                "reward": 900,
+                "until": 486014,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 306,
+                "expectedTradeProfit": 252,
+                "expectedNet": 1140,
+                "sourcePrice": 17,
+                "knownSalePrice": 31,
+                "requiredQuantity": 18,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 1,
+                "quantity": 18,
+                "unitPrice": 17,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 18
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 1,
+                "quantity": 15,
+                "eligible": 15,
+                "unitPrice": 31,
+                "realisedTradeProfit": 210,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.489,
+              "good": "Bier",
+              "quantity": 3,
+              "averageCost": 17,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10074,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 3,
+              "n": 17,
+              "reward": 1054,
+              "until": 486016,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 646,
+            "realisedTradeProfit": -60,
+            "premium": 0,
+            "cargoLossCost": 76,
+            "retainedCargoCost": 0,
+            "cashDelta": -148,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 3,
+                "n": 17,
+                "reward": 1054,
+                "until": 486016,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 646,
+                "expectedTradeProfit": -51,
+                "expectedNet": 991,
+                "sourcePrice": 38,
+                "knownSalePrice": 35,
+                "requiredQuantity": 17,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 3,
+                "quantity": 17,
+                "unitPrice": 38,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 17
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 3,
+                "quantity": 15,
+                "eligible": 15,
+                "unitPrice": 34,
+                "realisedTradeProfit": -60,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.6958,
+              "good": "Salz",
+              "quantity": 2,
+              "averageCost": 38,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10101,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 4,
+              "n": 16,
+              "reward": 704,
+              "until": 486013,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 320,
+            "realisedTradeProfit": 0,
+            "premium": 0,
+            "cargoLossCost": 20,
+            "retainedCargoCost": 0,
+            "cashDelta": -32,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 4,
+                "n": 16,
+                "reward": 704,
+                "until": 486013,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 320,
+                "expectedTradeProfit": 0,
+                "expectedNet": 692,
+                "sourcePrice": 20,
+                "knownSalePrice": 20,
+                "requiredQuantity": 16,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 4,
+                "quantity": 16,
+                "unitPrice": 20,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 16
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 4,
+                "quantity": 15,
+                "eligible": 15,
+                "unitPrice": 20,
+                "realisedTradeProfit": 0,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.8418,
+              "good": "Fisch",
+              "quantity": 1,
+              "averageCost": 20,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10110,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 4,
+              "n": 17,
+              "reward": 748,
+              "until": 486015,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 306,
+            "realisedTradeProfit": 144,
+            "premium": 0,
+            "cargoLossCost": 18,
+            "retainedCargoCost": 0,
+            "cashDelta": 114,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 4,
+                "n": 17,
+                "reward": 748,
+                "until": 486015,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 306,
+                "expectedTradeProfit": 136,
+                "expectedNet": 872,
+                "sourcePrice": 18,
+                "knownSalePrice": 26,
+                "requiredQuantity": 17,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 4,
+                "quantity": 17,
+                "unitPrice": 18,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 17
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 4,
+                "quantity": 16,
+                "eligible": 16,
+                "unitPrice": 27,
+                "realisedTradeProfit": 144,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.4565,
+              "good": "Fisch",
+              "quantity": 1,
+              "averageCost": 18,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10154,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 0,
+              "n": 14,
+              "reward": 448,
+              "until": 486012,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 252,
+            "realisedTradeProfit": -11,
+            "premium": 0,
+            "cargoLossCost": 54,
+            "retainedCargoCost": 0,
+            "cashDelta": -77,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 0,
+                "n": 14,
+                "reward": 448,
+                "until": 486012,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 252,
+                "expectedTradeProfit": -14,
+                "expectedNet": 422,
+                "sourcePrice": 18,
+                "knownSalePrice": 17,
+                "requiredQuantity": 14,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 0,
+                "quantity": 14,
+                "unitPrice": 18,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 14
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 0,
+                "quantity": 11,
+                "eligible": 11,
+                "unitPrice": 17,
+                "realisedTradeProfit": -11,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.9067,
+              "good": "Getreide",
+              "quantity": 3,
+              "averageCost": 18,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10156,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 3,
+              "n": 7,
+              "reward": 434,
+              "until": 486010,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 245,
+            "realisedTradeProfit": -60,
+            "premium": 0,
+            "cargoLossCost": 35,
+            "retainedCargoCost": 0,
+            "cashDelta": -107,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 3,
+                "n": 7,
+                "reward": 434,
+                "until": 486010,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 245,
+                "expectedTradeProfit": -70,
+                "expectedNet": 352,
+                "sourcePrice": 35,
+                "knownSalePrice": 25,
+                "requiredQuantity": 7,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 3,
+                "quantity": 7,
+                "unitPrice": 35,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 7
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 3,
+                "quantity": 6,
+                "eligible": 6,
+                "unitPrice": 25,
+                "realisedTradeProfit": -60,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.1804,
+              "good": "Salz",
+              "quantity": 1,
+              "averageCost": 35,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10172,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 3,
+              "n": 6,
+              "reward": 372,
+              "until": 486016,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 180,
+            "realisedTradeProfit": 25,
+            "premium": 0,
+            "cargoLossCost": 30,
+            "retainedCargoCost": 0,
+            "cashDelta": -17,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 3,
+                "n": 6,
+                "reward": 372,
+                "until": 486016,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 180,
+                "expectedTradeProfit": 12,
+                "expectedNet": 372,
+                "sourcePrice": 30,
+                "knownSalePrice": 32,
+                "requiredQuantity": 6,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 3,
+                "quantity": 6,
+                "unitPrice": 30,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 6
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 3,
+                "quantity": 5,
+                "eligible": 5,
+                "unitPrice": 35,
+                "realisedTradeProfit": 25,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.9033,
+              "good": "Salz",
+              "quantity": 1,
+              "averageCost": 30,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10175,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 2,
+              "n": 15,
+              "reward": 570,
+              "until": 486010,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 300,
+            "realisedTradeProfit": 26,
+            "premium": 0,
+            "cargoLossCost": 40,
+            "retainedCargoCost": 0,
+            "cashDelta": -26,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 2,
+                "n": 15,
+                "reward": 570,
+                "until": 486010,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 300,
+                "expectedTradeProfit": 30,
+                "expectedNet": 588,
+                "sourcePrice": 20,
+                "knownSalePrice": 22,
+                "requiredQuantity": 15,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 2,
+                "quantity": 15,
+                "unitPrice": 20,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 15
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 2,
+                "quantity": 13,
+                "eligible": 13,
+                "unitPrice": 22,
+                "realisedTradeProfit": 26,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.7783,
+              "good": "Holz",
+              "quantity": 2,
+              "averageCost": 20,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10185,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 0,
+              "n": 6,
+              "reward": 192,
+              "until": 486013,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 120,
+            "realisedTradeProfit": 3,
+            "premium": 0,
+            "cargoLossCost": 60,
+            "retainedCargoCost": 0,
+            "cashDelta": -69,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 0,
+                "n": 6,
+                "reward": 192,
+                "until": 486013,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 120,
+                "expectedTradeProfit": 0,
+                "expectedNet": 180,
+                "sourcePrice": 20,
+                "knownSalePrice": 20,
+                "requiredQuantity": 6,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 0,
+                "quantity": 6,
+                "unitPrice": 20,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 6
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 0,
+                "quantity": 3,
+                "eligible": 3,
+                "unitPrice": 21,
+                "realisedTradeProfit": 3,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.2666,
+              "good": "Getreide",
+              "quantity": 3,
+              "averageCost": 20,
+              "simDay": 486005
+            }
+          ]
+        },
+        {
+          "seed": 10229,
+          "days": 4,
+          "raw": {
+            "strategy": "delivery",
+            "status": "failed",
+            "reason": "insufficient_foreign_cargo",
+            "seedOrder": {
+              "j": 1,
+              "n": 18,
+              "reward": 900,
+              "until": 486016,
+              "city": 0
+            },
+            "days": 4,
+            "source": 1,
+            "fees": 12,
+            "purchase": 558,
+            "realisedTradeProfit": -48,
+            "premium": 0,
+            "cargoLossCost": 62,
+            "retainedCargoCost": 0,
+            "cashDelta": -122,
+            "completed": 0,
+            "trace": [
+              {
+                "action": "offer",
+                "j": 1,
+                "n": 18,
+                "reward": 900,
+                "until": 486016,
+                "city": 0,
+                "day": 486001
+              },
+              {
+                "action": "travel",
+                "from": 0,
+                "to": 1,
+                "days": 2,
+                "fee": 6,
+                "event": null,
+                "day": 486003
+              },
+              {
+                "action": "assessment",
+                "ok": true,
+                "purchase": 558,
+                "expectedTradeProfit": -54,
+                "expectedNet": 834,
+                "sourcePrice": 31,
+                "knownSalePrice": 28,
+                "requiredQuantity": 18,
+                "day": 486003
+              },
+              {
+                "action": "buy",
+                "city": 1,
+                "good": 1,
+                "quantity": 18,
+                "unitPrice": 31,
+                "origins": [
+                  {
+                    "city": 1,
+                    "n": 18
+                  }
+                ],
+                "day": 486003
+              },
+              {
+                "action": "travel",
+                "from": 1,
+                "to": 0,
+                "days": 2,
+                "fee": 6,
+                "event": "pirates",
+                "day": 486005
+              },
+              {
+                "action": "sell",
+                "city": 0,
+                "good": 1,
+                "quantity": 16,
+                "eligible": 16,
+                "unitPrice": 28,
+                "realisedTradeProfit": -48,
+                "premium": 0,
+                "day": 486005,
+                "completedBefore": 0,
+                "completedAfter": 0
+              }
+            ]
+          },
+          "pirates": [
+            {
+              "type": "pirate_loss",
+              "shipId": 1700000000000.924,
+              "good": "Bier",
+              "quantity": 2,
+              "averageCost": 31,
+              "simDay": 486005
+            }
+          ]
+        }
+      ]
+    },
+    "recovery5": {
+      "n": 250,
+      "wealth": {
+        "mean": 10640.6708,
+        "median": 10486.0,
+        "min": 9962,
+        "max": 12925.8
+      },
+      "profit": {
+        "mean": 997.904,
+        "median": 869.5,
+        "min": 83,
+        "max": 3340
+      },
+      "cash": {
+        "mean": 5869.808,
+        "median": 5754.0,
+        "min": 5002,
+        "max": 8096
+      },
+      "days": {
+        "mean": 31.632,
+        "median": 31.0,
+        "min": 18,
+        "max": 51
+      },
+      "fees": {
+        "mean": 61.992,
+        "median": 60.0,
+        "min": 48,
+        "max": 96
+      },
+      "lossCost": {
+        "mean": 66.104,
+        "median": 23.5,
+        "min": 0,
+        "max": 579
+      },
+      "borrowers": 0,
+      "finance": {
+        "borrowed": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "costTotals": {
+        "harborFees": 15498,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 2583,
+        "sales": 2583,
+        "journeys": 2583,
+        "boughtUnits": 130798,
+        "soldUnits": 130441,
+        "purchaseCost": 4724939,
+        "salesRevenue": 4957889,
+        "realisedTradeProfit": 249476,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 16526
+      },
+      "profitByPhaseTotals": {
+        "first360": 249476
+      },
+      "transactionsAtPrice8": 2,
+      "pirateEvents": {
+        "pirates": 177,
+        "defended": 132
+      },
+      "travelEvents": {
+        "null": 1936,
+        "pirates": 177,
+        "storm": 338,
+        "defended": 132
+      },
+      "lostUnits": 357,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          272
+        ],
+        [
+          "Lübeck → Rostock",
+          266
+        ],
+        [
+          "Rostock → Lübeck",
+          237
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Rostock → Lübeck",
+          122058
+        ],
+        [
+          "Hamburg → Lübeck",
+          99535
+        ],
+        [
+          "Stettin → Stralsund",
+          40795
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 81.0,
+            "min": 47,
+            "max": 138,
+            "n": 1204
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 30.0,
+            "min": 17,
+            "max": 47,
+            "n": 844
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 54.0,
+            "min": 29,
+            "max": 94,
+            "n": 1134
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 21.0,
+            "min": 12,
+            "max": 38,
+            "n": 552
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 18.0,
+            "min": 10,
+            "max": 29,
+            "n": 470
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 16.0,
+            "min": 8,
+            "max": 30,
+            "n": 366
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 24.0,
+            "min": 13,
+            "max": 41,
+            "n": 596
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10201,
+          "days": 20,
+          "final": {
+            "day": 486021,
+            "gold": 5002,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 9962,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4960,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 4483
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10164,
+          "days": 40,
+          "final": {
+            "day": 486041,
+            "gold": 8096,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 12925.8,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4829.799999999999,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 5817
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": null,
+      "elderTrips": null,
+      "elders": 0,
+      "recovered": 250,
+      "targetReached": 250,
+      "blocked": 0,
+      "recoveryDays": {
+        "mean": 15.956,
+        "median": 15.0,
+        "min": 6,
+        "max": 33
+      },
+      "lossCounts": {
+        "mean": 5,
+        "median": 5.0,
+        "min": 5,
+        "max": 5
+      },
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "recovery10": {
+      "n": 250,
+      "wealth": {
+        "mean": 11214.804052612619,
+        "median": 10889.973527904887,
+        "min": 9963,
+        "max": 16643.33351918274
+      },
+      "profit": {
+        "mean": 2391.984,
+        "median": 2138.0,
+        "min": 160,
+        "max": 8075
+      },
+      "cash": {
+        "mean": 8407.356,
+        "median": 8454.5,
+        "min": 5003,
+        "max": 14468
+      },
+      "days": {
+        "mean": 156.004,
+        "median": 166.0,
+        "min": 45,
+        "max": 300
+      },
+      "fees": {
+        "mean": 252.24,
+        "median": 270.0,
+        "min": 96,
+        "max": 468
+      },
+      "lossCost": {
+        "mean": 95.48,
+        "median": 70.5,
+        "min": 0,
+        "max": 709
+      },
+      "borrowers": 184,
+      "finance": {
+        "borrowed": {
+          "mean": 1363.092,
+          "median": 1765.5,
+          "min": 0,
+          "max": 2234
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 2.9651473873802003,
+          "median": 3.4262898392350096,
+          "min": 0,
+          "max": 8.398278267484237
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 1366.0571473873802,
+          "median": 1769.2187967703876,
+          "min": 0,
+          "max": 2240.518127531227
+        }
+      },
+      "costTotals": {
+        "harborFees": 63060,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 3940,
+        "sales": 3932,
+        "journeys": 10510,
+        "boughtUnits": 150112,
+        "soldUnits": 149547,
+        "purchaseCost": 5350672,
+        "salesRevenue": 5924798,
+        "realisedTradeProfit": 597996,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 23870
+      },
+      "profitByPhaseTotals": {
+        "first360": 597996
+      },
+      "transactionsAtPrice8": 11,
+      "pirateEvents": {
+        "pirates": 829,
+        "defended": 522
+      },
+      "travelEvents": {
+        "null": 7719,
+        "pirates": 829,
+        "storm": 1440,
+        "defended": 522
+      },
+      "lostUnits": 565,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          725
+        ],
+        [
+          "Hamburg → Lübeck",
+          694
+        ],
+        [
+          "Lübeck → Rostock",
+          651
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Rostock → Lübeck",
+          125242
+        ],
+        [
+          "Hamburg → Lübeck",
+          115170
+        ],
+        [
+          "Stettin → Stralsund",
+          100948
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 83,
+            "min": 32,
+            "max": 263,
+            "n": 1471
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 30.0,
+            "min": 9,
+            "max": 77,
+            "n": 1148
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 24.0,
+            "min": 9,
+            "max": 53,
+            "n": 1012
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 21.0,
+            "min": 8,
+            "max": 56,
+            "n": 918
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 54.0,
+            "min": 18,
+            "max": 142,
+            "n": 1516
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 18,
+            "min": 9,
+            "max": 51,
+            "n": 917
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 15.0,
+            "min": 8,
+            "max": 41,
+            "n": 890
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10010,
+          "days": 45,
+          "final": {
+            "day": 486046,
+            "gold": 5003,
+            "bank": 0,
+            "debt": 0,
+            "wealth": 9963,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4960,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 4483
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        },
+        {
+          "seed": 10245,
+          "days": 253,
+          "final": {
+            "day": 486254,
+            "gold": 14468,
+            "bank": 0,
+            "debt": 1786.4664808172593,
+            "wealth": 16643.33351918274,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 3961.8,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 5703.533519182741
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": null,
+      "elderTrips": null,
+      "elders": 0,
+      "recovered": 250,
+      "targetReached": 250,
+      "blocked": 0,
+      "recoveryDays": {
+        "mean": 122.62,
+        "median": 131.0,
+        "min": 16,
+        "max": 261
+      },
+      "lossCounts": {
+        "mean": 10,
+        "median": 10.0,
+        "min": 10,
+        "max": 10
+      },
+      "blockStates": {
+        "gold": null,
+        "wealth": null,
+        "shipValue": null,
+        "debt": null,
+        "creditAvailable": null
+      }
+    },
+    "recovery20": {
+      "n": 250,
+      "wealth": {
+        "mean": 7160.5960683424,
+        "median": 10149.0248311016,
+        "min": 1167.8596858422216,
+        "max": 15363.388209753528
+      },
+      "profit": {
+        "mean": -1685.988,
+        "median": 973.5,
+        "min": -6946,
+        "max": 6182
+      },
+      "cash": {
+        "mean": 5046.928,
+        "median": 7818.5,
+        "min": 0,
+        "max": 12860
+      },
+      "days": {
+        "mean": 140.968,
+        "median": 112.0,
+        "min": 61,
+        "max": 315
+      },
+      "fees": {
+        "mean": 226.728,
+        "median": 180.0,
+        "min": 132,
+        "max": 468
+      },
+      "lossCost": {
+        "mean": 145.96,
+        "median": 118.0,
+        "min": 0,
+        "max": 582
+      },
+      "borrowers": 250,
+      "finance": {
+        "borrowed": {
+          "mean": 2105.604,
+          "median": 2119.5,
+          "min": 1839,
+          "max": 2247
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 29.05473165760025,
+          "median": 18.03629513749928,
+          "min": 3.382333222544706,
+          "max": 93.8585019771306
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 2134.6587316576,
+          "median": 2146.0725226764516,
+          "min": 1848.377309328582,
+          "max": 2317.639545991182
+        }
+      },
+      "costTotals": {
+        "harborFees": 56682,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 6249,
+        "sales": 6172,
+        "journeys": 9447,
+        "boughtUnits": 171680,
+        "soldUnits": 170765,
+        "purchaseCost": 5909723,
+        "salesRevenue": 5451736,
+        "realisedTradeProfit": -421497,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 36490
+      },
+      "profitByPhaseTotals": {
+        "first360": -421497
+      },
+      "transactionsAtPrice8": 61,
+      "pirateEvents": {
+        "pirates": 776,
+        "defended": 464
+      },
+      "travelEvents": {
+        "null": 6907,
+        "pirates": 776,
+        "storm": 1300,
+        "defended": 464
+      },
+      "lostUnits": 915,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          602
+        ],
+        [
+          "Hamburg → Lübeck",
+          561
+        ],
+        [
+          "Lübeck → Rostock",
+          556
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Stralsund → Rostock",
+          26806
+        ],
+        [
+          "Stettin → Stralsund",
+          22347
+        ],
+        [
+          "Rostock → Stralsund",
+          21891
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 81,
+            "min": 38,
+            "max": 181,
+            "n": 1723
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 29,
+            "min": 12,
+            "max": 70,
+            "n": 1687
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 23.0,
+            "min": 9,
+            "max": 54,
+            "n": 1800
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 20.0,
+            "min": 9,
+            "max": 41,
+            "n": 1628
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 52.0,
+            "min": 22,
+            "max": 114,
+            "n": 1886
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 17.0,
+            "min": 8,
+            "max": 38,
+            "n": 1744
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 14,
+            "min": 8,
+            "max": 38,
+            "n": 1953
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10232,
+          "days": 284,
+          "final": {
+            "day": 486285,
+            "gold": 2,
+            "bank": 0,
+            "debt": 2275.140314157779,
+            "wealth": 1167.8596858422216,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 0
+          },
+          "stopping": {
+            "reason": "insufficient_travel_cash",
+            "driverReportedBlock": true,
+            "economicTravelBlocked": true,
+            "shipStranded": true
+          }
+        },
+        {
+          "seed": 10165,
+          "days": 100,
+          "final": {
+            "day": 486101,
+            "gold": 12839,
+            "bank": 0,
+            "debt": 2153.5117902464717,
+            "wealth": 15363.388209753528,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4677.9,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 4760.488209753528
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": null,
+      "elderTrips": null,
+      "elders": 0,
+      "recovered": 144,
+      "targetReached": 247,
+      "blocked": 106,
+      "recoveryDays": {
+        "mean": 29.40972222222222,
+        "median": 27.0,
+        "min": 9,
+        "max": 149
+      },
+      "lossCounts": {
+        "mean": 19.96,
+        "median": 20.0,
+        "min": 12,
+        "max": 20
+      },
+      "blockStates": {
+        "gold": {
+          "mean": 2.358490566037736,
+          "median": 2.0,
+          "min": 0,
+          "max": 5
+        },
+        "wealth": {
+          "mean": 1834.8286125480452,
+          "median": 1807.4103021656306,
+          "min": 1167.8596858422216,
+          "max": 2548.279626962023
+        },
+        "shipValue": {
+          "mean": 3994.9641509433964,
+          "median": 3961.8,
+          "min": 3441.0000000000005,
+          "max": 4808.099999999999
+        },
+        "debt": {
+          "mean": 2162.4940289613887,
+          "median": 2176.5506706143133,
+          "min": 1882.6707246217275,
+          "max": 2317.639545991182
+        },
+        "creditAvailable": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "recoveryByTargetCompletion": {
+        "target_met_not_recovered": 104,
+        "target_met_recovered": 143,
+        "target_not_met_recovered": 1,
+        "target_not_met_not_recovered": 2
+      },
+      "incompleteTargetRecoveredCases": [
+        {
+          "seed": 10176,
+          "lossCount": 12,
+          "lossStatus": "no_observed_loss_opportunity"
+        }
+      ]
+    },
+    "recovery30": {
+      "n": 250,
+      "wealth": {
+        "mean": 2325.1003580465494,
+        "median": 2314.7475581737167,
+        "min": 1324.1624088160597,
+        "max": 13858.906896200519
+      },
+      "profit": {
+        "mean": -6726.148,
+        "median": -6793.0,
+        "min": -7066,
+        "max": 4850
+      },
+      "cash": {
+        "mean": 48.2,
+        "median": 2.0,
+        "min": 0,
+        "max": 11483
+      },
+      "days": {
+        "mean": 109.292,
+        "median": 107.0,
+        "min": 65,
+        "max": 272
+      },
+      "fees": {
+        "mean": 176.904,
+        "median": 174.0,
+        "min": 132,
+        "max": 420
+      },
+      "lossCost": {
+        "mean": 155.184,
+        "median": 131.0,
+        "min": 0,
+        "max": 595
+      },
+      "borrowers": 250,
+      "finance": {
+        "borrowed": {
+          "mean": 2106.436,
+          "median": 2119.5,
+          "min": 1839,
+          "max": 2247
+        },
+        "repaid": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "deposited": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "withdrawn": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "debtInterest": {
+          "mean": 18.10564195345036,
+          "median": 17.710114487582224,
+          "min": 3.793103799480072,
+          "max": 71.83759118394113
+        },
+        "bankInterest": {
+          "mean": 0,
+          "median": 0.0,
+          "min": 0,
+          "max": 0
+        },
+        "finalDebt": {
+          "mean": 2124.5416419534504,
+          "median": 2136.6472603214534,
+          "min": 1849.1482363396394,
+          "max": 2269.387050707372
+        }
+      },
+      "costTotals": {
+        "harborFees": 44226,
+        "repairs": 0,
+        "arms": 0,
+        "shipPurchases": 0,
+        "rumors": 0,
+        "donations": 0
+      },
+      "tradingTotals": {
+        "purchases": 6610,
+        "sales": 6469,
+        "journeys": 7371,
+        "boughtUnits": 128082,
+        "soldUnits": 127113,
+        "purchaseCost": 4501655,
+        "salesRevenue": 2781322,
+        "realisedTradeProfit": -1681537,
+        "unknownProfitSales": 0,
+        "cargoLossCost": 38796
+      },
+      "profitByPhaseTotals": {
+        "first360": -1681537
+      },
+      "transactionsAtPrice8": 106,
+      "pirateEvents": {
+        "pirates": 607,
+        "defended": 366
+      },
+      "travelEvents": {
+        "null": 5397,
+        "pirates": 607,
+        "storm": 1001,
+        "defended": 366
+      },
+      "lostUnits": 969,
+      "topRoutes": [
+        [
+          "Lübeck → Hamburg",
+          472
+        ],
+        [
+          "Lübeck → Rostock",
+          449
+        ],
+        [
+          "Lübeck → Stralsund",
+          433
+        ]
+      ],
+      "topProfitRoutes": [
+        [
+          "Rostock → Hamburg",
+          -61977
+        ],
+        [
+          "Stettin → Stralsund",
+          -62660
+        ],
+        [
+          "Stettin → Rostock",
+          -63210
+        ]
+      ],
+      "priceSamples": {
+        "Hansegras": {
+          "first360": {
+            "median": 80.0,
+            "min": 38,
+            "max": 144,
+            "n": 1442
+          }
+        },
+        "Salz": {
+          "first360": {
+            "median": 28,
+            "min": 12,
+            "max": 70,
+            "n": 1737
+          }
+        },
+        "Bier": {
+          "first360": {
+            "median": 22.0,
+            "min": 9,
+            "max": 56,
+            "n": 1884
+          }
+        },
+        "Fisch": {
+          "first360": {
+            "median": 20,
+            "min": 9,
+            "max": 45,
+            "n": 1873
+          }
+        },
+        "Getreide": {
+          "first360": {
+            "median": 14,
+            "min": 8,
+            "max": 35,
+            "n": 2371
+          }
+        },
+        "Tuch": {
+          "first360": {
+            "median": 52,
+            "min": 22,
+            "max": 123,
+            "n": 1683
+          }
+        },
+        "Holz": {
+          "first360": {
+            "median": 17,
+            "min": 8,
+            "max": 38,
+            "n": 2089
+          }
+        }
+      },
+      "wealthExtremes": [
+        {
+          "seed": 10168,
+          "days": 272,
+          "final": {
+            "day": 486273,
+            "gold": 3,
+            "bank": 0,
+            "debt": 2119.8375911839407,
+            "wealth": 1324.1624088160597,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 3441.0000000000005,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 0
+          },
+          "stopping": {
+            "reason": "insufficient_travel_cash",
+            "driverReportedBlock": true,
+            "economicTravelBlocked": true,
+            "shipStranded": true
+          }
+        },
+        {
+          "seed": 10176,
+          "days": 187,
+          "final": {
+            "day": 486188,
+            "gold": 11483,
+            "bank": 0,
+            "debt": 1954.7931037994804,
+            "wealth": 13858.906896200519,
+            "rank": 0,
+            "completed": 0,
+            "shipValue": 4330.7,
+            "cargoValue": 0,
+            "arrivalFee": 6,
+            "creditAvailable": 4282.20689620052
+          },
+          "stopping": {
+            "reason": "start_wealth_regained",
+            "driverReportedBlock": false,
+            "economicTravelBlocked": false,
+            "shipStranded": false
+          }
+        }
+      ],
+      "elderDays": null,
+      "elderTrips": null,
+      "elders": 0,
+      "recovered": 1,
+      "targetReached": 28,
+      "blocked": 249,
+      "recoveryDays": {
+        "mean": 149,
+        "median": 149,
+        "min": 149,
+        "max": 149
+      },
+      "lossCounts": {
+        "mean": 25.864,
+        "median": 26.0,
+        "min": 12,
+        "max": 30
+      },
+      "blockStates": {
+        "gold": {
+          "mean": 2.2771084337349397,
+          "median": 2,
+          "min": 0,
+          "max": 5
+        },
+        "wealth": {
+          "mean": 2278.7798498611924,
+          "median": 2314.6898092696224,
+          "min": 1324.1624088160597,
+          "max": 2714.8388495105546
+        },
+        "shipValue": {
+          "mean": 4401.72610441767,
+          "median": 4439.2,
+          "min": 3441.0000000000005,
+          "max": 4960
+        },
+        "debt": {
+          "mean": 2125.2233629902134,
+          "median": 2136.7895789210247,
+          "min": 1849.1482363396394,
+          "max": 2269.387050707372
+        },
+        "creditAvailable": {
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      },
+      "recoveryByTargetCompletion": {
+        "target_not_met_not_recovered": 221,
+        "target_met_not_recovered": 28,
+        "target_not_met_recovered": 1
+      },
+      "incompleteTargetRecoveredCases": [
+        {
+          "seed": 10176,
+          "lossCount": 12,
+          "lossStatus": "no_observed_loss_opportunity"
+        }
+      ]
+    }
+  }
+}

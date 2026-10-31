@@ -1,0 +1,22 @@
+{
+  "base": "07dfaee9ca3a12df680d0ec5ac07eeff0381681e",
+  "testedGameCommit": "4570c8a4d0bcefb3a739b0955544887d127af1e4",
+  "gameSHA256": "5e8e3c463824a807bfe323986136d5a6964a2119f0915dd4ef01cee222da7da4",
+  "technicalGroups": 14,
+  "boundaryCases": 162,
+  "archivedV11Roundtrips": 14,
+  "pureViewOpenings": 210,
+  "existingBasicTests": 19,
+  "existingTradeTests": 18,
+  "ChromiumSizes": 4,
+  "screenshots": 12,
+  "browserErrors": 0,
+  "fullSimulations": 0,
+  "unchangedOtherFunctions": 187,
+  "gameByteDelta": 12231,
+  "newSaveFields": 0,
+  "reportLocalLinksChecked": 27,
+  "realAppleDevicesTested": false,
+  "prCreated": false,
+  "prError": "GitHub GraphQL Forbidden"
+}

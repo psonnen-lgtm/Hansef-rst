@@ -1,0 +1,455 @@
+{
+  "testedGameCommit": "3dfeaeefb0a8ff5bbad54030dfa51cce7cad84ae",
+  "gameSHA256": "14038187b254446c506ace7d717f7482208641ba446ba15280f7fcd40d62e3fa",
+  "scope": "actual production rule fixtures; not human sessions or full careers",
+  "checks": [
+    {
+      "name": "44 real constructor combinations have identical resources, markets and next RNG; only chosen port is observed",
+      "passed": true,
+      "evidence": [
+        {
+          "player": "Ulf",
+          "city": 0,
+          "gold": 5000,
+          "shipCity": 0,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 1,
+          "gold": 5000,
+          "shipCity": 1,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 2,
+          "gold": 5000,
+          "shipCity": 2,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 3,
+          "gold": 5000,
+          "shipCity": 3,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 4,
+          "gold": 5000,
+          "shipCity": 4,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 5,
+          "gold": 5000,
+          "shipCity": 5,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 6,
+          "gold": 5000,
+          "shipCity": 6,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 7,
+          "gold": 5000,
+          "shipCity": 7,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 8,
+          "gold": 5000,
+          "shipCity": 8,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 9,
+          "gold": 5000,
+          "shipCity": 9,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Ulf",
+          "city": 10,
+          "gold": 5000,
+          "shipCity": 10,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 0,
+          "gold": 5000,
+          "shipCity": 0,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 1,
+          "gold": 5000,
+          "shipCity": 1,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 2,
+          "gold": 5000,
+          "shipCity": 2,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 3,
+          "gold": 5000,
+          "shipCity": 3,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 4,
+          "gold": 5000,
+          "shipCity": 4,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 5,
+          "gold": 5000,
+          "shipCity": 5,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 6,
+          "gold": 5000,
+          "shipCity": 6,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 7,
+          "gold": 5000,
+          "shipCity": 7,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 8,
+          "gold": 5000,
+          "shipCity": 8,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 9,
+          "gold": 5000,
+          "shipCity": 9,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Anders",
+          "city": 10,
+          "gold": 5000,
+          "shipCity": 10,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 0,
+          "gold": 5000,
+          "shipCity": 0,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 1,
+          "gold": 5000,
+          "shipCity": 1,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 2,
+          "gold": 5000,
+          "shipCity": 2,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 3,
+          "gold": 5000,
+          "shipCity": 3,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 4,
+          "gold": 5000,
+          "shipCity": 4,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 5,
+          "gold": 5000,
+          "shipCity": 5,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 6,
+          "gold": 5000,
+          "shipCity": 6,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 7,
+          "gold": 5000,
+          "shipCity": 7,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 8,
+          "gold": 5000,
+          "shipCity": 8,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 9,
+          "gold": 5000,
+          "shipCity": 9,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Franziskus",
+          "city": 10,
+          "gold": 5000,
+          "shipCity": 10,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 0,
+          "gold": 5000,
+          "shipCity": 0,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 1,
+          "gold": 5000,
+          "shipCity": 1,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 2,
+          "gold": 5000,
+          "shipCity": 2,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 3,
+          "gold": 5000,
+          "shipCity": 3,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 4,
+          "gold": 5000,
+          "shipCity": 4,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 5,
+          "gold": 5000,
+          "shipCity": 5,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 6,
+          "gold": 5000,
+          "shipCity": 6,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 7,
+          "gold": 5000,
+          "shipCity": 7,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 8,
+          "gold": 5000,
+          "shipCity": 8,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 9,
+          "gold": 5000,
+          "shipCity": 9,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        },
+        {
+          "player": "Micha",
+          "city": 10,
+          "gold": 5000,
+          "shipCity": 10,
+          "rank": 0,
+          "resourcesAndRNGEqual": true
+        }
+      ]
+    },
+    {
+      "name": "all eleven starts use actual local warehouse, market, yard, political offers and legal routes",
+      "passed": true,
+      "evidence": {
+        "cities": 11,
+        "routes": 110,
+        "warehouses": 150
+      }
+    },
+    {
+      "name": "legacy Ulf Anders and custom profile names retain exact V11 fields, unknown birthplace, active politics and pending build",
+      "passed": true,
+      "evidence": {
+        "archivedPoliticalEndpoints": 8,
+        "personalProfiles": 3,
+        "noInferredStartCity": true
+      }
+    },
+    {
+      "name": "reopening changing figures and all ports is draft-only, keeps custom names, consumes no RNG or writes",
+      "passed": true,
+      "evidence": {
+        "noRNG": true,
+        "noWritesBeforeCancel": true,
+        "oldPartyExact": true
+      }
+    },
+    {
+      "name": "cancelled confirmation and repeated new-start calls preserve old game; successful replacement has immutable backup",
+      "passed": true,
+      "evidence": {
+        "confirmedOnce": true,
+        "backupExact": true,
+        "reentryBlocked": true
+      }
+    },
+    {
+      "name": "backup and main-save faults, backup collisions, stale disk and changed in-memory state preserve old game",
+      "passed": true,
+      "evidence": {
+        "faultPoints": 2,
+        "collisionPreserved": true,
+        "staleChecks": 3
+      }
+    },
+    {
+      "name": "unreadable stored primary and legacy-key original survive failed replacement and are backed up on explicit success",
+      "passed": true,
+      "evidence": {
+        "unparseableOriginalPreserved": true,
+        "allStorageKeys": true
+      }
+    },
+    {
+      "name": "all supported old schema paths preserve custom identity without invented beginning; current import/export is exact",
+      "passed": true,
+      "evidence": {
+        "versions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "legacyVersion1": true,
+        "currentRoundtripExact": true
+      }
+    },
+    {
+      "name": "invalid provenance figure and city selections fail before replacing a saved party",
+      "passed": true,
+      "evidence": {
+        "invalidProvenance": 7,
+        "invalidSelections": 2
+      }
+    },
+    {
+      "name": "existing economic and political functions and RNG remain exact on identical starts",
+      "passed": true,
+      "evidence": {
+        "unchangedFunctions": 157,
+        "days": 150,
+        "seeds": 2,
+        "politicsVerbatim": true
+      }
+    }
+  ]
+}

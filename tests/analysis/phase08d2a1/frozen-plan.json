@@ -1,0 +1,311 @@
+{
+  "phase": "0.8d.2a.1",
+  "base": "0c8db09056a7dd8e3881ba73684d244fcc3bc4fd",
+  "parameters": {
+    "B1": 220,
+    "B2": 350,
+    "B3": 500
+  },
+  "seeds": [
+    81001,
+    81002,
+    81003
+  ],
+  "historicalArmsReadOnly": 36,
+  "newArms": 54,
+  "maxTrips": 12,
+  "maxDays": 120,
+  "maxDecisions": 30,
+  "historicalManifestVerified": [
+    {
+      "path": "docs/entwicklungsberichte/2026-10-27_0.8d2a_entscheidungsgrundlage.md",
+      "sha256": "b757f9f4ed314f51a85b9f42ee1ed13deb35032fc8470a8deed53276c3d14987"
+    },
+    {
+      "path": "docs/entwicklungsberichte/2026-10-27_0.8d2a_mengenpreis_analyse.md",
+      "sha256": "b4be8c635c22bc91a41a5fa9e432194016bb01b3a76653cbcbfaa9298d127b8a"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/README.md",
+      "sha256": "0ba8f70e23046477220e96b3fbb6a807206c49b02e70d2dec1ea8e941c578f98"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/audit.cjs",
+      "sha256": "ec62368cd63f4b9b354c6341d11a8999a15024a5a4d55fc6631b9c5818209e91"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/checks.cjs",
+      "sha256": "d76a5eaf97942c398f1027171cced2cfb2782ebc4944b10100049ead9dcc701f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/compare.cjs",
+      "sha256": "83b2fd7a3cad5acba52e344d3eea5a435f1bc2fdd999c4baffb712aecfa3878f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/harness.cjs",
+      "sha256": "1bb71fb6d5a05a8090317d52336c85389b4f718f91325ddaaa111a0fb25e15b5"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/quantity-model.cjs",
+      "sha256": "cb75cc65bf2c26707739b9c8838c9b75c1719f52d4543866c3b9182648d6ed42"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/acceptance.json",
+      "sha256": "b4d7f4861eb5aa8865175484828c3710587250d5907098ea30e107612cc4cff3"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/audit.json",
+      "sha256": "49aa0a66a31b4c1c9ae0048c26554c7e11bb385c53a887a77398610289961a48"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/audit.log",
+      "sha256": "43683e7bad370412f277918e557e0b1eae653674c4ad2e42cf36c5bd2c83337b"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/basic.log",
+      "sha256": "4b0f0b792b8b6c8f41ac90f2541ff2e79ceeba3ed191fc3bbc0e78db289895e4"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/checks-attempt1.log",
+      "sha256": "663ce1b5432b5a2f52ba1caac26cf4e0b688b1055056992895da3128159a54aa"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/checks-attempt2.json",
+      "sha256": "50dca379299b59132dba900e10af601bcd7f3e9472bfb2adf6d85b03f6845d4d"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/checks-attempt2.log",
+      "sha256": "9a352113d47676a590cf91b6e4ad1695e84594fc5d949aab8f1114e491cfd466"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/checks-final.json",
+      "sha256": "58096ec3d05d13ccfa740c4c1cf0158e7e2bf85c17604a01a5640e889efe9143"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/checks-final.log",
+      "sha256": "4f156e628606e304ccbf3e2be7db46247cd14b6c58a86dcabe53a9a49bdda5da"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81001-largeCashLimited90-A.json",
+      "sha256": "d885edbc5ac3f03746bc6e7df9f757aa993845ecfd9c96e3069ba81976cd54e4"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81001-largeCashLimited90-B.json",
+      "sha256": "90af3dfbdf19277ceebc9b20197ce76e31be2ad4288a6d9e7b021f6169eeae53"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81001-small22-A.json",
+      "sha256": "5e8f0a2158fb259a936f5e9beae4d3028305678f053e04ef4a9581ff4aebd73f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81001-small22-B.json",
+      "sha256": "356762b25dd621468afc46edb22f7eea3d33720a428c1945b13f701079a6215d"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81002-largeCashLimited90-A.json",
+      "sha256": "7896d5a7e7960cfdc3e2472f2f184f9f7aa20f10d7cc5e5db4a859344909897f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81002-largeCashLimited90-B.json",
+      "sha256": "21717acc8aa7287c8cfd369ee6f76f6e0717abb7fcd58de5b96cab57e46bf237"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81002-small22-A.json",
+      "sha256": "5878497eb7a9a6799018441f4256f25df8418d3d04eb37d25e53f3c8ecc753cc"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81002-small22-B.json",
+      "sha256": "2c2832897ede32b6e379d417907117b83915de8ad65cf68c91738441215c80ab"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81003-largeCashLimited90-A.json",
+      "sha256": "0c00dbc65747300ae2f8d09acea7f3e6cf9cbe2bd757aaffeb0406d4bf433880"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81003-largeCashLimited90-B.json",
+      "sha256": "0b73e1e0c8c263a8be6253b699afa222902a39582768d8a541f2787b961bb068"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81003-small22-A.json",
+      "sha256": "a3eef26bd1e83b20a53a5c6f95650a654ccdcda58375e1e61d4e76420815ad08"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/bergen-luebeck-81003-small22-B.json",
+      "sha256": "9a25a8f9f93f8e7439c542d1163025651c3d0b5a9f42fbb9d713b59129fef4a3"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81001-largeCashLimited90-A.json",
+      "sha256": "6129c7b7901e0de71f84a2923c2bc4f4c5eec2a4326cb3cb61d2b6f268dc6b5e"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81001-largeCashLimited90-B.json",
+      "sha256": "0c1d6fd30c7b22dd24ebabcbe58e932f39fd232043b7dbca87191582a88eebef"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81001-small22-A.json",
+      "sha256": "b6716d3bf4e35038dfa936625449fff5fed465d264146fd577d08737b921a489"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81001-small22-B.json",
+      "sha256": "34d1d30edc16ddc41cc1c88f99f8d58c992a5a9084834547daf4cf297caca687"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81002-largeCashLimited90-A.json",
+      "sha256": "d90b7dbf08d94fe8369c301ef3fb257f81eacf6e9e6b669b7a18ac99fb9b3963"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81002-largeCashLimited90-B.json",
+      "sha256": "78f7c10fd42805a10cd3e930db28c05ba9fdd1ad5aba287c285c8ba22e63bfbb"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81002-small22-A.json",
+      "sha256": "efc854298551443c2fa63af77a8ef5a8741d268d1ad28bd72d1eb770205fbfa5"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81002-small22-B.json",
+      "sha256": "5fba3a9aee8894d46333d3cf5314bb8b074e995297e0f57765e66153a99f872f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81003-largeCashLimited90-A.json",
+      "sha256": "1696de5730d866d711beae69c78ef266cd77a6074aaa35093e8089b7c9fb1d5e"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81003-largeCashLimited90-B.json",
+      "sha256": "68ba2373b808b7ac5cbd773aabbca1a9353f1d5c1a22e87977b74c324b930bde"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81003-small22-A.json",
+      "sha256": "ef6098676d81a276d7f11b0ea5aaa2f78b6b739bca1c16859613bac9ff4a67d7"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/luebeck-hamburg-81003-small22-B.json",
+      "sha256": "b2b8c3cb9d9b6ddbc3f313d898ea99f9f6fba81657e0efe80f8b7c3f8ed08903"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81001-largeCashLimited90-A.json",
+      "sha256": "906a40c3bf496da2ea1b4d72cb9dd19fd272aaa7f62754251b426cd0378364fb"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81001-largeCashLimited90-B.json",
+      "sha256": "859f3c7dfbe0080d9b948935bab48885831b41ee2b32e27c51a2edd595f88f7f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81001-small22-A.json",
+      "sha256": "6ff17f4a57b159ae9c0533a1adcd5ca2c8b3ffb4f1e1ca0bd5a746db2c3c73ba"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81001-small22-B.json",
+      "sha256": "e66fa642667a63a9b6218ed66b8cf81209eb1095925642dd47b55e29b7cac28f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81002-largeCashLimited90-A.json",
+      "sha256": "bcbc748fc5dfebfa497e7b2f93ac144988ad756ff67315f85a519fa256eb13ad"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81002-largeCashLimited90-B.json",
+      "sha256": "efb0f165e8923d2c2397f2de5abddcab98733fa61160e8c5a1b26522d73c7d03"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81002-small22-A.json",
+      "sha256": "e102f1a4d5184dd5e25ded4ec6ffeccaf5fc68799b8bdfd18816d67053a0d491"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81002-small22-B.json",
+      "sha256": "d3956d032ea5514b651a2cc558b173cd5aa3a47e99eb3a90c6de7f0246536a9d"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81003-largeCashLimited90-A.json",
+      "sha256": "4e20031fa7558e21b532adb13ffcca28413a9a13ec6bcb25b6fc0126e4caa36f"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81003-largeCashLimited90-B.json",
+      "sha256": "861f11462864c930fe9e0f0e63b5d6e8c0c705eb68562f3c357e96bd83af22bd"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81003-small22-A.json",
+      "sha256": "2c4af40f3adc3ca10bc6cc89069215d84a7782bf9a92706ef9cb845fd9f07c63"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/nowgorod-bruegge-81003-small22-B.json",
+      "sha256": "1ddbf22690d4ba004c1735403236b60941c4d1af9e7edadc82a59d81440810ee"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/plan.json",
+      "sha256": "0b971947a8d30d8164ae53686980749ff6bc3b0da819f6fea72f446daeefa681"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-bergen-luebeck-81001.json",
+      "sha256": "ea0fe1526498d8ba8a2d9c2cebeae7f834ff94a971a19a727c39f2f126191298"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-bergen-luebeck-81002.json",
+      "sha256": "4c65e49e98a70bbd3d8fad4816c7cbeba283d253dacce5f1139beb6f1b86c6a0"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-bergen-luebeck-81003.json",
+      "sha256": "823168cfe31c9ee36f897b72dbb2cf13683f14cb99edb290a91505d37af3e784"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-luebeck-hamburg-81001.json",
+      "sha256": "f4b7e35cdafd53ebae134c18ff77de380ba8b2d770df20a3ee2ecf0ed3db2fd0"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-luebeck-hamburg-81002.json",
+      "sha256": "69a53432d1aadddaffd8933b2ceab81fe84f709893815ccdec7e5884028ac910"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-luebeck-hamburg-81003.json",
+      "sha256": "15c38cf479b4911146a256c72bd365956f491809f815ae54d7783a1cdd722d74"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-nowgorod-bruegge-81001.json",
+      "sha256": "fc8856e89316111c5f71966bd074053211bee5276efa190d0ecb81bc644beaaf"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-nowgorod-bruegge-81002.json",
+      "sha256": "05624242043ef5fa5fadc8fca64037e146b14592b04711bc58ab5f4c1cbda18d"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/start-nowgorod-bruegge-81003.json",
+      "sha256": "0460305645f35bf9f49023fe5ea55dd72c41141beabc9c66a20b7fd127abba42"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01/summary.json",
+      "sha256": "09f7a120f948a04830fbcc5dec7cf3ca51bf1fa09ae4e3ff14423985cdca7db0"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison-01.log",
+      "sha256": "4eab97739dc60cbbf1c968ebe1e2e7c81ceabb9037f9dbf4c678c2ccc366140d"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/comparison.csv",
+      "sha256": "c46009bb152265fab9ffff561028481e63b3b56cb8c6c7839c5aedcfb6b79921"
+    },
+    {
+      "path": "tests/analysis/phase08d2a/results/trade.log",
+      "sha256": "6b05779dc8d1e975f3440d4a3a957f25de904841eb6d669da01b334c617c453e"
+    }
+  ],
+  "newSourceFilesBeforeTests": [
+    {
+      "path": "tests/analysis/phase08d2a1/README.md",
+      "sha256": "ad96c718bd5981da77559d89385045d6c82f004ae6db90186ad8b2e3b8799527"
+    },
+    {
+      "path": "tests/analysis/phase08d2a1/checks.cjs",
+      "sha256": "5a53a9cf3d9ca4e389f51471feae5663ecf9d3b8dfccbf5495199fab5b06e595"
+    },
+    {
+      "path": "tests/analysis/phase08d2a1/compare.cjs",
+      "sha256": "1a902466a4273f413534af25dbda493aa2684122870fd91c8563b4be0a227e77"
+    },
+    {
+      "path": "tests/analysis/phase08d2a1/harness.cjs",
+      "sha256": "3545368ce4eab7df551fc8573490c3264314042280497b1793eabfb63f70f9d6"
+    },
+    {
+      "path": "tests/analysis/phase08d2a1/quantity-model.cjs",
+      "sha256": "be49956dd3c436906aa4a051ed15e1a297b01d0a12a9a93a40c64923f5414fdf"
+    }
+  ]
+}

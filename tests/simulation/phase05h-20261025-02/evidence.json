@@ -1,0 +1,2542 @@
+{
+  "historicalControlParity": [
+    {
+      "strategy": "cautious",
+      "seed": 10001,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10002,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10003,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10004,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10005,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10006,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10007,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10008,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10009,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10010,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10011,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "cautious",
+      "seed": 10012,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10001,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10002,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10003,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10004,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10005,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10006,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10007,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10008,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10009,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10010,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10011,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10012,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10001,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10002,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10003,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10004,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10005,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10006,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10007,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10008,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10009,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10010,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10011,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10012,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10001,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10002,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10003,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10004,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10005,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10006,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10007,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10008,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10009,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10010,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10011,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10012,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10001,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10002,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10003,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10004,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10005,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10006,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10007,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10008,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10009,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10010,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10011,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10012,
+      "fields": [
+        "initial",
+        "final",
+        "days",
+        "trading",
+        "deliveries",
+        "costs",
+        "finance",
+        "career",
+        "stopping",
+        "events"
+      ],
+      "exact": true
+    }
+  ],
+  "yearlyVisits": {
+    "control/cautious": [
+      {
+        "journeys": 1463,
+        "newArrivals": 0,
+        "lh": 1318
+      },
+      {
+        "journeys": 1440,
+        "newArrivals": 0,
+        "lh": 1320
+      },
+      {
+        "journeys": 1440,
+        "newArrivals": 0,
+        "lh": 1294
+      },
+      {
+        "journeys": 1440,
+        "newArrivals": 0,
+        "lh": 1363
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 0,
+        "lh": 8
+      }
+    ],
+    "control/normal": [
+      {
+        "journeys": 1463,
+        "newArrivals": 0,
+        "lh": 1306
+      },
+      {
+        "journeys": 1439,
+        "newArrivals": 0,
+        "lh": 1264
+      },
+      {
+        "journeys": 1438,
+        "newArrivals": 0,
+        "lh": 1330
+      },
+      {
+        "journeys": 1434,
+        "newArrivals": 0,
+        "lh": 1354
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 0,
+        "lh": 8
+      }
+    ],
+    "control/aggressive": [
+      {
+        "journeys": 1456,
+        "newArrivals": 0,
+        "lh": 1335
+      },
+      {
+        "journeys": 1432,
+        "newArrivals": 0,
+        "lh": 1355
+      },
+      {
+        "journeys": 1436,
+        "newArrivals": 0,
+        "lh": 1412
+      },
+      {
+        "journeys": 1434,
+        "newArrivals": 0,
+        "lh": 1358
+      },
+      {
+        "journeys": 9,
+        "newArrivals": 0,
+        "lh": 7
+      }
+    ],
+    "control/optimized": [
+      {
+        "journeys": 1267,
+        "newArrivals": 28,
+        "lh": 103
+      },
+      {
+        "journeys": 1066,
+        "newArrivals": 62,
+        "lh": 133
+      },
+      {
+        "journeys": 1137,
+        "newArrivals": 48,
+        "lh": 383
+      },
+      {
+        "journeys": 1237,
+        "newArrivals": 66,
+        "lh": 493
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 2,
+        "lh": 2
+      }
+    ],
+    "control/remote": [
+      {
+        "journeys": 451,
+        "newArrivals": 225,
+        "lh": 46
+      },
+      {
+        "journeys": 412,
+        "newArrivals": 209,
+        "lh": 30
+      },
+      {
+        "journeys": 386,
+        "newArrivals": 192,
+        "lh": 34
+      },
+      {
+        "journeys": 372,
+        "newArrivals": 189,
+        "lh": 31
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 7,
+        "lh": 0
+      }
+    ],
+    "control/explorer": [
+      {
+        "journeys": 826,
+        "newArrivals": 120,
+        "lh": 207
+      },
+      {
+        "journeys": 824,
+        "newArrivals": 154,
+        "lh": 89
+      },
+      {
+        "journeys": 1071,
+        "newArrivals": 89,
+        "lh": 221
+      },
+      {
+        "journeys": 1163,
+        "newArrivals": 43,
+        "lh": 244
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 2,
+        "lh": 2
+      }
+    ],
+    "A/cautious": [
+      {
+        "journeys": 1436,
+        "newArrivals": 0,
+        "lh": 1252
+      },
+      {
+        "journeys": 1380,
+        "newArrivals": 0,
+        "lh": 1050
+      },
+      {
+        "journeys": 1401,
+        "newArrivals": 0,
+        "lh": 835
+      },
+      {
+        "journeys": 1422,
+        "newArrivals": 0,
+        "lh": 983
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 0,
+        "lh": 3
+      }
+    ],
+    "A/normal": [
+      {
+        "journeys": 1424,
+        "newArrivals": 0,
+        "lh": 1223
+      },
+      {
+        "journeys": 1347,
+        "newArrivals": 0,
+        "lh": 954
+      },
+      {
+        "journeys": 1362,
+        "newArrivals": 0,
+        "lh": 930
+      },
+      {
+        "journeys": 1376,
+        "newArrivals": 0,
+        "lh": 839
+      },
+      {
+        "journeys": 9,
+        "newArrivals": 0,
+        "lh": 5
+      }
+    ],
+    "A/aggressive": [
+      {
+        "journeys": 1436,
+        "newArrivals": 0,
+        "lh": 1268
+      },
+      {
+        "journeys": 1388,
+        "newArrivals": 0,
+        "lh": 1100
+      },
+      {
+        "journeys": 1398,
+        "newArrivals": 0,
+        "lh": 992
+      },
+      {
+        "journeys": 1355,
+        "newArrivals": 0,
+        "lh": 895
+      },
+      {
+        "journeys": 10,
+        "newArrivals": 0,
+        "lh": 6
+      }
+    ],
+    "A/optimized": [
+      {
+        "journeys": 1136,
+        "newArrivals": 96,
+        "lh": 173
+      },
+      {
+        "journeys": 1139,
+        "newArrivals": 75,
+        "lh": 213
+      },
+      {
+        "journeys": 1155,
+        "newArrivals": 74,
+        "lh": 193
+      },
+      {
+        "journeys": 1071,
+        "newArrivals": 85,
+        "lh": 162
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 3,
+        "lh": 0
+      }
+    ],
+    "A/remote": [
+      {
+        "journeys": 451,
+        "newArrivals": 225,
+        "lh": 46
+      },
+      {
+        "journeys": 409,
+        "newArrivals": 207,
+        "lh": 29
+      },
+      {
+        "journeys": 381,
+        "newArrivals": 190,
+        "lh": 33
+      },
+      {
+        "journeys": 373,
+        "newArrivals": 190,
+        "lh": 33
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 5,
+        "lh": 0
+      }
+    ],
+    "A/explorer": [
+      {
+        "journeys": 840,
+        "newArrivals": 115,
+        "lh": 169
+      },
+      {
+        "journeys": 907,
+        "newArrivals": 111,
+        "lh": 137
+      },
+      {
+        "journeys": 1099,
+        "newArrivals": 85,
+        "lh": 55
+      },
+      {
+        "journeys": 1195,
+        "newArrivals": 48,
+        "lh": 217
+      },
+      {
+        "journeys": 10,
+        "newArrivals": 3,
+        "lh": 1
+      }
+    ],
+    "B/cautious": [
+      {
+        "journeys": 1447,
+        "newArrivals": 0,
+        "lh": 933
+      },
+      {
+        "journeys": 1385,
+        "newArrivals": 0,
+        "lh": 626
+      },
+      {
+        "journeys": 1342,
+        "newArrivals": 0,
+        "lh": 314
+      },
+      {
+        "journeys": 1314,
+        "newArrivals": 0,
+        "lh": 195
+      },
+      {
+        "journeys": 9,
+        "newArrivals": 0,
+        "lh": 2
+      }
+    ],
+    "B/normal": [
+      {
+        "journeys": 1440,
+        "newArrivals": 0,
+        "lh": 1177
+      },
+      {
+        "journeys": 1372,
+        "newArrivals": 0,
+        "lh": 798
+      },
+      {
+        "journeys": 1355,
+        "newArrivals": 0,
+        "lh": 630
+      },
+      {
+        "journeys": 1375,
+        "newArrivals": 0,
+        "lh": 332
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 0,
+        "lh": 4
+      }
+    ],
+    "B/aggressive": [
+      {
+        "journeys": 1404,
+        "newArrivals": 0,
+        "lh": 1100
+      },
+      {
+        "journeys": 1286,
+        "newArrivals": 0,
+        "lh": 599
+      },
+      {
+        "journeys": 1271,
+        "newArrivals": 0,
+        "lh": 495
+      },
+      {
+        "journeys": 1284,
+        "newArrivals": 0,
+        "lh": 459
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 0,
+        "lh": 3
+      }
+    ],
+    "B/optimized": [
+      {
+        "journeys": 1106,
+        "newArrivals": 103,
+        "lh": 108
+      },
+      {
+        "journeys": 967,
+        "newArrivals": 130,
+        "lh": 94
+      },
+      {
+        "journeys": 1023,
+        "newArrivals": 102,
+        "lh": 121
+      },
+      {
+        "journeys": 1056,
+        "newArrivals": 106,
+        "lh": 59
+      },
+      {
+        "journeys": 11,
+        "newArrivals": 6,
+        "lh": 0
+      }
+    ],
+    "B/remote": [
+      {
+        "journeys": 451,
+        "newArrivals": 225,
+        "lh": 46
+      },
+      {
+        "journeys": 409,
+        "newArrivals": 207,
+        "lh": 29
+      },
+      {
+        "journeys": 380,
+        "newArrivals": 190,
+        "lh": 33
+      },
+      {
+        "journeys": 368,
+        "newArrivals": 188,
+        "lh": 33
+      },
+      {
+        "journeys": 12,
+        "newArrivals": 6,
+        "lh": 0
+      }
+    ],
+    "B/explorer": [
+      {
+        "journeys": 817,
+        "newArrivals": 139,
+        "lh": 94
+      },
+      {
+        "journeys": 768,
+        "newArrivals": 184,
+        "lh": 67
+      },
+      {
+        "journeys": 1132,
+        "newArrivals": 44,
+        "lh": 52
+      },
+      {
+        "journeys": 1162,
+        "newArrivals": 41,
+        "lh": 57
+      },
+      {
+        "journeys": 10,
+        "newArrivals": 0,
+        "lh": 1
+      }
+    ],
+    "C/cautious": [
+      {
+        "journeys": 1443,
+        "newArrivals": 0,
+        "lh": 1021
+      },
+      {
+        "journeys": 1362,
+        "newArrivals": 0,
+        "lh": 605
+      },
+      {
+        "journeys": 1303,
+        "newArrivals": 0,
+        "lh": 303
+      },
+      {
+        "journeys": 1355,
+        "newArrivals": 6,
+        "lh": 112
+      },
+      {
+        "journeys": 9,
+        "newArrivals": 0,
+        "lh": 0
+      }
+    ],
+    "C/normal": [
+      {
+        "journeys": 1447,
+        "newArrivals": 0,
+        "lh": 1212
+      },
+      {
+        "journeys": 1373,
+        "newArrivals": 0,
+        "lh": 872
+      },
+      {
+        "journeys": 1336,
+        "newArrivals": 0,
+        "lh": 701
+      },
+      {
+        "journeys": 1315,
+        "newArrivals": 0,
+        "lh": 631
+      },
+      {
+        "journeys": 7,
+        "newArrivals": 0,
+        "lh": 4
+      }
+    ],
+    "C/aggressive": [
+      {
+        "journeys": 1410,
+        "newArrivals": 0,
+        "lh": 1059
+      },
+      {
+        "journeys": 1320,
+        "newArrivals": 0,
+        "lh": 752
+      },
+      {
+        "journeys": 1320,
+        "newArrivals": 0,
+        "lh": 709
+      },
+      {
+        "journeys": 1329,
+        "newArrivals": 0,
+        "lh": 673
+      },
+      {
+        "journeys": 8,
+        "newArrivals": 0,
+        "lh": 5
+      }
+    ],
+    "C/optimized": [
+      {
+        "journeys": 1154,
+        "newArrivals": 75,
+        "lh": 147
+      },
+      {
+        "journeys": 1121,
+        "newArrivals": 65,
+        "lh": 161
+      },
+      {
+        "journeys": 1132,
+        "newArrivals": 65,
+        "lh": 135
+      },
+      {
+        "journeys": 1130,
+        "newArrivals": 59,
+        "lh": 144
+      },
+      {
+        "journeys": 9,
+        "newArrivals": 1,
+        "lh": 0
+      }
+    ],
+    "C/remote": [
+      {
+        "journeys": 451,
+        "newArrivals": 225,
+        "lh": 46
+      },
+      {
+        "journeys": 409,
+        "newArrivals": 207,
+        "lh": 29
+      },
+      {
+        "journeys": 380,
+        "newArrivals": 190,
+        "lh": 33
+      },
+      {
+        "journeys": 370,
+        "newArrivals": 189,
+        "lh": 33
+      },
+      {
+        "journeys": 12,
+        "newArrivals": 5,
+        "lh": 0
+      }
+    ],
+    "C/explorer": [
+      {
+        "journeys": 838,
+        "newArrivals": 108,
+        "lh": 92
+      },
+      {
+        "journeys": 1074,
+        "newArrivals": 40,
+        "lh": 114
+      },
+      {
+        "journeys": 1204,
+        "newArrivals": 28,
+        "lh": 80
+      },
+      {
+        "journeys": 1231,
+        "newArrivals": 18,
+        "lh": 20
+      },
+      {
+        "journeys": 10,
+        "newArrivals": 1,
+        "lh": 0
+      }
+    ]
+  },
+  "trajectories": {
+    "control": {
+      "years": [
+        {
+          "normalizedPrice": 1.0214026703029007,
+          "meanStock": 207.16194903581268,
+          "capFraction": 0.2712465564738292,
+          "floorFraction": 0.0015725436179981635,
+          "priceMax": 310,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1068556515955785,
+              "meanStock": 205.67107487922706
+            },
+            "0": {
+              "normalizedPrice": 0.9899561312861375,
+              "meanStock": 205.70491593567252
+            },
+            "1": {
+              "normalizedPrice": 1.0406989610093733,
+              "meanStock": 213.75397727272727
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0458675802798798,
+          "meanStock": 235.15312213039485,
+          "capFraction": 0.3900022956841139,
+          "floorFraction": 0.008390725436179981,
+          "priceMax": 302,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1670817463248928,
+              "meanStock": 235.15537439613527
+            },
+            "0": {
+              "normalizedPrice": 1.0012685747739447,
+              "meanStock": 235.14517543859648
+            },
+            "1": {
+              "normalizedPrice": 1.0732129711624148,
+              "meanStock": 235.1782196969697
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0657989689404541,
+          "meanStock": 235.19151744719926,
+          "capFraction": 0.3920684113865932,
+          "floorFraction": 0.009641873278236915,
+          "priceMax": 368,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1500103727967208,
+              "meanStock": 234.97179951690822
+            },
+            "0": {
+              "normalizedPrice": 1.0174082841780903,
+              "meanStock": 235.23399122807018
+            },
+            "1": {
+              "normalizedPrice": 1.144927594087978,
+              "meanStock": 235.27449494949494
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0759134981577674,
+          "meanStock": 235.25371900826445,
+          "capFraction": 0.39279155188246095,
+          "floorFraction": 0.008930211202938475,
+          "priceMax": 424,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1472326116224605,
+              "meanStock": 235.39039855072463
+            },
+            "0": {
+              "normalizedPrice": 1.053470852328343,
+              "meanStock": 235.2608004385965
+            },
+            "1": {
+              "normalizedPrice": 1.0788817469463279,
+              "meanStock": 235.08636363636364
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.1020077615396866,
+          "meanStock": 235.00625573921027,
+          "capFraction": 0.388647842056933,
+          "floorFraction": 0.013670798898071625,
+          "priceMax": 730,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1876933417574103,
+              "meanStock": 235.05984299516908
+            },
+            "0": {
+              "normalizedPrice": 1.0868879497488992,
+              "meanStock": 235.12860014619883
+            },
+            "1": {
+              "normalizedPrice": 1.064659459316604,
+              "meanStock": 234.52758838383838
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.104517949299809,
+          "meanStock": 235.10790863177226,
+          "capFraction": 0.39178145087235994,
+          "floorFraction": 0.011443985307621671,
+          "priceMax": 795,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1561425602723214,
+              "meanStock": 235.0520531400966
+            },
+            "0": {
+              "normalizedPrice": 1.1239548056271607,
+              "meanStock": 235.1811951754386
+            },
+            "1": {
+              "normalizedPrice": 0.9834012614249679,
+              "meanStock": 234.91313131313132
+            }
+          }
+        }
+      ],
+      "pulses": [
+        {
+          "day": 360,
+          "meanPriceDifference": 0,
+          "meanStockDifference": -18.520661157024794,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 390,
+          "meanPriceDifference": 0,
+          "meanStockDifference": -1.421487603305785,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 450,
+          "meanPriceDifference": 0,
+          "meanStockDifference": 0,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 720,
+          "meanPriceDifference": 0,
+          "meanStockDifference": 4.409090909090909,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 750,
+          "meanPriceDifference": 0,
+          "meanStockDifference": 0.128099173553719,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 840,
+          "meanPriceDifference": 0,
+          "meanStockDifference": 0,
+          "priceIncreases": 0,
+          "priceDecreases": 0,
+          "cells": 242
+        }
+      ]
+    },
+    "A": {
+      "years": [
+        {
+          "normalizedPrice": 1.0200926384609856,
+          "meanStock": 105.91108815426998,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 220,
+          "priceMin": 10,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1195732923610067,
+              "meanStock": 73.57264492753623
+            },
+            "0": {
+              "normalizedPrice": 1.005793535164045,
+              "meanStock": 105.6875365497076
+            },
+            "1": {
+              "normalizedPrice": 0.9654870389549405,
+              "meanStock": 140.4917297979798
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0142847439582454,
+          "meanStock": 110.16076675849403,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 200,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1470278447259175,
+              "meanStock": 75.08864734299517
+            },
+            "0": {
+              "normalizedPrice": 1.006316352529502,
+              "meanStock": 110.82931286549707
+            },
+            "1": {
+              "normalizedPrice": 0.9030350362731562,
+              "meanStock": 144.5175505050505
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.008726159310115,
+          "meanStock": 110.26418732782369,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 193,
+          "priceMin": 10,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1251789729054829,
+              "meanStock": 75.13502415458937
+            },
+            "0": {
+              "normalizedPrice": 1.0003425234173995,
+              "meanStock": 110.45740131578947
+            },
+            "1": {
+              "normalizedPrice": 0.9159416872716102,
+              "meanStock": 146.32266414141415
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0019993520122368,
+          "meanStock": 110.74171258034895,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 194,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1217723691738548,
+              "meanStock": 76.21274154589372
+            },
+            "0": {
+              "normalizedPrice": 0.9976659978871906,
+              "meanStock": 111.0375182748538
+            },
+            "1": {
+              "normalizedPrice": 0.8917518755934322,
+              "meanStock": 145.81830808080807
+            }
+          }
+        },
+        {
+          "normalizedPrice": 0.9917996554314262,
+          "meanStock": 109.99820936639118,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 206,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1125464955116904,
+              "meanStock": 75.8096618357488
+            },
+            "0": {
+              "normalizedPrice": 0.9905957980784734,
+              "meanStock": 110.69395102339182
+            },
+            "1": {
+              "normalizedPrice": 0.8697231025668055,
+              "meanStock": 143.3373106060606
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0100304465769614,
+          "meanStock": 110.32136134067952,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 213,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1037389566600293,
+              "meanStock": 74.58774154589372
+            },
+            "0": {
+              "normalizedPrice": 1.0166299057196573,
+              "meanStock": 110.95952119883042
+            },
+            "1": {
+              "normalizedPrice": 0.8892643271789857,
+              "meanStock": 145.47468434343435
+            }
+          }
+        }
+      ],
+      "pulses": [
+        {
+          "day": 360,
+          "meanPriceDifference": 0.008264462809917356,
+          "meanStockDifference": -19.53305785123967,
+          "priceIncreases": 2,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 390,
+          "meanPriceDifference": 0.2892561983471074,
+          "meanStockDifference": -9.582644628099173,
+          "priceIncreases": 62,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 450,
+          "meanPriceDifference": 0.3512396694214876,
+          "meanStockDifference": -2.0578512396694215,
+          "priceIncreases": 69,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 720,
+          "meanPriceDifference": 0.08264462809917356,
+          "meanStockDifference": 19.483471074380166,
+          "priceIncreases": 17,
+          "priceDecreases": 4,
+          "cells": 242
+        },
+        {
+          "day": 750,
+          "meanPriceDifference": -0.2231404958677686,
+          "meanStockDifference": 9.541322314049587,
+          "priceIncreases": 10,
+          "priceDecreases": 55,
+          "cells": 242
+        },
+        {
+          "day": 840,
+          "meanPriceDifference": -0.33884297520661155,
+          "meanStockDifference": 0.9338842975206612,
+          "priceIncreases": 3,
+          "priceDecreases": 63,
+          "cells": 242
+        }
+      ]
+    },
+    "B": {
+      "years": [
+        {
+          "normalizedPrice": 1.0223326792047822,
+          "meanStock": 106.51741276400368,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 215,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.2570475631943807,
+              "meanStock": 45.98031400966184
+            },
+            "0": {
+              "normalizedPrice": 1.01461820052054,
+              "meanStock": 106.6797697368421
+            },
+            "1": {
+              "normalizedPrice": 0.8035989541248575,
+              "meanStock": 169.2453282828283
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0158272777762485,
+          "meanStock": 109.44218319559229,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 217,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.347653827871103,
+              "meanStock": 44.91002415458937
+            },
+            "0": {
+              "normalizedPrice": 1.0067064381182205,
+              "meanStock": 110.23976608187135
+            },
+            "1": {
+              "normalizedPrice": 0.7004260578593612,
+              "meanStock": 174.15233585858584
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0019951229681718,
+          "meanStock": 109.5686409550046,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 208,
+          "priceMin": 7,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.3120448142492922,
+              "meanStock": 44.880434782608695
+            },
+            "0": {
+              "normalizedPrice": 0.997532318955847,
+              "meanStock": 110.01838450292398
+            },
+            "1": {
+              "normalizedPrice": 0.69326922321685,
+              "meanStock": 175.64356060606062
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.004346644797224,
+          "meanStock": 109.94792240587695,
+          "capFraction": 0.0,
+          "floorFraction": 6.887052341597796e-05,
+          "priceMax": 206,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.3186611735833063,
+              "meanStock": 45.73242753623188
+            },
+            "0": {
+              "normalizedPrice": 0.9988076768999172,
+              "meanStock": 110.5358918128655
+            },
+            "1": {
+              "normalizedPrice": 0.6948797083479246,
+              "meanStock": 175.05113636363637
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0015868514642674,
+          "meanStock": 109.26640266299357,
+          "capFraction": 0.0,
+          "floorFraction": 0.001721763085399449,
+          "priceMax": 221,
+          "priceMin": 4,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.316582293852434,
+              "meanStock": 45.2542270531401
+            },
+            "0": {
+              "normalizedPrice": 1.0006890335041154,
+              "meanStock": 110.04429824561403
+            },
+            "1": {
+              "normalizedPrice": 0.6753749873753458,
+              "meanStock": 173.50094696969697
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0124429191283937,
+          "meanStock": 109.55673783287419,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 217,
+          "priceMin": 5,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.313839611579396,
+              "meanStock": 44.525
+            },
+            "0": {
+              "normalizedPrice": 1.0144501791509268,
+              "meanStock": 110.35663377192982
+            },
+            "1": {
+              "normalizedPrice": 0.6904122060335954,
+              "meanStock": 174.78118686868686
+            }
+          }
+        }
+      ],
+      "pulses": [
+        {
+          "day": 360,
+          "meanPriceDifference": 0.05371900826446281,
+          "meanStockDifference": -19.14876033057851,
+          "priceIncreases": 13,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 390,
+          "meanPriceDifference": 0.8264462809917356,
+          "meanStockDifference": -6.805785123966942,
+          "priceIncreases": 135,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 450,
+          "meanPriceDifference": 0.756198347107438,
+          "meanStockDifference": -0.7479338842975206,
+          "priceIncreases": 124,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 720,
+          "meanPriceDifference": -0.045454545454545456,
+          "meanStockDifference": 19.194214876033058,
+          "priceIncreases": 8,
+          "priceDecreases": 19,
+          "cells": 242
+        },
+        {
+          "day": 750,
+          "meanPriceDifference": -0.8016528925619835,
+          "meanStockDifference": 6.735537190082645,
+          "priceIncreases": 0,
+          "priceDecreases": 133,
+          "cells": 242
+        },
+        {
+          "day": 840,
+          "meanPriceDifference": -0.5495867768595041,
+          "meanStockDifference": 0.3181818181818182,
+          "priceIncreases": 0,
+          "priceDecreases": 97,
+          "cells": 242
+        }
+      ]
+    },
+    "C": {
+      "years": [
+        {
+          "normalizedPrice": 1.0213635982785543,
+          "meanStock": 108.31640266299357,
+          "capFraction": 0.00041322314049586776,
+          "floorFraction": 0.0,
+          "priceMax": 179,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1678121719435006,
+              "meanStock": 58.9475845410628
+            },
+            "0": {
+              "normalizedPrice": 1.0176352367672434,
+              "meanStock": 107.61960891812865
+            },
+            "1": {
+              "normalizedPrice": 0.8811380655770021,
+              "meanStock": 162.33636363636364
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0114562374881961,
+          "meanStock": 110.62799586776859,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 194,
+          "priceMin": 10,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.202579745750655,
+              "meanStock": 61.97469806763285
+            },
+            "0": {
+              "normalizedPrice": 1.0056521812662247,
+              "meanStock": 111.01001461988304
+            },
+            "1": {
+              "normalizedPrice": 0.8316956730715276,
+              "meanStock": 160.17310606060607
+            }
+          }
+        },
+        {
+          "normalizedPrice": 0.9996828471251886,
+          "meanStock": 109.77532139577595,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 187,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1757642676950015,
+              "meanStock": 59.18913043478261
+            },
+            "0": {
+              "normalizedPrice": 0.9976570575462407,
+              "meanStock": 110.02096125730993
+            },
+            "1": {
+              "normalizedPrice": 0.8225959078022045,
+              "meanStock": 161.8123106060606
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.001494633920357,
+          "meanStock": 110.30912534435262,
+          "capFraction": 4.591368227731864e-05,
+          "floorFraction": 0.0,
+          "priceMax": 186,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1802639328869895,
+              "meanStock": 61.247342995169085
+            },
+            "0": {
+              "normalizedPrice": 0.9978617252553438,
+              "meanStock": 110.62207602339181
+            },
+            "1": {
+              "normalizedPrice": 0.8271495058434695,
+              "meanStock": 160.51988636363637
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0022277698319475,
+          "meanStock": 109.5680785123967,
+          "capFraction": 8.034894398530762e-05,
+          "floorFraction": 0.0,
+          "priceMax": 198,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.181208073776884,
+              "meanStock": 60.43460144927536
+            },
+            "0": {
+              "normalizedPrice": 1.0010049503647263,
+              "meanStock": 110.23706140350878
+            },
+            "1": {
+              "normalizedPrice": 0.819336282958096,
+              "meanStock": 158.62386363636364
+            }
+          }
+        },
+        {
+          "normalizedPrice": 1.0079805171103255,
+          "meanStock": 110.57618227731864,
+          "capFraction": 0.0,
+          "floorFraction": 0.0,
+          "priceMax": 190,
+          "priceMin": 9,
+          "roles": {
+            "-1": {
+              "normalizedPrice": 1.1782963307321732,
+              "meanStock": 59.03731884057971
+            },
+            "0": {
+              "normalizedPrice": 1.0074720718887529,
+              "meanStock": 111.59179459064327
+            },
+            "1": {
+              "normalizedPrice": 0.831679522725644,
+              "meanStock": 160.9492424242424
+            }
+          }
+        }
+      ],
+      "pulses": [
+        {
+          "day": 360,
+          "meanPriceDifference": 0.06198347107438017,
+          "meanStockDifference": -19.326446280991735,
+          "priceIncreases": 15,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 390,
+          "meanPriceDifference": 1.1487603305785123,
+          "meanStockDifference": -7.706611570247934,
+          "priceIncreases": 152,
+          "priceDecreases": 0,
+          "cells": 242
+        },
+        {
+          "day": 450,
+          "meanPriceDifference": 1.0413223140495869,
+          "meanStockDifference": 0.6735537190082644,
+          "priceIncreases": 146,
+          "priceDecreases": 4,
+          "cells": 242
+        },
+        {
+          "day": 720,
+          "meanPriceDifference": -0.09504132231404959,
+          "meanStockDifference": 19.334710743801654,
+          "priceIncreases": 4,
+          "priceDecreases": 27,
+          "cells": 242
+        },
+        {
+          "day": 750,
+          "meanPriceDifference": -1.1570247933884297,
+          "meanStockDifference": 7.512396694214876,
+          "priceIncreases": 1,
+          "priceDecreases": 152,
+          "cells": 242
+        },
+        {
+          "day": 840,
+          "meanPriceDifference": -0.6942148760330579,
+          "meanStockDifference": -1.4586776859504131,
+          "priceIncreases": 6,
+          "priceDecreases": 109,
+          "cells": 242
+        }
+      ]
+    }
+  },
+  "repeatedRoutes": {
+    "control/Venlo–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 38,
+      "nonnegative": 34,
+      "min": -3892,
+      "max": 6654,
+      "mean": 187.01388888888889,
+      "netPerDay": 26.610671936758894
+    },
+    "control/Danzig–Bergen": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 27,
+      "nonnegative": 45,
+      "min": -1446,
+      "max": 4134,
+      "mean": 492.69444444444446,
+      "netPerDay": 24.7033426183844
+    },
+    "control/Nowgorod–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 48,
+      "nonnegative": 24,
+      "min": -3145,
+      "max": 18264,
+      "mean": 1459.0555555555557,
+      "netPerDay": 43.57196184155952
+    },
+    "A/Venlo–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 40,
+      "nonnegative": 32,
+      "min": -1678,
+      "max": 1770,
+      "mean": -17.819444444444443,
+      "netPerDay": -2.535573122529644
+    },
+    "A/Danzig–Bergen": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 48,
+      "nonnegative": 24,
+      "min": -1086,
+      "max": 894,
+      "mean": -133.47222222222223,
+      "netPerDay": -6.692200557103064
+    },
+    "A/Nowgorod–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 31,
+      "nonnegative": 41,
+      "min": -4776,
+      "max": 5692,
+      "mean": 435.94444444444446,
+      "netPerDay": 13.01866445458316
+    },
+    "B/Venlo–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 56,
+      "nonnegative": 16,
+      "min": -2981,
+      "max": 2874,
+      "mean": -202.44444444444446,
+      "netPerDay": -28.806324110671937
+    },
+    "B/Danzig–Bergen": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 48,
+      "nonnegative": 24,
+      "min": -1266,
+      "max": 1164,
+      "mean": -67.80555555555556,
+      "netPerDay": -3.3997214484679668
+    },
+    "B/Nowgorod–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 3,
+      "nonnegative": 69,
+      "min": -1086,
+      "max": 8184,
+      "mean": 2591.2083333333335,
+      "netPerDay": 77.38158440481128
+    },
+    "C/Venlo–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 66,
+      "nonnegative": 6,
+      "min": -2448,
+      "max": 2397,
+      "mean": -203.84722222222223,
+      "netPerDay": -29.00592885375494
+    },
+    "C/Danzig–Bergen": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 46,
+      "nonnegative": 26,
+      "min": -1536,
+      "max": 686,
+      "mean": -173.88888888888889,
+      "netPerDay": -8.71866295264624
+    },
+    "C/Nowgorod–Brügge": {
+      "cases": 3,
+      "journeys": 72,
+      "negative": 27,
+      "nonnegative": 45,
+      "min": -2596,
+      "max": 4854,
+      "mean": 504.5833333333333,
+      "netPerDay": 15.068436333471588
+    }
+  }
+}

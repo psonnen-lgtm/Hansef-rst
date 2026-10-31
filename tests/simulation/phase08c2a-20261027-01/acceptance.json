@@ -1,0 +1,21 @@
+{
+  "base": "569afbac5ecff9abf8dfaae6f77815716a561f07",
+  "testedGameCommit": "b5e4874bef7e68e8207209ba9133028220f08dbf",
+  "gameSHA256": "55d1935c918567997927626bf49efdbbbc4069f17fb75e08bda645e4b8a56ab7",
+  "testHarnessCommit": "f059ac27db1065e7a19aaf1af3871d06fd7253a9",
+  "passed": {
+    "focusedGroups": 10,
+    "baselineChecks": 19,
+    "tradeChecks": 18,
+    "browserViewports": 4
+  },
+  "historicalV11StatesReadOnlyRoundtripped": 11,
+  "fullEconomyOrCareerSimulations": 0,
+  "existingHistoricalResultsScriptsGraphicsAndArchivesUnchanged": true,
+  "oldIndexContentsPreserved": true,
+  "relativeReportLinksChecked": 18,
+  "physicalAppleHardwareOrSafariTested": false,
+  "PRCreated": false,
+  "PRFailure": "Post \"https://api.github.com/graphql\": Forbidden",
+  "scope": "market UI only; no price inventory capacity travel risk or save-rule change"
+}

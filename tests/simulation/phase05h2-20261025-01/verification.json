@@ -1,0 +1,1509 @@
+{
+  "base": "8ec30ba8c53756769e98921f9125163313bf1666",
+  "testedSimulationSourceCommit": "6016c3653bbd7c8af54d606e018a05d52c104a1a",
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "productionUnchanged": true,
+  "simulatorHashesFrozen": true,
+  "historicalFiles": [
+    {
+      "file": "tests/simulation/baseline/game-0.4.1.html.gz",
+      "sha256": "b18c07976dd794751a59035d7685c35f687559eeacfb0fb13cb7a935912be5a5"
+    },
+    {
+      "file": "tests/simulation/baseline/results.json.gz",
+      "sha256": "f745847528828366548330e590910529decfd3503692b5dce64275a1272670d4"
+    },
+    {
+      "file": "tests/simulation/baseline/summary.json",
+      "sha256": "475aa3810a8b7209607a9aff1c20e6f7c4e6e10d8cb37bd3e4d4e2eca741e1ca"
+    },
+    {
+      "file": "tests/simulation/phase05d-eleven-cities-sample.json",
+      "sha256": "50e5b36396341ae779720bacc6c9c30c2e654337612928f7059dadf1afa9c7fe"
+    },
+    {
+      "file": "tests/simulation/phase05d-eleven-cities-verification.json",
+      "sha256": "55cfc677141f4b5c56f3616fe6db173150ad6a958043605743a58a701857f554"
+    },
+    {
+      "file": "tests/simulation/phase05d-new-city-starts-sample.json",
+      "sha256": "3ed237fd1d79cb5bd58940372515affcb7782eb09e7223c3eeaf9de388799a9a"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/aggressive.tar.gz",
+      "sha256": "fbea70db74e7b9c39ab58f35474f401e12eb4dff8d50d1857bb0767c9312c9b4"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/attempts.jsonl",
+      "sha256": "28d7b167110e34454b2c620df1a9f9d69b2bac14d00aaa20e8bdf38d2d87faca"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/cautious.tar.gz",
+      "sha256": "92371dd1a61224ad28f2805859ab32586063ba29ffcc5c339842f40cd3a02af4"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/execution-complete.json",
+      "sha256": "1e054ccb35060eb83e492eb6379eeb816074c79e895c431b495aaeb5a7f32b6b"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/manifest.json",
+      "sha256": "60966613b3ef89e6dd7d77c60d6f33cbcdd5a35acf630138b6de596d945e2775"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/mechanism-checks.json",
+      "sha256": "7f7910fc5f5709269813cc10858c767428376b03b13552607aec657b7207a900"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/normal.tar.gz",
+      "sha256": "0fd6031b1c9bbabd769a80a64e6a8f10e9d1bd6aa9486bb4e24e80ac5cf91547"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/observer-parity.json",
+      "sha256": "5886a925ec092d69a8405711fcf0443b19ad2d185a04e2e4af5e528fec206142"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/optimized.tar.gz",
+      "sha256": "918ab87935534273c32322aee731d69407e7b0014ef8928eb7275ea648733774"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/originals-verification.json",
+      "sha256": "6b08a222a7bf664b245173477e4e3e43beb55c209a7c4e3f1e2d1ab10a5a2349"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/pilot-complete.json",
+      "sha256": "fe96b0c819f0fed2d3e884ec6f0ce89f8fd5a5bbfb8c87eb5a908f573f32ceaa"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/provenance.json",
+      "sha256": "3b7e7f29f8ea0c61913f190bcb34f14fe9cfc20277336409adf8bd8cc4b2bf44"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/reconciled-complete.json",
+      "sha256": "432452efd7660b63ad8601364a3a0e4ba322035ec72e46d12e6651a200a765a9"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/recovery20.tar.gz",
+      "sha256": "6581a229083b0d0d85d94cb41d4a16d2daf130d95653e793e28731d9f2c90149"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/regressions.json",
+      "sha256": "eef7ea8a3c46ed4bb1d39d8024ec3a155998ba5453eb8932638ed82ad43df077"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/remote.tar.gz",
+      "sha256": "7595136e08504e14b7fb9f4bf6b6a918a0439dbac66eeac8eaccd9759cc3a0ae"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/results-manifest.json",
+      "sha256": "04059cec590677d50830be887fab3b3090f6f3612db95e81f8b0c39d3c98e541"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/retry-validation.json",
+      "sha256": "8fd7747f85d33cf3b62486078e7a94c57eed220ed55492c40686915af4465abd"
+    },
+    {
+      "file": "tests/simulation/phase05e-20261024-01/summary.json",
+      "sha256": "59045eb9ee0258c630306efe5b370876cbba17737d16c409110bbe1788bb3070"
+    },
+    {
+      "file": "tests/simulation/phase05f-browser.json",
+      "sha256": "94a2da5a2f25dc30b26aaf7258c9af980623162cfa566c783a0585fc81a8da00"
+    },
+    {
+      "file": "tests/simulation/phase05f-final-verification.json",
+      "sha256": "757a7a762cb9240b652de4966546e4b34f5eda4d3b71ba16a4e89c0657261dbb"
+    },
+    {
+      "file": "tests/simulation/phase05f-historical.json",
+      "sha256": "49d1e05278257c405676583e467b8da89371f44bba6105ae2f48e91003601ba5"
+    },
+    {
+      "file": "tests/simulation/phase05f-regressions.json",
+      "sha256": "1a964daeede9c812d2a5010ea4acd508b3dc1057d7639073f5becf2814129272"
+    },
+    {
+      "file": "tests/simulation/phase05g-browser.json",
+      "sha256": "afcdc713527996308d9dfb0316c6269cbeffc25a1f5d802c28f70fe54b6f8eb9"
+    },
+    {
+      "file": "tests/simulation/phase05g-final-verification.json",
+      "sha256": "ed17b02f71d131431cde5ee8effe0becfff56add88a06a0590561fbcc5c14905"
+    },
+    {
+      "file": "tests/simulation/phase05g-historical.json",
+      "sha256": "1d3f7ab01230ca38cbafc8d392ad6fe73bf0ca9837c0b2110ef44ded9331bfb9"
+    },
+    {
+      "file": "tests/simulation/phase05g-regressions.json",
+      "sha256": "3f126b32fbd4b42bf4f5c44a67a3e65fe1333fdc84ee2c7c11d17cba7f32f742"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/attempts.jsonl",
+      "sha256": "5af5d5363e26ba7b75c6e8f9aa1c97e2d8d787ba87a66f3d13900264d9b46207"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-aggressive-10001.json.gz",
+      "sha256": "05d2e2a546e6c3236f0c5a35ca1a57de74d2287211c07b5db4f370e1c4593699"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-cautious-10001.json.gz",
+      "sha256": "4218a841a474ffca5c90f12c3ae515e87cb4bce342da3df4ff69c9f87f7103f3"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-explorer-10001.json.gz",
+      "sha256": "eb9bec2752640fa800eb01fb4398270f6f32f27732ed0bfa23cd3cf7ccc02b63"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-normal-10001.json.gz",
+      "sha256": "117fbe16f1f568cd825f09b8510938d85adf28b32cd5defe97a60c903bf68b72"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-optimized-10001.json.gz",
+      "sha256": "9dac20eb94c16f5ab8edf8cc3a52236cea72e25d10006a0affba75654c188942"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/control-remote-10001.json.gz",
+      "sha256": "82e2c4d012d05bdb337794a02a6b4d2d915f83ff4b5124ff5a302e525e2effd9"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/manifest.json",
+      "sha256": "bf28b4de113bdd997a795a3032c12e9dc08cc2f0ca4c39fef157f59341ff8380"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/pilot-complete.json",
+      "sha256": "7c41b89ef0d946d1383adc6db2e2aff15f27e503f945cd7201267c75f40d978f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-01/regressions.json",
+      "sha256": "65050c207f8738c34a5b0f436326f1e69ef65fd99dd7e984bb94773df2d13404"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10001.json.gz",
+      "sha256": "5a45e0924270158d30269b8f94ca7b7788a8081d87233ff87eb08793bfb81f72"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10002.json.gz",
+      "sha256": "bc29f987d7aeaa2f919f611b4520a58773a439cedd659126b37969df1ba9213b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10003.json.gz",
+      "sha256": "5683b783d345a6bff85f681330f6de627c5508c01c7b271be1e92241839719a3"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10004.json.gz",
+      "sha256": "099b44ef1166e97d57ab0f0ed102cc51673b4f0ba529ced0a73681023ac2f9fa"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10005.json.gz",
+      "sha256": "a6484301d2f853aa3b7885f2a56e1aef5241e5d4356e50c9e247a3992d270063"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10006.json.gz",
+      "sha256": "0d892ef0f03fa93e6c9e7de886f140d9235a388afb5e30d9f7c3845db5742e37"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10007.json.gz",
+      "sha256": "a7aa44fe9de33996c8ef276e48191dd8af91dd632e7d48eb28c7be34a379ed36"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10008.json.gz",
+      "sha256": "236d5830c24c548028c2907da8b36558d86251685e982805114ec1ac227dc39e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10009.json.gz",
+      "sha256": "bfc1bb75f09b8e7e85516a60a607fe8cb0190e5a42d2614d6e3c40be27f0e637"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10010.json.gz",
+      "sha256": "35591eb6eed2badb63421840c18d2357b84d9e803aaee9d87ee2c6473bca8491"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10011.json.gz",
+      "sha256": "41e0b4b2596435ed555cdd288c5bb8c1dbca2b9fbdcff98dfa7a1314ec54009e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-aggressive-10012.json.gz",
+      "sha256": "ac98c1a214a7ff3fb99b45204851ce29299e849fcb777ae302aafc3b306bd878"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10001.json.gz",
+      "sha256": "0d0dbe5a389973bbc4a1d956f0c745a71143d5d7bdd13d32bed3809923b09a6c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10002.json.gz",
+      "sha256": "19fe4f2035c839525c7975e91bf780f536cf1a25a590a3e5ff49b25733b3281a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10003.json.gz",
+      "sha256": "ada7258b6fae213084ee868985d0bc1af3914fc8a6586a0e3c6ac545eb8664c5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10004.json.gz",
+      "sha256": "1ccec2f806f9d526673726b8f2c8a692d4984643105aca6a873bd2d504f73f75"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10005.json.gz",
+      "sha256": "88a49f61d1a6afa6db120089fc96d997e78ea299bbf5f5b9970aecfb3634864a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10006.json.gz",
+      "sha256": "aed80d8b933fdec5d8c7cf015fd78d369b865de4736d926bb525f23dc5515d28"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10007.json.gz",
+      "sha256": "3944ebaf0e0c1a668de3304c9d8d11d1c3cf48c888cc9ca3f148ebce5ba4b35a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10008.json.gz",
+      "sha256": "d4e53951a99a2b8d5d021f487bc21e068d2bf4eccc49851271d6216d8b3bb019"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10009.json.gz",
+      "sha256": "8bc4b45e480bc0b94c594de6add7619d160a34404e6998af9c856627653163fe"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10010.json.gz",
+      "sha256": "9d0a9c675201bceabd37a00366c47ee3c0689460d4501615e88d045d8826f77a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10011.json.gz",
+      "sha256": "26ed95dfe1706b7c936c282b88fe4e566ef3f5ba7f481b4fa2948862ffc09e88"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-cautious-10012.json.gz",
+      "sha256": "4a40d2676346495617e1e26f872df9b2cae08b01ef09c743d29ee3afa8b0df60"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10001.json.gz",
+      "sha256": "514d564e46ef1d66abe9be85eab8a846dffc3c29d0e3d9475e8c019e520301b1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10002.json.gz",
+      "sha256": "6839f4526f22e2ef5a2fbdfaa28aa536910455017a30718d4e0900f109629ea1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10003.json.gz",
+      "sha256": "c7ab1323b8f83e35c540b18d02d2404d236918168e7fa2bfbdbcd681d2f18914"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10004.json.gz",
+      "sha256": "ccdbfc4ce53995cf6f91dd45f2758d5eb74bba7d6e57030741d21f6681cf9854"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10005.json.gz",
+      "sha256": "ba2dfbce27dfd85325c9759027493e2374b37c8ebe1a5f199a450af3039dfe75"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10006.json.gz",
+      "sha256": "b286dcf6751cf34e241b23b795c9ac2e3f2d785f01776f4f33eaf09f757634eb"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10007.json.gz",
+      "sha256": "12651cae2f55ca61abb3f00dd5edc86003a3afb56e9d80d1a827fbba3c2c424c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10008.json.gz",
+      "sha256": "fe07e7197fcdd7840212f0351900eeb667799056e770109d72aab2ea14fd8df7"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10009.json.gz",
+      "sha256": "fcfc51e3db0c61a904744fb76a29fddbdab5c8dfee5b43da7b32dcf53f8d373a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10010.json.gz",
+      "sha256": "489375b438ac07905b6ea0dca8ec427d629b98b7816924543d1a8f10107883fa"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10011.json.gz",
+      "sha256": "df3cc8c8a094b284bea2ff2640f41c0de46d397227c2f6f5ee311769623267b0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-explorer-10012.json.gz",
+      "sha256": "4e60e9798b34726d0eb674375e60a5357df63f3b3b980917a9e58326acb43a1a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10001.json.gz",
+      "sha256": "fa81772fb89a9c7fe9cd9735787a291c900482d0d51e3e55038b4a086836b7bc"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10002.json.gz",
+      "sha256": "a678e7a67e6f14e626521a59d361a3410ec6f7f5abfa8e8c8095cb030938dd25"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10003.json.gz",
+      "sha256": "db99df6d75e61391f9f6dbad74667683464ba46266ae4990bab0fde9b91c1c18"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10004.json.gz",
+      "sha256": "b537463193cf46e80065e64114e1112bb82c67714e22747840643ef1237e59cd"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10005.json.gz",
+      "sha256": "6851ea6b7c408f018ebdb99bd8e78121797b8cd7a7ee45858c8eae6342d50185"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10006.json.gz",
+      "sha256": "bb6bde151ea735a4fcc17251c0137fde56ff3da1558ba52945991e11b9817e2d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10007.json.gz",
+      "sha256": "d04faf54b735aa809637ac3be468a4eb23e9cf987a6a11ff75e2404895a9c320"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10008.json.gz",
+      "sha256": "ea3d1d177430bd70d87a2d52be9e6366ed38ec40b1104eac76e1900f9b8deee4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10009.json.gz",
+      "sha256": "12413747246bec4d27604e128ba20eb849a7181d55be1f76161ec0eeb49180af"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10010.json.gz",
+      "sha256": "6acc68cbfd280b13da88030915541d5b03e56f0630c34fc1925a95c74af84878"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10011.json.gz",
+      "sha256": "4a55f43b1865868cf0a7cae29bd2be7b01f373a424d621f7f6eff4c16ecb9974"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-normal-10012.json.gz",
+      "sha256": "840e03d6793f00aec1b6bdc3a39a5746f1ba4135e6f9c6d1ed3159bf5b33e092"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10001.json.gz",
+      "sha256": "74e9ef6f0cc9af81a7ef83c0ef74aed74490f22cc510ef1eb178856d20ec81fa"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10002.json.gz",
+      "sha256": "6d0989f72cb43c2c14ac4b5ddf09c516a101b255343f81d962edbb20300d5f63"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10003.json.gz",
+      "sha256": "a81766f0732bdb43c768f528dda3e5674fdd13ea3ac1f9ae22f4ae448e9ba750"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10004.json.gz",
+      "sha256": "f63533f21273b90996aef63e71aa2ba7e2c4233df53472e9e19f2ab0aad23084"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10005.json.gz",
+      "sha256": "305baef21fd992ec3858729505287c803f1c5aa7591f0c29c4748f8b91274333"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10006.json.gz",
+      "sha256": "ca0ed515e91bc988392a28c9e8abf40cb7336d767a58795c83e9c82c14acd36d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10007.json.gz",
+      "sha256": "0ca2b42ee7b8b0751e40ad24308fd20bc09f0a8b7c013e8696f667f7682fa1e0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10008.json.gz",
+      "sha256": "79432b0b436599f7e872b9de2b20913f73e5b4ad0b489c6d9b108cbc9fbdfa17"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10009.json.gz",
+      "sha256": "b82bb5babaabb48e90c7bfeec9c36edb2794fd98b6a5bfffce736c2765bd2d9c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10010.json.gz",
+      "sha256": "a63eacc4780feeeeaba1f5959839e5b1ccf9b4c3329ac2cb5f3d2ff487c82ca0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10011.json.gz",
+      "sha256": "34b45b832d261cd32370834d732407fd007049435b3ee7fa8abbfb296ecc9668"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-optimized-10012.json.gz",
+      "sha256": "cd562e8272e22472a1f6d35d5b35c95c391fa58b128f7a0c0492cd153f225f85"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10001.json.gz",
+      "sha256": "ee570f88937e3c2faf0a0764974e0374cf78164965bacea8a7b1c9479fc6b639"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10002.json.gz",
+      "sha256": "898c4426261babf67d76546da83b624441dbf731d430ef526d48487c699b479a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10003.json.gz",
+      "sha256": "c9f116b507b6a3ec642672dfb44f9ba96f249c2d33f7c126181dcdf099d0a0ac"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10004.json.gz",
+      "sha256": "fe2e9a7c0dff3afb745968f9d160bed97466a527da6ed04456255619db2b87df"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10005.json.gz",
+      "sha256": "e681bed1a9c9b7637028bfceb493423ca11198f61eb16dd11c8373bf4426ef16"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10006.json.gz",
+      "sha256": "49c7d64e068dd8775509a6c01d43022e142c2091656a29571cecfd04cd54546f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10007.json.gz",
+      "sha256": "770a2443629b2e4713dce5bb2a009e584c1eb22277d567e443033bf2e1f744b8"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10008.json.gz",
+      "sha256": "28404432c80b2a1e39247b3361695bbeaaa559c2b07de705549313a46285234d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10009.json.gz",
+      "sha256": "c49dc00726c59685aaad0dee32b54cf6f93b41ca5ab7eb7e93b2face76fdc4e2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10010.json.gz",
+      "sha256": "5d40942dbf397277cdf9f1b1b0329439edf6e530c8865a34d62c1034b734379b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10011.json.gz",
+      "sha256": "e30ad7ee93ec301439aac7bc01d805b00042358df04f6efae1be737a133ed026"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/A-remote-10012.json.gz",
+      "sha256": "0f6ddb1b72e10643341fbd653edbd2cf169b3735b565b4d59ea497d00e5658d0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10001.json.gz",
+      "sha256": "4d16432abdbcf51538309c44c89812e56a90676bfa5a6ea64d246e3c3a7bba45"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10002.json.gz",
+      "sha256": "05fe87c3aa864293c2ddeac58885be5c378e26b4ee143d32a71b6bbe43427c5b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10003.json.gz",
+      "sha256": "0756976bc04dc173cd00e6b2b4f66cf30014983b2a909e8b33a8418b9465c665"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10004.json.gz",
+      "sha256": "ed4ca165dc26299ff3b82a8304a185cc088cfe5820154c701ad8da8ed7c73274"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10005.json.gz",
+      "sha256": "4ec63374ff69a5e26975e15c41db0f7494dff6f5c4f0f0387defc4ff6f7d97ad"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10006.json.gz",
+      "sha256": "72ef0c037ffedbf89af15575b63550f2802284b3280d56e00acc3c8d541e199e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10007.json.gz",
+      "sha256": "fc983e25c7d108c6f3c5e4b883d79d22887a7027f1bc4be80a3832da49b12dc4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10008.json.gz",
+      "sha256": "b3763110b92e396f077db87783a690db5428588f8614a7f01b7a2bc9ca4243f5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10009.json.gz",
+      "sha256": "e957cc9dc70c29ebb4c5cdada4d85d2a824cbc725052bfd9851e1ece91426a92"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10010.json.gz",
+      "sha256": "072397df4286c7d7787af3cc083d48667435ca92d6e5474050cbdbd4450ab3b4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10011.json.gz",
+      "sha256": "fe60388ecf62dbe00759ad9d7df520f2df1143f7340e9dc4cbf9847ca72301ba"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-aggressive-10012.json.gz",
+      "sha256": "dd7e80eca72049d4456c2b4357f9f996bd7c3f9728f8666fd3bb4bc4a08d3567"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10001.json.gz",
+      "sha256": "b2bdfc7b7fa3afc99592cefd10b2bc2ddf7cb99af9d62653a84a8c4bbd7ce2c4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10002.json.gz",
+      "sha256": "f8be4d168f1b5c3c2bf82871d1bd9a06d4845f33d3f9d39cd9eeea0a9d56eb5e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10003.json.gz",
+      "sha256": "3d564b7012474773ed1c9eb8fb466d9010bdd2b4458ad7161a4b22c96987daf0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10004.json.gz",
+      "sha256": "3c76d147acaab79360a4c3f014f7ff2d9ffd979ed6b9eac9494843049c0be9b2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10005.json.gz",
+      "sha256": "7888f5c82a0dfae749f30ba2d5565025401bd1fae08e87874b691f1b39e66427"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10006.json.gz",
+      "sha256": "34c78be5a7a0e31a2a67541ec0c612b0629bef035ce82d4ca2c4da8e61a0b800"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10007.json.gz",
+      "sha256": "93f8ddb757915c0a992e35f4b2ce09db6af058fa67d4d014ef009014b9716a3a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10008.json.gz",
+      "sha256": "f6c6e0a6b5fa8de6075593027b60f8cfcacc11a1e9592676a0becc12e1552f00"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10009.json.gz",
+      "sha256": "8c7fc340853751f58c2fd860cfced77304924292961481ed869fd37915d28db0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10010.json.gz",
+      "sha256": "6bf1a5a72eafb71376f180860a9a2a870efeaad6cb1ca6898e98012006ef2daf"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10011.json.gz",
+      "sha256": "32cdcf961adc3b006c2448bcdeb6544563ae8e0375e40dc9504c6bce52d4359c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-cautious-10012.json.gz",
+      "sha256": "abb6ae9c7e68685cc1fe1c389b3841e72f71c45ab20a5f7c9abe09d5b96daea2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10001.json.gz",
+      "sha256": "22196d8f31fe6cc6adf07357a6d57000229ac75ed241b6b9682799d4d1a0e942"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10002.json.gz",
+      "sha256": "f0161ba2d7246d5508d480db382f550e8bc15fdc5a928348a556b2a3eb201c82"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10003.json.gz",
+      "sha256": "b65846b163f73218e1e6c0c2a23a914cda59fe82b946ac314ec177b9fd678ac6"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10004.json.gz",
+      "sha256": "ec2881cfa7ddb1a1f02b6f69968e325416387fe3f9ec1eb91e3fc6cf62f6257f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10005.json.gz",
+      "sha256": "37e0d02db558d756ee17e8ee4c5eb90e00cf71e2435a764c9a9ad02da5283e66"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10006.json.gz",
+      "sha256": "87abfc01da4f20f61e838a6db3c816270cd99c95085ce2d4a4b428cff3e4922d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10007.json.gz",
+      "sha256": "4c00f9c470047e2b9b7065b2da7d5bdd6efa10cd954877d8fa5b4d9380ea11d5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10008.json.gz",
+      "sha256": "e7b2903c135820390000949072631dc2f00b926a415c351fe37cdb38ad87d522"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10009.json.gz",
+      "sha256": "fa4699ec444818357f4f878b0c2b540087a29a3d6f7e81aeac8573e9a50fb633"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10010.json.gz",
+      "sha256": "faf79f61879f531c01c9519a70cbb725e4f8ad6503513ea7b81b3ea901d6d244"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10011.json.gz",
+      "sha256": "c171d171b51cced4fc4606a35b2419413c7d90391cd6665541c4928f6144b2ba"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-explorer-10012.json.gz",
+      "sha256": "36fd0df412386a060cc8e1b94e02a8cc2aaa12c566cfee1e903a2363bc07a85b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10001.json.gz",
+      "sha256": "2221d251aef0a0a4ef40ecd67955609c11d219ada5c1cfb321b35ef003f30584"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10002.json.gz",
+      "sha256": "8bbbe536c70ba95766f1e8c640bd902e09ea6056b3e7ca6d0c85f547f05ffc6a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10003.json.gz",
+      "sha256": "bd0cc125818514b52b95f795fdf909ca92bc9b64fb645f55336fbd66636a6654"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10004.json.gz",
+      "sha256": "d90537306491a92fb0684b462bf31f6e548e696db406802151ccd1f0b233848b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10005.json.gz",
+      "sha256": "8c97078ff2b08939cfa3997694d2dd632089e2dd26a61925526c45fa4b221f17"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10006.json.gz",
+      "sha256": "d85b6e8af2a960d3d4e09ad8318041ffc83b41e8dab00e3bd9496f5c8e1a045e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10007.json.gz",
+      "sha256": "35a00701ba2ec614e577a70a414f507055391b8ce719fb7a110ba44edd328eef"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10008.json.gz",
+      "sha256": "dc85b86de3c3299acf57ec56311e701c5146afee5270be9b30a85add46aa805a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10009.json.gz",
+      "sha256": "2598d4921bd73f816912d83ce3664ee6f9c3e0db251d50d0739f1a6c6c648920"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10010.json.gz",
+      "sha256": "792d64ec778aa4ea8d9a690223c70abf485a9477d02c0ec0cacfbe6487198fbc"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10011.json.gz",
+      "sha256": "ed470c035ed5cd087717d195dd4f0fc46900b3138835932eca22e24de23867c1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-normal-10012.json.gz",
+      "sha256": "faeea2dcbdcb1b7e92c4c1967ecddcc0f14875ff21c5d528e980ac6100903b3b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10001.json.gz",
+      "sha256": "186f757f3c6121ad1f4d2147647e0b7344126b40d47aabfd8c81b06428d1adb2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10002.json.gz",
+      "sha256": "c2d3270d8c38ac1c6742edf495bfa11d38ff4261f6f595c791713cc85e7812c1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10003.json.gz",
+      "sha256": "e8bc9c5fbfa48da9d0d3a6d67c82750c5462ac8a589f4c75948c1f55e966270a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10004.json.gz",
+      "sha256": "eb949a533ba5574aeda85c326c33c355dd201d3fe0ccc68128df635c12656937"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10005.json.gz",
+      "sha256": "baf6f69a69f07f6586b38863f49cba7292c55d83d7dc71cc2334f474120b0cfa"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10006.json.gz",
+      "sha256": "61d9b27cc3f4b358139af66f40a2b0f55fa81f7ae933c849df980a5099bdfc72"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10007.json.gz",
+      "sha256": "670744819a269897dcd21ca069d897ccf2150b1c2f7cf92171db615ae614c332"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10008.json.gz",
+      "sha256": "f7fbcaa0913773c7a9a026633142b640a52e2256cbb8d2c3d937af599335b2b6"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10009.json.gz",
+      "sha256": "c327be61bb292eb80305b2b555ab5c86de8b2636305a6692e51dec20aba84e6d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10010.json.gz",
+      "sha256": "bf76e57cbffcd97aff04ea63f5e734354da0d629d4fd0a897e4ccb1f48caee9c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10011.json.gz",
+      "sha256": "78d9d2ec897a360fefbcb1265f07e474f6d08068fb691a84b67c406b95177db6"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-optimized-10012.json.gz",
+      "sha256": "7d2598900a2567868301cd0b1bc47751d3928c253f7a14e811b2f0c822751142"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10001.json.gz",
+      "sha256": "abcb4683d9543d36df337798af5eafc9916c15e30d3afa5c9d0afc8e0d38a149"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10002.json.gz",
+      "sha256": "acd44009c72d600953abcca06ceb5b223b528c2cd33fcbe9c4c159437f96e9a0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10003.json.gz",
+      "sha256": "dc013fae190283cd89c4b57e549ab51560e04d4c0bb8ad7c2bc322f56de8fb17"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10004.json.gz",
+      "sha256": "6bd30f71c4971992e97da3349f46ba4ba56856b5012a60e3561685a686dbeb18"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10005.json.gz",
+      "sha256": "ff964fc8508f59aa3f211533024e63d1103f3c7298f450016a064d5ee246a32b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10006.json.gz",
+      "sha256": "0c3eea6c995506d19cb6db0d24b27438cea982a78cb5941931eca695d209b650"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10007.json.gz",
+      "sha256": "845fe4b9df0570c4821709a78a705ca95ba13a778764ade3cd6d5822d8ffae7c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10008.json.gz",
+      "sha256": "b7d149c65305ca7948488271acd1f02dd36b6c02e4a4e314e10d7835d381e4dd"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10009.json.gz",
+      "sha256": "6d82635423b88f299d10dd7241ee11da3bb740a7ebd98d5679f931b0a5bfbb90"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10010.json.gz",
+      "sha256": "38adb5215aea2077b7f8ec60f3ffe44104cd7746302ac96bbc99aa7dd268cb72"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10011.json.gz",
+      "sha256": "1e0affa6266f06162763eeb0d66b59c73a816417038d4caa1bcd9d68e82ff276"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/B-remote-10012.json.gz",
+      "sha256": "ea21ad5c1a787336da80c80ae252d0176acd3149a6d60d3fe0489c160e3e3786"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10001.json.gz",
+      "sha256": "02e0932eed23d7b0d69a1090e96d692a2cc9db64f69ec0b15c7fbd3d30352d5f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10002.json.gz",
+      "sha256": "e061f2b74606a25feb18039b49c07bd85090aa1235a9bd3f1f91b4f23f4f6e05"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10003.json.gz",
+      "sha256": "edcf2b30feca523b95dedbdc8a9cccea873032c6c96dfaeb37c843eba8338bcf"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10004.json.gz",
+      "sha256": "2e2cc0239a4fe5ad5f94c7729e6167c0da5f0c031680345838f285c4ea95770c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10005.json.gz",
+      "sha256": "2e847448dd84261ba3067118e525be7b2028007b0c611365952bcc0e26561f3d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10006.json.gz",
+      "sha256": "14930fa1e2fadc8314ff7ed96842af65291056d9e2751a0b594b3ba7b454d3c5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10007.json.gz",
+      "sha256": "6addf7f443c0a5ee76a4c60d6e83ecf1245aa2121964710de612389aa05795eb"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10008.json.gz",
+      "sha256": "fb91e502afe3d8902cb1ef01602e35a96899d0100d164d7a992c5ddaf28dac12"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10009.json.gz",
+      "sha256": "260007d6e9a32651d9d4d73e80933f3c6ff98d00e6a39f05a1d8dcf45356323f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10010.json.gz",
+      "sha256": "8405fc604a3326e068437305a1370fcada36312398954ab2c28cc7898baa8530"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10011.json.gz",
+      "sha256": "2689fc046cf72b533c5da5b50aa58fc9a707e42f2f06864b9f4d0710c87eb15b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-aggressive-10012.json.gz",
+      "sha256": "7c43d345ac291b2f05c8f81a182e9543d9d02debc37b88fea221b5e427bb2260"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10001.json.gz",
+      "sha256": "4d6d2e63cd250d2f7ed4c6637a80d2a09c92e9a0314e92e37cd2adc5297b5f5c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10002.json.gz",
+      "sha256": "aaea3373a50581015f64c1baf5ff1463ea25b50276140d10476cba0e72bcc671"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10003.json.gz",
+      "sha256": "d1e555daa9889ea8cd46862d1606320a80ec3a427008121911344ff75f7f0472"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10004.json.gz",
+      "sha256": "94b4f2b20d0657b8a3dcb7d8c47c64c79d84b7d5446c87d485b804bb421d9802"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10005.json.gz",
+      "sha256": "ce09433d69cebcb1b50bf60ca439fae2dd8a67763c908075a1cced0119c3e211"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10006.json.gz",
+      "sha256": "576d1a2b58676a50dabe9232dc820b4ee91aa1fad9164d637a3a71e3781ef993"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10007.json.gz",
+      "sha256": "eca8f697fb693f36f99636fac8fa21e20703920beec0d150fcc8942ca23cf730"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10008.json.gz",
+      "sha256": "ac7dc0de9d0995c1e206b6794aefb7b6cc96afc6d4291367f281eb3e0246048d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10009.json.gz",
+      "sha256": "31b549b38ce3a5a39260622a0a6cf1ee389ef76c6e37754f52510fff8bdd1b40"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10010.json.gz",
+      "sha256": "4c3198af857b8412684107c5fc86f6e7c91b838f9d8103161f9441b0e8937262"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10011.json.gz",
+      "sha256": "54364a508ff1d3aca6e0ec1f1d2b9df0cbc513defab105fc016037507af4215a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-cautious-10012.json.gz",
+      "sha256": "4b8bb3107e81fbdda36dea333a054a07b70ea3299e473675f79e425265f46117"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10001.json.gz",
+      "sha256": "083c74c6804b48575d4c0d1c0166300981d312193992b1e1ef3093302b82804e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10002.json.gz",
+      "sha256": "30295cfdd02212954cd0a5ea19dae519104d4721d01cf71fd86df4d6dc257e69"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10003.json.gz",
+      "sha256": "8734552a84f9a20c8fae2ac86051ca308d1e170b2db357395fc4c6164b75fb32"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10004.json.gz",
+      "sha256": "c6784cc77ca596c4300833f0e1509572309c5cb6731ccef3381099691344b703"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10005.json.gz",
+      "sha256": "d84b4c4b9df07c92ab04c3bcfd26ca709d9d65dfe4e23cb7e3e9e6b5d41d8943"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10006.json.gz",
+      "sha256": "dd21de2c6626f7ee6ffd14e1c859c9faaac92980ca9a750ec5330cd91aeb4839"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10007.json.gz",
+      "sha256": "f53f6caa0cf608aaccdb57b8fc8b40e55a70414b037fdee1ac7a970d21b16abe"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10008.json.gz",
+      "sha256": "5a1c9f174f85d0dd038ac0cc8e79ff159ec797abe88dfd24a138f38ddfe2dd4a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10009.json.gz",
+      "sha256": "7b39dc3b80f5563b7de5c14a42de57ecaf3b45bb03b1821c5befe602c9ababac"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10010.json.gz",
+      "sha256": "8382d65312f711e72b43e9fcca940f31dd7601d4418e842d70723fdc5ff462d9"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10011.json.gz",
+      "sha256": "d7bf03415f10700c0b782c6a422e7f74391f01aa744fe363f999fae0817badcf"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-explorer-10012.json.gz",
+      "sha256": "a084ab7b621949801c2ff068367d7b6baf7bbc8b87ceea4a8ef5a9ed711ace4f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10001.json.gz",
+      "sha256": "c763b686673c193252821fd8bfd17b2d4b36a304c85fca044871dfed55f1a80c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10002.json.gz",
+      "sha256": "a8b7ff4d4c4f88975744ca23bad84c856a7930487348eb3a3b2047b8fc968ed0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10003.json.gz",
+      "sha256": "9001cffe1d0df2bb09ba3592eb7c07d378d779088369ba1f58605a7f4e6d9537"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10004.json.gz",
+      "sha256": "951fb188650b9817dcf3357a4c4307261abacb223cde19d97205ddbb46a5072a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10005.json.gz",
+      "sha256": "3767eb3a8700f3c2e6542ff1529153b96a3404fe8e8d240d224db2271fcbe5e4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10006.json.gz",
+      "sha256": "15c86b2aa916f3e9653df7c78d2374908a2067c62d1a23b726c62af2a9a5d605"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10007.json.gz",
+      "sha256": "3aa8ebd22817443791a7ce20255b04d23f6bc4bff166e40af2edc0deb2e100c2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10008.json.gz",
+      "sha256": "506dc330aff685bdd56a0f21e9c01357ad2eaee5e71f65dec65c3d6a5874da96"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10009.json.gz",
+      "sha256": "a41c1cf549e479ebb5bda7d561109517dbf48d1e1f34cc805445b0b6afaf1358"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10010.json.gz",
+      "sha256": "d6eed830cbd6d8af91aeec043512974097894e2358bf9081361e29d8cd117f73"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10011.json.gz",
+      "sha256": "000009a6144efff96edd74e9aabf29209976a53a228baa8b45c822398a664f6d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-normal-10012.json.gz",
+      "sha256": "73fb6dae08fb46128294088565e4ecb93819e14d65b6cfc9ccf0244e61b54e78"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10001.json.gz",
+      "sha256": "7ba3183c60204623d8815cb22ffa29b59d4ca70d8d8eeb4cc53c6f9dce30a691"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10002.json.gz",
+      "sha256": "0c7939d1030cf72036cb805638306b43157cb0734099214bf71622f274bf02e0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10003.json.gz",
+      "sha256": "d5edb547c68860641423677312919cf4a4d6faccc9d131d360a96cac5ed6b3f1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10004.json.gz",
+      "sha256": "8b83cb0997702fdeaae661f7775efda4126fd5ce593bc8bbf09f01c92f259ad1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10005.json.gz",
+      "sha256": "4c273c488963c1d6ffbddc59801e5ddeca1a9bcdf2e3f9894543d79a3c81d49e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10006.json.gz",
+      "sha256": "636362fcb3614b29b8805c6708f09251c75d0463b647edcdba91dfc027f4b938"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10007.json.gz",
+      "sha256": "607576244fbc31de67193ec4b0eafb850436272609838126ddb9910f94b6b8a1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10008.json.gz",
+      "sha256": "bfe01438594a2572a304380c858b2d408eebb431883ecef225b9d2ba24ff84be"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10009.json.gz",
+      "sha256": "b4dd631094e6a58de5ec256329feadb2498973e7e39a3fd95c9bfbd6a22677fb"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10010.json.gz",
+      "sha256": "159ad055c60249a703e3c410e22b21fd1ac4266096504bcc79f18707047cbc66"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10011.json.gz",
+      "sha256": "e839d286e844d279243fcca70bab9847f235b3692d882836ad9845b3fca8a913"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-optimized-10012.json.gz",
+      "sha256": "b361c357ddf5b068e7a591dbb7b3f3f9a23763793d07f52b957c6c54915dc083"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10001.json.gz",
+      "sha256": "807e53c36bd1c78d85a3cc4c5976141cdb920aa7e53d1d659d6167acd089c426"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10002.json.gz",
+      "sha256": "12ca47de5accb3d4e5778d208fb0e9c40b457f57ffdc90d8bf8c7f89b20c46af"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10003.json.gz",
+      "sha256": "892d3b87fe5751b86c1dcb1277ea979b73c49bf1377a9cd1592ed5fb64b1e824"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10004.json.gz",
+      "sha256": "89d73d36a6f02def55101c3c1a838e3ab02dde43fe187b2e39df0a4495b7b1c5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10005.json.gz",
+      "sha256": "8c56fb5a759afcd0024dc7bd16f8844301c615ba46f0ac56a402dfbfd7bf0a95"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10006.json.gz",
+      "sha256": "ce09e66376400e7414b74c51e4cb6baa8710acb32c992a9afa6b17e79daee77d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10007.json.gz",
+      "sha256": "efde63293dd99cacb61148ec5152f98ea69d922691454883c2ea645c126c6462"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10008.json.gz",
+      "sha256": "7e8a069acad0e4802cd8107fe26421ebc377f9f43362fab9d419f3e3f09ea152"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10009.json.gz",
+      "sha256": "3a3b5d97047c862ba07ab80bbcb284c9441ef12888bdebbdc1d1e0bd110c2a3f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10010.json.gz",
+      "sha256": "dee7569212bff9f8e9f3a47373cbdabf10601c0892dc03b345c7bbac7fee31d6"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10011.json.gz",
+      "sha256": "4d757ee72a0758a6ee7cb65970c347705174484c0aba8bd4b24342569a6d39aa"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/C-remote-10012.json.gz",
+      "sha256": "25e1d806c908dbbc2476d1b9044f98dc281ebffac9cddfe651c0bae77ec7554c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/attempts.jsonl",
+      "sha256": "59f00d7f4dc3643b8b327c88fd6dd4b707c3c00a152ec21a9027d79eb2851186"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10001.json.gz",
+      "sha256": "c91ad6a5f31a0182a66c37e3dc2eba7e92e205998b66f4507d1364bd37823ce5"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10002.json.gz",
+      "sha256": "179eb4d2d5bfa11495fe9aa3195bc1827d0ad185d88ab27dbcc4c3277fd729d3"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10003.json.gz",
+      "sha256": "c2470a0ec8d5dd49dfdec8461634427b9e72c88373c3f1f60338a74d78f28dce"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10004.json.gz",
+      "sha256": "640e0d29f4eb9835335a0ee76d9df34b2ef2610f70b5540f6b4670825c9107f1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10005.json.gz",
+      "sha256": "7d2e9ea013a187e6790544489e5847b8964646e497a82994280de246ba840a34"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10006.json.gz",
+      "sha256": "a0f9783cc3f7075007ed2f9d09f229ef299f9e36fc39e77c5d2b7756853ae1b2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10007.json.gz",
+      "sha256": "ee4db2ba0fb46aa1b6a19408b25f37eccac70b6ac147712a392a8b53ca083c9b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10008.json.gz",
+      "sha256": "b913fbea7bb57ed40d75bff711ad5dccf420501cdb3e60284a6d1d845dc850c4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10009.json.gz",
+      "sha256": "c18a85ce150e48aff99f3014e9beda058dca592b0e61bdb2358a8c3065c2651c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10010.json.gz",
+      "sha256": "24c8e26fe148b38047cd71da4fc6296d9dac3c0c5db124536438801621289c85"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10011.json.gz",
+      "sha256": "28b85e8299a49f05944bb283b2dc45ed06d18c950204eb41cf22a0592352f319"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-aggressive-10012.json.gz",
+      "sha256": "2bd6f1bbe35ec289e00ca122f14ee7c8f7c84ff4108dac1dea5da8b67bcc2a36"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10001.json.gz",
+      "sha256": "a52fdc72cd9850ef35e23aad74502a4b9de6522634816f985a7f8ffa12ac6392"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10002.json.gz",
+      "sha256": "6e70355a46fc712c1e895e402cd47931f540cef9e0520c22c7a0f867d2cf9713"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10003.json.gz",
+      "sha256": "e57dc9cfad450ffd628af82c52d32fadc0031896c6ebfb53216944779c6c6f45"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10004.json.gz",
+      "sha256": "50f1f29d899a943dd095e104b1b0bdaee1765dcf81e7f6ba796c634f92ef2876"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10005.json.gz",
+      "sha256": "2731189d22af4c0c89c11f7ef842b327ff39431916a6e252a4e35186aa7fbb29"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10006.json.gz",
+      "sha256": "297774423f5db8e1b668f69997e0508c8f91fe436e12b184c29fb32290f99df1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10007.json.gz",
+      "sha256": "81e5ff7b91ca447d81894e19d3def315c320e9b1e67e2054202ba0b5b5b31140"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10008.json.gz",
+      "sha256": "c41daead7ddadfd92fae7678b3027fb9ac3688d1720d14c34ea6570ffbcd1053"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10009.json.gz",
+      "sha256": "1bd5b04ae1bb601390533f0c755da6f0fb6d08392838abe647c50efdcf5784da"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10010.json.gz",
+      "sha256": "71c18073a54cf5df83b977b73b94aac2d2523b0ffcc5d6b3ed53afabecf7ab30"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10011.json.gz",
+      "sha256": "55122999e63845a5157ce678fd23a69af1ad370f44643462bf2e725a9752541f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-cautious-10012.json.gz",
+      "sha256": "0cd6feb639167bf7378da9e2ba79abd57394748103a43595a6e2d3d2fece25b8"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10001.json.gz",
+      "sha256": "c65e25dab394ed1c8e189661127e09336c126756d81e0645640167e083babf2d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10002.json.gz",
+      "sha256": "17d0cce1ab3829879b8bc4dc875908496c4dd8856d993515c9b43feab0381d28"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10003.json.gz",
+      "sha256": "a9c59410de7ed3a25e58b647a3a60305a967be35c214524d9157d35b5005b160"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10004.json.gz",
+      "sha256": "f53e27a22aad1dec674245a01053a51c9da125408105842b6adddcfe173e8087"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10005.json.gz",
+      "sha256": "8191450c56d3f1956fcbcce0de1eec4e7c3bee1d1dbeef3c78394dea1922212b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10006.json.gz",
+      "sha256": "d6758b92f9f7c1ed14fb74928bb680458251f142ad3f7a72c678a10f9c0172ae"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10007.json.gz",
+      "sha256": "7313a6f34dd9fa3eab192b2bd93f781ae558a8af470b8a79083cf5f6954cf2f1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10008.json.gz",
+      "sha256": "f2562659ee06822c841b9d485e8defa1af31214627396ebc4d4533d59d2959c9"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10009.json.gz",
+      "sha256": "c8f8ac5130d9fe5cb2b5e5f0229b6cdf5dbfffb1f6d25d92325b380ae3420ca1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10010.json.gz",
+      "sha256": "4375a1952c86106feeb5b94d26deb759c76ee5aea843d0417296673f78ab148c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10011.json.gz",
+      "sha256": "dd9dade32d0df457d8c1bb27f57a682d052060be130e22c38ce1bd18b5373ddf"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-explorer-10012.json.gz",
+      "sha256": "bc44b5979ff326e991e3199252604041c0bf0a4ddce34b1b9590eb6fe3b3fcd4"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10001.json.gz",
+      "sha256": "3d3993da74528ebebfef3a106e0fa4559a2e2258303129e3571046fc94d0a979"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10002.json.gz",
+      "sha256": "0a085f5b589aa3fb52821cfc4794f17f09c6c879fd4729691c4fafcc828542e7"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10003.json.gz",
+      "sha256": "694d1a0c605f1bf37cf3ee0378c4e695578d21cd49f42f2f25addbabf75355fc"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10004.json.gz",
+      "sha256": "89e72a2d4bd0d0835783b826e0b2c38367250b2f126f4d534308c280177871db"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10005.json.gz",
+      "sha256": "4e22a8e80f8294961a0e49e90db735736694458682391721fd394fc4b64a197b"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10006.json.gz",
+      "sha256": "d3551088cd9ce081ebd224f0a727d5a24ed77c72ed861f95649f7d4b892f449a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10007.json.gz",
+      "sha256": "54fd288e8497aa0f18c5f928ec4c54c626d1d9d85c088caa28dd0584f6348c70"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10008.json.gz",
+      "sha256": "1239a90152d66b7e97b1f7abd67458eab8ace243259fe328387d8cc7ec719180"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10009.json.gz",
+      "sha256": "3fc82306a5dc2900e6a6e261c3314944c1f62f7ab2d8155a293b8b5e5a5abba8"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10010.json.gz",
+      "sha256": "006a98a38fc88efbfcf00fbc7eb75ad714c41e31e320c90b3e75e0cb255ca29e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10011.json.gz",
+      "sha256": "1aee189363adff5f69fb21ca64ee741c23150882d56dee3e377a214b33ce94d8"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-normal-10012.json.gz",
+      "sha256": "5e89e4c0ff9da0aacceed70d7ed05aa3c1b7b2d3974f48bb2836fcf9a68c3fe9"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10001.json.gz",
+      "sha256": "45ab4e235ebda9cbbad4525d78c995139da4d8fd5d581c6f19a9d5ff4229eef7"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10002.json.gz",
+      "sha256": "4185bc9bc41a2c768d0e7e368b518fbef9ff485e4c43905f13fbf9182305d46d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10003.json.gz",
+      "sha256": "3b2ac4333ac12ee91ff265fd51400b54d9f7994c18bdd0ff2c0ae88f9696f185"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10004.json.gz",
+      "sha256": "b11b08260ef46aa200f800980729f219b3a1c731b188a3ac2cc4e527fe269174"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10005.json.gz",
+      "sha256": "f151bfb81f86b9dcecfe63dacd7c8400b19a22126ff616c44a85f0feef75e914"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10006.json.gz",
+      "sha256": "86056dce741077abefb9d4858e17e4bd07a67acc8d5ccf562fd60ce4fbb6c764"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10007.json.gz",
+      "sha256": "dec9832d029122e533ab9f69e9266439ce11a31b831e2efa3e8700639fe939da"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10008.json.gz",
+      "sha256": "a276ca822e308d5202bb005da5d32adf4fd5a6f0d271c05f87fe50a774cfa40e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10009.json.gz",
+      "sha256": "6e28b032d19c1a1c5b8f6f71079f5be1f25bc918d468e2aa67b4334532ba179e"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10010.json.gz",
+      "sha256": "c62cb111ec2c829fe0ad9337477694d5e0e43f30b16b3297a8199dc704ada73f"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10011.json.gz",
+      "sha256": "64d2f656e66aacd43e3e9bb8983ae6ce4aa51d9eabd74b9d3f0a426fe2ccc30d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-optimized-10012.json.gz",
+      "sha256": "19ce4c0e2c4c2867514f087009c8d98259ca406718a7e53ca28855d70244d1a0"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10001.json.gz",
+      "sha256": "008e6882983570a8828ebbbd030a20f3bd9dfb70d98de3efa67b2fd24a043a56"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10002.json.gz",
+      "sha256": "891875abd706cb56f06b23663a2f76b8b8df7107aa3bfe044f88a3039534db0d"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10003.json.gz",
+      "sha256": "7f0508c96e298cb8d6adae62d2e993aea1e07a1886063268382c0411f5f36e8c"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10004.json.gz",
+      "sha256": "056e7e38555664af210c041365dbd4e71b5f6405d9594d33c5b0d31c74723b15"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10005.json.gz",
+      "sha256": "8d3f5523fc0afd4d821a58c3eca339d865bfd8e122ae864b71d06e0a5f18d1db"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10006.json.gz",
+      "sha256": "7271451907c8f099df589a59dbe75ac08fe8f1d400385b91a079fc8a7a3dedbb"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10007.json.gz",
+      "sha256": "613fbe221dd6be0d0b2c15e2eca1a12c5052a505547056e0467f760931ae13b7"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10008.json.gz",
+      "sha256": "666840303311e9dae05613a857dbf577c87ed0f04891eb5c05609afb66ba9918"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10009.json.gz",
+      "sha256": "512dc8ff61a844943b4caa288432d7a6e50d79a02a52a9f66bc6a3796c769953"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10010.json.gz",
+      "sha256": "275469aa1542e174b13560dd8f40031dd9a0a5c73f225911f1a665c1647094e1"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10011.json.gz",
+      "sha256": "76f65c4497fde086b68132b3e595d22a2b21b2f1d8fcee09e191c3b78515c4db"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/control-remote-10012.json.gz",
+      "sha256": "6a4225791304ce3a29e2a766a3aa540713848f025e1ae000ac92a4d6c0691503"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/evidence.json",
+      "sha256": "629d583a292bb0b8202b8a079269f2712c8eded4bf9d782f9da2abbd6d1c12cd"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/execution-complete.json",
+      "sha256": "5fa6ee25324edc1a4b6386fc6194160a84d4ce29cdc3e176cab3bf12035ac525"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/manifest.json",
+      "sha256": "8982c5445d5f90c365be1069da16929e4c756b0d4e9ad69811cc572461bbb649"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/market-trajectories.json.gz",
+      "sha256": "6a7b01133b4a6e28025d4f7f3ec055ffcd7a4fba7310961280b34c1b9cef86c3"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/mechanism-checks.json",
+      "sha256": "3a5c83f9c33f2db238a0e5b52a0ed5a53f4e778b2f665aec070fdc03b5f4bf2a"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/pilot-complete.json",
+      "sha256": "dca07915ebeead147f0ebf69d1bfa756acfdeef76ba0870379e650e9422f1c16"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/pilot-gate.json",
+      "sha256": "2ed21854aa0816a9cf7b80d332bcc15c535d3d64bbd8d18b485465b6cfafb0ee"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/route-probes.json",
+      "sha256": "39bc9dfba166c5c08f38ebf783f486ccbf7144070ee32750f33c88c35439a8d2"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/safety-checks.json",
+      "sha256": "0f48e50d33ffd2830ebbcfa1d995e966a17190ce344cae4322060826669607bb"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/summary.json.gz",
+      "sha256": "26a57127484eb2c9810457f012fcfa30285781b4b7c3c9189591ab4192cf79ff"
+    },
+    {
+      "file": "tests/simulation/phase05h-20261025-02/verification.json",
+      "sha256": "f71ba877b9b5690389bfefb90ebac4e6138ba158b17208ba92fecebbc4d48208"
+    },
+    {
+      "file": "tests/simulation/phase1-results.json.gz",
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199"
+    },
+    {
+      "file": "tests/simulation/phase15-results.json.gz",
+      "sha256": "a670305fcfee7bcacfe41e4ab39d8756ff4911e2d5de3e34744c5cd45932921b"
+    },
+    {
+      "file": "tests/simulation/phase15-summary.json",
+      "sha256": "5593ece79cb04b116166c9257abe4cd7fbdbdf6d5bd62b9e5bdaae13a8701099"
+    },
+    {
+      "file": "tests/simulation/phase15a-results.json",
+      "sha256": "f24453f36354bd2a3a8ec2cc224d199a42f281e8d43579ae0f3e44be81d675b8"
+    },
+    {
+      "file": "tests/simulation/phase15b-results.json.gz",
+      "sha256": "f23436a896680956bee4f627f793d73ef50ae30d2cbd875196ee5162eb5edb18"
+    },
+    {
+      "file": "tests/simulation/phase15b-summary.json",
+      "sha256": "9c180a8bcd95f00697fd5b601915f7d3346541b68886a7d28702a759c9f70a37"
+    },
+    {
+      "file": "tests/simulation/phase15c-results.json",
+      "sha256": "8631e5e19abc77294e9ae64eae5f3e54056845411f720269cf26b5c3d432c9e5"
+    },
+    {
+      "file": "tests/simulation/phase15d-results.json.gz",
+      "sha256": "b85553b6fe63ef953a9819282230e60619957da62d102eb52ed9bb20116b1f16"
+    },
+    {
+      "file": "tests/simulation/phase15d-summary.json",
+      "sha256": "869a61192910a9528943243d335abb952870da1ae5e5810faab491ac17a5e0d3"
+    },
+    {
+      "file": "tests/simulation/phase15e-regressions.json",
+      "sha256": "cbbac3dab76ecfa603cd1f553d22b06ff14c5df8c3a0b5266e53d456a7e84847"
+    },
+    {
+      "file": "tests/simulation/phase15e-results.json.gz",
+      "sha256": "fd9267609cb9af83c75c0310a08af7740c663ffd37423d46e34d34f08e154426"
+    },
+    {
+      "file": "tests/simulation/phase15e-summary.json",
+      "sha256": "6ccf0b48a86e06335f20d3545b8a6179436f5dcc088b7ac9987df8349b592af4"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/aggressive.tar.gz",
+      "sha256": "e5eb252749e06fc5103b9300d586f6de67a7df67654586ea1ddd15bc2adcacd0"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/attempts.jsonl",
+      "sha256": "03180671a3c6f16ff755834333e8ec65612b411c81581a3bdeb8ad11cac1dc0e"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/cautious.tar.gz",
+      "sha256": "deecb52b6932ccb3ffcb48b4634c16e432df6fa2a110b1c6ccc25449d5b22ee2"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/delivery.tar.gz",
+      "sha256": "b5afe2ecc76c660e8c7d04d0a562562009ec048b0f21a0e588b8eb9c86ef2c76"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/manifest.json",
+      "sha256": "8cad32cfbedf635477a6062172f73ab349fcbe0b51b838a2568f778f690d3980"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/normal.tar.gz",
+      "sha256": "7b7f572997c9bd57233e5fbdec273f764041d4e7f4bb474502191fc96837ec6b"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/optimized.tar.gz",
+      "sha256": "2c5416cbcd6800c0e6faa9f3d19481511d97d6417b2b6314bf56e868f5c71719"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery10.tar.gz",
+      "sha256": "a37bc574fe36939acb57896813cda0955eb1506ffb7995f59d4983b2222f7d9b"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery20.tar.gz",
+      "sha256": "63ef4dd32baaddc1accf28b58a2590ae1bd1a0c37179f258c68f2d63814b33ab"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery30.tar.gz",
+      "sha256": "0af675a4e2e72ce6725801c1d59fc30a47b43b06c6aa664523f011a2b29b3a7e"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/recovery5.tar.gz",
+      "sha256": "d45b21828d7cf55e70290d937df04e27d83c6782cab4bb40df6560e25ff17173"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/results-manifest.json",
+      "sha256": "b81ccbbf629a559a4cb4a2513989c75fd4b367e4b983459ad5c7389840d83748"
+    },
+    {
+      "file": "tests/simulation/phase16c-20261024-01/summary.json",
+      "sha256": "629199d11af9786fd269b3564898b4db0cfb1dbb22adb8afd16d1ae5345539b0"
+    },
+    {
+      "file": "tests/simulation/results.json.gz",
+      "sha256": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199"
+    },
+    {
+      "file": "tests/simulation/summary-phase1.json",
+      "sha256": "a695d8cff2edfa5b59ef272da29261439bd70d218709232797a390088701e81d"
+    },
+    {
+      "file": "tests/simulation/summary.json",
+      "sha256": "7a635b8f670f67487b90312b99cc368f91a4d9a0a3dad319c523fcd3475ecc6a"
+    }
+  ],
+  "currentRegressionCommands": 16,
+  "newMechanismGroups": 8,
+  "distinctCases": 288,
+  "pilotReplays": 24,
+  "fullExecutions": 312,
+  "technicalAborts": 0,
+  "marketTrajectories": 10,
+  "marketTrajectoryDays": 2160,
+  "pairedInventoryImpulseFixtures": 4,
+  "routeFixtures": 84,
+  "routeJourneys": 1344,
+  "historicalV6DryRuns": 24,
+  "harborMarkerVariants": 2,
+  "historicalBExact": 72,
+  "unchangedInformationControls": 48,
+  "largeBrowserTestsRun": false
+}

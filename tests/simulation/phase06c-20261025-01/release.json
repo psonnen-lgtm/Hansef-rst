@@ -1,0 +1,49 @@
+{
+  "scope": "final evidence and artifact integrity, no simulation or repeated regressions",
+  "testedGameCommit": "fc241b5196439cc3577675951be8b3ff2df42169",
+  "gameSHA256": "fdc662deb06ab65de63fd113f1487a43ab4e12fe6bcbfef84771d19501bf9255",
+  "fullComparisonCode": {
+    "gameCommit": "3dfeaeefb0a8ff5bbad54030dfa51cce7cad84ae",
+    "sourceCommit": "f73974893688d1cde6eda5fd77bb46fea05ad0ce",
+    "gameSHA256": "14038187b254446c506ace7d717f7482208641ba446ba15280f7fcd40d62e3fa",
+    "files": {
+      "phase06c-run.cjs": "cc2e8a8dc9b6c05d84f5ccb8090f1cfd06e7bc0b0ec0221c0fd4b9f345a6351f",
+      "headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+      "politics-strategy.js": "d2c00e9a052ea46928ad57fe11468d70b25b8abdf56f2cece292aa8f8b4a580d",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea",
+      "politics-rules.js": "2afec748d81d818409152e08f054cdbf9b47dcbba59b035c6f18d9ec00bf4e58"
+    }
+  },
+  "newDistinctCases": 132,
+  "fullExecutionsIncludingReplays": 136,
+  "mainMayors": 104,
+  "mainEldermen": 102,
+  "financialBlocks": 0,
+  "technicalStartGroups": 11,
+  "regressionPrograms": 11,
+  "broadBrowserGroups": 8,
+  "finalStartRecordBrowserGroups": 3,
+  "previousV11BrowserGroups": 1,
+  "historicalFilesByteIdentical": 1863,
+  "historicalEndpointsReadOnly": 808,
+  "newCaseEndpointsValidated": 132,
+  "localLinksChecked": 136,
+  "distFileAbsent": true,
+  "scripts": {
+    "tests/simulation/headless.cjs": "52b1ee24ee7982b8663e6a65ea2ee7c89e405894514a9df9570a98efa102a615",
+    "tests/simulation/warehouse-capacity-checks.cjs": "842b126ae87d8cf886c0ba1b49002cc129af2c83f0b36b2ec835bd06a568b148",
+    "tests/simulation/start-selection-checks.cjs": "fbad0a1ee761d04f6a8f07a9eeeac0561c6b8c3da005dd0b10adabe967ffce62",
+    "tests/simulation/start-selection-browser.cjs": "7fcf8e5065f9acba7848317b9bbe0a9ee96cd016db2ef318a501756035dc61c6",
+    "tests/simulation/phase06c-run.cjs": "cc2e8a8dc9b6c05d84f5ccb8090f1cfd06e7bc0b0ec0221c0fd4b9f345a6351f",
+    "tests/simulation/phase06c-analysis.py": "8fc1daa8e876126bae2c32372c6d08ae275876c645df372951feddf90feea71e",
+    "tests/simulation/phase06c-verification.cjs": "cc8c35a206384cb9db3c4cc15fc15c1442bf1899d64f8ea0ff2b342de8189d67",
+    "tests/simulation/phase06c-incomplete.cjs": "b939bb553b44bf7e811b72fbecfdf7e1ae07fea1a7ffdc0ccf92c638082ec6fb",
+    "tests/simulation/phase06c-figure.py": "950ab99a05e36a64073c24aadf4077d3221e36a3c45bb862543d4d7d0ee62bdb",
+    "tests/simulation/politics-strategy.js": "d2c00e9a052ea46928ad57fe11468d70b25b8abdf56f2cece292aa8f8b4a580d",
+    "tests/simulation/strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea",
+    "tests/simulation/politics-rules.js": "2afec748d81d818409152e08f054cdbf9b47dcbba59b035c6f18d9ec00bf4e58"
+  },
+  "regressionGameCommit": "f667e74459bbd564b7a4a8c8f79ce93c390cb4ce",
+  "broadBrowserGameCommit": "f667e74459bbd564b7a4a8c8f79ce93c390cb4ce",
+  "broadBrowserGameSHA256": "1d59038158ee64ba95326e1bf99836f9f630b36f99e96d923a259b781fac0002"
+}

@@ -1,0 +1,5 @@
+page.goto: net::ERR_EMPTY_RESPONSE at http://127.0.0.1:8792/Hansefuerst_0_4.html
+Call log:
+[2m  - navigating to "http://127.0.0.1:8792/Hansefuerst_0_4.html", waiting until "load"[22m
+
+    at /workspace/Hansef-rst/tests/simulation/shipbuilding-browser-checks.cjs:5:244

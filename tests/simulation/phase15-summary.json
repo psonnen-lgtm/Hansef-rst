@@ -1,0 +1,117 @@
+{
+  "sourceSHA256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+  "rng": "mulberry32",
+  "seeds": "10001..10250, paired across nine strategies",
+  "runs": 2250,
+  "runtimeSeconds": 172.738,
+  "strategies": [
+    {
+      "strategy": "aggressive",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "bad10",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "bad20",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "bad30",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "bad5",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "cautious",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "informed",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "normal",
+      "runs": 250,
+      "medianWealth": 507016.5,
+      "elders": 242,
+      "medianDaysToElder": 646.0,
+      "deadlocks": 8,
+      "stranded": 8,
+      "medianRealisedTradeProfit": 496296.5,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    },
+    {
+      "strategy": "optimized",
+      "runs": 250,
+      "medianWealth": 9960.0,
+      "elders": 0,
+      "medianDaysToElder": null,
+      "deadlocks": 250,
+      "stranded": 250,
+      "medianRealisedTradeProfit": 0.0,
+      "questCompletions": 0,
+      "medianBorrowed": 0.0
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+{
+  "scope": "targeted final visual refinement; all gameplay source identical to broad acceptance",
+  "testedGameCommit": "a2f81d407f1eef4cd6201309e80b81a551d3c7a5",
+  "gameSHA256": "452636cc128720f6e5e9913d9d60331ce63f29ee00d904843b870209fa4cb3bb",
+  "priorBroadCode": "f31431575666daa1a7c79fdd468419c05f11392c",
+  "onlyChanges": [
+    "person silhouette drawing",
+    "church entrance coordinates",
+    "monk uses open quay path instead of rear roof edge"
+  ],
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "allEntrances": 11,
+      "overlaps": 0,
+      "church": {
+        "id": "church",
+        "name": "Kirche",
+        "hint": "Spenden und Einkehr",
+        "x": 140,
+        "y": 162,
+        "view": "church"
+      },
+      "newWorkerCoatPixels": 42,
+      "rngCalls": 0,
+      "saveUnchangedDuringMotion": true,
+      "manualPause": true
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "allEntrances": 11,
+      "overlaps": 0,
+      "church": {
+        "id": "church",
+        "name": "Kirche",
+        "hint": "Spenden und Einkehr",
+        "x": 140,
+        "y": 162,
+        "view": "church"
+      },
+      "newWorkerCoatPixels": 42,
+      "rngCalls": 0,
+      "saveUnchangedDuringMotion": true,
+      "manualPause": true
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "allEntrances": 11,
+      "overlaps": 0,
+      "church": {
+        "id": "church",
+        "name": "Kirche",
+        "hint": "Spenden und Einkehr",
+        "x": 140,
+        "y": 162,
+        "view": "church"
+      },
+      "newWorkerCoatPixels": 42,
+      "rngCalls": 0,
+      "saveUnchangedDuringMotion": true,
+      "manualPause": true
+    }
+  ],
+  "errors": [],
+  "frameCosts": [
+    {
+      "viewport": 390,
+      "samples": 53,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 1.7999999970197678
+    },
+    {
+      "viewport": 820,
+      "samples": 54,
+      "median": 0.29999999701976776,
+      "p95": 0.7000000029802322,
+      "max": 1.9000000059604645
+    },
+    {
+      "viewport": 1280,
+      "samples": 56,
+      "median": 0.29999999701976776,
+      "p95": 1,
+      "max": 2.800000011920929
+    }
+  ],
+  "screenshots": {
+    "2026-10-25_0.7a_luebeck-release-390.png": "0921fa13b279902d8d7fe812fd194565462ce78f6a84ab3615b4d17c4d26b56f",
+    "2026-10-25_0.7a_luebeck-release-820.png": "2bddf4d1828303718f21ebd1bfc7dade22cf46b67e0732be4c5991eef4c1540b",
+    "2026-10-25_0.7a_luebeck-release-1280.png": "2256e583f726118a5a8e777a1288c418522cdc761df357381e8023dc687414c2",
+    "2026-10-25_0.7a_bewegung-release-a.png": "2852d31fc5db897c13e91db1029c8627e6be8ebd430e8dae8c621ff9e84a9c5e",
+    "2026-10-25_0.7a_bewegung-release-b.png": "6ba5aaabd0c8ba44fa82245e13a2c32f1c593b9cc203f74b7938e65eb70a847c"
+  }
+}

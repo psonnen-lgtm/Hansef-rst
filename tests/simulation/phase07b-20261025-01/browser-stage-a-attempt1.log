@@ -1,0 +1,21 @@
+AssertionError [ERR_ASSERTION]: The input did not match the regular expression /Lübeck/. Input:
+
+'⛪ Die Stadtkirche\n' +
+  '✕\n' +
+  '\n' +
+  'Die Bürger sammeln für Bedürftige und die Instandhaltung der Kirche. Eine Spende kann dein Ansehen steigern – ist für den politischen Aufstieg aber keine Pflicht.\n' +
+  '\n' +
+  '🪙 Kleine Spende\n' +
+  '\n' +
+  '50 Gold · +2 Ansehen\n' +
+  '\n' +
+  'Spenden\n' +
+  '💰 Großzügige Spende\n' +
+  '\n' +
+  '200 Gold · +5 Ansehen\n' +
+  '\n' +
+  'Spenden\n' +
+  '\n' +
+  'Mit zunehmendem Ansehen wird der zusätzliche Nutzen kleiner.'
+
+    at /workspace/Hansef-rst/tests/simulation/city-catalog-browser.cjs:11:240

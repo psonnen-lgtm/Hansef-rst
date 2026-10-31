@@ -1,0 +1,10 @@
+{
+  "directory": "build/phase07b-stage-a-package",
+  "zip": "build/phase07b-stage-a.zip",
+  "standaloneBytes": 14541924,
+  "packageHTMLBytes": 2046065,
+  "packageTotalBytes": 11420704,
+  "zipBytes": 10844095,
+  "zipSHA256": "780d63e7265f858ea8f069fd42d6cd9fe6fe95b327d330307d48632468876a55",
+  "cities": 3
+}

@@ -1,0 +1,35 @@
+{
+  "scope": "bounded controlled UI fixtures; no complete economy/career",
+  "testedGameCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "checks": [
+    {
+      "name": "real market warehouse and bank roundtrips 9",
+      "passed": true,
+      "sameCityProfit": 0
+    },
+    {
+      "name": "actual V11 export FileReader import and reload 9",
+      "passed": true
+    },
+    {
+      "name": "real market warehouse and bank roundtrips 10",
+      "passed": true,
+      "sameCityProfit": 0
+    },
+    {
+      "name": "actual V11 export FileReader import and reload 10",
+      "passed": true
+    },
+    {
+      "name": "actual paid materials shipbuilding and reload Stettin",
+      "passed": true,
+      "fixtureFunding": 25000,
+      "wage": 2500
+    },
+    {
+      "name": "keyboard focus visible outline and Enter",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

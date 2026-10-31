@@ -1,0 +1,8 @@
+PASS standalone 375
+PASS standalone 390
+PASS standalone 820
+PASS standalone 1280
+PASS package 375
+PASS package 390
+PASS package 820
+PASS package 1280

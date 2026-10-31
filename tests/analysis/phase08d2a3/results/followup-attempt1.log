@@ -1,0 +1,4 @@
+CHECK minimal mathematical buy/sell counterexample explains the first actual VM failure
+CHECK two-good exact loss/wash arithmetic explains preservation of the documented lower value
+CHECK corrected supply fixture uses native cargo records and rewards exactly one valid delivery
+{"groups":3,"technicalFailures":0,"newVMTradePaths":1}

@@ -1,0 +1,41 @@
+CHECK mathematical split identity, capped reputation, reverse and no-op dates
+AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:
+
+111176 !== 109120
+
+    at /workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:19:297
+    at test (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:6:56)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:18:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+    at Module._load (node:internal/modules/cjs/loader:1396:12)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)
+    at node:internal/main/run_main_module:33:47
+CHECK own ships and warehouses retain shared political lots; full export cannot duplicate recognition
+CHECK exact documented 44610 counterexample remains 44610 after neutral beer trade
+CHECK legitimate local profit recognized, but promotion between sell and rebuy survives
+CHECK genuine negative sale and unknown historical costs preserve financial facts
+CHECK one controlled transport compared to old politics with identical economy and RNG
+CHECK actual unchanged market callback across days and real market impulse stay distinguishable
+evalmachine.<anonymous>:1
+acceptPoliticalJob('supply');const good=s.politics.jobs[0].good;for(const k of ['cargo','costs','bookCosts','origins']){ship()[k][good]=ship()[k][0];delete ship()[k][0]}s.quests=[{city:0,j:good,n:6,reward:100,until:totalDay()+5}];s.ships.push(makeShip(0,{id:2,city:0}));s.ships[1].cargo[good]=6;s.ships[1].costs[good]=8;s.ships[1].bookCosts[good]=8;s.ships[1].origins[good]=[{city:0,n:6}];validate(s)
+                                                                                                                                                                                                                                                                                                                                                          ^
+
+TypeError: Cannot set properties of undefined (setting '4')
+    at evalmachine.<anonymous>:1:347
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.evaluate [as eval] (/workspace/Hansef-rst/tests/analysis/phase08d2a2/harness.cjs:18:54)
+    at /workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:48:36
+    at test (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:6:56)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:47:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+    at Object..js (node:internal/modules/cjs/loader:2003:10)
+    at Module.load (node:internal/modules/cjs/loader:1594:32)
+CHECK fees rent debt and bank operations change political wealth only by genuine net costs
+CHECK reputation threshold can be crossed temporarily and a rank retained after point correction
+CHECK threshold arithmetic below 18000 45000 and 180000 is independent of whole-sale splitting
+CHECK six archived V11 political states and three V13 paid-information fixtures preserve every game field
+{"groups":13,"technicalFailures":2,"paths":10,"acceptance":{"endStateNeutralWash":true,"splitNeutralInCheckedLots":true,"legitimateLocalAndForeignGains":true,"promotionBetweenActionsProtected":false,"reputationScaleApproved":false,"fullIntegrationReady":false}}

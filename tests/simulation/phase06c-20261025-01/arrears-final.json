@@ -1,0 +1,191 @@
+{
+  "kind": "targeted_arrears_mechanics_only_no_full_simulations",
+  "gameSHA256": "1d59038158ee64ba95326e1bf99836f9f630b36f99e96d923a259b781fac0002",
+  "checks": [
+    {
+      "name": "230/300/140 fass without cash accrue exactly 1/2/0 gold per day",
+      "passed": true,
+      "evidence": [
+        {
+          "n": 230,
+          "days": 3,
+          "arrears": 3
+        },
+        {
+          "n": 300,
+          "days": 3,
+          "arrears": 6
+        },
+        {
+          "n": 140,
+          "days": 3,
+          "arrears": 0
+        }
+      ]
+    },
+    {
+      "name": "missing optional capacity ends, still needed capacity is assessed; voluntary paid extra remains",
+      "passed": true,
+      "evidence": {
+        "optionalDropsWithoutCash": true,
+        "paidVoluntaryTwoBlocksRetained": true
+      }
+    },
+    {
+      "name": "withdrawal reduces 2 to 1 to 0 required blocks; existing debt survives contract end",
+      "passed": true,
+      "evidence": {
+        "finalFass": 150,
+        "oldDebt": 3,
+        "noNewDebtDays": 7
+      }
+    },
+    {
+      "name": "global entry/expansion lock, free withdrawal, real sale and unchanged origins",
+      "passed": true,
+      "evidence": {
+        "allCitiesLocked": true,
+        "withdrawAndSell": true,
+        "remoteDebtKept": true
+      }
+    },
+    {
+      "name": "complete local repayment spends once and changes no bank, day, RNG or rental deadline",
+      "passed": true,
+      "evidence": {
+        "repaid": 3,
+        "onePayment": true,
+        "noRNG": true
+      }
+    },
+    {
+      "name": "partial cash does not reduce debt; quota, cancellation and reentry cannot duplicate repayment",
+      "passed": true,
+      "evidence": {
+        "noPartialPayment": true,
+        "atomicFailure": true,
+        "cancelAndReentrySafe": true
+      }
+    },
+    {
+      "name": "stale repayment confirmation preserves outside changes instead of paying stale amount",
+      "passed": true,
+      "evidence": {
+        "outsideActionPreserved": true
+      }
+    },
+    {
+      "name": "real 37-day sea journey charges all eleven warehouses exactly once each day",
+      "passed": true,
+      "evidence": {
+        "cities": 11,
+        "days": 37,
+        "totalDebt": 814,
+        "duplicateCallsInert": true
+      }
+    },
+    {
+      "name": "save/load, repeated actual imports and export serialization never create or reset debt",
+      "passed": true,
+      "evidence": {
+        "reloadExact": true,
+        "imports": 10,
+        "arrears": 3
+      }
+    },
+    {
+      "name": "v8 to v9 preserves all old economic fields and active prepaid deadline, zero retroactive debt",
+      "passed": true,
+      "evidence": {
+        "oldFieldsExact": true,
+        "originalExact": true,
+        "activeDeadlineExact": true,
+        "oldLoopholeChargesFromNextDay": true
+      }
+    },
+    {
+      "name": "v9 backup collisions and migration/import target failures preserve existing originals",
+      "passed": true,
+      "evidence": {
+        "collisionPreserved": true,
+        "oldV8BackupPreserved": true,
+        "fourFailurePoints": true
+      }
+    },
+    {
+      "name": "old stocks above 350 remain intact, cannot grow, and cross into normal future billing without loss",
+      "passed": true,
+      "evidence": {
+        "protectedOriginal": 400,
+        "freeTransitionDays": 5,
+        "newChargesOnlyAfterThreshold": true
+      }
+    },
+    {
+      "name": "finite whole debts after 100000 actual debt-clock days; no interest or fixed free-storage cap",
+      "passed": true,
+      "evidence": {
+        "days": 100001,
+        "arrears": 200002,
+        "interest": 0,
+        "marketSimulation": false
+      }
+    },
+    {
+      "name": "negative, fractional, infinite, oversized or impossible debts and future schemas reject",
+      "passed": true,
+      "evidence": {
+        "invalidCases": 10,
+        "calendarBound": "at most 2*(now-since) per city"
+      }
+    },
+    {
+      "name": "harbor work and ship sale unchanged, no automatic bank loan or rent-debt repayment",
+      "passed": true,
+      "evidence": {
+        "aidOnce": true,
+        "spareShipSale": true,
+        "noAutomaticBorrowingOrRepayment": true
+      }
+    },
+    {
+      "name": "all 121 city/good combinations preserve FIFO, prices and financial state while debt blocks only entry",
+      "passed": true,
+      "evidence": {
+        "lockedCityGoods": 121,
+        "oldOriginsUntouched": true
+      }
+    },
+    {
+      "name": "protected R1, bank, credit, cargo book values, travel and FIFO source bodies stay exact",
+      "passed": true,
+      "evidence": {
+        "functionBodies": 17,
+        "catalogs": 7,
+        "copyExact": true
+      }
+    },
+    {
+      "name": "paying one city leaves other city arrears and global locks intact",
+      "passed": true,
+      "evidence": {
+        "localPayments": [
+          1,
+          2
+        ],
+        "otherDebtPreserved": true,
+        "lockUntilAllPaid": true
+      }
+    },
+    {
+      "name": "maximum valid calendar still has finite exact debt growth without a free-storage ceiling",
+      "passed": true,
+      "evidence": {
+        "validYear": 999999,
+        "day": 360,
+        "debt": 720000000,
+        "additionalDayCharged": 2
+      }
+    }
+  ]
+}

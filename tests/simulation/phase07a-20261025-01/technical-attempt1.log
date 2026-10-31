@@ -1,0 +1,19 @@
+PASS entire previous game script stays exact except isolated visual module draw hook and release text
+PASS renderer and stylesheet are embedded verbatim, old images remain byte-identical and new encoded bytes match
+evalmachine.<anonymous>:783
+ function reasons(){const r=[];if(city!==0||!root||root.hidden)r.push('other-city');if(typeof document!=='undefined'&&document.hidden)r.push('hidden-page');if(!inside)r.push('offscreen');if(!enabled())r.push('reduced-motion');const overlay=typeof document!=='undefined'?document.getElementById('overlay'):null;if(overlay&&!overlay.classList.contains('hidden'))r.push('dialog');return r}
+                                                                                                                                                                                                                                                                                                                                                     ^
+
+TypeError: overlay.classList.contains is not a function
+    at reasons (evalmachine.<anonymous>:783:342)
+    at Object.diagnostics (evalmachine.<anonymous>:851:160)
+    at evalmachine.<anonymous>:1:10
+    at Script.runInContext (node:vm:149:12)
+    at Object.runInContext (node:vm:301:6)
+    at Object.eval (/workspace/Hansef-rst/tests/simulation/headless.cjs:5:1384)
+    at /workspace/Hansef-rst/tests/simulation/city-life-checks.cjs:16:256
+    at check (/workspace/Hansef-rst/tests/simulation/city-life-checks.cjs:5:40)
+    at Object.<anonymous> (/workspace/Hansef-rst/tests/simulation/city-life-checks.cjs:15:1)
+    at Module._compile (node:internal/modules/cjs/loader:1872:14)
+
+Node.js v24.19.0

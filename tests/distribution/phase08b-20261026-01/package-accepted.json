@@ -1,0 +1,15 @@
+{
+  "directory": "build/phase08b-preview",
+  "siteDirectory": "build/phase08b-preview/hansefuerst-0.8b",
+  "zip": "releases/hansefuerst-0.8b-testpaket.zip",
+  "standaloneBytes": 46302273,
+  "gameHTMLBytes": 2081768,
+  "siteBytes": 35271266,
+  "totalBytes": 35276838,
+  "zipBytes": 34665434,
+  "zipSHA256": "1e2ca6d6f1ac7264b01946ebdf947bf1782104783efb23dbd1609ed358c419e5",
+  "canonicalHTMLSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "gameHTMLSHA256": "380219d6e011dbc0510a3137e067a729b481eb73ff6b3e3818e1281039627546",
+  "cities": 11,
+  "publicDeploymentPerformed": false
+}

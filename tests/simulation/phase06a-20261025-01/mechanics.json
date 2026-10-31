@@ -1,0 +1,237 @@
+{
+  "kind": "characterisation_not_security_clearance_no_full_games",
+  "testedGameCommit": "b988a648f8750c5e7874f440613a42488dade750",
+  "gameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "probeCommit": "d4931d8653faa5e04632ea7a413ec3dbe7e7ddd3",
+  "checks": [
+    {
+      "name": "existing rank names and rich respected merchant can gain every title without civic deeds",
+      "observedAsExpected": true,
+      "evidence": {
+        "names": [
+          "Kaufmann",
+          "Fernkaufmann",
+          "Ratsherr",
+          "Bürgermeister",
+          "Eldermann"
+        ],
+        "electionDraws": 2,
+        "completed": 0,
+        "visits": 1,
+        "officeCityStored": false
+      }
+    },
+    {
+      "name": "wealth alone allows Fernkaufmann but not Ratsherr without reputation",
+      "observedAsExpected": true,
+      "evidence": {
+        "wealth": 1000000,
+        "rep": 0,
+        "rank": 1
+      }
+    },
+    {
+      "name": "18 percent election boundary and ten-day cooldown are independent of deeds; UI omits cooldown disable",
+      "observedAsExpected": true,
+      "evidence": {
+        "losesBelow": 0.18,
+        "winsAt": 0.18,
+        "cooldown": 10,
+        "cooldownNotExplainedInButton": true
+      }
+    },
+    {
+      "name": "ordinary arrival grants global reputation without cargo or civic service",
+      "observedAsExpected": true,
+      "evidence": {
+        "rep": 1,
+        "actualAdvancedDays": 2,
+        "emptyShip": true
+      }
+    },
+    {
+      "name": "trade reputation is per sale and splitting the same profitable lot can increase it",
+      "observedAsExpected": true,
+      "evidence": {
+        "fixturePricesArtificial": true,
+        "results": [
+          {
+            "batches": [
+              9
+            ],
+            "rep": 2,
+            "profit": 900,
+            "day": 486001
+          },
+          {
+            "batches": [
+              3,
+              3,
+              3
+            ],
+            "rep": 3,
+            "profit": 900,
+            "day": 486001
+          }
+        ]
+      }
+    },
+    {
+      "name": "donations buy global reputation with no elapsed time and retain at least one point",
+      "observedAsExpected": true,
+      "evidence": {
+        "cost": 100,
+        "gained": 2,
+        "days": 0,
+        "localEndorsement": false
+      }
+    },
+    {
+      "name": "foreign delivery pays once; local unknown expired and separate partial sales do not satisfy an order",
+      "observedAsExpected": true,
+      "evidence": {
+        "results": [
+          {
+            "origin": 0,
+            "rewards": 0,
+            "eventKeys": []
+          },
+          {
+            "origin": null,
+            "rewards": 0,
+            "eventKeys": []
+          },
+          {
+            "origin": 1,
+            "rewards": 1,
+            "eventKeys": [
+              "good",
+              "quantity",
+              "reward",
+              "type"
+            ]
+          }
+        ],
+        "expiredRewards": 0,
+        "splitThreePlusThreeDoesNotAccumulate": true,
+        "stableQuestIdOrCityInHeadlessReward": false
+      }
+    },
+    {
+      "name": "arrears are omitted by wealth and election; proposed separate political net stays invariant on repayment",
+      "observedAsExpected": true,
+      "evidence": {
+        "artificialValidArrearsFixture": true,
+        "before": {
+          "worth": 85000,
+          "arrears": 5000,
+          "credit": 38250
+        },
+        "after": {
+          "worth": 80000,
+          "arrears": 0,
+          "credit": 36000
+        },
+        "promotionDespiteArrears": true,
+        "proposedPoliticalNet": 80000,
+        "productionFormulaUnchanged": true
+      }
+    },
+    {
+      "name": "construction book is prepaid capped and not liquid; existing credit formula includes it",
+      "observedAsExpected": true,
+      "evidence": [
+        {
+          "type": 0,
+          "before": 106272,
+          "cash": 97500,
+          "worth": 105500,
+          "wip": 3040,
+          "credit": 47475,
+          "order": {
+            "id": 1,
+            "type": 0,
+            "city": 0,
+            "started": 486001,
+            "ready": 486021,
+            "shipId": 1700000000002,
+            "materialsBook": 1312,
+            "wage": 2500
+          }
+        },
+        {
+          "type": 1,
+          "before": 107444,
+          "cash": 96300,
+          "worth": 106220,
+          "wip": 4960,
+          "credit": 47799,
+          "order": {
+            "id": 1,
+            "type": 1,
+            "city": 0,
+            "started": 486001,
+            "ready": 486036,
+            "shipId": 1700000000002,
+            "materialsBook": 2484,
+            "wage": 3700
+          }
+        },
+        {
+          "type": 2,
+          "before": 109297,
+          "cash": 93800,
+          "worth": 107160,
+          "wip": 8400,
+          "credit": 48222,
+          "order": {
+            "id": 1,
+            "type": 2,
+            "city": 0,
+            "started": 486001,
+            "ready": 486056,
+            "shipId": 1700000000002,
+            "materialsBook": 4337,
+            "wage": 6200
+          }
+        }
+      ]
+    },
+    {
+      "name": "V10 roundtrip preserves rank rep finances FIFO quests chronicle harbor aid and open construction",
+      "observedAsExpected": true,
+      "evidence": {
+        "allFieldsExact": true,
+        "version": 10,
+        "openOrder": true,
+        "legacyTitlesKept": true
+      }
+    },
+    {
+      "name": "mayor eligibility is currently identical in Luebeck and Venlo; no office ownership field",
+      "observedAsExpected": true,
+      "evidence": [
+        {
+          "city": 0,
+          "rank": 3,
+          "keys": []
+        },
+        {
+          "city": 10,
+          "rank": 3,
+          "keys": []
+        }
+      ]
+    },
+    {
+      "name": "rank and rep are checked but completed and current election timestamp lack strict V10 validation",
+      "observedAsExpected": true,
+      "evidence": {
+        "knownValidationGap": true,
+        "negativeCompletedAndElectionTimestampAccepted": true,
+        "rankFiveRejected": true,
+        "noProductionFixAuthorized": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "reason": "First run found real mixed-cost buy/sell protection failure and irreversible rank-prefix failures. Supply fixture failed before trading because makeShip omits optional bookCosts/origins. Political core remains unchanged; only one corrected supply path runs, plus mathematical explanation. No full suite rerun.",
+  "newSourceSHA256": "ad08cc9366d831d9cb1927a843bca9758736d28861f934b711e7517ae91ebbbc",
+  "budget": "10 executed main trade/bank paths + 1 paid-C calendar fixture + 1 corrected supply path = 12 bounded paths, including old political transport comparison arm",
+  "notProtectionPass": [
+    "buy-then-sell",
+    "promotion-between-sell-and-rebuy",
+    "political-balance-not-approved"
+  ]
+}

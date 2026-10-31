@@ -1,0 +1,6 @@
+PASS whole previous game core exact; visual module and release text are only script exceptions
+PASS approved Luebeck entrance and route data plus every original asset remains exact
+PASS unique city backgrounds, complete functional access, valid geometry and independent animation inputs
+PASS embedded asset bytes and city registry match sources; lossless originals preserved
+PASS all 44 starts, supported V11 data and seeded economy remain identical
+5 city catalog groups passed

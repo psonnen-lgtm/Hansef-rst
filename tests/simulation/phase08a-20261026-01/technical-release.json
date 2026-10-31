@@ -1,0 +1,74 @@
+{
+  "base": "1d716b7348a307c7c949c7e710d27e2152cbca5f",
+  "testedGameCommit": "8516770f817a61388cbab094df449457fcebb045",
+  "gameSHA256": "8f235c055dcbfacc240c72482a1dc8187d5d24a92b38d5370c225c2e1e23c930",
+  "scope": "source equality and bounded storage fixtures, not complete games or human fun measurement",
+  "checks": [
+    {
+      "name": "whole script exact after explicit UI/version projection; no changed business, storage, risk or animation code",
+      "passed": true,
+      "evidence": {
+        "allowedUIFunctions": [
+          "openSheet",
+          "closeSheet",
+          "marketView",
+          "bathView",
+          "rumorView",
+          "contorView",
+          "travelView",
+          "arrivalView",
+          "saveView",
+          "welcome",
+          "showNews"
+        ],
+        "allOtherScriptExact": true,
+        "saveVersion": 11,
+        "noAddedTracking": true
+      }
+    },
+    {
+      "name": "44 starts and next RNG exact; only observational helper output added",
+      "passed": true,
+      "evidence": {
+        "combinations": 44,
+        "unchangedStateAndRNG": true
+      }
+    },
+    {
+      "name": "supported old save versions import and roundtrip identically to baseline; no invented beginning",
+      "passed": true,
+      "evidence": {
+        "versions": [
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "legacyVersion1": true
+      }
+    },
+    {
+      "name": "unchanged transactional import: corrupt JSON cancellation and both write faults protect main; retry works",
+      "passed": true,
+      "evidence": {
+        "faultPoints": 2,
+        "corruptAndDeclinedPreserved": true,
+        "retry": true
+      }
+    },
+    {
+      "name": "all historical data and original graphics preserved",
+      "passed": true,
+      "evidence": {
+        "files": 2206,
+        "allGitBlobsExact": true,
+        "newCompleteEconomicOrCareerRuns": 0
+      }
+    }
+  ]
+}

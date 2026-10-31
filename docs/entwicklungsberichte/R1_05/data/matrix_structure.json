@@ -1,0 +1,12 @@
+{
+  "file": "DATEI.1",
+  "offset": 0,
+  "encoding": "16x16 uint16 little endian",
+  "symmetric": true,
+  "diagonal_zero": true,
+  "minimum_nonzero": 93,
+  "maximum": 3219,
+  "unit": null,
+  "city_index_mapping": "candidate: order of 419-byte city blocks; not code-traced",
+  "travel_time_formula": null
+}

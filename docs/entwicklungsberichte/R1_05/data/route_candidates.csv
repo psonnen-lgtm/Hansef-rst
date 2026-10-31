@@ -1,0 +1,7 @@
+origin,destination,candidate_index_a,candidate_index_b,raw_matrix_value,unit,elapsed_days,status
+Lübeck,Rostock,0,2,93,unknown,,candidate_index_mapping_not_code_traced
+Lübeck,Danzig,0,1,620,unknown,,candidate_index_mapping_not_code_traced
+Lübeck,Hamburg,0,7,1226,unknown,,candidate_index_mapping_not_code_traced
+Lübeck,Brügge,0,15,1409,unknown,,candidate_index_mapping_not_code_traced
+Bergen,Lübeck,9,0,1102,unknown,,candidate_index_mapping_not_code_traced
+Danzig,Nowgorod,1,12,1432,unknown,,candidate_index_mapping_not_code_traced

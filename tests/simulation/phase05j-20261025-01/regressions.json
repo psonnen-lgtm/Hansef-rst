@@ -1,0 +1,68 @@
+[
+  {
+    "command": [
+      "node",
+      "tests/test-v04.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS fresh save validates\nPASS invalid v3 rejected\nPASS negative gold rejected\nPASS v3 assigns all ship locations\nPASS legacy cargo has unknown cost\nPASS malformed cargo rejected\nPASS credit does not grow with borrowing\nPASS single arrival moves only chosen ship and cannot repeat\nPASS remote cargo cannot be traded\nPASS quest completion waits five days for new offer\nPASS expired quest gives no reward\nPASS unknown cost survives mixed purchase\nPASS known weighted purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/phase1.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS preview and reopening use no random draw\nPASS arrival rolls once and repeated arrival is inert\nPASS same-place wash sale cannot fulfil quest\nPASS foreign delivery fulfils quest\nPASS mixed FIFO cargo cannot multiply eligible goods\nPASS legacy cargo is retained but not invented as foreign\nPASS piracy consumes proven origin too\nPASS origins and book values survive save and reload\nPASS same duration has equal interest across year boundary\nPASS full year effective rates remain two and six percent\nPASS no time means no interest\nPASS migration does not backcharge interest or demote\nPASS unrealised gain cannot increase worth or credit\nPASS unrealised gain cannot cross promotion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/telemetry.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS opt-in, hidden, unfocused, suspension gap, idle, retention, snapshots, unchanged game, pause and deletion\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/share.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS no automatic sharing, native file share, no personal names, cancel, unsupported fallback, rejected fallback\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-checks.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS store, load and partial amounts conserve quantities and cargo capacity\nPASS overdraws and invalid quantities leave the complete state unchanged\nPASS withdrawal cannot exceed free capacity, including armed ship capacity\nPASS no local or remote ship can use a warehouse from another city\nPASS FIFO city and unknown origins split and append without relabelling\nPASS weighted purchase costs and total book value survive different-cost merging\nPASS unknown acquisition costs remain unknown; conservative book basis is conserved\nPASS mixing known and unknown lots retains conservative total book basis\nPASS transfer changes no gold, bank, debt, markets, rank, quests, day or RNG\nPASS warehouse value does not follow market-price inflation\nPASS repeated transfers keep exact quantity and FIFO count without duplication\nPASS stock can move to another owned ship in Luebeck\nPASS old v4 state migration adds only empty storage after existing normalizations\nPASS warehouse save/load round-trip preserves cost, origin and quantities\nPASS invalid warehouse data is rejected, never silently emptied\nPASS local cargo cannot become foreign quest cargo by warehousing\nPASS unknown legacy cargo cannot become foreign quest cargo\nPASS genuine foreign cargo remains eligible only on actual sale, pays once\nPASS one-time pre-migration backup stays byte-identical; backup failure propagates\n19 warehouse checks passed; no economy simulation\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-cities-checks.cjs"
+    ],
+    "exit": 0,
+    "output": "PASS five distinct stores, all five cities deposit/withdraw independently\nPASS only actual ship transport changes access to goods in another city\nPASS FIFO provenance and weighted acquisition/book values survive three city visits\nPASS remote active ships cannot transfer or be selected in any city\nPASS multiple local ships can use only the current city store\nPASS capacity, cash, markets, worth and RNG protections in every city\nPASS no-storage old saves gain five empty stores without changing economic fields\nPASS Luebeck-only saves keep all lots/costs; four other stores are added empty\nPASS 100 save/load cycles retain all city stores without multiplication or loss\nPASS malformed existing stores and invalid city/good/magnitude inputs never get repaired\nPASS partial migration backup is distinct and never replaces first-stage original backup\nPASS local or unknown goods do not acquire foreign origin through a city store\nPASS genuine transported foreign goods keep eligibility, only real sale rewards once\n13 multi-city warehouse checks passed; no economy simulation\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-capacity-checks.cjs",
+      "tests/simulation/phase05j-20261025-01/capacity.json"
+    ],
+    "exit": 0,
+    "output": "PASS same R1, catalogs and protected economic mechanisms; identical fresh RNG and 400-day no-rent path\nPASS 121 old city/good stocks and FIFO preserved exactly, v7 backup and repeated migration/load\nPASS overfull old warehouses allow withdrawal but not new deposits or retroactive rent\nPASS all eleven cities and eleven goods: exact limit succeeds, one extra fails, mixed goods and withdrawal\nPASS rent day boundary, at sea multi-day charges and city independence\nPASS size reduction never renews prepaid deadline; voluntary cancellation needs room; no refund\nPASS no cash accrues required rent debt, preserves goods and bank/debt, blocks storage, permits withdrawal\nPASS reopen and save/load do not duplicate fees; same-size rent is idempotent\nPASS rent and cargo operations roll back atomically on quota error\nPASS backup collision preserves original; backup/target failures stop migration and import\nPASS actual FileReader v7 import, current export roundtrip and invalid future schemas\nPASS paid transfer FIFO and immediate buy/store/load/sell cannot mint money or premium\nPASS liquidity aid and ship sale protections survive active or stopped rental\nPASS cancelled or quota-failed new game preserves unloaded old original\nPASS archived normal and remote v7 saves retain all old data through v8\nPASS rent confirmation cannot reenter or apply a stale offer, and cancellation spends nothing\nPASS year boundary and rent changes consume no random numbers beyond ordinary advance\n17 warehouse capacity groups passed\n"
+  },
+  {
+    "command": [
+      "node",
+      "tests/simulation/warehouse-arrears-checks.cjs",
+      "tests/simulation/phase05j-20261025-01/arrears.json"
+    ],
+    "exit": 0,
+    "output": "PASS 230/300/140 fass without cash accrue exactly 1/2/0 gold per day\nPASS missing optional capacity ends, still needed capacity is assessed; voluntary paid extra remains\nPASS withdrawal reduces 2 to 1 to 0 required blocks; existing debt survives contract end\nPASS global entry/expansion lock, free withdrawal, real sale and unchanged origins\nPASS complete local repayment spends once and changes no bank, day, RNG or rental deadline\nPASS partial cash does not reduce debt; quota, cancellation and reentry cannot duplicate repayment\nPASS stale repayment confirmation preserves outside changes instead of paying stale amount\nPASS real 37-day sea journey charges all eleven warehouses exactly once each day\nPASS save/load, repeated actual imports and export serialization never create or reset debt\nPASS v8 to v9 preserves all old economic fields and active prepaid deadline, zero retroactive debt\nPASS v9 backup collisions and migration/import target failures preserve existing originals\nPASS old stocks above 350 remain intact, cannot grow, and cross into normal future billing without loss\nPASS finite whole debts after 100000 actual debt-clock days; no interest or fixed free-storage cap\nPASS negative, fractional, infinite, oversized or impossible debts and future schemas reject\nPASS harbor work and ship sale unchanged, no automatic bank loan or rent-debt repayment\nPASS all 121 city/good combinations preserve FIFO, prices and financial state while debt blocks only entry\nPASS protected R1, bank, credit, career, travel and FIFO source bodies stay exact\nPASS paying one city leaves other city arrears and global locks intact\nPASS maximum valid calendar still has finite exact debt growth without a free-storage ceiling\n19 arrears groups passed\n"
+  }
+]

@@ -1,0 +1,1420 @@
+{
+  "phase": "0.8d.2a.3",
+  "base": "f6a211508d112a12871f20eafe08506c1715b1b1",
+  "testedCommit": "740dcd71064feb8f3ad208e66717df457b1a41df",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "checks": [
+    {
+      "requirements": [
+        3,
+        4,
+        5,
+        9,
+        16,
+        17,
+        25
+      ],
+      "name": "mathematical split identity, capped reputation, reverse and no-op dates",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "kind": "mathematical",
+      "rows": [
+        {
+          "parts": 1,
+          "profit": 8728,
+          "rep": 2,
+          "oldRep": 2,
+          "political": 109448,
+          "afterWashRep": 0
+        },
+        {
+          "parts": 9,
+          "profit": 8728,
+          "rep": 2,
+          "oldRep": 18,
+          "political": 109448,
+          "afterWashRep": 0
+        },
+        {
+          "parts": 90,
+          "profit": 8728,
+          "rep": 2,
+          "oldRep": 0,
+          "political": 109448,
+          "afterWashRep": 0
+        }
+      ],
+      "noAdditionalDaysOrRng": true
+    },
+    {
+      "requirements": [
+        1,
+        2,
+        9,
+        16,
+        25
+      ],
+      "name": "both roundtrip orders and repeated cycles through actual VM callbacks",
+      "executed": true,
+      "technicalPass": false,
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n111176 !== 109120\n\n    at /workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:19:297\n    at test (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:6:56)\n    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:18:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)\n    at Module._load (node:internal/modules/cjs/loader:1396:12)\n    at wrapModuleLoad (node:internal/modules/cjs/loader:255:19)\n    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:154:5)\n    at node:internal/main/run_main_module:33:47"
+    },
+    {
+      "requirements": [
+        6,
+        7,
+        8,
+        24
+      ],
+      "name": "own ships and warehouses retain shared political lots; full export cannot duplicate recognition",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "initial": {
+        "gold": 100000,
+        "financial": 112160,
+        "political": 112160,
+        "rep": 0,
+        "rank": 0
+      },
+      "after": {
+        "gold": 100000,
+        "financial": 116644,
+        "political": 112160,
+        "rep": 0,
+        "rank": 0
+      },
+      "restoredLedger": {
+        "version": 1,
+        "seq": 3,
+        "holdings": {
+          "s:1:0": [
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            }
+          ],
+          "w:0:0": [],
+          "s:2:0": []
+        },
+        "tickets": {
+          "0:0": [
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            },
+            {
+              "cost": {
+                "n": "8",
+                "d": "1"
+              },
+              "known": true,
+              "campaign": "legacy:0:8:true"
+            }
+          ]
+        },
+        "campaigns": {
+          "legacy:0:8:true": {
+            "margin": {
+              "n": "4484",
+              "d": "1"
+            }
+          }
+        },
+        "awarded": 2
+      },
+      "fullReload": true
+    },
+    {
+      "requirements": [
+        8,
+        10,
+        11,
+        16,
+        20
+      ],
+      "name": "exact documented 44610 counterexample remains 44610 after neutral beer trade",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "loss": -1800,
+      "before": {
+        "gold": 36200,
+        "financial": 44610,
+        "political": 44610,
+        "rep": 100,
+        "rank": 2
+      },
+      "after": {
+        "gold": 36200,
+        "financial": 45595,
+        "political": 44610,
+        "rep": 100,
+        "rank": 2
+      },
+      "threshold45000After": false,
+      "cycles": 5
+    },
+    {
+      "requirements": [
+        12,
+        20,
+        23
+      ],
+      "name": "legitimate local profit recognized, but promotion between sell and rebuy survives",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": false,
+      "FAILED_ACCEPTANCE": "new irreversible promotion can be secured between a recognized genuine sale and a future neutral rebuy",
+      "before": {
+        "gold": 8879,
+        "financial": 17999,
+        "political": 17999,
+        "rep": 0,
+        "rank": 0
+      },
+      "sale": {
+        "gold": 18327,
+        "financial": 26727,
+        "political": 26727,
+        "rep": 2,
+        "rank": 0
+      },
+      "after": {
+        "gold": 8879,
+        "financial": 26727,
+        "political": 17999,
+        "rep": 0,
+        "rank": 1
+      },
+      "profit": 8728,
+      "noFullCareer": true
+    },
+    {
+      "requirements": [
+        14,
+        15
+      ],
+      "name": "genuine negative sale and unknown historical costs preserve financial facts",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "before": {
+        "gold": 100000,
+        "financial": 112480,
+        "political": 112480,
+        "rep": 0,
+        "rank": 0
+      },
+      "afterLoss": {
+        "gold": 100400,
+        "financial": 108880,
+        "political": 108880,
+        "rep": 0,
+        "rank": 0
+      },
+      "afterUnknown": {
+        "gold": 100690,
+        "financial": 109090,
+        "political": 109090,
+        "rep": 0,
+        "rank": 0
+      },
+      "negative": -3600,
+      "unknownProfit": null,
+      "noInventedReputation": true
+    },
+    {
+      "requirements": [
+        13,
+        19,
+        25
+      ],
+      "name": "one controlled transport compared to old politics with identical economy and RNG",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "controlledTransport": true,
+      "originalMarketsFeesDaysPreserved": true,
+      "warning": "travel danger explicitly resolved for this focused fixture, no risk or route profitability study",
+      "rows": [
+        {
+          "rule": "old",
+          "profit": 2121,
+          "gold": 102132,
+          "financial": 110532,
+          "political": 110532,
+          "rep": 3,
+          "rank": 0,
+          "rng": {
+            "state": 2342261684,
+            "draws": 1087
+          },
+          "day": 486004
+        },
+        {
+          "rule": "P2",
+          "profit": 2121,
+          "gold": 102132,
+          "financial": 110532,
+          "political": 110532,
+          "rep": 3,
+          "rank": 0,
+          "rng": {
+            "state": 2342261684,
+            "draws": 1087
+          },
+          "day": 486004
+        }
+      ]
+    },
+    {
+      "requirements": [
+        17,
+        18,
+        25
+      ],
+      "name": "actual unchanged market callback across days and real market impulse stay distinguishable",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "initial": {
+        "gold": 100000,
+        "financial": 108560,
+        "political": 108560,
+        "rep": 0,
+        "rank": 0
+      },
+      "after": {
+        "gold": 100001,
+        "financial": 110580,
+        "political": 108561,
+        "rep": 0,
+        "rank": 0
+      },
+      "actualDays": 3,
+      "noOpDays": 2,
+      "realMarketDay": 1
+    },
+    {
+      "requirements": [
+        19
+      ],
+      "name": "foreign supply origin and quest reward remain valid without duplicated payment",
+      "executed": true,
+      "technicalPass": false,
+      "error": "evalmachine.<anonymous>:1\nacceptPoliticalJob('supply');const good=s.politics.jobs[0].good;for(const k of ['cargo','costs','bookCosts','origins']){ship()[k][good]=ship()[k][0];delete ship()[k][0]}s.quests=[{city:0,j:good,n:6,reward:100,until:totalDay()+5}];s.ships.push(makeShip(0,{id:2,city:0}));s.ships[1].cargo[good]=6;s.ships[1].costs[good]=8;s.ships[1].bookCosts[good]=8;s.ships[1].origins[good]=[{city:0,n:6}];validate(s)\n                                                                                                                                                                                                                                                                                                                                                          ^\n\nTypeError: Cannot set properties of undefined (setting '4')\n    at evalmachine.<anonymous>:1:347\n    at Script.runInContext (node:vm:149:12)\n    at Object.runInContext (node:vm:301:6)\n    at Object.evaluate [as eval] (/workspace/Hansef-rst/tests/analysis/phase08d2a2/harness.cjs:18:54)\n    at /workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:48:36\n    at test (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:6:56)\n    at Object.<anonymous> (/workspace/Hansef-rst/tests/analysis/phase08d2a3/checks.cjs:47:1)\n    at Module._compile (node:internal/modules/cjs/loader:1872:14)\n    at Object..js (node:internal/modules/cjs/loader:2003:10)\n    at Module.load (node:internal/modules/cjs/loader:1594:32)"
+    },
+    {
+      "requirements": [
+        7,
+        20,
+        25
+      ],
+      "name": "fees rent debt and bank operations change political wealth only by genuine net costs",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "initial": {
+        "gold": 100000,
+        "financial": 108460,
+        "political": 108460,
+        "rep": 0,
+        "rank": 0
+      },
+      "after": {
+        "gold": 100004,
+        "financial": 108447,
+        "political": 108447,
+        "rep": 0,
+        "rank": 0
+      },
+      "note": "6 G fee and 7 G arrears injected as explicit individual accounting fixture, no rent-duration simulation"
+    },
+    {
+      "requirements": [
+        21
+      ],
+      "name": "reputation threshold can be crossed temporarily and a rank retained after point correction",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": false,
+      "FAILED_ACCEPTANCE": "return of newly awarded points cannot undo an already secured rank without violating retention",
+      "before": {
+        "gold": 100000,
+        "financial": 109120,
+        "political": 109120,
+        "rep": 24,
+        "rank": 1
+      },
+      "sale": {
+        "gold": 109448,
+        "financial": 117848,
+        "political": 117848,
+        "rep": 26,
+        "rank": 1
+      },
+      "after": {
+        "gold": 100000,
+        "financial": 117848,
+        "political": 109120,
+        "rep": 24,
+        "rank": 2
+      },
+      "noFullCareer": true
+    },
+    {
+      "requirements": [
+        20
+      ],
+      "name": "threshold arithmetic below 18000 45000 and 180000 is independent of whole-sale splitting",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": false,
+      "kind": "mathematical",
+      "FAILED_ACCEPTANCE": "correct end-state does not protect intermediate eligibility",
+      "rows": [
+        {
+          "threshold": 18000,
+          "initial": 17999,
+          "peak": 18989,
+          "after": 17999,
+          "finalGate": false,
+          "intermediateGate": true
+        },
+        {
+          "threshold": 45000,
+          "initial": 44999,
+          "peak": 45989,
+          "after": 44999,
+          "finalGate": false,
+          "intermediateGate": true
+        },
+        {
+          "threshold": 180000,
+          "initial": 179999,
+          "peak": 180989,
+          "after": 179999,
+          "finalGate": false,
+          "intermediateGate": true
+        }
+      ]
+    },
+    {
+      "requirements": [
+        22,
+        23,
+        24
+      ],
+      "name": "six archived V11 political states and three V13 paid-information fixtures preserve every game field",
+      "executed": true,
+      "technicalPass": true,
+      "protectionPass": true,
+      "historicalStates": 6,
+      "rows": [
+        {
+          "kind": "candidate",
+          "legacy": false,
+          "v": 11,
+          "rules": {
+            "sectionDays": 60,
+            "mayorWealth": 45000
+          },
+          "rank": 2,
+          "financial": 747259,
+          "political": 747259,
+          "records": 6,
+          "office": false,
+          "elder": false
+        },
+        {
+          "kind": "office",
+          "legacy": false,
+          "v": 11,
+          "rules": {
+            "sectionDays": 60,
+            "mayorWealth": 45000
+          },
+          "rank": 3,
+          "financial": 747259,
+          "political": 747259,
+          "records": 6,
+          "office": true,
+          "elder": false
+        },
+        {
+          "kind": "elder",
+          "legacy": false,
+          "v": 11,
+          "rules": {
+            "sectionDays": 60,
+            "mayorWealth": 45000
+          },
+          "rank": 4,
+          "financial": 747259,
+          "political": 747259,
+          "records": 17,
+          "office": false,
+          "elder": true
+        },
+        {
+          "kind": "candidate",
+          "legacy": true,
+          "v": 11,
+          "rules": {
+            "sectionDays": 30,
+            "mayorWealth": 85000
+          },
+          "rank": 2,
+          "financial": 746699,
+          "political": 746699,
+          "records": 6,
+          "office": false,
+          "elder": false
+        },
+        {
+          "kind": "office",
+          "legacy": true,
+          "v": 11,
+          "rules": {
+            "sectionDays": 30,
+            "mayorWealth": 85000
+          },
+          "rank": 3,
+          "financial": 746699,
+          "political": 746699,
+          "records": 6,
+          "office": true,
+          "elder": false
+        },
+        {
+          "kind": "elder",
+          "legacy": true,
+          "v": 11,
+          "rules": {
+            "sectionDays": 30,
+            "mayorWealth": 85000
+          },
+          "rank": 4,
+          "financial": 746699,
+          "political": 746699,
+          "records": 19,
+          "office": false,
+          "elder": true
+        }
+      ],
+      "paidFixtures": [
+        {
+          "type": "B",
+          "information": {
+            "version": 2,
+            "archive": null,
+            "reports": [
+              {
+                "id": "informant:486001:0:0",
+                "source": "informant",
+                "city": 0,
+                "good": 0,
+                "day": 486001,
+                "purchasedAt": 486001,
+                "low": 10,
+                "high": 19,
+                "band": "ordinary"
+              }
+            ],
+            "filed": [],
+            "letters": {
+              "version": 1,
+              "since": 486001,
+              "index": 0,
+              "lastDay": 486001,
+              "nextDay": 486011,
+              "offer": null,
+              "receipts": [],
+              "filed": [],
+              "archiveFirstReceipt": null
+            }
+          }
+        },
+        {
+          "type": "C",
+          "information": {
+            "version": 2,
+            "archive": null,
+            "reports": [],
+            "filed": [],
+            "letters": {
+              "version": 1,
+              "since": 486001,
+              "index": 1,
+              "lastDay": 486011,
+              "nextDay": 486022,
+              "offer": {
+                "id": "letter:486001:1",
+                "serial": 1,
+                "source": "sealed_letter",
+                "city": 5,
+                "goods": [
+                  {
+                    "good": 5,
+                    "price": 48,
+                    "band": "scarce"
+                  },
+                  {
+                    "good": 3,
+                    "price": 38,
+                    "band": "ordinary"
+                  }
+                ],
+                "reportedAt": 486011,
+                "offeredAt": 486011,
+                "until": 486014,
+                "cost": 60
+              },
+              "receipts": [
+                {
+                  "offer": {
+                    "id": "letter:486001:1",
+                    "serial": 1,
+                    "source": "sealed_letter",
+                    "city": 5,
+                    "goods": [
+                      {
+                        "good": 5,
+                        "price": 48,
+                        "band": "scarce"
+                      },
+                      {
+                        "good": 3,
+                        "price": 38,
+                        "band": "ordinary"
+                      }
+                    ],
+                    "reportedAt": 486011,
+                    "offeredAt": 486011,
+                    "until": 486014,
+                    "cost": 60
+                  },
+                  "purchasedAt": 486011
+                }
+              ],
+              "filed": [],
+              "archiveFirstReceipt": null
+            }
+          }
+        },
+        {
+          "type": "archive",
+          "information": {
+            "version": 2,
+            "archive": {
+              "day": 486001,
+              "cost": 300,
+              "firstReport": 0
+            },
+            "reports": [],
+            "filed": [],
+            "letters": {
+              "version": 1,
+              "since": 486001,
+              "index": 0,
+              "lastDay": 486001,
+              "nextDay": 486011,
+              "offer": null,
+              "receipts": [],
+              "filed": [],
+              "archiveFirstReceipt": 0
+            }
+          }
+        }
+      ],
+      "originalGameFieldsUnchanged": true,
+      "noProductMigration": true
+    }
+  ],
+  "paths": [
+    {
+      "name": "both-orders",
+      "decisions": 12,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "ships-warehouse-export",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "exact-loss-counterexample",
+      "decisions": 11,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "local-profit-intermediate-rank",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "loss-unknown-cost",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "transport-old",
+      "decisions": 1,
+      "trips": 1,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "transport-P2",
+      "decisions": 1,
+      "trips": 1,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "no-op-and-real-market",
+      "decisions": 4,
+      "trips": 0,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "financial-costs-bank",
+      "decisions": 0,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "reputation-intermediate-rank",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    }
+  ],
+  "acceptance": {
+    "endStateNeutralWash": true,
+    "splitNeutralInCheckedLots": true,
+    "legitimateLocalAndForeignGains": true,
+    "promotionBetweenActionsProtected": false,
+    "reputationScaleApproved": false,
+    "fullIntegrationReady": false
+  }
+}

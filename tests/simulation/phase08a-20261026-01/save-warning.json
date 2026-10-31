@@ -1,0 +1,8 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "passed": true,
+  "scope": "controlled quota and real new export button, no new saving rule",
+  "diskBefore": 5000,
+  "unsavedActiveAndExport": 4999,
+  "bannerClearsOnlyAfterWriteRecovery": true
+}

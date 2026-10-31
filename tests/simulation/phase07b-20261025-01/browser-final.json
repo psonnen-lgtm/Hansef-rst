@@ -1,0 +1,669 @@
+{
+  "scope": "actual Chromium city navigation; direct new starts and bounded UI/route fixtures, not full economic games",
+  "stage": "final",
+  "testedGameCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "gameSHA256": "5b44cbe7cc4991df424224ec382fa6ff2a84a169606e566a7fbeffb51048cb5b",
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "Lübeck 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Hamburg 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Rostock 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stralsund 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stettin 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Danzig 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Visby 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Nowgorod 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Venlo 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Lübeck 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Hamburg 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Rostock 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stralsund 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stettin 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Danzig 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Visby 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Nowgorod 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Venlo 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Lübeck 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Hamburg 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Rostock 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stralsund 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Stettin 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Danzig 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Visby 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Nowgorod 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Venlo 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "actual city roundtrip",
+      "passed": true,
+      "route": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        0
+      ]
+    },
+    {
+      "name": "bounded repeated city switches keep singleton",
+      "passed": true,
+      "switches": 132,
+      "before": {
+        "roots": 1,
+        "doors": 11,
+        "mounts": 1
+      },
+      "after": {
+        "roots": 1,
+        "doors": 11,
+        "mounts": 1
+      },
+      "maxPending": 1
+    },
+    {
+      "name": "bounded JS heap after controlled GC",
+      "passed": true,
+      "before": 5450884,
+      "after": 5514180,
+      "scope": "warm city assets; JS heap only, not total native or GPU memory"
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "performanceRows": [
+    {
+      "city": "luebeck",
+      "viewport": 390,
+      "samples": 32,
+      "median": 0.29999999701976776,
+      "p95": 0.7999999970197678,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "hamburg",
+      "viewport": 390,
+      "samples": 65,
+      "median": 0.29999999701976776,
+      "p95": 0.6000000089406967,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "rostock",
+      "viewport": 390,
+      "samples": 98,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "stralsund",
+      "viewport": 390,
+      "samples": 132,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "stettin",
+      "viewport": 390,
+      "samples": 164,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "danzig",
+      "viewport": 390,
+      "samples": 199,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "bergen",
+      "viewport": 390,
+      "samples": 234,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "visby",
+      "viewport": 390,
+      "samples": 269,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.6000000089406967
+    },
+    {
+      "city": "bruegge",
+      "viewport": 390,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 4.699999988079071
+    },
+    {
+      "city": "nowgorod",
+      "viewport": 390,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.699999988079071,
+      "max": 4.699999988079071
+    },
+    {
+      "city": "venlo",
+      "viewport": 390,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 1.2999999970197678,
+      "max": 17.799999997019768
+    },
+    {
+      "city": "luebeck",
+      "viewport": 820,
+      "samples": 44,
+      "median": 0.3999999910593033,
+      "p95": 0.5999999940395355,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "hamburg",
+      "viewport": 820,
+      "samples": 87,
+      "median": 0.30000001192092896,
+      "p95": 1.2000000029802322,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "rostock",
+      "viewport": 820,
+      "samples": 127,
+      "median": 0.29999999701976776,
+      "p95": 0.9000000059604645,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "stralsund",
+      "viewport": 820,
+      "samples": 166,
+      "median": 0.29999999701976776,
+      "p95": 0.9000000059604645,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "stettin",
+      "viewport": 820,
+      "samples": 202,
+      "median": 0.29999999701976776,
+      "p95": 0.9000000059604645,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "danzig",
+      "viewport": 820,
+      "samples": 235,
+      "median": 0.29999999701976776,
+      "p95": 0.9000000059604645,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "bergen",
+      "viewport": 820,
+      "samples": 271,
+      "median": 0.29999999701976776,
+      "p95": 0.7000000029802322,
+      "max": 3.4000000059604645
+    },
+    {
+      "city": "visby",
+      "viewport": 820,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 3.0999999940395355
+    },
+    {
+      "city": "bruegge",
+      "viewport": 820,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 3.0999999940395355
+    },
+    {
+      "city": "nowgorod",
+      "viewport": 820,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 2.6000000089406967
+    },
+    {
+      "city": "venlo",
+      "viewport": 820,
+      "samples": 300,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.5999999940395355
+    },
+    {
+      "city": "luebeck",
+      "viewport": 1280,
+      "samples": 38,
+      "median": 0.29999999701976776,
+      "p95": 0.8999999910593033,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "hamburg",
+      "viewport": 1280,
+      "samples": 77,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "rostock",
+      "viewport": 1280,
+      "samples": 115,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "stralsund",
+      "viewport": 1280,
+      "samples": 155,
+      "median": 0.29999999701976776,
+      "p95": 0.4000000059604645,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "stettin",
+      "viewport": 1280,
+      "samples": 193,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "danzig",
+      "viewport": 1280,
+      "samples": 231,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "bergen",
+      "viewport": 1280,
+      "samples": 268,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.7000000029802322
+    },
+    {
+      "city": "visby",
+      "viewport": 1280,
+      "samples": 300,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.8999999910593033
+    },
+    {
+      "city": "bruegge",
+      "viewport": 1280,
+      "samples": 300,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.8999999910593033
+    },
+    {
+      "city": "nowgorod",
+      "viewport": 1280,
+      "samples": 300,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.8999999910593033
+    },
+    {
+      "city": "venlo",
+      "viewport": 1280,
+      "samples": 300,
+      "median": 0.20000000298023224,
+      "p95": 0.4000000059604645,
+      "max": 1.8999999910593033
+    }
+  ],
+  "screenshots": {
+    "2026-10-25_0.7b_final-bergen-390.png": "165e1f1beef3d655ed95b4f6d5045e8f0947cc5c0e70909e5c23c9f3f40e634c",
+    "2026-10-25_0.7b_final-bruegge-390.png": "be9d754be1dac8a1de1a1169e4b5cc8e2bc0d367264622eb523a61623366a4e4",
+    "2026-10-25_0.7b_final-nowgorod-390.png": "9df2706d0715d658c43805d145c5dd660f88fa6b8190dd27f2f680770594bb43",
+    "2026-10-25_0.7b_final-venlo-390.png": "0b520c55f9816f31b36a4f9e073f7c07a02b1547f7f2662c82fed59653dbb83f",
+    "2026-10-25_0.7b_final-bergen-820.png": "6c5f747420840a64dd29ebae3ad8cfa78219586a94db965f653f47b2b864e34a",
+    "2026-10-25_0.7b_final-bruegge-820.png": "9cb848614729441ba9e3639c4a32dbd4c8e7c8f292a5896a582248c9fd7e8ed2",
+    "2026-10-25_0.7b_final-nowgorod-820.png": "a3c1ddd5d4d28dc7968bb757994420a4a8deaadc67aed0c8d3abeac5574ec92b",
+    "2026-10-25_0.7b_final-venlo-820.png": "ef4507097369a41172a9b630a4d846cf06884d94dd16caf2309bba55521f6fca",
+    "2026-10-25_0.7b_final-luebeck-1280.png": "24978afbe57518eb477d279b5c437071b15b1c0f448bb3f351e67f44976c9865",
+    "2026-10-25_0.7b_final-hamburg-1280.png": "09ad5aa6f429a96b97da4c52b5fd6900a4c8f752bb490898c00f07066b7436d1",
+    "2026-10-25_0.7b_final-rostock-1280.png": "52cecbf7e5fb61ac01fff63ff8afa322ade24f80491748c2ddfca4db60d4cdaa",
+    "2026-10-25_0.7b_final-stralsund-1280.png": "a79a81eaf48d724e5f4a1acc61f52cb01570ed5bacd1a406c0e57ba3098acc40",
+    "2026-10-25_0.7b_final-stettin-1280.png": "dde5a4958de1a3c26a07c372615eb663098968f260c9b4b5ac6f04beeea50718",
+    "2026-10-25_0.7b_final-danzig-1280.png": "ff75bb3915f2b45a8969a23638fbaaed612f6d10f40103e19817de1abbb0feb6",
+    "2026-10-25_0.7b_final-bergen-1280.png": "d5383b96ec114f153ea0895b44f16f01072e244c19ebaa1115291dc7ade25fd4",
+    "2026-10-25_0.7b_final-visby-1280.png": "8a814fe839f0d86c288eb6321b075a984b1976b39dfa54426f85dd4be7a5ccf8",
+    "2026-10-25_0.7b_final-bruegge-1280.png": "94dfb38be6eb4e997718a7edd6678a0a4e705575a229557b0e87575b00e3d218",
+    "2026-10-25_0.7b_final-nowgorod-1280.png": "cee5791cea8de86d63e0f45b8b387a50f979d53405ded5534cbc253140024aa5",
+    "2026-10-25_0.7b_final-venlo-1280.png": "29693282789484476978230b0c3b398d854289c35bdffff3fbdfb65af944e80e"
+  }
+}

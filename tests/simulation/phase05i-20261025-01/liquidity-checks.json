@@ -1,0 +1,500 @@
+{
+  "kind": "saved_endpoint_one_trip_recovery_not_full_strategy_games",
+  "gameSHA256": "7e85ac510654e3aec8b41328b3a508cdc3030eac8b4ab2981e40f30b1efc2a19",
+  "checks": [
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74001,
+      "passed": true,
+      "before": {
+        "gold": 2,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9665,
+        "credit": 4349,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.349 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.0383,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4349
+        }
+      },
+      "borrowed": 4,
+      "trip": {
+        "from": 2,
+        "to": 3,
+        "days": 3,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 4.001942768578476,
+        "city": 3
+      }
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74002,
+      "passed": true,
+      "before": {
+        "gold": 2,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9888,
+        "credit": 4450,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.450 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.461,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 2,
+            "fee": 6
+          },
+          "credit": 4450
+        }
+      },
+      "borrowed": 4,
+      "trip": {
+        "from": 1,
+        "to": 2,
+        "days": 3,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 4.001942768578476,
+        "city": 2
+      }
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74003,
+      "passed": true,
+      "before": {
+        "gold": 2,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9801.2,
+        "credit": 4411,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.411 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.314,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4411
+        }
+      },
+      "borrowed": 4,
+      "trip": {
+        "from": 1,
+        "to": 2,
+        "days": 4,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 4.002590567768105,
+        "city": 2
+      }
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74004,
+      "passed": true,
+      "before": {
+        "gold": 3,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9870,
+        "credit": 4442,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.442 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.958,
+            "shipName": "Kogge",
+            "destination": 3,
+            "days": 2,
+            "fee": 6
+          },
+          "credit": 4442
+        }
+      },
+      "borrowed": 3,
+      "trip": {
+        "from": 4,
+        "to": 5,
+        "days": 4,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 3.0019429258260786,
+        "city": 5
+      }
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74005,
+      "passed": true,
+      "before": {
+        "gold": 2,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9540.8,
+        "credit": 4293,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.293 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.6028,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4293
+        }
+      },
+      "borrowed": 4,
+      "trip": {
+        "from": 1,
+        "to": 2,
+        "days": 4,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 4.002590567768105,
+        "city": 2
+      }
+    },
+    {
+      "model": "before",
+      "strategy": "stress",
+      "seed": 74006,
+      "passed": true,
+      "before": {
+        "gold": 2,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9513.099999999999,
+        "credit": 4281,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.281 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.4917,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4281
+        }
+      },
+      "borrowed": 4,
+      "trip": {
+        "from": 2,
+        "to": 3,
+        "days": 3,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 4.001942768578476,
+        "city": 3
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "bulk",
+      "seed": 74006,
+      "passed": true,
+      "before": {
+        "gold": 0,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9256.2,
+        "credit": 4165,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.165 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.4917,
+            "shipName": "Kogge",
+            "destination": 1,
+            "days": 11,
+            "fee": 6
+          },
+          "credit": 4165
+        }
+      },
+      "borrowed": 6,
+      "trip": {
+        "from": 6,
+        "to": 9,
+        "days": 36,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 6.035063400970958,
+        "city": 9
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74001,
+      "passed": true,
+      "before": {
+        "gold": 4,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9667,
+        "credit": 4350,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.350 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.0383,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4350
+        }
+      },
+      "borrowed": 2,
+      "trip": {
+        "from": 1,
+        "to": 2,
+        "days": 4,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 2.0012952838840525,
+        "city": 2
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74002,
+      "passed": true,
+      "before": {
+        "gold": 0,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9872,
+        "credit": 4442,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.442 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.461,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 2,
+            "fee": 6
+          },
+          "credit": 4442
+        }
+      },
+      "borrowed": 6,
+      "trip": {
+        "from": 2,
+        "to": 3,
+        "days": 2,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 6.001942611347841,
+        "city": 3
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74003,
+      "passed": true,
+      "before": {
+        "gold": 0,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9781.2,
+        "credit": 4402,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.402 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.314,
+            "shipName": "Kogge",
+            "destination": 2,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4402
+        }
+      },
+      "borrowed": 6,
+      "trip": {
+        "from": 3,
+        "to": 4,
+        "days": 3,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 6.002914152867715,
+        "city": 4
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74004,
+      "passed": true,
+      "before": {
+        "gold": 5,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9872,
+        "credit": 4442,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.442 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.958,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 2,
+            "fee": 6
+          },
+          "credit": 4442
+        }
+      },
+      "borrowed": 1,
+      "trip": {
+        "from": 2,
+        "to": 3,
+        "days": 2,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 1.0003237685579736,
+        "city": 3
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74005,
+      "passed": true,
+      "before": {
+        "gold": 0,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9603.9,
+        "credit": 4322,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.322 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.6028,
+            "shipName": "Kogge",
+            "destination": 1,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4322
+        }
+      },
+      "borrowed": 6,
+      "trip": {
+        "from": 0,
+        "to": 1,
+        "days": 3,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 6.002914152867715,
+        "city": 1
+      }
+    },
+    {
+      "model": "capacity",
+      "strategy": "stress",
+      "seed": 74006,
+      "passed": true,
+      "before": {
+        "gold": 0,
+        "bank": 0,
+        "debt": 0,
+        "wealth": 9511.099999999999,
+        "credit": 4280,
+        "localWarehouse": 0,
+        "harborWork": {
+          "allowed": false,
+          "reason": "Im Bankhaus sind noch 4.280 Gold regulärer Kredit verfügbar. Prüfe diese Möglichkeit zuerst.",
+          "trip": {
+            "shipId": 1700000000000.4917,
+            "shipName": "Kogge",
+            "destination": 0,
+            "days": 3,
+            "fee": 6
+          },
+          "credit": 4280
+        }
+      },
+      "borrowed": 6,
+      "trip": {
+        "from": 1,
+        "to": 2,
+        "days": 4,
+        "fee": 6
+      },
+      "after": {
+        "gold": 0,
+        "debt": 6.003885851652157,
+        "city": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "additional actual console error/warning and pageerror observation, initial city and hall",
+  "testedGameCommit": "a2f81d407f1eef4cd6201309e80b81a551d3c7a5",
+  "logs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    }
+  ]
+}

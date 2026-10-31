@@ -1,0 +1,10 @@
+{
+  "directory": "build/phase08a-release-package",
+  "zip": "releases/hansefuerst-0.8a-assets.zip",
+  "standaloneBytes": 46301303,
+  "packageHTMLBytes": 2080798,
+  "packageTotalBytes": 35251089,
+  "zipBytes": 34651370,
+  "zipSHA256": "d70076e71139febdbfe2c2684ee79bb174d55d9a596e2b3cd40355a7fc4890f9",
+  "cities": 11
+}

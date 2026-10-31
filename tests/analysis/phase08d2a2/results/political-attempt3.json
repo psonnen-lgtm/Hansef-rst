@@ -1,0 +1,279 @@
+{
+  "phase": "0.8d.2a.2",
+  "testedCommit": "76bae73cf33fbeb9cb7ce75bedfb1c1177580ad3",
+  "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "checks": [
+    {
+      "name": "local sale/rebuy 90 9x10 and90x1 have no political wealth or reputation gains",
+      "passed": true,
+      "evidence": [
+        {
+          "parts": 1,
+          "safeWorth": 109120,
+          "financialWorth": 117848,
+          "rep": 0,
+          "actualCost": 104.97777777777777
+        },
+        {
+          "parts": 9,
+          "safeWorth": 109120,
+          "financialWorth": 117848,
+          "rep": 0,
+          "actualCost": 104.97777777777777
+        },
+        {
+          "parts": 90,
+          "safeWorth": 109120,
+          "financialWorth": 117848,
+          "rep": 0,
+          "actualCost": 104.97777777777777
+        }
+      ]
+    },
+    {
+      "name": "buy then sell and repeated circles do not gain recognition",
+      "passed": true,
+      "evidence": {
+        "circles": 5,
+        "reverseOrder": true,
+        "politicalWorth": 109120
+      }
+    },
+    {
+      "name": "two ships warehouse and direct button callbacks share exact political accounting",
+      "passed": true,
+      "evidence": {
+        "directTradeButton": true,
+        "twoShips": true,
+        "warehouse": true
+      }
+    },
+    {
+      "name": "full analysis and political observer exports retain awards costs and worth",
+      "passed": true,
+      "evidence": {
+        "restoredReputation": 4,
+        "finalReputation": 34,
+        "observerVersion": 1
+      }
+    },
+    {
+      "name": "foreign genuine profits split neutrally but reveal a changed reputation rate",
+      "passed": true,
+      "evidence": {
+        "WARNING": "cumulative rate differs from original per-click cap; policy decision required",
+        "rows": [
+          {
+            "parts": 1,
+            "profit": 8728,
+            "rep": 34,
+            "margin": {
+              "n": "8728",
+              "d": "1"
+            }
+          },
+          {
+            "parts": 9,
+            "profit": 8728,
+            "rep": 34,
+            "margin": {
+              "n": "8728",
+              "d": "1"
+            }
+          },
+          {
+            "parts": 90,
+            "profit": 8728,
+            "rep": 34,
+            "margin": {
+              "n": "8728",
+              "d": "1"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "honest old local profit is financially preserved but not fully credited politically",
+      "passed": true,
+      "evidence": {
+        "FAILED_ACCEPTANCE": "legitimate old local realized gain is not newly politically credited",
+        "actualProfit": 8728,
+        "financialGain": 8728,
+        "safeWorth": 109120,
+        "notReadyForProductiveUse": true
+      }
+    },
+    {
+      "name": "real losses remain real and unknown legacy costs create no fictional recognition",
+      "passed": true,
+      "evidence": [
+        {
+          "cost": 200,
+          "profit": -8552,
+          "rep": 0,
+          "worth": 117848
+        },
+        {
+          "cost": null,
+          "profit": null,
+          "rep": 0,
+          "worth": 109120
+        }
+      ]
+    },
+    {
+      "name": "real transport market change and later repurchase are allowed without editing financial FIFO",
+      "passed": true,
+      "evidence": {
+        "realTrip": true,
+        "initialWorth": 108560,
+        "arrivalWorth": 108551,
+        "realizedProfit": 180,
+        "marketBeforeDay": {
+          "price": 17,
+          "stock": 58
+        },
+        "marketAfterDay": {
+          "price": 17,
+          "stock": 73
+        },
+        "rep": 1
+      }
+    },
+    {
+      "name": "no unchanged-day reset of political protection",
+      "passed": true,
+      "evidence": {
+        "unchangedEconomicEpoch": true
+      }
+    },
+    {
+      "name": "thresholds early rank mayor and elder do not accept local wash revaluation",
+      "passed": true,
+      "evidence": [
+        {
+          "target": 18000,
+          "safeWorth": 17999,
+          "financialAfter": 26727
+        },
+        {
+          "target": 45000,
+          "safeWorth": 44999,
+          "financialAfter": 53727
+        },
+        {
+          "target": 180000,
+          "safeWorth": 179999,
+          "financialAfter": 188727
+        }
+      ]
+    },
+    {
+      "name": "true foreign supply and quest rewards survive; local origins do not forge service",
+      "passed": true,
+      "evidence": [
+        {
+          "foreign": true,
+          "services": 1,
+          "quests": 1,
+          "rep": 4
+        },
+        {
+          "foreign": false,
+          "services": 0,
+          "quests": 0,
+          "rep": 0
+        }
+      ]
+    },
+    {
+      "name": "historical V11 mayor elder titles rules deeds and all game fields remain untouched at observer start",
+      "passed": true,
+      "evidence": {
+        "historicalStatesRead": 6,
+        "noCareerRun": true,
+        "rows": [
+          {
+            "kind": "candidate",
+            "legacy": false,
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            },
+            "rank": 2,
+            "records": 6,
+            "office": false,
+            "elder": false
+          },
+          {
+            "kind": "office",
+            "legacy": false,
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            },
+            "rank": 3,
+            "records": 6,
+            "office": true,
+            "elder": false
+          },
+          {
+            "kind": "elder",
+            "legacy": false,
+            "rules": {
+              "sectionDays": 60,
+              "mayorWealth": 45000
+            },
+            "rank": 4,
+            "records": 17,
+            "office": false,
+            "elder": true
+          },
+          {
+            "kind": "candidate",
+            "legacy": true,
+            "rules": {
+              "sectionDays": 30,
+              "mayorWealth": 85000
+            },
+            "rank": 2,
+            "records": 6,
+            "office": false,
+            "elder": false
+          },
+          {
+            "kind": "office",
+            "legacy": true,
+            "rules": {
+              "sectionDays": 30,
+              "mayorWealth": 85000
+            },
+            "rank": 3,
+            "records": 6,
+            "office": true,
+            "elder": false
+          },
+          {
+            "kind": "elder",
+            "legacy": true,
+            "rules": {
+              "sectionDays": 30,
+              "mayorWealth": 85000
+            },
+            "rank": 4,
+            "records": 19,
+            "office": false,
+            "elder": true
+          }
+        ]
+      }
+    }
+  ],
+  "acceptance": {
+    "washAndSplitProtectionInFixtures": true,
+    "legitimateLocalRecognitionPreserved": false,
+    "reputationBalanceUnchanged": false,
+    "ready": false
+  }
+}

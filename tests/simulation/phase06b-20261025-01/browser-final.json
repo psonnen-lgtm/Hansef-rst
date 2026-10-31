@@ -1,0 +1,82 @@
+{
+  "testedGameCommit": "4b8cc100d4e8e1ee0cd1e33549ca966617048a02",
+  "gameSHA256": "e62f1f15212c499585c49f53b6812882738a8ce72e0bd0eb77831f1a1e63bdd8",
+  "browser": "154.0.8037.57",
+  "scope": "Chromium only; funded earned UI fixtures, no full human play and no physical Apple/Safari test",
+  "checks": [
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "real V10 import/startup preserves pending ship and title with immutable original",
+        "two rival motives and pure repeated hall",
+        "actual confirmed election no money bonus",
+        "actual active V11 download and repeated FileReader import",
+        "real travel functions, council UI visit, market buy/sell, unique two receipts",
+        "actual assembly and continued trade",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "passed": true,
+      "checks": [
+        "real V10 import/startup preserves pending ship and title with immutable original",
+        "two rival motives and pure repeated hall",
+        "actual confirmed election no money bonus",
+        "actual active V11 download and repeated FileReader import",
+        "real travel functions, council UI visit, market buy/sell, unique two receipts",
+        "actual assembly and continued trade",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "real V10 import/startup preserves pending ship and title with immutable original",
+        "two rival motives and pure repeated hall",
+        "actual confirmed election no money bonus",
+        "actual active V11 download and repeated FileReader import",
+        "real travel functions, council UI visit, market buy/sell, unique two receipts",
+        "actual assembly and continued trade",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "check": "actual migration backup and target write faults preserve V10, safe retry",
+      "passed": true
+    },
+    {
+      "check": "real failed political action retains title office deeds cash and disk; retry once",
+      "passed": true
+    },
+    {
+      "check": "actual V10 client refuses V11 without truncation",
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "confirmationDialogs": 28,
+  "screenshots": {
+    "2026-10-25_0.6b_ratskammer-390.png": "9716e64150c72105b47b712b44f36b968d7eaf6750bc58e7be6db1dd5e23e6d3",
+    "2026-10-25_0.6b_buergermeister-390.png": "09ea8e38ee602f848399ae45ef3e74348a0be4404810a4877998e47bce2ddd89",
+    "2026-10-25_0.6b_hanseversammlung-390.png": "918b362f2c43d2b5aa0af665906523f13d3edf6027cb52da272c745c305fe1e0",
+    "2026-10-25_0.6b_ratskammer-820.png": "c39bf649ae92cd4f6748744ebd0dee8217a9f940b33e7fd7e872508d50d612e5",
+    "2026-10-25_0.6b_buergermeister-820.png": "2da2b8e68bd1e3bfcf15fe2b85b0a7114be449beacf36a3e02ce90d7f9d57cc8",
+    "2026-10-25_0.6b_hanseversammlung-820.png": "cf76b1565622f129581aaba27ce62f23cdd26db3c45901c989238b6f37116e67",
+    "2026-10-25_0.6b_ratskammer-1280.png": "c630dd1266a20dede3d72632e484924d6e41db11d450d9886d51726283efc340",
+    "2026-10-25_0.6b_buergermeister-1280.png": "e298b3f12460f657601f5f83de9ab1f6106df5639b5859920205bfe772dba169",
+    "2026-10-25_0.6b_hanseversammlung-1280.png": "2e7b4dd0a08d388a5269a065626406735912a6fab7bda008226528d9b158d07e"
+  }
+}

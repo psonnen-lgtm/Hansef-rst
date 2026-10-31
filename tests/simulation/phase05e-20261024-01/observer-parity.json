@@ -1,0 +1,37 @@
+{
+  "checks": [
+    {
+      "strategy": "cautious",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    },
+    {
+      "strategy": "normal",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    },
+    {
+      "strategy": "aggressive",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    },
+    {
+      "strategy": "optimized",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    },
+    {
+      "strategy": "recovery20",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    },
+    {
+      "strategy": "remote",
+      "seed": 10001,
+      "fullStateAndEventsEqual": true
+    }
+  ],
+  "baselineExecutions": 6,
+  "distinctPilotCases": 6,
+  "noAdditionalIndependentCases": true
+}

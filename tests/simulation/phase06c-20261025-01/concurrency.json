@@ -1,0 +1,14 @@
+{
+  "kind": "one_controlled_integration_fixture_not_full_career",
+  "gameSHA256": "14038187b254446c506ace7d717f7482208641ba446ba15280f7fcd40d62e3fa",
+  "passed": true,
+  "actualMaterialPurchases": true,
+  "fixtureForcedCashAndDebtForAid": true,
+  "days": 3,
+  "finalActionWrites": 1,
+  "mayorTermEnded": true,
+  "shipCompletedAtCorrectCity": true,
+  "harborWageOnce": 20,
+  "titleKept": true,
+  "noNewPoliticalReceiptFromMaterials": true
+}

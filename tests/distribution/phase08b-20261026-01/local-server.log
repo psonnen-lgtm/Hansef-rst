@@ -1,0 +1,25 @@
+127.0.0.1 - - [26/Oct/2026 08:13:50] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /Hansefuerst_0_4.html HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/bergen/bergen-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/bruegge/bruegge-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/danzig/danzig-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/hamburg/hamburg-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/luebeck/cog.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/luebeck/luebeck-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/nowgorod/nowgorod-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/rostock/rostock-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/shared/river-barge.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/stettin/stettin-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/stralsund/stralsund-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/venlo/venlo-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] "HEAD /assets/cities/visby/visby-1350.webp HTTP/1.1" 200 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] code 404, message Not Found
+127.0.0.1 - - [26/Oct/2026 08:13:50] "GET /qa-unlisted-save.json HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] code 404, message Not Found
+127.0.0.1 - - [26/Oct/2026 08:13:50] "GET /%2e%2e/LIESMICH.txt HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] code 404, message Not Found
+127.0.0.1 - - [26/Oct/2026 08:13:50] "GET /../START_TEST.py HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] code 404, message Not Found
+127.0.0.1 - - [26/Oct/2026 08:13:50] "GET /assets/ HTTP/1.1" 404 -
+127.0.0.1 - - [26/Oct/2026 08:13:50] code 405, message Dieser statische Testserver nimmt keine Daten an.
+127.0.0.1 - - [26/Oct/2026 08:13:50] "POST /spielstand HTTP/1.1" 405 -

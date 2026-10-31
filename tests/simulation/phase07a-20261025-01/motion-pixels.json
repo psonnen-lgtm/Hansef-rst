@@ -1,0 +1,16 @@
+{
+  "scope": "read-only comparison of actual time-separated browser screenshots",
+  "size": [
+    1066,
+    711
+  ],
+  "changedPixels": 19083,
+  "changedPixelPercent": 2.5177919744143886,
+  "differenceBounds": [
+    3,
+    123,
+    1038,
+    709
+  ],
+  "secondsBetweenCapturesAtLeast": 2.2
+}

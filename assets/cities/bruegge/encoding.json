@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "bruegge-1350.png",
+      "encoded": "bruegge-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4172854,
+      "encodedBytes": 2900100,
+      "sourceSHA256": "faa4a9ed4daaa5258af17db278e80f3336e01c6086b385209deb13c7088a2f54",
+      "encodedSHA256": "07f2ee6d87f1c7760f43085a226259f42db36629f35e9b94d44b7f24c4c82bad",
+      "decodedRGBA256": "9be9eee7f8ea8ec3f41eeee65161c083702885b0e26fe51b3cd31c692f541828",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

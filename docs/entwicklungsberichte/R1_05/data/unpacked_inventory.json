@@ -1,0 +1,767 @@
+[
+  {
+    "path": "a.mdi",
+    "size": 25342,
+    "sha256": "f79ebaa3a63435f19f603f3287fc7108c9e81a265df17313a0cb4ed0a07f0412"
+  },
+  {
+    "path": "ab.ppt",
+    "size": 40526,
+    "sha256": "6d23b753fb4d25637ad43e844b8e363a59ebd93bf4cefe583eb0b26f046ee852"
+  },
+  {
+    "path": "ac.ppt",
+    "size": 50377,
+    "sha256": "333dc709efc30bd7b8ae6de7d0e1e6f3d29cb993857cc0a8b51f941556a84e69"
+  },
+  {
+    "path": "ad.ppt",
+    "size": 50959,
+    "sha256": "5fd18af3de469462e0e199aa02b3c5963d13a222f03d526156d6da1e5e8b003a"
+  },
+  {
+    "path": "ae.ppt",
+    "size": 38104,
+    "sha256": "1622a2c1f6c88329a2ebc6fbf577dbc56f5fc6a94a1c2ad4de1dc55b6f1e008c"
+  },
+  {
+    "path": "af.ppt",
+    "size": 54017,
+    "sha256": "d8be039d5033a77edada9d0f5a2399d65a59147421ecc340a0f39ce662229fda"
+  },
+  {
+    "path": "ag.ppt",
+    "size": 40527,
+    "sha256": "d6c3589cfd9b18ce86b57e211ea6adc10a138dcd476590c767784eb9e5ffbdbe"
+  },
+  {
+    "path": "ah.ppt",
+    "size": 48689,
+    "sha256": "7c5e69e077e37ec81fcf0b97497855fb5301ca023f1b5eed1379740f57e167a5"
+  },
+  {
+    "path": "ai.ppt",
+    "size": 49990,
+    "sha256": "96e56610a145cbee4bf161fb06c60f74694d1e0edefb618bb25e8443cfea716c"
+  },
+  {
+    "path": "aj.ppt",
+    "size": 42833,
+    "sha256": "edcb04fd03259c03ea84486d1928da8d68c09a176df5102cfb1b5c26518d2b1a"
+  },
+  {
+    "path": "ak.ppt",
+    "size": 31847,
+    "sha256": "4ed9ad50e69f856ea656e269c9b6a36804b30bc253c641844b9a63f6bcb67540"
+  },
+  {
+    "path": "al.ppt",
+    "size": 45655,
+    "sha256": "42f09689f34f4b6cda7ac627a8313e37c4a8fcae002c974c42e509b4d57dd27e"
+  },
+  {
+    "path": "am.ppt",
+    "size": 19203,
+    "sha256": "86eff51b60958405345270de9f00afcf220f7f21bf9aa02d1d49bd91123675af"
+  },
+  {
+    "path": "amboss9.voc",
+    "size": 20165,
+    "sha256": "f30ecaa69e2e1b88725cd0ee8dd082974216f08b9c6fe8b15dd65a62b1d929b5"
+  },
+  {
+    "path": "an.ppt",
+    "size": 26992,
+    "sha256": "0c30984b4ebf4c314439b99657a024b41bf77b1bae50653c21ce25c671959cc0"
+  },
+  {
+    "path": "ao.ppt",
+    "size": 48533,
+    "sha256": "e3ff2d779eb900661500e3ea5bdc62387ecea2d9573eb6c5812184a674908d7d"
+  },
+  {
+    "path": "ap.ppt",
+    "size": 36167,
+    "sha256": "b6a7dbdbbe5a6ed370bed3f07e57edf8d6ed7c995d65f8498546970946aae4e8"
+  },
+  {
+    "path": "arm_ok.voc",
+    "size": 11880,
+    "sha256": "d094b2f105be74f6d459abe9d5c92217dfd44c285bb560b85490b1a65a40d94c"
+  },
+  {
+    "path": "b.mdi",
+    "size": 21016,
+    "sha256": "b18c6a867f5ddf40b9b1f50f9298bf8853167bafd144f275afbbfde0bd130d53"
+  },
+  {
+    "path": "ba.ppt",
+    "size": 40594,
+    "sha256": "cdaecf40c64b73a590b537ade1281f299b53a8facc19e47dd6cdc66ec8e1caba"
+  },
+  {
+    "path": "badeh5.voc",
+    "size": 14685,
+    "sha256": "907cd72bf1434e8ec78798f4d8c8f68863da2ca14cbbe193606fced881f73f6f"
+  },
+  {
+    "path": "bb.ppt",
+    "size": 11942,
+    "sha256": "a1443cdc0c768eed8b4fe2d4a77926c6b5e972cce6bca27d051095641511c086"
+  },
+  {
+    "path": "bc.ppt",
+    "size": 51370,
+    "sha256": "41cc5f08c0dfd83cab2f7a62fa1c2939f2658ece859bd3336fa5176a5a85d21b"
+  },
+  {
+    "path": "bd.ppt",
+    "size": 38626,
+    "sha256": "8b1355d1244e612c19478b49d49265fb1088b2086f4c2f17423afb406a04366a"
+  },
+  {
+    "path": "be.ppt",
+    "size": 41254,
+    "sha256": "fd9ff559ea2b05344121ed9e4cee5297b9dd0faaaacf1a506392ba24e4ae2183"
+  },
+  {
+    "path": "bf.ppt",
+    "size": 50336,
+    "sha256": "7a682602258db9e76f7f5616a7e345b83d80f77a069c3ce30ecb0f83e3fde2d5"
+  },
+  {
+    "path": "bg.ppt",
+    "size": 50115,
+    "sha256": "5703a66abc2bd7d5ce69e36358b6522db2fc5549df64485ee11aa22af5e6560f"
+  },
+  {
+    "path": "bh.ppt",
+    "size": 51034,
+    "sha256": "ce601266abe745513235d296700bce04b7750f10188fd05a6a035ef0a9f0381f"
+  },
+  {
+    "path": "bi.ppt",
+    "size": 39560,
+    "sha256": "bb40eef189c136751a4d174e60d3e716d6288fdd39a6c85ed1bb358042bc243b"
+  },
+  {
+    "path": "bj.ppt",
+    "size": 25425,
+    "sha256": "b398b01203bd2f3717353cc8cdaf07a35b4b86c28c7fcdda23bf7da65443167d"
+  },
+  {
+    "path": "bk.ppt",
+    "size": 20433,
+    "sha256": "2f6bd5c91228bb186c2f836dadd44cf0310f6a0edc163f52c6cc4741907e7580"
+  },
+  {
+    "path": "bl.ppt",
+    "size": 20492,
+    "sha256": "f0ab0ae074b2cb7168bb7446fecc2e60adae0744f6bcd9906968391269acbc05"
+  },
+  {
+    "path": "bli_dat.fil",
+    "size": 92,
+    "sha256": "5ca57846d93a6b5cc7558e1a1ca8e9b3155ae800eb5bd1cbcf3555474a60ecd4"
+  },
+  {
+    "path": "bli_lib.fil",
+    "size": 62658,
+    "sha256": "3c610f32cde0857bcf32f49bbfb2e7fa1ea0aa39bebc97da9f3d304496d35362"
+  },
+  {
+    "path": "bm.ppt",
+    "size": 53321,
+    "sha256": "258afde95045a28b6ae256bde19b2c4e31b03968885aa5a1ca5eccf3286d03c5"
+  },
+  {
+    "path": "bn.ppt",
+    "size": 50502,
+    "sha256": "00dc8ef1f04dcab00362835fd1dac6b816b3b0df5e1305b9e5aaf240c1e215bb"
+  },
+  {
+    "path": "bo.ppt",
+    "size": 55239,
+    "sha256": "afeb4339109a52ed1c112a593059c3212f23f436fe7dc16f88ea415f2c084d0b"
+  },
+  {
+    "path": "bom_dat.fil",
+    "size": 88,
+    "sha256": "1255ebfed7c6ed2ca690a2f2f8ed7fb1ab58ff1fe570e08b02cae89eecf28223"
+  },
+  {
+    "path": "bom_lib.fil",
+    "size": 58286,
+    "sha256": "9c8b8d0cab0527b0cf700371241fc93fe06ef1e8878ae7dd98d83fb10d71789c"
+  },
+  {
+    "path": "bp.ppt",
+    "size": 40584,
+    "sha256": "ff45353a26cfb57eef98c2772c32f647e56d5c1d4e3549a981d1918ee5cce353"
+  },
+  {
+    "path": "bug_dat.fil",
+    "size": 30,
+    "sha256": "0dc8d4037184d40aa922984b629dad6a363f2a1fe6908a571c6667615a725dc0"
+  },
+  {
+    "path": "bug_lib.fil",
+    "size": 17052,
+    "sha256": "95a648530f22f55b131e19ecb9e3e8f592f575aae322f7217a97e2d4a96fa057"
+  },
+  {
+    "path": "c.mdi",
+    "size": 12131,
+    "sha256": "35f82f01ccdbc392a6be7d140e4b51b51fb4ac040f17eb1f9d6269dc22a6f770"
+  },
+  {
+    "path": "ca.ppt",
+    "size": 39544,
+    "sha256": "655a6f0e63072ac302479bd8a14bd38ea694d4ebc3c598b36eb6f24139b3b5f2"
+  },
+  {
+    "path": "cb.ppt",
+    "size": 39477,
+    "sha256": "7dca87fa871a3bd51ff40a2633f86aa0e387496e07239e271505667ebb476ba6"
+  },
+  {
+    "path": "cc.ppt",
+    "size": 42276,
+    "sha256": "5e70f68a1bd2c377acdad79383bf153acf4ae51eca07ab45850b900a7b30dbb4"
+  },
+  {
+    "path": "cd.ppt",
+    "size": 41605,
+    "sha256": "9a3c2c14fb02eccdd3c7875f14c08f8b63861556864a06878a54d47ec1a1a664"
+  },
+  {
+    "path": "ce.ppt",
+    "size": 42136,
+    "sha256": "82f73d11c8aeb286d9f35eac57733640fd8a954c04e4deba0641f2bac0624135"
+  },
+  {
+    "path": "cf.ppt",
+    "size": 42095,
+    "sha256": "361646403fd5cdff79be448b82cad1577683fa9e27ea1e993dc3168b7ef1d52c"
+  },
+  {
+    "path": "cg.ppt",
+    "size": 53388,
+    "sha256": "d3da3435e40f6dbd1ae8b5cb9a84d7cf561c08c59e7886fc9394626c491f5564"
+  },
+  {
+    "path": "ch.ppt",
+    "size": 48373,
+    "sha256": "1b69689597047a9ca390648f0f7bf5deb67e4b6d5cb113314d0c5bc89cb00bf0"
+  },
+  {
+    "path": "ci.ppt",
+    "size": 51566,
+    "sha256": "db7f301cea6ba35a52648fc359096c396b06069a51838958229269c87a6a9229"
+  },
+  {
+    "path": "cj.ppt",
+    "size": 40965,
+    "sha256": "329df886ad65b9f440d7ca701780c91ebd0ffe632dca6835bc0eb9cd318aa145"
+  },
+  {
+    "path": "ck.ppt",
+    "size": 40446,
+    "sha256": "f616387bafa0669d8b9506ee85166a4776d94e4d6c0e9e2aa9f343c54a2cb428"
+  },
+  {
+    "path": "cl.ppt",
+    "size": 55540,
+    "sha256": "ca6d6b1295de6e0d1b3b3e4e64b9ab4b92adb4006aada5d8e46a3e360c952be7"
+  },
+  {
+    "path": "cm.ppt",
+    "size": 51417,
+    "sha256": "823487824eb84d1898312bb74d65ca7980d07b7563a9e748b077cf701e56eb3f"
+  },
+  {
+    "path": "cn.ppt",
+    "size": 54108,
+    "sha256": "0156176e2f2d08fe6c1e4fa0eb1b6697d3c6cbc618f9ef54aec429389fbb20cd"
+  },
+  {
+    "path": "co.ppt",
+    "size": 24873,
+    "sha256": "4907bdc5fde055f4c86a3934e0a1f0a1e68113ad834ea6472c2cc0287ad9b2b7"
+  },
+  {
+    "path": "cp.ppt",
+    "size": 25002,
+    "sha256": "924b1f88101cdbe1e908113ad3e1711cc8cddcc43de193c50a2e254999988b7b"
+  },
+  {
+    "path": "crw_dat.fil",
+    "size": 22,
+    "sha256": "778e7d9450e60c91dacc85693661ce079942b23398f861f81041ae0b5ec41a58"
+  },
+  {
+    "path": "crw_lib.fil",
+    "size": 11216,
+    "sha256": "63290b68a1bc9d3487cd0d6103e79e376145fd4e072393ec68e054289320e7e7"
+  },
+  {
+    "path": "d.mdi",
+    "size": 389,
+    "sha256": "7a4b7d99cf207320dd7a4889980c276d880df75828ddb8935d91e05913c85f0e"
+  },
+  {
+    "path": "da.ppt",
+    "size": 24886,
+    "sha256": "7e327f6bf825524596da54663cb5b5a3419ccebe587a375b622b3af23a7b1468"
+  },
+  {
+    "path": "datei.1",
+    "size": 1128,
+    "sha256": "2ce999531aead10bdd2b2fd19ad517344f4105b6044e36c3509b8cd3e2795d0f"
+  },
+  {
+    "path": "datei.psa",
+    "size": 28048,
+    "sha256": "5ac6fc6ab14df138c91f00e1b3272a40941543f113b6d71301ea004882eac56d"
+  },
+  {
+    "path": "datei.psb",
+    "size": 28048,
+    "sha256": "25cd3ea5ee638ca941bb0fd2f21c2ba6445cc37767c596b96b4b1b10d0b6b063"
+  },
+  {
+    "path": "db.ppt",
+    "size": 25942,
+    "sha256": "c4077cfaf39fe358c586a5837b58d51c50c9b52f4419737b0f22f0f69b9ead35"
+  },
+  {
+    "path": "dc.ppt",
+    "size": 48752,
+    "sha256": "97b5b5a244a1706bb003107d76d3b665bbaf07ceebaf7e8ec47ca9981e89fc18"
+  },
+  {
+    "path": "dd.ppt",
+    "size": 43191,
+    "sha256": "3ee30022c7b84b4ff586e76cc5443b09806231809f794f14a4ea0aa17c8fd87f"
+  },
+  {
+    "path": "de.ppt",
+    "size": 51030,
+    "sha256": "ddb932335d7b901694eacd488b7eb616a4ba36afc17c2cc21f200e155f2c893d"
+  },
+  {
+    "path": "df.ppt",
+    "size": 52816,
+    "sha256": "67f7bc3d854fe42f27c55ad182af93ec96b99eefa423b839ed9e46ae995ada30"
+  },
+  {
+    "path": "dg.ppt",
+    "size": 12349,
+    "sha256": "769c67585db58956b0023d86b2f4d42064cb2c11be2b72b3276c3e08be906cbb"
+  },
+  {
+    "path": "dh.ppt",
+    "size": 23570,
+    "sha256": "ee1ca9f3a15cb629f8b7f96d727e9520fd32eefac617c58a9f7e2496d719606e"
+  },
+  {
+    "path": "di.ppt",
+    "size": 15309,
+    "sha256": "4c4350dafc8091de5806b34d388059f023cb8e295687ff0fcefe2886f7f6fd75"
+  },
+  {
+    "path": "die_dat.fil",
+    "size": 40,
+    "sha256": "649de3a9abc472385049343810d161cd2b859477255f850935f7807ea030a09d"
+  },
+  {
+    "path": "die_lib.fil",
+    "size": 26486,
+    "sha256": "2c1f091b7f7fe251c64f3e43b8f723722d20a7fdc6086d29b342693d8538442e"
+  },
+  {
+    "path": "dj.ppt",
+    "size": 46998,
+    "sha256": "5a11fc491b128a4a45c7a6f662738723ebaf715f5b0f7a48190f3d1feda1c251"
+  },
+  {
+    "path": "dk.ppt",
+    "size": 28294,
+    "sha256": "759c197ef19d5c8e8dd5f2fdeac6f419fdea76bbc44c2f45aab4e18f8794fc99"
+  },
+  {
+    "path": "dl.ppt",
+    "size": 4832,
+    "sha256": "4d9a3c46f54c4866db1b96569eb77939daee6aed128f9d2da8c55b461e22c6c7"
+  },
+  {
+    "path": "dm.ppt",
+    "size": 17903,
+    "sha256": "86acbfac541cb20513b6cd65f37520a0ca51c9f9eb5676026e0584eb780d3194"
+  },
+  {
+    "path": "dn.ppt",
+    "size": 5203,
+    "sha256": "5760982aee0165f7932e218383e3add1aca7210b6cf5d8079a307e6a2a57f2ee"
+  },
+  {
+    "path": "do.ppt",
+    "size": 20944,
+    "sha256": "778b27ce09a35c80d04a2aa51a1922d56547fbb71e9c81bcf7d1c8ac9cff5c30"
+  },
+  {
+    "path": "dp.ppt",
+    "size": 5541,
+    "sha256": "f007a3f5a23fc1479815c1eb45731153e624b5792be8614849e4550159544876"
+  },
+  {
+    "path": "e.mdi",
+    "size": 18026,
+    "sha256": "96295f4514d6e3d2e130cc90b3a555687eb85ac9694859a8ce68dabce662e526"
+  },
+  {
+    "path": "ea.ppt",
+    "size": 19207,
+    "sha256": "b7a799e3356ff38f7dd6787ced0d780c378b919bbc9abd6e9443fe7f8386afb3"
+  },
+  {
+    "path": "eb.ppt",
+    "size": 35133,
+    "sha256": "1eca8d909207699d17e30d462869e341c74013ac1869bc487561f6def45b75ff"
+  },
+  {
+    "path": "ec.ppt",
+    "size": 13316,
+    "sha256": "c44d32f49df34c88ecfc5836f8e37ef2e3856ba279551212ddc9dcc7d33e6bbd"
+  },
+  {
+    "path": "ed.ppt",
+    "size": 5194,
+    "sha256": "e887b3e8b3b35e625fcad4bbb393f9aa60066e34d70f99d34e630df5ef4f9ff0"
+  },
+  {
+    "path": "ee.ppt",
+    "size": 47975,
+    "sha256": "fb77e12c98d0c4f5d8d9d9e37686bff3b330b61fc3755f193047759911d4b7a6"
+  },
+  {
+    "path": "ef.ppt",
+    "size": 48287,
+    "sha256": "4a47222b49282b19f6ab05e9225023ea8e47c977b6b4952c0645aaaf24dd4777"
+  },
+  {
+    "path": "eg.ppt",
+    "size": 47163,
+    "sha256": "d97a286407c5179455ca8bfec5c07b2f6a60f1b7d2818083c274ab7a0e851051"
+  },
+  {
+    "path": "eh.ppt",
+    "size": 47712,
+    "sha256": "e69662ee84f7df8793954bcff2940503a5578f97dd09f051e6eaaba596d56994"
+  },
+  {
+    "path": "ei.ppt",
+    "size": 47492,
+    "sha256": "c8bb8953a02ef54ef9a11f2f833480accd29caee0d7f364c638ce3622e5f5c90"
+  },
+  {
+    "path": "ein_ok.voc",
+    "size": 11880,
+    "sha256": "c1fe74d410c7857968ae524d8c730d4e26e0c539bbac1d4d695b6121265cca04"
+  },
+  {
+    "path": "ej.ppt",
+    "size": 48106,
+    "sha256": "b78020a27bec670d9093f61e5741a19225640b1d36bd29daf0e017f1d3cffe88"
+  },
+  {
+    "path": "ek.ppt",
+    "size": 45323,
+    "sha256": "77422bffa8afcaee50b35bb979b7bd88280bf13906147fdd9036e731f5b05fbb"
+  },
+  {
+    "path": "el.ppt",
+    "size": 48286,
+    "sha256": "cfc5695024c44ed63b2750b614b1c45a18723efa27464b3980d1096a90670183"
+  },
+  {
+    "path": "em.ppt",
+    "size": 46502,
+    "sha256": "a90c521a63c2f878cb0272f0b13bb169515be77aa53295aeb2f85c57c5c38e5a"
+  },
+  {
+    "path": "en.ppt",
+    "size": 47790,
+    "sha256": "5e758f52c8a63a53b34c0bb018d6c28e3d61e72aaf1596bf82ffd1be5bcd3cb0"
+  },
+  {
+    "path": "eo.ppt",
+    "size": 46623,
+    "sha256": "c6f7cb1b2afd2a8af765cab9c0b81d1a2ea3082d5a2b83c4b2660c466dba4fba"
+  },
+  {
+    "path": "ep.ppt",
+    "size": 47404,
+    "sha256": "bbf61665b086876ffc698280cd00fac4c258c57dd54399cb13398fccc7531699"
+  },
+  {
+    "path": "f.mdi",
+    "size": 737,
+    "sha256": "b354821c6904b5f8a0aac30309a4729b9897ebcfe88a4291e3094778d8779883"
+  },
+  {
+    "path": "fa.ppt",
+    "size": 48252,
+    "sha256": "5900990f064b3b9518a0076123c4d3d38fe52da4f206c654895b0d436bb2130c"
+  },
+  {
+    "path": "fb.ppt",
+    "size": 47442,
+    "sha256": "0b1efc3f39104eadd9e873e07f1c9155e1dae3f6b260f5169a362c8558f8e136"
+  },
+  {
+    "path": "fc.ppt",
+    "size": 46113,
+    "sha256": "9a400aeed1cad9086ab4b611c244468e121651b18acdf61628fde125187ba9ca"
+  },
+  {
+    "path": "fd.ppt",
+    "size": 48576,
+    "sha256": "8e185bf77302da1b43a9f5b13cf0e0e056838fd7475aafa2706c80f10df5c957"
+  },
+  {
+    "path": "feuer5.voc",
+    "size": 20429,
+    "sha256": "11c09e501dc3ed3ab6a8fd18733a2eddeb7e69cdc0e8df73ef672cb19f14e385"
+  },
+  {
+    "path": "feuerloo.voc",
+    "size": 20436,
+    "sha256": "fabb2b5422d0f15f59fbbd04bc1efa279bff8598bf2caa30e992581567dab9cb"
+  },
+  {
+    "path": "fon_dat.fil",
+    "size": 24,
+    "sha256": "a71a39d5dd018b958a90a4b97f36b0c5667b760ad61275dcc00b2fc79a99a982"
+  },
+  {
+    "path": "fon_lib.fil",
+    "size": 11286,
+    "sha256": "4e760868a74b37174088ce739944770aee2fd34889ad55dc6ef258298eba7bc2"
+  },
+  {
+    "path": "fontaene.pak",
+    "size": 1961,
+    "sha256": "e34f36f6856845708a3f152e2bd0718c6007be0600df2fa9d71b09fa4192360b"
+  },
+  {
+    "path": "g.mdi",
+    "size": 389,
+    "sha256": "7a4b7d99cf207320dd7a4889980c276d880df75828ddb8935d91e05913c85f0e"
+  },
+  {
+    "path": "glockloo.voc",
+    "size": 20255,
+    "sha256": "6deab74418ca27349eb2e3648de1fb36e19fefbbe0a76ac1847e17f105b7b659"
+  },
+  {
+    "path": "h.mdi",
+    "size": 33291,
+    "sha256": "df0816238063622e5ba6559e0181fcce90a62ccb080fd18a50b5a504eb1f8dce"
+  },
+  {
+    "path": "holk1m.pak",
+    "size": 7468,
+    "sha256": "209b77a15df0afd71182d5a13ba85ca28070da6b1b1e56624d8dfc2b876747d4"
+  },
+  {
+    "path": "holk3m.pak",
+    "size": 8576,
+    "sha256": "a67837d32aa65b3baf529bd8dc5528f31dd5ee17a886a39c7b9e5e65ab88114b"
+  },
+  {
+    "path": "i.mdi",
+    "size": 1452,
+    "sha256": "9ca2b551b68e3b155835615a3c21dac00b924f8367353810e9d792e14face1ef"
+  },
+  {
+    "path": "j.mdi",
+    "size": 10632,
+    "sha256": "e3f92dd12ecfe0ece492edf258ce212d30d78b153b903404ade1aead922776e2"
+  },
+  {
+    "path": "k.mdi",
+    "size": 2200,
+    "sha256": "7e9c71034332e5ae9e5b07372617edbd90f371277365199d4051e7d673f1ad8c"
+  },
+  {
+    "path": "kan_ok.voc",
+    "size": 11880,
+    "sha256": "fb9f156b898590170035adb8a054024425fa9420c3b17c99e537e765d82419d8"
+  },
+  {
+    "path": "kanpl_ok.voc",
+    "size": 11880,
+    "sha256": "e0e8235fd6b3378d964c78f21e69b08690739a4568d04193845b6737c0bc5367"
+  },
+  {
+    "path": "kneifeu1.voc",
+    "size": 16094,
+    "sha256": "f9cfc3095111edbec32e371cf21a40660ecca64794714b6f278d5888c89aafc5"
+  },
+  {
+    "path": "kneipe3.voc",
+    "size": 19456,
+    "sha256": "319ee385af375869ff834e28b5cbdfb3d76f3706753e8a431113616689c88a8f"
+  },
+  {
+    "path": "kogge.pak",
+    "size": 7748,
+    "sha256": "f27a79bae94b134fa3408615dd4b0b40ed5d3dd7ce8ba10bed2ad0832a6ef8a9"
+  },
+  {
+    "path": "kraier.pak",
+    "size": 5689,
+    "sha256": "e934ecfd4480cd1311cc9cbf0096c4fa74ef0f164075b1c2859557791b8aa65b"
+  },
+  {
+    "path": "l.mdi",
+    "size": 18927,
+    "sha256": "ddd483635b8ae3b173cbde819cf820f91eb8b0ed91656995ebd6c827d33d46cf"
+  },
+  {
+    "path": "markob1.voc",
+    "size": 19013,
+    "sha256": "ae71b81cc48f09bfe41781f9e1087ae65295928701a4b2f264e5aac5874a1ed8"
+  },
+  {
+    "path": "meer3.voc",
+    "size": 11880,
+    "sha256": "0dd123c36f825eff7cfeb26c4886e64d617ef285ae2ddc819ea05daf70c5626b"
+  },
+  {
+    "path": "meerauf3.voc",
+    "size": 11739,
+    "sha256": "6db9e83adfee1f1f96064d1331655005b93dacee5ddacfac721191c0dc44d2e9"
+  },
+  {
+    "path": "meerhs1.voc",
+    "size": 12942,
+    "sha256": "86a04323010014874d9d98b9b67d2f8c88a1b038d6640e707eeec64ca442e601"
+  },
+  {
+    "path": "meerkn1.voc",
+    "size": 11836,
+    "sha256": "6860bfee7c09d4f81cfea7376a0dcaf783decef042afac50d184c97bfb0a186b"
+  },
+  {
+    "path": "meermoen.voc",
+    "size": 13107,
+    "sha256": "86ec21ece8a654af365b48551ffeee343dd3388af302608c7effe4eb1e22d782"
+  },
+  {
+    "path": "meernag2.voc",
+    "size": 11882,
+    "sha256": "6163e0b8fd68161f51dd42bd6f97015cf6e8c060286d0d507a04b784cf388c0c"
+  },
+  {
+    "path": "meerschr.voc",
+    "size": 20163,
+    "sha256": "abb9eb8fc514205b94284a543ebc0c014ccb7c33da7b50b7b8a9d2a8953b851f"
+  },
+  {
+    "path": "mko_dat.fil",
+    "size": 22,
+    "sha256": "8622dd59d95a289414aed91504c38dd744beec1377a3cde7920e9a2fd08cf16c"
+  },
+  {
+    "path": "mko_lib.fil",
+    "size": 4012,
+    "sha256": "32283a204ce63bc64ca503827b1df35ad9039edfebdd4113f278f8719906e2f8"
+  },
+  {
+    "path": "mrt_dat.fil",
+    "size": 16,
+    "sha256": "6f7de707736bcbe535660dd9c701f5df0ddb192b7bcc2e22a372882ce127c209"
+  },
+  {
+    "path": "mrt_lib.fil",
+    "size": 7806,
+    "sha256": "28db0e29e44b628968a473ff0ee47706ee757fee5aa117d2e1fb46837cdfbc06"
+  },
+  {
+    "path": "mse_dat.fil",
+    "size": 54,
+    "sha256": "8ba5e6bbae902062ac02c66a15fca3198b88ffad9819616cc9a0b5203ff15e66"
+  },
+  {
+    "path": "mse_lib.fil",
+    "size": 14560,
+    "sha256": "e6d1754952b57002ea8bd995aa74175bbd85f894cfc8d2aacb71b451a25be2e8"
+  },
+  {
+    "path": "patr.exe",
+    "size": 260752,
+    "sha256": "6588cb7c15a2f58b8df50c26ed31e6927b45a8ed97cb15d55c71823f3253f356"
+  },
+  {
+    "path": "patriz.exe",
+    "size": 2784,
+    "sha256": "568e8d51d5001270e34e91ec2cdb6036d22207f961e51e95298c5f009d796c3b"
+  },
+  {
+    "path": "plaet2.voc",
+    "size": 19719,
+    "sha256": "28629c8791263b7cb7fe4d36c5411913712e26ca0649eaba87b724c54b003a2d"
+  },
+  {
+    "path": "schlacht.exe",
+    "size": 32939,
+    "sha256": "b1cd961ea838e480e4f6d625756040c63c907442654011aa8434e0c185087a75"
+  },
+  {
+    "path": "schnigge.pak",
+    "size": 6423,
+    "sha256": "f36740111a59834c518dd71d7ca0c0c2b2d093273898726cd2e9edb6cf2e30fe"
+  },
+  {
+    "path": "sh_groun.pak",
+    "size": 16559,
+    "sha256": "21f6020d91128dd0652e8447d4a724f43169ab8aa9f162d2d1e6d1a2bbd68ed3"
+  },
+  {
+    "path": "st1_ok.voc",
+    "size": 11880,
+    "sha256": "34f4c1e5f51a4b22ca9aeccc013d4886069e7bc5f036cc53720491c7f93b24f8"
+  },
+  {
+    "path": "st2_ok.voc",
+    "size": 11880,
+    "sha256": "902d5c1ade682375ce334718d191fee2affa745561f75a8b56be2405c92dd731"
+  },
+  {
+    "path": "st3_ok.voc",
+    "size": 11880,
+    "sha256": "2522752c1d09f8742b2003dd6175dc2ea2ac9aebb3f94166793a866503ef1cf6"
+  },
+  {
+    "path": "st4_ok.voc",
+    "size": 11880,
+    "sha256": "722394ef34720202c4b74eea92ab0191b30155a233e4b68555c3e0bcd8980800"
+  },
+  {
+    "path": "stein_ok.voc",
+    "size": 11880,
+    "sha256": "65a7462cf4da6176517a461bfb61b79a984db03d3ead3d46d25f2098bc963966"
+  },
+  {
+    "path": "wrk_dat.fil",
+    "size": 76,
+    "sha256": "f25175e13ad4f443e1eed471a2a5714efc62ead4a26e08eaebb794ddda770f3e"
+  },
+  {
+    "path": "wrk_lib.fil",
+    "size": 51986,
+    "sha256": "e6369a7fbfd3f83cc59785fa8c11eb200688dd09e412f7741b2e56c6d4aadf60"
+  }
+]

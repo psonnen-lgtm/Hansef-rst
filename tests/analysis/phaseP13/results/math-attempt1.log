@@ -1,0 +1,9 @@
+PASS population tiers, shortage severity and all requested sizes
+PASS two real consecutive days, no price-alone or special-event crisis
+PASS self-created shortage and earlier public consumption correction
+PASS calendar alone, election and new year never refill existing or unchanged needs
+PASS recovery plus fresh shortage can reopen; minimum measured since delivery
+PASS rolling budget survives year changes and counts reserved not only consumed
+PASS one shared pool for different suppliers, IDs and delivery modes
+PASS split amounts, finite receipts and known price/cost arithmetic
+PASS little cash and normal market supply are finite

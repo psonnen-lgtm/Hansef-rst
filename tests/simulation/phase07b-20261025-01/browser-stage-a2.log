@@ -1,0 +1,10 @@
+PASS luebeck 390
+PASS bergen 390
+PASS bruegge 390
+PASS luebeck 820
+PASS bergen 820
+PASS bruegge 820
+PASS luebeck 1280
+PASS bergen 1280
+PASS bruegge 1280
+11 city viewport/lifecycle groups passed

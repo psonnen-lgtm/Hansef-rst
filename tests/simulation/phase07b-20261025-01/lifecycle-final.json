@@ -1,0 +1,61 @@
+{
+  "scope": "native Chromium touch, controlled lifecycle/failure, no complete careers",
+  "testedGameCommit": "cc2bc625a6b489841fe7e2aebce90e8ae794aba4",
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "actual touch drag 6",
+      "passed": true,
+      "before": 272,
+      "after": 441,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "actual touch drag 8",
+      "passed": true,
+      "before": 274,
+      "after": 403,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "actual touch drag 9",
+      "passed": true,
+      "before": 272,
+      "after": 401,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "actual touch drag 10",
+      "passed": true,
+      "before": 272,
+      "after": 401,
+      "noAccidentalAction": true
+    },
+    {
+      "name": "system reduced-motion preference in Bruges",
+      "passed": true
+    },
+    {
+      "name": "bounded CPU throttle",
+      "passed": true,
+      "rate": 4,
+      "renderedFrames": 23,
+      "frameMS": {
+        "samples": 94,
+        "median": 0.3999999910593033,
+        "p95": 2.9000000059604645,
+        "max": 6.700000002980232
+      },
+      "scope": "desktop Chromium canvas JS only"
+    },
+    {
+      "name": "controlled document visibility pause",
+      "passed": true
+    },
+    {
+      "name": "image fallback scoped to one city; Luebeck still uses shared stage",
+      "passed": true
+    }
+  ],
+  "errors": []
+}

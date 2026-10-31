@@ -1,0 +1,20 @@
+{
+  "scope": "lossless format conversion only; no resizing, recolouring or image editing",
+  "encoder": "Pillow 12.3.0",
+  "files": [
+    {
+      "source": "nowgorod-1350.png",
+      "encoded": "nowgorod-1350.webp",
+      "size": [
+        1536,
+        1024
+      ],
+      "sourceBytes": 4058885,
+      "encodedBytes": 2773698,
+      "sourceSHA256": "8030a2e992b00069f546bee960d68aaf19f80e759e5031ca209a65a6390e14d0",
+      "encodedSHA256": "9d7f8dc5fcd138878b786beec3a5604b3a29148ed50f6e7cd9222f251268abe7",
+      "decodedRGBA256": "6806855dc6cc741ddaf707e7e65033dd5a696f012fe5daf571977de03bf2ea73",
+      "allDecodedPixelsIdentical": true
+    }
+  ]
+}

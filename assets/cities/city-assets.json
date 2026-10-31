@@ -1,0 +1,15 @@
+{
+  "luebeck": "assets/cities/luebeck/luebeck-1350.webp",
+  "cog": "assets/cities/luebeck/cog.webp",
+  "bergen": "assets/cities/bergen/bergen-1350.webp",
+  "bruegge": "assets/cities/bruegge/bruegge-1350.webp",
+  "riverboat": "assets/cities/shared/river-barge.webp",
+  "hamburg": "assets/cities/hamburg/hamburg-1350.webp",
+  "rostock": "assets/cities/rostock/rostock-1350.webp",
+  "stralsund": "assets/cities/stralsund/stralsund-1350.webp",
+  "stettin": "assets/cities/stettin/stettin-1350.webp",
+  "danzig": "assets/cities/danzig/danzig-1350.webp",
+  "visby": "assets/cities/visby/visby-1350.webp",
+  "nowgorod": "assets/cities/nowgorod/nowgorod-1350.webp",
+  "venlo": "assets/cities/venlo/venlo-1350.webp"
+}

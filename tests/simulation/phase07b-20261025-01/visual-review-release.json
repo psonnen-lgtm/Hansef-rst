@@ -1,0 +1,25 @@
+{
+  "scope": "assistant visual inspection of actual Chromium screenshots, not user approval or physical device acceptance",
+  "testedGameCommit": "2c3d0ad53eba0d931616b5e96a8fdcc78621d85c",
+  "allElevenDesktopCompositionsInspected": true,
+  "correctedCityDesktopScreensReinspected": [
+    "stralsund",
+    "danzig",
+    "visby"
+  ],
+  "specialMobileScreensInspected": [
+    "bergen",
+    "bruegge",
+    "nowgorod",
+    "venlo"
+  ],
+  "gatePublishedBeforeEightFurtherGraphics": true,
+  "verdict": "ready for first shared user visual review with limitations",
+  "limitations": [
+    "flat overlays do not fully occlude workers behind scenery",
+    "some merchant functions need place labels",
+    "stylised historical architecture and bath courtyards, not archaeological reconstruction",
+    "phone intentionally shows a horizontally movable detail",
+    "native local offline and physical Safari hardware not tested"
+  ]
+}

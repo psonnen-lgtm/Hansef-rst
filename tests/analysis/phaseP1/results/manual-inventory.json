@@ -1,0 +1,18 @@
+{
+  "method": "read-only text inspection, no gameplay or migration",
+  "automaticallyMatchedRankLines": 31,
+  "additionalLiteralRankFields": [
+    {
+      "line": 110,
+      "function": "fresh",
+      "kind": "rank:0"
+    },
+    {
+      "line": 337,
+      "function": "migrateFiveCitySave",
+      "kind": "rank string field copied from old ship save"
+    }
+  ],
+  "combinedRankLegacyLines": 33,
+  "conclusion": "manual literal-field completion supplements regex, no analyzer/rules modified"
+}

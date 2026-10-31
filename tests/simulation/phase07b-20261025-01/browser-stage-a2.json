@@ -1,0 +1,212 @@
+{
+  "scope": "actual Chromium city navigation; direct new starts and bounded UI/route fixtures, not full economic games",
+  "stage": "stage-a",
+  "testedGameCommit": "50bbb7d2e96a2fc2f82e290b9b8d76689ff199c2",
+  "gameSHA256": "07e99b7da39dfde7a7eaf7fd36ea844313745acdea6ce8063413810e963f3fd7",
+  "browser": "154.0.8037.57",
+  "checks": [
+    {
+      "name": "Lübeck 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 390",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Lübeck 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 820",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Lübeck 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Bergen 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "Brügge 1280",
+      "passed": true,
+      "entrances": 11,
+      "overlaps": 0,
+      "framesAdvanced": true,
+      "rngCalls": 0,
+      "saveExact": true,
+      "paused": true
+    },
+    {
+      "name": "actual city roundtrip",
+      "passed": true,
+      "route": [
+        0,
+        6,
+        8,
+        0
+      ]
+    },
+    {
+      "name": "bounded repeated city switches keep singleton",
+      "passed": true,
+      "switches": 36,
+      "before": {
+        "roots": 1,
+        "doors": 11,
+        "mounts": 1
+      },
+      "after": {
+        "roots": 1,
+        "doors": 11,
+        "mounts": 1
+      },
+      "maxPending": 1
+    }
+  ],
+  "errors": [],
+  "failedResources": [],
+  "performanceRows": [
+    {
+      "city": "luebeck",
+      "viewport": 390,
+      "samples": 41,
+      "median": 0.3999999910593033,
+      "p95": 1.5,
+      "max": 1.800000011920929
+    },
+    {
+      "city": "bergen",
+      "viewport": 390,
+      "samples": 86,
+      "median": 0.3999999910593033,
+      "p95": 1.2000000029802322,
+      "max": 4.5
+    },
+    {
+      "city": "bruegge",
+      "viewport": 390,
+      "samples": 122,
+      "median": 0.29999999701976776,
+      "p95": 1.199999988079071,
+      "max": 4.5
+    },
+    {
+      "city": "luebeck",
+      "viewport": 820,
+      "samples": 35,
+      "median": 0.29999999701976776,
+      "p95": 0.9000000059604645,
+      "max": 1.5999999940395355
+    },
+    {
+      "city": "bergen",
+      "viewport": 820,
+      "samples": 73,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.5999999940395355
+    },
+    {
+      "city": "bruegge",
+      "viewport": 820,
+      "samples": 108,
+      "median": 0.29999999701976776,
+      "p95": 0.5,
+      "max": 1.5999999940395355
+    },
+    {
+      "city": "luebeck",
+      "viewport": 1280,
+      "samples": 40,
+      "median": 0.30000001192092896,
+      "p95": 0.7000000029802322,
+      "max": 2.2000000029802322
+    },
+    {
+      "city": "bergen",
+      "viewport": 1280,
+      "samples": 78,
+      "median": 0.29999999701976776,
+      "p95": 0.7000000029802322,
+      "max": 2.2000000029802322
+    },
+    {
+      "city": "bruegge",
+      "viewport": 1280,
+      "samples": 116,
+      "median": 0.29999999701976776,
+      "p95": 0.5999999940395355,
+      "max": 2.2000000029802322
+    }
+  ],
+  "screenshots": {
+    "2026-10-25_0.7b_stage-a2-luebeck-390.png": "e74a25c4a5d7c326e22cc3823e6a2d8282c43d212ad094a33cb7ef0b61eadb6b",
+    "2026-10-25_0.7b_stage-a2-bergen-390.png": "e7d8cde88be0ba11ac4ddd4f7386fffe4d5cb5cca2530cd41971051a853a3dd5",
+    "2026-10-25_0.7b_stage-a2-bruegge-390.png": "8f1351f7ce6323a8d8058ee0b264d5b836830457816830caa9b077bc54461208",
+    "2026-10-25_0.7b_stage-a2-luebeck-820.png": "580a98f5a8fef192bc8e3de25eae79d7344f1fa7e42dcebd026fdd86c1276721",
+    "2026-10-25_0.7b_stage-a2-bergen-820.png": "5a4de460d6c5f124830ab89ac4de5f042debb32dd64b5a2956aaad73775c4011",
+    "2026-10-25_0.7b_stage-a2-bruegge-820.png": "111dabe1ea7250183df8f3b829b5fed82de61eecbff62ccb3aa0be65cd7dd8bc",
+    "2026-10-25_0.7b_stage-a2-luebeck-1280.png": "74d8f09223629d491bb8ad14bf8887d6a105042af13b76a632f36137d11ca1ca",
+    "2026-10-25_0.7b_stage-a2-bergen-1280.png": "690e53eb4eb58e41110c156d4ebc9f524133268a222dbf0bd3e3d558211cc3be",
+    "2026-10-25_0.7b_stage-a2-bruegge-1280.png": "ffe221c0460dba95f9713c4e97c819ae72b9aa8ea165e7f2808860f28c7902b9"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "gameCommit": "f667e74459bbd564b7a4a8c8f79ce93c390cb4ce",
+  "programs": [
+    {
+      "command": [
+        "node",
+        "tests/test-v04.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/test-v04-final.log",
+      "tail": " purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/phase1.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/phase1-final.log",
+      "tail": "motion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/telemetry.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/telemetry-final.log",
+      "tail": "PASS opt-in, hidden, unfocused, suspension gap, idle, retention, snapshots, unchanged game, pause and deletion\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/share.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/share-final.log",
+      "tail": "PASS no automatic sharing, native file share, no personal names, cancel, unsupported fallback, rejected fallback\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/warehouse-checks.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/warehouse-checks-final.log",
+      "tail": "y cargo cannot become foreign quest cargo\nPASS genuine foreign cargo remains eligible only on actual sale, pays once\nPASS one-time pre-migration backup stays byte-identical; backup failure propagates\n19 warehouse checks passed; no economy simulation\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/warehouse-cities-checks.cjs"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/warehouse-cities-checks-final.log",
+      "tail": "st-stage original backup\nPASS local or unknown goods do not acquire foreign origin through a city store\nPASS genuine transported foreign goods keep eligibility, only real sale rewards once\n13 multi-city warehouse checks passed; no economy simulation\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/warehouse-capacity-checks.cjs",
+        "tests/simulation/phase06c-20261025-01/capacity-final.json"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/warehouse-capacity-checks-final.log",
+      "tail": "es retain all old data through v8\nPASS rent confirmation cannot reenter or apply a stale offer, and cancellation spends nothing\nPASS year boundary and rent changes consume no random numbers beyond ordinary advance\n17 warehouse capacity groups passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/warehouse-arrears-checks.cjs",
+        "tests/simulation/phase06c-20261025-01/arrears-final.json"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/warehouse-arrears-checks-final.log",
+      "tail": "cargo book values, travel and FIFO source bodies stay exact\nPASS paying one city leaves other city arrears and global locks intact\nPASS maximum valid calendar still has finite exact debt growth without a free-storage ceiling\n19 arrears groups passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/politics-checks.cjs",
+        "tests/simulation/phase06c-20261025-01/politics-final.json"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/politics-checks-final.log",
+      "tail": "schema gate\nPASS rent debt blocks an otherwise complete Hanse candidate without stripping old office titles\nPASS active civic letter cannot reward buy-back washing or warehouse movement; only actual foreign sale earns once\n22 political groups passed\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/politics-concurrency-check.cjs",
+        "tests/simulation/phase06c-20261025-01/concurrency-final.json"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/politics-concurrency-check-final.log",
+      "tail": "PASS concurrent mayor term end, ship completion and one-time harbor work in one staged commit\n"
+    },
+    {
+      "command": [
+        "node",
+        "tests/simulation/politics-post-title-check.cjs",
+        "tests/simulation/phase06c-20261025-01/post-title-final.json"
+      ],
+      "exitCode": 0,
+      "log": "tests/simulation/phase06c-20261025-01/politics-post-title-check-final.log",
+      "tail": "PASS first proven tenure and Eldermann title survive renewed local office, resignation and expiry\n"
+    }
+  ]
+}

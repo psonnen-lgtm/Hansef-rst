@@ -1,0 +1,168 @@
+{
+  "base": "02b87ca4a61ccbeeed5f520c3de483fa6ab7ab3c",
+  "testedGameCommit": "156347b2e8ea34fe78853285b5c9c163c8f51099",
+  "gameSHA256": "7d9ec445a8844e12f0f2bd84c1c8d360e22fcbd22372d180e686ef6a7235ae8a",
+  "browser": "154.0.8037.57",
+  "scope": "four Chromium sizes/touch emulation, bounded actual voyages and isolated synthetic V11 fixtures; no real Apple hardware or full simulations",
+  "checks": [
+    {
+      "name": "fleet and chart 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "nativeInput": "tap",
+      "repeatedHarborSwitchOnlyCityAndActive": true,
+      "noNavigationRNGFeesDaysCargoOrJournalChange": true,
+      "portsTapped": 11,
+      "portsAtLeast44px": true,
+      "chartRegion": {
+        "width": 313,
+        "height": 361,
+        "scrollWidth": 900,
+        "scrollHeight": 560
+      },
+      "explicitSingleAndConvoy": true,
+      "pendingProtected": true,
+      "discardRequiresConfirmation": true,
+      "actualConvoy": {
+        "days": 16,
+        "fee": 15,
+        "remoteShipNotMoved": true
+      },
+      "V11DownloadImportReloadExact": true,
+      "quotaRAMExportRecovery": true,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true
+    },
+    {
+      "name": "fleet and chart 390x844",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "nativeInput": "tap",
+      "repeatedHarborSwitchOnlyCityAndActive": true,
+      "noNavigationRNGFeesDaysCargoOrJournalChange": true,
+      "portsTapped": 11,
+      "portsAtLeast44px": true,
+      "chartRegion": {
+        "width": 328,
+        "height": 458,
+        "scrollWidth": 900,
+        "scrollHeight": 560
+      },
+      "explicitSingleAndConvoy": true,
+      "pendingProtected": true,
+      "discardRequiresConfirmation": true,
+      "actualConvoy": {
+        "days": 16,
+        "fee": 15,
+        "remoteShipNotMoved": true
+      },
+      "V11DownloadImportReloadExact": true,
+      "quotaRAMExportRecovery": false,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true
+    },
+    {
+      "name": "fleet and chart 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "nativeInput": "tap",
+      "repeatedHarborSwitchOnlyCityAndActive": true,
+      "noNavigationRNGFeesDaysCargoOrJournalChange": true,
+      "portsTapped": 11,
+      "portsAtLeast44px": true,
+      "chartRegion": {
+        "width": 738,
+        "height": 554,
+        "scrollWidth": 900,
+        "scrollHeight": 560
+      },
+      "explicitSingleAndConvoy": true,
+      "pendingProtected": true,
+      "discardRequiresConfirmation": true,
+      "actualConvoy": {
+        "days": 16,
+        "fee": 15,
+        "remoteShipNotMoved": true
+      },
+      "V11DownloadImportReloadExact": true,
+      "quotaRAMExportRecovery": false,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true
+    },
+    {
+      "name": "fleet and chart 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "nativeInput": "click",
+      "repeatedHarborSwitchOnlyCityAndActive": true,
+      "noNavigationRNGFeesDaysCargoOrJournalChange": true,
+      "portsTapped": 11,
+      "portsAtLeast44px": true,
+      "chartRegion": {
+        "width": 942,
+        "height": 554,
+        "scrollWidth": 942,
+        "scrollHeight": 560
+      },
+      "explicitSingleAndConvoy": true,
+      "pendingProtected": true,
+      "discardRequiresConfirmation": true,
+      "actualConvoy": {
+        "days": 16,
+        "fee": 15,
+        "remoteShipNotMoved": true
+      },
+      "V11DownloadImportReloadExact": true,
+      "quotaRAMExportRecovery": false,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_vorher-375.png",
+      "sha256": "df7d5ba300eb4ef4dc5e7e5f11a25fe0b266d62cad1aad0ca17e475b18179818"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_seekarte-375.png",
+      "sha256": "020ecded1b3551153c32d4961971d207ea0add2073bddb3ba0d12f19d541502e"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_hafen-bruegge-390.png",
+      "sha256": "f5ea8d9a818740dc60871beac0db675f45129f7c04a2fbb68ee53244dd5b475a"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_seekarte-390.png",
+      "sha256": "44c26bafca64b7142f7bfe7a965bdea973fe5a2b92f2331fe9c1a873fbce8e06"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_konvoi-vorbereitung-390.png",
+      "sha256": "87b937ff8a5e0b288e3405319d5c45c4c7bd7295a328160525124681d5336c29"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_seekarte-820.png",
+      "sha256": "5418e13f8e1680ec61647b24b70afe49f95bcb5f5097da715ff85d4e14b18a80"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_vorher-1280.png",
+      "sha256": "dcc26ddc1a257e5d37d45df912ee90a5474761b2475bd55bf49c8f50062ebc7a"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8c2b_attempt1_seekarte-1280.png",
+      "sha256": "18d0e9b01bc90de4873ef91f89404d3736fd49aa95f610cc97e033032cf502ee"
+    }
+  ]
+}

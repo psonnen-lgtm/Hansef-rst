@@ -1,0 +1,9 @@
+{
+  "testedGameCommit": "2c3d0ad53eba0d931616b5e96a8fdcc78621d85c",
+  "archive": "releases/hansefuerst-0.7b-assets.zip",
+  "archiveSHA256": "e53cdd57d21c7a49e4752f24d91ab62817516132bfb90324748446dc29e21318",
+  "checkedManifestFiles": 15,
+  "allHashesExact": true,
+  "zipCRCValid": true,
+  "canonicalSHA256": "df5eb30f953d9c2626b4403a93ed042642cee63c8c70d79556e49c10637bbb3e"
+}

@@ -1,0 +1,118 @@
+{
+  "gameCommit": "5c9c77c07bfc558fee4db0067d4d2b0d24e2b9e1",
+  "gameSHA256": "0251b3e0f6fb23c2e33f9e5e831f6f714f96a120ed74c9d10fb2045871f5e1e0",
+  "checks": [
+    {
+      "command": "node tests/test-v04.cjs",
+      "exit": 0,
+      "stdout": "PASS fresh save validates\nPASS invalid v3 rejected\nPASS negative gold rejected\nPASS v3 assigns all ship locations\nPASS legacy cargo has unknown cost\nPASS malformed cargo rejected\nPASS credit does not grow with borrowing\nPASS single arrival moves only chosen ship and cannot repeat\nPASS remote cargo cannot be traded\nPASS quest completion waits five days for new offer\nPASS expired quest gives no reward\nPASS unknown cost survives mixed purchase\nPASS known weighted purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n",
+      "stderr": "",
+      "seconds": 0.09501377000560751
+    },
+    {
+      "command": "node tests/phase1.cjs",
+      "exit": 0,
+      "stdout": "PASS preview and reopening use no random draw\nPASS arrival rolls once and repeated arrival is inert\nPASS same-place wash sale cannot fulfil quest\nPASS foreign delivery fulfils quest\nPASS mixed FIFO cargo cannot multiply eligible goods\nPASS legacy cargo is retained but not invented as foreign\nPASS piracy consumes proven origin too\nPASS origins and book values survive save and reload\nPASS same duration has equal interest across year boundary\nPASS full year effective rates remain two and six percent\nPASS no time means no interest\nPASS migration does not backcharge interest or demote\nPASS unrealised gain cannot increase worth or credit\nPASS unrealised gain cannot cross promotion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n",
+      "stderr": "",
+      "seconds": 0.17594898700190242
+    },
+    {
+      "command": "node tests/telemetry.cjs",
+      "exit": 0,
+      "stdout": "PASS opt-in, hidden, unfocused, suspension gap, idle, retention, snapshots, unchanged game, pause and deletion\n",
+      "stderr": "",
+      "seconds": 0.05485632699856069
+    },
+    {
+      "command": "node tests/share.cjs",
+      "exit": 0,
+      "stdout": "PASS no automatic sharing, native file share, no personal names, cancel, unsupported fallback, rejected fallback\n",
+      "stderr": "",
+      "seconds": 0.04593808400386479
+    },
+    {
+      "command": "node tests/simulation/edges.cjs",
+      "exit": 0,
+      "stdout": "PASS credit cannot compound through loans\nPASS same-city roundtrip gives no trading profit\nPASS weapons cannot overload ship\nPASS convoy uses slowest ship\nPASS piracy destroys at most available cargo\nPASS defended piracy preserves cargo\nPASS daily interest uses declared annual rates\nPASS special rumor expires on advance\nPASS negative gold save rejected\nPASS negative or excessive cargo rejected\nPASS FIXED: preview cannot reroll hazards\nPASS FIXED: cheap purchases do not inflate rank wealth\nPASS FIXED: year end grants only one day interest\nPASS KNOWN: repair fee independent of hull type\n14 deterministic mechanism checks passed\n",
+      "stderr": "",
+      "seconds": 0.07632820100116078
+    },
+    {
+      "command": "node tests/simulation/warehouse-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS store, load and partial amounts conserve quantities and cargo capacity\nPASS overdraws and invalid quantities leave the complete state unchanged\nPASS withdrawal cannot exceed free capacity, including armed ship capacity\nPASS no local or remote ship can use a warehouse from another city\nPASS FIFO city and unknown origins split and append without relabelling\nPASS weighted purchase costs and total book value survive different-cost merging\nPASS unknown acquisition costs remain unknown; conservative book basis is conserved\nPASS mixing known and unknown lots retains conservative total book basis\nPASS transfer changes no gold, bank, debt, markets, rank, quests, day or RNG\nPASS warehouse value does not follow market-price inflation\nPASS repeated transfers keep exact quantity and FIFO count without duplication\nPASS stock can move to another owned ship in Luebeck\nPASS old v4 state migration adds only empty storage after existing normalizations\nPASS warehouse save/load round-trip preserves cost, origin and quantities\nPASS invalid warehouse data is rejected, never silently emptied\nPASS local cargo cannot become foreign quest cargo by warehousing\nPASS unknown legacy cargo cannot become foreign quest cargo\nPASS genuine foreign cargo remains eligible only on actual sale, pays once\nPASS one-time pre-migration backup stays byte-identical; backup failure propagates\n19 warehouse checks passed; no economy simulation\n",
+      "stderr": "",
+      "seconds": 0.12821545000042534
+    },
+    {
+      "command": "node tests/simulation/warehouse-cities-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS five distinct stores, all five cities deposit/withdraw independently\nPASS only actual ship transport changes access to goods in another city\nPASS FIFO provenance and weighted acquisition/book values survive three city visits\nPASS remote active ships cannot transfer or be selected in any city\nPASS multiple local ships can use only the current city store\nPASS capacity, cash, markets, worth and RNG protections in every city\nPASS no-storage old saves gain five empty stores without changing economic fields\nPASS Luebeck-only saves keep all lots/costs; four other stores are added empty\nPASS 100 save/load cycles retain all city stores without multiplication or loss\nPASS malformed existing stores and invalid city/good/magnitude inputs never get repaired\nPASS partial migration backup is distinct and never replaces first-stage original backup\nPASS local or unknown goods do not acquire foreign origin through a city store\nPASS genuine transported foreign goods keep eligibility, only real sale rewards once\n13 multi-city warehouse checks passed; no economy simulation\n",
+      "stderr": "",
+      "seconds": 0.15239353200013284
+    },
+    {
+      "command": "node tests/simulation/four-goods-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS seven legacy identities untouched; four append-only identities and symbols distinct\nPASS new-game ranges valid for all cells; old initial market prefix retains original draws\nPASS legacy seven-good migration: none\nPASS legacy seven-good migration: luebeck\nPASS legacy seven-good migration: all\nPASS migration is deterministic, consumes no RNG for v4, and survives 100 save/load cycles\nPASS corrupt/incomplete seven- or eleven-good data is rejected without mutating input\nPASS all 55 city/good combinations buy and sell at unchanged immediate unit price\nPASS four new goods transfer through all five stores with no gold/book-value gain\nPASS mixed legacy/new cargo cannot exceed existing capacity\nPASS actual transport preserves new-goods foreign origin and costs\nPASS daily formula unchanged, all 55 cells evolve validly and seeded paths replay exactly\nPASS same-seed mixed market/trade/storage journeys produce identical states and events\nPASS offer pool and probabilities match old function for identical RNG stream\nPASS new local goods cannot fulfil old offer or forge foreign origin via storage\nPASS separate migration backup never overwrites original backups; write failure propagates\n16 goods/migration checks passed; no economy simulation\n",
+      "stderr": "",
+      "seconds": 0.5861981889975141
+    },
+    {
+      "command": "node tests/simulation/city-v6-migration-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS v5 five filled stores, ships, all markets and finance survive append-only migration\nPASS v3/v4 historical 5x7, missing and Luebeck-only storage supported\nPASS v1 legacy conversion still reaches complete v6\nPASS v6 round trip 100 times is exact and consumes no random values\nPASS broken old/new arrays, invalid references and bad warehouse data are rejected\nPASS separate original city backup is never overwritten; failures propagate\n6 v6 migration checks passed\n",
+      "stderr": "",
+      "seconds": 0.2829453889935394
+    },
+    {
+      "command": "node tests/simulation/eleven-cities-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS stable eleven city/good identities and exact historical 5x5 distances\nPASS 330 actual directed journeys: all pairs, all types, one fee/event and no repeat arrival\nPASS convoy uses slowest damaged ship and excludes remote vessel\nPASS Nowgorod and Venlo have explicit inland descriptions and three days per inland endpoint\nPASS schematic sea segments stay outside drawn mainland; river access is separately marked\nPASS 121 market cells: round trip buy/sell/storage preserves gold, quantity, costs, origins and worth\nPASS all six new quest cities offer allowed goods with feasible conservative return deadlines\nPASS new destination foreign deliveries reward once; local stock and storage cannot qualify\nPASS 400 days keep every market valid; same seed mixed journeys replay exactly\n9 eleven-city rule groups passed; 330 journeys, 121 markets; no large simulation\n",
+      "stderr": "",
+      "seconds": 1.3041397240012884
+    },
+    {
+      "command": "node tests/simulation/eleven-cities-compat-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS unchanged trade, FIFO, warehouse, bank, ship and promotion rule bodies exactly match base\nPASS old 60 routes at condition 67 preserve base previews, states, events and next random number\nPASS legacy event effects remain identical for storms, pirates, defence and calm sea\nPASS all invalid actions are inert and consume no RNG at the actual eleven-city boundary\n4 current compatibility groups passed; historical snapshot files preserved\n",
+      "stderr": "",
+      "seconds": 0.4516675870036124
+    },
+    {
+      "command": "node tests/simulation/optimized-delivery-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS source guard permits exact counter/route/catalog-loop edits; delivery game rules unchanged\nPASS existing four historical source guards still execute without running their simulations\nPASS foreign shipment earns exact premium and counters on automatic final sale\nPASS any other source city is allowed; no fixed source rule exists\nPASS wrong destination cannot earn reward\nPASS same-city buy/sell cannot earn reward\nPASS unknown legacy origin cannot earn reward\nPASS expired order cannot earn reward\nPASS delivery at exact deadline is valid\nPASS mixed local and foreign cargo cannot inflate foreign quantity\nPASS split sales cannot sum to an order\nPASS piracy consumes origin proof and blocks insufficient delivery\nPASS one order pays once even after a second eligible shipment\nDETAIL controlled probe: 1 rewards / 300 gold; 13 trips; historical five-destination route comparison unchanged\nPASS 12-decision controlled foreign-cargo optimized probe: live offers/counters and exact replay\nPASS integrated short run enforces both counters against actual reward events\nPASS historical parity permits only corrected counters and rejects other drift\n16 targeted checks passed; 4 controlled probes x at most 12 decisions; additional zero-decision counter-rejection fixtures, no large simulation\n",
+      "stderr": "",
+      "seconds": 0.648164705002273
+    },
+    {
+      "command": "node tests/simulation/price-rounding-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS non-market advance effects preserved around the intentional regional cell replacement\nPASS 4 can rise; floor prevents downward movement\nPASS 5 through 8 can move both directions or remain unchanged\nPASS finite positive integers, floor, and exact old behavior for every sampled price >=9\nDETAIL conditional update means: 4 => +0.25; 5..9 => 0. Daily at 4: +0.0875 with unchanged 35% gate.\nPASS no interior directional bias; floor boundary effect explicitly measured\nDETAIL seed 1: 800-day price range 4..282\nDETAIL seed 42: 800-day price range 4..302\nDETAIL seed 10001: 800-day price range 4..270\nDETAIL seed 10250: 800-day price range 4..297\nPASS 800 days across all 121 market cells; seeded trajectories repeat exactly\nDETAIL 800-day RNG calls old=new: 227418\nPASS old/new random call counts and non-market world changes match over 800 days\nPASS actual historical v4 startup preserves old markets/cargo/finance and reloads as v6\nPASS v3 startup migration retains prior backup, reaches v6 without a rounding field\nPASS loaded low-price save evolves with v7 regional schema\n10 price/save checks passed; controlled daily updates only, no economy run\n",
+      "stderr": "",
+      "seconds": 1.915079151003738
+    },
+    {
+      "command": "node tests/simulation/integration-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS registry, real observation snapshots, rejection of invented quotes/local prices, remote-read fence, delivery quote provenance, oracle labels\n",
+      "stderr": "",
+      "seconds": 0.05044125200220151
+    },
+    {
+      "command": "node tests/simulation/ship-sale-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS all three types: exact offers, payout and book value delta at six hull conditions\nPASS all existing hull percentages: resale below book/purchase and no repair-before-sale profit\nPASS loaded ships including unknown FIFO cargo cannot be sold or silently emptied\nPASS real warehouse unloading enables sale while retaining origins costs and quantity ashore\nPASS cashless owner of two local ships can sell a spare and pay for a real departure\nPASS last global vessel stays blocked even with travel cash missing or zero hull condition\nPASS remote spare vessel cannot justify selling the last local vessel; no teleport\nPASS a valid zero-condition local spare still travels under unchanged existing rules\nPASS foreign harbor, unknown/stale IDs and nonnumeric ID inputs are inert\nPASS explicit confirmation states offer and consequences; cancellation preserves fleet and pending convoy\nPASS reentrant confirmation cannot pay twice; index reuse never sells another ship\nPASS quote or cargo changes while confirmation is open require a fresh approval\nPASS active array indices stay valid when selling active or earlier non-active vessels\nPASS convoy preview is invalidated; replan contains only remaining local ships and charges once\nPASS repeated buy/sell cycles lose cash and create no credit, days or promotion gains\nPASS existing debts remain exact, repayment is not automatic and credit follows unchanged worth\nPASS unbound delivery orders survive a sale and can still be completed by the remaining vessel\nPASS the v6 gold upper bound is protected without mutating the state\nPASS save/reload after sales preserves v7, all city indices, remaining cargo and ashore goods\nPASS real pre-sale-version v6 saves retain every old field on explicit v7 upgrade\nPASS protected economic formulas and old v6 migration remain byte-identical to current base\nPASS quote display, blocked actions, confirmation and successful sales consume no random values\n22 focused ship-sale groups passed; no large simulation\n",
+      "stderr": "",
+      "seconds": 0.3217122330024722
+    },
+    {
+      "command": "node tests/simulation/harbor-work-checks.cjs",
+      "exit": 0,
+      "stdout": "PASS actual exhausted credit and cash qualify; exactly 3 days, 20 gold, one durable used marker\nPASS all hulls use their own actual single-ship fee, including zero condition\nPASS local cheapest ship is selectable; do not confuse convoy cost or a remote active ship\nPASS actual fractional bank withdrawals are available before harbor work\nPASS only actual integer borrowing room counts, not unavailable fractional headroom\nPASS local ship goods and local warehouse goods are directly usable; remote stocks are not\nPASS even a small local remainder must first be sold; actual result is rechecked\nPASS a full local hold does not make warehouse goods inaccessible; sell and unload normally\nPASS a sellable local spare blocks the aid; actual sale funds departure\nPASS normal markets, exact 6% interest and year boundary match advance(3), with no cargo loss\nPASS remote cargo FIFO and all eleven warehouses retain quantities/costs/identities during work\nPASS one-shot survives 100 save/load cycles and serialization/import migration\nPASS cancel and reentrant confirmation never pay or duplicate\nPASS conditions changed during confirmation are rechecked without undoing outside actions\nPASS mid-advance failure rolls back all state, saves and buffered interest without consuming the right\nPASS failed atomic storage write pays nothing, preserves original state and permits safe retry\nPASS UI or telemetry failure after durable commit cannot reset the marker or pay a second time\nPASS huge valid debt that would exceed saved limits aborts instead of storing invalid values\nPASS old v6 data keeps all fields; absent/false markers grant eligibility and invalid markers reject\nPASS no amount input or argument can multiply wages; invalid cash never qualifies\nPASS no new credits ships goods distances or career formulas; regional time is separately tested\n21 harbor-work groups passed; no large simulation\n",
+      "stderr": "",
+      "seconds": 0.3195691560031264
+    }
+  ]
+}

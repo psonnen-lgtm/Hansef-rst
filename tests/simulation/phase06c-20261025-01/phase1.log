@@ -1,0 +1,19 @@
+PASS preview and reopening use no random draw
+PASS arrival rolls once and repeated arrival is inert
+PASS same-place wash sale cannot fulfil quest
+PASS foreign delivery fulfils quest
+PASS mixed FIFO cargo cannot multiply eligible goods
+PASS legacy cargo is retained but not invented as foreign
+PASS piracy consumes proven origin too
+PASS origins and book values survive save and reload
+PASS same duration has equal interest across year boundary
+PASS full year effective rates remain two and six percent
+PASS no time means no interest
+PASS migration does not backcharge interest or demote
+PASS unrealised gain cannot increase worth or credit
+PASS unrealised gain cannot cross promotion threshold
+PASS realised gain does increase rank and worth
+PASS legacy unknown book value is fixed after migration
+PASS weighted cost handles partial sales
+PASS fractional balances can be fully withdrawn or repaid
+18 phase-1 regressions passed

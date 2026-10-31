@@ -1,0 +1,1911 @@
+{
+  "metrics": {
+    "id": "nowgorod-bruegge-81001-largeCashLimited90-B2",
+    "seed": 81001,
+    "route": "nowgorod-bruegge",
+    "policy": "largeCashLimited90",
+    "model": "B2",
+    "initialHash": "19d10e44f6836f400476193c96995442cd76bebfe5e642c5326fae4aacea1d73",
+    "initialGameHash": "c648bc175d103a964095ba21dcc11d28698dfe6c5d56104c53da3097a8a8644b",
+    "stop": "nextTripExceeds120",
+    "trips": 3,
+    "days": 93,
+    "decisions": 6,
+    "bought": 174,
+    "sold": 174,
+    "buyCost": 17086,
+    "revenue": 22051,
+    "realizedProfit": 4965,
+    "fees": 18,
+    "pirateBookLoss": 0,
+    "net": 4947,
+    "profitPerSoldBarrel": 28.53448275862069,
+    "profitPerDay": 53.38709677419355,
+    "netPerDay": 53.193548387096776,
+    "cash": 9947,
+    "minimumCash": 123,
+    "netWorth": 14907,
+    "politicalWorth": 14907,
+    "debt": 0,
+    "bank": 0,
+    "creditUsed": 0,
+    "creditAvailable": 6708,
+    "openInventoryCost": 0,
+    "openInventory": 0,
+    "freeHold": 90,
+    "negativeSales": 0,
+    "emptyTrips": 0,
+    "goldConstrainedPurchases": 1,
+    "zeroPurchasesForGold": 0,
+    "failedExecutedPurchases": 0,
+    "endCanPayFee": true,
+    "meanUnusedHold": 32,
+    "travelBlock": false,
+    "economicDeadEndProven": false,
+    "informationCosts": 0,
+    "rep": 9,
+    "rank": 0,
+    "lettersGenerated": 6,
+    "condition": 100,
+    "goods": [
+      "Tuch",
+      "Pelze"
+    ],
+    "goodsSold": {
+      "Pelze": 84,
+      "Tuch": 90
+    },
+    "rng": {
+      "state": 629361830,
+      "draws": 26665
+    }
+  },
+  "legs": [
+    {
+      "trip": 1,
+      "decisionInput": {
+        "city": 9,
+        "good": 10,
+        "stock": 67,
+        "initialPrice": 123,
+        "cash": 5000,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 67,
+      "constrainedByGold": true,
+      "arrivedMarket": {
+        "price": 156,
+        "stock": 22
+      },
+      "quote": {
+        "total": 4877,
+        "average": 125.05128205128206,
+        "quantity": 39,
+        "stockAfter": 28
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": null,
+        "good": "Pelze",
+        "quantity": 39,
+        "unitPrice": 125.05128205128206,
+        "total": 4877,
+        "averageCost": 125.05128205128206
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v29-v4eiy4yy7z",
+        "good": "Pelze",
+        "quantity": 39,
+        "unitPrice": 154.23076923076923,
+        "total": 6015,
+        "averageCost": 125.05128205128206,
+        "profit": 1138
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v29-v4eiy4yy7z",
+        "from": "Nowgorod",
+        "to": "Brügge",
+        "days": 31,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "10": 39
+            },
+            "costs": {
+              "10": 125.05128205128206
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 9,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "10": 39
+        },
+        "costs": {
+          "10": 125.05128205128206
+        },
+        "origins": {
+          "10": [
+            {
+              "city": 9,
+              "n": 39
+            }
+          ]
+        },
+        "bookCosts": {
+          "10": 125.05128205128206
+        }
+      },
+      "elapsed": 31,
+      "cash": 6132,
+      "free": 90
+    },
+    {
+      "trip": 2,
+      "decisionInput": {
+        "city": 8,
+        "good": 5,
+        "stock": 116,
+        "initialPrice": 56,
+        "cash": 6132,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 90,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 85,
+        "stock": 28
+      },
+      "quote": {
+        "total": 5346,
+        "average": 59.4,
+        "quantity": 90,
+        "stockAfter": 26
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v29-v4eiy4yy7z",
+        "good": "Tuch",
+        "quantity": 90,
+        "unitPrice": 59.4,
+        "total": 5346,
+        "averageCost": 59.4
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2a-qzeryku6457",
+        "good": "Tuch",
+        "quantity": 90,
+        "unitPrice": 81.56666666666666,
+        "total": 7341,
+        "averageCost": 59.4,
+        "profit": 1995
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2a-qzeryku6457",
+        "from": "Brügge",
+        "to": "Nowgorod",
+        "days": 31,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "5": 90
+            },
+            "costs": {
+              "5": 59.4
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 8,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "5": 90
+        },
+        "costs": {
+          "5": 59.4
+        },
+        "origins": {
+          "5": [
+            {
+              "city": 8,
+              "n": 90
+            }
+          ]
+        },
+        "bookCosts": {
+          "5": 59.4
+        }
+      },
+      "elapsed": 62,
+      "cash": 8121,
+      "free": 90
+    },
+    {
+      "trip": 3,
+      "decisionInput": {
+        "city": 9,
+        "good": 10,
+        "stock": 45,
+        "initialPrice": 151,
+        "cash": 8121,
+        "free": 90,
+        "reserve": 6
+      },
+      "desired": 45,
+      "constrainedByGold": false,
+      "arrivedMarket": {
+        "price": 196,
+        "stock": 24
+      },
+      "quote": {
+        "total": 6863,
+        "average": 152.51111111111112,
+        "quantity": 45,
+        "stockAfter": 0
+      },
+      "buy": {
+        "type": "buy",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2a-qzeryku6457",
+        "good": "Pelze",
+        "quantity": 45,
+        "unitPrice": 152.51111111111112,
+        "total": 6863,
+        "averageCost": 152.51111111111112
+      },
+      "sale": {
+        "type": "sell",
+        "shipId": 1700000000000.827,
+        "routeId": "loyw3v2b-twktwle8l3",
+        "good": "Pelze",
+        "quantity": 45,
+        "unitPrice": 193.22222222222223,
+        "total": 8695,
+        "averageCost": 152.51111111111112,
+        "profit": 1832
+      },
+      "travel": {
+        "type": "travel",
+        "routeId": "loyw3v2b-twktwle8l3",
+        "from": "Nowgorod",
+        "to": "Brügge",
+        "days": 31,
+        "fee": 6,
+        "event": null,
+        "ships": [
+          {
+            "id": 1700000000000.827,
+            "cargo": {
+              "10": 45
+            },
+            "costs": {
+              "10": 152.51111111111112
+            },
+            "condition": 100
+          }
+        ],
+        "activeMs": 0
+      },
+      "pirateBookLoss": 0,
+      "cargoBefore": {
+        "id": 1700000000000.827,
+        "name": "Kogge",
+        "type": 1,
+        "city": 9,
+        "capacity": 90,
+        "speed": 1,
+        "condition": 100,
+        "arms": 0,
+        "cargo": {
+          "10": 45
+        },
+        "costs": {
+          "10": 152.51111111111112
+        },
+        "origins": {
+          "10": [
+            {
+              "city": 9,
+              "n": 45
+            }
+          ]
+        },
+        "bookCosts": {
+          "10": 152.51111111111112
+        }
+      },
+      "elapsed": 93,
+      "cash": 9947,
+      "free": 90
+    }
+  ],
+  "events": [
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": null,
+      "good": "Pelze",
+      "quantity": 39,
+      "unitPrice": 125.05128205128206,
+      "total": 4877,
+      "averageCost": 125.05128205128206
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v29-v4eiy4yy7z",
+      "from": "Nowgorod",
+      "to": "Brügge",
+      "days": 31,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "10": 39
+          },
+          "costs": {
+            "10": 125.05128205128206
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v29-v4eiy4yy7z",
+      "good": "Pelze",
+      "quantity": 39,
+      "unitPrice": 154.23076923076923,
+      "total": 6015,
+      "averageCost": 125.05128205128206,
+      "profit": 1138
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v29-v4eiy4yy7z",
+      "good": "Tuch",
+      "quantity": 90,
+      "unitPrice": 59.4,
+      "total": 5346,
+      "averageCost": 59.4
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2a-qzeryku6457",
+      "from": "Brügge",
+      "to": "Nowgorod",
+      "days": 31,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "5": 90
+          },
+          "costs": {
+            "5": 59.4
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2a-qzeryku6457",
+      "good": "Tuch",
+      "quantity": 90,
+      "unitPrice": 81.56666666666666,
+      "total": 7341,
+      "averageCost": 59.4,
+      "profit": 1995
+    },
+    {
+      "type": "buy",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2a-qzeryku6457",
+      "good": "Pelze",
+      "quantity": 45,
+      "unitPrice": 152.51111111111112,
+      "total": 6863,
+      "averageCost": 152.51111111111112
+    },
+    {
+      "type": "travel",
+      "routeId": "loyw3v2b-twktwle8l3",
+      "from": "Nowgorod",
+      "to": "Brügge",
+      "days": 31,
+      "fee": 6,
+      "event": null,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "cargo": {
+            "10": 45
+          },
+          "costs": {
+            "10": 152.51111111111112
+          },
+          "condition": 100
+        }
+      ],
+      "activeMs": 0
+    },
+    {
+      "type": "sell",
+      "shipId": 1700000000000.827,
+      "routeId": "loyw3v2b-twktwle8l3",
+      "good": "Pelze",
+      "quantity": 45,
+      "unitPrice": 193.22222222222223,
+      "total": 8695,
+      "averageCost": 152.51111111111112,
+      "profit": 1832
+    }
+  ],
+  "end": {
+    "analysisOnly": true,
+    "model": "B2",
+    "parameter": 350,
+    "gameHash": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "game": {
+      "v": 13,
+      "information": {
+        "version": 2,
+        "archive": null,
+        "reports": [],
+        "filed": [],
+        "letters": {
+          "version": 1,
+          "since": 486001,
+          "index": 6,
+          "lastDay": 486080,
+          "nextDay": 486099,
+          "offer": {
+            "id": "letter:486001:6",
+            "serial": 6,
+            "source": "sealed_letter",
+            "city": 8,
+            "goods": [
+              {
+                "good": 4,
+                "price": 25,
+                "band": "ordinary"
+              },
+              {
+                "good": 9,
+                "price": 67,
+                "band": "abundant"
+              }
+            ],
+            "reportedAt": 486080,
+            "offeredAt": 486080,
+            "until": 486082,
+            "cost": 60
+          },
+          "receipts": [],
+          "filed": [],
+          "archiveFirstReceipt": null
+        }
+      },
+      "politics": {
+        "version": 1,
+        "since": 486001,
+        "rules": {
+          "sectionDays": 60,
+          "mayorWealth": 45000
+        },
+        "legacyRank": 0,
+        "records": [],
+        "issued": [
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          },
+          {
+            "supply": -1,
+            "accord": -1
+          }
+        ],
+        "jobs": [],
+        "office": null,
+        "terms": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "appointments": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "nextElection": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "endorsements": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "league": null,
+        "leagueIssued": [
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "elderman": null
+      },
+      "shipyard": {
+        "version": 1,
+        "nextId": 1,
+        "lastShipId": 0,
+        "orders": []
+      },
+      "economy": {
+        "version": 1,
+        "reports": []
+      },
+      "storage": {
+        "version": 2,
+        "since": 486001,
+        "rentals": [
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          },
+          {
+            "blocks": 0,
+            "until": 0,
+            "arrears": 0
+          }
+        ]
+      },
+      "player": "Ulf",
+      "name": "Mengenprobe",
+      "day": 94,
+      "year": 1350,
+      "city": 8,
+      "gold": 9947,
+      "rep": 9,
+      "rank": 0,
+      "ships": [
+        {
+          "id": 1700000000000.827,
+          "name": "Kogge",
+          "type": 1,
+          "city": 8,
+          "capacity": 90,
+          "speed": 1,
+          "condition": 100,
+          "arms": 0,
+          "cargo": {},
+          "costs": {},
+          "origins": {},
+          "bookCosts": {}
+        }
+      ],
+      "active": 0,
+      "bank": 0,
+      "debt": 0,
+      "markets": [
+        [
+          {
+            "price": 10,
+            "stock": 124
+          },
+          {
+            "price": 34,
+            "stock": 176
+          },
+          {
+            "price": 21,
+            "stock": 133
+          },
+          {
+            "price": 18,
+            "stock": 163
+          },
+          {
+            "price": 33,
+            "stock": 6
+          },
+          {
+            "price": 45,
+            "stock": 146
+          },
+          {
+            "price": 154,
+            "stock": 77
+          },
+          {
+            "price": 35,
+            "stock": 116
+          },
+          {
+            "price": 29,
+            "stock": 119
+          },
+          {
+            "price": 74,
+            "stock": 96
+          },
+          {
+            "price": 143,
+            "stock": 24
+          }
+        ],
+        [
+          {
+            "price": 19,
+            "stock": 107
+          },
+          {
+            "price": 21,
+            "stock": 147
+          },
+          {
+            "price": 25,
+            "stock": 21
+          },
+          {
+            "price": 29,
+            "stock": 132
+          },
+          {
+            "price": 29,
+            "stock": 67
+          },
+          {
+            "price": 55,
+            "stock": 152
+          },
+          {
+            "price": 88,
+            "stock": 40
+          },
+          {
+            "price": 41,
+            "stock": 100
+          },
+          {
+            "price": 36,
+            "stock": 37
+          },
+          {
+            "price": 107,
+            "stock": 88
+          },
+          {
+            "price": 163,
+            "stock": 26
+          }
+        ],
+        [
+          {
+            "price": 16,
+            "stock": 205
+          },
+          {
+            "price": 25,
+            "stock": 186
+          },
+          {
+            "price": 20,
+            "stock": 109
+          },
+          {
+            "price": 29,
+            "stock": 81
+          },
+          {
+            "price": 22,
+            "stock": 105
+          },
+          {
+            "price": 69,
+            "stock": 57
+          },
+          {
+            "price": 79,
+            "stock": 57
+          },
+          {
+            "price": 31,
+            "stock": 109
+          },
+          {
+            "price": 31,
+            "stock": 99
+          },
+          {
+            "price": 92,
+            "stock": 47
+          },
+          {
+            "price": 195,
+            "stock": 51
+          }
+        ],
+        [
+          {
+            "price": 14,
+            "stock": 183
+          },
+          {
+            "price": 14,
+            "stock": 156
+          },
+          {
+            "price": 19,
+            "stock": 56
+          },
+          {
+            "price": 28,
+            "stock": 22
+          },
+          {
+            "price": 13,
+            "stock": 191
+          },
+          {
+            "price": 67,
+            "stock": 91
+          },
+          {
+            "price": 123,
+            "stock": 94
+          },
+          {
+            "price": 25,
+            "stock": 104
+          },
+          {
+            "price": 39,
+            "stock": 93
+          },
+          {
+            "price": 100,
+            "stock": 91
+          },
+          {
+            "price": 205,
+            "stock": 47
+          }
+        ],
+        [
+          {
+            "price": 17,
+            "stock": 110
+          },
+          {
+            "price": 28,
+            "stock": 97
+          },
+          {
+            "price": 11,
+            "stock": 194
+          },
+          {
+            "price": 41,
+            "stock": 13
+          },
+          {
+            "price": 30,
+            "stock": 114
+          },
+          {
+            "price": 81,
+            "stock": 64
+          },
+          {
+            "price": 108,
+            "stock": 78
+          },
+          {
+            "price": 23,
+            "stock": 141
+          },
+          {
+            "price": 33,
+            "stock": 146
+          },
+          {
+            "price": 81,
+            "stock": 81
+          },
+          {
+            "price": 164,
+            "stock": 41
+          }
+        ],
+        [
+          {
+            "price": 15,
+            "stock": 219
+          },
+          {
+            "price": 33,
+            "stock": 83
+          },
+          {
+            "price": 24,
+            "stock": 122
+          },
+          {
+            "price": 47,
+            "stock": 63
+          },
+          {
+            "price": 24,
+            "stock": 77
+          },
+          {
+            "price": 58,
+            "stock": 66
+          },
+          {
+            "price": 128,
+            "stock": 59
+          },
+          {
+            "price": 27,
+            "stock": 116
+          },
+          {
+            "price": 27,
+            "stock": 164
+          },
+          {
+            "price": 108,
+            "stock": 28
+          },
+          {
+            "price": 164,
+            "stock": 30
+          }
+        ],
+        [
+          {
+            "price": 22,
+            "stock": 45
+          },
+          {
+            "price": 33,
+            "stock": 16
+          },
+          {
+            "price": 27,
+            "stock": 113
+          },
+          {
+            "price": 38,
+            "stock": 107
+          },
+          {
+            "price": 16,
+            "stock": 162
+          },
+          {
+            "price": 58,
+            "stock": 108
+          },
+          {
+            "price": 107,
+            "stock": 119
+          },
+          {
+            "price": 41,
+            "stock": 33
+          },
+          {
+            "price": 29,
+            "stock": 100
+          },
+          {
+            "price": 72,
+            "stock": 123
+          },
+          {
+            "price": 115,
+            "stock": 68
+          }
+        ],
+        [
+          {
+            "price": 21,
+            "stock": 96
+          },
+          {
+            "price": 25,
+            "stock": 111
+          },
+          {
+            "price": 15,
+            "stock": 180
+          },
+          {
+            "price": 43,
+            "stock": 81
+          },
+          {
+            "price": 23,
+            "stock": 120
+          },
+          {
+            "price": 69,
+            "stock": 57
+          },
+          {
+            "price": 85,
+            "stock": 112
+          },
+          {
+            "price": 32,
+            "stock": 141
+          },
+          {
+            "price": 24,
+            "stock": 169
+          },
+          {
+            "price": 79,
+            "stock": 69
+          },
+          {
+            "price": 175,
+            "stock": 69
+          }
+        ],
+        [
+          {
+            "price": 16,
+            "stock": 80
+          },
+          {
+            "price": 32,
+            "stock": 71
+          },
+          {
+            "price": 19,
+            "stock": 61
+          },
+          {
+            "price": 28,
+            "stock": 114
+          },
+          {
+            "price": 28,
+            "stock": 80
+          },
+          {
+            "price": 59,
+            "stock": 79
+          },
+          {
+            "price": 114,
+            "stock": 39
+          },
+          {
+            "price": 37,
+            "stock": 80
+          },
+          {
+            "price": 40,
+            "stock": 33
+          },
+          {
+            "price": 61,
+            "stock": 161
+          },
+          {
+            "price": 190,
+            "stock": 69
+          }
+        ],
+        [
+          {
+            "price": 20,
+            "stock": 84
+          },
+          {
+            "price": 38,
+            "stock": 10
+          },
+          {
+            "price": 16,
+            "stock": 67
+          },
+          {
+            "price": 56,
+            "stock": 12
+          },
+          {
+            "price": 24,
+            "stock": 112
+          },
+          {
+            "price": 64,
+            "stock": 141
+          },
+          {
+            "price": 83,
+            "stock": 121
+          },
+          {
+            "price": 41,
+            "stock": 63
+          },
+          {
+            "price": 15,
+            "stock": 191
+          },
+          {
+            "price": 107,
+            "stock": 63
+          },
+          {
+            "price": 155,
+            "stock": 22
+          }
+        ],
+        [
+          {
+            "price": 22,
+            "stock": 85
+          },
+          {
+            "price": 25,
+            "stock": 156
+          },
+          {
+            "price": 22,
+            "stock": 75
+          },
+          {
+            "price": 34,
+            "stock": 95
+          },
+          {
+            "price": 27,
+            "stock": 21
+          },
+          {
+            "price": 55,
+            "stock": 67
+          },
+          {
+            "price": 59,
+            "stock": 209
+          },
+          {
+            "price": 30,
+            "stock": 143
+          },
+          {
+            "price": 34,
+            "stock": 90
+          },
+          {
+            "price": 85,
+            "stock": 69
+          },
+          {
+            "price": 136,
+            "stock": 9
+          }
+        ]
+      ],
+      "journal": {
+        "8": {
+          "day": 94,
+          "year": 1350,
+          "prices": [
+            16,
+            32,
+            19,
+            28,
+            28,
+            59,
+            114,
+            37,
+            40,
+            61,
+            190
+          ]
+        },
+        "9": {
+          "day": 63,
+          "year": 1350,
+          "prices": [
+            19,
+            40,
+            18,
+            45,
+            27,
+            77,
+            87,
+            35,
+            19,
+            90,
+            153
+          ]
+        }
+      },
+      "messages": [
+        "Tag 94: 45 Fass Pelze verkauft: 8.695 G (+1.832 G Warengewinn).",
+        "Tag 94: In Brügge angekommen (+1 Ansehen).",
+        "Tag 94: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 63: 45 Fass Pelze für 6.863 G gekauft.",
+        "Tag 63: 90 Fass Tuch verkauft: 7.341 G (+1.995 G Warengewinn).",
+        "Tag 63: In Nowgorod angekommen (+1 Ansehen).",
+        "Tag 63: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 32: 90 Fass Tuch für 5.346 G gekauft.",
+        "Tag 32: 39 Fass Pelze verkauft: 6.015 G (+1.138 G Warengewinn).",
+        "Tag 32: In Brügge angekommen (+1 Ansehen).",
+        "Tag 32: Hafengebühr: 6 G für 1 Schiff(e).",
+        "Tag 1: 39 Fass Pelze für 4.877 G gekauft.",
+        "Willkommen in Nowgorod! Die Hanse erwartet einen neuen Kaufmann."
+      ],
+      "rumors": [],
+      "quests": [],
+      "completed": 0,
+      "birthdaySeen": {},
+      "flags": {},
+      "visits": 4,
+      "warehouses": {
+        "0": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "1": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "2": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "3": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "4": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "5": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "6": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "7": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "8": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "9": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        },
+        "10": {
+          "cargo": {},
+          "costs": {},
+          "bookCosts": {},
+          "origins": {}
+        }
+      },
+      "beginning": {
+        "version": 1,
+        "city": 9,
+        "merchant": "Ulf"
+      }
+    },
+    "anchors": [
+      [
+        {
+          "price": 10,
+          "stock": 124
+        },
+        {
+          "price": 34,
+          "stock": 176
+        },
+        {
+          "price": 21,
+          "stock": 133
+        },
+        {
+          "price": 18,
+          "stock": 163
+        },
+        {
+          "price": 33,
+          "stock": 6
+        },
+        {
+          "price": 45,
+          "stock": 146
+        },
+        {
+          "price": 154,
+          "stock": 77
+        },
+        {
+          "price": 35,
+          "stock": 116
+        },
+        {
+          "price": 29,
+          "stock": 119
+        },
+        {
+          "price": 74,
+          "stock": 96
+        },
+        {
+          "price": 143,
+          "stock": 24
+        }
+      ],
+      [
+        {
+          "price": 19,
+          "stock": 107
+        },
+        {
+          "price": 21,
+          "stock": 147
+        },
+        {
+          "price": 25,
+          "stock": 21
+        },
+        {
+          "price": 29,
+          "stock": 132
+        },
+        {
+          "price": 29,
+          "stock": 67
+        },
+        {
+          "price": 55,
+          "stock": 152
+        },
+        {
+          "price": 88,
+          "stock": 40
+        },
+        {
+          "price": 41,
+          "stock": 100
+        },
+        {
+          "price": 36,
+          "stock": 37
+        },
+        {
+          "price": 107,
+          "stock": 88
+        },
+        {
+          "price": 163,
+          "stock": 26
+        }
+      ],
+      [
+        {
+          "price": 16,
+          "stock": 205
+        },
+        {
+          "price": 25,
+          "stock": 186
+        },
+        {
+          "price": 20,
+          "stock": 109
+        },
+        {
+          "price": 29,
+          "stock": 81
+        },
+        {
+          "price": 22,
+          "stock": 105
+        },
+        {
+          "price": 69,
+          "stock": 57
+        },
+        {
+          "price": 79,
+          "stock": 57
+        },
+        {
+          "price": 31,
+          "stock": 109
+        },
+        {
+          "price": 31,
+          "stock": 99
+        },
+        {
+          "price": 92,
+          "stock": 47
+        },
+        {
+          "price": 195,
+          "stock": 51
+        }
+      ],
+      [
+        {
+          "price": 14,
+          "stock": 183
+        },
+        {
+          "price": 14,
+          "stock": 156
+        },
+        {
+          "price": 19,
+          "stock": 56
+        },
+        {
+          "price": 28,
+          "stock": 22
+        },
+        {
+          "price": 13,
+          "stock": 191
+        },
+        {
+          "price": 67,
+          "stock": 91
+        },
+        {
+          "price": 123,
+          "stock": 94
+        },
+        {
+          "price": 25,
+          "stock": 104
+        },
+        {
+          "price": 39,
+          "stock": 93
+        },
+        {
+          "price": 100,
+          "stock": 91
+        },
+        {
+          "price": 205,
+          "stock": 47
+        }
+      ],
+      [
+        {
+          "price": 17,
+          "stock": 110
+        },
+        {
+          "price": 28,
+          "stock": 97
+        },
+        {
+          "price": 11,
+          "stock": 194
+        },
+        {
+          "price": 41,
+          "stock": 13
+        },
+        {
+          "price": 30,
+          "stock": 114
+        },
+        {
+          "price": 81,
+          "stock": 64
+        },
+        {
+          "price": 108,
+          "stock": 78
+        },
+        {
+          "price": 23,
+          "stock": 141
+        },
+        {
+          "price": 33,
+          "stock": 146
+        },
+        {
+          "price": 81,
+          "stock": 81
+        },
+        {
+          "price": 164,
+          "stock": 41
+        }
+      ],
+      [
+        {
+          "price": 15,
+          "stock": 219
+        },
+        {
+          "price": 33,
+          "stock": 83
+        },
+        {
+          "price": 24,
+          "stock": 122
+        },
+        {
+          "price": 47,
+          "stock": 63
+        },
+        {
+          "price": 24,
+          "stock": 77
+        },
+        {
+          "price": 58,
+          "stock": 66
+        },
+        {
+          "price": 128,
+          "stock": 59
+        },
+        {
+          "price": 27,
+          "stock": 116
+        },
+        {
+          "price": 27,
+          "stock": 164
+        },
+        {
+          "price": 108,
+          "stock": 28
+        },
+        {
+          "price": 164,
+          "stock": 30
+        }
+      ],
+      [
+        {
+          "price": 22,
+          "stock": 45
+        },
+        {
+          "price": 33,
+          "stock": 16
+        },
+        {
+          "price": 27,
+          "stock": 113
+        },
+        {
+          "price": 38,
+          "stock": 107
+        },
+        {
+          "price": 16,
+          "stock": 162
+        },
+        {
+          "price": 58,
+          "stock": 108
+        },
+        {
+          "price": 107,
+          "stock": 119
+        },
+        {
+          "price": 41,
+          "stock": 33
+        },
+        {
+          "price": 29,
+          "stock": 100
+        },
+        {
+          "price": 72,
+          "stock": 123
+        },
+        {
+          "price": 115,
+          "stock": 68
+        }
+      ],
+      [
+        {
+          "price": 21,
+          "stock": 96
+        },
+        {
+          "price": 25,
+          "stock": 111
+        },
+        {
+          "price": 15,
+          "stock": 180
+        },
+        {
+          "price": 43,
+          "stock": 81
+        },
+        {
+          "price": 23,
+          "stock": 120
+        },
+        {
+          "price": 69,
+          "stock": 57
+        },
+        {
+          "price": 85,
+          "stock": 112
+        },
+        {
+          "price": 32,
+          "stock": 141
+        },
+        {
+          "price": 24,
+          "stock": 169
+        },
+        {
+          "price": 79,
+          "stock": 69
+        },
+        {
+          "price": 175,
+          "stock": 69
+        }
+      ],
+      [
+        {
+          "price": 16,
+          "stock": 80
+        },
+        {
+          "price": 32,
+          "stock": 71
+        },
+        {
+          "price": 19,
+          "stock": 61
+        },
+        {
+          "price": 28,
+          "stock": 114
+        },
+        {
+          "price": 28,
+          "stock": 80
+        },
+        {
+          "price": 59,
+          "stock": 79
+        },
+        {
+          "price": 114,
+          "stock": 39
+        },
+        {
+          "price": 37,
+          "stock": 80
+        },
+        {
+          "price": 40,
+          "stock": 33
+        },
+        {
+          "price": 61,
+          "stock": 161
+        },
+        {
+          "price": 196,
+          "stock": 24
+        }
+      ],
+      [
+        {
+          "price": 20,
+          "stock": 84
+        },
+        {
+          "price": 38,
+          "stock": 10
+        },
+        {
+          "price": 16,
+          "stock": 67
+        },
+        {
+          "price": 56,
+          "stock": 12
+        },
+        {
+          "price": 24,
+          "stock": 112
+        },
+        {
+          "price": 64,
+          "stock": 141
+        },
+        {
+          "price": 83,
+          "stock": 121
+        },
+        {
+          "price": 41,
+          "stock": 63
+        },
+        {
+          "price": 15,
+          "stock": 191
+        },
+        {
+          "price": 107,
+          "stock": 63
+        },
+        {
+          "price": 155,
+          "stock": 22
+        }
+      ],
+      [
+        {
+          "price": 22,
+          "stock": 85
+        },
+        {
+          "price": 25,
+          "stock": 156
+        },
+        {
+          "price": 22,
+          "stock": 75
+        },
+        {
+          "price": 34,
+          "stock": 95
+        },
+        {
+          "price": 27,
+          "stock": 21
+        },
+        {
+          "price": 55,
+          "stock": 67
+        },
+        {
+          "price": 59,
+          "stock": 209
+        },
+        {
+          "price": 30,
+          "stock": 143
+        },
+        {
+          "price": 34,
+          "stock": 90
+        },
+        {
+          "price": 85,
+          "stock": 69
+        },
+        {
+          "price": 136,
+          "stock": 9
+        }
+      ]
+    ],
+    "rng": {
+      "state": 629361830,
+      "draws": 26665
+    },
+    "clock": 1700000000004
+  }
+}

@@ -1,0 +1,32 @@
+// Bounded rule checks on the actual game, not an alternative economy.
+const assert=require('node:assert/strict'),path=require('node:path');
+process.env.HANSE_GAME=path.resolve(__dirname,'../../Hansefuerst_0_4.html');
+const {create}=require('./headless.cjs'),clean=x=>JSON.parse(JSON.stringify(x));let checks=0;
+function check(name,fn){fn();console.log('PASS '+name);checks++}
+check('stable eleven city/good identities and exact historical 5x5 distances',()=>{
+ const g=create(42);assert.deepEqual(clean(g.eval('CITIES')),['Lübeck','Hamburg','Rostock','Stralsund','Stettin','Danzig','Bergen','Visby','Brügge','Nowgorod','Venlo']);assert.deepEqual(clean(g.eval('GOODS.map(g=>g[0])')),['Getreide','Bier','Holz','Salz','Fisch','Tuch','Hansegras','Hanf','Pech','Eisenwaren','Pelze']);assert.deepEqual(clean(g.eval('DIST.slice(0,5).map(row=>row.slice(0,5))')),[[0,2,2,3,4],[2,0,3,4,5],[2,3,0,2,3],[3,4,2,0,2],[4,5,3,2,0]]);assert(g.eval('DIST.length===11&&DIST.every((row,i)=>row.length===11&&row.every((v,j)=>Number.isInteger(v)&&v===(DIST[j][i])&&(i===j?v===0:v>0)))'));
+});
+check('330 actual directed journeys: all pairs, all types, one fee/event and no repeat arrival',()=>{
+ const g=create(42);g.eval('let rolls=0;const originalRoll=rollTravel;rollTravel=(...args)=>{rolls++;return originalRoll(...args)}');
+ for(let type=0;type<3;type++)for(let a=0;a<11;a++)for(let b=0;b<11;b++)if(a!==b){g.eval(`s=fresh('Ulf','Routes');s.city=${a};s.ships=[makeShip(${type})];ship().city=${a};pending=null`);const initial=g.eval('s.gold'),day=g.eval('totalDay()'),events=g.events.length,rolls=g.eval('rolls');g.eval(`planTravel(${b})`);const p=clean(g.eval('pending'));assert.equal(p.days,g.eval(`Math.ceil(DIST[${a}][${b}]/ship().speed)+routeHandlingDays(${a},${b})`));g.eval('arrive();arrive()');assert.equal(g.eval('s.city'),b);assert.equal(g.eval('totalDay()'),day+p.days);assert.equal(g.eval('s.gold'),initial-p.fee);assert.equal(g.eval('rolls'),rolls+1);assert.equal(g.events.slice(events).filter(e=>e.type==='travel').length,1);assert.equal(g.eval('ship().city'),b)}
+});
+check('convoy uses slowest damaged ship and excludes remote vessel',()=>{const g=create(42);g.eval("s.city=8;s.ships=[makeShip(0),makeShip(2),makeShip(1)];s.ships[0].city=8;s.ships[1].city=8;s.ships[1].condition=30;s.ships[2].city=0;planTravel(9)");assert.equal(g.eval('pending.days'),g.eval('routeTravelDays(8,9,Math.min(s.ships[0].speed,s.ships[1].speed*.755))'));assert.equal(g.eval('pending.fee'),13);g.eval('arrive()');assert.deepEqual(clean(g.eval('s.ships.map(q=>q.city)')),[9,9,0])});
+check('Nowgorod and Venlo have explicit inland descriptions and three days per inland endpoint',()=>{const g=create(42);assert.equal(g.eval('routeHandlingDays(0,9)'),3);assert.equal(g.eval('routeHandlingDays(0,10)'),3);assert.equal(g.eval('routeHandlingDays(9,10)'),6);assert.match(g.eval('routeDescription(0,9)'),/Newa.*Ladoga.*Wolchow/);assert.match(g.eval('routeDescription(0,10)'),/Maas/);assert(g.eval('routeTravelDays(8,10,1)>DIST[8][10]'));for(const expr of ['routeTravelDays(-1,0,1)','routeTravelDays(0,11,1)','routeTravelDays(0,1,0)','routeTravelDays(0,1,NaN)'])assert.equal(g.eval(expr),null)});
+check('schematic sea segments stay outside drawn mainland; river access is separately marked',()=>{
+ const g=create(42),polygons=clean(g.eval('HANSE_MAP_LAND')),sea=clean(g.eval('HANSE_MAP_SEA'));
+ const inside=(p,poly)=>{let yes=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const a=poly[i],b=poly[j];if((a[1]>p[1])!==(b[1]>p[1])&&p[0]<(b[0]-a[0])*(p[1]-a[1])/(b[1]-a[1])+a[0])yes=!yes}return yes};
+ for(const line of sea)for(let i=1;i<line.length;i++)for(let t=0;t<=100;t++){const a=line[i-1],b=line[i],p=[a[0]+(b[0]-a[0])*t/100,a[1]+(b[1]-a[1])*t/100];assert(!polygons.some(poly=>inside(p,poly)),JSON.stringify(p))}assert.equal(g.eval('HANSE_MAP_INLAND.length'),11)
+});
+check('121 market cells: round trip buy/sell/storage preserves gold, quantity, costs, origins and worth',()=>{
+ for(let city=0;city<11;city++)for(let j=0;j<11;j++){const g=create(42);g.eval(`s.city=${city};ship().city=${city};observe();$('qty${j}').value=2`);const before=clean(g.eval('({gold:s.gold,markets:s.markets,worth:netWorth()})'));g.eval(`trade(${j},1);$('warehouseQty${j}').value=2`);const price=g.eval(`ship().costs[${j}]`);assert(g.eval(`warehouseTransfer(${j},1)`));assert.equal(g.eval(`s.warehouses[${city}].origins[${j}][0].city`),city);assert(g.eval(`warehouseTransfer(${j},-1)`));assert.equal(g.eval(`ship().costs[${j}]`),price);g.eval(`trade(${j},-1)`);assert.deepEqual(clean(g.eval('({gold:s.gold,markets:s.markets,worth:netWorth()})')),before);assert(g.eval('s.markets.flat().every(m=>m.stock>=0)'))}
+});
+check('all six new quest cities offer allowed goods with feasible conservative return deadlines',()=>{
+ const g=create(42);for(let type=0;type<3;type++)for(let city=5;city<11;city++){g.eval(`s=fresh('Ulf','Orders');s.city=${city};s.ships=[makeShip(${type})];ship().city=${city};ship().condition=30;questsView()`);assert(g.eval('s.quests[0].j>=0&&s.quests[0].j<=5'));assert(g.eval('s.quests[0].until-totalDay()>=Math.min(...CITIES.map((_,c)=>c).filter(c=>c!==s.city).map(c=>routeTravelDays(s.city,c,ship().speed*.755)+routeTravelDays(c,s.city,ship().speed*.755)))+3'))}
+});
+check('new destination foreign deliveries reward once; local stock and storage cannot qualify',()=>{
+ for(let city=5;city<11;city++){const g=create(42);g.eval(`$('qty0').value=6;trade(0,1);planTravel(${city});pending.resolved=true;pending.event=null;arrive();s.quests=[{city:${city},j:0,n:6,reward:300,until:totalDay()+1}];$('warehouseQty0').value=6;warehouseTransfer(0,1);warehouseTransfer(0,-1);$('qty0').value=6;trade(0,-1);completeQuests(0,6)`);assert.equal(g.eval('s.completed'),1);assert.equal(g.events.filter(e=>e.type==='quest_reward').length,1);g.eval("s.quests=[{city:s.city,j:0,n:2,reward:300,until:totalDay()+1}];$('qty0').value=2;trade(0,1);$('warehouseQty0').value=2;warehouseTransfer(0,1);warehouseTransfer(0,-1);trade(0,-1)");assert.equal(g.eval('s.completed'),1)}
+});
+check('400 days keep every market valid; same seed mixed journeys replay exactly',()=>{
+ const run=()=>{const g=create(10001);g.eval("for(const city of [5,6,7,8,9,10,0]){$('qty0').value=2;trade(0,1);planTravel(city);arrive();$('qty0').value=ship().cargo[0]||1;trade(0,-1)}advance(400);validate(s)");return {state:clean(g.eval('s')),events:clean(g.events)}};assert.deepEqual(run(),run())
+});
+console.log(checks+' eleven-city rule groups passed; 330 journeys, 121 markets; no large simulation');

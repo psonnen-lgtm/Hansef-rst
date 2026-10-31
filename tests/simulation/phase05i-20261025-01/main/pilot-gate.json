@@ -1,0 +1,7 @@
+{
+  "approvedForBoundedMain": true,
+  "basis": "10 exact-replay cases, event cash ledger and schema validation passed, no technical aborts",
+  "sourceCommit": "ca2c36e859837a6668bf82e9da8abb1978f8bc10",
+  "noParameterChanges": true,
+  "preliminaryCases": 10
+}

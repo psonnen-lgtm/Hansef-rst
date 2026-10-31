@@ -1,0 +1,67 @@
+{
+  "phase": "0.5i",
+  "kind": "full_strategy_games_main_comparison",
+  "baseline": "a660d79e0986d547ded5fadaa879a1d3102fa8d7",
+  "models": [
+    "before",
+    "capacity"
+  ],
+  "strategies": [
+    "none",
+    "occasional",
+    "regional",
+    "bulk",
+    "stress"
+  ],
+  "seeds": [
+    72001,
+    72002,
+    72003,
+    72004,
+    72005,
+    72006,
+    72007,
+    72008,
+    72009,
+    72010,
+    72011,
+    72012,
+    72013,
+    72014,
+    72015,
+    72016,
+    72017,
+    72018,
+    72019,
+    72020
+  ],
+  "distinctCases": 200,
+  "pilotCases": 10,
+  "exactReplays": 10,
+  "maxFullExecutions": 210,
+  "limits": {
+    "days": 1440,
+    "decisions": 800,
+    "lastTripMayExceed": true,
+    "workers": 4,
+    "timeoutSeconds": 120
+  },
+  "rules": {
+    "base": 150,
+    "step": 100,
+    "maxBlocks": 2,
+    "fee": 1,
+    "unpaid": "terminate_without_debt_keep_goods_block_overfull_deposits"
+  },
+  "information": "local quotes and stock, own acquisition costs and pricebook; no remote live prices or forecast",
+  "identity": {
+    "gameCommit": "ca2c36e859837a6668bf82e9da8abb1978f8bc10",
+    "gameSHA256": "7e85ac510654e3aec8b41328b3a508cdc3030eac8b4ab2981e40f30b1efc2a19",
+    "hashes": {
+      "phase05i-run.cjs": "319944d26ba271bc22b26d4a69653ddd425a7631047ef7c3ccca13fda65daa56",
+      "warehouse-strategies.js": "f1b86264f66c2beb1ca0d483b6e213e8df9b0810f591b9a3f855ff82322b0d60",
+      "headless.cjs": "5d6526a38b8f303c8a357b2a2f8be3e1ba451f3cf956324c64d319c22cdfc2c0",
+      "strategies.js": "9399d02b979362b712e1cc6cf24c927406466e2f7a034b7fa489191762b646ea"
+    }
+  }
+}

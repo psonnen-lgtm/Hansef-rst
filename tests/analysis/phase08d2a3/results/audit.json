@@ -1,0 +1,324 @@
+{
+  "phase": "0.8d.2a.3",
+  "testedAuditCommit": "e44c8357fa2beed45138058d3c1dbf744cc461d5",
+  "readOnlyEvidenceAudit": true,
+  "noVMOrSimulation": true,
+  "sourceHashesChecked": 7,
+  "mainTestCommit": "740dcd71064feb8f3ad208e66717df457b1a41df",
+  "followupTestCommit": "4439d901a5e5dbddac867594c4b700e09983ac26",
+  "groups": {
+    "main": 13,
+    "completedMain": 11,
+    "modelAssertionFailures": 1,
+    "fixtureErrors": 1,
+    "followup": 3,
+    "completedFollowup": 3
+  },
+  "P1": {
+    "implementationSelected": false,
+    "mathematicalMarketCases": 48,
+    "examples": [
+      {
+        "cost": 8,
+        "quantity": 90,
+        "financialBefore": 109120,
+        "liquidationBefore": 117848,
+        "politicalChangeOnInitialAbsoluteValuation": 8728,
+        "realizedFinancialGain": 8728,
+        "liquidationAfterSale": 117848,
+        "calibratedLiquidationChangeOnSale": 0,
+        "creditAlreadyInAbsoluteValuation": true
+      },
+      {
+        "cost": 200,
+        "quantity": 90,
+        "financialBefore": 126400,
+        "liquidationBefore": 117848,
+        "politicalChangeOnInitialAbsoluteValuation": -8552,
+        "realizedFinancialGain": -8552,
+        "liquidationAfterSale": 117848,
+        "calibratedLiquidationChangeOnSale": 0,
+        "creditAlreadyInAbsoluteValuation": true
+      }
+    ]
+  },
+  "wealthGates": [
+    {
+      "threshold": 18000,
+      "before": 17999,
+      "recognizedSale": 18989,
+      "neutralReturn": 17999,
+      "returnCorrected": true,
+      "intermediateGateStillExploitable": true
+    },
+    {
+      "threshold": 45000,
+      "before": 44999,
+      "recognizedSale": 45989,
+      "neutralReturn": 44999,
+      "returnCorrected": true,
+      "intermediateGateStillExploitable": true
+    },
+    {
+      "threshold": 85000,
+      "before": 84999,
+      "recognizedSale": 85989,
+      "neutralReturn": 84999,
+      "returnCorrected": true,
+      "intermediateGateStillExploitable": true
+    },
+    {
+      "threshold": 180000,
+      "before": 179999,
+      "recognizedSale": 180989,
+      "neutralReturn": 179999,
+      "returnCorrected": true,
+      "intermediateGateStillExploitable": true
+    }
+  ],
+  "reputationGates": [
+    {
+      "threshold": 25,
+      "before": 24,
+      "temporary": 26,
+      "afterReturn": 24,
+      "otherOfficePrerequisitesNotTested": true
+    },
+    {
+      "threshold": 55,
+      "before": 54,
+      "temporary": 56,
+      "afterReturn": 54,
+      "otherOfficePrerequisitesNotTested": true
+    },
+    {
+      "threshold": 90,
+      "before": 89,
+      "temporary": 91,
+      "afterReturn": 89,
+      "otherOfficePrerequisitesNotTested": true
+    }
+  ],
+  "boundedPaths": [
+    {
+      "name": "both-orders",
+      "decisions": 12,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "ships-warehouse-export",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "exact-loss-counterexample",
+      "decisions": 11,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "local-profit-intermediate-rank",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "loss-unknown-cost",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "transport-old",
+      "decisions": 1,
+      "trips": 1,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "transport-P2",
+      "decisions": 1,
+      "trips": 1,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "no-op-and-real-market",
+      "decisions": 4,
+      "trips": 0,
+      "start": 486001,
+      "days": 3
+    },
+    {
+      "name": "financial-costs-bank",
+      "decisions": 0,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "reputation-intermediate-rank",
+      "decisions": 2,
+      "trips": 0,
+      "start": 486001,
+      "days": 0
+    },
+    {
+      "name": "supply-fixed-only",
+      "decisions": 4,
+      "trips": 0,
+      "days": 0
+    },
+    {
+      "name": "paid-C-clock-fixture-conservatively-counted",
+      "days": 10,
+      "decisions": 0,
+      "trips": 0
+    }
+  ],
+  "requirements": [
+    {
+      "requirement": 1,
+      "status": "FAILED",
+      "evidence": "buy-first actual VM group abort + mathematical +2056 counterexample"
+    },
+    {
+      "requirement": 2,
+      "status": "PASS_LIMITED",
+      "evidence": "sell/rebuy and five repeated cycles; not an overall proof"
+    },
+    {
+      "requirement": 3,
+      "status": "PASS_LIMITED",
+      "evidence": "90 arithmetic sale +2"
+    },
+    {
+      "requirement": 4,
+      "status": "PASS_LIMITED",
+      "evidence": "9x10 same +2"
+    },
+    {
+      "requirement": 5,
+      "status": "PASS_LIMITED",
+      "evidence": "90x1 same +2, no 90-action VM path"
+    },
+    {
+      "requirement": 6,
+      "status": "PASS_LIMITED",
+      "evidence": "two own ships with warehouse bridge"
+    },
+    {
+      "requirement": 7,
+      "status": "PASS_LIMITED",
+      "evidence": "native deposit/withdraw shadow lots"
+    },
+    {
+      "requirement": 8,
+      "status": "FAILED",
+      "evidence": "two-good loss case protected, mixed old/new same-good case not protected"
+    },
+    {
+      "requirement": 9,
+      "status": "PASS_LIMITED",
+      "evidence": "sale-first local wash corrected at end"
+    },
+    {
+      "requirement": 10,
+      "status": "PASS_LIMITED",
+      "evidence": "prior real loss persists through a different-good wash"
+    },
+    {
+      "requirement": 11,
+      "status": "PASS_LIMITED",
+      "evidence": "exact 44610 remains44610 after five beer circles"
+    },
+    {
+      "requirement": 12,
+      "status": "PASS_LIMITED",
+      "evidence": "8728 legitimate local financial/political gain before later return"
+    },
+    {
+      "requirement": 13,
+      "status": "PASS_LIMITED",
+      "evidence": "one paired controlled trip profit2121 same economics"
+    },
+    {
+      "requirement": 14,
+      "status": "PASS_LIMITED",
+      "evidence": "real negative sale -3600 changes political wealth equally"
+    },
+    {
+      "requirement": 15,
+      "status": "PASS_LIMITED",
+      "evidence": "unknown financial gain null, no invented rep; book fallback retained"
+    },
+    {
+      "requirement": 16,
+      "status": "FAILED",
+      "evidence": "five sale-first circles protected, buy-first/mixed direction not generally protected"
+    },
+    {
+      "requirement": 17,
+      "status": "PASS_LIMITED",
+      "evidence": "pure split across unchanged dates + two real controlled no-op game days"
+    },
+    {
+      "requirement": 18,
+      "status": "PASS_LIMITED",
+      "evidence": "one real day gain1 retained, no false cancellation"
+    },
+    {
+      "requirement": 19,
+      "status": "PASS_LIMITED",
+      "evidence": "corrected actual accepted supply, foreign/local, one service/quest/reward"
+    },
+    {
+      "requirement": 20,
+      "status": "FAILED",
+      "evidence": "end thresholds corrected but prefix eligibility still available"
+    },
+    {
+      "requirement": 21,
+      "status": "FAILED",
+      "evidence": "24->26->24 keeps rank2; 55/90 threshold arithmetic only"
+    },
+    {
+      "requirement": 22,
+      "status": "PASS_LIMITED",
+      "evidence": "six V11 copies: preserved30/85000 vs60/45000"
+    },
+    {
+      "requirement": 23,
+      "status": "PASS_LIMITED",
+      "evidence": "old offices/ranks retained; new prefix ranks also retained is a failure"
+    },
+    {
+      "requirement": 24,
+      "status": "PASS_LIMITED",
+      "evidence": "full exact-price/game/political wrapper restored; no product persistence guarantee"
+    },
+    {
+      "requirement": 25,
+      "status": "PASS_LIMITED",
+      "evidence": "VM transactions no extra RNG/days; paired transport same RNG/days"
+    }
+  ],
+  "acceptance": {
+    "documented44610CounterexampleProtected": true,
+    "allNeutralTradeWealthProtected": false,
+    "splitReputationInHomogeneousProbes": true,
+    "allEquivalentTradePathsNeutral": false,
+    "legitimateLocalAndForeignGainsObserved": true,
+    "oldOfficesPreservedInCopies": true,
+    "politicalBalanceApproved": false,
+    "productiveV14Ready": false
+  },
+  "warning": "main JSON preliminary acceptance is too narrow: endStateNeutralWash=true and splitNeutralInCheckedLots=true only describe selected fixtures; final acceptance here includes failed buy-first and irreversible prefix cases"
+}

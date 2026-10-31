@@ -1,0 +1,163 @@
+{
+  "date": "2026-10-25",
+  "baseCommit": "e83e1abbcecb50978d1240307676dbd646f587c1",
+  "gameSHA256": "507191e59dc592cf4eef658ba27289eff21a04c181ef88d2d63a79c24c5af949",
+  "results": [
+    {
+      "command": "node tests/simulation/harbor-work-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS actual exhausted credit and cash qualify; exactly 3 days, 20 gold, one durable used marker\nPASS all hulls use their own actual single-ship fee, including zero condition\nPASS local cheapest ship is selectable; do not confuse convoy cost or a remote active ship\nPASS actual fractional bank withdrawals are available before harbor work\nPASS only actual integer borrowing room counts, not unavailable fractional headroom\nPASS local ship goods and local warehouse goods are directly usable; remote stocks are not\nPASS even a small local remainder must first be sold; actual result is rechecked\nPASS a full local hold does not make warehouse goods inaccessible; sell and unload normally\nPASS a sellable local spare blocks the aid; actual sale funds departure\nPASS normal markets, exact 6% interest and year boundary match advance(3), with no cargo loss\nPASS remote cargo FIFO and all eleven warehouses retain quantities/costs/identities during work\nPASS one-shot survives 100 save/load cycles and serialization/import migration\nPASS cancel and reentrant confirmation never pay or duplicate\nPASS conditions changed during confirmation are rechecked without undoing outside actions\nPASS mid-advance failure rolls back all state, saves and buffered interest without consuming the right\nPASS failed atomic storage write pays nothing, preserves original state and permits safe retry\nPASS UI or telemetry failure after durable commit cannot reset the marker or pay a second time\nPASS huge valid debt that would exceed saved limits aborts instead of storing invalid values\nPASS old v6 data keeps all fields; absent/false markers grant eligibility and invalid markers reject\nPASS no new credits, ships, goods, prices, distances or career formulas outside normal time\n20 harbor-work groups passed; no large simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/test-v04.cjs",
+      "exitCode": 0,
+      "stdout": "PASS fresh save validates\nPASS invalid v3 rejected\nPASS negative gold rejected\nPASS v3 assigns all ship locations\nPASS legacy cargo has unknown cost\nPASS malformed cargo rejected\nPASS credit does not grow with borrowing\nPASS single arrival moves only chosen ship and cannot repeat\nPASS remote cargo cannot be traded\nPASS quest completion waits five days for new offer\nPASS expired quest gives no reward\nPASS unknown cost survives mixed purchase\nPASS known weighted purchase and partial sale\nPASS arrival fee is charged exactly once\nPASS fee by ship type\nPASS convoy fee excludes remote ship\nPASS insufficient gold blocks departure\nPASS exact fee allows departure\nPASS planning does not charge fee\n19 checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/phase1.cjs",
+      "exitCode": 0,
+      "stdout": "PASS preview and reopening use no random draw\nPASS arrival rolls once and repeated arrival is inert\nPASS same-place wash sale cannot fulfil quest\nPASS foreign delivery fulfils quest\nPASS mixed FIFO cargo cannot multiply eligible goods\nPASS legacy cargo is retained but not invented as foreign\nPASS piracy consumes proven origin too\nPASS origins and book values survive save and reload\nPASS same duration has equal interest across year boundary\nPASS full year effective rates remain two and six percent\nPASS no time means no interest\nPASS migration does not backcharge interest or demote\nPASS unrealised gain cannot increase worth or credit\nPASS unrealised gain cannot cross promotion threshold\nPASS realised gain does increase rank and worth\nPASS legacy unknown book value is fixed after migration\nPASS weighted cost handles partial sales\nPASS fractional balances can be fully withdrawn or repaid\n18 phase-1 regressions passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/telemetry.cjs",
+      "exitCode": 0,
+      "stdout": "PASS opt-in, hidden, unfocused, suspension gap, idle, retention, snapshots, unchanged game, pause and deletion\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/share.cjs",
+      "exitCode": 0,
+      "stdout": "PASS no automatic sharing, native file share, no personal names, cancel, unsupported fallback, rejected fallback\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/edges.cjs",
+      "exitCode": 0,
+      "stdout": "PASS credit cannot compound through loans\nPASS same-city roundtrip gives no trading profit\nPASS weapons cannot overload ship\nPASS convoy uses slowest ship\nPASS piracy destroys at most available cargo\nPASS defended piracy preserves cargo\nPASS daily interest uses declared annual rates\nPASS special rumor expires on advance\nPASS negative gold save rejected\nPASS negative or excessive cargo rejected\nPASS FIXED: preview cannot reroll hazards\nPASS FIXED: cheap purchases do not inflate rank wealth\nPASS FIXED: year end grants only one day interest\nPASS KNOWN: repair fee independent of hull type\n14 deterministic mechanism checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/warehouse-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS store, load and partial amounts conserve quantities and cargo capacity\nPASS overdraws and invalid quantities leave the complete state unchanged\nPASS withdrawal cannot exceed free capacity, including armed ship capacity\nPASS no local or remote ship can use a warehouse from another city\nPASS FIFO city and unknown origins split and append without relabelling\nPASS weighted purchase costs and total book value survive different-cost merging\nPASS unknown acquisition costs remain unknown; conservative book basis is conserved\nPASS mixing known and unknown lots retains conservative total book basis\nPASS transfer changes no gold, bank, debt, markets, rank, quests, day or RNG\nPASS warehouse value does not follow market-price inflation\nPASS repeated transfers keep exact quantity and FIFO count without duplication\nPASS stock can move to another owned ship in Luebeck\nPASS old v4 state migration adds only empty storage after existing normalizations\nPASS warehouse save/load round-trip preserves cost, origin and quantities\nPASS invalid warehouse data is rejected, never silently emptied\nPASS local cargo cannot become foreign quest cargo by warehousing\nPASS unknown legacy cargo cannot become foreign quest cargo\nPASS genuine foreign cargo remains eligible only on actual sale, pays once\nPASS one-time pre-migration backup stays byte-identical; backup failure propagates\n19 warehouse checks passed; no economy simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/warehouse-cities-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS five distinct stores, all five cities deposit/withdraw independently\nPASS only actual ship transport changes access to goods in another city\nPASS FIFO provenance and weighted acquisition/book values survive three city visits\nPASS remote active ships cannot transfer or be selected in any city\nPASS multiple local ships can use only the current city store\nPASS capacity, cash, markets, worth and RNG protections in every city\nPASS no-storage old saves gain five empty stores without changing economic fields\nPASS Luebeck-only saves keep all lots/costs; four other stores are added empty\nPASS 100 save/load cycles retain all city stores without multiplication or loss\nPASS malformed existing stores and invalid city/good/magnitude inputs never get repaired\nPASS partial migration backup is distinct and never replaces first-stage original backup\nPASS local or unknown goods do not acquire foreign origin through a city store\nPASS genuine transported foreign goods keep eligibility, only real sale rewards once\n13 multi-city warehouse checks passed; no economy simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/four-goods-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS seven legacy identities untouched; four append-only identities and symbols distinct\nPASS new-game ranges valid for all cells; old initial market prefix retains original draws\nPASS legacy seven-good migration: none\nPASS legacy seven-good migration: luebeck\nPASS legacy seven-good migration: all\nPASS migration is deterministic, consumes no RNG for v4, and survives 100 save/load cycles\nPASS corrupt/incomplete seven- or eleven-good data is rejected without mutating input\nPASS all 55 city/good combinations buy and sell at unchanged immediate unit price\nPASS four new goods transfer through all five stores with no gold/book-value gain\nPASS mixed legacy/new cargo cannot exceed existing capacity\nPASS actual transport preserves new-goods foreign origin and costs\nPASS daily formula unchanged, all 55 cells evolve validly and seeded paths replay exactly\nPASS same-seed mixed market/trade/storage journeys produce identical states and events\nPASS offer pool and probabilities match old function for identical RNG stream\nPASS new local goods cannot fulfil old offer or forge foreign origin via storage\nPASS separate migration backup never overwrites original backups; write failure propagates\n16 goods/migration checks passed; no economy simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/city-v6-migration-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS v5 five filled stores, ships, all markets and finance survive append-only migration\nPASS v3/v4 historical 5x7, missing and Luebeck-only storage supported\nPASS v1 legacy conversion still reaches complete v6\nPASS v6 round trip 100 times is exact and consumes no random values\nPASS broken old/new arrays, invalid references and bad warehouse data are rejected\nPASS separate original city backup is never overwritten; failures propagate\n6 v6 migration checks passed\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/eleven-cities-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS stable eleven city/good identities and exact historical 5x5 distances\nPASS 330 actual directed journeys: all pairs, all types, one fee/event and no repeat arrival\nPASS convoy uses slowest damaged ship and excludes remote vessel\nPASS Nowgorod and Venlo have explicit inland descriptions and three days per inland endpoint\nPASS schematic sea segments stay outside drawn mainland; river access is separately marked\nPASS 121 market cells: round trip buy/sell/storage preserves gold, quantity, costs, origins and worth\nPASS all six new quest cities offer allowed goods with feasible conservative return deadlines\nPASS new destination foreign deliveries reward once; local stock and storage cannot qualify\nPASS 400 days keep every market valid; same seed mixed journeys replay exactly\n9 eleven-city rule groups passed; 330 journeys, 121 markets; no large simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/eleven-cities-compat-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS daily economy, trade, FIFO, warehouse, bank, ship and promotion rule bodies exactly match base\nPASS old 60 routes at condition 67 preserve base previews, states, events and next random number\nPASS legacy event effects remain identical for storms, pirates, defence and calm sea\nPASS all invalid actions are inert and consume no RNG at the actual eleven-city boundary\n4 current compatibility groups passed; historical snapshot files preserved\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/optimized-delivery-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS source guard permits exact counter/route/catalog-loop edits; delivery game rules unchanged\nPASS existing four historical source guards still execute without running their simulations\nPASS foreign shipment earns exact premium and counters on automatic final sale\nPASS any other source city is allowed; no fixed source rule exists\nPASS wrong destination cannot earn reward\nPASS same-city buy/sell cannot earn reward\nPASS unknown legacy origin cannot earn reward\nPASS expired order cannot earn reward\nPASS delivery at exact deadline is valid\nPASS mixed local and foreign cargo cannot inflate foreign quantity\nPASS split sales cannot sum to an order\nPASS piracy consumes origin proof and blocks insufficient delivery\nPASS one order pays once even after a second eligible shipment\nDETAIL controlled probe: 1 rewards / 300 gold; 13 trips; historical five-destination route comparison unchanged\nPASS 12-decision controlled foreign-cargo optimized probe: live offers/counters and exact replay\nPASS integrated short run enforces both counters against actual reward events\nPASS historical parity permits only corrected counters and rejects other drift\n16 targeted checks passed; 4 controlled probes x at most 12 decisions; additional zero-decision counter-rejection fixtures, no large simulation\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/price-rounding-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS daily formula and non-price advance effects preserved despite intentional city expansion\nPASS 4 can rise; floor prevents downward movement\nPASS 5 through 8 can move both directions or remain unchanged\nPASS finite positive integers, floor, and exact old behavior for every sampled price >=9\nDETAIL conditional update means: 4 => +0.25; 5..9 => 0. Daily at 4: +0.0875 with unchanged 35% gate.\nPASS no interior directional bias; floor boundary effect explicitly measured\nDETAIL seed 1: 800-day price range 4..54\nDETAIL seed 42: 800-day price range 4..36\nDETAIL seed 10001: 800-day price range 4..36\nDETAIL seed 10250: 800-day price range 4..40\nPASS 800 days across all 121 market cells; seeded trajectories repeat exactly\nDETAIL 800-day RNG calls old=new: 227418\nPASS old/new random call counts and non-price world changes match over 800 days\nPASS actual historical v4 startup preserves old markets/cargo/finance and reloads as v6\nPASS v3 startup migration retains prior backup, reaches v6 without a rounding field\nPASS loaded low-price save evolves without changing schema\n10 price/save checks passed; controlled daily updates only, no economy run\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/integration-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS registry, real observation snapshots, rejection of invented quotes/local prices, remote-read fence, delivery quote provenance, oracle labels\n",
+      "stderr": ""
+    },
+    {
+      "command": "node tests/simulation/ship-sale-checks.cjs",
+      "exitCode": 0,
+      "stdout": "PASS all three types: exact offers, payout and book value delta at six hull conditions\nPASS all existing hull percentages: resale below book/purchase and no repair-before-sale profit\nPASS loaded ships including unknown FIFO cargo cannot be sold or silently emptied\nPASS real warehouse unloading enables sale while retaining origins costs and quantity ashore\nPASS cashless owner of two local ships can sell a spare and pay for a real departure\nPASS last global vessel stays blocked even with travel cash missing or zero hull condition\nPASS remote spare vessel cannot justify selling the last local vessel; no teleport\nPASS a valid zero-condition local spare still travels under unchanged existing rules\nPASS foreign harbor, unknown/stale IDs and nonnumeric ID inputs are inert\nPASS explicit confirmation states offer and consequences; cancellation preserves fleet and pending convoy\nPASS reentrant confirmation cannot pay twice; index reuse never sells another ship\nPASS quote or cargo changes while confirmation is open require a fresh approval\nPASS active array indices stay valid when selling active or earlier non-active vessels\nPASS convoy preview is invalidated; replan contains only remaining local ships and charges once\nPASS repeated buy/sell cycles lose cash and create no credit, days or promotion gains\nPASS existing debts remain exact, repayment is not automatic and credit follows unchanged worth\nPASS unbound delivery orders survive a sale and can still be completed by the remaining vessel\nPASS the v6 gold upper bound is protected without mutating the state\nPASS save/reload after sales preserves v6, all city indices, remaining cargo and ashore goods\nPASS real pre-sale-version v6 saves need no schema change or new permanent fields\nPASS existing economic formulas and old v6 migration remain byte-identical to current base\nPASS quote display, blocked actions, confirmation and successful sales consume no random values\n22 focused ship-sale groups passed; no large simulation\n",
+      "stderr": ""
+    }
+  ],
+  "noLargeSimulation": true,
+  "historicalSnapshotsNotCurrentTests": true,
+  "oldDataFilesUnchanged": {
+    "tests/simulation/baseline/results.json.gz": "f745847528828366548330e590910529decfd3503692b5dce64275a1272670d4",
+    "tests/simulation/baseline/summary.json": "475aa3810a8b7209607a9aff1c20e6f7c4e6e10d8cb37bd3e4d4e2eca741e1ca",
+    "tests/simulation/phase05d-eleven-cities-sample.json": "50e5b36396341ae779720bacc6c9c30c2e654337612928f7059dadf1afa9c7fe",
+    "tests/simulation/phase05d-eleven-cities-verification.json": "55cfc677141f4b5c56f3616fe6db173150ad6a958043605743a58a701857f554",
+    "tests/simulation/phase05d-new-city-starts-sample.json": "3ed237fd1d79cb5bd58940372515affcb7782eb09e7223c3eeaf9de388799a9a",
+    "tests/simulation/phase05e-20261024-01/aggressive.tar.gz": "fbea70db74e7b9c39ab58f35474f401e12eb4dff8d50d1857bb0767c9312c9b4",
+    "tests/simulation/phase05e-20261024-01/attempts.jsonl": "28d7b167110e34454b2c620df1a9f9d69b2bac14d00aaa20e8bdf38d2d87faca",
+    "tests/simulation/phase05e-20261024-01/cautious.tar.gz": "92371dd1a61224ad28f2805859ab32586063ba29ffcc5c339842f40cd3a02af4",
+    "tests/simulation/phase05e-20261024-01/execution-complete.json": "1e054ccb35060eb83e492eb6379eeb816074c79e895c431b495aaeb5a7f32b6b",
+    "tests/simulation/phase05e-20261024-01/manifest.json": "60966613b3ef89e6dd7d77c60d6f33cbcdd5a35acf630138b6de596d945e2775",
+    "tests/simulation/phase05e-20261024-01/mechanism-checks.json": "7f7910fc5f5709269813cc10858c767428376b03b13552607aec657b7207a900",
+    "tests/simulation/phase05e-20261024-01/normal.tar.gz": "0fd6031b1c9bbabd769a80a64e6a8f10e9d1bd6aa9486bb4e24e80ac5cf91547",
+    "tests/simulation/phase05e-20261024-01/observer-parity.json": "5886a925ec092d69a8405711fcf0443b19ad2d185a04e2e4af5e528fec206142",
+    "tests/simulation/phase05e-20261024-01/optimized.tar.gz": "918ab87935534273c32322aee731d69407e7b0014ef8928eb7275ea648733774",
+    "tests/simulation/phase05e-20261024-01/originals-verification.json": "6b08a222a7bf664b245173477e4e3e43beb55c209a7c4e3f1e2d1ab10a5a2349",
+    "tests/simulation/phase05e-20261024-01/pilot-complete.json": "fe96b0c819f0fed2d3e884ec6f0ce89f8fd5a5bbfb8c87eb5a908f573f32ceaa",
+    "tests/simulation/phase05e-20261024-01/provenance.json": "3b7e7f29f8ea0c61913f190bcb34f14fe9cfc20277336409adf8bd8cc4b2bf44",
+    "tests/simulation/phase05e-20261024-01/reconciled-complete.json": "432452efd7660b63ad8601364a3a0e4ba322035ec72e46d12e6651a200a765a9",
+    "tests/simulation/phase05e-20261024-01/recovery20.tar.gz": "6581a229083b0d0d85d94cb41d4a16d2daf130d95653e793e28731d9f2c90149",
+    "tests/simulation/phase05e-20261024-01/regressions.json": "eef7ea8a3c46ed4bb1d39d8024ec3a155998ba5453eb8932638ed82ad43df077",
+    "tests/simulation/phase05e-20261024-01/remote.tar.gz": "7595136e08504e14b7fb9f4bf6b6a918a0439dbac66eeac8eaccd9759cc3a0ae",
+    "tests/simulation/phase05e-20261024-01/results-manifest.json": "04059cec590677d50830be887fab3b3090f6f3612db95e81f8b0c39d3c98e541",
+    "tests/simulation/phase05e-20261024-01/retry-validation.json": "8fd7747f85d33cf3b62486078e7a94c57eed220ed55492c40686915af4465abd",
+    "tests/simulation/phase05e-20261024-01/summary.json": "59045eb9ee0258c630306efe5b370876cbba17737d16c409110bbe1788bb3070",
+    "tests/simulation/phase05f-browser.json": "94a2da5a2f25dc30b26aaf7258c9af980623162cfa566c783a0585fc81a8da00",
+    "tests/simulation/phase05f-final-verification.json": "757a7a762cb9240b652de4966546e4b34f5eda4d3b71ba16a4e89c0657261dbb",
+    "tests/simulation/phase05f-historical.json": "49d1e05278257c405676583e467b8da89371f44bba6105ae2f48e91003601ba5",
+    "tests/simulation/phase05f-regressions.json": "1a964daeede9c812d2a5010ea4acd508b3dc1057d7639073f5becf2814129272",
+    "tests/simulation/phase1-results.json.gz": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199",
+    "tests/simulation/phase15-results.json.gz": "a670305fcfee7bcacfe41e4ab39d8756ff4911e2d5de3e34744c5cd45932921b",
+    "tests/simulation/phase15-summary.json": "5593ece79cb04b116166c9257abe4cd7fbdbdf6d5bd62b9e5bdaae13a8701099",
+    "tests/simulation/phase15a-results.json": "f24453f36354bd2a3a8ec2cc224d199a42f281e8d43579ae0f3e44be81d675b8",
+    "tests/simulation/phase15b-results.json.gz": "f23436a896680956bee4f627f793d73ef50ae30d2cbd875196ee5162eb5edb18",
+    "tests/simulation/phase15b-summary.json": "9c180a8bcd95f00697fd5b601915f7d3346541b68886a7d28702a759c9f70a37",
+    "tests/simulation/phase15c-results.json": "8631e5e19abc77294e9ae64eae5f3e54056845411f720269cf26b5c3d432c9e5",
+    "tests/simulation/phase15d-results.json.gz": "b85553b6fe63ef953a9819282230e60619957da62d102eb52ed9bb20116b1f16",
+    "tests/simulation/phase15d-summary.json": "869a61192910a9528943243d335abb952870da1ae5e5810faab491ac17a5e0d3",
+    "tests/simulation/phase15e-regressions.json": "cbbac3dab76ecfa603cd1f553d22b06ff14c5df8c3a0b5266e53d456a7e84847",
+    "tests/simulation/phase15e-results.json.gz": "fd9267609cb9af83c75c0310a08af7740c663ffd37423d46e34d34f08e154426",
+    "tests/simulation/phase15e-summary.json": "6ccf0b48a86e06335f20d3545b8a6179436f5dcc088b7ac9987df8349b592af4",
+    "tests/simulation/phase16c-20261024-01/aggressive.tar.gz": "e5eb252749e06fc5103b9300d586f6de67a7df67654586ea1ddd15bc2adcacd0",
+    "tests/simulation/phase16c-20261024-01/attempts.jsonl": "03180671a3c6f16ff755834333e8ec65612b411c81581a3bdeb8ad11cac1dc0e",
+    "tests/simulation/phase16c-20261024-01/cautious.tar.gz": "deecb52b6932ccb3ffcb48b4634c16e432df6fa2a110b1c6ccc25449d5b22ee2",
+    "tests/simulation/phase16c-20261024-01/delivery.tar.gz": "b5afe2ecc76c660e8c7d04d0a562562009ec048b0f21a0e588b8eb9c86ef2c76",
+    "tests/simulation/phase16c-20261024-01/manifest.json": "8cad32cfbedf635477a6062172f73ab349fcbe0b51b838a2568f778f690d3980",
+    "tests/simulation/phase16c-20261024-01/normal.tar.gz": "7b7f572997c9bd57233e5fbdec273f764041d4e7f4bb474502191fc96837ec6b",
+    "tests/simulation/phase16c-20261024-01/optimized.tar.gz": "2c5416cbcd6800c0e6faa9f3d19481511d97d6417b2b6314bf56e868f5c71719",
+    "tests/simulation/phase16c-20261024-01/recovery10.tar.gz": "a37bc574fe36939acb57896813cda0955eb1506ffb7995f59d4983b2222f7d9b",
+    "tests/simulation/phase16c-20261024-01/recovery20.tar.gz": "63ef4dd32baaddc1accf28b58a2590ae1bd1a0c37179f258c68f2d63814b33ab",
+    "tests/simulation/phase16c-20261024-01/recovery30.tar.gz": "0af675a4e2e72ce6725801c1d59fc30a47b43b06c6aa664523f011a2b29b3a7e",
+    "tests/simulation/phase16c-20261024-01/recovery5.tar.gz": "d45b21828d7cf55e70290d937df04e27d83c6782cab4bb40df6560e25ff17173",
+    "tests/simulation/phase16c-20261024-01/results-manifest.json": "b81ccbbf629a559a4cb4a2513989c75fd4b367e4b983459ad5c7389840d83748",
+    "tests/simulation/phase16c-20261024-01/summary.json": "629199d11af9786fd269b3564898b4db0cfb1dbb22adb8afd16d1ae5345539b0",
+    "tests/simulation/results.json.gz": "cc6de11a81b247b68214b83b50592fc829df6f866c8afc413acf88826f032199",
+    "tests/simulation/summary-phase1.json": "a695d8cff2edfa5b59ef272da29261439bd70d218709232797a390088701e81d",
+    "tests/simulation/summary.json": "7a635b8f670f67487b90312b99cc368f91a4d9a0a3dad319c523fcd3475ecc6a"
+  }
+}

@@ -1,0 +1,10 @@
+file,offset,interpretation,evidence_level
+PATR.EXE,0x5530,storm_loss_message,text_only
+PATR.EXE,0x7550,elderman_vote_messages,text_only
+PATR.EXE,0x86a0,mayor_vote_messages,text_only
+PATR.EXE,0x8720,tax_setting_messages,text_only
+PATR.EXE,0x93be,plague_onset_message,text_only
+PATR.EXE,0x93d9,fire_message_nearby,text_only_approximate_offset
+PATR.EXE,0x1053d,mayor_dismissal_message,text_only
+PATR.EXE,0x12200,confiscation_message_nearby,text_only_approximate_offset
+PATR.EXE,0x2d6a7,plague_end_message,text_only

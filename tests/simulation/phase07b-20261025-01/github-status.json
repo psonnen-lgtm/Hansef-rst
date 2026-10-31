@@ -1,0 +1,10 @@
+{
+  "branch": "feature/phase07b-eleven-living-cities",
+  "publishedReportCommit": "1b4d7f28629ea8f4cbf880a27e495771c489be03",
+  "testedGameCommit": "2c3d0ad53eba0d931616b5e96a8fdcc78621d85c",
+  "pullRequestCreated": false,
+  "pullRequestFailure": "Post https://api.github.com/graphql: Forbidden",
+  "compareURL": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...feature/phase07b-eleven-living-cities?expand=1",
+  "remoteDevelopmentCommit": "1e4b592beebe60bd2e46238c8cd8f84748cfa6d9",
+  "merged": false
+}

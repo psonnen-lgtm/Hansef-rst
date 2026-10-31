@@ -1,0 +1,10 @@
+{
+  "testedGameCommit": "a826d9d531efc1ea148a1aa2d38657e1f8a45e7d",
+  "gameSHA256": "511d2bbaac715204e6870ba88327c5b1a6672eee7f51fef9daa6b3877d351558",
+  "packageSHA256": "b87503e0bb12fc9e7ebb6350e8d55472e2be1317eaf383a8eea662bfd8986e7d",
+  "manifestFilesChecked": 15,
+  "zipCRCValid": true,
+  "sameScript": true,
+  "oldReportsImagesAndReleasesUnchanged": 198,
+  "base": "1d716b7348a307c7c949c7e710d27e2152cbca5f"
+}

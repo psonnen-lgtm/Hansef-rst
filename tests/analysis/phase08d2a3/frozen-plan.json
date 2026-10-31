@@ -1,0 +1,26 @@
+{
+  "base": "f6a211508d112a12871f20eafe08506c1715b1b1",
+  "branch": "analysis/phase08d2a3-political-performance",
+  "selected": "P2",
+  "economicParameter": 500,
+  "maxVMPaths": 12,
+  "limits": {
+    "trips": 12,
+    "days": 120,
+    "tradeDecisions": 30
+  },
+  "expectedFailedAcceptance": [
+    "intermediate-promotion",
+    "provisional-reputation",
+    "campaign-policy-not-approved"
+  ],
+  "sha256": {
+    "Hansefuerst_0_4.html": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+    "tests/analysis/phase08d2a2/harness.cjs": "879803e7ec0fcede3dcff4b513597eee4ffd83d1dd41b2ff028fb1b1f07201b8",
+    "tests/analysis/phase08d2a2/price-model.cjs": "341c7dd16e4fab10f002760ca8c54282a9fb7c10883f4bc6a2f260ecd297fc73",
+    "tests/analysis/phase08d2a2/rational.cjs": "580f8b50c69f8a4b332b959e7af87496a1ae9f819930974307eb2dc48cf1642b",
+    "tests/analysis/phase08d2a3/ledger.cjs": "f25151b2e708d15037a45f7ceb500f545ac182a1b8b847cf2a8b10288d570ce2",
+    "tests/analysis/phase08d2a3/observer.cjs": "6dcafc346703896d13c58cb8ad0cba8a7b4fad66fb7a2436eb95f67ce1417e13",
+    "tests/analysis/phase08d2a3/checks.cjs": "28430243acea26bd4c53ffa52ddcf051e0d8e21f9d6c993b95d89213e03cdfb9"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "phase": "0.8d.2a.1",
+  "basis": "0c8db09056a7dd8e3881ba73684d244fcc3bc4fd",
+  "testedPrototypeCommit": "0824817fbf3db5f7087f04f3baf654a3582f2a9a",
+  "gameCodeCommit": "c42c25cf5cf372c210b47f25b00b9f0106044ed3",
+  "gameSHA256": "c8ad9d2ef453e0c80ae51dfef8a2d21f8e17dc4cad49bd583568cf0721cdd924",
+  "parameters": {
+    "B1": 220,
+    "B2": 350,
+    "B3": 500
+  },
+  "newArms": 54,
+  "historicalArmsReadOnly": 36,
+  "historicalArmsReplayed": 0,
+  "newArmsRepeated": 0,
+  "sameStartRngHorizonComparisons": 108,
+  "focusedGroupsCompleted": 72,
+  "technicalExecutionFailures": 0,
+  "baseRegressionPass": 19,
+  "tradeRegressionPass": 18,
+  "fixedAnchorSplitAndGoldReversalSafe": true,
+  "temporalReanchorNeutrality": false,
+  "actualOneDayCounterexamples": {
+    "B1": 1,
+    "B2": 12,
+    "B3": 40
+  },
+  "politicalWashTradeNeutrality": false,
+  "economicPriority": "B3, conditional",
+  "readyForProductiveTest": false,
+  "fullEconomyOrCareerSimulations": 0,
+  "saveVersionProductive": 13,
+  "productiveMigration": false,
+  "pagesChanged": false,
+  "historicalPhaseFilesChanged": false,
+  "pullRequest": "actual gh pr create attempted; GraphQL Forbidden; no PR created",
+  "localReportAndPrototypeLinksVerified": 27,
+  "oldIndexPrefixPreserved": true,
+  "originalAndFrozenSourceHashesPreserved": true,
+  "compare": "https://github.com/psonnen-lgtm/Hansef-rst/compare/development/v04-foundation...analysis/phase08d2a1-price-calibration?expand=1"
+}

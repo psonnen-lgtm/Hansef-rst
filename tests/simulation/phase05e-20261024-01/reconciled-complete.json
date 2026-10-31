@@ -1,0 +1,9 @@
+{
+  "verifiedCases": 1500,
+  "identicalReplays": 1500,
+  "failedWorkerAttempts": 1,
+  "recoveredByUnchangedTargetedRetry": 1,
+  "unresolvedCases": 0,
+  "additionalUnobservedParityExecutions": 7,
+  "causeOfOriginalFailureNotIsolated": true
+}

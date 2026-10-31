@@ -1,0 +1,316 @@
+{
+  "base": "61dae76d3bf25490e37570fad56d1b77f5f826b0",
+  "testedGameCommit": "a03c673828d2f3b0e9350a2be8f4035d43647598",
+  "gameSHA256": "c27a4f97d7b2aa67437b896b3fba07a93cfb446fef28c821a9b75bf31a96e38a",
+  "browser": "154.0.8037.57",
+  "scope": "four Chromium touch sizes with isolated old/new saves, purchases and one existing bath per viewport; no real Apple hardware or full careers",
+  "checks": [
+    {
+      "name": "information 375x667",
+      "passed": true,
+      "viewport": {
+        "width": 375,
+        "height": 667
+      },
+      "input": "native emulated tap and select",
+      "V11StartupOriginalBackupAndProjectionExact": true,
+      "cityOptions": 11,
+      "goodOptions": 11,
+      "freeStableGlobalGossip": true,
+      "declinedPurchaseNoReceipt": true,
+      "reportCost": 20,
+      "repeatedReadsFree": true,
+      "exactPriceNotExposed": true,
+      "archiveCostOnce": 300,
+      "oldManualAndNewAutomaticFiling": true,
+      "ownJournalUnchanged": true,
+      "oldBathCost15Days1AndStoredSpecialPreserved": true,
+      "laterDayDistinctReceipt": true,
+      "newInformationActionsRNG0": true,
+      "quotaRollbackRAMExportRecovery": true,
+      "invalidImportRejected": true,
+      "V12RealDownloadFileReaderImportReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Fisch in Bergen für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Pelze in Nowgorod für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "alert",
+          "text": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "alert",
+          "text": "Automatisches Speichern fehlgeschlagen. Bitte den Spielstand exportieren."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "information 390x844",
+      "passed": true,
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "input": "native emulated tap and select",
+      "V11StartupOriginalBackupAndProjectionExact": true,
+      "cityOptions": 11,
+      "goodOptions": 11,
+      "freeStableGlobalGossip": true,
+      "declinedPurchaseNoReceipt": true,
+      "reportCost": 20,
+      "repeatedReadsFree": true,
+      "exactPriceNotExposed": true,
+      "archiveCostOnce": 300,
+      "oldManualAndNewAutomaticFiling": true,
+      "ownJournalUnchanged": true,
+      "oldBathCost15Days1AndStoredSpecialPreserved": true,
+      "laterDayDistinctReceipt": true,
+      "newInformationActionsRNG0": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "invalidImportRejected": true,
+      "V12RealDownloadFileReaderImportReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Fisch in Bergen für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "information 820x1180",
+      "passed": true,
+      "viewport": {
+        "width": 820,
+        "height": 1180
+      },
+      "input": "native emulated tap and select",
+      "V11StartupOriginalBackupAndProjectionExact": true,
+      "cityOptions": 11,
+      "goodOptions": 11,
+      "freeStableGlobalGossip": true,
+      "declinedPurchaseNoReceipt": true,
+      "reportCost": 20,
+      "repeatedReadsFree": true,
+      "exactPriceNotExposed": true,
+      "archiveCostOnce": 300,
+      "oldManualAndNewAutomaticFiling": true,
+      "ownJournalUnchanged": true,
+      "oldBathCost15Days1AndStoredSpecialPreserved": true,
+      "laterDayDistinctReceipt": true,
+      "newInformationActionsRNG0": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "invalidImportRejected": true,
+      "V12RealDownloadFileReaderImportReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Fisch in Bergen für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    },
+    {
+      "name": "information 1280x900",
+      "passed": true,
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "input": "click and select",
+      "V11StartupOriginalBackupAndProjectionExact": true,
+      "cityOptions": 11,
+      "goodOptions": 11,
+      "freeStableGlobalGossip": true,
+      "declinedPurchaseNoReceipt": true,
+      "reportCost": 20,
+      "repeatedReadsFree": true,
+      "exactPriceNotExposed": true,
+      "archiveCostOnce": 300,
+      "oldManualAndNewAutomaticFiling": true,
+      "ownJournalUnchanged": true,
+      "oldBathCost15Days1AndStoredSpecialPreserved": true,
+      "laterDayDistinctReceipt": true,
+      "newInformationActionsRNG0": true,
+      "quotaRollbackRAMExportRecovery": false,
+      "invalidImportRejected": true,
+      "V12RealDownloadFileReaderImportReload": true,
+      "buttonsAtLeast44px": true,
+      "noHorizontalDialogOverflow": true,
+      "stickyCloseReachable": true,
+      "dialogs": [
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Handelsarchiv und eigenen Schreiber für einmalig 300 Gold beauftragen? Neue Käufe werden zusätzlich ins Handelsbuch übernommen. Vorhandene Belege kannst du danach ausdrücklich kostenlos übernehmen."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Fisch in Bergen für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "confirm",
+          "text": "Informantenbericht über Tuch in Brügge für 20 Gold kaufen? Keine Spieltage, kein garantierter Ankunftspreis."
+        },
+        {
+          "type": "alert",
+          "text": "Übernahme nicht möglich. Prüfe Datei und freien Speicher; der bisherige Spielstand bleibt erhalten."
+        },
+        {
+          "type": "confirm",
+          "text": "Den aktuellen Spielstand überschreiben?"
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "screenshots": [
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_hafengeruecht-375.png",
+      "sha256": "15400e5c1ffa851c4c73ce7c737f729130b1c9c632205f76b6501aad791b5757"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_informant-375.png",
+      "sha256": "02557bd2c36f55528b89198cd0664fd088fe93915e7e2863d316cba66cd4566d"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_handelsbuch-375.png",
+      "sha256": "62d18467eab43e68bdcea2000d3341f04bcc62822ee018b1cbb3b55aefa383d6"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_hafengeruecht-390.png",
+      "sha256": "539828c75b58794d9be16cc5062de8aaf10d28c491235177c0cbeac46b7690fd"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_informant-390.png",
+      "sha256": "d70dd1181377b814a0aff122c1a69a941ec7f6c9dc297cd62e5e7d6680cccc76"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_handelsbuch-390.png",
+      "sha256": "d631f7fa6c1c20b0253289e737184fb4e5139d4af8cdf044733b91858575d8ca"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_hafengeruecht-820.png",
+      "sha256": "e72e0ef26ab610dbd1531a462675c41513e0326855006da230af2375f2ba2926"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_informant-820.png",
+      "sha256": "9ae4bd8b0f3d691df1393cab2f89df131e71d50931d24c9b6639f6a373bb4119"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_handelsbuch-820.png",
+      "sha256": "59c0d9c3ebb098d620b4a9b3f12e966294a4bf95a61a85206a10027b4b4e40ef"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_hafengeruecht-1280.png",
+      "sha256": "abc84479f0abffe67dd4e3aa5ad65afb8ae721829e29efd175f4607577cee37a"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_informant-1280.png",
+      "sha256": "48207742ab3007b96e907a472ce55a39747be3b2845679bbb9ba5ea076782a39"
+    },
+    {
+      "file": "docs/entwicklungsberichte/2026-10-27_0.8d1a_attempt1_handelsbuch-1280.png",
+      "sha256": "dbe4ef811ecf0d782e8a0cab2590cfc2653ff438fa3f314ad6119a9b4152fca4"
+    }
+  ]
+}

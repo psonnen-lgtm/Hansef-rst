@@ -1,0 +1,8131 @@
+{
+  "baseCommit": "99822c3e1c74223fd51edd78d9eb981770b5d031",
+  "gameSHA256": "42db1ba03b91f910be024dc69e31752054ef1204b170408686a40eca10d572af",
+  "driverSHA256": "25d10136552d2dba2952f9710d763c2fa7c876f85ffdf21c9aec7e2dea1af2cf",
+  "rng": "mulberry32",
+  "seeds": "10001..10010",
+  "checks": [
+    "40 loss-count proofs with cross-harbor buy/travel/sell",
+    "40 exact replays",
+    "actual sale profit reconciliation",
+    "actual travel-time reconciliation",
+    "actual buy/sell/travel event counts",
+    "actual debt, interest and cash accounting",
+    "economic stop requires exhausted bank and credit",
+    "zero-cash ship owner cannot sail with exhausted credit",
+    "available existing bank credit is actually used"
+  ],
+  "fixtures": {
+    "stuck": {
+      "lossCount": 0,
+      "stopReason": "insufficient_travel_cash"
+    },
+    "funded": {
+      "borrowed": 2232,
+      "stopReason": "start_wealth_regained"
+    }
+  },
+  "rows": [
+    {
+      "seed": 10001,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486017,
+        "gold": 796,
+        "wealth": 5756,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 2590
+      },
+      "final": {
+        "day": 486034,
+        "gold": 5692,
+        "wealth": 10283.099999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4591.099999999999,
+        "creditAvailable": 4627
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 17,
+        "day": 486034,
+        "gold": 5692,
+        "wealth": 10283.099999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4591.099999999999,
+        "creditAvailable": 4627
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 11,
+        "sells": 11,
+        "trips": 11
+      },
+      "tradeProfit": 828,
+      "lossTrades": [
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1664,
+          "netResult": -1670,
+          "counted": true
+        },
+        {
+          "quantity": 66,
+          "sold": 66,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -858,
+          "netResult": -864,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 28,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -364,
+          "netResult": -440,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -378,
+          "netResult": -384,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 4932
+    },
+    {
+      "seed": 10002,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486014,
+        "gold": 1154,
+        "wealth": 5896.999999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 2654
+      },
+      "final": {
+        "day": 486032,
+        "gold": 5742,
+        "wealth": 10485,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 4718
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 18,
+        "day": 486032,
+        "gold": 5742,
+        "wealth": 10485,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 4718
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 11,
+        "sells": 11,
+        "trips": 11
+      },
+      "tradeProfit": 856,
+      "lossTrades": [
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -1080,
+          "netResult": -1086,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -860,
+          "netResult": -866,
+          "counted": true
+        },
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -720,
+          "netResult": -726,
+          "counted": true
+        },
+        {
+          "quantity": 77,
+          "sold": 77,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -616,
+          "netResult": -622,
+          "counted": true
+        },
+        {
+          "quantity": 45,
+          "sold": 45,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 4672
+    },
+    {
+      "seed": 10003,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486021,
+        "gold": 1424,
+        "wealth": 6318.9,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4894.9,
+        "creditAvailable": 2844
+      },
+      "final": {
+        "day": 486043,
+        "gold": 5119,
+        "wealth": 10013.9,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4894.9,
+        "creditAvailable": 4506
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 22,
+        "day": 486043,
+        "gold": 5119,
+        "wealth": 10013.9,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4894.9,
+        "creditAvailable": 4506
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 11,
+        "sells": 11,
+        "trips": 11
+      },
+      "tradeProfit": 251,
+      "lossTrades": [
+        {
+          "quantity": 88,
+          "sold": 86,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1032,
+          "netResult": -1104,
+          "counted": true
+        },
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -1044,
+          "netResult": -1050,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -660,
+          "netResult": -666,
+          "counted": true
+        },
+        {
+          "quantity": 76,
+          "sold": 76,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -456,
+          "netResult": -462,
+          "counted": true
+        },
+        {
+          "quantity": 48,
+          "sold": 48,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 3731
+    },
+    {
+      "seed": 10004,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486022,
+        "gold": 1012,
+        "wealth": 5841.799999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 2629
+      },
+      "final": {
+        "day": 486047,
+        "gold": 6824,
+        "wealth": 11653.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 5244
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 25,
+        "day": 486047,
+        "gold": 6824,
+        "wealth": 11653.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 5244
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 11,
+        "sells": 11,
+        "trips": 11
+      },
+      "tradeProfit": 1890,
+      "lossTrades": [
+        {
+          "quantity": 39,
+          "sold": 39,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1209,
+          "netResult": -1215,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -1064,
+          "netResult": -1070,
+          "counted": true
+        },
+        {
+          "quantity": 51,
+          "sold": 51,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -765,
+          "netResult": -771,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -380,
+          "netResult": -386,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 5848
+    },
+    {
+      "seed": 10005,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486014,
+        "gold": 1693,
+        "wealth": 6653,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 2994
+      },
+      "final": {
+        "day": 486029,
+        "gold": 7180,
+        "wealth": 11944.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 5375
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 5,
+        "days": 15,
+        "day": 486029,
+        "gold": 7180,
+        "wealth": 11944.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 5375
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 10,
+        "sells": 10,
+        "trips": 10
+      },
+      "tradeProfit": 2240,
+      "lossTrades": [
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1274,
+          "netResult": -1280,
+          "counted": true
+        },
+        {
+          "quantity": 84,
+          "sold": 84,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 83,
+          "sold": 83,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -415,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -580,
+          "netResult": -586,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -168,
+          "netResult": -174,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 5,
+      "recoveryProfit": 5517
+    },
+    {
+      "seed": 10006,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486016,
+        "gold": 1290,
+        "wealth": 5946.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 2676
+      },
+      "final": {
+        "day": 486032,
+        "gold": 5479,
+        "wealth": 10135.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 4561
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 5,
+        "days": 16,
+        "day": 486032,
+        "gold": 5479,
+        "wealth": 10135.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 4561
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 10,
+        "sells": 10,
+        "trips": 10
+      },
+      "tradeProfit": 539,
+      "lossTrades": [
+        {
+          "quantity": 53,
+          "sold": 53,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -901,
+          "netResult": -907,
+          "counted": true
+        },
+        {
+          "quantity": 79,
+          "sold": 79,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -1106,
+          "netResult": -1112,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -630,
+          "netResult": -636,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -420,
+          "netResult": -426,
+          "counted": true
+        },
+        {
+          "quantity": 89,
+          "sold": 89,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -623,
+          "netResult": -629,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 5,
+      "recoveryProfit": 4219
+    },
+    {
+      "seed": 10007,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486015,
+        "gold": 1325,
+        "wealth": 6198.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4873.2,
+        "creditAvailable": 2789
+      },
+      "final": {
+        "day": 486031,
+        "gold": 5787,
+        "wealth": 10334.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4547.7,
+        "creditAvailable": 4651
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 5,
+        "days": 16,
+        "day": 486031,
+        "gold": 5787,
+        "wealth": 10334.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4547.7,
+        "creditAvailable": 4651
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 10,
+        "sells": 10,
+        "trips": 10
+      },
+      "tradeProfit": 847,
+      "lossTrades": [
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1131,
+          "netResult": -1137,
+          "counted": true
+        },
+        {
+          "quantity": 81,
+          "sold": 81,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -1215,
+          "netResult": -1221,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -611,
+          "netResult": -617,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -658,
+          "netResult": -664,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 5,
+      "recoveryProfit": 4492
+    },
+    {
+      "seed": 10008,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486020,
+        "gold": 1504,
+        "wealth": 6268.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 2821
+      },
+      "final": {
+        "day": 486038,
+        "gold": 6440,
+        "wealth": 11204.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 5042
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 18,
+        "day": 486038,
+        "gold": 6440,
+        "wealth": 11204.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 5042
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 11,
+        "sells": 11,
+        "trips": 11
+      },
+      "tradeProfit": 1529,
+      "lossTrades": [
+        {
+          "quantity": 64,
+          "sold": 64,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1088,
+          "netResult": -1094,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -725,
+          "netResult": -731,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -836,
+          "netResult": -842,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -572,
+          "netResult": -578,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -245,
+          "netResult": -251,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 4995
+    },
+    {
+      "seed": 10009,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486013,
+        "gold": 1756,
+        "wealth": 6716,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 3022
+      },
+      "final": {
+        "day": 486024,
+        "gold": 5753,
+        "wealth": 10713,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 4821
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 4,
+        "days": 11,
+        "day": 486024,
+        "gold": 5753,
+        "wealth": 10713,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 4821
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 9,
+        "sells": 9,
+        "trips": 9
+      },
+      "tradeProfit": 868,
+      "lossTrades": [
+        {
+          "quantity": 51,
+          "sold": 50,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -750,
+          "netResult": -817,
+          "counted": true
+        },
+        {
+          "quantity": 29,
+          "sold": 29,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -841,
+          "netResult": -847,
+          "counted": true
+        },
+        {
+          "quantity": 61,
+          "sold": 61,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -610,
+          "netResult": -616,
+          "counted": true
+        },
+        {
+          "quantity": 56,
+          "sold": 56,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -392,
+          "netResult": -398,
+          "counted": true
+        },
+        {
+          "quantity": 70,
+          "sold": 70,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -560,
+          "netResult": -566,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 4,
+      "recoveryProfit": 4021
+    },
+    {
+      "seed": 10010,
+      "targetLosses": 5,
+      "lossCount": 5,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486012,
+        "gold": 1497,
+        "wealth": 6457,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 2906
+      },
+      "final": {
+        "day": 486023,
+        "gold": 5233,
+        "wealth": 10062.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 4528
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 4,
+        "days": 11,
+        "day": 486023,
+        "gold": 5233,
+        "wealth": 10062.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 4528
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 9,
+        "sells": 9,
+        "trips": 9
+      },
+      "tradeProfit": 324,
+      "lossTrades": [
+        {
+          "quantity": 36,
+          "sold": 36,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1332,
+          "netResult": -1338,
+          "counted": true
+        },
+        {
+          "quantity": 65,
+          "sold": 65,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -845,
+          "netResult": -851,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 42,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -378,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -352,
+          "netResult": -358,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 4,
+      "recoveryProfit": 3760
+    },
+    {
+      "seed": 10001,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486041,
+        "gold": 122,
+        "wealth": 4951.799999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4829.799999999999,
+        "creditAvailable": 2228
+      },
+      "final": {
+        "day": 486142,
+        "gold": 8579,
+        "wealth": 10991.631493169869,
+        "debt": 1983.1685068301317,
+        "bank": 0,
+        "shipValue": 4395.8,
+        "creditAvailable": 2962.8314931698683
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 23,
+        "days": 101,
+        "day": 486142,
+        "gold": 8579,
+        "wealth": 10991.631493169869,
+        "debt": 1983.1685068301317,
+        "bank": 0,
+        "shipValue": 4395.8,
+        "creditAvailable": 2962.8314931698683
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "recovery",
+          "op": "borrow",
+          "amount": 1979,
+          "day": 486129,
+          "gold": 1981,
+          "wealth": 4397.8,
+          "debt": 1979,
+          "bank": 0,
+          "shipValue": 4395.8,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1979,
+      "interest": 4.1685068301315304,
+      "eventsSummary": {
+        "buys": 13,
+        "sells": 13,
+        "trips": 33
+      },
+      "tradeProfit": 1868,
+      "lossTrades": [
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1664,
+          "netResult": -1670,
+          "counted": true
+        },
+        {
+          "quantity": 66,
+          "sold": 66,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -858,
+          "netResult": -864,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 28,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -364,
+          "netResult": -440,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -378,
+          "netResult": -384,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -110,
+          "netResult": -116,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 23,
+      "recoveryProfit": 6616
+    },
+    {
+      "seed": 10002,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486032,
+        "gold": 154,
+        "wealth": 4896.999999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 2204
+      },
+      "final": {
+        "day": 486144,
+        "gold": 11017,
+        "wealth": 13324.774691660095,
+        "debt": 2022.9253083399028,
+        "bank": 0,
+        "shipValue": 4330.7,
+        "creditAvailable": 3973.0746916600974
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 29,
+        "days": 112,
+        "day": 486144,
+        "gold": 11017,
+        "wealth": 13324.774691660095,
+        "debt": 2022.9253083399028,
+        "bank": 0,
+        "shipValue": 4330.7,
+        "creditAvailable": 3973.0746916600974
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "recovery",
+          "op": "borrow",
+          "amount": 2019,
+          "day": 486132,
+          "gold": 2023,
+          "wealth": 4486.599999999999,
+          "debt": 2019,
+          "bank": 0,
+          "shipValue": 4482.599999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2019,
+      "interest": 3.9253083399027497,
+      "eventsSummary": {
+        "buys": 14,
+        "sells": 14,
+        "trips": 39
+      },
+      "tradeProfit": 4396,
+      "lossTrades": [
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -1080,
+          "netResult": -1086,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -860,
+          "netResult": -866,
+          "counted": true
+        },
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -720,
+          "netResult": -726,
+          "counted": true
+        },
+        {
+          "quantity": 77,
+          "sold": 77,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -616,
+          "netResult": -622,
+          "counted": true
+        },
+        {
+          "quantity": 45,
+          "sold": 45,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 7,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -189,
+          "netResult": -321,
+          "counted": true
+        },
+        {
+          "quantity": 19,
+          "sold": 17,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -119,
+          "netResult": -163,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -161,
+          "netResult": -167,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -49,
+          "netResult": -55,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 29,
+      "recoveryProfit": 9018
+    },
+    {
+      "seed": 10003,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486043,
+        "gold": 341,
+        "wealth": 5105.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4764.7,
+        "creditAvailable": 2298
+      },
+      "final": {
+        "day": 486124,
+        "gold": 6722,
+        "wealth": 10705.5,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 3983.5000000000005,
+        "creditAvailable": 4817
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 24,
+        "days": 81,
+        "day": 486124,
+        "gold": 6722,
+        "wealth": 10705.5,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 3983.5000000000005,
+        "creditAvailable": 4817
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 34,
+        "sells": 34,
+        "trips": 34
+      },
+      "tradeProfit": 1992,
+      "lossTrades": [
+        {
+          "quantity": 88,
+          "sold": 86,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1032,
+          "netResult": -1104,
+          "counted": true
+        },
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -1044,
+          "netResult": -1050,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -660,
+          "netResult": -666,
+          "counted": true
+        },
+        {
+          "quantity": 76,
+          "sold": 76,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -456,
+          "netResult": -462,
+          "counted": true
+        },
+        {
+          "quantity": 48,
+          "sold": 48,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -343,
+          "netResult": -349,
+          "counted": true
+        },
+        {
+          "quantity": 35,
+          "sold": 35,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -210,
+          "netResult": -216,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -230,
+          "netResult": -236,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -90,
+          "netResult": -96,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 24,
+      "recoveryProfit": 6525
+    },
+    {
+      "seed": 10004,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486046,
+        "gold": 187,
+        "wealth": 4821.5,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4634.5,
+        "creditAvailable": 2170
+      },
+      "final": {
+        "day": 486200,
+        "gold": 11268,
+        "wealth": 13156.988458336547,
+        "debt": 1552.0115416634521,
+        "bank": 0,
+        "shipValue": 3441.0000000000005,
+        "creditAvailable": 4368.988458336547
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 35,
+        "days": 154,
+        "day": 486200,
+        "gold": 11268,
+        "wealth": 13156.988458336547,
+        "debt": 1552.0115416634521,
+        "bank": 0,
+        "shipValue": 3441.0000000000005,
+        "creditAvailable": 4368.988458336547
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "recovery",
+          "op": "borrow",
+          "amount": 1549,
+          "day": 486188,
+          "gold": 1550,
+          "wealth": 3442.0000000000005,
+          "debt": 1549,
+          "bank": 0,
+          "shipValue": 3441.0000000000005,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1549,
+      "interest": 3.011541663451887,
+      "eventsSummary": {
+        "buys": 14,
+        "sells": 14,
+        "trips": 45
+      },
+      "tradeProfit": 4989,
+      "lossTrades": [
+        {
+          "quantity": 39,
+          "sold": 39,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1209,
+          "netResult": -1215,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -1064,
+          "netResult": -1070,
+          "counted": true
+        },
+        {
+          "quantity": 51,
+          "sold": 51,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -765,
+          "netResult": -771,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -380,
+          "netResult": -386,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -297,
+          "netResult": -303,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 35,
+      "recoveryProfit": 9742
+    },
+    {
+      "seed": 10005,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486032,
+        "gold": 433,
+        "wealth": 5219.400000000001,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4786.400000000001,
+        "creditAvailable": 2349
+      },
+      "final": {
+        "day": 486065,
+        "gold": 5723,
+        "wealth": 10335.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4612.8,
+        "creditAvailable": 4651
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 10,
+        "days": 33,
+        "day": 486065,
+        "gold": 5723,
+        "wealth": 10335.8,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4612.8,
+        "creditAvailable": 4651
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 20,
+        "sells": 20,
+        "trips": 20
+      },
+      "tradeProfit": 843,
+      "lossTrades": [
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1274,
+          "netResult": -1280,
+          "counted": true
+        },
+        {
+          "quantity": 84,
+          "sold": 84,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 83,
+          "sold": 83,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -415,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -580,
+          "netResult": -586,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -168,
+          "netResult": -174,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 30,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -119,
+          "netResult": -125,
+          "counted": true
+        },
+        {
+          "quantity": 28,
+          "sold": 28,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -336,
+          "netResult": -342,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -55,
+          "netResult": -61,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 10,
+      "recoveryProfit": 5350
+    },
+    {
+      "seed": 10006,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486031,
+        "gold": 416,
+        "wealth": 5072.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 2282
+      },
+      "final": {
+        "day": 486065,
+        "gold": 5649,
+        "wealth": 10305.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 4637
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 10,
+        "days": 34,
+        "day": 486065,
+        "gold": 5649,
+        "wealth": 10305.2,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 4637
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 20,
+        "sells": 20,
+        "trips": 20
+      },
+      "tradeProfit": 813,
+      "lossTrades": [
+        {
+          "quantity": 53,
+          "sold": 53,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -901,
+          "netResult": -907,
+          "counted": true
+        },
+        {
+          "quantity": 79,
+          "sold": 79,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -1106,
+          "netResult": -1112,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -630,
+          "netResult": -636,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -420,
+          "netResult": -426,
+          "counted": true
+        },
+        {
+          "quantity": 89,
+          "sold": 89,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -623,
+          "netResult": -629,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -256,
+          "netResult": -262,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -238,
+          "netResult": -244,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -126,
+          "netResult": -132,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -164,
+          "netResult": -170,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 10,
+      "recoveryProfit": 5337
+    },
+    {
+      "seed": 10007,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486036,
+        "gold": 269,
+        "wealth": 4816.7,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4547.7,
+        "creditAvailable": 2168
+      },
+      "final": {
+        "day": 486246,
+        "gold": 10605,
+        "wealth": 12491.229796880729,
+        "debt": 1554.770203119271,
+        "bank": 0,
+        "shipValue": 3441.0000000000005,
+        "creditAvailable": 4066.229796880729
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 48,
+        "days": 210,
+        "day": 486246,
+        "gold": 10605,
+        "wealth": 12491.229796880729,
+        "debt": 1554.770203119271,
+        "bank": 0,
+        "shipValue": 3441.0000000000005,
+        "creditAvailable": 4066.229796880729
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "recovery",
+          "op": "borrow",
+          "amount": 1551,
+          "day": 486231,
+          "gold": 1556,
+          "wealth": 3446.0000000000005,
+          "debt": 1551,
+          "bank": 0,
+          "shipValue": 3441.0000000000005,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1551,
+      "interest": 3.7702031192711845,
+      "eventsSummary": {
+        "buys": 14,
+        "sells": 14,
+        "trips": 58
+      },
+      "tradeProfit": 4402,
+      "lossTrades": [
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1131,
+          "netResult": -1137,
+          "counted": true
+        },
+        {
+          "quantity": 81,
+          "sold": 81,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -1215,
+          "netResult": -1221,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -611,
+          "netResult": -617,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -658,
+          "netResult": -664,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -364,
+          "netResult": -370,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -220,
+          "netResult": -226,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -255,
+          "netResult": -261,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -99,
+          "netResult": -105,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -88,
+          "netResult": -94,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 48,
+      "recoveryProfit": 9073
+    },
+    {
+      "seed": 10008,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486043,
+        "gold": 307,
+        "wealth": 4898.099999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4591.099999999999,
+        "creditAvailable": 2204
+      },
+      "final": {
+        "day": 486279,
+        "gold": 10333,
+        "wealth": 12363.78990053086,
+        "debt": 1757.410099469138,
+        "bank": 0,
+        "shipValue": 3788.2,
+        "creditAvailable": 3806.589900530862
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 54,
+        "days": 236,
+        "day": 486279,
+        "gold": 10333,
+        "wealth": 12363.78990053086,
+        "debt": 1757.410099469138,
+        "bank": 0,
+        "shipValue": 3788.2,
+        "creditAvailable": 3806.589900530862
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "recovery",
+          "op": "borrow",
+          "amount": 1754,
+          "day": 486267,
+          "gold": 1755,
+          "wealth": 3897.7000000000003,
+          "debt": 1754,
+          "bank": 0,
+          "shipValue": 3896.7000000000003,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1754,
+      "interest": 3.4100994691379016,
+      "eventsSummary": {
+        "buys": 13,
+        "sells": 13,
+        "trips": 64
+      },
+      "tradeProfit": 3963,
+      "lossTrades": [
+        {
+          "quantity": 64,
+          "sold": 64,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1088,
+          "netResult": -1094,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -725,
+          "netResult": -731,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -836,
+          "netResult": -842,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -572,
+          "netResult": -578,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -245,
+          "netResult": -251,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -520,
+          "netResult": -526,
+          "counted": true
+        },
+        {
+          "quantity": 22,
+          "sold": 22,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -242,
+          "netResult": -248,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -189,
+          "netResult": -195,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 54,
+      "recoveryProfit": 8596
+    },
+    {
+      "seed": 10009,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486030,
+        "gold": 466,
+        "wealth": 5426,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 2442
+      },
+      "final": {
+        "day": 486052,
+        "gold": 5518,
+        "wealth": 10326.099999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4808.099999999999,
+        "creditAvailable": 4647
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 22,
+        "day": 486052,
+        "gold": 5518,
+        "wealth": 10326.099999999999,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4808.099999999999,
+        "creditAvailable": 4647
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 16,
+        "sells": 16,
+        "trips": 16
+      },
+      "tradeProfit": 675,
+      "lossTrades": [
+        {
+          "quantity": 51,
+          "sold": 50,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -750,
+          "netResult": -817,
+          "counted": true
+        },
+        {
+          "quantity": 29,
+          "sold": 29,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -841,
+          "netResult": -847,
+          "counted": true
+        },
+        {
+          "quantity": 61,
+          "sold": 61,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -610,
+          "netResult": -616,
+          "counted": true
+        },
+        {
+          "quantity": 56,
+          "sold": 56,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -392,
+          "netResult": -398,
+          "counted": true
+        },
+        {
+          "quantity": 70,
+          "sold": 70,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -560,
+          "netResult": -566,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -400,
+          "netResult": -406,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -344,
+          "netResult": -350,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -216,
+          "netResult": -222,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 5088
+    },
+    {
+      "seed": 10010,
+      "targetLosses": 10,
+      "lossCount": 10,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486024,
+        "gold": 362,
+        "wealth": 5322,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 2395
+      },
+      "final": {
+        "day": 486046,
+        "gold": 5003,
+        "wealth": 9963,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 4483
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 10,
+        "days": 22,
+        "day": 486046,
+        "gold": 5003,
+        "wealth": 9963,
+        "debt": 0,
+        "bank": 0,
+        "shipValue": 4960,
+        "creditAvailable": 4483
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [],
+      "borrowed": 0,
+      "interest": 0,
+      "eventsSummary": {
+        "buys": 20,
+        "sells": 20,
+        "trips": 20
+      },
+      "tradeProfit": 160,
+      "lossTrades": [
+        {
+          "quantity": 36,
+          "sold": 36,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1332,
+          "netResult": -1338,
+          "counted": true
+        },
+        {
+          "quantity": 65,
+          "sold": 65,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -845,
+          "netResult": -851,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 42,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -378,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -352,
+          "netResult": -358,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -330,
+          "netResult": -336,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -261,
+          "netResult": -267,
+          "counted": true
+        },
+        {
+          "quantity": 31,
+          "sold": 31,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -217,
+          "netResult": -223,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -144,
+          "netResult": -150,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -153,
+          "netResult": -159,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 10,
+      "recoveryProfit": 4701
+    },
+    {
+      "seed": 10001,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486107,
+        "gold": 84,
+        "wealth": 2634.143429886354,
+        "debt": 2192.856570113645,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486161,
+        "gold": 0,
+        "wealth": 2313.893121650936,
+        "debt": 2212.106878349064,
+        "bank": 0,
+        "shipValue": 4526,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2178,
+          "day": 486065,
+          "gold": 2188,
+          "wealth": 4839.799999999999,
+          "debt": 2178,
+          "bank": 0,
+          "shipValue": 4829.799999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2178,
+      "interest": 34.10687834906588,
+      "eventsSummary": {
+        "buys": 21,
+        "sells": 20,
+        "trips": 35
+      },
+      "tradeProfit": -6831,
+      "lossTrades": [
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1664,
+          "netResult": -1670,
+          "counted": true
+        },
+        {
+          "quantity": 66,
+          "sold": 66,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -858,
+          "netResult": -864,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 28,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -364,
+          "netResult": -440,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -378,
+          "netResult": -384,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -110,
+          "netResult": -116,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -33,
+          "netResult": -39,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 0,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": 0,
+          "netResult": -31,
+          "counted": false
+        },
+        {
+          "quantity": 63,
+          "sold": 63,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -756,
+          "netResult": -762,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 28,
+          "sold": 28,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -280,
+          "netResult": -286,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -225,
+          "netResult": -231,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -108,
+          "netResult": -114,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -92,
+          "netResult": -98,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 3,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -30,
+          "netResult": -78,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 14,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10002,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486072,
+        "gold": 411,
+        "wealth": 3007.7561356683846,
+        "debt": 2146.2438643316145,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486100,
+        "gold": 8942,
+        "wealth": 11463.90722780405,
+        "debt": 2155.9927721959502,
+        "bank": 0,
+        "shipValue": 4677.9,
+        "creditAvailable": 3003.0072278040498
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 9,
+        "days": 28,
+        "day": 486100,
+        "gold": 8942,
+        "wealth": 11463.90722780405,
+        "debt": 2155.9927721959502,
+        "bank": 0,
+        "shipValue": 4677.9,
+        "creditAvailable": 3003.0072278040498
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2140,
+          "day": 486054,
+          "gold": 2153,
+          "wealth": 4755.999999999999,
+          "debt": 2140,
+          "bank": 0,
+          "shipValue": 4742.999999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2140,
+      "interest": 15.992772195950417,
+      "eventsSummary": {
+        "buys": 29,
+        "sells": 29,
+        "trips": 29
+      },
+      "tradeProfit": 2416,
+      "lossTrades": [
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -1080,
+          "netResult": -1086,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -860,
+          "netResult": -866,
+          "counted": true
+        },
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -720,
+          "netResult": -726,
+          "counted": true
+        },
+        {
+          "quantity": 77,
+          "sold": 77,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -616,
+          "netResult": -622,
+          "counted": true
+        },
+        {
+          "quantity": 45,
+          "sold": 45,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 7,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -189,
+          "netResult": -321,
+          "counted": true
+        },
+        {
+          "quantity": 19,
+          "sold": 17,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -119,
+          "netResult": -163,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -161,
+          "netResult": -167,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -49,
+          "netResult": -55,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -21,
+          "netResult": -27,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -22,
+          "netResult": -28,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -8,
+          "netResult": -14,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 40,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -760,
+          "netResult": -871,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 12,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -288,
+          "netResult": -465,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 30,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -240,
+          "netResult": -246,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -154,
+          "netResult": -160,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 9,
+      "recoveryProfit": 8585
+    },
+    {
+      "seed": 10003,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486087,
+        "gold": 1243,
+        "wealth": 3639.540985934829,
+        "debt": 1977.5590140651711,
+        "bank": 0,
+        "shipValue": 4374.1,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486111,
+        "gold": 9752,
+        "wealth": 12140.84403221079,
+        "debt": 1985.255967789209,
+        "bank": 0,
+        "shipValue": 4374.1,
+        "creditAvailable": 3477.744032210791
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 24,
+        "day": 486111,
+        "gold": 9752,
+        "wealth": 12140.84403221079,
+        "debt": 1985.255967789209,
+        "bank": 0,
+        "shipValue": 4374.1,
+        "creditAvailable": 3477.744032210791
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 1975,
+          "day": 486079,
+          "gold": 1990,
+          "wealth": 4389.1,
+          "debt": 1975,
+          "bank": 0,
+          "shipValue": 4374.1,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1975,
+      "interest": 10.25596778920927,
+      "eventsSummary": {
+        "buys": 26,
+        "sells": 26,
+        "trips": 26
+      },
+      "tradeProfit": 2999,
+      "lossTrades": [
+        {
+          "quantity": 88,
+          "sold": 86,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1032,
+          "netResult": -1104,
+          "counted": true
+        },
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -1044,
+          "netResult": -1050,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -660,
+          "netResult": -666,
+          "counted": true
+        },
+        {
+          "quantity": 76,
+          "sold": 76,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -456,
+          "netResult": -462,
+          "counted": true
+        },
+        {
+          "quantity": 48,
+          "sold": 48,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -343,
+          "netResult": -349,
+          "counted": true
+        },
+        {
+          "quantity": 35,
+          "sold": 35,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -210,
+          "netResult": -216,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -230,
+          "netResult": -236,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -90,
+          "netResult": -96,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -32,
+          "netResult": -38,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -24,
+          "netResult": -30,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -8,
+          "netResult": -14,
+          "counted": true
+        },
+        {
+          "quantity": 69,
+          "sold": 69,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -207,
+          "netResult": -213,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -528,
+          "netResult": -534,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 8545
+    },
+    {
+      "seed": 10004,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486111,
+        "gold": 68,
+        "wealth": 2272.4103866289693,
+        "debt": 2039.4896133710304,
+        "bank": 0,
+        "shipValue": 4243.9,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486160,
+        "gold": 2,
+        "wealth": 1799.570787662296,
+        "debt": 2055.7292123377038,
+        "bank": 0,
+        "shipValue": 3853.2999999999997,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2026,
+          "day": 486070,
+          "gold": 2046,
+          "wealth": 4502.599999999999,
+          "debt": 2026,
+          "bank": 0,
+          "shipValue": 4482.599999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2026,
+      "interest": 29.7292123377037,
+      "eventsSummary": {
+        "buys": 21,
+        "sells": 20,
+        "trips": 32
+      },
+      "tradeProfit": -6453,
+      "lossTrades": [
+        {
+          "quantity": 39,
+          "sold": 39,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1209,
+          "netResult": -1215,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -1064,
+          "netResult": -1070,
+          "counted": true
+        },
+        {
+          "quantity": 51,
+          "sold": 51,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -765,
+          "netResult": -771,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -380,
+          "netResult": -386,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -297,
+          "netResult": -303,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -28,
+          "netResult": -34,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -7,
+          "netResult": -13,
+          "counted": true
+        },
+        {
+          "quantity": 26,
+          "sold": 26,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -598,
+          "netResult": -604,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -648,
+          "netResult": -654,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -187,
+          "netResult": -193,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 0,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": 0,
+          "netResult": -345,
+          "counted": false
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -54,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -64,
+          "netResult": -70,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 2,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -12,
+          "netResult": -58,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 11,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10005,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486076,
+        "gold": 716,
+        "wealth": 3249.396673288326,
+        "debt": 2166.2033267116744,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486091,
+        "gold": 9886,
+        "wealth": 12414.131021103061,
+        "debt": 2171.468978896939,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 3414.531021103061
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 5,
+        "days": 15,
+        "day": 486091,
+        "gold": 9886,
+        "wealth": 12414.131021103061,
+        "debt": 2171.468978896939,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 3414.531021103061
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2162,
+          "day": 486064,
+          "gold": 2181,
+          "wealth": 4805.400000000001,
+          "debt": 2162,
+          "bank": 0,
+          "shipValue": 4786.400000000001,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2162,
+      "interest": 9.468978896937655,
+      "eventsSummary": {
+        "buys": 25,
+        "sells": 25,
+        "trips": 25
+      },
+      "tradeProfit": 2912,
+      "lossTrades": [
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1274,
+          "netResult": -1280,
+          "counted": true
+        },
+        {
+          "quantity": 84,
+          "sold": 84,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 83,
+          "sold": 83,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -415,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -580,
+          "netResult": -586,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -168,
+          "netResult": -174,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 30,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -119,
+          "netResult": -125,
+          "counted": true
+        },
+        {
+          "quantity": 28,
+          "sold": 28,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -336,
+          "netResult": -342,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -55,
+          "netResult": -61,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -54,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -104,
+          "netResult": -110,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -98,
+          "netResult": -104,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -44,
+          "netResult": -50,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 1,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -7,
+          "netResult": -51,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -525,
+          "netResult": -531,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -722,
+          "netResult": -728,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -200,
+          "netResult": -206,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 5,
+      "recoveryProfit": 9200
+    },
+    {
+      "seed": 10006,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486071,
+        "gold": 397,
+        "wealth": 2944.725762055206,
+        "debt": 2108.474237944794,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486096,
+        "gold": 7748,
+        "wealth": 10287.176637210765,
+        "debt": 2117.023362789235,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 2511.976637210765
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 8,
+        "days": 25,
+        "day": 486096,
+        "gold": 7748,
+        "wealth": 10287.176637210765,
+        "debt": 2117.023362789235,
+        "bank": 0,
+        "shipValue": 4656.2,
+        "creditAvailable": 2511.976637210765
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2102,
+          "day": 486052,
+          "gold": 2116,
+          "wealth": 4670.2,
+          "debt": 2102,
+          "bank": 0,
+          "shipValue": 4656.2,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2102,
+      "interest": 15.023362789235293,
+      "eventsSummary": {
+        "buys": 29,
+        "sells": 28,
+        "trips": 29
+      },
+      "tradeProfit": 1060,
+      "lossTrades": [
+        {
+          "quantity": 53,
+          "sold": 53,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -901,
+          "netResult": -907,
+          "counted": true
+        },
+        {
+          "quantity": 79,
+          "sold": 79,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -1106,
+          "netResult": -1112,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -630,
+          "netResult": -636,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -420,
+          "netResult": -426,
+          "counted": true
+        },
+        {
+          "quantity": 89,
+          "sold": 89,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -623,
+          "netResult": -629,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -256,
+          "netResult": -262,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -238,
+          "netResult": -244,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -126,
+          "netResult": -132,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -164,
+          "netResult": -170,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 18,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -108,
+          "netResult": -142,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -42,
+          "netResult": -48,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 8,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -72,
+          "netResult": -95,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 0,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": 0,
+          "netResult": -70,
+          "counted": false
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -6,
+          "netResult": -12,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -5,
+          "netResult": -11,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 23,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -437,
+          "netResult": -557,
+          "counted": true
+        },
+        {
+          "quantity": 57,
+          "sold": 57,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -627,
+          "netResult": -633,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -242,
+          "netResult": -248,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -275,
+          "netResult": -281,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 8,
+      "recoveryProfit": 7416
+    },
+    {
+      "seed": 10007,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486091,
+        "gold": 540,
+        "wealth": 2994.025873504302,
+        "debt": 2028.5741264956973,
+        "bank": 0,
+        "shipValue": 4482.599999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486120,
+        "gold": 11572,
+        "wealth": 14016.4815989942,
+        "debt": 2038.118401005798,
+        "bank": 0,
+        "shipValue": 4482.599999999999,
+        "creditAvailable": 4268.881598994202
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 6,
+        "days": 29,
+        "day": 486120,
+        "gold": 11572,
+        "wealth": 14016.4815989942,
+        "debt": 2038.118401005798,
+        "bank": 0,
+        "shipValue": 4482.599999999999,
+        "creditAvailable": 4268.881598994202
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2023,
+          "day": 486074,
+          "gold": 2037,
+          "wealth": 4496.599999999999,
+          "debt": 2023,
+          "bank": 0,
+          "shipValue": 4482.599999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2023,
+      "interest": 15.118401005797983,
+      "eventsSummary": {
+        "buys": 26,
+        "sells": 26,
+        "trips": 26
+      },
+      "tradeProfit": 4705,
+      "lossTrades": [
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1131,
+          "netResult": -1137,
+          "counted": true
+        },
+        {
+          "quantity": 81,
+          "sold": 81,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -1215,
+          "netResult": -1221,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -611,
+          "netResult": -617,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -658,
+          "netResult": -664,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -364,
+          "netResult": -370,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -220,
+          "netResult": -226,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -255,
+          "netResult": -261,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -99,
+          "netResult": -105,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -88,
+          "netResult": -94,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -78,
+          "netResult": -84,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -42,
+          "netResult": -48,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -33,
+          "netResult": -39,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -14,
+          "netResult": -20,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -16,
+          "netResult": -22,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 41,
+          "sold": 41,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -779,
+          "netResult": -785,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -416,
+          "netResult": -422,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -284,
+          "netResult": -290,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 6,
+      "recoveryProfit": 11068
+    },
+    {
+      "seed": 10008,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486076,
+        "gold": 1568,
+        "wealth": 3858.8834989231036,
+        "debt": 1887.9165010768959,
+        "bank": 0,
+        "shipValue": 4178.799999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486102,
+        "gold": 8248,
+        "wealth": 10422.42182011723,
+        "debt": 1895.8781798827692,
+        "bank": 0,
+        "shipValue": 4070.2999999999997,
+        "creditAvailable": 2794.1218201172305
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 7,
+        "days": 26,
+        "day": 486102,
+        "gold": 8248,
+        "wealth": 10422.42182011723,
+        "debt": 1895.8781798827692,
+        "bank": 0,
+        "shipValue": 4070.2999999999997,
+        "creditAvailable": 2794.1218201172305
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 1887,
+          "day": 486073,
+          "gold": 1902,
+          "wealth": 4193.799999999999,
+          "debt": 1887,
+          "bank": 0,
+          "shipValue": 4178.799999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1887,
+      "interest": 8.878179882769052,
+      "eventsSummary": {
+        "buys": 27,
+        "sells": 27,
+        "trips": 27
+      },
+      "tradeProfit": 1623,
+      "lossTrades": [
+        {
+          "quantity": 64,
+          "sold": 64,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1088,
+          "netResult": -1094,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -725,
+          "netResult": -731,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -836,
+          "netResult": -842,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -572,
+          "netResult": -578,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -245,
+          "netResult": -251,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -520,
+          "netResult": -526,
+          "counted": true
+        },
+        {
+          "quantity": 22,
+          "sold": 22,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -242,
+          "netResult": -248,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -189,
+          "netResult": -195,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -49,
+          "netResult": -55,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -36,
+          "netResult": -42,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -24,
+          "netResult": -106,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -9,
+          "netResult": -15,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -21,
+          "netResult": -27,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -5,
+          "netResult": -11,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -2,
+          "netResult": -8,
+          "counted": true
+        },
+        {
+          "quantity": 41,
+          "sold": 41,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -328,
+          "netResult": -334,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 7,
+      "recoveryProfit": 6746
+    },
+    {
+      "seed": 10009,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486062,
+        "gold": 352,
+        "wealth": 3002.1817305207196,
+        "debt": 2244.71826947928,
+        "bank": 0,
+        "shipValue": 4894.9,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486098,
+        "gold": 8443,
+        "wealth": 10754.563821062455,
+        "debt": 2257.836178937545,
+        "bank": 0,
+        "shipValue": 4569.4,
+        "creditAvailable": 2582.163821062455
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 10,
+        "days": 36,
+        "day": 486098,
+        "gold": 8443,
+        "wealth": 10754.563821062455,
+        "debt": 2257.836178937545,
+        "bank": 0,
+        "shipValue": 4569.4,
+        "creditAvailable": 2582.163821062455
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2240,
+          "day": 486049,
+          "gold": 2258,
+          "wealth": 4978,
+          "debt": 2240,
+          "bank": 0,
+          "shipValue": 4960,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2240,
+      "interest": 17.836178937544485,
+      "eventsSummary": {
+        "buys": 30,
+        "sells": 30,
+        "trips": 30
+      },
+      "tradeProfit": 1554,
+      "lossTrades": [
+        {
+          "quantity": 51,
+          "sold": 50,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -750,
+          "netResult": -817,
+          "counted": true
+        },
+        {
+          "quantity": 29,
+          "sold": 29,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -841,
+          "netResult": -847,
+          "counted": true
+        },
+        {
+          "quantity": 61,
+          "sold": 61,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -610,
+          "netResult": -616,
+          "counted": true
+        },
+        {
+          "quantity": 56,
+          "sold": 56,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -392,
+          "netResult": -398,
+          "counted": true
+        },
+        {
+          "quantity": 70,
+          "sold": 70,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -560,
+          "netResult": -566,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -400,
+          "netResult": -406,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -344,
+          "netResult": -350,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -216,
+          "netResult": -222,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -115,
+          "netResult": -121,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -108,
+          "netResult": -114,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -72,
+          "netResult": -78,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 3,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -80,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -28,
+          "netResult": -34,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 68,
+          "sold": 68,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -884,
+          "netResult": -890,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 29,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -406,
+          "netResult": -496,
+          "counted": true
+        },
+        {
+          "quantity": 26,
+          "sold": 26,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -338,
+          "netResult": -344,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -170,
+          "netResult": -176,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 10,
+      "recoveryProfit": 8151
+    },
+    {
+      "seed": 10010,
+      "targetLosses": 20,
+      "lossCount": 20,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486057,
+        "gold": 1118,
+        "wealth": 3691.8492218428573,
+        "debt": 2125.750778157143,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486080,
+        "gold": 9872,
+        "wealth": 12437.920864893234,
+        "debt": 2133.6791351067654,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 3463.3208648932346
+      },
+      "recovered": true,
+      "recoveryAt": {
+        "decision": 7,
+        "days": 23,
+        "day": 486080,
+        "gold": 9872,
+        "wealth": 12437.920864893234,
+        "debt": 2133.6791351067654,
+        "bank": 0,
+        "shipValue": 4699.6,
+        "creditAvailable": 3463.3208648932346
+      },
+      "stopReason": "start_wealth_regained",
+      "shipStranded": false,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2123,
+          "day": 486049,
+          "gold": 2141,
+          "wealth": 4717.6,
+          "debt": 2123,
+          "bank": 0,
+          "shipValue": 4699.6,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2123,
+      "interest": 10.67913510676591,
+      "eventsSummary": {
+        "buys": 27,
+        "sells": 27,
+        "trips": 27
+      },
+      "tradeProfit": 2948,
+      "lossTrades": [
+        {
+          "quantity": 36,
+          "sold": 36,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1332,
+          "netResult": -1338,
+          "counted": true
+        },
+        {
+          "quantity": 65,
+          "sold": 65,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -845,
+          "netResult": -851,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 42,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -378,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -352,
+          "netResult": -358,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -330,
+          "netResult": -336,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -261,
+          "netResult": -267,
+          "counted": true
+        },
+        {
+          "quantity": 31,
+          "sold": 31,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -217,
+          "netResult": -223,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -144,
+          "netResult": -150,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -153,
+          "netResult": -159,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -90,
+          "netResult": -96,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -72,
+          "netResult": -78,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -45,
+          "netResult": -51,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -23,
+          "netResult": -29,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -6,
+          "netResult": -12,
+          "counted": true
+        },
+        {
+          "quantity": 71,
+          "sold": 71,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -710,
+          "netResult": -716,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -301,
+          "netResult": -307,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 7,
+      "recoveryProfit": 8796
+    },
+    {
+      "seed": 10001,
+      "targetLosses": 30,
+      "lossCount": 23,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486123,
+        "gold": 23,
+        "wealth": 2567.457165320947,
+        "debt": 2198.5428346790522,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486133,
+        "gold": 5,
+        "wealth": 2545.8957647122675,
+        "debt": 2202.1042352877316,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2178,
+          "day": 486065,
+          "gold": 2188,
+          "wealth": 4839.799999999999,
+          "debt": 2178,
+          "bank": 0,
+          "shipValue": 4829.799999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2178,
+      "interest": 24.1042352877331,
+      "eventsSummary": {
+        "buys": 24,
+        "sells": 23,
+        "trips": 27
+      },
+      "tradeProfit": -6874,
+      "lossTrades": [
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1664,
+          "netResult": -1670,
+          "counted": true
+        },
+        {
+          "quantity": 66,
+          "sold": 66,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -858,
+          "netResult": -864,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 28,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -364,
+          "netResult": -440,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -378,
+          "netResult": -384,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -195,
+          "netResult": -201,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -110,
+          "netResult": -116,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -33,
+          "netResult": -39,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 0,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": 0,
+          "netResult": -31,
+          "counted": false
+        },
+        {
+          "quantity": 63,
+          "sold": 63,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -756,
+          "netResult": -762,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 28,
+          "sold": 28,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -280,
+          "netResult": -286,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -225,
+          "netResult": -231,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -108,
+          "netResult": -114,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -92,
+          "netResult": -98,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 3,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -30,
+          "netResult": -78,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -29,
+          "netResult": -35,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 3,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10002,
+      "targetLosses": 30,
+      "lossCount": 25,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486096,
+        "gold": 15,
+        "wealth": 2603.402635425526,
+        "debt": 2154.597364574473,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486105,
+        "gold": 3,
+        "wealth": 2588.261697346041,
+        "debt": 2157.7383026539583,
+        "bank": 0,
+        "shipValue": 4742.999999999999,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2140,
+          "day": 486054,
+          "gold": 2153,
+          "wealth": 4755.999999999999,
+          "debt": 2140,
+          "bank": 0,
+          "shipValue": 4742.999999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2140,
+      "interest": 17.738302653958243,
+      "eventsSummary": {
+        "buys": 26,
+        "sells": 25,
+        "trips": 28
+      },
+      "tradeProfit": -6508,
+      "lossTrades": [
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -1080,
+          "netResult": -1086,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -860,
+          "netResult": -866,
+          "counted": true
+        },
+        {
+          "quantity": 90,
+          "sold": 90,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -720,
+          "netResult": -726,
+          "counted": true
+        },
+        {
+          "quantity": 77,
+          "sold": 77,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -616,
+          "netResult": -622,
+          "counted": true
+        },
+        {
+          "quantity": 45,
+          "sold": 45,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 7,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -189,
+          "netResult": -321,
+          "counted": true
+        },
+        {
+          "quantity": 19,
+          "sold": 17,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -119,
+          "netResult": -163,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -161,
+          "netResult": -167,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -49,
+          "netResult": -55,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -21,
+          "netResult": -27,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -22,
+          "netResult": -28,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -8,
+          "netResult": -14,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 40,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -760,
+          "netResult": -871,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 12,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -288,
+          "netResult": -465,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 30,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -240,
+          "netResult": -246,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -154,
+          "netResult": -160,
+          "counted": true
+        },
+        {
+          "quantity": 14,
+          "sold": 14,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -126,
+          "netResult": -132,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -55,
+          "netResult": -61,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -76,
+          "netResult": -82,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -48,
+          "netResult": -54,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -34,
+          "netResult": -40,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 0,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": 0,
+          "netResult": -27,
+          "counted": false
+        }
+      ],
+      "recoveryDecisions": 2,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10003,
+      "targetLosses": 30,
+      "lossCount": 30,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486131,
+        "gold": 32,
+        "wealth": 2197.4070247048458,
+        "debt": 1991.692975295154,
+        "bank": 0,
+        "shipValue": 4157.099999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486151,
+        "gold": 2,
+        "wealth": 1900.549145801811,
+        "debt": 1998.1508541981893,
+        "bank": 0,
+        "shipValue": 3896.7000000000003,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 1975,
+          "day": 486079,
+          "gold": 1990,
+          "wealth": 4389.1,
+          "debt": 1975,
+          "bank": 0,
+          "shipValue": 4374.1,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1975,
+      "interest": 23.15085419818969,
+      "eventsSummary": {
+        "buys": 30,
+        "sells": 30,
+        "trips": 35
+      },
+      "tradeProfit": -6670,
+      "lossTrades": [
+        {
+          "quantity": 88,
+          "sold": 86,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1032,
+          "netResult": -1104,
+          "counted": true
+        },
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -1044,
+          "netResult": -1050,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -660,
+          "netResult": -666,
+          "counted": true
+        },
+        {
+          "quantity": 76,
+          "sold": 76,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -456,
+          "netResult": -462,
+          "counted": true
+        },
+        {
+          "quantity": 48,
+          "sold": 48,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -343,
+          "netResult": -349,
+          "counted": true
+        },
+        {
+          "quantity": 35,
+          "sold": 35,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -210,
+          "netResult": -216,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -230,
+          "netResult": -236,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -90,
+          "netResult": -96,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -32,
+          "netResult": -38,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -24,
+          "netResult": -30,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -8,
+          "netResult": -14,
+          "counted": true
+        },
+        {
+          "quantity": 69,
+          "sold": 69,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -207,
+          "netResult": -213,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -528,
+          "netResult": -534,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -325,
+          "netResult": -331,
+          "counted": true
+        },
+        {
+          "quantity": 27,
+          "sold": 27,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -135,
+          "netResult": -141,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -288,
+          "netResult": -294,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -135,
+          "netResult": -141,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -78,
+          "netResult": -84,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -75,
+          "netResult": -81,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -36,
+          "netResult": -42,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 2,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -22,
+          "netResult": -55,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 5,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10004,
+      "targetLosses": 30,
+      "lossCount": 23,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486122,
+        "gold": 16,
+        "wealth": 1891.2759655959585,
+        "debt": 2043.1240344040416,
+        "bank": 0,
+        "shipValue": 3918.4,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486130,
+        "gold": 4,
+        "wealth": 1876.6286829929563,
+        "debt": 2045.7713170070438,
+        "bank": 0,
+        "shipValue": 3918.4,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2026,
+          "day": 486070,
+          "gold": 2046,
+          "wealth": 4502.599999999999,
+          "debt": 2026,
+          "bank": 0,
+          "shipValue": 4482.599999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2026,
+      "interest": 19.77131700704349,
+      "eventsSummary": {
+        "buys": 24,
+        "sells": 23,
+        "trips": 26
+      },
+      "tradeProfit": -6487,
+      "lossTrades": [
+        {
+          "quantity": 39,
+          "sold": 39,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1209,
+          "netResult": -1215,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -1064,
+          "netResult": -1070,
+          "counted": true
+        },
+        {
+          "quantity": 51,
+          "sold": 51,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -765,
+          "netResult": -771,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -380,
+          "netResult": -386,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -297,
+          "netResult": -303,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -156,
+          "netResult": -162,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -54,
+          "netResult": -60,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -28,
+          "netResult": -34,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -7,
+          "netResult": -13,
+          "counted": true
+        },
+        {
+          "quantity": 26,
+          "sold": 26,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -598,
+          "netResult": -604,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -648,
+          "netResult": -654,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -187,
+          "netResult": -193,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 0,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": 0,
+          "netResult": -345,
+          "counted": false
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -54,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -64,
+          "netResult": -70,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 2,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -12,
+          "netResult": -58,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -16,
+          "netResult": -22,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -6,
+          "netResult": -12,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 2,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10005,
+      "targetLosses": 30,
+      "lossCount": 27,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486104,
+        "gold": 24,
+        "wealth": 2352.2571033314834,
+        "debt": 2176.042896668516,
+        "bank": 0,
+        "shipValue": 4504.299999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486122,
+        "gold": 0,
+        "wealth": 2321.908076870469,
+        "debt": 2182.3919231295304,
+        "bank": 0,
+        "shipValue": 4504.299999999999,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2162,
+          "day": 486064,
+          "gold": 2181,
+          "wealth": 4805.400000000001,
+          "debt": 2162,
+          "bank": 0,
+          "shipValue": 4786.400000000001,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2162,
+      "interest": 20.391923129529005,
+      "eventsSummary": {
+        "buys": 27,
+        "sells": 27,
+        "trips": 31
+      },
+      "tradeProfit": -6775,
+      "lossTrades": [
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1274,
+          "netResult": -1280,
+          "counted": true
+        },
+        {
+          "quantity": 84,
+          "sold": 84,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -840,
+          "netResult": -846,
+          "counted": true
+        },
+        {
+          "quantity": 83,
+          "sold": 83,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -415,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -580,
+          "netResult": -586,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -168,
+          "netResult": -174,
+          "counted": true
+        },
+        {
+          "quantity": 30,
+          "sold": 30,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -540,
+          "netResult": -546,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -119,
+          "netResult": -125,
+          "counted": true
+        },
+        {
+          "quantity": 28,
+          "sold": 28,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -336,
+          "netResult": -342,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -55,
+          "netResult": -61,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -180,
+          "netResult": -186,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -54,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -104,
+          "netResult": -110,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -98,
+          "netResult": -104,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -44,
+          "netResult": -50,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 1,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -7,
+          "netResult": -51,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -525,
+          "netResult": -531,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -722,
+          "netResult": -728,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -200,
+          "netResult": -206,
+          "counted": true
+        },
+        {
+          "quantity": 19,
+          "sold": 19,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -304,
+          "netResult": -310,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 3,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -69,
+          "netResult": -133,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 4,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -60,
+          "netResult": -144,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 1,
+          "tradeProfit": -29,
+          "netResult": -35,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 1,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -16,
+          "netResult": -49,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -2,
+          "netResult": -8,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -7,
+          "netResult": -13,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 4,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10006,
+      "targetLosses": 30,
+      "lossCount": 27,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486092,
+        "gold": 25,
+        "wealth": 2196.6468229430084,
+        "debt": 2115.653177056992,
+        "bank": 0,
+        "shipValue": 4287.3,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486111,
+        "gold": 1,
+        "wealth": 2014.230532706602,
+        "debt": 2122.1694672933986,
+        "bank": 0,
+        "shipValue": 4135.400000000001,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2102,
+          "day": 486052,
+          "gold": 2116,
+          "wealth": 4670.2,
+          "debt": 2102,
+          "bank": 0,
+          "shipValue": 4656.2,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2102,
+      "interest": 20.169467293399016,
+      "eventsSummary": {
+        "buys": 28,
+        "sells": 27,
+        "trips": 32
+      },
+      "tradeProfit": -6654,
+      "lossTrades": [
+        {
+          "quantity": 53,
+          "sold": 53,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -901,
+          "netResult": -907,
+          "counted": true
+        },
+        {
+          "quantity": 79,
+          "sold": 79,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -1106,
+          "netResult": -1112,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -630,
+          "netResult": -636,
+          "counted": true
+        },
+        {
+          "quantity": 60,
+          "sold": 60,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -420,
+          "netResult": -426,
+          "counted": true
+        },
+        {
+          "quantity": 89,
+          "sold": 89,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -623,
+          "netResult": -629,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -256,
+          "netResult": -262,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -238,
+          "netResult": -244,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -126,
+          "netResult": -132,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -164,
+          "netResult": -170,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 18,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -108,
+          "netResult": -142,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -42,
+          "netResult": -48,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 8,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -72,
+          "netResult": -95,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -18,
+          "netResult": -24,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 0,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": 0,
+          "netResult": -70,
+          "counted": false
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -6,
+          "netResult": -12,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -5,
+          "netResult": -11,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 23,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -437,
+          "netResult": -557,
+          "counted": true
+        },
+        {
+          "quantity": 57,
+          "sold": 57,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -627,
+          "netResult": -633,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -242,
+          "netResult": -248,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -275,
+          "netResult": -281,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 7,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -112,
+          "netResult": -150,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -70,
+          "netResult": -76,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -51,
+          "netResult": -57,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -32,
+          "netResult": -38,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -20,
+          "netResult": -26,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -8,
+          "netResult": -14,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -5,
+          "netResult": -11,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 4,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10007,
+      "targetLosses": 30,
+      "lossCount": 27,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486122,
+        "gold": 23,
+        "wealth": 2141.3217203385284,
+        "debt": 2038.7782796614708,
+        "bank": 0,
+        "shipValue": 4157.099999999999,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486134,
+        "gold": 5,
+        "wealth": 1924.0579593754942,
+        "debt": 2042.742040624506,
+        "bank": 0,
+        "shipValue": 3961.8,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2023,
+          "day": 486074,
+          "gold": 2037,
+          "wealth": 4496.599999999999,
+          "debt": 2023,
+          "bank": 0,
+          "shipValue": 4482.599999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2023,
+      "interest": 19.742040624505915,
+      "eventsSummary": {
+        "buys": 27,
+        "sells": 27,
+        "trips": 30
+      },
+      "tradeProfit": -6838,
+      "lossTrades": [
+        {
+          "quantity": 87,
+          "sold": 87,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1131,
+          "netResult": -1137,
+          "counted": true
+        },
+        {
+          "quantity": 81,
+          "sold": 81,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -1215,
+          "netResult": -1221,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -611,
+          "netResult": -617,
+          "counted": true
+        },
+        {
+          "quantity": 47,
+          "sold": 47,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -658,
+          "netResult": -664,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -30,
+          "netResult": -36,
+          "counted": true
+        },
+        {
+          "quantity": 13,
+          "sold": 13,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -364,
+          "netResult": -370,
+          "counted": true
+        },
+        {
+          "quantity": 20,
+          "sold": 20,
+          "from": 4,
+          "to": 3,
+          "tradeProfit": -220,
+          "netResult": -226,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -255,
+          "netResult": -261,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -99,
+          "netResult": -105,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -88,
+          "netResult": -94,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -78,
+          "netResult": -84,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -42,
+          "netResult": -48,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -33,
+          "netResult": -39,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 3,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -14,
+          "netResult": -20,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -16,
+          "netResult": -22,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 41,
+          "sold": 41,
+          "from": 1,
+          "to": 4,
+          "tradeProfit": -779,
+          "netResult": -785,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 32,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -416,
+          "netResult": -422,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -284,
+          "netResult": -290,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -200,
+          "netResult": -206,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -96,
+          "netResult": -102,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -86,
+          "netResult": -92,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -42,
+          "netResult": -48,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 1,
+          "tradeProfit": -28,
+          "netResult": -34,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -14,
+          "netResult": -20,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -9,
+          "netResult": -15,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 3,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10008,
+      "targetLosses": 30,
+      "lossCount": 28,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486108,
+        "gold": 8,
+        "wealth": 2158.8797466072756,
+        "debt": 1897.720253392725,
+        "bank": 0,
+        "shipValue": 4048.6000000000004,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486112,
+        "gold": 2,
+        "wealth": 2064.8507033769456,
+        "debt": 1898.9492966230546,
+        "bank": 0,
+        "shipValue": 3961.8,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 1887,
+          "day": 486073,
+          "gold": 1902,
+          "wealth": 4193.799999999999,
+          "debt": 1887,
+          "bank": 0,
+          "shipValue": 4178.799999999999,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 1887,
+      "interest": 11.949296623054051,
+      "eventsSummary": {
+        "buys": 29,
+        "sells": 28,
+        "trips": 30
+      },
+      "tradeProfit": -6518,
+      "lossTrades": [
+        {
+          "quantity": 64,
+          "sold": 64,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -1088,
+          "netResult": -1094,
+          "counted": true
+        },
+        {
+          "quantity": 25,
+          "sold": 25,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -725,
+          "netResult": -731,
+          "counted": true
+        },
+        {
+          "quantity": 38,
+          "sold": 38,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -836,
+          "netResult": -842,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -572,
+          "netResult": -578,
+          "counted": true
+        },
+        {
+          "quantity": 49,
+          "sold": 49,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -245,
+          "netResult": -251,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -520,
+          "netResult": -526,
+          "counted": true
+        },
+        {
+          "quantity": 22,
+          "sold": 22,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -242,
+          "netResult": -248,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -189,
+          "netResult": -195,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 4,
+          "to": 0,
+          "tradeProfit": -132,
+          "netResult": -138,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -84,
+          "netResult": -90,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -49,
+          "netResult": -55,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -36,
+          "netResult": -42,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -24,
+          "netResult": -106,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -9,
+          "netResult": -15,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -21,
+          "netResult": -27,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -5,
+          "netResult": -11,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -2,
+          "netResult": -8,
+          "counted": true
+        },
+        {
+          "quantity": 41,
+          "sold": 41,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -328,
+          "netResult": -334,
+          "counted": true
+        },
+        {
+          "quantity": 52,
+          "sold": 52,
+          "from": 1,
+          "to": 2,
+          "tradeProfit": -624,
+          "netResult": -630,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -378,
+          "netResult": -384,
+          "counted": true
+        },
+        {
+          "quantity": 11,
+          "sold": 11,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": -165,
+          "netResult": -171,
+          "counted": true
+        },
+        {
+          "quantity": 7,
+          "sold": 7,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -140,
+          "netResult": -146,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -60,
+          "netResult": -66,
+          "counted": true
+        },
+        {
+          "quantity": 3,
+          "sold": 0,
+          "from": 0,
+          "to": 2,
+          "tradeProfit": 0,
+          "netResult": -117,
+          "counted": false
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 0,
+          "tradeProfit": -21,
+          "netResult": -27,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": -4,
+          "netResult": -10,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -3,
+          "netResult": -9,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 1,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10009,
+      "targetLosses": 30,
+      "lossCount": 24,
+      "lossStatus": "loss_purchase_unaffordable",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486091,
+        "gold": 4,
+        "wealth": 2470.0205155855983,
+        "debt": 2255.279484414402,
+        "bank": 0,
+        "shipValue": 4721.3,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486091,
+        "gold": 4,
+        "wealth": 2470.0205155855983,
+        "debt": 2255.279484414402,
+        "bank": 0,
+        "shipValue": 4721.3,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2240,
+          "day": 486049,
+          "gold": 2258,
+          "wealth": 4978,
+          "debt": 2240,
+          "bank": 0,
+          "shipValue": 4960,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2240,
+      "interest": 15.279484414401697,
+      "eventsSummary": {
+        "buys": 26,
+        "sells": 24,
+        "trips": 26
+      },
+      "tradeProfit": -6827,
+      "lossTrades": [
+        {
+          "quantity": 51,
+          "sold": 50,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -750,
+          "netResult": -817,
+          "counted": true
+        },
+        {
+          "quantity": 29,
+          "sold": 29,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -841,
+          "netResult": -847,
+          "counted": true
+        },
+        {
+          "quantity": 61,
+          "sold": 61,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -610,
+          "netResult": -616,
+          "counted": true
+        },
+        {
+          "quantity": 56,
+          "sold": 56,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -392,
+          "netResult": -398,
+          "counted": true
+        },
+        {
+          "quantity": 70,
+          "sold": 70,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -560,
+          "netResult": -566,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -400,
+          "netResult": -406,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -344,
+          "netResult": -350,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -150,
+          "netResult": -156,
+          "counted": true
+        },
+        {
+          "quantity": 24,
+          "sold": 24,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -216,
+          "netResult": -222,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -115,
+          "netResult": -121,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -108,
+          "netResult": -114,
+          "counted": true
+        },
+        {
+          "quantity": 6,
+          "sold": 6,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -72,
+          "netResult": -78,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 3,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -48,
+          "netResult": -80,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -28,
+          "netResult": -34,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -15,
+          "netResult": -21,
+          "counted": true
+        },
+        {
+          "quantity": 68,
+          "sold": 68,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -884,
+          "netResult": -890,
+          "counted": true
+        },
+        {
+          "quantity": 32,
+          "sold": 29,
+          "from": 1,
+          "to": 0,
+          "tradeProfit": -406,
+          "netResult": -496,
+          "counted": true
+        },
+        {
+          "quantity": 26,
+          "sold": 26,
+          "from": 0,
+          "to": 1,
+          "tradeProfit": -338,
+          "netResult": -344,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -170,
+          "netResult": -176,
+          "counted": true
+        },
+        {
+          "quantity": 12,
+          "sold": 12,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -96,
+          "netResult": -102,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": -85,
+          "netResult": -91,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 3,
+          "to": 1,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 0,
+          "from": 1,
+          "to": 3,
+          "tradeProfit": 0,
+          "netResult": -71,
+          "counted": false
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 3,
+          "to": 0,
+          "tradeProfit": -9,
+          "netResult": -15,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 0,
+          "from": 0,
+          "to": 4,
+          "tradeProfit": 0,
+          "netResult": -23,
+          "counted": false
+        }
+      ],
+      "recoveryDecisions": 0,
+      "recoveryProfit": 0
+    },
+    {
+      "seed": 10010,
+      "targetLosses": 30,
+      "lossCount": 30,
+      "lossStatus": "completed",
+      "start": {
+        "gold": 5000,
+        "wealth": 9960,
+        "debt": 0,
+        "day": 486001
+      },
+      "lossEnd": {
+        "day": 486097,
+        "gold": 20,
+        "wealth": 2406.4417757185856,
+        "debt": 2139.5582242814144,
+        "bank": 0,
+        "shipValue": 4526,
+        "creditAvailable": 0
+      },
+      "final": {
+        "day": 486110,
+        "gold": 2,
+        "wealth": 2383.9350738128846,
+        "debt": 2144.0649261871154,
+        "bank": 0,
+        "shipValue": 4526,
+        "creditAvailable": 0
+      },
+      "recovered": false,
+      "recoveryAt": null,
+      "stopReason": "insufficient_travel_cash",
+      "shipStranded": true,
+      "bankActions": [
+        {
+          "phase": "loss",
+          "op": "borrow",
+          "amount": 2123,
+          "day": 486049,
+          "gold": 2141,
+          "wealth": 4717.6,
+          "debt": 2123,
+          "bank": 0,
+          "shipValue": 4699.6,
+          "creditAvailable": 0
+        }
+      ],
+      "borrowed": 2123,
+      "interest": 21.064926187115493,
+      "eventsSummary": {
+        "buys": 30,
+        "sells": 30,
+        "trips": 33
+      },
+      "tradeProfit": -6750,
+      "lossTrades": [
+        {
+          "quantity": 36,
+          "sold": 36,
+          "from": 0,
+          "to": 3,
+          "tradeProfit": -1332,
+          "netResult": -1338,
+          "counted": true
+        },
+        {
+          "quantity": 65,
+          "sold": 65,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -845,
+          "netResult": -851,
+          "counted": true
+        },
+        {
+          "quantity": 23,
+          "sold": 23,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -529,
+          "netResult": -535,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 42,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -378,
+          "netResult": -421,
+          "counted": true
+        },
+        {
+          "quantity": 16,
+          "sold": 16,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -352,
+          "netResult": -358,
+          "counted": true
+        },
+        {
+          "quantity": 15,
+          "sold": 15,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -330,
+          "netResult": -336,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -261,
+          "netResult": -267,
+          "counted": true
+        },
+        {
+          "quantity": 31,
+          "sold": 31,
+          "from": 3,
+          "to": 2,
+          "tradeProfit": -217,
+          "netResult": -223,
+          "counted": true
+        },
+        {
+          "quantity": 18,
+          "sold": 18,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -144,
+          "netResult": -150,
+          "counted": true
+        },
+        {
+          "quantity": 17,
+          "sold": 17,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -153,
+          "netResult": -159,
+          "counted": true
+        },
+        {
+          "quantity": 10,
+          "sold": 10,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -90,
+          "netResult": -96,
+          "counted": true
+        },
+        {
+          "quantity": 8,
+          "sold": 8,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -72,
+          "netResult": -78,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 5,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -45,
+          "netResult": -51,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 3,
+          "tradeProfit": -23,
+          "netResult": -29,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 3,
+          "to": 4,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -6,
+          "netResult": -12,
+          "counted": true
+        },
+        {
+          "quantity": 71,
+          "sold": 71,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -710,
+          "netResult": -716,
+          "counted": true
+        },
+        {
+          "quantity": 43,
+          "sold": 43,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -301,
+          "netResult": -307,
+          "counted": true
+        },
+        {
+          "quantity": 35,
+          "sold": 35,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -350,
+          "netResult": -356,
+          "counted": true
+        },
+        {
+          "quantity": 21,
+          "sold": 21,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -210,
+          "netResult": -216,
+          "counted": true
+        },
+        {
+          "quantity": 5,
+          "sold": 3,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -75,
+          "netResult": -217,
+          "counted": true
+        },
+        {
+          "quantity": 9,
+          "sold": 9,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -99,
+          "netResult": -105,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -50,
+          "netResult": -56,
+          "counted": true
+        },
+        {
+          "quantity": 4,
+          "sold": 4,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -44,
+          "netResult": -50,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -40,
+          "netResult": -46,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -10,
+          "netResult": -16,
+          "counted": true
+        },
+        {
+          "quantity": 2,
+          "sold": 2,
+          "from": 4,
+          "to": 2,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        },
+        {
+          "quantity": 1,
+          "sold": 1,
+          "from": 2,
+          "to": 4,
+          "tradeProfit": -12,
+          "netResult": -18,
+          "counted": true
+        }
+      ],
+      "recoveryDecisions": 3,
+      "recoveryProfit": 0
+    }
+  ]
+}

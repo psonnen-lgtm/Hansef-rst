@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-25",
+  "branch": "feature/phase05j-material-shipbuilding",
+  "baseCommit": "e382c0f8653eabcfa8d37986e251bd2748ed4b46",
+  "simulationCodeCommit": "ca7f971b3a653e848c1c58dc8d4064ed531eda61",
+  "finalTestedCodeCommit": "330a0d83b437f67607748d9f3e0c52618ee2b1c2",
+  "finalGameSHA256": "169d87504293b52048fe74a0c7456fa464e027951bf8222814f2f7609bb777c9",
+  "fullDistinctCases": 240,
+  "exactPilotReplays": 20,
+  "fullExecutions": 260,
+  "fullExecutionsOnResume": 0,
+  "finalFullEconomicRuns": 0,
+  "finalTechnicalGroups": 21,
+  "finalBrowserGroups": 6,
+  "finalBaselineCommands": 2,
+  "previousBaselineCommands": 8,
+  "oldSavedEndpointsMigratedOnFinalCode": 260,
+  "newSavedEndpointsMigratedWithoutReplay": 240,
+  "historicalFilesUnchanged": 1207,
+  "cashLedgersVerified": 240,
+  "scope": "identity watermark only after economic runs; no claim of complete economic rerun on final code",
+  "screenshotHashes": {
+    "2026-10-25_0.5j_bauplan-390.png": "12bc5944145ef92e294fbf2184c64361b54071049cd72752eb6b5e9e284eb831",
+    "2026-10-25_0.5j_bauauftrag-390.png": "87ce55f0b803e3fffedb7b28fe05242ed64830ced03394b15588052360108c76",
+    "2026-10-25_0.5j_bauplan-820.png": "3ee0ffad77a0df7610da932184c9d54352edd6a6ea82e17d3076843fc0d087ee",
+    "2026-10-25_0.5j_bauauftrag-820.png": "c7a34a968a2216ad40e892333bde21ea53efcf00cd2249b0b539485f1464e93e",
+    "2026-10-25_0.5j_bauplan-1280.png": "12ebf24e22aad998eede7c1b471f7628b4ae8e75cb44b8d7e8eb04146033ccae",
+    "2026-10-25_0.5j_bauauftrag-1280.png": "0e580870e62e4bedd8a74f1866949e4afa45c757912d36be8dde45f1af7ec819"
+  },
+  "finalEvidence": [
+    "technical-release.json",
+    "browser-final.json",
+    "regressions-final.json",
+    "history-final.json",
+    "resume-audit.json",
+    "economy-details.json"
+  ]
+}

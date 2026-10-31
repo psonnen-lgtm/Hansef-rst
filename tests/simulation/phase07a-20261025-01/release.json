@@ -1,0 +1,39 @@
+{
+  "scope": "final artifact/source/provenance integrity; no complete simulation",
+  "testedFinalHTMLCommit": "8908f6a6c312ea76f8261bc95fb78257022915b2",
+  "gameSHA256": "7319a63d708f563ec74ce083c92d5f732ceb090264c481a12d6fca22247e10f3",
+  "visualAcceptanceCode": "a2f81d407f1eef4cd6201309e80b81a551d3c7a5",
+  "broadAcceptanceCode": "f31431575666daa1a7c79fdd468419c05f11392c",
+  "regressionCode": "f31431575666daa1a7c79fdd468419c05f11392c",
+  "sourceGroups": 5,
+  "existingProgramsPassed": 12,
+  "broadBrowserGroups": 15,
+  "politicalUIFixtureGroups": 1,
+  "finalVisualGroups": 3,
+  "nativeTouchPassed": true,
+  "finalConsolePassed": true,
+  "localFileStartup": {
+    "status": "blocked",
+    "error": "net::ERR_BLOCKED_BY_ADMINISTRATOR",
+    "observedIn": "touch-offline-attempt3.log",
+    "notRetriedAfterPolicyBlock": true
+  },
+  "newCompleteSimulations": 0,
+  "historicalFilesByteIdentical": 2065,
+  "oldSavedEndpointsReadOnly": 330,
+  "htmlBytes": 7022238,
+  "embeddedAssetsPixelIdentical": true,
+  "embedIdempotent": true,
+  "localLinksChecked": 133,
+  "distAbsent": true,
+  "scripts": {
+    "tests/simulation/city-life-checks.cjs": "30ee312e3ddf4301a139da92be235c5e5ed787cda9274774bfbd35b0a517ff60",
+    "tests/simulation/city-life-browser.cjs": "e93eadec069752bec92c7a1645b2fb71ee2e27eb7eeb6408dbdffe00a93e76fd",
+    "tests/simulation/city-life-politics-browser.cjs": "7de16c0e92a09813bd09dee49d9eef842ef587c03729be76ee1fd14bf819d804",
+    "tests/simulation/city-life-visual-final.cjs": "1a00c7fde5fcce727bc871e4b9caf660091f400e8a34139f4e5015ebeb8ecefc",
+    "tests/simulation/city-life-touch-offline.cjs": "800c07a85d750c029428637ccd07a80a8f78892f216753c56f3db8df57fd0938",
+    "tests/simulation/city-life-console.cjs": "e436f38c2e15b023b6f92022d8941e637f2b34e597045464d663ba52f8db8b25",
+    "tools/encode-city-art.py": "ed5192f8e6ae9db9a31595ed5c9fedd241d0b5422bffdb4ff0149b622a184f7b",
+    "tools/embed-city-life.py": "2f2bfa54bae056e1ecbd54deb69045cea4de8186b6ecbb88daa273cfdd4deaa0"
+  }
+}

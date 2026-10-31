@@ -1,0 +1,10 @@
+PASS unchanged production source and only K500 selected
+PASS exact same B3 initial transition prices across required stock and price matrix
+PASS unchanged economic market across arbitrary days retains exact basis and split costs
+PASS old B3 +40 example becomes exactly zero after actual unchanged day and reload
+PASS 90,9x10,90x1 actual VM buys and sales; reverse-first; no free view ship or warehouse reset
+PASS true daily price and stock impulses retained; no-op does not create a revision
+PASS bounds illegal stock/gold/space and exact difficult rounding schemas fail safely
+PASS original no-trade daily markets and RNG; saved/new specials and expiry
+PASS year crossing real multiday travel and original information snapshots survive complete export
+9 price groups passed

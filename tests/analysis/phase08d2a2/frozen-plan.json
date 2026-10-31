@@ -1,0 +1,62 @@
+{
+  "base": "c4244a84e6f4a0ed4579291dc8ebe25ffd2a110e",
+  "k": 500,
+  "newEconomicArms": 9,
+  "historicalB3ArmsReadOnly": 9,
+  "comparedCasesTotal": 18,
+  "seeds": [
+    81001,
+    81002,
+    81003
+  ],
+  "routes": [
+    "luebeck-hamburg",
+    "bergen-luebeck",
+    "nowgorod-bruegge"
+  ],
+  "policy": "small22",
+  "maxTrips": 12,
+  "maxDays": 120,
+  "maxDecisions": 30,
+  "priceApproach": "exact rational retained unit residual with original daily integer impulse",
+  "politicsApproach": "calibrated liquidation equity capped by financial worth; cumulative foreign-FIFO margin reputation; limitations explicitly tested",
+  "sourceFiles": [
+    {
+      "path": "tests/analysis/phase08d2a2/README.md",
+      "sha256": "2391d62d0672b8bb9b6c849aaeddb3586008d0e145fed8c0e430b6c9a1ce5ac0"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/compare.cjs",
+      "sha256": "71c2a1cdc78b43817c80966de209b1491936e113e0fa4393d8beb922a45c4b12"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/harness.cjs",
+      "sha256": "879803e7ec0fcede3dcff4b513597eee4ffd83d1dd41b2ff028fb1b1f07201b8"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/political-checks.cjs",
+      "sha256": "db202248901355abb79b0eaa28851a55a0194795ba331e772d9604a5478b411b"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/political-model.cjs",
+      "sha256": "fe2bf6ef7961cf724e69f09b40db20c7bb8d9d535740289d3d34553aa19f282c"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/price-checks.cjs",
+      "sha256": "89ce1a65f65c14f71eb7f7dd802d0c54c3ac1e41b711d6c9b3711b733a235a82"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/price-model.cjs",
+      "sha256": "341c7dd16e4fab10f002760ca8c54282a9fb7c10883f4bc6a2f260ecd297fc73"
+    },
+    {
+      "path": "tests/analysis/phase08d2a2/rational.cjs",
+      "sha256": "580f8b50c69f8a4b332b959e7af87496a1ae9f819930974307eb2dc48cf1642b"
+    }
+  ],
+  "fixtureRepairsBeforeComparisons": [
+    "half-boundary fixture now uses canonical reduced fraction; core correctly rejected noncanonical input",
+    "supply fixture uses actual politicalOffer good instead of invalid forced grain",
+    "supply fixture accepts original job so issued-period record is valid"
+  ]
+}
