@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceBase": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "a02415a21a708e399e839eee1c932eadf50e5199",
+  "gameSHA256": "76dd27c20b9a26bcf011fb5e705b6304970ca503fffdb3680339860f4e3ed0ce",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": "^(14|18|27|33|34|35|36) ",
+  "fullSuite": false,
+  "checks": [
+    {
+      "name": "14 simultaneous first imports do not duplicate migrated party",
+      "status": "PASS",
+      "details": {
+        "twoTrulySimultaneousBoots": true,
+        "oneMigration": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "18 migration transaction failure preserves source and retries exactly once",
+      "status": "PASS",
+      "details": {
+        "failedMigrationAtomic": true,
+        "rawExportBeforeRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "27 W1-S neutral circles do not increase credit; known reputation path remains open",
+      "status": "PASS",
+      "details": {
+        "financialSecurityNoIncrease": true,
+        "knownReputationIssueStillOpen": true,
+        "repDelta": 1,
+        "supportDelta": 0.16666666666666666
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "33 shipyard material book values remain outside W1-S collateral",
+      "status": "PASS",
+      "details": {
+        "actualConstructionStarted": true,
+        "materialBookDelta": 188,
+        "noCreditDelta": true,
+        "paidWageRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "34 newer file choice wins over delayed older FileReader in same party",
+      "status": "PASS",
+      "details": {
+        "olderFileCannotReplaceNewerPreview": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "35 valid legacy names are retained even when default slot label needs truncation",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n79 !== 80\n\n    at /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:84:261\n    at async check (/workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10a/browser-checks.cjs:84:2"
+    },
+    {
+      "name": "36 missing IndexedDB leaves the old canonical source readable and unmodified",
+      "status": "PASS",
+      "details": {
+        "noSchemaUpgradeWithoutPrerequisites": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [],
+  "passed": false,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
