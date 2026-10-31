@@ -1,0 +1,29 @@
+{
+  "gameCommit": "9aa7b7f6365af5711924f847842360f82e329082",
+  "rawResults": [
+    "native-final.json",
+    "native-landscape.json"
+  ],
+  "files": [
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-375.png",
+      "preservedPath": "tests/features/q1_10a/results/before-name-provenance-fix/save-manager-375.png",
+      "sha256": "926498c282f959456207f70aa49870f731b4013ecf69e4d3f62eef8c9a53558e"
+    },
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-820.png",
+      "preservedPath": "tests/features/q1_10a/results/before-name-provenance-fix/save-manager-820.png",
+      "sha256": "aa98a6294419c6ce9d68987b4150538fb13c53017038a7da8259ac3944a74ebc"
+    },
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-1280.png",
+      "preservedPath": "tests/features/q1_10a/results/before-name-provenance-fix/save-manager-1280.png",
+      "sha256": "c03dcea2be1c716f310ded10aac54998cf7f9109df471695280cc0bc9c4772d9"
+    },
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-landscape-812.png",
+      "preservedPath": "tests/features/q1_10a/results/before-name-provenance-fix/save-manager-landscape-812.png",
+      "sha256": "078d855388d7f809361e82fe50f4a0d651969d19d488757f888b80dd90037464"
+    }
+  ]
+}

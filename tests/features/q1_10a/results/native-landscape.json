@@ -1,0 +1,30 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceBase": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "9aa7b7f6365af5711924f847842360f82e329082",
+  "gameSHA256": "dcbca27ada9b832ec2240bd7f92bfd61d71f441ddae52d6f1899c0ffdfcd167a",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": "^39 ",
+  "fullSuite": false,
+  "checks": [
+    {
+      "name": "39 phone landscape start and management controls remain touch-accessible",
+      "status": "PASS",
+      "details": {
+        "viewport": "812x375",
+        "touchTargetsAtLeast44": true,
+        "noHorizontalOverflow": true,
+        "closeReachable": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [
+    "tests/features/q1_10a/results/save-manager-landscape-812.png"
+  ],
+  "passed": true,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
