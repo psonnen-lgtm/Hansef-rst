@@ -187,9 +187,10 @@
       "details": {
         "closeWithoutReset": true,
         "testReloadExact": true,
-        "actualMainVersionsStarted": 3
+        "actualMainVersionsStarted": 3,
+        "actualMainStatsVisible": true
       },
-      "source": "native-legacy-control.json"
+      "source": "native-legacy-ui.json"
     },
     {
       "name": "15 missing Web Locks refuses test writes without product fallback",
@@ -232,9 +233,12 @@
   },
   "uncaughtPageErrors": [],
   "historicalFailedControlRetained": "native-attempt-1.json group14",
-  "controlResolution": "Synthetic old03 fixture incorrectly retained 11-price V13 journal against seven-good v3 markets. Corrected fixture journal to seven entries, no test-copy change and no weakening of byte-equality assertion. Only group14 repeated; remaining16 earlier passing groups retained against same code hash.",
+  "controlResolution": "Synthetic old03 fixture incorrectly retained 11-price V13 journal against seven-good v3 markets. Corrected fixture journal to seven entries, no test-copy change and no weakening of byte-equality assertion. Only group14 repeated; remaining16 earlier passing groups retained against same code hash. Additional focused group14 execution strengthens actual legacy startup with visible Gold statistics and page-error listeners; all three main clients pass. Previous control proof retained.",
   "automaticMigrationOfProductiveData": false,
   "websitePublished": false,
   "realAppleDevicesTested": 0,
-  "securityBoundary": "Programmatic separation only; same origin shares native authority and browser quota/eviction."
+  "securityBoundary": "Programmatic separation only; same origin shares native authority and browser quota/eviction.",
+  "distinctAcceptedGroups": 17,
+  "firstFullRunExecutions": 17,
+  "focusedControlExecutions": 2
 }

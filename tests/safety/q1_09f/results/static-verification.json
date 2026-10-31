@@ -16,11 +16,13 @@
   "nativeAPITraceChecks": 665,
   "uncaughtBrowserErrors": 0,
   "reports": 4,
-  "relativeMarkdownLinksChecked": 20,
+  "relativeMarkdownLinksChecked": 21,
   "publicationFiles": 4,
   "deviceRowsNotTested": 42,
   "syntaxChecks": 3,
   "diffChecksPassed": true,
   "pagesPublished": false,
-  "newAccountProviderOrPaidService": false
+  "newAccountProviderOrPaidService": false,
+  "actualMainClientsWithVisibleStatistics": 3,
+  "finalLegacyUIProof": "native-legacy-ui.json"
 }

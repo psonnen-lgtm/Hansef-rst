@@ -14,8 +14,9 @@ Synthetische produktive Kontrollwerte: v01/v03/v04/Safety1-LocalStorage, alte Ba
 - `node tests/safety/q1_09f/browser-isolation.cjs tests/safety/q1_09f/results/native-attempt-1.json`: 16 Gruppen bestanden, Kontrollfall14 zunächst fehlgeschlagen; keine unbemerkte Umdeutung zum grünen Gesamtlauf.
 - Kontrollfixture im Treiber korrigiert und in `b64bd1d304162e9c30b232b64d8025aea5bd0dbb` gesichert. **Kein Testspielcode geändert.**
 - `Q109F_ONLY='^14 ' node tests/safety/q1_09f/browser-isolation.cjs tests/safety/q1_09f/results/native-legacy-control.json`: nur Gruppe 14 gezielt erneut ausgeführt, bestanden. Bereits erfolgreiche 16 Gruppen nicht unnötig wiederholt.
+- Startbarkeitsnachweis anschließend um **sichtbare Gold-Statistik und Pageerror-Prüfung aller drei main-Clients** verstärkt, Treibercommit `79a4d1cfff159cff79ea65be0a0239a4870908d5`. Nur Gruppe14 mit derselben Filteroption nach `tests/safety/q1_09f/results/native-legacy-ui.json` ausgeführt; bestanden. Kein weiterer Gesamtlauf.
 
-[Zusammengeführte Abnahme mit Herkunft je Gruppe](../../../tests/safety/q1_09f/results/acceptance.json): **17 bestandene Gruppen gegen exakt denselben Testkopiehash**. Nicht als zweiter vollständiger 17er-Lauf ausgegeben. [Erster Rohstand inklusive Fehler](../../../tests/safety/q1_09f/results/native-attempt-1.json), [gezielter Kontrolllauf](../../../tests/safety/q1_09f/results/native-legacy-control.json). Keine ungefangenen JavaScript-Seitenfehler.
+[Zusammengeführte Abnahme mit Herkunft je Gruppe](../../../tests/safety/q1_09f/results/acceptance.json): **17 bestandene Gruppen gegen exakt denselben Testkopiehash**. Nicht als zweiter vollständiger 17er-Lauf ausgegeben. [Erster Rohstand inklusive Fehler](../../../tests/safety/q1_09f/results/native-attempt-1.json), [gezielter Kontrolllauf](../../../tests/safety/q1_09f/results/native-legacy-control.json), [verstärkter UI-Kontrolllauf](../../../tests/safety/q1_09f/results/native-legacy-ui.json). Keine ungefangenen JavaScript-Seitenfehler.
 
 ## Ursache des Kontrollfehlers
 
@@ -35,7 +36,7 @@ Korrektur ausschließlich der synthetischen Referenz: ihr 0.3-Journal hat von An
 | Wiederherstellung nur Testbackups | Eigenes before-replacement-Backup wiederhergestellt, produktive Backup-Sentinels ignoriert | Bestanden |
 | Parallele Tabs | Ein Gewinner/eine veraltete Testaktion; Test und Q1.09c zusätzlich gleichzeitig getrennt nutzbar | Bestanden |
 | Fehlerhafte Importe | Defektes JSON, fremder Name, veränderte unmarkierte vermeintliche TEST-Datei verworfen; vorherige Testbytes erhalten | Bestanden |
-| Produktive Version startbar | Alle drei tatsächlichen main-HTMLs plus aktuelle Q1.09c-HTML mit ausschließlich synthetischen Daten | Bestanden lokal |
+| Produktive Version startbar | Alle drei tatsächlichen main-HTMLs mit sichtbarer Gold-Statistik/ohne Pageerror plus aktuelle Q1.09c-HTML mit ausschließlich synthetischen Daten | Bestanden lokal |
 | Testmodus ohne Löschung beenden | Testtab schließen, eigene Partie wieder öffnen, produktive Kontrollbytes erhalten | Bestanden |
 
 Weitere Gruppen: Quota-Schreibfehler mit vollständigem Rückfall/einmaligem Retry; fehlende Web Locks/IndexedDB ohne produktiven Fallback; eigene Testaufzeichnung/Export/Löschen ohne Origin-Enumeration; persönliche/unbegleitete Reise, korrekter Personenort und gesperrte politische Fernhandlung; keine automatische Übernahme selbst aus alten ähnlich benannten Testschlüsseln.
