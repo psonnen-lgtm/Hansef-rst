@@ -1,0 +1,23 @@
+{
+  "note": "Initial screenshots preserved byte-exact from checkpoint before the final suite refreshes the current screenshots. Initial raw JSON is unchanged; its captured paths refer to the original capture locations.",
+  "files": [
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-375.png",
+      "preservedInitialPath": "tests/features/q1_10a/results/initial-screenshots/save-manager-375.png",
+      "sha256": "9f4dd692ff903167770325cc9b09eb52e205621ac2dc5bd1c009cc72cea99200",
+      "sourceCommit": "a9a16665071aad16aedd1978d6c44fb81ba7474e"
+    },
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-820.png",
+      "preservedInitialPath": "tests/features/q1_10a/results/initial-screenshots/save-manager-820.png",
+      "sha256": "b26abad19cace54b0587e8c2dee0bb47f5e49df87493e0e859427845f561b0d0",
+      "sourceCommit": "a9a16665071aad16aedd1978d6c44fb81ba7474e"
+    },
+    {
+      "recordedPath": "tests/features/q1_10a/results/save-manager-1280.png",
+      "preservedInitialPath": "tests/features/q1_10a/results/initial-screenshots/save-manager-1280.png",
+      "sha256": "d9e92f3b39b5ddfcf2b5fea85f7703eec68e99534b1fcd42df542676fd40f544",
+      "sourceCommit": "a9a16665071aad16aedd1978d6c44fb81ba7474e"
+    }
+  ]
+}

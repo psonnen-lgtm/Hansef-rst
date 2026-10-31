@@ -1,0 +1,347 @@
+{
+  "date": "2026-10-31 Europe/Berlin",
+  "sourceBase": "c7201c089dbb8079c0b5a5e3e1728b5b0888f49e",
+  "testedGameCommit": "9aa7b7f6365af5711924f847842360f82e329082",
+  "gameSHA256": "dcbca27ada9b832ec2240bd7f92bfd61d71f441ddae52d6f1899c0ffdfcd167a",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": null,
+  "fullSuite": true,
+  "checks": [
+    {
+      "name": "01 first launch offers three start functions; native new-game UI",
+      "status": "PASS",
+      "details": {
+        "startMenu": true,
+        "newGameUI": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "02 five independent slots, duplicate names, unique IDs, sixth rejected",
+      "status": "PASS",
+      "details": {
+        "fiveSlots": true,
+        "duplicateNamesAllowed": true,
+        "capacityFailurePreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "03 switching and autosave affect only active party",
+      "status": "PASS",
+      "details": {
+        "autosaveAOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "04 rename preserves ID, gameplay bytes and other party",
+      "status": "PASS",
+      "details": {
+        "renameMetadataOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "05 deletion requires confirmation and preserves other data/backups",
+      "status": "PASS",
+      "details": {
+        "cancelAndExplicitDelete": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "06 deleting active party invalidates old tab and prevents resurrection",
+      "status": "PASS",
+      "details": {
+        "deletedPartyCannotWrite": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "07 reload shows home, continue loads last selected party",
+      "status": "PASS",
+      "details": {
+        "explicitContinueAfterReload": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "08 export non-active party has unique filename and metadata, no mutation",
+      "status": "PASS",
+      "details": {
+        "individualExport": true,
+        "filename": "hansefuerst-Nordhandel-f5f63e63-b4ae-446a-ac43-fc9b12d86fc9.json"
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "09 V13 import creates new ID and explicit replacement is cancelable",
+      "status": "PASS",
+      "details": {
+        "newImportAndConfirmedReplacement": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "10 corrupt, future and TEST imports do not alter library",
+      "status": "PASS",
+      "details": {
+        "invalidInputs": 4
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "11 export and reimport preserve name and all game fields",
+      "status": "PASS",
+      "details": {
+        "V13AndDisplayNameRoundtrip": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "12 canonical Q109c migration preserves raw original and all state fields",
+      "status": "PASS",
+      "details": {
+        "legacyCanonicalReadOnly": true,
+        "exactOriginalBackup": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "13 regular LocalStorage V13 migrates once and source stays byte-identical",
+      "status": "PASS",
+      "details": {
+        "migrationIdempotent": true,
+        "financialCargoShipsPreserved": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "14 simultaneous first imports do not duplicate migrated party",
+      "status": "PASS",
+      "details": {
+        "twoTrulySimultaneousBoots": true,
+        "oneMigration": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "15 political titles offices and running contracts survive migration and roundtrip",
+      "status": "PASS",
+      "details": {
+        "historicalTitlesAndObligationsRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "16 early M2 personal information retained without invented grace proof",
+      "status": "PASS",
+      "details": {
+        "knownPersonRetained": true,
+        "noNewProof": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "17 invalid legacy original can be exported and preserved before blank start",
+      "status": "PASS",
+      "details": {
+        "rawInvalidOriginalRecoverable": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "18 migration transaction failure preserves source and retries exactly once",
+      "status": "PASS",
+      "details": {
+        "failedMigrationAtomic": true,
+        "rawExportBeforeRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "19 true abort after put rolls back payload catalog and backup together",
+      "status": "PASS",
+      "details": {
+        "nativeTransactionAbortAfterPut": true,
+        "atomicAcrossThreeStores": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "20 failed creation does not select or leak a half-created party",
+      "status": "PASS",
+      "details": {
+        "createAbortDoesNotSwitch": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "21 two same-party tabs reject stale write with one charge",
+      "status": "PASS",
+      "details": {
+        "samePartyCAS": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "22 two different-party tabs can both save independently",
+      "status": "PASS",
+      "details": {
+        "perPartyRevisionIndependentOfGlobalLastPlayed": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "23 queued old action cannot write after party switch",
+      "status": "PASS",
+      "details": {
+        "selectionGenerationGuardsQueuedWork": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "24 delayed FileReader cannot import into a newly selected party",
+      "status": "PASS",
+      "details": {
+        "delayedNativeFileReaderBoundToOriginalSelection": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "25 concurrent newer target defeats explicit stale replacement import",
+      "status": "PASS",
+      "details": {
+        "targetRevisionCheckedInsideAtomicImport": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "26 backup export and restore create independent new party after deletion",
+      "status": "PASS",
+      "details": {
+        "backupSurvivesDeletionAndRestoresAsNewIdentity": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "27 W1-S neutral circles do not increase credit; known reputation path remains open",
+      "status": "PASS",
+      "details": {
+        "financialSecurityNoIncrease": true,
+        "knownReputationIssueStillOpen": true,
+        "repDelta": 1,
+        "supportDelta": 0.16666666666666666
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "28 personal and unaccompanied voyages preserve costs person and political guard",
+      "status": "PASS",
+      "details": {
+        "feesDaysSameNativeRules": true,
+        "remotePersonalActionBlocked": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "29 exact legacy grace remains once across single-party export replacement",
+      "status": "PASS",
+      "details": {
+        "originalDeadlinePreserved": true,
+        "noStackedGrace": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "30 failed voyage write retains same hidden risk outcome on retry",
+      "status": "PASS",
+      "details": {
+        "oneRiskRollAcrossFailedWriteAndRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "31 missing storage primitives fail closed without legacy source alteration",
+      "status": "PASS",
+      "details": {
+        "missingWebLocksNoUnsafeFallback": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "32 touch-sized management screens and new-game cancel preserve all parties",
+      "status": "PASS",
+      "details": {
+        "threeViewportSizes": true,
+        "noHorizontalOverflow": true,
+        "cancelPreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "33 shipyard material book values remain outside W1-S collateral",
+      "status": "PASS",
+      "details": {
+        "actualConstructionStarted": true,
+        "materialBookDelta": 188,
+        "noCreditDelta": true,
+        "paidWageRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "34 newer file choice wins over delayed older FileReader in same party",
+      "status": "PASS",
+      "details": {
+        "olderFileCannotReplaceNewerPreview": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "35 valid legacy names are retained even when default slot label needs truncation",
+      "status": "PASS",
+      "details": {
+        "gameNamesUnchanged": true,
+        "onlyDisplayMetadataNormalized": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "36 missing IndexedDB leaves the old canonical source readable and unmodified",
+      "status": "PASS",
+      "details": {
+        "noSchemaUpgradeWithoutPrerequisites": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "37 duplicate generated IDs cannot overwrite an existing party",
+      "status": "PASS",
+      "details": {
+        "forcedCollisionRejectedWithoutOverwrite": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "38 catalog revision overflow aborts all writes without corrupting state",
+      "status": "PASS",
+      "details": {
+        "catalogValidatedBeforeCommit": true,
+        "noPartialPayloadOrBackup": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [
+    "tests/features/q1_10a/results/save-manager-375.png",
+    "tests/features/q1_10a/results/save-manager-820.png",
+    "tests/features/q1_10a/results/save-manager-1280.png"
+  ],
+  "passed": true,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
