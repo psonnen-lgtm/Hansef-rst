@@ -1,0 +1,17 @@
+{
+  "date": "2026-11-07 Europe/Berlin",
+  "testedGameCommit": "ade1961b89dd5975b5a32b9c6f68383f6376c51e",
+  "gameSHA256": "803b0c551b9c10d52b7f9c93ae9dc738d1da1288da594dfa351d0f8df1a02c80",
+  "browserVersion": "154.0.8037.57",
+  "nativeGroupsPassed": 57,
+  "nativeGroupsTotal": 57,
+  "uncaughtPageErrors": 0,
+  "source": "native-release.json",
+  "staticSource": "static-verification.json",
+  "staticPassed": true,
+  "knownGlobalReputationIssueStillOpen": true,
+  "realAppleDevicesTested": 0,
+  "largeSimulationExecuted": false,
+  "websiteDeployed": false,
+  "merged": false
+}

@@ -279,3 +279,8 @@ Q1.09 Sicherheitsstand: [Speicherung](Q1_09/Q1_09_speichersicherheit.md), [Perso
 ## Q1.10a – Mehrspielstand-Verwaltung und neuer Start
 
 31.10.2026 – [Gesamtbericht](Q1_10a/Q1_10a_gesamtbericht.md), [Speicherarchitektur](Q1_10a/Q1_10a_speicherarchitektur.md), [V13-Bestandsschutz](Q1_10a/Q1_10a_bestandsschutz.md), [Tests](Q1_10a/Q1_10a_tests.md), [offene Probleme](Q1_10a/Q1_10a_offene_probleme.md). Eigener Feature-Branch direkt von geprüftem Q1.09c-Code. Fünf unabhängige Partien, Start/Fortsetzen/Verwaltung, atomare IndexedDB-Bibliothek und exakte Originalbackups.40 native Chromium-Gruppen bestanden; echte neue Apple-Abnahme offen. Bekannter Ansehenspfad unverändert offen. Keine Pages-Veröffentlichung, keine Änderung der isolierten Q1.09f-Testversion, kein Merge oder Folgeauftrag.
+
+
+## Q1.10b – Flottensteuerung statt persönlicher Mitreise
+
+07.11.2026 – [Gesamtbericht](Q1_10b/Q1_10b_gesamtbericht.md), [Flottenanwesenheit](Q1_10b/Q1_10b_flottenanwesenheit.md), [politische Ortsregeln](Q1_10b/Q1_10b_politische_ortsregeln.md), [Bestandsschutz](Q1_10b/Q1_10b_bestandsschutz.md), [Tests](Q1_10b/Q1_10b_tests.md), [offene Probleme](Q1_10b/Q1_10b_offene_probleme.md). Eigener Branch direkt von geprüftem Q1.10a. Örtliche Aktionen über eigene Schiffe im Hafen, selbstständige Reisen ohne persönlichen Ankunftsbonus. V13 und Mehrpartien erhalten, keine neuen Fristschonungen; bestehende Nachweise bleiben gültig.57 native Chromium-Gruppen bestanden. Bekannter globaler Ansehensfehler, echte Apple-Abnahme und wirtschaftliche Langzeitwirkung bleiben offen. Kein Merge, keine Pages-Veröffentlichung oder Folgeauftrag.
