@@ -1,0 +1,204 @@
+{
+  "baseCommit": "ff92ce60d1c384a13313e37ba2b3954cf38e793b",
+  "baseSHA256": "35187fa97fab81740dfad2f6fca580261e512f8309eb94e2b6a4912f014a29bb",
+  "patches": [
+    {
+      "label": "political-entry-guards",
+      "count": 14,
+      "before": "safetyPersonalRequired(",
+      "after": "fleetLocalRequired("
+    },
+    {
+      "label": "political-eligibility",
+      "count": 7,
+      "before": "safetyAt(",
+      "after": "fleetAt("
+    },
+    {
+      "label": "mayor-explanation",
+      "count": 1,
+      "before": "'Persönliche Anwesenheit in '+CITIES[city]+' nötig; Personenort: '+safetyPersonText()+'.'",
+      "after": "'Ein eigenes Schiff im Hafen von '+CITIES[city]+' nötig.'"
+    },
+    {
+      "label": "hanse-explanation",
+      "count": 1,
+      "before": "'Die persönliche Hanseversammlung findet in '+CITIES[home]+' statt.'",
+      "after": "'Für die Hanseversammlung ist die Ansicht von '+CITIES[home]+' mit einem eigenen Schiff im Hafen nötig.'"
+    },
+    {
+      "label": "office-review-local-guard",
+      "count": 1,
+      "before": "function reviewMayor(){if(!s.politics.office",
+      "after": "function reviewMayor(){if(!fleetLocalRequired(s.politics.office?.city??s.city))return false;if(!s.politics.office"
+    },
+    {
+      "label": "political-copy-Persönlich im Rathaus von ",
+      "count": 2,
+      "before": "Persönlich im Rathaus von ",
+      "after": "Mit einem eigenen Schiff im Hafen von "
+    },
+    {
+      "label": "political-copy- persönlich in ",
+      "count": 2,
+      "before": " persönlich in ",
+      "after": " örtlich in "
+    },
+    {
+      "label": "political-copy- einschließlich Heimat persönl",
+      "count": 1,
+      "before": " einschließlich Heimat persönlich verhandeln",
+      "after": " einschließlich Heimat bei eigener Schiffsanwesenheit verhandeln"
+    },
+    {
+      "label": "political-copy-+' persönlich über den Hanseve",
+      "count": 1,
+      "before": "+' persönlich über den Hansevertrag verhandeln?'",
+      "after": "+' bei eigener Schiffsanwesenheit über den Hansevertrag verhandeln?'"
+    },
+    {
+      "label": "political-copy- persönlich bestätigt.",
+      "count": 1,
+      "before": " persönlich bestätigt.",
+      "after": " örtlich bestätigt."
+    },
+    {
+      "label": "political-copy-eine persönliche Ratsvereinbar",
+      "count": 1,
+      "before": "eine persönliche Ratsvereinbarung halten.",
+      "after": "eine örtliche Ratsvereinbarung halten."
+    },
+    {
+      "label": "political-copy-Briefwechsel mit ",
+      "count": 1,
+      "before": "Briefwechsel mit ",
+      "after": "Ratsbriefwechsel mit "
+    },
+    {
+      "label": "political-copy-: persönlich hinreisen, vorspr",
+      "count": 1,
+      "before": ": persönlich hinreisen, vorsprechen und zurückkehren.",
+      "after": ": in beiden Häfen ein eigenes Schiff bereithalten und die Bestätigungen ausdrücklich abgeben."
+    },
+    {
+      "label": "political-copy- persönlich übergeben.",
+      "count": 1,
+      "before": " persönlich übergeben.",
+      "after": " bei eigener Schiffsanwesenheit übergeben."
+    },
+    {
+      "label": "political-copy-besuchen, persönlich bestätige",
+      "count": 1,
+      "before": "besuchen, persönlich bestätigen, anschließend nach ",
+      "after": "mit eigenen Schiffen vertreten, örtlich bestätigen, anschließend in "
+    },
+    {
+      "label": "political-copy-Ansehen durch bestehende Hande",
+      "count": 1,
+      "before": "Ansehen durch bestehende Handelsreisen, Verkäufe, erfüllte Aufträge oder Kirchenspenden gewinnen.",
+      "after": "Ansehen durch Verkäufe, erfüllte Aufträge oder Kirchenspenden gewinnen. Eine bloße Schiffsankunft gibt kein Ansehen."
+    },
+    {
+      "label": "hall-presence-banner",
+      "count": 1,
+      "before": ". Persönlicher Ort: '+esc(safetyPersonText())+'. Ansicht ist keine persönliche Reise.",
+      "after": ". '+(fleetAt()?'Ein eigenes Schiff im Hafen ermöglicht örtliche Handlungen.':'In diesem Hafen liegt derzeit keines Eurer Schiffe.')+' Ein Ansichtswechsel allein berechtigt zu keiner örtlichen Handlung."
+    },
+    {
+      "label": "contor-presence-banner",
+      "count": 1,
+      "before": " Persönlicher Ort: ${esc(safetyPersonText())}.",
+      "after": " ${fleetAt()?'Eigene Schiffe im Hafen ermöglichen örtliche Handlungen.':'In diesem Hafen liegt derzeit keines Eurer Schiffe.'}"
+    },
+    {
+      "label": "manager-remove-anchor",
+      "count": 1,
+      "before": "' · Persönlicher Ort: '+esc(safetyPersonText())+'.</p>'+(s.politics.safety.person.source==='unknown'?'<button onclick=\"confirmLegacyPresence()\">Persönlichen Altort einmalig bestätigen</button>':'')",
+      "after": "' · Örtliche Aktionen benötigen ein eigenes Schiff im jeweiligen Hafen. Historische Ortsnachweise bleiben erhalten.</p>'"
+    },
+    {
+      "label": "city-presence-status",
+      "count": 1,
+      "before": "function render(){if(!s)return;const warehouseSpot=$('warehouseSpot');if(warehouseSpot)warehouseSpot.hidden=!isCityIndex(s.city); $('stats').innerHTML=`<div class=\"stat\"><small>Goldstücke</small><b>${fmt(s.gold)} 🪙</b></div><div class=\"stat\"><small>Rang</small><b>${esc(rank())}</b></div><div class=\"stat\"><small>Ansehen</small><b>${fmt(s.rep)} ⭐</b></div><div class=\"stat\"><small>Datum</small><b>Tag ${s.day} · ${s.year}</b></div>`;$('place').textContent='⚓ '+CITIES[s.city];$('hint').textContent=`${s.ships.length} Schiff(e) · ${fmt(netWorth())} G Nettovermögen zu Buchwerten`;drawCity();save();renderStorageStatus()}",
+      "after": "function render(){if(!s)return;const warehouseSpot=$('warehouseSpot');if(warehouseSpot)warehouseSpot.hidden=!isCityIndex(s.city); $('stats').innerHTML=`<div class=\"stat\"><small>Goldstücke</small><b>${fmt(s.gold)} 🪙</b></div><div class=\"stat\"><small>Rang</small><b>${esc(rank())}</b></div><div class=\"stat\"><small>Ansehen</small><b>${fmt(s.rep)} ⭐</b></div><div class=\"stat\"><small>Datum</small><b>Tag ${s.day} · ${s.year}</b></div>`;$('place').textContent='⚓ '+CITIES[s.city];$('hint').textContent=`${s.ships.length} Schiff(e) · ${fmt(netWorth())} G Nettovermögen zu Buchwerten · ${fleetAt()?'Eigene Schiffe im Hafen: örtliche Aktionen verfügbar':'In diesem Hafen liegt derzeit keines Eurer Schiffe.'}`;drawCity();save();renderStorageStatus()}"
+    },
+    {
+      "label": "autonomous-voyage-plan",
+      "count": 1,
+      "before": "function planTravel(dest,convoyChoice=null,personalChoice=null){if(!isCityIndex(s.politics.safety.person.city)){notice('Bitte den historischen persönlichen Ort unter Spielstand & Sicherung zuerst einmalig bestätigen.');return false;}if(personalChoice===true&&!fleetLocalRequired())return false;const mode=personalChoice===false?'unaccompanied':fleetAt()?'personal':'unaccompanied';if(!isCityIndex(dest)||dest===s.city)return;let local=s.ships.filter(q=>q.city===s.city);if(!local.length)return notice('Kein Schiff in diesem Hafen.');if(ship().city!==s.city)return notice('Wähle zuerst ein Schiff in diesem Hafen.');let convoy=local.length>1&&(typeof convoyChoice==='boolean'?convoyChoice:confirm(`Alle ${local.length} Schiffe dieses Hafens als Konvoi nach ${CITIES[dest]} schicken?\\nOK = Konvoi · Abbrechen = ausgewähltes Schiff`));let qs=convoy?local:[ship()],speed=Math.min(...qs.map(q=>q.speed*(.65+.35*q.condition/100))),days=routeTravelDays(s.city,dest,speed);let fee=qs.reduce((a,q)=>a+[4,6,9][q.type],0);if(s.gold<fee)return notice('Für die Hafengebühr fehlen '+(fee-s.gold)+' Gold.');pending={from:s.city,dest,days,convoy,fee,mode,person:safetyCopy(s.politics.safety.person),qs:qs.map(q=>q.id),event:null,safetyRevision:s.politics.safety.revision};pending.story='Kurs und Kosten stehen fest. Ereignisse auf See werden erst nach dem Weitersegeln ermittelt.';show('travel')}",
+      "after": "function planTravel(dest,convoyChoice=null){if(!isCityIndex(dest)||dest===s.city)return;let local=s.ships.filter(q=>q.city===s.city);if(!local.length)return notice('Kein Schiff in diesem Hafen.');if(ship().city!==s.city)return notice('Wähle zuerst ein Schiff in diesem Hafen.');let convoy=local.length>1&&(typeof convoyChoice==='boolean'?convoyChoice:confirm(`Alle ${local.length} Schiffe dieses Hafens als Konvoi nach ${CITIES[dest]} schicken?\\nOK = Konvoi · Abbrechen = ausgewähltes Schiff`));let qs=convoy?local:[ship()],speed=Math.min(...qs.map(q=>q.speed*(.65+.35*q.condition/100))),days=routeTravelDays(s.city,dest,speed);let fee=qs.reduce((a,q)=>a+[4,6,9][q.type],0);if(s.gold<fee)return notice('Für die Hafengebühr fehlen '+(fee-s.gold)+' Gold.');pending={from:s.city,dest,days,convoy,fee,mode:'fleet',qs:qs.map(q=>q.id),event:null,safetyRevision:s.politics.safety.revision};pending.story='Kurs und Kosten stehen fest. Ereignisse auf See werden erst nach dem Weitersegeln ermittelt.';show('travel')}"
+    },
+    {
+      "label": "map-autonomous-copy",
+      "count": 1,
+      "before": " const quote=single?`<section class=\"item chart-quote\"><h3>${esc(CITIES[s.city])} → ${esc(CITIES[target])}</h3><p>${esc(CITY_DESCRIPTIONS[target])}</p><p><b>Einzelfahrt:</b> ${fleetNames(single.qs)}<br>${single.days} Spieltage · ${single.fee} G Hafengebühr</p><button id=\"chartSingle\" onclick=\"planTravel(${target},false)\" ${s.gold<single.fee||planned?'disabled':''}>Nur ${esc(active.name)} vorbereiten</button>${local.length>1?`<p><b>Örtlicher Konvoi:</b> ${fleetNames(convoy.qs)}<br>${convoy.days} Spieltage · ${convoy.fee} G Hafengebühr · langsamstes Schiff bestimmt das Tempo</p><button id=\"chartConvoy\" class=\"ghost\" onclick=\"planTravel(${target},true)\" ${s.gold<convoy.fee||planned?'disabled':''}>Alle ${local.length} örtlichen Schiffe vorbereiten</button>`:''}<p class=\"notice\">${fleetAt()?'Persönliche Mitreise':'Unbegleitete Schiffsreise: Dein Kaufmann bleibt in '+esc(safetyPersonText())+'.'}</p><p class=\"muted\">Das bereitet nur die Fahrt vor. Erst „Weitersegeln“ löst Reise, Spieltage, Kosten und Ereignisse aus. Keine Schiffe aus anderen Häfen reisen mit.</p><p class=\"muted\">${esc(routeDescription(s.city,target))}</p></section>`:`<p class=\"notice\">${active.city!==s.city?'Das aktive Schiff liegt außerhalb der betrachteten Stadt. Wähle seinen Hafen im Schiffsbuch.':target===s.city?'Dies ist der betrachtete Hafen. Wähle ein anderes Ziel.':'Tippe auf einen Stadtmarker oder wähle unten einen Zielhafen.'}</p>`;",
+      "after": " const quote=single?`<section class=\"item chart-quote\"><h3>${esc(CITIES[s.city])} → ${esc(CITIES[target])}</h3><p>${esc(CITY_DESCRIPTIONS[target])}</p><p><b>Einzelfahrt:</b> ${fleetNames(single.qs)}<br>${single.days} Spieltage · ${single.fee} G Hafengebühr</p><button id=\"chartSingle\" onclick=\"planTravel(${target},false)\" ${s.gold<single.fee||planned?'disabled':''}>Nur ${esc(active.name)} vorbereiten</button>${local.length>1?`<p><b>Örtlicher Konvoi:</b> ${fleetNames(convoy.qs)}<br>${convoy.days} Spieltage · ${convoy.fee} G Hafengebühr · langsamstes Schiff bestimmt das Tempo</p><button id=\"chartConvoy\" class=\"ghost\" onclick=\"planTravel(${target},true)\" ${s.gold<convoy.fee||planned?'disabled':''}>Alle ${local.length} örtlichen Schiffe vorbereiten</button>`:''}<p class=\"notice\">Alle Schiffe reisen selbstständig. Örtliche Aktionen am Ziel sind erst nach Ankunft möglich.</p><p class=\"muted\">Das bereitet nur die Fahrt vor. Erst „Weitersegeln“ löst Reise, Spieltage, Kosten und Ereignisse aus. Keine Schiffe aus anderen Häfen reisen mit.</p><p class=\"muted\">${esc(routeDescription(s.city,target))}</p></section>`:`<p class=\"notice\">${active.city!==s.city?'Das aktive Schiff liegt außerhalb der betrachteten Stadt. Wähle seinen Hafen im Schiffsbuch.':target===s.city?'Dies ist der betrachtete Hafen. Wähle ein anderes Ziel.':'Tippe auf einen Stadtmarker oder wähle unten einen Zielhafen.'}</p>`;"
+    },
+    {
+      "label": "remove-presence-choice",
+      "count": 1,
+      "before": " openSheet('🌊 Deine Reisevorbereitung',`<div class=\"sea\" role=\"img\" aria-label=\"Segelschiff auf der Ostsee\"></div><section class=\"notice\" id=\"travelManifest\"><h3>${pending.convoy?'Konvoi':'Einzelfahrt'}: ${esc(CITIES[pending.from])} → ${esc(CITIES[pending.dest])}</h3><p><b>${pending.mode==='unaccompanied'?'Unbegleitete Schiffsreise':'Persönliche Mitreise'}</b>${pending.mode==='unaccompanied'?' · Dein Kaufmann bleibt in '+esc(safetyPersonText())+'. Keine persönliche Vorsprache oder Ankunftsgutschrift.':''}</p>${fleetAt(pending.from)?`<button class=\"ghost\" id=\"travelPresenceChoice\" onclick=\"planTravel(${pending.dest},${pending.convoy},${pending.mode==='unaccompanied'})\">${pending.mode==='unaccompanied'?'Persönlich mitreisen':'Ohne persönliche Mitreise vorbereiten'}</button>`:''}<p><b>Teilnehmer (${qs.length}):</b> ${fleetNames(qs)}</p><p>Aktiv ausgewählt: ${esc(ship().name)}. Andere Schiffe bleiben zurück.</p><p><b>${pending.days} Spieltage · ${pending.fee||0} G Hafengebühr</b>, einmal für die reisenden Schiffe bei Ankunft.</p><p><b>Noch nicht abgelegt.</b> Erst „Weitersegeln“ beginnt diese Fahrt.</p></section><p>${esc(routeDescription(pending.from,pending.dest))}</p><p>Feste Umschlagzeit: ${routeHandlingDays(pending.from,pending.dest)} Tage, bereits enthalten.</p><p>${esc(pending.story)}</p><p class=\"muted\">Keine echte Wartezeit: Märkte, Kreditzinsen, Lagermieten und Fristen laufen während der Spieltage weiter. Piraten oder Sturm sind möglich. Bewaffnung und örtlicher Konvoi helfen bei der Abwehr, garantieren aber keine sichere Fahrt.</p><button onclick=\"arrive()\">⚓ Weitersegeln</button><button id=\"cancelVoyagePlan\" class=\"ghost\" onclick=\"cancelVoyagePreparation()\">Vorbereitung verwerfen</button>`);",
+      "after": " openSheet('🌊 Deine Reisevorbereitung',`<div class=\"sea\" role=\"img\" aria-label=\"Segelschiff auf der Ostsee\"></div><section class=\"notice\" id=\"travelManifest\"><h3>${pending.convoy?'Konvoi':'Einzelfahrt'}: ${esc(CITIES[pending.from])} → ${esc(CITIES[pending.dest])}</h3><p><b>Selbstständige Schiffsreise.</b> Lokale Aktionen am Ziel erst nach tatsächlicher Ankunft; keine persönliche Ankunftsgutschrift.</p><p><b>Teilnehmer (${qs.length}):</b> ${fleetNames(qs)}</p><p>Aktiv ausgewählt: ${esc(ship().name)}. Andere Schiffe bleiben zurück.</p><p><b>${pending.days} Spieltage · ${pending.fee||0} G Hafengebühr</b>, einmal für die reisenden Schiffe bei Ankunft.</p><p><b>Noch nicht abgelegt.</b> Erst „Weitersegeln“ beginnt diese Fahrt.</p></section><p>${esc(routeDescription(pending.from,pending.dest))}</p><p>Feste Umschlagzeit: ${routeHandlingDays(pending.from,pending.dest)} Tage, bereits enthalten.</p><p>${esc(pending.story)}</p><p class=\"muted\">Keine echte Wartezeit: Märkte, Kreditzinsen, Lagermieten und Fristen laufen während der Spieltage weiter. Piraten oder Sturm sind möglich. Bewaffnung und örtlicher Konvoi helfen bei der Abwehr, garantieren aber keine sichere Fahrt.</p><button onclick=\"arrive()\">⚓ Weitersegeln</button><button id=\"cancelVoyagePlan\" class=\"ghost\" onclick=\"cancelVoyagePreparation()\">Vorbereitung verwerfen</button>`);"
+    },
+    {
+      "label": "atomic-fleet-voyage-no-personal-reward",
+      "count": 1,
+      "before": "function arrive(){if(!pending||pending.arrived)return false;const personal=(pending.mode??'personal')==='personal';if(!['personal','unaccompanied'].includes(pending.mode??'personal')||!isCityIndex(s.politics.safety.person.city)||personal&&!fleetLocalRequired(pending.from))return false;if(pending.person&&JSON.stringify(pending.person)!==JSON.stringify(s.politics.safety.person))return false;if(pending.safetyRevision!==s.politics.safety.revision)return notice('Die Reisevorbereitung ist veraltet. Bitte die Fahrt neu planen.');if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nicht mehr möglich. Bitte neu planen.');pending.arrived=true;if(p.retryRisk){Object.assign(p,p.retryRisk);delete p.retryRisk}if(!p.resolved)rollTravel(p,qs);s.gold-=p.fee||0;advance(p.days);if(p.fee)log('Hafengebühr: '+p.fee+' G für '+qs.length+' Schiff(e).');if(p.event==='storm'){p.stormDamage??=qs.map(q=>({id:q.id,loss:r(3,10)}));for(const q of qs)q.condition=Math.max(30,q.condition-p.stormDamage.find(d=>d.id===q.id).loss);log('Sturm auf See: Einige Schiffe wurden beschädigt.')}if(p.event==='pirates'){let q=qs.find(q=>load(q)>0);if(q){let j=Object.keys(q.cargo)[0],lost=Math.min(q.cargo[j],p.loss);consumeOrigins(q,j,lost,null);q.cargo[j]-=lost;Testlog.event('pirate_loss',{shipId:q.id,good:GOODS[j][0],quantity:lost,averageCost:q.costs[j]??null});if(!q.cargo[j]){delete q.cargo[j];delete q.costs[j];if(q.bookCosts)delete q.bookCosts[j]}log(`Piraten raubten ${lost} Fass ${GOODS[j][0]}.`)}}if(p.event==='defended')log('Piraten erfolgreich zurückgeschlagen oder abgeschüttelt.');let routeId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);Testlog.event('travel',{routeId,mode:personal?'personal':'unaccompanied',personalArrival:personal,personCity:s.politics.safety.person.city,from:CITIES[p.from],to:CITIES[p.dest],days:p.days,fee:p.fee||0,event:p.event,ships:qs.map(q=>({id:q.id,cargo:{...q.cargo},costs:{...q.costs},condition:q.condition})),activeMs:Testlog.data.activeMs});if(p.event==='pirates'||p.event==='defended')Testlog.event('pirates',{routeId,result:p.event,ships:p.qs});for(const q of qs){q.city=p.dest;Testlog.setRoute(q.id,routeId);}s.city=p.dest;if(personal){s.politics.safety.person={city:p.dest,source:'arrival',at:totalDay()};s.visits++;s.rep+=1;}observe();log(personal?`In ${CITIES[s.city]} angekommen (+1 Ansehen).`:`Schiffe in ${CITIES[s.city]} angekommen. Dein Kaufmann bleibt in ${CITIES[s.politics.safety.person.city]}; keine persönliche Ankunft.`);pending={...p};render();Testlog.snapshot('arrival');show('arrival')}",
+      "after": "function arrive(){if(!pending||pending.arrived)return false;if(pending.mode!=='fleet')return false;if(pending.safetyRevision!==s.politics.safety.revision)return notice('Die Reisevorbereitung ist veraltet. Bitte die Fahrt neu planen.');if(!pending||pending.arrived||pending.from!==s.city)return;let p=pending,qs=s.ships.filter(q=>p.qs.includes(q.id));if(qs.length!==p.qs.length||qs.some(q=>q.city!==p.from)||s.gold<(p.fee||0))return notice('Die Reise ist nicht mehr möglich. Bitte neu planen.');const previousVoyage=FleetVoyage;FleetVoyage=new Set(p.qs);try{pending.arrived=true;if(p.retryRisk){Object.assign(p,p.retryRisk);delete p.retryRisk}if(!p.resolved)rollTravel(p,qs);s.gold-=p.fee||0;advance(p.days);if(p.fee)log('Hafengebühr: '+p.fee+' G für '+qs.length+' Schiff(e).');if(p.event==='storm'){p.stormDamage??=qs.map(q=>({id:q.id,loss:r(3,10)}));for(const q of qs)q.condition=Math.max(30,q.condition-p.stormDamage.find(d=>d.id===q.id).loss);log('Sturm auf See: Einige Schiffe wurden beschädigt.')}if(p.event==='pirates'){let q=qs.find(q=>load(q)>0);if(q){let j=Object.keys(q.cargo)[0],lost=Math.min(q.cargo[j],p.loss);consumeOrigins(q,j,lost,null);q.cargo[j]-=lost;Testlog.event('pirate_loss',{shipId:q.id,good:GOODS[j][0],quantity:lost,averageCost:q.costs[j]??null});if(!q.cargo[j]){delete q.cargo[j];delete q.costs[j];if(q.bookCosts)delete q.bookCosts[j]}log(`Piraten raubten ${lost} Fass ${GOODS[j][0]}.`)}}if(p.event==='defended')log('Piraten erfolgreich zurückgeschlagen oder abgeschüttelt.');let routeId=Date.now().toString(36)+'-'+Math.random().toString(36).slice(2);Testlog.event('travel',{routeId,mode:'fleet',personalArrival:false,personCity:s.politics.safety.person.city,from:CITIES[p.from],to:CITIES[p.dest],days:p.days,fee:p.fee||0,event:p.event,ships:qs.map(q=>({id:q.id,cargo:{...q.cargo},costs:{...q.costs},condition:q.condition})),activeMs:Testlog.data.activeMs});if(p.event==='pirates'||p.event==='defended')Testlog.event('pirates',{routeId,result:p.event,ships:p.qs});for(const q of qs){q.city=p.dest;Testlog.setRoute(q.id,routeId);}s.city=p.dest;FleetVoyage=previousVoyage;observe();log(`Schiffe in ${CITIES[s.city]} angekommen. Örtliche Aktionen sind nun möglich; keine persönliche Ankunftsgutschrift.`);pending={...p};render();Testlog.snapshot('arrival');show('arrival')}finally{FleetVoyage=previousVoyage}}"
+    },
+    {
+      "label": "fleet-arrival-copy",
+      "count": 1,
+      "before": "function arrivalView(){openSheet('⚓ Land in Sicht!',`<p style=\"font-size:23px\"><b>${pending.mode==='unaccompanied'?'Deine Schiffe sind':'Du bist'} in ${CITIES[s.city]} angekommen!${pending.mode==='unaccompanied'?' Dein Kaufmann bleibt in '+esc(safetyPersonText())+'.':''}</b></p><div class=\"notice\">${esc(pending.story||'Die Überfahrt ist beendet.')}</div><p>${esc(CITY_DESCRIPTIONS[s.city])}</p><section class=\"item\" id=\"arrivalManifest\"><h3>Aus dem Schiffsbuch</h3><p>${CITIES[pending.from]} → ${CITIES[pending.dest]}</p>${s.ships.filter(q=>pending.qs.includes(q.id)).map(q=>`<p>${esc(q.name)}: Zustand ${q.condition} % · ${load(q)} / ${capacity(q)} Fass an Bord.</p>`).join('')}</section><button class=\"ghost\" onclick=\"show('chronicle')\">Ereignisse im Logbuch lesen</button><p class=\"muted\">Hafengebühr bezahlt: ${pending.fee||0} G · Reisedauer: ${pending.days} Spieltage · Datum: Tag ${s.day}, ${s.year}</p><button onclick=\"closeSheet()\">Stadt erkunden</button><button class=\"ghost\" onclick=\"show('market')\">Direkt zum Handel</button>`)}",
+      "after": "function arrivalView(){openSheet('⚓ Land in Sicht!',`<p style=\"font-size:23px\"><b>Deine Schiffe sind in ${CITIES[s.city]} angekommen!</b></p><div class=\"notice\">${esc(pending.story||'Die Überfahrt ist beendet.')}</div><p>${esc(CITY_DESCRIPTIONS[s.city])}</p><section class=\"item\" id=\"arrivalManifest\"><h3>Aus dem Schiffsbuch</h3><p>${CITIES[pending.from]} → ${CITIES[pending.dest]}</p>${s.ships.filter(q=>pending.qs.includes(q.id)).map(q=>`<p>${esc(q.name)}: Zustand ${q.condition} % · ${load(q)} / ${capacity(q)} Fass an Bord.</p>`).join('')}</section><button class=\"ghost\" onclick=\"show('chronicle')\">Ereignisse im Logbuch lesen</button><p class=\"muted\">Hafengebühr bezahlt: ${pending.fee||0} G · Reisedauer: ${pending.days} Spieltage · Datum: Tag ${s.day}, ${s.year}</p><button onclick=\"closeSheet()\">Stadt erkunden</button><button class=\"ghost\" onclick=\"show('market')\">Direkt zum Handel</button>`)}"
+    },
+    {
+      "label": "retire-new-personal-grace",
+      "count": 1,
+      "before": "function applyLegacyGrace(){\n const a=s.politics.safety,t=a.legacyTransfer;if(!SafetySession.active||SafetySession.active.readOnly)throw Error('Keine geschützte Fristübernahme');\n if(!t||a.person.source!=='unknown'||t.day!==totalDay()||legacyStateDigest(s)!==t.stateHash)return 0;\n const endorsements=s.politics.endorsements.map((e,c)=>e?c:null).filter(c=>c!==null),ships=s.ships.filter(q=>q.city===s.city),jobs=[...s.politics.jobs.filter(q=>q.kind==='accord'),...(s.politics.league?[s.politics.league]:[])];let count=0;\n for(const q of jobs){if(q.until<totalDay()||a.grace.some(g=>g.contract.id===q.id))continue;const choices=ships.map(ship=>({ship,legs:legacyItinerary(q,s.city,ship,endorsements)})).filter(p=>p.legs&&p.legs.length).sort((x,y)=>x.legs.reduce((n,l)=>n+l.days,0)-y.legs.reduce((n,l)=>n+l.days,0)||legacyShipSpeed(y.ship)-legacyShipSpeed(x.ship)||x.legs.length*[4,6,9][x.ship.type]-y.legs.length*[4,6,9][y.ship.type]);if(!choices.length)continue;\n  const {ship,legs}=choices[0];if(legs.length*[4,6,9][ship.type]>s.gold||s.ships.some(q=>legacyShipSpeed(q)>legacyShipSpeed(ship)))continue;const until=t.day+legs.reduce((n,l)=>n+l.days,0);if(until<=q.until||until>360000000)continue;\n  a.grace.push({contract:safetyCopy(q),until,day:t.day,sourceHash:t.sourceHash,anchorCity:s.city,ship:{id:ship.id,type:ship.type,speed:ship.speed,condition:ship.condition},endorsements,legs});count++;\n }return count;\n}",
+      "after": "function applyLegacyGrace(){\n // Q1.10b: no new personal-arrival detour, therefore no new grace. Historical proofs stay valid.\n return 0;\n}"
+    },
+    {
+      "label": "replace-personal-access-with-fleet",
+      "count": 1,
+      "before": "// BEGIN Q109 PERSONAL PRESENCE — no remote delegation or new travel automation.\nfunction fleetAt(city=s.city){return !!s&&isCityIndex(city)&&s.politics?.safety?.person?.city===city;}\nfunction safetyPersonText(){const p=s?.politics?.safety?.person;return p&&isCityIndex(p.city)?CITIES[p.city]+(p.source==='legacy_anchor'?' (bestätigter Altanker)':''):'historisch unbekannt';}\nfunction fleetLocalRequired(city=s.city,legacyId=null){\n if(!fleetAt(city)||s.city!==city){notice('Diese persönliche Handlung erfordert deinen Kaufmann in '+CITIES[city]+'. Betrachteter Hafen: '+CITIES[s.city]+'. Persönlicher Ort: '+safetyPersonText()+'. Alte unbekannte Orte können unter Spielstand & Sicherung einmalig bestätigt werden.');return false;}\n if(legacyId&&s.politics.safety.legacyPersonalJobs?.includes(legacyId)&&s.politics.safety.person.source==='legacy_anchor'){notice('Diese alte noch fehlende Vertragsstation braucht eine echte persönliche Ankunft. Die einmalige Altverankerung ist kein nachträglicher Reisebeleg. Vorhandene Bestätigungen und Fristen bleiben erhalten.');return false;}\n return true;\n}\nfunction confirmLegacyPresence(){\n if(!s||s.politics.safety.person.source!=='unknown'||ship().city!==s.city)return false;\n if(!confirm('Der persönliche Ort wurde in dieser alten Partie nicht gespeichert. Deinen Kaufmann einmalig in '+CITIES[s.city]+' am Hafen deines ausgewählten Schiffs verankern? Das ist eine erklärte Übernahmeentscheidung, keine historische Reise und keine neue Urkunde. Fehlende alte Vertragsstationen werden dadurch nicht erfüllt.'))return false;\n const grace=applyLegacyGrace();s.politics.safety.person={city:s.city,source:'legacy_anchor',at:totalDay()};save();notice('Persönlicher Altanker bestätigt: '+CITIES[s.city]+'. Ansicht und Personenort werden künftig getrennt geführt.'+(grace?' '+grace+' alte Vertragsfrist(en) einmalig nur um den nachgewiesenen Restweg-Fehlbetrag geschont. Originalfristen bleiben belegt.':''));return true;\n}\n// END Q109 PERSONAL PRESENCE",
+      "after": "// BEGIN Q110B FLEET PRESENCE — historical personal fields are compatibility data only.\nfunction fleetShipAt(q,city=s?.city){return !!s&&isCityIndex(city)&&s.ships.includes(q)&&q.city===city&&!FleetVoyage.has(q.id);}\nfunction fleetAt(city=s?.city){return !!s&&isCityIndex(city)&&s.ships.some(q=>fleetShipAt(q,city));}\nfunction fleetLocalRequired(city=s?.city){\n if(!fleetAt(city)||s.city!==city){notice('In diesem Hafen liegt derzeit keines Eurer Schiffe. Örtliche Handlungen benötigen ein eigenes Schiff im Hafen von '+(isCityIndex(city)?CITIES[city]:'einem gültigen Ziel')+'. Ein Ansichtswechsel genügt nicht.');return false;}\n return true;\n}\nfunction confirmLegacyPresence(){notice('Die persönliche Ortsbestätigung ist nicht mehr erforderlich. Eigene Schiffe im Hafen ermöglichen örtliche Handlungen. Historische Nachweise und bereits gewährte Fristschonungen bleiben erhalten; neue werden nicht erzeugt.');return false;}\n// END Q110B FLEET PRESENCE"
+    },
+    {
+      "label": "local-boundary-definitions",
+      "count": 1,
+      "before": "const SAFETY_ACTIONS=",
+      "after": "// Travel is synchronous and atomic; this transient set excludes departing ships during advance().\nlet FleetVoyage=new Set();\nconst FLEET_LOCAL_ACTIONS=['changeWarehouseRent','payWarehouseArrears','warehouseTransfer','warehouseSelect','startShipbuilding','waitShipbuilding','acceptPoliticalJob','witnessPoliticalJob','finishPoliticalAccord','runMayorElection','resignMayor','reviewMayor','requestPoliticalEndorsement','acceptHanseAgreement','witnessHanseAgreement','finishHanseAgreement','runHanseAssembly','buyInformation','buyInformationArchive','fileExistingInformation','buyTradeLetter','trade','takeBath','donate','bankOp','sellShip','performHarborWork','repairShip','armShip','buyShip','marketSelect','promote','planTravel'];\nconst FLEET_LOCAL_VIEWS=['marketView','bathView','churchView','hallView','politicsHallView','bankView','contorView','warehouseView','harborView','questsView'];\nconst FLEET_SELECTED_ACTIONS=['trade','warehouseTransfer','repairShip','armShip','planTravel'];\nconst SAFETY_ACTIONS="
+    },
+    {
+      "label": "wrap-all-local-views",
+      "count": 1,
+      "before": "const SAFETY_VIEWS=['show','closeSheet','marketView','warehouseView','harborView','bookView','questsView','regionalReport'];",
+      "after": "const SAFETY_VIEWS=[...FLEET_LOCAL_VIEWS,'show','closeSheet','marketView','warehouseView','harborView','bookView','questsView','regionalReport'];"
+    },
+    {
+      "label": "guard-direct-and-nested-actions-under-lock",
+      "count": 1,
+      "before": "function safetyInstall(){for(const name of [...SAFETY_ACTIONS,...SAFETY_VIEWS]){const fn=globalThis[name];if(typeof fn!=='function')throw Error('Sicherheitsgrenze fehlt: '+name);globalThis[name]=function(...args){if(SafetySession.active)return fn.apply(this,args);return safetyRun(()=>fn.apply(this,args),{viewOnly:SAFETY_VIEWS.includes(name)});};}}",
+      "after": "function safetyInstall(){for(const name of new Set([...SAFETY_ACTIONS,...SAFETY_VIEWS])){const fn=globalThis[name];if(typeof fn!=='function')throw Error('Sicherheitsgrenze fehlt: '+name);globalThis[name]=function(...args){const invoke=()=>{if((FLEET_LOCAL_ACTIONS.includes(name)||FLEET_LOCAL_VIEWS.includes(name))&&!fleetLocalRequired())return false;if(FLEET_SELECTED_ACTIONS.includes(name)&&!fleetShipAt(ship())){notice('Das ausgewählte Schiff liegt nicht in diesem Hafen. Wähle zuerst ein eigenes Schiff vor Ort.');return false}return fn.apply(this,args)};if(SafetySession.active)return invoke();return safetyRun(invoke,{viewOnly:SAFETY_VIEWS.includes(name)});};}}"
+    },
+    {
+      "label": "local-fleet-manifests",
+      "count": 4,
+      "before": "s.ships.filter(q=>q.city===s.city)",
+      "after": "s.ships.filter(q=>fleetShipAt(q))"
+    },
+    {
+      "label": "validate-departure-manifest",
+      "count": 1,
+      "before": "q=>q.city!==p.from",
+      "after": "q=>!fleetShipAt(q,p.from)"
+    },
+    {
+      "label": "chart-presence-count",
+      "count": 1,
+      "before": "s.ships.filter(q=>q.city===i)",
+      "after": "s.ships.filter(q=>fleetShipAt(q,i))"
+    }
+  ]
+}
