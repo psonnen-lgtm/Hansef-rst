@@ -1,0 +1,138 @@
+{
+  "date": "2026-11-07 Europe/Berlin",
+  "sourceBase": "ff92ce60d1c384a13313e37ba2b3954cf38e793b",
+  "testedGameCommit": "ade1961b89dd5975b5a32b9c6f68383f6376c51e",
+  "gameSHA256": "803b0c551b9c10d52b7f9c93ae9dc738d1da1288da594dfa351d0f8df1a02c80",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": "^(42|43|44|50|53|54|55|56|57) ",
+  "fullSuite": false,
+  "checks": [
+    {
+      "name": "42 every local building rejects remote view and cannot create offers or observations",
+      "status": "PASS",
+      "details": {
+        "directViewsAndNavigationBlocked": [
+          "marketView",
+          "bathView",
+          "churchView",
+          "hallView",
+          "politicsHallView",
+          "bankView",
+          "contorView",
+          "warehouseView",
+          "harborView",
+          "questsView",
+          "show:market",
+          "show:bath",
+          "show:church",
+          "show:hall",
+          "show:bank",
+          "show:contor",
+          "show:warehouse",
+          "show:harbor",
+          "show:quests"
+        ],
+        "noRemoteQuestOrJournalMutation": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "43 two harbors usable with historic person elsewhere and ship selection remains binding",
+      "status": "PASS",
+      "details": {
+        "twoHarborsWithoutPersonalTravel": true,
+        "concreteShipCargoSeparated": true,
+        "bankAndChurchInHamburg": true,
+        "noTravelDaysForSelection": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "44 local warehouse repair bath church bank preserve existing rules",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n4767 !== 4768\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:123:170\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:118:2"
+    },
+    {
+      "name": "55 global book keeps history readable without collecting remote harbor news",
+      "status": "PASS",
+      "details": {
+        "bookRemainsReadable": true,
+        "remoteReportMutationBlocked": true,
+        "existingReceiptsPreserved": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "56 docked companion cannot authorize using a ship currently on voyage",
+      "status": "PASS",
+      "details": {
+        "otherDockedShipGrantsGeneralAccess": true,
+        "travelingShipCannotTradeRepairSelectOrSupplyShipbuilding": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "57 delivery provenance and explicit supply rewards remain single and local",
+      "status": "PASS",
+      "details": {
+        "cases": [
+          {
+            "originCity": 0,
+            "deliveryReward": 0,
+            "politicalReceipts": 0
+          },
+          {
+            "originCity": null,
+            "deliveryReward": 0,
+            "politicalReceipts": 0
+          },
+          {
+            "originCity": 1,
+            "deliveryReward": 100,
+            "politicalReceipts": 1
+          }
+        ],
+        "noSameCityOrUnknownOriginReward": true,
+        "noDoubleReward": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "50 failed atomic voyage retry preserves piracy loss once and does not touch other party",
+      "status": "PASS",
+      "details": {
+        "nativeAbortAfterPutRollsBackEverything": true,
+        "riskReusedOnce": true,
+        "otherPartyUntouched": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "53 political requirements still apply and multiple ships do not multiply appointment",
+      "status": "PASS",
+      "details": {
+        "existingWealthReputationServiceRulesStillRequired": true,
+        "oneAppointmentWithTwoShips": true,
+        "noExtraGoldOrRep": true,
+        "remotePoliticalActionsBlocked": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "54 fleet Hanse agreement requires ships and explicit unique confirmations",
+      "status": "PASS",
+      "details": {
+        "nativeHanseAgreementThreeHarbors": true,
+        "explicitUniqueWitnesses": true,
+        "oneReceiptNoArrivalReward": true
+      },
+      "testNamespaceUntouched": true
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [],
+  "passed": false,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}
