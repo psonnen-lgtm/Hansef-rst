@@ -1,0 +1,556 @@
+{
+  "date": "2026-11-07 Europe/Berlin",
+  "sourceBase": "ff92ce60d1c384a13313e37ba2b3954cf38e793b",
+  "testedGameCommit": "b889f1234ee9166cec5120b7c5a5977c356e4454",
+  "gameSHA256": "2ac327f79cc059cc6ac7f5c0d89fa8157eb45167bfb997928a1b7a05ea54a82c",
+  "browserVersion": "154.0.8037.57",
+  "selectedFilter": null,
+  "fullSuite": true,
+  "checks": [
+    {
+      "name": "01 first launch offers three start functions; native new-game UI",
+      "status": "PASS",
+      "details": {
+        "startMenu": true,
+        "newGameUI": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "02 five independent slots, duplicate names, unique IDs, sixth rejected",
+      "status": "PASS",
+      "details": {
+        "fiveSlots": true,
+        "duplicateNamesAllowed": true,
+        "capacityFailurePreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "03 switching and autosave affect only active party",
+      "status": "PASS",
+      "details": {
+        "autosaveAOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "04 rename preserves ID, gameplay bytes and other party",
+      "status": "PASS",
+      "details": {
+        "renameMetadataOnly": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "05 deletion requires confirmation and preserves other data/backups",
+      "status": "PASS",
+      "details": {
+        "cancelAndExplicitDelete": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "06 deleting active party invalidates old tab and prevents resurrection",
+      "status": "PASS",
+      "details": {
+        "deletedPartyCannotWrite": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "07 reload shows home, continue loads last selected party",
+      "status": "PASS",
+      "details": {
+        "explicitContinueAfterReload": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "08 export non-active party has unique filename and metadata, no mutation",
+      "status": "PASS",
+      "details": {
+        "individualExport": true,
+        "filename": "hansefuerst-Nordhandel-2358faa2-012e-4eed-9767-27e63271ab77.json"
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "09 V13 import creates new ID and explicit replacement is cancelable",
+      "status": "PASS",
+      "details": {
+        "newImportAndConfirmedReplacement": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "10 corrupt, future and TEST imports do not alter library",
+      "status": "PASS",
+      "details": {
+        "invalidInputs": 4
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "11 export and reimport preserve name and all game fields",
+      "status": "PASS",
+      "details": {
+        "V13AndDisplayNameRoundtrip": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "12 canonical Q109c migration preserves raw original and all state fields",
+      "status": "PASS",
+      "details": {
+        "legacyCanonicalReadOnly": true,
+        "exactOriginalBackup": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "13 regular LocalStorage V13 migrates once and source stays byte-identical",
+      "status": "PASS",
+      "details": {
+        "migrationIdempotent": true,
+        "financialCargoShipsPreserved": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "14 simultaneous first imports do not duplicate migrated party",
+      "status": "PASS",
+      "details": {
+        "twoTrulySimultaneousBoots": true,
+        "oneMigration": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "15 political titles offices and running contracts survive migration and roundtrip",
+      "status": "PASS",
+      "details": {
+        "historicalTitlesAndObligationsRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "16 early M2 personal information retained without invented grace proof",
+      "status": "PASS",
+      "details": {
+        "knownPersonRetained": true,
+        "noNewProof": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "17 invalid legacy original can be exported and preserved before blank start",
+      "status": "PASS",
+      "details": {
+        "rawInvalidOriginalRecoverable": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "18 migration transaction failure preserves source and retries exactly once",
+      "status": "PASS",
+      "details": {
+        "failedMigrationAtomic": true,
+        "rawExportBeforeRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "19 true abort after put rolls back payload catalog and backup together",
+      "status": "PASS",
+      "details": {
+        "nativeTransactionAbortAfterPut": true,
+        "atomicAcrossThreeStores": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "20 failed creation does not select or leak a half-created party",
+      "status": "PASS",
+      "details": {
+        "createAbortDoesNotSwitch": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "21 two same-party tabs reject stale write with one charge",
+      "status": "PASS",
+      "details": {
+        "samePartyCAS": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "22 two different-party tabs can both save independently",
+      "status": "PASS",
+      "details": {
+        "perPartyRevisionIndependentOfGlobalLastPlayed": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "23 queued old action cannot write after party switch",
+      "status": "PASS",
+      "details": {
+        "selectionGenerationGuardsQueuedWork": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "24 delayed FileReader cannot import into a newly selected party",
+      "status": "PASS",
+      "details": {
+        "delayedNativeFileReaderBoundToOriginalSelection": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "25 concurrent newer target defeats explicit stale replacement import",
+      "status": "PASS",
+      "details": {
+        "targetRevisionCheckedInsideAtomicImport": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "26 backup export and restore create independent new party after deletion",
+      "status": "PASS",
+      "details": {
+        "backupSurvivesDeletionAndRestoresAsNewIdentity": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "27 W1-S neutral circles do not increase credit; known reputation path remains open",
+      "status": "PASS",
+      "details": {
+        "financialSecurityNoIncrease": true,
+        "knownReputationIssueStillOpen": true,
+        "repDelta": 1,
+        "supportDelta": 0.16666666666666666
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "28 autonomous voyages preserve costs and historic person; political access follows ships",
+      "status": "PASS",
+      "details": {
+        "replacesQ110aPersonalTravelAssertion": true,
+        "feesDaysSameNativeRules": true,
+        "noPersonalArrivalReward": true,
+        "remoteActionWithoutShipBlocked": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "29 no new personal grace; existing native Q110a proof survives import replacement",
+      "status": "PASS",
+      "details": {
+        "replacesQ110aNewGraceExpectation": true,
+        "originalDeadlinePreserved": true,
+        "historicalFiveDayProofPreserved": true,
+        "noNewOrStackedGrace": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "30 failed voyage write retains same hidden risk outcome on retry",
+      "status": "PASS",
+      "details": {
+        "oneRiskRollAcrossFailedWriteAndRetry": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "31 missing storage primitives fail closed without legacy source alteration",
+      "status": "PASS",
+      "details": {
+        "missingWebLocksNoUnsafeFallback": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "32 touch-sized management screens and new-game cancel preserve all parties",
+      "status": "PASS",
+      "details": {
+        "threeViewportSizes": true,
+        "noHorizontalOverflow": true,
+        "cancelPreservesAll": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "33 shipyard material book values remain outside W1-S collateral",
+      "status": "PASS",
+      "details": {
+        "actualConstructionStarted": true,
+        "materialBookDelta": 188,
+        "noCreditDelta": true,
+        "paidWageRetained": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "34 newer file choice wins over delayed older FileReader in same party",
+      "status": "PASS",
+      "details": {
+        "olderFileCannotReplaceNewerPreview": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "35 valid legacy names are retained even when default slot label needs truncation",
+      "status": "PASS",
+      "details": {
+        "gameNamesUnchanged": true,
+        "onlyDisplayMetadataNormalized": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "36 missing IndexedDB leaves the old canonical source readable and unmodified",
+      "status": "PASS",
+      "details": {
+        "noSchemaUpgradeWithoutPrerequisites": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "37 duplicate generated IDs cannot overwrite an existing party",
+      "status": "PASS",
+      "details": {
+        "forcedCollisionRejectedWithoutOverwrite": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "38 catalog revision overflow aborts all writes without corrupting state",
+      "status": "PASS",
+      "details": {
+        "catalogValidatedBeforeCommit": true,
+        "noPartialPayloadOrBackup": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "39 phone landscape start and management controls remain touch-accessible",
+      "status": "PASS",
+      "details": {
+        "viewport": "812x375",
+        "touchTargetsAtLeast44": true,
+        "noHorizontalOverflow": true,
+        "closeReachable": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "40 legitimate TEST-named regular merchant remains playable while isolated files stay rejected",
+      "status": "PASS",
+      "details": {
+        "legitimateNamesNotMistakenForIsolatedProvenance": true,
+        "ownExportRoundtrip": true,
+        "isolatedMarkerAlwaysRejected": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "41 every local action rejects a remote view without any ship",
+      "status": "PASS",
+      "details": {
+        "directActionEntriesBlocked": [
+          "changeWarehouseRent",
+          "payWarehouseArrears",
+          "warehouseTransfer",
+          "warehouseSelect",
+          "startShipbuilding",
+          "waitShipbuilding",
+          "acceptPoliticalJob",
+          "witnessPoliticalJob",
+          "finishPoliticalAccord",
+          "runMayorElection",
+          "resignMayor",
+          "reviewMayor",
+          "requestPoliticalEndorsement",
+          "acceptHanseAgreement",
+          "witnessHanseAgreement",
+          "finishHanseAgreement",
+          "runHanseAssembly",
+          "buyInformation",
+          "buyInformationArchive",
+          "fileExistingInformation",
+          "buyTradeLetter",
+          "trade",
+          "takeBath",
+          "donate",
+          "bankOp",
+          "sellShip",
+          "performHarborWork",
+          "repairShip",
+          "armShip",
+          "buyShip",
+          "marketSelect",
+          "promote",
+          "planTravel"
+        ],
+        "partyAndBackupsUnchanged": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "42 every local building rejects remote view and cannot create offers or observations",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(results.every(([,v])=>v===false))\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:103:3\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:100:2"
+    },
+    {
+      "name": "43 two harbors usable with historic person elsewhere and ship selection remains binding",
+      "status": "FAIL",
+      "error": "locator.fill: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#qty0')\u001b[22m\n\u001b[2m    - locator resolved to <input min=\"0\" step=\"1\" disabled id=\"qty0\" value=\"0\" type=\"number\" aria-label=\"Menge Getreide\" oninput=\"marketQuantityChanged(0)\"/>\u001b[22m\n\u001b[2m    - fill(\"1\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m      - element is not enabled\u001b[22m\n\u001b[2m    - retrying fill action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    60 × waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m       - element is not enabled\u001b[22m\n\u001b[2m     - retrying fill action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:110:118\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:106:2"
+    },
+    {
+      "name": "44 local warehouse repair bath church bank preserve existing rules",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await p.evaluate(()=>warehouseTransfer(0,1)))\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:119:85\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:117:2"
+    },
+    {
+      "name": "45 ship underway grants no origin or destination access; preparation is still docked",
+      "status": "PASS",
+      "details": {
+        "noLocalActionsDuringActualSynchronousVoyage": true,
+        "preparationDoesNotDepart": true,
+        "arrivalUnlocksDestination": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "46 damaged local convoy retains exact timing fees storm damage and remote fleet",
+      "status": "PASS",
+      "details": {
+        "localConvoyOnly": true,
+        "slowestDamagedSpeedUsed": true,
+        "fee10": true,
+        "stormDamage4PerParticipant": true,
+        "noDoubleArrival": true,
+        "reloadAfterTravel": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "47 differential calm storm pirates defended match actual Q110a unaccompanied voyage",
+      "status": "PASS",
+      "details": {
+        "nativeBaselineCommit": "ff92ce60d1c384a13313e37ba2b3954cf38e793b",
+        "cases": [
+          {
+            "event": "calm",
+            "equalEconomicFields": 16,
+            "equalRandomDraws": true
+          },
+          {
+            "event": "storm",
+            "equalEconomicFields": 16,
+            "equalRandomDraws": true
+          },
+          {
+            "event": "pirates",
+            "equalEconomicFields": 16,
+            "equalRandomDraws": true
+          },
+          {
+            "event": "defended",
+            "equalEconomicFields": 16,
+            "equalRandomDraws": true
+          }
+        ]
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "48 explicit council confirmations across two stationed ships grant exactly one receipt",
+      "status": "PASS",
+      "details": {
+        "noAutomaticWitnessByViewOrShipPresence": true,
+        "explicitWitnessAndFinish": true,
+        "oneReceiptNoGoldOrReputation": true,
+        "noRepeatedOfferSamePeriod": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "49 historical office and contract allow stationed ship without erasing personal evidence",
+      "status": "PASS",
+      "details": {
+        "historicalPersonalFieldsUnchanged": true,
+        "legacyStationNowUsesShip": true,
+        "noInventedGraceOrReceipt": true,
+        "officeActionRequiresOwnCityShipAndView": true,
+        "titleRetainedAfterResignation": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "50 failed atomic voyage retry preserves piracy loss once and does not touch other party",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nundefined !== 8\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:170:164\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:165:2"
+    },
+    {
+      "name": "51 queued voyage cannot land in newly selected party",
+      "status": "PASS",
+      "details": {
+        "partyIdGenerationGuardsVoyage": true,
+        "noCrossPartyArrival": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "52 smartphone tablet desktop fleet travel buildings and manager UI",
+      "status": "PASS",
+      "details": {
+        "viewports": [
+          "375x812",
+          "812x375",
+          "820x1180",
+          "1280x900"
+        ],
+        "nativeTouchEmulation": true,
+        "noPersonalChoice": true,
+        "travelClickAndChurchAndManager": true,
+        "noHorizontalOverflow": true
+      },
+      "testNamespaceUntouched": true
+    },
+    {
+      "name": "53 political requirements still apply and multiple ships do not multiply appointment",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await p.evaluate(()=>mayorQuote().eligible))\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:190:3\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:187:2"
+    },
+    {
+      "name": "54 fleet Hanse agreement requires ships and explicit unique confirmations",
+      "status": "FAIL",
+      "error": "AssertionError [ERR_ASSERTION]: The expression evaluated to a falsy value:\n\n  assert(await p.evaluate(()=>finishHanseAgreement()))\n\n    at /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:198:44\n    at async check (/workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:46:49)\n    at async /workspace/Hansef-rst/tests/features/q1_10b/browser-checks.cjs:194:2"
+    }
+  ],
+  "uncaughtPageErrors": [],
+  "screenshots": [
+    "tests/features/q1_10b/results/save-manager-375.png",
+    "tests/features/q1_10b/results/save-manager-820.png",
+    "tests/features/q1_10b/results/save-manager-1280.png",
+    "tests/features/q1_10b/results/save-manager-landscape-812.png",
+    "tests/features/q1_10b/results/fleet-church-375.png",
+    "tests/features/q1_10b/results/fleet-manager-375.png",
+    "tests/features/q1_10b/results/fleet-church-812.png",
+    "tests/features/q1_10b/results/fleet-manager-812.png",
+    "tests/features/q1_10b/results/fleet-church-820.png",
+    "tests/features/q1_10b/results/fleet-manager-820.png",
+    "tests/features/q1_10b/results/fleet-church-1280.png",
+    "tests/features/q1_10b/results/fleet-manager-1280.png"
+  ],
+  "passed": false,
+  "realAppleDevices": 0,
+  "websiteDeployed": false,
+  "kind": "native browser, synthetic fresh states, local loopback origin only; no economy/career simulation"
+}

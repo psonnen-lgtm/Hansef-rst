@@ -199,6 +199,48 @@
       "count": 1,
       "before": "s.ships.filter(q=>q.city===i)",
       "after": "s.ships.filter(q=>fleetShipAt(q,i))"
+    },
+    {
+      "label": "no-remote-harbor-news-from-global-book",
+      "count": 1,
+      "before": "function regionalReport(){\n",
+      "after": "function regionalReport(){\n // A global book may show old receipts, but cannot collect new harbor news remotely.\n if(!fleetAt())return null;\n"
+    },
+    {
+      "label": "book-remote-history-explanation",
+      "count": 1,
+      "before": "${report?'':'<p class=\"notice\">Die neue Nachricht konnte nicht gespeichert werden. Vorhandene Aufzeichnungen bleiben erhalten.</p>'}",
+      "after": "${report?'':fleetAt()?'<p class=\"notice\">Die neue Nachricht konnte nicht gespeichert werden. Vorhandene Aufzeichnungen bleiben erhalten.</p>':'<p class=\"notice\">Ohne eigenes Schiff in diesem Hafen werden keine neuen Hafennachrichten eingeholt. Bereits bekannte Aufzeichnungen bleiben lesbar.</p>'}"
+    },
+    {
+      "label": "shipbuilding-no-materials-from-traveling-ships",
+      "count": 1,
+      "before": ".filter(v=>v.q.city===x.city)",
+      "after": ".filter(v=>v.q.city===x.city&&!FleetVoyage.has(v.q.id))"
+    },
+    {
+      "label": "fleet-selection-no-transit",
+      "count": 1,
+      "before": "!isCityIndex(q.city)){notice('Für dieses Schiff",
+      "after": "!fleetShipAt(q,q.city)){notice('Für dieses Schiff"
+    },
+    {
+      "label": "warehouse-selection-no-transit",
+      "count": 1,
+      "before": "s.ships[index]?.city===s.city",
+      "after": "fleetShipAt(s.ships[index])"
+    },
+    {
+      "label": "market-selection-no-transit",
+      "count": 1,
+      "before": "!s.ships[index]||s.ships[index].city!==s.city",
+      "after": "!fleetShipAt(s.ships[index])"
+    },
+    {
+      "label": "sale-quote-no-transit",
+      "count": 1,
+      "before": "else if(q.city!==s.city)",
+      "after": "else if(!fleetShipAt(q))"
     }
   ]
 }

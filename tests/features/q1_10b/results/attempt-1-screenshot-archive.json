@@ -1,0 +1,50 @@
+[
+  {
+    "original": "tests/features/q1_10b/results/save-manager-375.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/save-manager-375.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/save-manager-820.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/save-manager-820.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/save-manager-1280.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/save-manager-1280.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/save-manager-landscape-812.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/save-manager-landscape-812.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-church-375.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-church-375.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-manager-375.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-manager-375.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-church-812.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-church-812.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-manager-812.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-manager-812.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-church-820.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-church-820.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-manager-820.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-manager-820.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-church-1280.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-church-1280.png"
+  },
+  {
+    "original": "tests/features/q1_10b/results/fleet-manager-1280.png",
+    "archive": "tests/features/q1_10b/results/attempt-1-screenshots/fleet-manager-1280.png"
+  }
+]

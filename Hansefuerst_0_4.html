@@ -203,7 +203,7 @@ function backupShipyardMigration(raw,imported=false,force=false){
  for(let i=0;i<100;i++){const key=base+(i?'-'+(i+1):''),existing=localStorage.getItem(key);if(existing===raw)return;if(existing===null){localStorage.setItem(key,raw);if(localStorage.getItem(key)!==raw)throw Error('Originalsicherung fehlgeschlagen');return}}
  throw Error('Keine freie Originalsicherung. Bitte zuerst Sicherungen exportieren.');
 }
-function shipbuildingSources(x=s){return x.ships.map((q,index)=>({q,index,source:'ship',shipId:q.id})).filter(v=>v.q.city===x.city).sort((a,b)=>Number(b.index===x.active)-Number(a.index===x.active)).concat([{q:x.warehouses[x.city],source:'warehouse'}])}
+function shipbuildingSources(x=s){return x.ships.map((q,index)=>({q,index,source:'ship',shipId:q.id})).filter(v=>v.q.city===x.city&&!FleetVoyage.has(v.q.id)).sort((a,b)=>Number(b.index===x.active)-Number(a.index===x.active)).concat([{q:x.warehouses[x.city],source:'warehouse'}])}
 function shipbuildingQuote(type){
  const r=SHIPBUILD_RECIPES[type];if(!s||!Number.isInteger(type)||!r)return {allowed:false,reason:'Ungültiger Schiffstyp.'};
  const rows=SHIPBUILD_GOODS.map((j,k)=>({j,n:r.materials[k],have:shipbuildingSources().reduce((n,v)=>n+(v.q.cargo[j]||0),0)}));let reason='';
@@ -300,7 +300,7 @@ function warehouseTransfer(j,dir){
  Testlog.event('warehouse_transfer',{city:s.city,shipId:q.id,good:GOODS[j][0],quantity:n,direction:dir===1?'store':'load'});
  render();warehouseView();return true;
 }
-function warehouseSelect(index){if(Number.isInteger(index)&&isCityIndex(s.city)&&s.ships[index]?.city===s.city){s.active=index;save();warehouseView()}}
+function warehouseSelect(index){if(Number.isInteger(index)&&isCityIndex(s.city)&&fleetShipAt(s.ships[index])){s.active=index;save();warehouseView()}}
 function warehouseView(){
  if(!isCityIndex(s.city))return;
  const local=s.ships.map((q,index)=>({q,index})).filter(x=>x.q.city===s.city),selected=ship().city===s.city,w=s.warehouses[s.city];
@@ -849,6 +849,8 @@ function backupRegionalMigration(raw,imported=false,force=false){
  throw Error('Bitte Originalsicherungen exportieren; keine Sicherung wurde überschrieben.');
 }
 function regionalReport(){
+ // A global book may show old receipts, but cannot collect new harbor news remotely.
+ if(!fleetAt())return null;
  const now=totalDay(),existing=s.economy.reports.find(q=>q.day===now&&q.publishedAt===s.city);if(existing)return existing;
  const choices=CITIES.map((_,city)=>city).filter(city=>city!==s.city),city=choices[(now+s.city)%choices.length],goods=REGIONAL_PROFILES[city].map((role,j)=>({role,j})).filter(x=>x.role!==0),j=goods[(now+city)%goods.length].j;
  const stock=s.markets[city][j].stock,report={city,j,day:now,band:stock>=140?'abundant':stock<=60?'scarce':'ordinary',publishedAt:s.city};
@@ -858,7 +860,7 @@ function regionalReport(){
 function regionalInformationPanel(){
  const report=regionalReport(),now=totalDay(),words={abundant:'reichlich',ordinary:'gewöhnlich versorgt',scarce:'knapp'},roles=(city,role)=>GOODS.filter((g,j)=>REGIONAL_PROFILES[city][j]===role).map(g=>g[0]).join(', ')||'keine ausgeprägte Besonderheit';
  const news=[...s.economy.reports].reverse().slice(0,5).map(q=>{const age=now-q.day;return `<p><b>${esc(CITIES[q.city])}: ${esc(GOODS[q.j][0])} ${words[q.band]} gemeldet.</b><br><span class="muted">Tag ${q.day%360||360} · ${Math.floor((q.day-1)/360)} · ${age===0?'heute':age+' Spieltage alt'}${age>90?' · veraltet':''}. Kein Preisangebot.</span></p>`}).join('');
- return `<section class="item regional-information"><h3>🗣️ Warenkunde und Hafennachrichten</h3><p><b>${esc(CITIES[s.city])}:</b> häufiges Angebot: ${esc(roles(s.city,1))}. Typischer Bedarf: ${esc(roles(s.city,-1))}.</p><p class="muted">Die Versorgung kann sich ändern. Käufe leeren den Markt, Lieferungen füllen ihn. Pelze und Tuch erholen sich langsamer.</p>${report?'':'<p class="notice">Die neue Nachricht konnte nicht gespeichert werden. Vorhandene Aufzeichnungen bleiben erhalten.</p>'}${news||'<p>Noch keine gespeicherten Hafennachrichten.</p>'}<p class="muted">Ein neuer datierter Versorgungsbericht je Hafen und Spieltag. Erneutes Öffnen liefert keine weitere Auswahl; beobachtete Preise stehen getrennt im Handelsbuch.</p><details><summary>Ortskunde der elf Hansestädte</summary>${CITIES.map((name,city)=>`<p><b>${esc(name)}</b><br>Angebot: ${esc(roles(city,1))}. Bedarf: ${esc(roles(city,-1))}.</p>`).join('')}</details></section>`;
+ return `<section class="item regional-information"><h3>🗣️ Warenkunde und Hafennachrichten</h3><p><b>${esc(CITIES[s.city])}:</b> häufiges Angebot: ${esc(roles(s.city,1))}. Typischer Bedarf: ${esc(roles(s.city,-1))}.</p><p class="muted">Die Versorgung kann sich ändern. Käufe leeren den Markt, Lieferungen füllen ihn. Pelze und Tuch erholen sich langsamer.</p>${report?'':fleetAt()?'<p class="notice">Die neue Nachricht konnte nicht gespeichert werden. Vorhandene Aufzeichnungen bleiben erhalten.</p>':'<p class="notice">Ohne eigenes Schiff in diesem Hafen werden keine neuen Hafennachrichten eingeholt. Bereits bekannte Aufzeichnungen bleiben lesbar.</p>'}${news||'<p>Noch keine gespeicherten Hafennachrichten.</p>'}<p class="muted">Ein neuer datierter Versorgungsbericht je Hafen und Spieltag. Erneutes Öffnen liefert keine weitere Auswahl; beobachtete Preise stehen getrennt im Handelsbuch.</p><details><summary>Ortskunde der elf Hansestädte</summary>${CITIES.map((name,city)=>`<p><b>${esc(name)}</b><br>Angebot: ${esc(roles(city,1))}. Bedarf: ${esc(roles(city,-1))}.</p>`).join('')}</details></section>`;
 }
 
 const ACTIVATION_RULES={luxuryFlow:.35,bergenFlow:1.5,stockReference:110,netFlow:1.2,stockReturn:.015,priceReturn:.020};
@@ -900,7 +902,7 @@ function marketTradeLimits(j){if(!isGoodIndex(j)||!s)return {buy:0,sell:0,free:0
 function marketQuantityChanged(j){if(!isGoodIndex(j))return;const input=$('qty'+j);if(!input)return;const n=Math.floor(Number(input.value)),valid=Number.isFinite(n)&&n>=1,limits=marketTradeLimits(j),buy=$('marketBuy'+j),sell=$('marketSell'+j);if(buy)buy.disabled=!valid||n>limits.buy;if(sell)sell.disabled=!valid||n>limits.sell}
 function marketChooseGood(j){if(!isGoodIndex(j)||marketQuantityGood===j)return;marketQuantityGood=j;for(let k=0;k<GOOD_COUNT;k++){const input=$('qty'+k);if(input)input.value=0;marketQuantityChanged(k)}}
 function marketSetMax(j,dir){if(!isGoodIndex(j)||![1,-1].includes(dir))return false;const input=$('qty'+j);if(!input)return false;marketChooseGood(j);const limits=marketTradeLimits(j);input.value=dir===1?limits.buy:limits.sell;marketQuantityChanged(j);return true}
-function marketSelect(index){if(!Number.isInteger(index)||!s.ships[index]||s.ships[index].city!==s.city)return false;s.active=index;render();marketView();return true}
+function marketSelect(index){if(!Number.isInteger(index)||!fleetShipAt(s.ships[index]))return false;s.active=index;render();marketView();return true}
 function marketView(){
  observe();marketQuantityGood=null;
  const q=ship(),local=q.city===s.city,ships=s.ships.map((q,index)=>({q,index})).filter(x=>x.q.city===s.city),free=local?Math.max(0,capacity(q)-load(q)):0;
@@ -925,7 +927,7 @@ function shipSaleValue(q){if(!q||!Number.isInteger(q.type)||!SHIPTYPES[q.type]||
 function shipSaleQuote(id){
  const q=s?.ships.find(q=>q.id===id);if(!q)return {allowed:false,price:null,reason:'Dieses Schiff gehört nicht mehr zu deiner Flotte.'};
  const price=shipSaleValue(q),remainingLocal=s.ships.filter(other=>other.id!==id&&other.city===s.city).length,bookValue=SHIPTYPES[q.type]?.cost*(.45+.35*q.condition/100);
- let reason='';if(price===null)reason='Für dieses Schiff ist kein gültiges Werftangebot möglich.';else if(q.city!==s.city)reason='Verkaufen kannst du nur ein eigenes Schiff im aktuellen Hafen.';else if(!q.cargo||Object.values(q.cargo).some(n=>!Number.isFinite(n)||n!==0))reason='Entlade zuerst die gesamte Ladung am Markt oder im Lagerhaus.';else if(s.ships.length===1)reason='Dein letztes einsatzfähiges Schiff bleibt bei dir. Ohne Schiff kannst du nicht weiterhandeln.';else if(!remainingLocal)reason='Mindestens ein eigenes Schiff muss in diesem Hafen bleiben. Entfernte Schiffe können dich hier nicht abholen.';else if(!Number.isFinite(s.gold)||s.gold<0||!Number.isFinite(s.gold+price)||s.gold+price>1e12)reason='Die Goldgutschrift ist in diesem Spielstand nicht möglich.';
+ let reason='';if(price===null)reason='Für dieses Schiff ist kein gültiges Werftangebot möglich.';else if(!fleetShipAt(q))reason='Verkaufen kannst du nur ein eigenes Schiff im aktuellen Hafen.';else if(!q.cargo||Object.values(q.cargo).some(n=>!Number.isFinite(n)||n!==0))reason='Entlade zuerst die gesamte Ladung am Markt oder im Lagerhaus.';else if(s.ships.length===1)reason='Dein letztes einsatzfähiges Schiff bleibt bei dir. Ohne Schiff kannst du nicht weiterhandeln.';else if(!remainingLocal)reason='Mindestens ein eigenes Schiff muss in diesem Hafen bleiben. Entfernte Schiffe können dich hier nicht abholen.';else if(!Number.isFinite(s.gold)||s.gold<0||!Number.isFinite(s.gold+price)||s.gold+price>1e12)reason='Die Goldgutschrift ist in diesem Spielstand nicht möglich.';
  return {allowed:!reason,price,bookValue,remainingLocal,reason};
 }
 function shipSalePanel(q){const offer=shipSaleQuote(q.id);return `<div class="item ship-sale-panel"><h3>Schiff an die Werft verkaufen</h3><p>Die Werft bietet für <b>${esc(q.name)}</b>: <b>${offer.price===null?'kein Angebot':fmt(offer.price)+' G'}</b>.</p><p class="muted">40 % des Neupreises plus 8 Gold je Zustandspunkt, auf ganze Gold abgerundet. Bewaffnung und zusätzlicher Laderaum werden nicht extra vergütet.</p><p>Bisheriger Schiffsbuchwert: ${fmt(offer.bookValue)} G. Dein Nettovermögen sinkt beim Verkauf um ${fmt(offer.bookValue-offer.price)} G. Vorhandene Schulden bleiben bestehen; der Kreditrahmen kann sinken.</p><p>Verbleibende eigene Schiffe in ${esc(CITIES[s.city])}: <b>${offer.remainingLocal}</b>. Mindestens eines muss hier bleiben.</p>${offer.reason?`<p class="notice" role="status">${esc(offer.reason)}</p>`:'<p>Eine geplante Reise wird verworfen und muss neu geplant werden.</p>'}<button class="danger" id="sellShipButton" onclick="sellShip(${q.id})" ${offer.allowed?'':'disabled'}>Schiff verkaufen · ${offer.price===null?'—':fmt(offer.price)+' G'}</button></div>`}
@@ -982,7 +984,7 @@ function armShip(){if(ship().city!==s.city)return;let q=ship(),n=(q.arms+1)*550;
 function buyShip(i){return startShipbuilding(i)}
 // BEGIN PHASE 08C2B FLEET UI
 function selectFleetShip(index){
- const q=s?.ships[index];if(!Number.isInteger(index)||!q||!isCityIndex(q.city)){notice('Für dieses Schiff ist kein eindeutiger Hafenstandort bekannt. Es wurde nichts geändert.');return false}
+ const q=s?.ships[index];if(!Number.isInteger(index)||!q||!fleetShipAt(q,q.city)){notice('Für dieses Schiff ist kein eindeutiger Hafenstandort bekannt. Es wurde nichts geändert.');return false}
  if(pending&&!pending.arrived&&(index!==s.active||q.city!==s.city)){notice('Eine Reise ist bereits vorbereitet. Die Schiffsauswahl bleibt erhalten; führe sie aus oder verwirf sie ausdrücklich auf der Seekarte. Es wurde nichts geändert.');return false}
  s.active=index;s.city=q.city;mapDestination=null;closeSheet();notice(q.name+' liegt vor '+CITIES[q.city]+'. Du betrachtest diesen Hafen. Nur die Ansicht und Auswahl wurden geändert – keine Reise, keine Kosten, keine Spieltage.');return true;
 }
